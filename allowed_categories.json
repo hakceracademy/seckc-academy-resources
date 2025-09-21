@@ -1,0 +1,51 @@
+{
+    "Governance": [
+        "Laws and Regulations",
+        "Policies and Standards",
+        "Compliance and Enforcement",
+        "Management Reporting"
+    ],
+    "Enterprise Risk Management": [
+        "Risk Appetite",
+        "BCDR and Continuity",
+        "Risk Register"
+    ],
+    "Security Architecture": [
+        "Network Design",
+        "Identity and Access",
+        "Cloud Security",
+        "Endpoint Hygiene",
+        "Cryptography",
+        "Container Security"
+    ],
+    "Security Operations": [
+        "Incident Response",
+        "Threat Hunting",
+        "SOC",
+        "Forensics",
+        "Vulnerability Management",
+        "SIEM and SOAR"
+    ],
+    "Threat Intelligence": [
+        "Internal Intelligence",
+        "External Intelligence",
+        "Contextual Intelligence",
+        "Third and Fourth Party Risk"
+    ],
+    "Risk Assessment": [
+        "Penetration Testing",
+        "Vulnerability Scanning",
+        "Social Engineering",
+        "DAST"
+    ],
+    "Application Security": [
+        "Source Code Review",
+        "Open Source Scanning",
+        "API Security",
+        "Shift Left and CICD"
+    ],
+    "Physical Security": [],
+    "Frameworks and Standards": [],
+    "Career Development": [],
+    "User Education": []
+}
