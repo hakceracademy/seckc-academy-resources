@@ -1,0 +1,313 @@
+do your thing let's see your trick
+cool
+um
+so I haven't actually done this talk on
+a timer I have no idea how long it's
+going to take but let's try and get it
+done in 15 minutes it is 7 34. judges
+note that so uh here we go so my talk is
+about breaking into cars
+um
+uh by the way I'm Brian I work for GPS
+uh if you like this kind of stuff you
+may want to come talk to me later
+okay so I'm going to I'm going to tame
+thing and give you an agenda
+well talk talk about what I wanted to do
+the things I knew about before what we
+blah blah blah blah
+uh oh yeah by the way live demo don't do
+it but we're gonna do it anyway
+um okay so the goal here was to unlock a
+car by forging a rate of signal we saw
+um Alex very cool stuff to do replay
+attacks and that's already been done
+we're not talking about that we're
+talking about actually breaking the
+signals and generating our own so we can
+unlock cars
+um it's not a minimum not a man in the
+middle attack and I've never seen any
+published research done on this before
+so here you go
+uh so off the beginning disclaimer I
+haven't actually broken the codes
+um also I will not be releasing code
+because they're probably going to be a
+lot of you really pissed off when I
+figure out how to get into your car and
+then tell everybody else how to do it
+um
+and I'm also not going to tell you which
+cars I did
+because
+because I don't want you breaking into
+all right so
+um we asked Alex how much time he spent
+and what he did on that so to get just
+to give you an idea of what it takes to
+pull off this attack this is the kind of
+stuff that I did before I was a
+professional programmer so I've done a
+lot of programming scripting is not a
+big deal for me
+um but I had no experience with RF at
+all I literally started with this
+project doing research and figuring out
+what the [&nbsp;__&nbsp;] am I gonna do when I
+download those uh codes
+um I do have some cryptanalysis
+background that's a passion of mine so
+I've got a little bit of that
+um and I did a little bit of research I
+submitted the proposal to my team to
+work on this project in June of 2014.
+okay and we'll talk about what that
+looks like in a little bit but the
+target
+is in case anybody's unclear you have
+you all have a key fob that unlocks your
+car
+well yeah some of you may not but most
+cars do this is what we're attacking
+we're gonna simulate the code that's
+sent by that thing
+um so when I wrote my proposal it was
+for a grand total of 20 six dollars and
+45 cents because I'm cheap and I don't
+pay for [&nbsp;__&nbsp;] by myself
+um
+so all you need is a little cheap uh SDR
+receiver we've seen these many times at
+set KC this thing 22 bucks
+um if you want to send the codes uh
+three dollars for a transmitter that you
+can plug into an Arduino
+and write some code
+really cheap or you can take Alex's rope
+route
+is this one better
+hey
+hey and uh get a hack rf1 and it turns
+out on Friday of last week my boss came
+in and handed this to me and said go
+forth and do good
+except
+so there's that
+um but actually in actuality most of the
+stuff I did was with this little 20
+device okay so when we get into the
+details cool uh do most of it with that
+the only thing about this is they tend
+to overheat so if you need to capture a
+lot of data you got to work around that
+to do it like 10 at a time
+but um software we've seen these all
+before but some of you don't go to set
+KC so SDR sharp is a tuner that allows
+you to either of these devices find the
+frequency and record it
+uh then the next part is a whole lot of
+custom code that I've spent probably
+four months off and on working on the
+truck
+so lots and lots of time Spare Time
+company invested time is just what we do
+okay so the beginning of this signal
+analysis we had to we have to figure out
+when we press the button what's what
+frequency is it sending on and we need
+to actually capture that that's what
+this is the little colored line is what
+the signal looks like that's tuned into
+that at least record that to a WAV file
+next part
+recorded something it sounds funny
+actually uh
+stop
+foreign
+so that's what the WAV file sounds like
+when you press the button and you record
+it with one of these tuners okay so next
+part Alex talked about doing all this
+decoding and figuring out what the hell
+all that data means exactly what this is
+I wrote this script that basically grabs
+the frame date out of the WAV file we
+are only interested in the most
+significant bits of one channel of the
+each frame
+um because
+nobody needs stereo unlock codes
+okay so the next part is to actually
+convert that data into binary so that we
+can go into pulse width modulation I had
+to identify a threshold now this is a
+matter of actually looking at the data
+figuring out what the hell goes what the
+hell's going on and going okay what
+threshold is it that defines what's a
+Zero versus a one so in right here if
+the value the hex value
+turned from the last screen last
+this one if that x value was greater
+than 32 it gets converted to a one
+otherwise it's a zero simple binary uh
+next thing after that you will see a
+whole bunch of series of zeros and ones
+and they happen at certain widths
+so you'll send 21 ones you'll send 19
+zeros 17 ones that's basically your ones
+and zeros it doesn't matter if it's
+actually a one or a zero it's the number
+of times it occurs that defines it as a
+one or a zero I had to also identify the
+threshold that defines what the pulse
+width defines a zero one so what I ended
+up was if you see at line 3320 we have a
+38 so what I did was set the threshold
+to 28 if it's above 28
+to below that we have a zero and you get
+a long string of binary that looks like
+that and the zeros that happen all in
+front of the up to that one over there
+tell us it tells the receiver to to wake
+up and say hey I'm about to send you a
+code we're going to unlock you listen to
+each clip that you heard was one press
+uh there were three blips throughout
+that audio uh file in this case we're
+looking at two of those or in this case
+it's just one the next line these are
+two separate codes you can see the zeros
+and then it ends up in a one and then
+another long series of zeros and ends up
+in a one
+binary that make up the code
+then all I did was convert that binary
+into hex value so you end up with a 54
+byte
+uh signal for each of those key presses
+okay
+so what do we do from here we've already
+done a [&nbsp;__&nbsp;] ton of work
+we capture a whole bunch of them and do
+the same thing okay
+um this file you can see this is just
+from line 80 to 95. I did my analysis on
+about a hundred samples of just sitting
+and this is what we have
+um so after I did that I kind of said
+well it looks kind of random you look
+random to you I mean yeah there's you
+know prefix it's probably a serial
+number but the rest of it's kind of
+looked random but when you look at it a
+little bit closer you see that actually
+some of these repeat most of the [&nbsp;__&nbsp;]
+signal
+and then we have a checkpid at the end
+some other patterns that I highlighted
+here there's a lot more that I found
+when I started analyzing these signals
+but um just just say that there's a lot
+there
+so what I did the actual cracking I
+identified a bunch of patterns I wrote a
+bunch of code that used
+quad grams and all those kind of things
+that you do
+stream Cipher analysis but this is a
+different sort of thing so it sort of
+helped but then I wrote a code that
+generates signals according to those
+patterns and Compares them to the
+existing sandals to see
+how close I was getting so
+here we go let's see what actually
+happened
+for the VM it's really really short
+yeah yeah just try that okay so um I'm
+not releasing any code
+okay
+um you can see right here this is PHP
+code I'm a PHP dork you can
+blame me later but uh a lot of the other
+codes that I wrote is in Python so yay
+python yeah um but for this part I'm
+more comfortable in PHP and it is
+honestly a lot more powerful so thank
+you
+um so you can see it just kind of pulls
+out of the sample codes it trims them
+off for extra space because breaks and
+then
+just go through and generate 10 000
+codes we have
+100 samples we're going to generate 10
+000 codes it takes about 60 seconds to
+run this okay I'm not gonna well okay
+I'll show you here are some of the
+patterns that I found in some of the
+coda they're going through right this
+two tables and blah blah blah uh yeah
+I'm not gonna give all this to it so
+um
+yeah
+so here let's uh
+cross our fingers
+just to show you at
+um
+something samples
+these are the codes that that script is
+reading these are honest codes that came
+out of
+a unnamed remote that um
+may or may not be for my car or somebody
+else's car who
+volunteered
+um so we're gonna pray sometimes this
+most 99 this works hey right there look
+we have a code
+we are six bytes off of generating a
+how many seconds did that take from when
+okay and it'll run it'll take about a
+minute to do this but the thing is
+all the research I've read up on this
+you know they have the replay attacks
+that came out at uh black pad this year
+they said oh yeah you just blocked thing
+and they're they all use rolling codes
+it's impossible to break that system
+well here you go oh look more five bites
+away
+six bytes away well that one's a little
+off but yeah okay so this is what's
+running in a matter of 60 Seconds
+what would happen if I let this run for
+10 minutes against your car
+so anyway that's where we're at
+um
+there you go 57 seconds to run that
+entire thing
+Okay so
+it actually works imagine that okay so
+next for me I'm gonna keep attacking
+this thing this is where I was two
+nights ago and then I started actually
+um so the next step is to find somebody
+who actually knows what the [&nbsp;__&nbsp;] they're
+doing when it comes to cracking PR apps
+and this thing will be broken by the end
+of the week now that we've talked about
+it in public
+um I'm gonna try and find some Hardware
+that's not actually attached to Mike to
+whoever's car I'm doing this to so that
+if there's any chance that there's some
+kind of Brute Force mitigation in there
+that it won't rip my car
+um
+and then
+I'll collect more samples okay uh and
+then the last thing I'm done but remote

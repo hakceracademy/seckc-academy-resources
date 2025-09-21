@@ -1,0 +1,570 @@
+hi there
+welcome to uh part 11 of my series of 31
+talks on pci um i'll be back next month
+right cory yes next month yes we'll see
+okay okay good good um so i'm going to
+talk about pci pa dss which is the
+payment application piece of the dss the
+data security standard
+so um before we begin
+i
+am not a lawyer
+i am also
+uh well
+in the uh my advice is absolutely no
+yes
+um so uh i would definitely help at
+least a handful if you hide a body but
+if you're going to court because you
+wrote a buggy application that's not
+secure um
+and i'm not going to help you i'm also
+i'm a pcq i'm not a pci qsa
+i'm not going to sign your attestation
+of compliance
+i won't talk to your qsa and while i
+will listen um i cannot offer you the
+very coveted andy stamp of approval on
+your it may or may not be pci compliant
+project system application whatever you
+have um my opinions are my own and do
+and i need to get this part out of the
+way in case anyone was wondering what
+yeah um this presentation
+no there's no maps at all um when i hear
+pop talk red i think of the noise coming
+a few months ago where alex's talk last
+month you're not gonna learn how to
+exploit anything except maybe your
+auditor maybe so no no math
+and for those of you disappointed in
+um so with all seriousness you shouldn't
+love compliance we have jobs at
+information security because our
+respective companies love security
+uh hint they don't
+we're a cost center but because they're
+being told by various local state and
+federal governments that they should
+probably be compliant to some type of
+regulatory standard or law or maybe
+their partners clients or banks or
+something like that are telling them
+that they have to take it seriously
+if you're a vendor or service provider
+you love compliance
+every time there's a new standard or law
+that's related to influence information
+security the cash registers are ringing
+all right pci says we need to have a
+laugh
+everybody
+so
+um i actually enjoy compliance but most
+people understandably don't i get it
+it's boring it's not really security and
+it gets in the way
+um just about any criticism you dream up
+is valid however it's important that no
+matter what your job or what your job is
+you have a good understanding of the
+compliance standards that apply to you
+and the work that you do and that will
+also make it a lot easier on your
+company's compliance person
+all right so quick intro
+pci has a lot of standards and it gets
+kind of confusing after a while as to
+why they have so many and what they do
+the pci council was created by the major
+card brands for those of you who are not
+in retail or service provider or
+anything like that
+to establish standards to enforce
+compliance at organizations which
+process transmit and store card holder
+data
+uh multiple standards uh these these are
+all the multiple standards for the
+various parts of the credit card
+transaction processing flow um tonight
+i'm going to cover the payment
+application piece
+and sprinkle a little bit of the pci
+security standard in with to spice
+things up a little bit because this is
+going to be a fun talk
+all right
+so the pci dss covers the network
+infrastructure and security side so if
+you're on a network side and you
+set up routers and switches and that
+kind of stuff or you're on the security
+side and you run an ips or firewall or
+something then the pci dss is what
+you're mostly concerned with
+the pa dss is like the weird quiet
+sibling of the to the pci dss it's
+forgotten misunderstood and you wish it
+would go away but you're really not sure
+why
+the pa dss is specifically for
+applications which process payments
+there we go do you develop applications
+i know that there are some people in
+do those applications process payments
+maybe they do maybe they don't my guess
+is that in the future it's going to be
+more and more people who are developing
+coding apps especially on a mobile
+platform for applications that are going
+to process payments
+process transmit or store credit card
+data
+so if you fall into one of those
+categories yeah i i think you're really
+what's the saying i don't want you to go
+away but i'd like to watch you leave
+all right so how do you know if you have
+a pa dss app well you just have to read
+the guidance from the council it's
+really simple it's all right there
+really easy to say um and according to
+the council this is actually not an
+exhaustive list as to what a pa dss app
+is
+so it actually boils down to a few
+things
+um so this one is is pretty simple um
+your customer swipes a card or keys at a
+card number and your app takes that info
+and starts processing the payment either
+by transmitting it somewhere send it to
+somebody else or actually doing the
+payment process so that's number one
+number two
+is
+this is uh this is actually fairly
+important um it's being sold and
+provided to more than one customer so if
+you have an app that you've developed
+just for yourself for your own company
+and you're not selling it to anybody it
+doesn't have to be pa dss compliant um
+if you're giving it to one customer
+then it is in and they're the only
+customer then it doesn't have to be ba
+dss compliant
+cloud offerings also don't count so you
+can if you have a cloud operating you
+have a bunch of people using it that's
+fine if you're selling it to multiple
+people or something like that then it's
+in scope for pa dss
+all right this is probably the most
+common type this is self-explanatory you
+create an app that actually does the
+payment processing like a pos system or
+if it facilitates it like a shopping
+cart on a website and you sell that
+shopping cart to multiple companies
+all right so
+what happens if you think that you're
+awesome i got this pa dss app but i've
+scoped it down
+it's barely there i don't care nobody
+can even see it it doesn't matter settle
+down you're not that awesome i'm sorry
+my company does this and we have to deal
+it's basically what what pci says is you
+have a baseline app if you have any part
+of that application that processes
+transmits or stores cardholder data then
+it's in scope sorry
+all right
+um
+so some companies actually want their
+scope to their with their app to be in
+scope for pci i call them masochists you
+should not want an auditor or a separate
+assessor to show up in your company um
+the reasoning is is that they can market
+themselves better because they got to be
+on a list of approved dna dss
+applications
+so if you're not in scope be happy
+you're not david coverdale don't try to
+slide it in like like the album cover
+there or force it in just just let it go
+you don't want to be on that list
+all right so a word about mobile and i
+know some of you actually do mobile
+development um
+so
+that that statement there is a quote
+from uh the pci council as to why they
+haven't released any guidance from
+mobile technology it's moving too fast
+it's like lightning yes exactly
+so mobile apps are out of out of scope
+for pa dss um this is the so this is the
+pci's council comment when they ask why
+they haven't prevented guidance so trend
+lightly with mobile applications but
+we're kind of at a critical gray area
+juncture where you can release what you
+want if your bank likes it if your
+customers bank likes it if your client
+likes it
+you should move forward just keep going
+don't worry about that you see high at
+this point
+um i i call it the square rule just just
+do whatever you want and kind of
+ask me
+apologize later
+minnie uh i don't see any guidance
+coming in 2014 maybe something in 2015
+but probably not because it's moving too
+rapidly
+um many qualified security assessors so
+your audit will come in you'll tell them
+i've got this mobile app and i need
+something they'll give you like a white
+paper or something like that that
+basically says
+i have vetted this application against
+every single aspect of standard and it's
+awesome but it's not really pa dss
+compliant because
+the technology is advancing too rapidly
+and i can't actually say that so um but
+they'll give you white paper you get it
+give it to your clients and give them
+some type of warm fuzzy
+um so now that we've documented that
+your app is in scope for pa dss you've
+made it this far what do you actually do
+you need to know
+so
+yeah
+you probably need an sdlc you kind of
+have to have one um i'm not a developer
+but it's probably pretty important that
+you should have some type of
+standardized process in your company by
+which you develop applications the
+p-a-d-s-s makes a bit of a big deal out
+of this so you should have a document
+just make sure it's documented it
+doesn't matter it needs to include
+important phases like code review and
+code approval um ideally it should have
+something related to security in it
+preferably related to or covering oasis
+because the council loves the os not
+dead if they could marry
+a waff and an
+olaf's top 10 like i think there are
+certain states or countries that allow
+that they would
+love
+and they love the os top 10.
+so if you can integrate that into your
+sdlc you're flipping awesome you're
+great
+all right guys this is the this is the
+audience participation portion what is
+documentation is for what middle
+management
+all right who doesn't love spending tons
+of time writing everything down that you
+should do that you have done in addition
+to meticulously documenting every aspect
+of your application just so an auditor
+can tell you that you missed a line
+about ntp and then make you rewrite it
+like three freaking separate times and
+then have you over document your entire
+ntpr architecture yes that happened to
+me
+um yeah they they love documentation and
+there's no such thing as too much
+documentation
+okay um change control
+yeah oh i got some moves there that's
+not good okay people start convulsing
+when you mention change control
+change control boards and approval and
+review and documentation all that fun
+stuff um the pci council likes it um
+erico you should like it but you should
+also like it because you know if you're
+in a company where some jackass decides
+like at 10 o'clock on a friday night
+he's going to make a change to an app
+and he makes that change to an app and
+then he forgot forgets to i don't know
+set some configuration setting around
+sunday afternoon your prior processing
+network goes down for about eight hours
+yeah that's that's why you have change
+control so um you can actually do it on
+the cheap and easy um you don't need
+some massive like sand attached software
+package to do change control um you can
+write things down in a notebook if you
+want they really don't care
+um here are the critical steps all
+changes need to be documented
+um severity you have to have like some
+type of severity major minor
+a side note on this the pci council says
+that after every i think significant uh
+change you have to run a pen test after
+every major change you have to run a
+vulnerability scan um yeah they don't
+tell you what a major and significant
+and a minor change are if you document
+it in your company ahead of time what a
+change is and this is my definition of a
+major change and this only happens like
+i don't know once every five years
+you're scoping yourself out so get ahead
+of it before your usa tells you what it
+is
+um
+you have to have a proposal you need to
+have management approval you actually
+need to document what your change you're
+making you need to have a review you
+need to have back out procedures they
+love back out procedures what happens if
+it goes wrong you need to document that
+you actually performed some type of
+testing before you deployed it in
+production and um the names of the
+people involved in each step are
+probably helpful and and we're dating
+timestamps you just put all that every
+time you make a change write it in a
+notebook then your auditor when they
+come on site you can hand it to them be
+like here's my change which one do you
+want to see
+um we do the same thing my company we
+have like some really small cheap
+package where they say i want to see all
+the development changes search there's
+all my development changes i make them
+you know they pick 10 out do print
+screen there on its own so i'm trying to
+find something very very simple it
+doesn't have to be difficult
+all right um things that you need to get
+to document um i started i pounded it
+and i i asked her a stick
+and and i carried it because your
+implementation guide is probably the
+most important thing that you're gonna
+write now everybody's like
+an implementation guy why do i have to
+do this
+you're gonna write a manual for people
+on how to use your software you just
+have to tell them how to install it in a
+pci compliant fashion
+um you have to have this
+if you don't
+then and it's installed in a non-pci
+compliant manner your client's going to
+fail their pci assessment because
+they're going to be like well i got this
+and i've installed this application and
+it's great and their assessor is going
+to be like well let me see your
+implementation guide and they're going i
+don't have an implementation guide i
+just kind of installed it i got my nice
+weapon i could open wireless access
+point that says steal my credit cards
+and i transmit all my data over that
+that's that's what they're trying to
+avoid
+so please if you don't write anything
+else
+write this
+i'll get your question to it i know
+there's a qsa in this room that will
+write your implementation for you right
+but uh but dude please do it um
+the dataflow diagram that's that's
+pretty self-explanatory um it outlines
+how the payment application works and
+the sources and targets for the
+application's data exactly um the the
+network diagram is an illustration of
+where the payment application falls
+within the grand scheme of your network
+in your customers network that's
+important because uh when you start
+getting a pci you get into where is your
+customer data environment um i was
+having a conversation with dan who i
+worked with the other day we were
+talking about like dominoes and
+mcdonald's and kentucky fried chicken
+right they don't have to do one rock one
+report on compliance for every single
+like like shop they do one big one that
+covers every one of their franchises so
+when you buy a franchise you don't have
+to know anything about pci you install
+their payment application and they cover
+all that stuff for you that's part of
+your franchise fee so um that's why it's
+important to know okay my card holder
+data environment starts here and it ends
+here and there starts here and ends here
+so you know where the overlap is and you
+can explain that to your auditor
+um your names and stuff um i'm including
+it for those who are still on the fence
+about whether or not authentication is
+actually essential it is
+um and so is logging um so they don't
+want you to keep anything to do with the
+transaction but they need you to keep
+everything that has to do with the user
+logging in a system event or an
+application event or anything like that
+um so do not store payment info you're
+looking for user actions for best
+results forward the logs somewhere
+outside of the app into a pci compliant
+environment
+if you have a pci compliant compliant
+environment use it the more you can push
+back the environment user authentication
+logging like i was talking about earlier
+the easier it is for you to get your app
+through the pa dss compliant process you
+want to keep your app as lightweight as
+possible my company we have an app that
+does a card processing action card
+process it's uh it's card activations
+one little piece of our app does the
+payment processing so
+what we do is we push everything back
+all the logs go back to our environment
+all the the users authentication
+everything nothing is stored locally
+so i talked about operating systems
+earlier um so you get to designate the
+windows operating systems or i'm sorry
+the operating systems on which your
+application is supported um this is good
+news uh the more operating system you
+support the more money the engagement is
+going to cost because like i said you're
+sending this to a lab they have to test
+it on every version of windows just
+because well it works on windows 7 xp
+windows 8 and windows 8 all the way down
+to windows mt35 that's cool but they're
+going to test it on every single one
+that's going to cost you money
+no hell no no no second we're going to
+okay so
+you want to decimate what operating
+systems is going to support so
+in the beginning you're going to tell
+them look it's going to support windows
+7 and windows 8 and that's what they're
+going to test on um most us companies
+are cool if it's within the recent
+windows family but if you start going
+crazy um like like i said when it was in
+t35 where it has to support every
+possible flavor of linux you need to get
+ready to pay for that um as best as your
+business model allows stay up to date
+with operating systems um
+that way you won't have to deal with
+something that is going to cost you a
+ton of money
+um so versions do matter um your psa
+will certify one version of your
+application at a time i'm not going to
+talk about operating system i'm talking
+about actually the version of your app
+your certification is good for as long
+as no changes are made to the pa dss
+certified part of the app that's that's
+kind of important um you have to
+document this annually or the life of
+the standard so if you got certified on
+pa dss version 1.2 on october 28th your
+app is going to expire and it's no
+longer going to be good for new
+installations
+um you can make minor changes to the app
+itself like change the color of the
+window but if you change anything to do
+with the payment application piece you
+have to get re-certified either as a
+minor change or a full recertification
+either option require requires a qsa but
+the minor change is going to be less
+money
+all right
+so
+if you don't want to do any of this you
+know what do you what's going to happen
+who's going to like yell at me you know
+who's this counsel anyway i don't care
+about those guys they're all valid
+questions but unfortunately the answers
+are kind of murky the payment brands are
+responsible for enforcement and fines
+related to pci pa dss compliance your
+bank also has the option to get in on
+the action and screw you over and shut
+down your program
+will the council and payment brands find
+out if you're i don't know have an app
+that's not pa dss compliant or your
+clients care will your bank care if your
+app is bringing in tons of money and
+your company's making them a ton of
+money well the payment brands care
+because they're getting the chunk of
+every auth that you send across the wire
+all questions i can only answer with the
+most common advice from the pci council
+it depends ask your acquirer i'm not a
+lawyer am i providing legal advice
+where do you want to find more
+information i am so glad you guys asked
+you can go to their website
+so for for like payment brand or uh
+standard web-based websites it's
+actually not horrible you can go in
+there and within about three clicks you
+can find all of the documentation um and
+they they like to like i said documents
+so you can find what you're looking for
+um it's it contains a wealth of
+awesomely interesting information
+all right i'm done any questions
+comments
+yeah
+i am available for parties yeah yeah if
+all right
+um
+it's not thursday yet maybe 11 59 i'll
+take my thought though
+um
+all right so that's me uh you're
+on twitter um thanks guys i appreciate
+it

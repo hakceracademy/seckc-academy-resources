@@ -1,0 +1,447 @@
+I am a partner and principal consultant
+and deaf security and I head out their
+Assessment Services offerings
+and uh I have a authentication bypass
+vulnerability that I found in my own
+closed circuit television camera system
+when I when I built my last home I ran
+Siamese collabs and cameras uh this
+isn't so easy when you're building so
+that I can keep an eye on all my stuff
+when I'm taking all those vacations I
+take
+and I really have it uh it's you know it
+gives you peace of mind when you can
+pull out your iPhone or web browser and
+take a look at your home while you're
+away even at the office or whatever so
+I finally made some time to take a look
+at the DVR and how the communications
+work from the various clients that you
+can use to view your cameras with and I
+found some pretty disturbing things that
+I don't think are uncommon with these
+types of DVRs and solutions
+um
+well if I started on the first line
+foreign
+CDE for this and um right before I left
+I sent this out a bug track and full
+disclosure
+uh but we'll go ahead and get into it so
+um
+okay so the DPR gives you several
+options to connect to it and manage it
+one is a untrusted unsigned ActiveX that
+you run at Internet Explorer show hands
+who loves running outside ActiveX
+all right yeah
+so that's what the login looks like if
+you come across one of these in an
+and that's what it looks like when your
+camera is training on a beautiful
+specimen of a man by myself the uh
+once you're logged in that's what you
+get
+the that's the actual configuration page
+for managing the thing user accounts
+camera channels uh encoding all that all
+that good stuff
+there's also a fact client called PSS
+that's just uh you know install on Mac
+or Windows and it communicates in the
+same protocols to access the camera
+system
+and there is a mobile app called idmss
+that you can do all this stuff with as
+well
+so the hope when I bought the camera was
+to uh you know if it happened catch
+something like a Berkeley or something
+like that on camera and have evidence to
+give you the law enforcement that's a
+broad daylight but anyway that's what I
+kind of hope but the reality of running
+a CCTV system and a relatively low crime
+rate Suburban City like shine and
+Shawnee where I live is that I just
+catch myself doing stupid stuff but it
+uh so like when I bought my brand new
+Ducati Superbike this year but I had a
+little problem getting it out of the
+basement one day and um it's it's got
+some some great video of me having a
+problem there uh I try to
+I'm trying to sacrifice my body under it
+it didn't work out very well it's a
+pretty expensive mistake and and that's
+that's kind of the most interesting
+thing I've ever caught up on this system
+but uh yeah that's not good
+so the service that listens on this
+thing always runs on 3777 unless you
+change it
+um so that's that's a pretty good
+identifier I haven't seen any other
+services listening on or as a
+rule not that it couldn't be the case uh
+it's a binary protocol like I said
+consumed by either the ActiveX the PSS
+that client or the idmss mobile app
+the vulnerability is that
+um it doesn't require authentication you
+you know the login process of managing
+this thing is just kind of
+there is you can you know and replay all
+the commands after Authentication the
+DVR on Happily let you do whatever you
+want
+Wireshark after I noticed this and this
+is kind of what the deal is so you want
+the SMTP settings where it'll you know
+it uses an SMTP email account and
+password send out still images and you
+have
+that set up it'll give you right give
+you right back to the SMTP credentials
+in clear text too so that's probably not
+very visible to you folks in the back
+but that's the if you configure a
+username for a email account or password
+it's got
+Facebook
+if you want the ddns settings right like
+you you don't want to access it via IP
+you register with the Dynamic DNS
+service and it stores all those credits
+and will give you right give you those
+in clear test
+um they're the response is it's kind of
+buried in there we'll see it better when
+we go into the tool I wrote
+similarly you can archive your video
+onto an FTB server and if you ask for it
+nicely it'll return with the printed so
+not only is the vulnerability I found
+allow you access into the cameras it
+also allows you to manage other Dynamic
+EMS accounts potentially get into their
+email and even their FTP server right
+uh
+so no you can't uh for some reason they
+hash these and it looks like a pretty
+weak hash I don't know what hash
+algorithm menu 's but uh it's always a
+um so how do we access the cameras right
+well uh you can just reset the password
+so here's the request to reset the admin
+account to abc123 and the only really
+trickery is that number hex 19 that's
+just a check zone for for the Stream
+obviously you populate it I can check
+some match
+um
+the other thing I've noticed is it keeps
+logs when you log into this thing based
+on your IP address so that could
+potentially be telling uh if you were
+wanting to catch people gaming
+authorized access but you can just
+simply send a clear the logs request and
+the logs are cleared so that's another
+um so I started I identified this in
+August and it's a process of working
+with the vendor
+I noticed that some other people
+simultaneously had
+issues some advisories on this right
+um
+hopefully this is a zero day there was
+one of these advisories that said
+something about authentication bypass
+but then if you read the details they
+were very specific and they talked about
+you
+um so as far as I know this is a zero
+day if not I apologize to these guys and
+now we're just talking about a very cool
+heck so there were some CDs published in
+September the month after I found this
+um there's things like a static telnet
+password recruit access that since it's
+a read-only file system it's very
+difficult to change shift with every
+device
+so so there are some other issues with
+these devices so the site was just the
+you're running
+yeah it's it's running by default and
+depending on whether you net it or not
+obviously I didn't but the ones that
+I've looked at uh you know it's kind of
+have to happen
+from what that happened if they do
+expose town I can gather even more
+serious issue then just peeping Toms
+your root on the device
+um
+so some other other issues
+um there were several other sockets
+listening that I haven't investigated
+what those services are obviously web is
+3778 a remote code execution I'd be
+surprised if this there is no overflow
+that exists in this service that listens
+on the 3777 we didn't do any serious
+debugging in that that service but
+um also obviously SMTP mtpdns credential
+stored in clear text transferring clear
+text
+um and many many default accounts
+shipped on these devices by default uh
+um so it's not just the off iPads but
+so I decided to write a men's employee
+scanning module everyone familiar with
+metasployed in here a good portion of
+you use it
+um so a scanning module the difference
+is you you can give it more than one IP
+addresses it's multi-threaded it's very
+efficient in finding vulnerabilities if
+you writing under that context but uh
+the one I wrote scans for one or more
+addresses for these things
+for the hula DVRs retrieves the version
+serial
+um SMTP that's definitely not the
+protocol I wrote there but
+stmp
+ddns and FTP settings against the camera
+Channel names kitchen bathroom casino
+whatever
+it's the DVR usernames hashes and their
+group membership and then also the DVR
+user groups optionally a tool will
+overwrite a given username password
+and also reset the logs and then no
+matter what it does it always stores
+what it finds in the metasployed
+database so if you type credits you get
+the credits that you can pull out
+um
+that's the options page I'm not sure how
+visible that is but simple right our
+hosts and Mark Moore give it a threads
+the options to reset a password or even
+true or false and then if you set it
+through you need to set a username value
+for the password reset and then the
+clear logs option is a Default true
+when you run the thing that's what it
+looks like we're gonna actually run it I
+guess this PVR I have set up pointed at
+and that's the second page I've been fit
+about a little screen
+and then of course when you type credits
+that's the uh that's the storage
+you are
+and it's a double time so I've got the
+uh our GitHub repo for this thing if you
+want to test it out
+so and I forgot to mention this is our
+second uh attendance here my first
+meeting was the um the last chapter
+meeting so if you are contributing
+and uh hope that we need several more
+so I'll switch over to Cali
+get right into medicine
+and so to use this tool you just do get
+clone wherever you want it'll pull down
+the tool you copy the Ruby file into
+whatever modules driver you're using in
+khalids default like
+root.msf4 modules Etc where I like to
+put it is
+um auxiliary scanners miscellaneous and
+then in there are several other DVR
+exploits so it fits well there so I'm
+going to tie it one-handed
+pretty good actually all right use the
+tab
+oo uh
+show the options right we talked about
+this we're going to set the r hosts to
+one on two one six eight
+yeah
+4254 obviously you set it to class C
+Class B whatever you can adjust the
+thread count if you're doing multiple
+hose so it's faster
+we're going to set the password so it's
+very obvious
+on the screen
+two one
+and we're gonna set the username
+and
+we also need to set the reset option
+to True since we're actually going to go
+and then it's just a matter of typing
+exploit
+DVR found it's pulling down the email
+foreign
+database needs internet connectivity to
+resolve those names and if you're doing
+this at barleys without an internet
+connection it's a great Wi-Fi here all
+right
+I just turn on your iPhone when you're
+here oh that's inside you shows up
+don't allow it all right that's good
+um
+okay thank you
+and somehow also missed uh I've hit the
+can you do show Advanced on that is
+yeah that's probably something that I
+it
+experience
+I haven't actually tried this without
+okay
+here is your prize sir I will I'll agree
+thank you sir yeah all right so two
+things to look at at the end of all this
+gibberish password reset users admin uh
+user admins password preset to one logs
+cleared all right so we're gonna go back
+we're gonna go to our
+foreign
+I'm going to bring my device this
+thing's verified on two different
+versions obviously it's a little hard to
+procure all these different devices in
+the firmware from what I can find isn't
+exactly obvious which one to use in
+so anyway here we are the login screen
+should be pretty easy to know I just
+type one
+login
+um
+Snapchat of that okay
+foreign
+um
+if you set the password just to prove
+to ABC one two three
+ABC one two three we're in again
+so there it is
+if you go look at all the DVR Solutions
+you know around there right there like
+you'll have like a Chinese name and
+it'll look exactly the same it's like
+you know what's going to be Chinese
+no you're right it is uh that's why I
+had one before this it was Chinese as
+well this is uhula the technology is a
+Chinese company located in a province
+that starts with the letter X that I can
+pronounce but
+um so uh on the on the topic of full
+disclosure responsible disclosure we
+tried to work with them and uh they said
+they'd fix it so this was like early
+August a month later I asked them for an
+update and they didn't respond a week
+after that I asked him again for an
+update they didn't respond every other
+instance of this the race sharp
+vulnerabilities the swan DDR
+vulnerabilities I've seen no fix so
+don't expect one the answer
+don't expose your DVR to the internet
+right do you expect that vulnerability
+to work on next month for example I mean
+you expect that they're
+Hardware symbol or only
+no this is just the hula and dahula also
+rebrands their devices under several
+different names and it's very hard to
+what's that
+I don't know I know one is like I
+managed and they're all awesome names
+too and maximum lies but it's uh yeah
+you know we would have liked to work
+with the vendor on a fix and then this
+loves it but we didn't feel like we were
+going to get anywhere with them and I
+have one of these at home I have a wife
+and a brand new baby she's breastfeeding
+you know it's very I mean you know this
+is serious stuff I don't want anyone
+intruding on my privacy and
+um I want to let everyone know I'm
+obviously not the brightest guy in the
+world this is a simple vulnerability to
+exploit and so it's very unlikely to me
+that I'm the first one to find this and
+that I'm the only one exploded I I think
+it's likely that it would be as easy as
+literally just hatching the clients and
+just skipping the login screen right
+yeah
+so if you looked at showdan or I mean
+like yeah I did um so so jodan and
+they're so involved with common ports
+the 3777 doesn't really show up right
+they're not really looking for that guy
+um it's not going to be really cool to
+download a mask scan from the robin Set
+Let's scan the entire right now for you
+know that board just to get an idea of
+you know how many thousands of these
+there are out there but were there
+anything from Russian pawn shops to
+International House of Pancakes uh
+things like that like these things are
+everywhere and like you said there's a
+million different brands of these DVRs
+and I don't think I've seen one that I'd
+be confident in the security of you know
+um I wish I had a better option and they
+all want you to they all either use
+basic uh over you know unencrypted or
+unsigned ActiveX and binary
+Communications it's pretty bad it's
+rough I wish there was a if anyone knows
+of a better DDR option or you know h.264
+support and a decent HTML5 client let me
+know because I'm in the market most
+exposed to the internet in order for you
+to be able to watch on this this
+vulnerable service is what you need to
+expose plus 80 right to hit it with a
+browser otherwise you don't need if
+you're using one of the fat clients the
+mobile app you don't need to explore to
+expose the web Port uh but yeah that's a
+good point to view these things you have
+to expose this vulnerable service
+there's no way
+um I think you can do it via rtsd 4554
+but then you have to remember that you
+are you know it's not as good of a user
+main branch I'd like to
+um there's a bunch of other options that
+I think that this thing could do like
+Forge uh UPnP requests to open up
+Tillman then get a town that show uh and
+that display uh match pre-existing
+hashes
+default passwords to let you know
+you follow no need to change the admin
+um yeah I'd like for this to end up in a
+repo I've never never tried to get one
+at it but I think I think this probably
+has a good shot but works well so
+um
+works well with internet access yeah if
+you have internet access it doesn't work
+so well Harley's without
+yeah we've got a good one so

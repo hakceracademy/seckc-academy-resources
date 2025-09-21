@@ -1,0 +1,983 @@
+so tonight i'm going to cram in about a
+week's worth of training in about 15
+minutes
+and as per usual
+there's no disclaimer tonight everything
+we do is illegal probably shouldn't be
+done without the consultation of legal
+help so please don't do it don't be an
+idiot so uh very quickly if you want to
+know about what i do come find me after
+the
+meeting and whatnot uh for my day job i
+do social engineering red teaming pen
+testing reverse engineering basically i
+get hired to break into stuff and steal
+[&nbsp;__&nbsp;] from people it's a lot of fun
+so
+yeah
+so
+i'm going to get into a little bit of
+that how to do that but i'm going to
+cover it from both a red team and a blue
+team perspective tonight
+so technology has made document forgery
+so easy in this day and age is
+absolutely ridiculous
+i wish i was actually younger because
+it'd be easier to get a fake id in this
+day and age with all the technology out
+there however
+it also provides a big hole in our
+organizations and as well as our
+processes
+uh tonight we're just gonna get into
+something with two scenarios that happen
+in real life uh we're gonna cover very
+quickly how this works what you're using
+to exploit people at the social
+engineering level and how to do some
+really quick cheap fast uh preparation
+of documents with everything so
+everything tonight i'll cover is free
+and can be obtained free and legally
+so there's two scenarios we like to use
+when i do red teaming to get into places
+i have to break into buildings to test
+physical security controls and policies
+two of which i like using is the bad
+technician
+i'm a local technician coming out to
+repair or do something with your servers
+so you got to let me into the data
+center and let me add all your servers
+the other one is a fake auditor because
+no one questions an auditor showing up
+from the main office to do an audit and
+everyone gives auditors pretty much free
+run of a whole entire facility so
+they're two very easy things to use
+mainly because we have existing
+processes for these and we think that
+they're benign we always just assume the
+sla that we have with a vendor or third
+party
+uh counts that they're going to have
+legit people who have background checks
+they're going to show up to service your
+equipment you never think that the guy
+shown up to service your equipment as a
+technician
+is going to go into your server room and
+just absolutely destroy everything or
+x-fil data same way with an auditor an
+auditor isn't going to show up and do
+anything fun or exciting because
+auditors are usually pretty boring
+pretty benign they aren't going to rob
+you blind
+but the most important thing that these
+both represent is both these targets and
+these scenarios validate existing
+processes and they show impact to a
+client
+breaking in for the sake of breaking in
+is nothing more than doing a stupid
+highly expensive selfie
+if you can't show the impact to the
+client
+what's going on
+it's worthless so that's why you want to
+use these kinds of scenarios and that's
+why document forgery is very very easy
+to do and facilitate this it only takes
+the average person three seconds when
+looking at something to deduce if it is
+counterfeit
+or legit
+and that's everyone in this room that's
+everyone you look at something in three
+seconds or less you know if it's a fake
+or real
+and it's very easy to take advantage of
+that and we'll cover that very quickly
+uh this exploits the five main points uh
+that we're going to use for exploitation
+which are very very easy and it also
+tests
+those are fear
+uh compliance helpfulness apathy and
+trust
+uh fear comes from authority so you can
+pull the authority card like say bob is
+your ceo bob calls in to have his
+password reset
+if you don't do it it's the ceo you're
+going to get fired whatever you pull
+that authority and use fear
+the other thing you can utilize is
+compliance so putting stuff in an
+auditing language or phrasing things as
+an audit it's kind of hard to argue
+against
+you can also play off of helpfulness
+because people love to help you
+to facilitate this is really easy go to
+a pharmacy
+rent some crutches and try walking up to
+a building and you'll see how quickly
+people let you in the building without
+checking your badge
+so people are very helpful by nature and
+you can take advantage and exploit that
+the other thing is apathy you get a
+security guard that works anywhere for
+eight months or more
+they're gonna be very complacent very
+apathetic
+they just don't care they're gonna love
+you if you bring in pizza or donuts a
+couple times a week and just shoot the
+[&nbsp;__&nbsp;] with them
+so you gotta be careful and look for
+your employees that have been there for
+a while look for employee burnout
+because that's something that can be
+taken advantage of especially with
+security guards if you're trying to
+break in
+if you have an apathetic card they're
+not going to look at paperwork or other
+details as much they're just going to
+see if there's a logo on a piece of
+paper and a signature it's good to go
+and trust
+it's so easy to violate trust because we
+have an implicit trust model in the
+workplace of how certain things are to
+work and how certain expectations are to
+help us facilitate
+uh business on a day-to-day basis we can
+take advantage of that such as we send
+in an auditor you already have a process
+for
+audits internally who's going to
+question the auditor coming in and
+rifling through medical records
+uh tools to facilitate these attacks
+like i said are free
+google image search
+allows you to reverse image search
+images same way of tanai
+why this is important is it allows us to
+find say a target's logo of a company we
+put that company logo in 10i or google
+image search
+not only do we see other instances where
+it may occur such as websites we might
+want to attack but we see relationships
+and those relationships are very
+important as the target attack
+showed us target wasn't directly
+attacked it was a third party that was
+attacked and then pivoted in
+so with these uh google image and tni
+you can find relational candidates that
+you could attack instead such as third
+parties
+microsoft office templates are awesome
+because they're free and they're pretty
+much pre-made documents that you slap in
+a couple lines and ready to go nine
+times out of ten when you're forging
+documents using stuff from microsoft
+office templates website you may
+actually encounter someone using that
+actual document template within their
+enterprise or business so that's that's
+that much more awesome bonus for you
+there
+another thing that is more powerful and
+absolutely amazing and if you do any
+kind of pen testing you should have
+is a clipboard it is the most powerful
+force in the universe
+because no one questions the guy with a
+clipboard walking around looking
+important
+it's very good also these plastic ones
+open up
+and i like them the best because they do
+a couple things one
+when you're stealing documents from copy
+centers you steal the documents off the
+copiers put them in just walk out the
+door very nice no one's going to stop
+you
+the other thing is you can fill this up
+with paper ahead of time
+and you can play the clumsy card
+so you can trip and fall and this opens
+and dumps paper everywhere and you have
+52 card pickup which allows for
+distraction but at the end of the day
+clipboard is the most powerful thing in
+the universe and if you don't believe me
+go out tomorrow at work
+print a spreadsheet of worthless [&nbsp;__&nbsp;]
+put it on a clipboard and walk around
+with a pen and you'll get damn near
+anywhere and no one will bug you all day
+it's great
+the other thing is photoshop
+which i'll show you how to get a
+legitimate free copy of photoshop to use
+and i'll show you a quick trip to uh
+trick tonight and how to use photoshop
+for forgery
+so again like i said the clipboard is
+the most powerful force in the universe
+how many of you saw the defcon talk on
+rfid badges with josh perriman and eric
+smith as you saw on that talk you can
+fit that card cloning equipment inside
+these clipboards and just walk around
+and clone id badges that way too
+so clipboards are awesome
+uh tinai
+you quite literally just put the url in
+or drag and drop
+image same way with google
+it does the reverse image search for you
+shows you where those images of logos
+and documents occurred very helpful
+also good for finding
+logos or company identification that you
+can use for letterhead
+like i said office templates are awesome
+nine times out of ten you're going to
+find someone already using that document
+possibly already in the enterprise
+corporate style guides are another great
+thing that gets overlooked corporate
+style guide is a piece of information or
+document that states what a company's
+logo is how it's to be used what fonts
+what colors
+what slogans what verbiage and
+vernacular are to be used to keep a
+company's brand or logo alive and
+maintained
+the great thing about it is they're
+everywhere and no one realizes what's in
+there because you have logos you have
+art files you have identification that
+you need to create convincing phishing
+emails in the whole nine yards
+ku here has a wide open one that you can
+view and get all sorts of information
+that you would need to make a phishing
+email or a document or anything you need
+that looks like it came from the actual
+university a lot of places
+will password or protect these which is
+greatly urged because everything you
+need here for a wonderful attack is
+right there
+i also use these when i did the cyber
+raid a few years ago got into a lot of
+trouble here in kansas city i use the
+style guides to pull out all the
+sponsors logos including the fbi and the
+infragard so
+it's a great thing to go back to not
+tomorrow to your companies and look to
+see what they have out there and if not
+start searching online and you're gonna
+find more than you
+ever could imagine in showdown
+because these little simple searches and
+i'll post these up later tonight too and
+on the wiki
+simply looking up these will return all
+sorts of things uh even internal
+documents that shouldn't be outside the
+company
+so photoshop you can get a hold of and
+i'll show you how to use for something
+it's free and legit what happened is
+someone screwed up royally and about 20
+people lost their jobs a few years ago
+at adobe because they published adobe
+photoshop
+creative suite to
+open to the web with all the keys and
+free downloads
+uh they had to move forward as a company
+and just let it be and let everyone have
+it for free all you got to do is
+register with an account on adobe.com
+and you get photoshop css
+create a suite too the full creative
+suite with photoshop illustrator
+everything in it and it's free
+it's great to use when doing document
+forgery and we'll show some steps
+the construction process for documents
+is really straightforward and really
+simple in this day and age uh we don't
+have to do cut ups or post-ops like you
+used to see in the movies where you
+would cut things out with exacto knives
+paste them up take film print the film
+out document
+everything it used to take us weeks
+takes you about
+10 20 minutes
+uh with photoshop and a computer
+always do your research first do oceans
+you can never have enough oceans look
+into what that company does
+what documents they've published online
+what the vernacular is internally
+because there's a unique vernacular and
+cadence that each of your companies uses
+internally and there's different
+references and you want to make sure you
+get those down right before you launch
+an attack
+an example this is some places call it a
+help desk some places called a service
+desk or some places called a consistent
+office environment
+group
+so referring to something always as a
+help desk and say if you're doing a
+document you could get in trouble
+because maybe that company doesn't refer
+to it as a help desk again doing ocean
+doing research find as much as you can
+about that company before you do the
+attack
+target the target's ids and logos and
+identities so you have things that you
+can use for artwork
+use a template
+or if you create it from scratch but i
+urge using a template because sometimes
+you don't have time it's already done
+for you but it's easy
+and then adding validation checkpoints
+will cover real quick with a document
+these are things that allow you to take
+a bad document and get it past people
+because there's key things people are
+going to look at in those first three
+seconds and if we can fool that we can
+violate that trust model and force that
+document into their hands and force it
+to be validated like a buffer overflow
+so the last and final step is the
+presentation which a lot of people
+overlook
+you want to make sure the document is
+printed correctly and printed in a
+format that makes sense you wouldn't
+want a high quality high gloss full
+color document for an audit document
+you'd want something that looked like it
+came off of a printer
+another thing would be having signatures
+which i'll show you how to fake here
+so
+the scenario that happened here is for a
+second year in a row i had to break into
+a data
+center all the staff was the same
+i thought i was royally screwed so
+i went out and decided well let's try it
+again let's try
+a
+direct approach i'm gonna go in
+walk right on the data center door knock
+on the door buzz the buzzer have them
+come up let me in
+and it's going to be that simple
+so i created a document and faked it by
+collecting some information uh it's been
+severely censored
+you put the address and whatnot of the
+client that you're going to you see that
+we're we've got a dell work order we're
+going to be from dell we're going to be
+a dell technician and if you see this as
+it's a very generic format of a document
+off of microsoft office templates
+just fill in some just random crap with
+my actual name which i'll get to here
+shortly
+all the information very important that
+you have a phone number
+that you can validate so give your buddy
+a burner phone a skype phone google
+phone whatever
+and have your buddy sitting behind to
+field any calls if you have a validation
+uh issue so that way if someone doesn't
+believe that document
+your uh buddy or boss can be sitting
+back in a van out in the parking lot
+answering that number going hell yes let
+that guy in he's an auditor he's
+supposed to be there don't waste our
+time
+uh adding just random numbers for work
+orders and stuff um keep it simple
+nothing crazy
+but here we went out it's most we
+actually found server names
+through metadata
+so the
+the guys in the pretext was hey we're
+going to go in we just got to check the
+track status on two dell servers here's
+their names
+which are names if they were actually
+real or on the network or not
+we didn't care was enough to get them to
+validate it
+the next thing i did
+is had my handy bandy
+notebook
+and then
+as many of you may not know i
+so i showed up first day on the job to
+check out those drax
+it went a little too well i was scared
+shitless because the guy who
+let me in
+was the same guy last year
+i thought for certain i was [&nbsp;__&nbsp;] and
+it was a joke and as soon as i got into
+the data center aston kirchner was going
+to jump out with the camera crew
+but
+it worked well
+he signed it
+printed it
+dated it
+even gave me his personal phone number
+on it
+he then guided me out to the floor of
+the server farm
+and managed to find the two servers in
+question pulled them out of the rack
+took pictures
+and took the serial numbers down
+thanked him and went about my way
+how this worked is because there was
+going to be no way into the data center
+except for a front approach
+this tests the policies and procedures
+that you already have in place for a
+technician or a third party you assume
+with that third party vendor agreement
+that you do every year
+or once in a lifetime that you do will
+cover you on everything that's something
+you need to look at closer is what are
+these third-party vendor guys coming
+into my enterprise doing
+and how do i validate that
+because just with a simple piece of
+paper i printed at the hotel business
+center
+and a t-shirt from a thrift store and a
+notebook or a notepad
+i walked right into a data center pulled
+servers off the floor got numbers
+had my hands on everything you never
+wanted me to have
+and it was all because of a piece of
+paper
+so you saw earlier i put my real name on
+that document
+and there's a reason for this when you
+do pen testing or social engineering or
+red teaming you want your name that you
+give out to match that id which is
+government issued to you in your pocket
+because if things go sour
+and the police show up or something else
+happens they're going to ask you why is
+your name bob smith when it's actually
+trent
+and
+that starts a whole another
+problem down the road especially here in
+the u.s with some of the legal rights of
+police stopping you with ids also if
+you're overseas
+you can get a lot of trouble
+by not having the name that matches your
+id and your passport so always use your
+real name when you do some of these
+things it's also easier to keep things
+straight in your head so you won't
+forget your name
+so you won't be sancho or whatever
+you're gonna use your real name you can
+keep it in your head you can keep
+everything in track
+so
+that's why we always do that as dumb as
+it sounds and looks if you get caught by
+the cops or something goes south or the
+chinese government gets a hold of you
+it's a better day if your id matches
+everything that's in your story
+so another reason to use document
+forgery is at work went to madrid
+at madrid was supposed to break into a
+financial institution housed in a
+building no one told us in this building
+there were three countries consulates
+and embassies in this building with
+their private security firms
+the building also had its own private
+security force which i did through recon
+of jogging behind the building one night
+discovered the nice men with machine
+guns
+so
+this building we weren't getting in we
+weren't repelling we weren't doing any
+crazy [&nbsp;__&nbsp;]
+if we did we were going to get caught
+shot or started an international
+incident
+so we decided to go the social
+engineering route direct through
+so we got ourselves invited to a
+restaurant on the 33rd floor of this
+building which we had no right being
+ever in our lifetime
+and we did that to see what the process
+was to get in the building that
+confirmed it even worse we had to go
+through scanners
+we went through a metal detector
+we then went through a pat down and into
+a check in area with turnstiles we
+waited there and an escort would escort
+you
+two escorts per every person both
+escorts had machine pistols
+they walked us all the way up to the
+restaurant
+and sat us in our chairs if we needed to
+go the restroom they would escort us
+there
+so we realized the severity of the
+situation was even further and i was
+there with my co-worker ryan jones and
+he turned seven shades of white as soon
+as we left that building because we knew
+we're gonna get shot tomorrow morning so
+we decided what could we do to get
+through all this
+paperwork we're going to come in as
+auditors because he's going to suspect
+auditors and by the way my spanish
+sucked
+so
+we rolled in with a auditor pretext and
+here's kind of a censored version but
+you kind of see
+this document is a primary document it's
+very short very sweet very simple it
+tells you exactly what the [&nbsp;__&nbsp;] going
+on right now in under three to five
+seconds you look at it you go oh audit
+i don't know what the hell uh s-a-s-a-a
+audit is but it sounds official sounds
+legit
+everything checks out you have call back
+and verification numbers a 24-hour
+contact number
+so if you have any questions or doubts i
+already addressed them with a phone
+number for a 24 hour contact number that
+my buddy in the parking lot sitting in
+the van has
+so
+that's another validation mechanism but
+you keep it very very short simple
+this worked very well
+because we also had a signature at the
+bottom which i'll show you here shortly
+but the other thing is
+is we used a bunch of documents we found
+in the hotel business center we dug out
+of the trash
+and we dug out several documents and
+just printed random inventory sheets off
+of office documents
+uh templates so that way we had stacks
+of paper
+why that was important is when those
+escorts were escorting us to the guard
+station to get our id badges
+i did the most spectacular trip over my
+feet 52 card pickup
+sheets of paper flying everywhere fall
+flat on my face bloody nose stumbling
+around dumb american
+that when i dumped all that paperwork on
+the guard station to get going it
+frazzled her so much
+that she just said [&nbsp;__&nbsp;] it here's a
+visitor badge get the hell out of here i
+i don't you're an idiot i see the logo
+of the client on this paperwork just get
+the hell out of here
+so what really sells a lot of things is
+signatures
+on documents and how these are really
+easy to fake and forge
+is do not do it yourself have someone
+else
+outside of the engagement do the
+signature for you take a picture of it
+so
+using photoshop you can get it free the
+cs2 take that image pull it in
+you can see right now
+you have some of the artifacts in the
+paper
+if we go ahead and print this we'll get
+all these artifacts and all these kind
+of soft rough edges
+we don't want it'll look with clipping
+around the area that we cut out we'll
+have clipping and you can see that you
+pasted it in from somewhere else
+to get around this real easily and
+quickly
+and we're going to go to threshold
+and what threshold does
+is allows us to adjust the absolution
+of light and dark
+what it does is allows us to drop
+absolutes and have more of a solid basic
+outline or shape
+which in this case is just black and
+white which is great so we
+usually you can accept whatever comes up
+as a default
+and as you can see it now
+it's taken the background and made it
+all even it's kept everything sharp and
+crisp and black
+you can copy this in now
+and paste it into word or save it as a
+picture and paste it into whatever
+document layout system you're using and
+it's going to look like
+it was part of the original document if
+not signed and sent via fax or email or
+scanned pdf
+and that way you can do this in just a
+so occasionally you're going to run
+across problems when you're doing
+testing out in the field and everything
+a quick way around this to adapt
+is
+look at what you have around you like if
+you're staying at a hotel your hotel
+business centers are badass because you
+can print id cards badges
+pretty much anything you need to to
+forge anything short of a passport
+at a business center it's great and
+usually free also you're going to run
+across information say if you're trying
+to target someone
+who's having a conference or a function
+in town find the hotel where all those
+people are staying at and go through the
+business center you'll find everything
+from
+computers still logged in to linkedin to
+usb keys all sorts of fun stuff uh if
+you can't find that you're traveling
+around
+car rental staff is really helpful for
+printing stuff out because sometimes you
+don't want to carry all these documents
+with you into another country or
+just carry them in general to save
+weight i found everyone from hotel staff
+to car rental staff will help you print
+stuff out if you ask nice enough
+so again covering all your bases with
+the document you can forge them very
+quickly as simply as grabbing a template
+and then throwing a picture onto
+something or company logo but you want
+to make sure you've got some things to
+cover your bases
+such as a callback number put a callback
+number give it to your friend
+get the phone ready so if someone has a
+doubt about that document they can call
+that person immediately and your body
+fills in and you have a two-pronged
+social engineering attack
+uh when in doubt print everything in
+black and white so that way it looks
+like it came out of a business and it
+looks like it came out of a copy room
+from that business nothing fancy
+when in doubt also use signatures as
+much as possible signatures are a thing
+that we have too much trust in and we
+use as a validation mechanism that if we
+see something signed it must be legit it
+must be official and okay to go through
+and again
+ocean ocean ocean you can never have too
+much ocean
+do your research that way your paperwork
+and your documentation looks like the
+targets it's intended to do
+so it's very easy to prevent these kinds
+of attacks
+and it's also a very good mechanism to
+use to test your company internally
+the only way to prevent this 100 percent
+effectively is through education
+educate your staff and employees what
+documents look like what validation
+mechanisms and processes you have behind
+them
+and how they're supposed to operate and
+work also all policies and procedures
+should be accessible to all your
+employees so if there's any a question
+they can check to see if should this guy
+have this piece of paper should he be
+going into the server room with it
+uh implementing validation mechanisms
+are great if you're doing like help desk
+phone calls
+use the mechanism of a callback to
+verify that the caller is in the gal or
+the outlook address book and is an
+actual employee
+on the other hand
+something that every business fails to
+do in america
+is implement an escape plan for
+employees
+and this is how most american companies
+fail in social engineering is they don't
+have an escape plan for an employee to
+enact when they're faced with a tough
+situation
+in the case of using authority
+to press an employee for credentials say
+in the
+case of a password reset
+the employee needs some way of backing
+out if that person is of a higher rank
+and pressures them
+and they don't think it checks out they
+need a mechanism in which they can pull
+out of that situation safely
+and bring in extra help we don't have
+that in any of our workplaces and it's
+really bad because it puts people on the
+spot and perpetuates life cycle social
+engineering you need to give employees a
+way of safely backing out of a situation
+or implementing another control
+mechanism so they don't feel pressured
+or any kind of anxiety in dealing with
+the situation employees should have the
+same amount of
+uh respect and no fear of anyone from
+the ceo on down so that way if someone
+is forced with a social engineering
+scenario
+they can't pull the authority tag and
+force someone to a situation you gotta
+back out
+also annual testing if you guys don't
+test with this with outside groups i
+highly urge you every year internally or
+quarterly to test
+you have new policies and procedures see
+if there's holes in them see if the new
+uh documents documenting how the guards
+are supposed to deal with people turn
+styles and id badges at the front
+actually matches up with what goes on
+rather than the guards just kind of
+letting some people through in the
+morning and sitting in their chairs the
+rest of the day
+always test see if anything opens up new
+holes and whatnot
+again if you guys have any questions or
+need anything this is basically a a week
+class i crammed into 15 minutes so if
+you have any questions or anything let
+me know we actually go through
+forging documents of all sorts and
+actually targeting scenarios so you get
+an idea of how to
+conduct these attacks usually is what
+this is about so
+what
+yeah
+that's where i'd go with the audit
+route because i would draft audit
+documentation that would state that hey
+you saw what happened at target we're
+trying to keep it low-key we don't want
+to alert anyone so we have falsified
+results with the audit
+so that's why no one notified you of my
+presence on site
+if you have any questions
+here's who you're supposed to contact
+it's out of your chain of command we're
+keeping this very very hush hush we
+don't want to end up in the news
+and frankly i don't want to have to
+write you up as the guy who prevented me
+from preventing the whole company from
+ending up in the news
+it's a simple five minute conversation
+here
+let me in if not you call my boss it's
+it depends on the person so that way
+i've
+forced you into corner two different
+ways
+you can be a total dick
+and try to validate every single part of
+my story now
+or you can sit there
+and look like a complete idiot and make
+a call to a guy he's going to be like
+yeah aaron should be there let him on in
+in fact give them the keys to the server
+room
+you use the processes of a company
+against itself that's why you want to
+test internally to make sure that these
+processes you have in place
+have like in that instance a back door
+or a back out for an employee
+so if i press you with this you should
+have some sort of validation mechanism
+that lets you go sideways maybe and have
+your boss
+then be the ones responsible for signing
+me in
+if you don't feel appropriate or
+very rarely because
+in these situations you don't want to
+give an opening
+you don't want to give options you want
+to keep things very simple like you saw
+the documentation i had was no frills
+that's why i say use office templates
+because in that way you're done
+download slap logo in it [&nbsp;__&nbsp;] it call
+today you're done
+but that way you have very little things
+that you can check against or really
+validate or really dig into
+you're like well this looks legit i mean
+it's crappy documentation but
+he uses the right words and stuff
+so yeah signature signatures are easy to
+fake
+so
+i also will not give this talk again in
+front of boy scouts because i got into a
+lot of trouble
+so
+what
+uh this year is going to be interesting
+so
+that client we did
+three buildings and data centers in one
+day
+the first year
+by 3 pm we're done calling them they
+were kind of baffled
+so they set up and said hey break into
+the server room it's got biometrics and
+a one-way camera and one door good luck
+and well 3 30 we call and we're like
+we're done
+so this year i felt horrible and i
+actually recorded the whole thing i have
+a id batch with a camera embedded in it
+so it's microscopic and small i wore
+that in
+and record the whole time of what
+happened and i felt so bad because i
+thought this guy was punking me
+seriously because he let me in again he
+signed everything
+he didn't and he didn't even recall
+didn't even remember that goes back to
+the apathy
+if you have employees that are facing
+the same thing over and over day in day
+out they get apathetic and they get dead
+to what's happening they drop their
+guard you get in easier
+so one of the recommendations for that
+guy was in the data center was we
+recommended air conditioning and climate
+control in mandatory breaks for the data
+center staff
+so that way the staff was forced out
+every hour for about 10 15 minutes
+whether they smoked or not they got up
+walked away came back were refreshed
+forced to go the bathroom and putting
+climate control in helped them to keep
+everything cool
+so that way people wouldn't fall asleep
+or get tired
+so again it's addressing things at an
+i found
+server
+server names on documents through meta
+data on the web
+so i thought well if i throw out of
+server names it'll help validate why i'm
+there because i have something that i
+should not as an outsider
+it's plausible as a third-party person
+that i'm going to have these
+also by doing additional research we
+found purchase orders out there so we
+knew that the client used dell
+and if you want a good little tip go to
+your uh
+clothing stores or your thrift stores
+wherever i travel i go to the thrift
+stores and i find everything so i have
+everything from
+uh dhl uniforms to fedex uniforms to
+tsa uniforms now
+but just go to a thrift store and look
+around and find what's there it's pretty

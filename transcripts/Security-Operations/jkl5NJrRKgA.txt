@@ -1,0 +1,972 @@
+what that's all about and this is a
+great example of what SEC ACC is all
+about so let's learn about old school
+game consoles so give give Kevin a warm
+welcome to the stage thank you so good
+evening everyone my name is Kevin
+Shackleton I am a distinguished engineer
+at cerner I've been in Cerner for 15
+years now which is not something I
+expected
+and currently on Cerner I am responsible
+for almost all of our security and
+engineering so I worked basically with
+all the teams within engineering to
+ensure that we write secure code and
+that we're making security of
+first-class on design concern so growing
+up Nintendo was my life so I was a
+complete Nintendo fanboy I still AM and
+I play my Nintendo incessantly when I
+was in fourth grade I got a Nintendo for
+my birthday after a few years of begging
+and I never looked back and I've brought
+my my Nintendo from fourth grade that's
+that's you know last after grade school
+through high school college and beyond
+with me here tonight
+salia in there I never had that an
+antenna power glove I know I know I
+wanted to be so bad
+yes now for those of the don't know
+Nintendo actually came about after
+something called or what we now called a
+video game crash of 1983 so in in 1983
+the video game market went from a two
+million dollar industry down to just a
+hundred million or so dollars so it was
+a ninety seven percent decline all in
+one year they just it just plummeted and
+so you know these days when we look back
+at the video game crash were at 83 we
+attributed to a few factors number one
+was a glut of all the consoles that were
+out at the time so you had competition
+from Atari a television ColecoVision and
+so forth this is before Nintendo mind
+you another one of the big factors was
+competition from the computer industry
+so yeah you know computers that were
+coming out that could say hey we can
+play games and do a bunch of other stuff
+like exciting things like spreadsheets
+and another reason why that we attribute
+to the video crash is the glut of video
+games so for instance the Atari 2600
+which was the most popular system of the
+time had over 700 games that were
+developed for it now most of these games
+were not developed by Atari though some
+like be terrible and it was faint up
+here but the terrible et game was you
+know most games were from these
+third-party kind of fly-by-night
+companies have come in to a clone of a
+game and dumped it on the market and you
+know parents and kids weren't you know
+we're aware of what was good what was
+bad now two years that the video game
+crash lasted for two years and Nintendo
+actually came out and kind of
+resurrected the whole industry so there
+was a time before a Nintendo during that
+crash grade where people thought that
+the video game industry was just a fad
+Nintendo showed up and it actually had
+to be called the Nintendo Entertainment
+System because they didn't want the word
+videogame there because they'd want to
+be associated with video games and
+Nintendo came out and and pretty much
+resurrected
+fire industry and you know it's never
+looked back no Nintendo learned from the
+video game crashed 1983 they didn't want
+to repeat that same that same issue in
+the market and so they had something
+called the Nintendo serum seal of
+approval or seal of quality now for
+those who who are up on their Nintendo
+games this is part of the 13th this is
+not representative of quality of video
+gaming in fact Friday 13th is regarded
+as one of the worst video games of all
+time worse than easy worse than ETS I
+would say yes worse than et now what
+this seal of quality was really about I
+mean Nintendo you know had the seal
+point it says you know this is your
+assurance that Nintendo has approved and
+guaranteed the quality of this product
+but that's not what this is what this
+seal was about really this was Nintendo
+tightening their grip on the the
+distribution market for games for the
+net for the original Nintendo now what
+this meant was was that your game had
+have two years of exclusivity to
+Nintendo so your game can only be out of
+antenna for those two years additionally
+you can only develop at most five games
+per year
+all right and there was a content review
+so back before Apple made content
+reviews awesome with their App Store and
+the trend Nintendo is doing the same
+thing and then finally and this is
+crucial here
+Nintendo controlled the entire
+manufacturing process for games they
+required an upfront payment so if you
+said you wanted a 100,000 copies of your
+game Nintendo might say well we'll only
+give you 50,000 and we won't payment for
+all 50,000 copies of the game and if you
+don't sell all 50,000 then you can't
+return and I know what's coming up here
+I've been here he's been here before but
+he hasn't spoken here before for those
+of you that are new we have a little
+tradition here that if this is your
+first time speaking then you have to
+take the shots so Kevin a big round of
+applause for being a first time speaker
+[Applause]
+thank you so now these rules here for
+this for Nintendo it seems like why
+would you follow these rules right well
+Nintendo actually enforce these rules by
+making security and part of their
+console which was was very new to the
+industry so you know the only way they
+were able to enforce this is to have
+security built-in I'm going to talk
+about that security in the Nintendo as
+well as other systems so now I want to
+transition them into an awesome game so
+anyone played Mega Man 2 awesome
+using our people so I've got a modified
+version of magnitude Mega Man 2 is
+Austin game it deserves that seal of
+quality and so what I want to talk about
+for the rest of my presentation here is
+how to Nintendo building security to
+their system how do they make that a
+design concern and how is it broken as
+well as I want to go into other video
+game consoles to talk about the security
+and those systems and what I want to do
+is relate the security in the consoles
+and the games back to the software and
+systems that we built today because
+there's a lot of stuff that we can learn
+you know from lessons in in how security
+was considered or not considered in the
+design and how it was broken so with
+that if you would indulge me a bit I
+want to continue my presentation here
+from my my Nintendo that I modified so
+that I can basically play whatever I
+want in here and I'm gonna switch over
+here in a second so if you could switch
+did I blew in the cartridge yeah
+actually it turns out you should
+actually not blow on the cartridge it
+builds up condensation on your game I'll
+explain why actually the a lot of games
+don't work you have to blow on the
+cartridge so let's get started here so
+I've got okay Mega Man 2 I modified it a
+bit percent Casey here just a little bit
+it's modified a little bit more
+that's much better okay alright
+[Music]
+okay so thankfully Mega Man 2 had
+everything I wanted to talk about here
+so I just replaced into the things we've
+already talked about the video game
+crash of 1983 and so let's talk about
+our first disco before the video game
+crash
+now in television was out before
+Nintendo so this was a system that had
+about 20% of the market at its peak you
+know next to the Atari 2600 and the
+Intellivision had some competition from
+another company called Coleco and then
+click o came out with a console called
+the ColecoVision now anyone own our
+playfully coalition awesome colecovision
+is actually next to Nintendo my my
+second favorite system and you can see
+here that clinco pretty much copied the
+Intellivision like the controller design
+is the exact same the console looks the
+exact same
+they were shameless here now with that
+being said the ColecoVision like I said
+was awesome but in television did not
+like that click Oh vision was pretty
+much coming into their market and and
+competing with them and so with the
+Intellivision - they came out with what
+one is now the first rudimentary version
+of some security built into a console
+and we when you put it up here in
+television - and put in a game this is
+what you saw so you got this this title
+screen or this copyright screen that
+said you know Mattel electronics
+Battelle was the company that made
+television you know they present this
+game and then have some copyright at the
+bottom there was actually Wireless the
+Intellivision you know buy versions
+Wireless but the original version
+matey's was not but I hacked everything
+so it's all everything's Wireless like
+this controlling your Wireless so in the
+Intellivision was controlled by
+something called the exact program the
+exact program is basically the code that
+booted up when you're when you turn on
+your television and what the exact
+program would do on the Intellivision
+- is it would check the copyright year
+in the console in the garret sorry in
+the game so with a rom of the game it
+would say is the copyright year well
+first of all they check bit 6 of address
+500 see and if that bit was 0
+they just halt so the game doesn't load
+then they check the copy right here and
+if the copyright here is less
+1978 are greater than 1982 so basically
+the copyright your had to be 1978 to
+1982
+if so the game would boot if not it
+would just hang there so you can this
+green screen okay now why do they do
+this well they did this because the
+Intellivision two games from Mattel all
+follow this here then colecovision games
+which I forgot to mention that the
+ColecoVision not only did they compete
+with television on the on the console
+the Coleco made games for the
+Intellivision which in television did
+not like at all
+well the Coleco games for the
+Intellivision did not have a copy or a
+year between these dates they did set up
+in six of address 500c and so the clinco
+games when you bought your new
+television - and you took the Coleco
+game that are supposed to work and you
+put it in it just didn't work and clinco
+didn't know this until the Intellivision
+- actually came out and so they you know
+it took them a bit to actually figure
+this out and come out with new games now
+by this time the crash happened but this
+is like a very rudimentary security
+check here and it was very easy for the
+clinical engineers to - subverts but
+it's notable here because it's the first
+time that any company tried to do
+something to print games that they did
+not want running in their system so
+let's move
+[Music]
+and if you don't appreciate these
+transitions I'm sorry but it's going to
+be the entire time here so drink up and
+enjoy so if I would open up my Nintendo
+here this is what I would see this is
+the motherboard the Nintendo we're
+looking at it from the top down the
+games loaded from the bottom here and if
+I highlight here this chip here this
+chip is the is is the the security man
+in the console and this is called the
+CIC or the checking integrated circuit
+we also call it the ten nest chip so the
+ten nest chip acts as a lock so in your
+console you effectively have this this
+chip which is a lock and in the our
+megaman game here the modified megaman
+game that i've got in here it actually
+has that exact same chip it's literally
+the same chip it's just wired
+differently and in the configuration in
+the cartridge it's wired up as a key so
+what happens is when you boot up your
+nintendo the lock tries to it generates
+the seed so a random number it then
+communicates with the key in the
+cartridge and it sends it the seed both
+the lock of the key remember these are
+the same chips but they're just
+operating in different modes
+they both compute the same calculations
+on that seed and they should both get
+the same result right the key will send
+back the result to the lock the lock
+checks to see if the result coming from
+the key matches what it computed at the
+lock if they match everything's fine
+if they don't match for any reason
+whatsoever then the lock the chip there
+in the console sends a reset to the CPU
+and it resets your console so when i put
+that in the game in here when he did as
+a kid and he turned on your nintendo and
+that red light flashed what that likely
+means is that the lock cannot
+communicate with the key and usually is
+because the game doesn't have a good
+connection to your console so when you
+blow into the cartridge like I did or
+you blew into your Nintendo and you
+thinking or blowing dust around and the
+recent research of the cartridge in what
+you're really doing that blowing
+actually has no effect essentially a
+harmful effect but when you put the game
+in and you keep repeatedly doing that
+your reestablishing the pins and trying
+to get a better connection so so
+basically the Tendo design security is a
+you know into the console no other
+console had done this this is how they
+were able to enforce that seal of
+quality and that's because member they
+control all in manufacturing this is key
+the 10s ship was only manufactured by
+Nintendo and so when you wanted a game
+made Nintendo would make the cartridge
+they take here your your ROM code they
+put it on to the chip and they make the
+entire cartridge there which meant that
+also they can get a cut of every game
+sold right because they can they're
+charging you for that that that service
+now if we look at the patent for the
+10's chip it actually describes this
+interesting scenario which is that if
+you have a scenario where you have a
+Kiki configuration so in your console
+it's wired up as a key not a lock that's
+an air scenario and an air scenario the
+tendinous chip doesn't work so it
+doesn't reset your CPU and it allows
+whatever you want whatever code you want
+to run well that means that if we sniff
+that fourth pin on the bottom there
+that's the positive five volts of power
+coming from our Nintendo console and if
+we snip that now our our tennis chips
+don't want to drive power the cartridges
+don't have any power drawn to them then
+the lack of power is what causes it to
+act like a key so just snipping that
+chip in your Nintendo well literally
+just the same on the 10s chip and now
+you actually won't have any issues with
+the game loading you can play games that
+are games to bring yourself and burn
+onto your cartridge you can these are
+all region-locked so all the 10s chips
+have a region associated with them so
+this is a us in Tendo so I can only play
+us games like get European games or
+Japanese games and play them in here
+just by doing this so the more
+the story here is that you know all this
+logic is client-side right so if it's on
+the client if I have control over
+because I'm the client I can do whatever
+I want here something that would break
+the security so now there's another
+attack vector here which is you can just
+knock the CIC offline and that's what a
+few game developers figured out which is
+remember to operate as a lock it draws
+positive five volts of power from the
+Nintendo well some game developers who
+did not want to pay Nintendo licensing
+fees created their own cartridge and
+they put a voltage chip in there in
+their game that sent negative five volts
+of power to the Nintendo which inverted
+the positive five volts the CAC chip and
+it knocks off mind it doesn't do
+anything so basically does not bring and
+now their games would run now their
+games that there's a game demo person
+that did this made terrible games so it
+really was worthless but is an
+interesting attack vector and Nintendo
+actually fix this later revisions by
+adding a diode on there to protect
+against those voltage spikes so the
+moral story here is that the Nintendo
+designers weren't considering that there
+would be a malicious cartridge inserted
+into the Nintendo and so you know they
+weren't checking their inputs right they
+didn't have that diode on there so but
+they wised up on a later revision of the
+Nintendo there's a final attack vector
+which is simply to clone your own cic
+chip and that's actually what a company
+called tendon 10gen did so if anyone
+remembered these Nintendo games they
+look very different than the normal
+Nintendo games they're not gray they
+were black it says tangent on the side
+this this one here is is gauntlet and
+what is inside of this is a clone of the
+ten Ness chip so the engineers a tangent
+reverse-engineered the the 10 best chip
+permanent end note and it acts just like
+the 10s joke so they had access to a
+Nintendo they had access to other
+legitimate games so they just reverse
+engineered that
+and put it on the cartridge here now
+interesting historical note 10gen is
+actually Atari
+so Atari created another company called
+Tenjin to develop nintendo games for
+licensing reasons which meant that they
+were big target and 1002 sorry had a big
+lawsuits over this ok so moving on from
+Nintendo let's talk about the the Sega
+Genesis so miss Sega Genesis here was a
+great system and they had something very
+similar to Nintendo's seal of quality
+were sorry the seal of approval Sega had
+what they call his seal of quality and
+this was on most Sega games it was
+actually optional so it was not enforced
+like Nintendo's was where it was a
+required thing but the way the seal of
+quality were to house did it was
+they took a similar approach to in
+television and when you booted up a
+Genesis game and this is actually the
+initial Genesis did not have this later
+revisions did and you would get this
+this copyright screen and the code for
+that copyright screen basically said
+that the word Sega had to be in a
+particular memory address of the rum so
+this is and it was actually documented
+in the Sega Genesis developers like
+documentation so was it something secret
+they literally said if you want a say a
+game to play in the Sega Genesis you
+need to put the word Sega into this
+particular memory address and when you
+do then this will come up that says
+produced fire under license from Sega
+under presidents so that would be this
+the console would ensure that you didn't
+now this isn't a technical security
+measure this is a legal security measure
+because if you did not actually pay Sega
+to license your game and
+for the Genesis and you went ahead and
+put the word singing in that particular
+memory address here then that that
+copyright scream would come up and say
+they'd say you know your game is under
+license from Sega and saying you can put
+the Sega lawyers could point to that say
+hi no you really didn't you didn't pay
+for that and then he would go out and
+they actually didn't do that with with a
+developer so it was an interesting legal
+security measure with it do you know if
+they were successful if they were
+successful uh they were initially
+successful yes but then I think on
+appeal they they lost I believe so but
+you know if do you really want to pay
+for lawyers to go in like oh yeah yes
+you do it barely move oh yeah this
+period okay I should have I say the
+lawyers in the house we talked about the
+Sega Genesis and how they had a or legal
+security measure let's talk about this
+Sega Saturn
+now the Sega Saturn was a notable system
+for being one of the first systems that
+had a CD based media so it did not put a
+cartridge I became on a what looked like
+a CD ROM and the security measure here
+was was physical security so this is
+what a Sega Saturn game looks like looks
+just like a CD right well there's one
+difference in that in the outer edge of
+the CD is what we call a static wobble
+signature basically Sega developed their
+own media that was just like a CD except
+it also wrote this particular signature
+on the Outer Ring and so Sega like
+Nintendo was the only company that you
+know Nintendo produced all the Nintendo
+games Sega produced all the Sega Saturn
+games because they created the actual
+burners that could burn that signature
+and though in the outer ring of the CD
+and the Saturn had a CD reader it was
+capable of reading that static
+wobble signature there now what this in
+the security space there's something
+called word factor and word factor if
+you
+familiar is basically the amount of
+effort that it would take to compromise
+the security here so for an attacker the
+work factor to it to duplicate that
+signature on the CD and or reverse
+engineer the the reader is just too high
+and as a result no one's actually broken
+this yet no one has actually created a
+burner that can write that signature no
+one has created a a reader to read the
+signature now that doesn't mean that
+it's it's not practical it just means
+that it's not worth the effort because
+there's lots of other ways that we can
+attack the Saturn as opposed to going
+through the official security means and
+attackers have done just that now work
+factor is actually described in this
+fantastic paper from 1975 called the
+protection of information and computer
+systems if you haven't read this paper
+and I know research papers to be dry
+this one is actually it's it's very
+relevant it's a very easy read and it
+goes through several security principles
+identified in eighteen seventy five that
+are all still relevant today one of
+these is work factor now work factors
+are today we commonly talk about work
+factors when it comes to cryptography so
+like you know bcrypt we you know there's
+a there's a work factor variable on
+there where you increase it as computing
+power increases you want to increase the
+work factor to make it harder to to
+correct it so that's where we're factor
+comes in today now with the Saturn you
+know attackers basically just said I'm
+not gonna go and messed with this
+hardware because it's it's it's too much
+and so instead they attacked another
+beat so one of the methods is the disk
+swamp attack which is basically you put
+in a real Sega Saturn disk the security
+signature on the Outer Ring is read by
+the Saturn then you yank the discount
+before the game loads and you put it in
+your your burn disk or your here your
+hacks disk and then it you know the
+system continues on and then another
+method is with mods so mods being just
+modifying the system so there's a
+notable
+guy in the classic Finnegan industry
+that that basically bought in his Center
+to load games off of the USB stick so
+you know you have access to the hardware
+it's client-side logic you could do
+whatever you want
+and so you know you'll just bought it to
+to do whatever so you know the Saturn
+obviously still hacked Sony PlayStation
+very popular system introduced in 95 I
+believe also disk based had a very long
+lifespan and the Sony Playstation had
+this thing on the back that was so
+here's the back of the PlayStation we've
+got a parallel ports you know our 80
+ports or our power and the parallel port
+is really what we want to focus on so
+the PlayStation when you when you boot
+it up a game Vita also in the CD had a
+signature just like the Saturn so same
+type same concept of a signature burned
+into the disk that a normal CD reader
+writer could not even see or in a reader
+or write so when you when you boot it up
+your PlayStation with a legit game it
+read that that signature on the disk and
+then it would read someplace in the
+screen texts again sort of a legal
+security measure there and then I'll
+play your game
+well what attackers were able to figure
+out is that parallel port on the back of
+the PlayStation actually had access to
+the the disk drive data bus so using the
+parent using you know plugging into the
+parallel court you can hijack the data
+stream coming off of the laser okay and
+one thing you could do is you could
+inject the signature text which was
+literally just the words or the letters
+SCE EA like Sony Computer Entertainment
+of America something like that is like
+four characters and it differed by
+region and it would inject in the proper
+four characters the PlayStation was
+expecting to the column
+so they had thought that it read it from
+the cd-rom and instead it was reading it
+from the parallel board and then
+additionally the license screen text
+that security sexton was trying to her
+than legalese it was trying to read it
+basically just told the console hey this
+is a multi-disc game and I want you to
+switch discs to the second disc so it
+would stop the rotation of the disc and
+then you'd put in your your hacked game
+where the second disc never had that at
+biggley's text in there so what can we
+learn from this
+well back to that 1975 paper they talked
+about the principle of least privilege
+and we all this is a very common thing
+than you know we know now that's you
+know more well known that I'd say work
+factor which is that you want to you
+know give us something the least amount
+of privileges that it needs and you know
+nothing else
+and I would I would argue that the
+parallel court probably has no business
+in being able to hijack the data from
+the you know the bus the data bus for
+the the CD laser and in reports you know
+that data to the system so what
+playstation dinner when somebody did was
+you know this is the original version
+playstation which came out 94 and they
+actually just fixed it by removing the
+parallel port so it turns out the
+parallel more actually was not even used
+by anything that Sony came out with it
+was just used by people to to hack their
+PlayStation so they just removed it and
+that actually is another principle from
+our 1975 paper here and we refer to this
+now you know the paper it's called
+economy of mechanism which is kind of an
+odd term the term that we talked about
+today is kiss so keep it simple stupid
+that's effectively what that term means
+and so you know keep the design as
+simple as small as possible so a design
+the more simple you can make your code
+the more simple you can make your design
+the easier will be to secure your system
+you know that the less code path still
+have the easier of elevator the easier
+is the reason why
+system easier is to test it and so Sony
+did just that they just removed the
+parallel port and simplify that lessen
+their costs I'm sure and rented you know
+ok next up I'm going to talk about these
+Sega Dreamcast so back to Sega here so
+the Dreamcast a system that I near dear
+to my heart I played this quite a bit
+but unfortunately a very very flawed
+system from a security perspective
+so remember Sega Genesis they just did
+the legal security measures then they
+moved on to the Saturn which was you
+know disk based security you know much
+better required you to effectively Bob
+the system so the Dreamcast right so
+they they should have learned from that
+so the Dreamcast actually had a
+proprietary format so this was not even
+a CD format so the Saturn was
+effectively a CD you know CD format with
+that security signature the Dreamcast
+heading a special format at second that
+said called the gd-rom the gd-rom was a
+gigabit disc right so it's much more
+storage and you know it was your your
+normal CD reader in your in your
+computer could not even read or write GD
+Rob's Sega was the only company that
+produced you know the GD readers of the
+Dreamcast and the GE writers they held
+all control over so if you want to dream
+Cascadia to go for a second
+however the Dreamcast supported two
+other formats number one compact compact
+us soso audio CDs now this is an audio
+CD it just plays audio so there's no
+data on here so let's forget about that
+from attack vector but there's this
+other format here that you've never
+heard of called mil CD now why he never
+heard of the Bill citty well middle CD
+was a format invented by Sega Bill CD
+was supposed to be this awesome format
+there was a compact disc so audio plus
+executable code now you guys are all
+security people when you add executable
+code into anything what does that spell
+alright certain doom and so what the
+attack perfect will figure out is okay
+we can't urge
+okay that's that's not the question
+audio CDs holds no data its audio forget
+that mil CD audio CD plus a school code
+well let's just put exit little code on
+this disk and furthermore let's take our
+GD ROM data let's get that off the disk
+somehow and put that on to this mil CD
+and then let's trick the Dreamcast into
+thinking that this is a game as opposed
+to a mil CD and that's exactly what they
+you know the attackers were able to do
+so basically you can take a regular CD
+you could download an image from a game
+and the way they got the data off the
+game is actually fascinating and it is
+sent over from this talk but basically
+they streamed the data off of the game
+not using the Dreamcast itself so
+getting the Dreamcast to read the disc
+and send you all the data through a
+network port then they were able to dump
+those games they put them onto the CD if
+the games were too large remember this
+was a gigabit disc
+they basically down sampled the arts or
+down set with audio to make it spin
+2,700 mega CD they then burned it using
+the mill CD format which even though is
+hidden by Sega they publicized and said
+here's how you make ville CDs and they
+basically did a you know buffer overflow
+attack so that when the bill CD was read
+in the Dreamcast it then caused the
+Dreamcast to think it was a religion
+game and then you could play verb games
+and this was not why the Dreamcast
+failed but this came out very soon if
+the Dreamcast was released and it was
+really really easy because this also
+happened to coincide with with when CD
+burners were getting very cheap and
+computers and so basically we were able
+to burn pretty much every Dreamcast game
+so what we've learned from this is that
+tax follow the path of least resistance
+so attackers are not going to go in with
+a G Ralph Lauren I try to figure out how
+to write G wrong discs or you know
+create them it's just the work factor we
+get a su hi here's gonna follow the path
+of least resistance and here you've got
+this is they spoke disk format allows X
+Google code so let's
+let's see if we can you know take
+so what I want to talk about finally
+here is what's going on today so things
+have not really changed much the tax
+just have got a bit different so first
+off is that the work factor so the
+complexity of modern consoles has just
+gotten way too high for for individuals
+it's you're not gonna you know I can
+reverse engineer you know a Nintendo
+here but I'm not gonna reverse engineer
+the switch or even you know the we're
+the Gamecube mods are just you
+know pretty much not going to be
+something that comes out anymore because
+the complexity to mod your system is too
+high or just the components on the
+system you know they keep tricking
+things down and it just it's something
+it's impossible and that it's you know
+again it's all client sites that you can
+still hack in it's just they that's not
+worth it somewhere it's your time
+because there are a lot of other attack
+vectors that are a lot easier and the
+attack vectors now are all in the
+software so here is an awesome game I
+Phantasy Star Online this is showing for
+the Gamecube but it came out for other
+systems this was the game that you
+connected to an online server so it was
+you know like a MMORPG back to the day
+and in the game you could configure the
+DNS server that you want to connect to
+there's all sorts of options there -
+well using DNS hijacking so basically
+saying your computers the DNS server you
+can then tell the game that instead of
+going to the Phantasy Star Online comm
+server you instead you point the DNS
+entry to your malicious server your
+malicious server then talks to the game
+and tells the game to pay Phantasy Star
+Online I have an update for you you know
+your version of one oh I have version
+one one for you here's xep executable
+code please run this and the Gamecube
+would then run that code to update the
+game and it would route the Gamecube and
+then you know you've heard of the OS and
+now you can play you know hacked
+GameCube games so again nothing to do
+with the hardware it's all in the
+software so taking advantage of the game
+and taking
+Vantage of exploits in the Gamecube OS
+Legend of Zelda Twilight Princess
+fantastic game for the Nintendo Wii this
+game suffers from a save game file
+attack which is very very common these
+days basically in that game you can name
+Lynx horse so your link is the main
+character of a horse you can name Lynx
+horse and that gets saved on a save game
+file the save game file is on an SD card
+attackers will figure out that if they
+put malicious content in that that field
+for the name of the horse they can
+execute a buffer overflow attack in the
+game and then get you know privileged
+execution of the lesson and routed and
+this actually comes up in a lot of games
+these days where the games are not
+checking their inputs so the you know
+the moral here is that you know you
+can't just you know these game
+developers assumes the only person
+writing the same game file is it's my
+cell phone that you know I'm the game
+and furthermore the player is limited by
+the on-screen keyboard or the you know
+the controller they consider that
+someone would take that saving and file
+it and just you know hack data in there
+so they were checking their inputs and
+then finally Nintendo switch so I just
+got a Nintendo switch a few weeks ago
+I'm pretty happy so far I came out three
+months ago the switch has already had a
+code untrusted code running on it and
+that's because the switch contains a
+browser like many consoles these days
+that browsers WebKit the version of
+WebKit that's shipped with the switch
+was six months old it was probably the
+latest version when they started
+manufacturing at the switch but being 6
+months old there was known CVE and that
+known vulnerability was exploited easily
+with the with the switch so again here
+you know this is just a cat mouse game
+now it's all the attacks of them to the
+software and as we know for those of us
+who deal with software it's it's going
+to get compromised at some point so you
+know the hardware is is probably safe
+and in terms of it's not worth attacking
+it's all just moving towards the
+software these days
+so for those of you in Megaman 2 you'll
+recognize that this is the end of the
+game and this is also the end of my
+presentation so I hope that when you've
+taken away here is you know some of the
+ways that companies invented security or
+try to embed security into the design
+and workings of their consoles and how
+those were broken and how those relate
+to the software in systems we built
+he took just a little bit about my chips
+like you know so so when they kind of
+and what they did specifically like if
+we just maybe place they should want
+yeah so PlayStation one the Mancha I had
+one of those it was you know the whoever
+figured out parallel port had access to
+the data bus then created a chip and I
+think I paid like twenty bucks back in
+college for that chip and it just
+plugged right in that was the easiest
+one because didn't require any
+modification mod chips so technically of
+snipping that pin the 10s chip Nintendo
+here
+that's modding your system it's not a
+chip but those small chips are some sort
+of circuit that you are soldering them
+to your console up to certain pins and
+and it bypasses the security checks of
+console just nowadays I don't think
+anyone bothers upon ship C or because
+they're too complex and you know there
+is always a risk of screwing up your
+so this is obviously Google Bowl but for
+the sake of discussion
+you mentioned the buffer overflow with
+the Legend of Zelda Twilight Princess
+that was really interesting to me
+because you think no first thing you
+know how many characters were they
+allowing you to use donate your horse
+I can't think that would be terribly
+many which then begs the second question
+what does that payload look like exactly
+you know how small was that payload can
+you just talk a little bit more maybe
+about how that buffer overflow is
+exploited yeah so I don't know the
+details of the technical details of that
+buffer overflow and Twilight Princess
+but I will mention is and I should I
+should go look at this I don't I don't
+have internet on here but if you go to
+youtube and search for Super Mario
+Brothers buffer overflow exploit you'll
+find someone who using a computer
+connected to their Nintendo so the
+computer does all the inputs so because
+it's too fast for a person to do they
+actually exploit buffer overflow
+vulnerabilities in the original Super
+Mario Brothers in real time with the
+Nintendo game to write pong and snake in
+the original Super Mario Brothers which
+is amazing using all the original hearts
+you know but they they put all that
+logic in there and then someone else
+sent me after besides talk a another
+marvel overflow exploit for Super Mario
+Brothers as well as The Legend of Zelda
+so people are finding these all the time
+that's it's pretty amazing what they do
+and I I'm amazing their time frankly is
+to figure all that out so but I don't I
+don't know sorry I don't know the
+details of the toilet-paper this one
+yeah

@@ -1,0 +1,249 @@
+I'm going giving like down super breath
+any chance I'm gonna be very useful tool
+that is in cali right now yeah awesome
+stupid reddit a ok my knee brace network
+and i'm gonna talk about dropped it
+forget about it so get robbed is a
+mainline school it's pretty much free
+Loudoun County already now here we have
+postgres is Jake based on it so don't
+like I'm joining too much for it there
+are instances are you soft so it hooks
+public API usage we're sorry get rocks
+uses k becomes public API in Korean
+k-pop organizations so what if it is it
+cold searches organizations and get
+robbed and pulse with github repo
+forever they use heal it so it's in
+searching for certain flags and above
+across stories what it rocks are you are
+is credentials configuration files
+secret keys email addresses a Jes and
+more I'll show you some money to add a
+bit later but what it does is its uses
+information scared research is you doing
+efficient security ops ii we're getting
+pretty much do you'll tighten your
+rosacea and you'll find out oh crap i
+have findings on the site its shows
+using passwords anything in there should
+pretty much have to say not really a lot
+of stuff up a stunning this publication
+is on there and that's not going to add
+so you will figure that really
+furthermore you use different various
+purpose obviously if you have all this
+information from cedar keys to using
+passwords you can do major damage
+let's say I had a scripting from staff
+at and I can decrypt Public
+Communications like you get the vacuum
+of your hands now 22 pretty much do
+anything with one good with it what you
+want the only disadvantage of it Rob
+it's mainly hung with vines right now so
+I get through some that have 400 plus
+findings in them you're Canadians are in
+either each of them and see it means of
+them a lot of them don't get high knee
+deep into something it will show it just
+goes in piles if it is a dump file or
+log file it shoves it up i love it and
+but and then you're necessarily won't
+have it so sunny okay set up in cow is
+easier to do it you can get least is
+real but County it's pretty simple say
+you just taking the top and I got you to
+that did this all other and then if you
+map get installed and then another
+gemsbok drop so one thing you do have to
+do is sign up for me up when you do it
+and threw me get the excess of personal
+token at all you do is generate opening
+all it for me one for it and after you
+do that you start post dresses we will
+give a start-up and all you do is
+creating user you want to be a super
+user create Casper after that when you
+create a database and you can get a
+script in line after that you computer
+you have it rocks are and how you doin
+that the form using the database is
+called using password and then put
+cutting you put in your personal access
+token and from there then you can really
+get up you free becomes repositories for
+organizations up in there
+so what it does after that is it say
+goodbye to Khris Khris as feel database
+amongst local to have a web server super
+one yet results they have some really to
+interface and go through looking any of
+them you see the user's own it's gone
+too busy just bringing everything right
+in front of you but like i said your
+command will help you also it's not that
+easy to draw sword in looking at koh
+phangan by a particular step small map
+so could you have I don't always keep
+paper with this when I do it bring the
+internet so that's not what this does is
+image goober that's what I moved to the
+frequent this and you can also get
+results like this most matches in my
+mind's not I just get a realm of them
+anywhere who is that is going for
+building okay so this is what that you
+finally look like I just have a stranger
+from on it earlier so as you can see
+reddit's on your right has 143 findings
+yahoo has 300 x so you can see that's
+going from repository so young at six
+months 7765 Missouri's drop that's far
+from and resulted in tyranny if I
+findings so all of these are not good
+some money who have enemy but about a
+new off and usernames and passwords in
+them and so you have my name is you
+pretty much want to go in there fix up
+their way so much which is that pretty
+much consists of local can see this and
+this is this every year right now so you
+must even stuff on here and you probably
+take care of that is not the best idea
+to add this on there hopefully hits it
+some sort of executive members you need
+to even about me
+delivers smc credit people have 60
+findings imply an ebony into the resort
+there so now i will show you in action
+so you're a carnal it's alright so i'll
+show you in action verse once you get
+Ross it up all you have to do is I mean
+get robbed dash the leading
+organizations so you put in here not
+everything will show up is of course yes
+from that but you can do there anything
+so in this case I'll do vml since
+they're a local company oh I think your
+buckle with your turn around the country
+so it's like that I'll show you guys
+just was the configuration and prepare
+to the SQL databases the file patterns
+and neglects the organizations across
+stories so now if we leave early even
+bigger across right now this trips 13
+hub agencies it's a wedding usually
+anchor here not help what's gone out of
+there it will just keep putting this and
+won't it's now will you look Lou users
+files and see they have even in that
+should be in there my class so I will my
+sis yeah oh this is bryce 10 good luck
+for something here we want it hunger to
+abuse alcohol
+we don't want to go good talk of a
+property's either so get off this year
+this is your first time speaking in
+second a season you have a drink but so
+that smells delicious and looks plenty
+more inside thank you let's settle here
+for a precise figure so we're saying are
+there any members from risk analytics no
+okay that 26 findings don't if you
+through these yourself because there's
+some stuff in there which isn't a great
+and I'll show you some but actually have
+been a TV person starter LOL gets her in
+we're all these mansions they're
+volunteers girl parts in rabaa keys it's
+not about us nothing that's in Jacob
+settings let's see with him here but we
+did any evening pastor right here's a
+big ability at all let's further there
+there on the more than shovels because
+its controller here's the secret key
+right here and it says right here so the
+Arriba right now yeah is it a secret of
+linear C ship your prob simply with is
+right here and the top second degree
+let's see what's in here keep circling
+going thank you why so it shows I can
+use my familiar but since if it's a
+configuration file get run off and
+automatic and pay something's wrong with
+it so it's mine you think native
+external filter comments or she
+specifically using circa so not
+necessarily something will be honored
+but just because there isn't so like
+here we have a username password knowing
+so again I need you need you Smitty I
+don't know a kind of acting itself using
+default ridiculous for yourself keep
+tracking with her nails and see
+that you yeah names I mean your art say
+crackers are always in the center no-
+libraries a little dirty similar so
+after she's after be no runs it opened
+up sista up web server and get you more
+Erica GI DMX 1750 syrup on it before 90
+90 degree so you free admittance and
+settings of you I in repetition
+a little stuff in it so it's just a lot
+so you see the right here it's good to
+have the extra muscle pains is
+also get sick again I mean they're just
+throwing another wer for anything that I
+mess up there at all and if UV index
+will begin mean this is just fixing
+something clinking on your first 180
+publications this is a terrible it's
+going to get an acting like the top here
+put it thank you can get a GPS spot so
+yeah penis just terrible if NASA and my
+findings apart anyone call for this they
+have done seven years I found pencil is
+war I'm health care so does the moon
+lander proclamation me some of that can
+be brought in out is on here they kept
+username making money at Pasadena's for
+them thanks i'm absolutely being
+artistic so it shows this or
+certificates or near private key it's
+right there even a password for variety
+this is just ridiculous at all it's not
+needs to go away we'll see if they
+change it and just I mean you can see
+scrolling through your he'll be right
+here it's it's a lot eligible items the
+denomination this is getting through you
+can just second something for talking
+about every row you have to go through
+each one these account combination
+valuation there's just so much
+information here it's sealed away that
+it's just white like I give off Louise
+use that's unread strip Solomon born
+okay but it'll bought anything Abel's
+out I said SQL files RAR files anything
+here that this handsome to God it will
+find resolutions and flexin this is only
+for hopefully facing solely from poked
+with a saying hip-hop beat the
+repository so but Michael uses a brand
+indeed a professor so it's not so
+perfect probably the same if you do not
+want to shout louder if you have stuff
+showing up on here really yeah this is
+pretty much and you use it however you
+want for your own usage pretty various
+uses that's all to you before garments
+on here I tried within the rights of
+your background but luckily nothing
+showed over there and we see books
+Spotify as logging to has a lot Twitter
+obviously has a turn if you guys off
+easy back recommendation it's an either
+secret difference in here yeah which I
+so they had three songs yeah but that's

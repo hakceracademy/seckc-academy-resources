@@ -1,0 +1,180 @@
+still want to go over some uh red team
+tools today with you guys um with this
+talk there's no disclaimer uh we're
+gonna teach you the ways of breaking it
+so i absolutely guarantee if you do any
+of this without any explicit permission
+or uh authorization you will get
+arrested
+so
+when you're dealing with red team you're
+gonna break in and the worst thing about
+breaking in is doors they suck they're
+always in the way
+and they're pain in the ass because
+sometimes they have unique mechanisms on
+them
+so
+let's just get right to it let's break
+some [&nbsp;__&nbsp;] let's get into stuff
+i'm going to
+go through three techniques all three of
+these techniques
+not only can you buy the tools and do
+this
+you can actually make the tools for free
+or get them for daily or free at a
+so with doors one quick thing to always
+remember is when you're trying to bypass
+them
+you don't want to draw attention to
+yourself
+and you want to make sure that you're
+somewhat discreet and quiet
+if someone sees you down the hallway
+using one of these things they're going
+to hear you want to know what you're
+so
+one great thing to bypass the door is a
+k22 hook
+and that's what this is it's under the
+door hook
+and what you do
+is you slide the top part under the door
+and this handle on this end you maneuver
+it around
+then you can maneuver this handle on the
+top part
+right here
+hooks the door handle on the other side
+you got you got the ring at the end
+you just pull that
+once you get it on the other side
+what that does is that pulls the lever
+of the door from the other side allows
+you to open the door
+from the other side so you don't have to
+pick a lock you don't have to do
+anything you don't have to worry about
+any of the motion sensors or the
+id cards you just open the door play
+if you're going to transport this
+there's one piece of advice
+what appears to be a good idea do not
+carry the soft rifle case
+you're going to make friends with the
+tsa really
+and they're going to take you to a nice
+little room and have a nice discussion
+with you for about three hours
+so
+another great way to bypass doors is
+simple copper wire
+just the simple stuff you get at the
+hardware store you get a
+radio shack and whatnot
+and what you can do with that
+is
+open most crash bar doors now we found
+that on a pen test by accident
+and have then researched it even further
+in a large portion of your crash course
+how they operate
+is they're actually measuring a low low
+level current on them they're not
+actually looking for you to actually
+physically manipulate the handle to open
+the door
+they're looking for a drop in current
+and then they'll release the door
+mechanism so people can get out for
+safety safety
+what you do is you take your copper wire
+run yourself a strand of it
+poke one hole around and touch the crash
+bar with it the other end touch it
+lower the resistance and the door will
+open
+from the other side once again
+another thing here is uh this is a
+universal way to open up i need to work
+without using a log pic in north america
+in south and central america
+this is a lara's original
+and what it is is
+uh the numbers seven and three are very
+very handy in opening any and all doors
+on the
+you can see right here you got a gap
+where the plunger would go
+and what you would do with that then is
+take your seven and three
+which you have these nice little hooks
+and the three have nice two hooks on
+them then you can then jam in that gap
+you're gonna then pull the plunger and
+pull it forward
+what's nice about these is these are two
+bucks at home depot they're brass
+they're not going to break or bend
+and you can run anywhere on the planet
+including
+london and shanghai and buy these at
+walmart as well so if you can't take
+them on a plane you can buy them
+anywhere they're just the numbers that
+go on the side of the house
+but it's better than any door shim any
+shoving tool that you're going to find
+online in the lock big forum at 70 crowd
+this is two bucks at a store it's going
+to work better and
+if you get caught trying to sneak in
+somewhere
+copper security guard is going to think
+twice about a shovel tool or lock nip
+set
+if he sees these around you can just
+simply just tell them something like hey
+these are my lucky numbers they always
+keep keeping with me for good luck
+so they work on all doors
+you're going to be able to pull all
+plungers in all configurations and pull
+them out it doesn't matter what kind of
+door as long as the plunger is exposed
+in a certain way you can pull it out
+that way
+so
+in all this uh in the future start being
+aware of all these little stupid renting
+kits and all these little gimmicky
+things people sell out there because all
+these things you can go to the hardware
+store find the build yourself the uh k22
+if you don't have one or if you're
+traveling somewhere where you can't get
+one if you go to the hardware store you
+can get those signs in the
+section where they have a realtor slash
+garage sale signs you can take those
+frames and bend them apart
+and use piano wire or a heavy gauge
+guidance wire
+and achieve the same thing on the sides
+uh if you're on site somewhere you don't
+have a seven or three handy and you're
+in an office building you can take apart
+a three-ring binder
+and one of the hooks from the three-ring
+binder works
+just as well as a seven or three to
+reach in that little gap and pull the
+plunger out
+so if you're looking for these tools or
+anything uh have questions
+just give a shout we always like to help
+people find schools cheaply
+and hook people up with other bits of
+information
+you

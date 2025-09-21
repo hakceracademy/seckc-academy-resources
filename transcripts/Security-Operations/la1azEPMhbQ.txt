@@ -1,0 +1,2152 @@
+so we are the biggest and best month to
+be InfoSec event in the world before you
+suppose this stuff meetings aren't
+ungraded that means we say fun a lot
+so conduct if you see anyone topic
+issues by someone with a yellow bag if
+there's a problem some regular yellow
+bag find someone else with the yellow
+badge if you can't find a yellow bag
+find some of us to have these white
+edges so things you should know
+destroyed of data making though this
+persistence and above all do no harm
+that's it we do integration Anakin's so
+if you're playing spot of that we have
+so that said we don't keep a list of
+members or attendees or any of that fun
+stuff
+everyone is approachable so meet someone
+new challenge a key is not people so
+just I thought you guys heard of someone
+go up it's disgusting I again don't go
+after the person and as always esteem
+so does everyone see that big wallet
+that's the shut-the-fuck-up wall work so
+you want to have a conversation during a
+talk go behind the wall SEC KC happens
+because of our volunteers and sponsors
+and speaking of sponsors if you know
+anyone or have a pile of money they
+would like to donate to us or sponsor an
+event get them in touch with me so be
+the change you want to see it's that KC
+so get involved if you don't like how
+we're doing something if you think we
+can do something better get involved and
+we use a vet break the water keeps us so
+please find that so we have enough pizza
+and finally expect to see all our
+friends but yeah and go by swag I just
+was out here tonight with his wife table
+but well normally he's back her office
+black table so I don't mind and here is
+our
+all right who's here tonight a little
+bit louder for [&nbsp;__&nbsp;] sakes people come
+on I know the audio issues subtask but
+hey we got it now right it's the
+important thing all right hold up I got
+a bone to throw y'all for the news just
+to say let me find the HDMI seed be the
+change you want to see we could use some
+help [&nbsp;__&nbsp;] come on I Drive out
+from Columbia every month to do this so
+[Music]
+it's doing that [&nbsp;__&nbsp;] thing again
+where I can't see my displays system
+preferences because I know keyboard
+shortcuts
+[Music]
+this is Catalina's fault not [&nbsp;__&nbsp;]
+cable scale I mean scales I don't give a
+[&nbsp;__&nbsp;] about that I just need to be able
+to see two different displays so I get
+my notes this time there we go look at
+that I know how to do things kind of all
+right separate display what's displaying
+okay cool nothing sensitive that's the
+scary part today I'm working right yeah
+[&nbsp;__&nbsp;] clap for that you [&nbsp;__&nbsp;] idiots
+come on I love you all but
+are you asleep for [&nbsp;__&nbsp;] sakes y'all
+alright so a little bit of a late start
+but this is the news segment if you
+haven't joined us for this before this
+is 40 things that have happened between
+our last meeting at this meeting I have
+15 seconds to talk about each thing
+usually goes pretty humorously because I
+can't keep up with my own notes you
+might be asking yourself well how do I
+actually learn anything about the [&nbsp;__&nbsp;]
+that you're telling me I'm gonna post
+these links in our slack channel if
+you're not in our slack [&nbsp;__&nbsp;] fix that
+get in the slack join the news links
+channel you can get all of these tasty
+stories and their full glory
+alright so without any further ado first
+up we've got this Texas school district
+they got fished at a two point three
+million dollars manner Independent
+School District they said that the
+police department is pursuing strong
+leads though so I'm sure that they'll
+figure out who did this and they'll
+totally get their money back it sucks
+but hey it happened skimmers are of
+course [&nbsp;__&nbsp;] and they are
+opportunistic so we've got one targeting
+a brushfire donation site in this
+particular case the attackers left the
+ATM Sal malware which is a real [&nbsp;__&nbsp;]
+cool name for a piece of malware they
+took alright so there's a bank breach
+over in Australia this group called PNF
+Bank had a hundred thousand names
+addresses email addresses phone numbers
+customer names interesting account
+numbers and account balances that were
+all compromised so Maury enough for me
+to order [&nbsp;__&nbsp;] off the Amazon with your
+information alright I had a bet with the
+guy I wrote here on [&nbsp;__&nbsp;] cash leak holy
+[&nbsp;__&nbsp;] I said it without laughing ok so
+this isn't funny though unfortunately so
+this is a site for cam girls and there
+was a leak now their sensitive data is
+out there their name their birthday
+there's creepy [&nbsp;__&nbsp;] out there
+Hannah Anderson is a children's clothing
+company they had a breach for about two
+months between September and November a
+quote unquote on authorized third party
+had access to payment card details that
+had been entered into their website so
+if you order from that company [&nbsp;__&nbsp;]
+check your [&nbsp;__&nbsp;] if you weren't aware
+whatever you post it online
+publicly other people can see that their
+groups like Trello that make it pretty
+[&nbsp;__&nbsp;] obvious what your exposure level
+is but despite that a lot of people
+don't seem to realize this
+anyway look into that there's a really
+sweet blog post we got on github from a
+guy who's got this new BMW news like
+this is super tight but then he found
+out that the apps were [&nbsp;__&nbsp;] [&nbsp;__&nbsp;] and
+so he decided to hack the infotainment
+center and get the apps that he wanted
+on there really interesting story if you
+hadn't heard you've been living under a
+rock there's a internet explorer
+zero-day that was being exploited in the
+wild so it's bad enough that the US
+government knew about it and was telling
+other people about it that's when you
+know it's really bad it's patched now
+obviously but unfortunately you know
+there's a lot of legacy things that
+require it hopefully people have patched
+vast was found selling all of the data
+that they collected about you to one of
+their subsidiaries as it turns out right
+after this story launched like two days
+after this story broke they said oh yeah
+we're totally gonna close that
+subsidiary so yeah it was totally legit
+we got a blog post from gr security
+talking about a Linux kernel patch that
+didn't actually fix anything and in fact
+made something even [&nbsp;__&nbsp;] worse now to
+be fair gr security has a lot of beef
+with the Linux developers so this is
+kind of bias but still an interesting
+read nonetheless we've got some
+vigilante hacker that's going out there
+and is removing the 4px malware from
+affected devices and leaving a pop up on
+the machine saying hey update your
+[&nbsp;__&nbsp;] [&nbsp;__&nbsp;] and install an anti-virus I
+thought this is a prank at first but no
+it actually appears someone took out
+their C&amp;C proton VPN has been
+open-source let's here for open source
+software yeah [&nbsp;__&nbsp;] right open source
+software it's awesome and now if you are
+smart enough you can take a look at
+proton VPNs code and decide if it's good
+enough for you and/or your business
+we've got Microsoft and they have
+released the Azure security benchmarks
+so okay this is nice because we see some
+standardization we see some guidelines I
+can't hear you talk [&nbsp;__&nbsp;] because I talk
+too loud I'm sorry but it's nice to see
+that Microsoft is is releasing some
+documentation for us New York has
+decided to start thinking about whether
+or not to ban ransomware payments okay
+really cool idea and I understand the
+spirit behind it
+one word hospitals everything's all fun
+and [&nbsp;__&nbsp;] games until human loss of
+life is in your threat profile so yeah
+good luck with that
+our mind is compromised a few different
+accounts I show Netflix here but this
+time they were actually going after
+football teams yes they got the Kansas
+City Chiefs but there's a [&nbsp;__&nbsp;] matter
+because we want the [&nbsp;__&nbsp;] Super Bowl
+yes [&nbsp;__&nbsp;] right um and it turns out
+they actually also compromised some
+social media accounts as well so the
+Twitter of Facebook why
+anyway they compromised that as well
+again not a big deal what are you gonna
+do but you know degrade the public
+opinion of them which can it go down any
+further Kali Linux 2021 came out we've
+got a new rolling release so lots of new
+changes here route is gone you are not
+route by default anymore there is a
+single installer image you can now run
+net hunter without rooting your Android
+device and there's some other [&nbsp;__&nbsp;] in
+there as well
+news flash guys DEFCON actually got
+[&nbsp;__&nbsp;] canceled ok didn't get canceled
+but it did get pushed back DEFCON China
+dude because of yet you guessed it the
+Wuhan virus so hey all it took was a
+plague type situation to cancel DEFCON
+sidenote has anyone here ever seen the
+pseudo website's logo that's the
+official [&nbsp;__&nbsp;] logo this isn't a meme
+this is on the pseudo website
+long story short there was a
+vulnerability in pseudo but it only
+affected to you a few show stars when
+you type in your password
+we've got NIST that are testing some
+methods for obtaining evidence from
+damage forensic devices so criminals if
+they're about to get caught they might
+do something to try and destroy their
+phone or their computer or whatever
+we're trying to figure out how to still
+get [&nbsp;__&nbsp;] off of there if you've got kids
+or if you know interested yous who want
+to get into hacking but can't find a way
+to get like really passionate about it
+Xbox has a bug bounty program now so
+tell your kids hey go [&nbsp;__&nbsp;] hack your
+xbox make it make some money off of it
+pretty cool stuff
+again they are paying a whole hell of a
+lot but more than more than nothing this
+is the two gentleman from coal fire who
+were arrested for a while happy ending
+they are not being charged with anything
+hooray it only took two [&nbsp;__&nbsp;] months
+of [&nbsp;__&nbsp;] and taxpayer money to come
+to that conclusion we've got a
+independent researcher here talking
+about an attack that they have noticed
+on one of their onion services - what
+they believe to be something - dia
+naanum eyes towards circuits so long
+story short they're interested in
+finding the guard node read about and if
+you're interested the zero day
+initiative is a group that has released
+information and is disclosable her
+abilities to vendors they kind of act as
+a broker of vulnerabilities from
+researchers defenders here's their stats
+over the past years they've been doing a
+good job they're patting themselves on
+the back it's kind of interesting and
+cool though when it he was seen
+targeting Hong Kong universities so
+again unfortunately with the movements
+still going on in Hong Kong we are still
+seeing government action against
+citizens of Hong Kong and now we have
+attributed evidence of at least one
+attack - when did he this is a really
+interesting art installment but this
+dude took 99 cellphones put it in a
+[&nbsp;__&nbsp;] wagon and it's creating traffic
+jams really cool right interesting but
+hey could you use this to rob a bank I
+don't know someone let me know if you
+weren't trying teamviewer had a thing
+happened they've been continuing to have
+things happen but in this particular
+case we've got a researcher who has
+discovered that TeamViewer encrypts all
+of their passwords with a particular key
+and a particular IV and yeah we know
+what it is and you can go decrypt all
+that information don't use [&nbsp;__&nbsp;]
+TeamViewer if you are do tools so
+treatise is actually our twist employer
+from not mistaken they've written a new
+tool called flamingo it's written in go
+and it attempts to gather credentials
+that are passed across the network we've
+got a back door and I'm gonna
+mispronounce this I'm sorry it's young
+my software which is one of those
+situations where they make a lot of
+software that is used by a lot of other
+companies so we've got this white box
+labeling like Russian doll thing going
+on as we backdoor that Cisco
+unfortunately had a few vulnerabilities
+to take care of over the past month as
+well collectively referred to as cdeep
+own as they all affect the Cisco
+discovery protocol 2 layer 2 thing in
+five remote code execution
+vulnerabilities maybe four I can't
+remember
+Microsoft teams went out for about 12
+hours or so because Microsoft apparently
+can't rotate TLS certificates on timely
+basis
+I give them [&nbsp;__&nbsp;] for that but at the
+same time I'm also not running [&nbsp;__&nbsp;]
+you know the world's infrastructure so
+all right you know what you can get a
+[&nbsp;__&nbsp;] up there was a breach grid works I
+see you probably have never heard of
+grid works I see but if I told you
+every Medicare recipient in Oregon had
+their personal data disclosed you might
+be a little bit more up in arms about
+this that is the [&nbsp;__&nbsp;] up part about
+these data breaches is that we pay the
+cost we've come to discover that Tesla
+is able to remotely revoke abilities
+from your vehicle which begs a lot of
+questions about like is this like DLC or
+what but that's also kind of scary if
+that system is compromised the
+Washington Post had a really interesting
+article that was posted a couple of days
+ago discussing the real life story of
+the CIA and how they essentially were
+the ones behind all major manufacturers
+encryption usage and they saw that I'm
+gonna mispronounces to Maastricht
+University wound up paying 30 Bitcoin in
+a ransomware demand again don't [&nbsp;__&nbsp;]
+pay unless someone's going to die if you
+don't
+30 Bitcoin was valued at about 300,000
+USD at the time we've got a blog post
+from another independent researcher here
+talking about who harvests personal data
+and where they sell it they focus on
+this one particular company
+lúcia of course hey you have install a
+plugin and it harvests information from
+your LinkedIn and all that fun stuff
+Indiana University wound up accidentally
+disclosing a hundred thousand students
+GPAs to other students again I wouldn't
+have given a [&nbsp;__&nbsp;] about this my GPA
+wasn't great one bad either but if I
+were a proud person and I had a shitty
+GPA I can easily see how someone would
+be upset ftk imager now supports a p FS
+it only took them two and a half [&nbsp;__&nbsp;]
+years hell is apparently frozen over at
+this point but hey that's pretty cool
+information again ftk imager being a
+really good free tool for forensic
+engagements that don't have a lot of
+budget behind him we had a remote code
+execution vulnerability and androids
+Bluetooth stack come about this one was
+particularly scary because it didn't
+require any user interaction whatsoever
+your attacker simply had to be within
+proximity to send you a poison beacon
+and then finally we had the Iowa caucus
+not too long ago and unfortunately even
+the Democrats can't do [&nbsp;__&nbsp;] correctly as
+it turns out they got this app from I'm
+not [&nbsp;__&nbsp;] kidding a company called
+shadow Inc and well read more about it
+if you want
+but it's kind of weird what do you
+expect up shadowing and that is the news
+here 6:15 we've got our first pot coming
+up a couple of housekeeping items here
+real quick set Casey needs sponsors
+sponsors are what helps this
+organization continue as far as the
+facility rental and the pizza purchase
+we literally drained the bank account
+tonight or what we do for pizzas and we
+ran out so if you have a need on an
+organization that would like to sponsor
+that would like to step up and be a part
+of the local Kansas City hockey culture
+then have them get in touch with us
+there's only off of the website at least
+they're supposed to be the websites
+getting refreshed just the new site with
+anyways new sites online there should be
+a sponsorship page on there in order to
+help whoever it is get in touch with our
+contacts here so really really helpful
+also speaking of pizza we sit on a
+monthly email we asked you to register
+for the meeting tonight
+that is not anything more than helping
+us get a people account an actual body
+count for that pizza purchase so we have
+these dialed in all right first talk of
+the night we have some great talks on
+our security reports yes
+inspired by the book nobody wants to
+read your [&nbsp;__&nbsp;] by Steven Pressfield
+security ports reporting is the final
+and potentially most important phase of
+an assessment and today I'm going to
+cover some characteristics of good
+technical writing the general structure
+of assessment reports and some
+real-world tips for improving your
+writing style so I'm a software tech
+writer and buck during the tech boom I
+wrote a book called protect yourself
+online published by Microsoft press this
+was way back before many of you were
+born back in I was young and full of
+life not this worn out shell of a man
+you see today so this presentation is
+important because for pen testers and
+security researchers the report is the
+product it can be a market
+differentiator and the report can create
+advantage so what is good riding
+according to Steven Pressfield reading
+is a transaction nobody wants to read
+anything therefore you must give the
+reader something worthy of their time
+and ask yourself with every sentence you
+write is this interesting I mean sure
+it's interesting to you but is it really
+it's just what the reader wants to know
+so know your audience do not start
+writing until you've defined who is
+reading this document what are their
+expectations what questions do they want
+answered and does the real reader really
+care about such a system so good writing
+versus great writing a good writer can
+create a beautiful sentence a great
+writer can't cut that sentence because
+it doesn't directly support the purpose
+of the document or section great writers
+know exactly what the reader wants so
+let's talk about technical writing real
+quick what is good tech writing when the
+information on paper or screen goes
+straight to the readers brain with as
+little mental effort as possible the
+reader should not even notice the
+writing a good check writer does not use
+complex grammatical structures use $10
+words when smaller cheaper words can do
+the job or insert haphazardly cool
+points just because they're cool points
+everything you write must fit the plan
+structure so your first lesson today in
+technical writing there's three types of
+content in technical documents concepts
+tasks and reference understand the
+difference a concept explains how
+something works a task is the step
+step instructions their procedures and
+reference is a large table of
+information understand these differences
+and try to keep them separate in your
+documentation your second lesson today
+it's a good technical writing is no the
+definition of information there's a
+difference between data information and
+knowledge data is a raw piece or
+collection of something that's just a
+bunch of numbers information is adding
+meaning to the data now the numbers are
+phone numbers now that's information
+knowledge is the ability to apply
+information in novel ways to solve
+problems and all just what you get paid
+for my example here is let's say there's
+a crime in a certain place at a certain
+time your ability to find out which
+phone numbers were in the area and using
+data analysis create a list of potential
+suspects based on that information that
+is using knowledge to solve problems so
+when writing the report demonstrate your
+knowledge again that's what you're
+getting paid for provide the information
+that supports your knowledge and
+acknowledge that there's lots of data
+and also separating and concepts
+procedures and reference and know your
+audience let's talk about the structure
+of reports you have some flexibility in
+how to structure a security report
+however they do follow a general pattern
+they all began with an executive summary
+the executive summary should be a
+one-page five minute read the audience
+of this document is the decision-maker
+tell them only what they need to know to
+do their job save your cool technical
+narratives for later in the document if
+the company does something well
+be sure to mention it so the report is
+not all bad news so the structure the
+remainder of their port provides the
+details and recommendations the audience
+of the rest of the document is the
+implementer responsible for acting on
+the findings so how about some examples
+of report structures Rhino security labs
+said every report should have four
+pieces
+the executive summary it walkthrough of
+technical risks potential impact of
+vulnerability and remediation options
+offensive security has five pieces the
+summary a narrative of work performed
+conclusions recommendations and
+appendices with technical details
+there's a data scan source services had
+seven things the executive summary and
+action plan a table of technical
+findings with ratings
+jaimé below strategic analysis threat
+case profiles conclusion and appendices
+this guy Michael Bozell has five things
+the summary suspect details a narrative
+report summary report and digital
+evidence at the end there's the data
+dump and all of these follow this
+pattern of demonstrating your knowledge
+first then going into the information
+and in the appendices at the end of the
+day of course reports should have some
+sort of visual representation dashboards
+threat ratings ginormous tables here you
+can create a visual style that's unique
+to your organization but still
+conventional and fluid you can create a
+template to use over and over in your
+security reports not just grabbed a
+that's bored exclamation points
+checkmarks more checkmarks for more
+examples go to github search on public
+pen testing reports just see a bunch of
+them and Pluralsight had a nice tutorial
+writing pen testing reports by will Van
+Deventer but before hand I do have one
+more important writing tip that is using
+passive voice I hope you know what that
+is the general rule do not use passive
+voice at best it requires more effort
+from the reader and that's at best
+because with passive voice the sentence
+is missing information so examples would
+be efforts were placed the attacks were
+conducted the assessment was conducted
+you're not saying
+who did the action of the sentence and
+using passive voice may tell the reader
+you're making assumptions about the
+readers knowledge for example the
+passive sentence the password was hashed
+that makes sense to all of us but to a
+reader they may have no idea what you're
+talking about
+so 3 riding an active voice the
+authentication system cache the password
+the readers still may not know what
+hashing is but they know more about what
+they don't know and they can frame and
+ask better questions they have less of a
+panic attack
+passive voice may indicate that you're
+missing information we don't want to
+admit it for example the report was
+generated that's passive you could be
+saying I have no idea where this report
+came from so writing and passive to
+demonstrate that you do know what's
+going on Alice ran a Report Writer dot
+exe was generated the report and finally
+passive voice does have one use and that
+is to intentionally obfuscate
+information the files were misplaced
+that's passive if I were to write this
+in active voice I would say the CEO
+misplaced five that would be an
+appropriate use of passive and that's
+about the only time to use passive voice
+with that in conclusion reporting is the
+final and potentially most important
+phase of the assessment the goal of the
+assessment is to provide the client with
+a comprehensive view of their security
+and their ability to act to correct any
+issues any part that they cannot
+understand or act upon may as well not
+have happened therefore it benefits
+everyone if the team puts in the time
+and effort to develop a clear and
+[Applause]
+[Music]
+[Applause]
+ladies and gentlemen one more round of
+applause for Matt now before we get back
+to the beats I have a request so I know
+that y'all were asleep in the beginning
+of the night and Kayla came up here and
+she told you all about the boulevard
+wall anyone remember what that walls
+called yeah it's told to shut the [&nbsp;__&nbsp;]
+up walls so the thing is is that I like
+to watch these talks too but I gotta sit
+back in that sound booth on them once
+and twos and y'all [&nbsp;__&nbsp;] are
+loud cuz ya'll are awake now if you're
+gonna have a conversation do everyone
+that's trying to listen to the talk a
+favor go behind the shut the [&nbsp;__&nbsp;] up
+wall cuz you're making it so that yeah
+beep so you can tell me you shut the
+[&nbsp;__&nbsp;] up I need to go behind there shut
+the [&nbsp;__&nbsp;] up wall but seriously people
+that want to listen to the talks can't
+hear it so tone your conversations down
+use that inside voice or go behind you
+shut the [&nbsp;__&nbsp;] up wall alright let's get
+[Music]
+[Applause]
+you
+[Music]
+hey house I'm ready new tonight alright
+so I think we all got a good lesson on
+where you go if you want to talk during
+somebody else's presentation right
+behind the shut the [&nbsp;__&nbsp;] up wall right
+alright because you're gonna want to
+listen to this song how many people have
+used email before yeah how many people
+are here under 30 Wow you guys have no
+idea how email works other than the fact
+that you think it's probably antiquated
+and it doesn't make a lick of sense
+right yes yes I am until you give your
+talk I'm gonna assume you don't know
+anything Wow
+fair enough don't trust him he's over 30
+so we're gonna talk about email which
+for better or worse still remains
+everywhere right it's like how does this
+happen but then you think about it when
+you look at all your different
+variations of communication methods on
+your phone right you got signal you got
+slack you've got direct messages over
+here but none of this [&nbsp;__&nbsp;] ever talks to
+each other and you sit there 82 thank
+God email talks to everything for better
+or worse email talks to everything how
+does this [&nbsp;__&nbsp;] work well Joel is going
+to give us a very basic rundown of how
+email the thing that makes the world go
+round that works at a very low level so
+alright so hi my name is Joel I'll be
+your speaker um a little bit of
+everything geek volunteer for the a/v
+crew they don't get a lot today but they
+get a little bit okay a little bit of
+love of the a/v crew alright next time
+they'll get it right and then I expect
+more so the whole point of this talk is
+anybody who's been a female
+administrator has undoubtedly run across
+the surge of fraud that's just been
+pouring in and it just it just keeps
+coming and coming and coming and they
+keep coming up with new and interesting
+ways to get past all your defenses
+so really TLDR if you're gonna watch you
+know what talk this year go go watch
+this talk and then just kind of read
+through this essentially do your Demark
+make sure you set up an email security
+gateway and cry there isn't a hole
+because a lot of this stuff is super
+super simple but it works it's terrible
+key risks that we're talking about here
+is that you've got business email
+compromised which is somebody
+impersonates one of your executives and
+then makes the company make a horrible
+bad decision usually ending up
+everybody getting fired then you also
+got your unsolicited email advertisement
+I think that's been with this since the
+beginning of time spam spam has been
+unwanted but it just kind of had to live
+with it
+you got fishing which is credential
+theft that one that's and it could be
+any number of things it could be
+somebody who's trying to take
+credentials and leverage it to do more
+spam or it could be malware a lot of
+stuff and malware trying to steal
+accounts so it can propagate through
+network so these are kind of the key
+risks to take a look at when you're
+talking about email forgery what is it
+buddy seen the innards of an email
+because you've got that the usual kind
+of you've got the from the two and you
+got the subject
+maybe carbon copy blind carbon copy and
+you got there's a lot more to it if you
+actually open up the email itself you
+have a lot of encoded information you
+have this miles and miles and miles of
+you know header stuff so it doesn't take
+much to make an email look like
+something it isn't
+I can take an e-mail manipulate the
+header a little bit and make it look
+like you know your boss has sent you
+something telling you your fire or
+something like that so you also got
+there's a hundred one ways to do it so
+one of the ways is forged headers
+another one is doppelganger domains
+which is one offs so if you're a school
+district and it's something schools work
+then they just take up something school
+singular work it's happened your
+business undoubtedly somebody's probably
+picked up a whole bunch of one-off
+domains just to you know all around the
+ones you've got just so they can
+multi-domain email security so a lot of
+times you have a really big email domain
+you have to split it out and when you're
+setting your security policies you have
+to set those policies for all of your
+domains not just one or two so that's
+something important to keep in mind
+you also have upstream provider security
+problems so for instance if you use
+office 365 and you only use SPF security
+then anybody that is on office 365 can
+spoof emails from your domain you have
+to set the whole Demark thing to get
+that to work you also have leapfrogging
+where somebody steals your account uses
+your account to steal somebody else's
+and to leapfrog through your domain then
+there's supply chain fraud where you
+have somebody that goes to a vendor they
+know you use spoofs your account to them
+and then gets them to send you stuff and
+then billing you for it
+and then you've got spam calendar
+invites phones and a lot of personal
+devices treat calendar items as it just
+automatically accepts them so
+potentially you'll get spam and other
+malicious communications that way and
+then you have manipulation of your the
+configuration of your security gateways
+so if you're using like anything else
+there's important steps that you need to
+follow when you're setting up an email
+security system one of those things is
+to prevent people from by Kassadin
+because a lot of this stuff sits out in
+the cloud so it doesn't take much to
+figure out well six months ago your your
+SMTP server was here now it's here and
+all my stuff's getting blocked well I'll
+just continue to send it to the old one
+even though DNS hasn't been updated so a
+lot of things like header and display
+name forgery this is amazingly easy
+header forgery it takes a little bit of
+understanding of how email works to
+manipulate the headers so you can forge
+an email and make it look like it's from
+somebody else with the display name you
+know it doesn't require any special
+knowledge you just change the from name
+inside of your email client and then it
+sends out an email with whatever name
+you want in front of your email address
+people don't catch that especially when
+you're looking on a phone a phone will
+not necessarily tell you what they'll
+just show you the display name of that
+person and it won't tell you their
+actual full email address and a lot of
+people don't know the look okay your
+domains come in a lot of different
+flavors there's one office I talked
+about also you can potentially make use
+of utf-8 and puny code and that kind of
+stuff one offs most directly and sending
+emails and trying to do business email
+compromise with Unicode is mostly around
+URLs or something like that you're
+trying to embed inside of a malicious
+email so you can very easily make a link
+that looks like one thing but goes to a
+the multi-domain email security Miss
+configuration Demark consists of three
+records that you have to create you got
+DK a message signing which is a you're
+doing a signature on your each outgoing
+email that you send and that signature
+has to match something that you publish
+on your domain name SPF is a list of
+trusted smtp servers that you're allowed
+to send from so if you're getting emails
+from your company's domain from
+someplace in taiwan and it's not yours
+that's what SPF is meant to deal with
+then but the problem with these is that
+they're very limited in order for them
+to work they have to work quickly or
+else people will just you know bypass it
+so they have limitations on how big
+those records can be so if you have a
+mammoth record with like several
+thousand IP addresses and different
+records and all that kind of stuff it's
+gonna take forever to resolve no one no
+one would want to use that so it's
+limited to ten a lot of times email
+providers will bypass and won't trust
+you if you have more than ten records on
+your SPF and Demark and all that kind of
+stuff so you have to split out a lot of
+your email into different subdomains in
+order to kind of accomplish work and
+still be have a trustworthy email
+address to use when sending emails to
+co-workers and colleagues and that kind
+of stuff so you can potentially set
+policies for the root domain and then
+set kind of a blanket policy for
+everything where you can set individual
+policies on each subdomain so you have a
+lot of options
+a lot of people don't know this and so
+they misconfigure their Demark and SPF
+settings and then all of a sudden you
+can start spamming somebody from a
+subdomain upstream I told you about the
+office 365 trick where if somebody gets
+their email office 365 hacked you can
+potentially spam or spoof anybody that
+uses that and so the only way you can
+get past that is and defend against that
+is to use message cycle so that's the
+important part of making sure you
+implement all of the Demark okay
+countermeasure countermeasures so inside
+each email when your email security
+appliance goes through and receives an
+email it'll go through and a lot of them
+will come up with a score and so it's
+kind of like page rings but it's going
+through the content of your email and
+it's looking for things so it's looking
+at links particularly he's trying to
+look at links to known malware domains
+and then trying to download that and
+figure out whether it's good or bad
+looking at PDFs attachments that kind of
+stuff with a lot of times what I've seen
+is that will receive a spoofed email and
+then inside of it you'll have junk they
+just inserted bogus headers they've
+inserted all kinds of different links
+those links that they like using link
+shorteners and then potentially they
+like recursively short or so a shortened
+link to a shortened length to a
+shortened link to
+to document so you have a lot of that to
+look for when you're looking at
+questionable emails linked to hacked
+websites I think most of them I've seen
+have to do with just stealing
+what we've seen when somebody gets
+fished is that they got it the
+organization and they would set up camp
+inside the person's email box and then
+they would kind of create it so that
+that person could continue to use it and
+any new email that they received that
+person wouldn't necessarily save so
+we've seen it as simple as deleting
+everything in the mailbox after they're
+done or as complex as setting up a
+complex feed system where there's an
+email rule that will take something out
+of the mailbox if it matches some type
+of pattern and put it into some hidden
+mailbox you know deep within their
+folder structure so that that person can
+come back with that person's account and
+continue to use it even though that
+person is unaware of it actually be
+breached so they'll be very quiet about
+it and they want to get the most use out
+of that person stolen account as
+possible and the reason why they'd like
+to do that is because an organization
+takes a lot of effort to make their
+email system trustworthy meaning that
+they have DKIM they have Demark they
+have all that kind of stuff all of these
+things that they can do to their emails
+that make people trust it and they have
+a they have control of a trustworthy
+email account and that gets them past
+everybody else's defenses so the
+supply chain frog we actually saw this
+with Dell somebody spoofed one of our
+employee accounts and tried to get a
+computer with Dell and looked at the
+original email that Dell sent us and
+they said this looks you know weird who
+says yeah it's blatantly it wasn't even
+now they didn't bother to spoof it was
+just header forgery
+where they just changed the display name
+and then on top of all that it was like
+really fishy like they're trying to say
+okay and can you send the this massive
+computer to Iowa on behalf of talked
+about calendar brief abus'd where phones
+and that kind of stuff we'll take
+calendar invites and then just put Adam
+automatically add it to your calendar so
+that day comes along and all of a sudden
+you have your entire day eating up my
+spam advertisements and we talked a
+little bit earlier about the Gateway
+bypass and we actually saw a lot of this
+happening with phishing where they
+realized that we had
+email security gateway and most people
+don't block traffic to their old mail
+server so mail will come into the mail
+server it doesn't check to see if it's
+been through the security gateway or not
+so it's important that when you
+implement any advanced security that you
+kind of patch up that problem so you go
+to your mail server and say don't accept
+any email from anybody except our mail
+in some cases I've seen poisoning we
+mentioned earlier that inside the header
+attackers would like to put lots of BS
+things we ran a couple of instances
+where I saw a bunch of domains that
+didn't exist it was mentioned
+prominently inside of the header I saw a
+bunch of stuff where just links upon
+links we have the recursive links just a
+whole bunch of stuff and it looked like
+they what they were trying to do was
+poison the security school so that's
+something to look for in your forged
+emails is that they'll try to put in
+check so the end games here is that you
+have service theft which is phishing
+malware you have fraud which is theft
+services theft money
+gift cards a very very popular so if
+anybody hops on any type of chaff or on
+email and asks you for a gift card said
+I'm heading out of town and I don't have
+time to go so martini can you purchase
+some gift cards scratch them off and
+send me a picture that's a one X we have
+a lot of that and a lot of these are
+very thinly valuable where it's just
+simple display and or forgery invoice
+fraud where they'll send you an invoice
+of something that you didn't buy and
+they're trying to get you to respond to
+it and open a document bank transfer all
+kinds of stuff and then the same kind
+that's been with this since the
+beginning of time they've gotten better
+difficulties I've had and you've
+probably run into yourselves you don't
+control you may not control your domain
+so you have a third party that's running
+your domain name and you may not have
+the ability to post Demark to get any of
+that information there's a lot of
+certificate security you can add to your
+domain name potentially that will help
+protect against spoofing that if you
+don't have control over it kind of
+limits what you can do with your job
+poorly designed anti-spam tools a lot of
+this stuff just can't handle the tactics
+that we just talked about which is if
+you give it bad information bad urls
+self-referencing URLs any of that kind
+of stuff it just gums it up it doesn't
+work and at the end of the day you look
+kind of like an idiot because you can't
+stop well you as an individual as a
+human being can see this but the
+computer can't because it's working off
+of the static rule set that can't change
+and another thing is is that time you
+spend doing investigations on Rome
+emails fraud and that kind of stuff it
+wears them you know it's an intensely
+repetitive and so if you don't have some
+means of automating that then you know
+you're going to get burned out and
+potentially you're going to miss
+like this so silver bullets
+these are magic things that we are sold
+telling us that solve our problems
+personal favorite victories AAA is
+supposed to be the Silver Bullet that
+could solve all your rows there is a
+wonderful DEFCON AI village talk it's
+available online on YouTube I recommend
+highly that you look it up and it
+discusses means of evaluating vendors AI
+systems important questions to ask and
+other things like that kind of how to
+evaluate whether this is a brand new
+product that isn't going to work very
+well or if it's a tried tested and true
+product that will work well so important
+things there to keep in mind is that it
+works best with static data sets and
+we're dealing with people and people
+know how to change very quickly and so
+AI has a hard time keeping up with bad
+guys encryption email encryption while
+the bed GPG s mine a lot of this is out
+there and potentially is a solution to
+be able to tell who's the good person
+versus a bad person based off of if they
+have signed it with some type of trust
+of encryption this is good in practice
+or this is good in theory practice not
+so good because of how email works its
+displaying something to you and
+potentially going through and showing
+HTML which is being manipulated so
+covering GPG encryption problems where
+people can manipulate GPT clients where
+you send somebody email they respond
+back and they embed stuff hidden with
+CSS and then because you respond to it
+the email gbt client will sign it and
+you can effectively sign stuff as
+somebody else just by tricking somebody
+into receiving an email and responding
+to you
+so encryption great in theory you just
+got to make sure everybody is trained up
+on it and you got to make sure that your
+clients are up to par and nothing to do
+anything silly like that so the business
+partner one I mentioned earlier with
+Dell and somebody sent our dell rep an
+email said hey and then they kind of
+sent it to us and said this looks fishy
+and we looked at him
+it was fishing it was simple header
+forgery it was it was a very poor
+attempt at hiding an identity but I
+think those poor attempts actually are
+more effective because it doesn't
+trigger the email security system as
+quickly so it's just kind of one of
+those things where it's simple it's
+stupid and it works and it's not really
+a problem of the system it's a problem
+of the user not being able to recognize
+it
+we had a lot of people complaining that
+people were getting emails from the
+school administrators saying hey I need
+a gift card it's a loan I'll get it back
+to you I mean it just came in over and
+over and over again and they just kept
+you know and so we found ways around
+that cabins that they used patterns and
+kind of the form letter they use and
+that kind of stuff but it was just kind
+of a cat-and-mouse back and forth thing
+with them and so admin impersonation we
+had somebody use a one-off URL trying to
+impersonate district administrator and
+that was almost work I think we had a
+lot of extra security stuff in the
+background that ended up catching that
+before it became a problem so the
+takeaway here is a lot of defensive
+measures that you implement don't really
+work well by themselves however if you
+layer them up and do defense in depth
+you can defend against a ninety-five
+percent of it so and really the whole
+point of this is to reduce the work you
+have to do this is if you're going
+through and filtering out 95% that's you
+know nine ninety-five percent of more
+time that you have in your day not
+having to deal with this so anything you
+can do to layer up defenses so you have
+to deal with this less and I mentioned
+Demark before is anybody having has is
+everybody familiar with Demark okay I
+see one hand you need to do T mark D
+mark doesn't necessarily defend you
+against bad guys
+but it helps you won your email systems
+become more trouble so you won't have as
+many bounce backs it helps prevent any
+type of advanced header forgery because
+you have encryption signatures and that
+kind of stuff so I have a lot of extra
+resources that I'll show you here in a
+has app for D mark tools and I have a
+link at the end of the presentation here
+if you just want to take a picture of
+that here we go so any case any
+questions okay d mark is setting a
+policy that coordinates essentially
+you're stating that we have SPF and we
+have D mark enabled and if either or
+both of these are failed either the the
+email is coming from a server that isn't
+ours or it has an invalid message header
+site that signature you should do X and
+X can be to block it and drop it or it
+can be to just flag it as questionable
+so when you're setting policies like
+this it's for your it's for your email
+server so it's for the sender so the
+idea is is that when you set up these
+policies then when somebody receives an
+email from your domain it is gauged to
+be more trustworthy because you have
+[Applause]
+[Music]
+so you are not one of my friends sorry
+Jordan
+you're my enemy can you keep your hands
+raised if you love free [&nbsp;__&nbsp;] and keep
+your hands raised if you want to eat
+your spirit bus or you want to get some
+[Music]
+okay good what are you working on right
+now what are you working on right now
+we should be willing to give a SEC case
+you talk about your pipeline devlins
+yeah okay so he's gonna give a talk this
+year and I'm gonna give him a book
+somebody Silas Hanna
+[Music]
+[Applause]
+[Music]
+so before I get started we're gonna say
+it's because I have important stuff to
+say it's maybe because I'm not sure if I
+can feel 40 minutes I called you all out
+for not shutting the [&nbsp;__&nbsp;] up and then
+y'all shut the [&nbsp;__&nbsp;] up so give
+yourselves a round of applause for
+yes I appreciated it I got bigger Jules
+he's up your snap if you can't see
+that's very cute lovely let's see oh
+wait no there was one other thing so
+those of you that don't know again I
+mentioned that come out from Colombia I
+teach an intro to computer security
+course I have some students here wave
+your hands ok employers if there's
+employers behind there shut the [&nbsp;__&nbsp;] out
+wall go ahead and shut the [&nbsp;__&nbsp;] up and
+come up here for a second hey students
+go ahead and wave your hands again yeah
+employers go talk to those students
+those are some smart [&nbsp;__&nbsp;] and
+not only are they smart they give enough
+of a [&nbsp;__&nbsp;] about security to make the
+drive out from Colombia round of
+applause for that all right so I'm gonna
+say that's enough stalling I'm gonna go
+ahead and get cracking on mine hopefully
+y'all brought your laptops with you if
+you wanted to follow along this is going
+to have a a analyze headers with me
+section you don't have to follow along
+with that or anything but if you so
+desire bust out that laptop I'm gonna
+have a bitly link for you to go for I
+assure you in this particular case you
+can trust me you shouldn't necessarily
+trust me in other situations but
+remember SEC Kacie do no harm
+I do take that very seriously so please
+I assure you
+bitly link comes up you can't trust me
+before I get too terribly far again most
+of you probably know who I am but this
+is who I am and what I do I actually
+have another cert I haven't updated this
+as well yeah capitalism sans certs are
+great with Manna Dey expensive so my
+primary role is a security analyst at
+the University of Missouri Columbia
+campus they also pay me a little bit on
+the side to teach security which is
+really cool gig as I basically got an
+extra money just to talk about the [&nbsp;__&nbsp;]
+that I love and then yeah some other
+ship and I am bored you are there as
+well so with no further ado this message
+or this talk I should say it's about
+headers now you might be asking yourself
+what the [&nbsp;__&nbsp;] are headers anyway now I
+realized that I actually didn't finish
+my animations behind that image what you
+would see is the fav icon for the RFC
+website you could go read the RFC's
+odd message headers I've done it it's
+not fun it's boring as [&nbsp;__&nbsp;] so part of
+what I'm doing here tonight is kind of
+personalizing what message headers are
+I'm giving it to you in a little bit
+less of a drive format and hopefully
+you'll learn something in the process so
+again I don't want to talk about the
+RFC's basically what message headers are
+are logs for email they are in fact more
+than that that's not a fantastic way to
+phrase them but conceptually speaking
+this is what message headers are and
+what they facilitate why would we want
+logs for our email because in case you
+weren't aware there are in fact [&nbsp;__&nbsp;]
+that use the internet and those [&nbsp;__&nbsp;]
+have access to email servers as Joel
+discussed everyone uses email email is
+in a big what is communication medium
+what do we like it or not millions of
+dollars of business occurs over email
+message
+every single day there's literally
+quantifiable amount of money that would
+be lost if a company's email server were
+to go down for an X period of time so
+again it's pretty important shall we say
+now before I actually get into analyzing
+message headers and talking about what
+those headers are the first thing I want
+to tackle is how these headers get
+formed as email is being sent across so
+in a nutshell this is how email operates
+so get in ladies and gentlemen this is
+the most technical diagram you are going
+to get in this entire talk man I don't
+think I put the joke one in there
+there's another really good joke
+modification of this image where all of
+the bottom section there is replaced
+with things like the NSA the CIA yada
+yada yada
+haha it's hilarious because the
+government spies on me I'm in danger now
+all of this is how you know works where
+is it that we get headers we will see
+headers potentially added to a message
+at any of the locations that I have
+highlighted in a red box technically
+speaking you could argue that you might
+even see them at sea as well somewhere
+at the corporate network but since they
+specifically call out the NBA's mta's
+for both sides of the network we're
+gonna go ahead and assume you know what
+those are all the systems where headers
+are applying note that no headers are
+applied as it's actually traversing
+between the two mailboxes right are the
+two mail servers they should say headers
+are added in by the mail servers all
+right no arbitrary switch or whatever is
+is adding any additional header that has
+nothing to do with it
+so moving on all right cool what are in
+these headers these are the only fields
+you are guaranteed the from and the date
+I am a hundred percent series you would
+know this if you
+the RFC now in practice you are going to
+get a shitload more headers in any given
+evening in fact you are very likely to
+see all or at the very least most of all
+of the header fields that we see on this
+slide here so moving on
+message headers have a specific format
+all right I've shown that here pretty
+simple p-value there we've got a field
+name a delimiter which in this case is a
+colon by default might not always be
+that way but I've never seen a non colon
+delimiter and then the field body
+alright pretty simple [&nbsp;__&nbsp;] so far right
+so if we take a look at these message
+fields alright one would assume that the
+account hacker man at Missouri dot edu
+sent this email at April 20th at 4:20
+p.m. in 2020 ha ha
+we choked and if we didn't have any
+other info available to us that is
+pretty much the only assumption that you
+would be able to make with this
+information now again you're not
+actually likely to see any email that
+traverses the Internet come to you in
+that form alright pretty much any
+respectable mail server would examine a
+message that contain those headers and
+only those headers and say [&nbsp;__&nbsp;] that
+[&nbsp;__&nbsp;] and drop it all right you wouldn't
+actually see it in practice you are
+going to see something kind of like
+what's on this street again
+oh that screenshot here if you couldn't
+tell but what we've got here is this you
+know pile of it at first glance
+gobbledygook oh well can you see them
+well enough again yeah you can see some
+obvious infamy
+but it's not easy to parse in its raw
+format by a human so we use a lot of
+tools in order to help us see what all
+of the headers are in a given message
+now if we add insult to injury though
+these fields might not always denote the
+info that you think
+so Joel actually touched on this a
+little bit in his talk but if we were to
+see these additional or this additional
+I should say that there's again stuff in
+between there and it's symbolized with
+the ellipses that's the fancy name for
+dot dot if you weren't aware if we saw
+this particular header field here the
+sender that is actually what contains
+the true sender of the email again from
+is something that is easily and told is
+not something that can be trusted even
+though you would think at first from the
+header field although where the email
+came from again intuitive but incorrect
+now to add two more potential for
+confusion we have what are known as X
+hence X don't give it to you these
+headers are where the field is prefaced
+with an X to denote the fact that they
+are experimental they're experimental
+insofar as the RFC message headers
+states that any permanent message header
+has to have a published RFC associated
+with them and practice their what I'll
+call reliable enough all right we don't
+really have any guarantee on their
+accuracy or content but absent some
+malicious mail server who are not really
+probably going to be misled by these
+headings at least not intentionally
+again these headers are applied with the
+best of intentions but aren't always
+correct due to the fun modern ways in
+which mail is sent
+no worries no we've got lots of tools to
+do this job for us
+I've got a short listing of possum
+tools that you could use here first up
+there is MX toolbox this is a pretty
+common tool one that I heard about a
+long time ago Microsoft now also hosts
+their own mail hitter analyzer on Azure
+instance and then finally I'm a really
+big fan of this project called MH a male
+hitter analyzer
+I prefer MHA because I can run it
+locally now don't get me wrong I have no
+real reason to assume that an X toolbox
+or Microsoft actually gives a [&nbsp;__&nbsp;] about
+the headers that I'm putting into their
+tools right but again why why take the
+risk
+right why what's the point so I use a
+locally hosted one again you don't have
+to certainly for the purposes of this
+particular do it together thing feel
+free to go ahead and use either NX
+toolbox or the Microsoft deployment
+there but uh so now we've started
+getting the fun part
+if you trust me and again in this case
+you should I mean you don't have to I
+don't give a [&nbsp;__&nbsp;] you can keep doing me
+but you can follow along if you go to
+that particular bitly link that's gonna
+take you to my box account I have shared
+with you a folder and within that folder
+there are four text files named header
+one back text editor to text header 3
+and header for ya thank you wait back up
+come on you all did so good after the
+first 20 minutes
+so what talk [&nbsp;__&nbsp;] again I'm strolling so
+people can go to the big league link
+that is what she said we still do
+phrasing the team we do whatever the
+[&nbsp;__&nbsp;] we want
+alright now while I stall a little bit
+longer for time just in case
+people want to download these header
+files and follow along before we get
+into actually reviewing them I want to
+make something very very clear our
+headers can not by themselves determine
+whether an email is legitimate or not
+repeat after me
+headers cannot determine whether an
+email is legitimate or not not very
+enthusiastic but that's fine you all
+understood all headers are able to do is
+help you make an informed decision on
+whether or not that message is
+legitimate oftentimes you can get almost
+all the way there with the content in
+those headers but by themselves they
+cannot tell you whether or not something
+is is legitimate or not so easy example
+to illustrate this let's say that an
+attacker has managed to compromise the
+mailbox of some contractor that works
+for the university
+all right hand let's say that that
+attacker sends a fish to the person who
+pays that contractor and they send that
+fish and they say hey I'm mr. mrs.
+contractor you know that bank account
+number we told you to pay us at go ahead
+and pay us at this other bank account
+number if you don't mind right again if
+there's like bad English or something
+like that in there sure there's maybe
+going to be like oh hmm this is a little
+fishy but accent any poor language you
+know if we took a look at the headers of
+that message those headers would
+indicate that the message was
+legitimately sent from
+contractors mail server so the only
+thing that we have left available to
+determine whether or not that email is
+legitimate is to confirm with a
+purported sender out-of-band again now
+the man being very important if you
+respond back to that email would say is
+this really you you might not have good
+[&nbsp;__&nbsp;] luck with the answer that you
+get if it's an actual compromised
+account
+all right you laugh but I've had [&nbsp;__&nbsp;]
+users do this in response to
+displacement fishes all right Joel told
+you about those fishes word literally I
+sign up for a gmail account CEO one at
+gmail.com and I changed my name to
+whatever the [&nbsp;__&nbsp;] my CIO is name it's
+Gary
+or it was Gary Allen pretty [&nbsp;__&nbsp;]
+common name mind you it's real hard for
+administrators to seem to understand
+that I can block CEO one at gmail.com
+but nothing stops the [&nbsp;__&nbsp;] from going
+to another email provider and changing
+your display date that Gary [&nbsp;__&nbsp;]
+Allen all right this is a training and
+awareness issue as much as we as a
+community wish that we could solve all
+of our problems through technical
+controls that doesn't work here all
+right not without some yeah [&nbsp;__&nbsp;]
+platform me yeah yeah I don't like
+talking to customers as much as the next
+guy but at the end of the day you need
+to communicate these risks to your users
+they need to understand what's happening
+all right now granted is the larger your
+board gets the harder that is to
+actually make sure that that gets into
+the hands of those who need it ask me
+how I know but anyway so the biggest
+thing that headers give you four
+messages that are spammer abuse is where
+to report that spam or abuse - yeah okay
+without further ado I tell you what
+let's go ahead and move into our our
+work together phase so I see no laptops
+I'll [&nbsp;__&nbsp;] all y'all that took
+time to put together y'all could suck my
+dick
+now that okay I see one laptop out Thank
+You Kayla Thank You Kayla are you doing
+this [&nbsp;__&nbsp;] I cool he's doing this [&nbsp;__&nbsp;] -
+I thought he had a microphone that's
+just a beard all right so if you're
+following along open up header one dot
+text copy the contents of header 1 dot
+text slack that [&nbsp;__&nbsp;] into your
+header analyzer of choice now since I
+didn't give you the actual email what
+I've done for these is I have taken a
+screenshot of the email so y'all can
+take a look at what an individual sees
+when they open the email all right what
+we have here is a message purportedly
+from Jonathan Kirk right again that's a
+someone on what I like to call mahogany
+row all right that's important people
+live there ah so pretty obvious fish
+again this is a display name spoof I
+make this aside because I actually
+didn't know that Joel was going to talk
+about it as well but I have some
+pictures so that's cool too as Joel
+alluded to earlier the reason why
+display names boots keep working is
+because of the mobile email clients
+being used in regular business
+databases if we so Becky Fowler is the
+government name of my boss she very
+kindly gave me permission to impersonate
+her identity to create some awareness
+images so here on the I guess what upper
+left is the bigger image the hotdog
+format an image you can see that as
+viewed in a desktop outlook client again
+pretty [&nbsp;__&nbsp;] obvious that it's a
+display name fish no one should be
+sending mail from Missouri
+edu at gmail.com however if you take a
+look at the hamburger form and an image
+like my fourth-grade terminology here we
+can see how these fishes actually
+succeed all right if I check that email
+on my phone my phone very helpfully is
+trying to say hey baby Fowler sent me
+this message all right and I mean just
+looking at that kind of looks like a
+pretty legitimate message from Becky
+Fowler right now as it turns out if I
+actually do physically press Becky
+Fowler there I do in fact see this gmail
+email address but that's not intuitive
+nobody [&nbsp;__&nbsp;] does that whenever
+they're looking on their mobile email
+client show a hands how many of you
+verified the sending email address in
+your mobile mail client [&nbsp;__&nbsp;] you you're
+liars put your hands down maybe you're
+not lying I don't know and if you're not
+kudos to you because you go through way
+more trouble to check your email than
+most other people but anyway that is how
+this lady's boobs work so if we take a
+look at headers one dot text in our our
+message analyzer of choice again I'm
+using a maj here so your output might
+look slightly different depending on
+what tool you're using but what we have
+here at the very top is the path that
+the email took don't worry I'm going to
+move on to a slide where that's bigger I
+just wanted
+everything on one slide we see the
+security headers that are listed there
+so in this particular case this tool
+puts the results of SPF DCAM and I think
+just authentication results in that
+section and then finally we've got a
+whole shitload of X headers so again
+those X headers are something that is
+added in by again commonly going to be
+like an email security appliance as I'm
+sure you can tell by the extenders that
+are shown here we utilize Cisco iron
+ports at the University that was
+Carolina and if you're wondering she
+works for Cisco so it was Carolina -
+wasn't it
+yeah [&nbsp;__&nbsp;] right all right so survey
+says if we take a look at this it is a
+it is a fish yes that was pretty obvious
+note that one simple trick that some
+fishers will use is to smooth the
+sending domain of one BAM provider but
+actually use a different one for example
+spoof Gmail but send it from a yahoo
+account so this is why even in the cases
+of an obvious fish one needs to check
+those headers you need to report the
+fish to the organization of the
+organization excuse me that can actually
+do something about it now if i zoom in
+on those headers if we take a look at
+the path that this email took we can see
+here that there were what five hops so
+it's also important to understand your
+own mail setup in order to properly
+review these headers I generally wind up
+sending abuse reports to the contact
+that's listed for the IP
+in the hop right before it hits our mail
+servers now if you're taking a look at
+this image you might think oh well the
+one before their mail servers is that
+third hop right because it goes from IP
+hmx
+to UM system ddu that is wrong so the IP
+hmx domain is the cloud-based IronPort
+appliances that is actually technically
+where our mail flow starts so if i
+didn't know that about my organization
+and I reported this email to Cisco what
+the [&nbsp;__&nbsp;] do you think they're going to
+do absolutely nothing besides maybe
+circulate that email around and say look
+at this idiot from the University of
+Missouri he doesn't know how [&nbsp;__&nbsp;]
+read mail headers to there we can see is
+the last hop before it hits our IronPort
+appliance that is in fact Google so we
+will send that abuse report to Google
+you might think that you can just send
+an email message to abuse at google.com
+you'd be wrong about that there it seems
+like a lot of times now whenever I try
+to contact an abuse email address I get
+an auto response back that tells me that
+I have to go through there's stupid
+unique ass [&nbsp;__&nbsp;] method of reporting
+this email so that they don't hold the
+information that they need because they
+can't be arsed to check the [&nbsp;__&nbsp;]
+abuse mailbox I'm sorry I got upset
+about these sorts of things if you can't
+tell I say love be right okay
+so let's hit up message number two shall
+we
+again what are we taking a look at here
+we've got as coming from support all
+right this is coming from a help desk
+top missouri dot edu at real email com
+oh well [&nbsp;__&nbsp;] me really mail
+fish we've got some attachment we've got
+some links that we're asking our user to
+click those of you are maybe more
+observing will notice that there's a
+little image that is failing to load at
+the bottom there and you won't want to
+take a gander what that is tracking
+image exactly so I'm not gonna spoil
+what this is yeah but this is another
+very common phishing tactic is that your
+attacker is going to embed a you know
+one by one pixel image that makes a call
+out an HTTP call out whenever that email
+is opened that gives the attacker
+confirmation that you have seen that
+email now personally I don't think this
+matters that much if you think about it
+I don't give a [&nbsp;__&nbsp;] if you do if you
+think about it a user has to look at an
+email to determine whether it's
+legitimate or not right now ideally you
+would not be loading external pictures
+by default as you can see here I've got
+that turned off but infuriatingly enough
+this is a client-side option and even
+for on-prem exchange servers you are not
+able to say don't load pictures by
+default don't understand why I think it
+ought to be like that if anyone from in
+here is that Microsoft please
+communicate that up the chain tell them
+aaron Scantlin asked very nicely for it
+now let's go ahead and take a look at
+the headers for this email and see what
+we can learn again I really wish I had
+put my animations in here is that what
+made this a little bit more giving it a
+little more pizzazz
+but this time if we take a look at those
+headers in our analysis tool we'll see
+that we've got some interesting X
+headers all right in this particular
+case this email was from a self fishing
+exercise that we launched however if it
+were a real fish it wouldn't really be
+much of a point in reporting it to the
+sending domain real email com real email
+com if they were an actual attacker
+probably doesn't give a flying [&nbsp;__&nbsp;]
+about my abuse report saying that
+they're sending me phishing emails all
+right so in this particular case what
+you would need to do is go for the
+Registrar all right in this particular
+case we Ragus the hosting provider is
+the more accurate way to say that none
+of the registrar if we take a look at
+our hops again you probably having
+trouble seeing them from this distance
+but if we do it who is on the ipv6 or
+the ipv4 address that's the last hop
+before our mail servers we would see
+that this resolves to a cloud hosting
+provider called Linode so I would like
+to give a quick shout-out to Linode
+actually they don't pay me they don't
+give me any discounts on their [&nbsp;__&nbsp;] but
+what I appreciate about them is that
+they allow us to run our cell phishing
+campaigns from their infrastructure not
+only that when I called lit out and I
+said yo we want to fish our users from
+your [&nbsp;__&nbsp;] are you down with that they
+said yeah we're down and by the way if
+anyone reports your [&nbsp;__&nbsp;] to us we'll go
+ahead and forward that to your abuse
+mailbox so Big Ups to Linda they didn't
+post any extra either
+and is anyone paying for self fishing
+from like a big company like you know
+before for sans or some [&nbsp;__&nbsp;]
+cool so anyone that raised their hand if
+you want to do this for like 90 percent
+less and if you want it to be more
+customizable hit me up we can rap about
+how we're doing this our Go Fish server
+runs us $20 a month and I can send out I
+think like thousand messages so it
+scales up pretty [&nbsp;__&nbsp;] nicely
+we have selfish or entire Hospital
+division all right so University campus
+is one thing then we have the hospital
+we're cool we've fished all of our
+hospital employees the results are kind
+of sad like 17,000 emails go out we get
+like a thousand that reported so I mean
+I guess it's cool that no one's clicking
+on them and [&nbsp;__&nbsp;] but still man how
+sobering is that all right so yeah shout
+out a little for supporting this sort of
+thing our baby the other thing that we
+take a look at here if we examine those
+X headers is that we can see we've got
+an X I report Center Group and next I'll
+import mail flow policy so again this is
+kind of easy to understand since I told
+you that this doesn't sell fishing
+exercise but we can see that the
+ironport sender group is white list and
+the mail flow policy is trusted the
+reason is is that we told our email team
+that we were doing this because
+hopefully iron more would have caught
+these and said no this is [&nbsp;__&nbsp;] go
+away so we need to make sure that it
+actually does arrive at inboxes that
+would have been maybe confusing though
+if let's say hospital system
+administrator got a report from one of
+their users said hey I think this is a
+fish but we didn't tell any of the
+hospital support that we were doing a
+fish for obvious reasons we're trying to
+fish them - yeah so that gives you some
+information there all right let's make
+things a little bit more interesting
+shall we yes that's pretty easy
+these serious ones I sent you guys y'all
+they're kind of funny that we live in a
+world where you're always more
+progressive than you guys anyway
+so here we have an email of unknown
+disposition with some attachments all
+right if you can't read that and you
+probably can this is purportedly a
+request from a student at a university
+over in Istanbul requesting to get into
+a PhD instructors program again this is
+not uncommon in the land of higher end
+so even though you might think
+immediately oh this looks like a fish if
+you work in higher ed you would be kind
+of like maybe could be 50/50 at first
+glance at this right so though target
+specific professors since there's
+generally a fair amount of info about
+them and their research posted publicly
+all right this is kind of why higher
+education is at least one of the reasons
+why higher education is targeting so
+much by fishers is that our org charts
+by and large are public information our
+directories are public information I
+mean we basically put the targets out
+there for you and we tell you who to
+information but it does have a downside
+so it's also very common you know for
+international students to directly
+contact professors who are who might be
+you know interested in accepting them
+into their program because oftentimes
+international students need some form of
+[&nbsp;__&nbsp;] in order to come over here and
+study over here so again it's it's
+something that is desired this is this
+is not out of the ordinary
+alright but we don't know whether or not
+it's legit yet so we take a look at
+these headers this is headers three and
+leave duck text in the file the first
+thing that we'll notice is that the hop
+order is real funky
+alright this purportedly started from my
+servers then went to Google then went to
+Cisco then came back to Google then back
+to me
+that's pretty [&nbsp;__&nbsp;] weird so this is
+kind of common to see for messages that
+get held up in quarantine
+all right so in MHA in this particular
+version if you click on the time column
+and order the rows by the header field
+time the hops will rearrange to the
+proper order so we can see here on the
+bottom section of this slide I've
+rearranged it such that the times are
+what we are basing on not the hops and
+then that winds up rearranging the hops
+such that it actually shows the path
+that it took now if we go on and take a
+look at some more headers again I have
+you can see here in our top image kind
+of really small text the order is now
+correct for the path that it took pop3
+is now listed as the first one again
+this is all because of the quarantine
+delay notice that the extra headers that
+we have not necessarily X headers but
+also the extra headers aren't in exactly
+the same format okay we had our security
+header section that
+detail the SPF and the detail
+authorization checks so given s yeah
+they've been set up there but they
+didn't show up there this time anyone
+hazard a guess why the header fields
+were not capitalized yeah I know kind of
+whack this is more of an mhm a thing
+okay its encoding is just basically
+looking for whether or not those headers
+are capitalized and if they are they
+match that correct string it'll put them
+in a special area again there's nothing
+wrong with these headers just that they
+were applied in a non-standard format
+now I'm not going to get super deep into
+as the effort DCAM sends we have already
+had multiple good talks on that here at
+SEC KC let's see is cable Christopher
+here tonight I don't think so
+so if you're not aware of what SPF D
+command D mark are or how they can help
+your organization go on our YouTube page
+whenever you leave here look up Caleb
+Christopher and he gave an amazing talk
+on SPF D command D Marc check that out
+to give you a like 1,000 foot overview I
+do what I like to kind of mention what
+they do since they do play into our
+decision-making process for this header
+SPF and DKIM as Joel mentioned in his
+talk are both ways for a domain to
+designate who is permitted to send email
+on its behalf all right SPF does this
+through providing information via DNS
+text record where the organization
+states
+what domains are authorized to send on
+its behalf and DCAM does it in almost
+the same way
+it's also
+gdns text record but in that DNS text
+record there is a public key and it is
+signing messages outgoing with the
+corresponding private key again this is
+just another way to verify that the
+sender actually is who they claim to be
+so in fewer words if we take a look at
+the header results here again I'm pretty
+sure I rejected everything it's gonna be
+real [&nbsp;__&nbsp;] embarrassing if I gave
+anyone's real email out here but if we
+take a look at these both our SPF and
+DKIM Tech's passed in this case so what
+does that tell us that tells us that
+this was legitimately sent from some
+server that I'm probably going to
+mispronounce this but Siri utr has
+authorized to send email on their behalf
+I guess I didn't put notes on this one
+so all right we know that it was sent by
+that domain or someone authorized to act
+on their behalf but I still don't know
+if that's a legitimate domain so again
+I'm gonna go to my trusty old friend who
+is and I'm gonna look up that domain if
+I do a who is on that I see it is in
+fact registered to Istanbul to here
+University and they have an interesting
+choice in DNS provider but you know
+other than that this all kind of checks
+out all right the domain was created in
+2008 so again is this potentially a fish
+it's still possible but damn someone
+went a real long [&nbsp;__&nbsp;] way to make
+this look good not only that I mean we
+can sanity check a little bit further
+google the name of the [&nbsp;__&nbsp;]
+how would i hacker get that picture
+they're so happy by and large though I
+mean again at this point we've got
+enough evidence to assume that this is
+in fact
+real University so let's take a look at
+this email again alright
+we definitely know for a fact that this
+message was sent from sahir dot edu TR
+and we're reasonably sure that it's
+legitimate University and we can't be a
+hundred percent sure but our header
+analysis hasn't yet turned up enough
+information to say whether this is
+legitimate or not again that's not
+something headers can provide okay you
+need more than that
+so one of the ways that one would maybe
+go in order to make an authoritative
+claim on legitimacy for this particular
+email would be to check out the
+attachments now there are multiple ways
+to check out email attachments there are
+places like my personal favorite yeah so
+for those of you that aren't hip to this
+donuts this is a free online sandbox
+that allows you to either give it a URL
+or upload a file to it and you get to
+interact with that sandbox alright for
+five minutes
+this is easily one of my most favorite
+free tools again I work for a university
+money is that something that we get very
+often because our governor doesn't give
+a [&nbsp;__&nbsp;] about education so if I can get
+something for free I'm bout it if I go
+over to the next slide I going to
+they've got a little screenshot here so
+again the cool thing is how instrumented
+this is I get all of the HTTP requests
+all of the DNS requests a whole hell of
+a lot more this is an awesome tool for
+gathering i OCS on a suspicious file or
+URL however it is important to know when
+it's right to use a public tool and when
+it's not so one of the downsides of a
+3-run account is that all of your
+submissions of the public right now I'm
+not sure about you but I'm pretty
+[&nbsp;__&nbsp;] pissed off if I found out
+transcripts got uploaded to some public
+repository where literally anyone could
+view them all right so that's another
+fun topic for a future talk analyst and
+upload sensitive documents to public
+security file scanning repositories but
+yeah give me a few months direct that
+want to know really make you shoot your
+pants there so in this particular case
+we've got two options available to us
+right we can use a private scanning tool
+if we have one available to us or what's
+sometimes more convenient at least for a
+real quick check is to just transfer
+those suspicious files to some
+disposable VM that isn't connected to
+your corporate network all right just
+open the [&nbsp;__&nbsp;] all right let it
+ruin the VM does it matter you're
+opening it to disposable VM again that's
+not bulletproof
+right maybe that malware is a fire off
+for twenty minutes or something like
+that afterward again nothing is
+bulletproof but the name of the game
+here is to provide some reasonable
+amount of assurance that this email is
+or is not safe if you happen to be an
+infra Guard member there is a free
+private scanning tool that is provided
+on the InfraGard website that is okay if
+you have the time and resources you can
+set up something like cuckoo sandbox
+internally otherwise I'm sure your
+friendly neighborhood security vendor
+would love to sell you something that
+uses a AI or machine learning is another
+big one right I'd order to help defend
+you [&nbsp;__&nbsp;] so what's the verdict on this
+one any guesses it's legitimate all
+right so what I wound up doing was
+popping this in the InfraGard sandbox
+because again this was sent to a
+high-ranking person within the
+university I wanted to make pretty damn
+sure that this was not malicious and
+this is
+common fishing angle for for attacking
+higher education facilities okay I've
+got like three minutes left let's get
+through our last one before I wrap up
+and take any questions you might have so
+if we take a look at this email it looks
+pretty [&nbsp;__&nbsp;] garbo in first glance UN
+system accounting remittance advice
+notification are you [&nbsp;__&nbsp;] [&nbsp;__&nbsp;] me
+okay cool if we read that email that
+it's like the most blanket default text
+message I have ever seen in my [&nbsp;__&nbsp;]
+life looks pretty shitty let's take a
+well that's strange it appears to be
+coming from my network going to my
+network so if we look at the hops we can
+in fact see that this was generated by
+an AUM system video machine and
+additionally we can see that there is an
+X header indicating that this was an
+internal email all right does that tell
+us the message is legitimate I heard
+someone say yes that is incorrect the
+answer is no all right we just know that
+this email was sent from a system on the
+UN system done edu domain okay we would
+want to examine the attachment for
+additional verification of legitimacy
+but again we probably don't want to
+upload something like this to a public
+scanner so fired this one up in a
+disposable VM look legit ish wouldn't
+you know was an invoice for payment from
+UM system but again I like to be like
+110 percent sure so again you wouldn't
+love to solve everything with technical
+controls right you want to know it made
+me a hundred and ten percent sure this
+is legit humans [&nbsp;__&nbsp;] right I called
+him I said hey do you guys run the
+account um system accounting yeah do you
+know how shitty this email looks oh
+really
+can you send it to me Oh with pleasure
+oh yeah that does look pretty bad we'll
+work with the teams you get that
+reworded I appreciate that click there
+we go all right that's all it took
+I could have spent [&nbsp;__&nbsp;] hours right
+trying to get to 100% that's all I need
+and even if they were wrong all right so
+now can you really blame the user for
+having reported this stuff no no you can
+all right we have wound up asking the
+team that manages the server to modify
+the subject of the contents of that body
+to make it sound like a piece of [&nbsp;__&nbsp;]
+all right
+so what did we learn here today all that
+[&nbsp;__&nbsp;] I got like 30 seconds left so I'm
+not gonna belabor it but with my last
+little bit of time I never do this and I
+feel like I really should I've mentioned
+that I come out from Columbia all the
+time I first off I want you to know that
+I'm totally [&nbsp;__&nbsp;] have that alias all
+right
+[Applause]
+I want you to know how much [&nbsp;__&nbsp;]
+political wrangling it took for them to
+be okay with me getting that alias but I
+really do want to give a shout out to
+the zoo for again every month letting me
+usually take to do a fan to come out
+here spend my time with you guys talk to
+you about what I've learned and get back
+to the community
+do I have any questions alright super go
+hit me up if you got questions you don't
+[Applause]

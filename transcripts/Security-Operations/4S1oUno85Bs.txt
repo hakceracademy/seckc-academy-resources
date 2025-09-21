@@ -1,0 +1,593 @@
+so besides I throw the social train
+capture flag FB sides and I've done so
+for the last three years last year ban
+she wanted me to circles as a lead-up to
+promote the convention this is the
+second year we did it so this year we
+decided to get really really crazy and
+we did six puzzles it's the 60 or
+b-sides whole point is to encourage new
+learning and techniques the game this
+year adapted as people solved or
+whatever complaints they posted that on
+to Twitter due to a Twitter bot a couple
+of things we have all the puzzles if
+they were solved to hold a story and tie
+it into the SEC TF and CTF because this
+year we combine the SEC TF conceit EF
+together as cctf people could go social
+engineered Blue Team Red Team people or
+team up and it got really really dirty
+so we teamed up with 6 6 6 zip code town
+records out of Topeka it's a record
+label it's been around for quite a few
+years they opened up in 1999 all other
+artists have been around the world
+opened up raves huge festivals all sorts
+of crazy stuff so we're like hey you
+guys are nuts let's team up with you
+make some puzzles so this is the first
+puzzle that's all you got you have to
+solve it if you have the balls to scan
+the QR code all of them were benign
+because my lawyers sit around and say no
+only benign [&nbsp;__&nbsp;] inside your QR codes
+scan a QR code took you to 666 records
+com where you could download the first
+audio track the first audio track
+simulated some listening stations you're
+too young in the 80s and everything
+there was listening stations were spies
+got numbers it codes out via shortwave
+radio you turn it I used to live in
+Germany so as a kid you'd hear stuff
+people now stuff like counting out
+numbers it was a code all these numbers
+correlated to DTMF tones and if you put
+it into a foam face it translated to
+hello world and that was what you have
+to do for the first answer once you
+figured out what the first year be size
+was it was 2009 it was salt on April
+first and was launched in April first
+all these puzzles I had to do on the
+road both
+and working with the artist as well as
+drawing everything everything of these
+puzzles hand-drawn so we're going to
+make that artwork available to everyone
+later on this is number two all these
+you can go to 66 records com or on the
+pc sites website and we'll have some
+other stuff later to this was done by a
+guy who studying on her karl-heinz
+Stockhausen it was a fractal map to MIDI
+and audio so you actually get to hear a
+fractal the sheet music was released
+because we call [&nbsp;__&nbsp;] we thought it
+was [&nbsp;__&nbsp;] weird guy released the sheet
+music for us so it's out there what was
+actually in there is mp3 files have
+slack space so we want you to encourage
+messing around in forensics this puzzles
+never solved so here it is inside the
+slack space was asked 85 encoded message
+if you don't know what I asked 85 is you
+might go way back and look into it and
+actually have fun with it a lot of
+malware is adapting to it now and using
+it which is fun so this was what came
+about you just had to solve it and
+retweet it out final answer was the
+address of the first b-sides minus 20
+which equals 6 which later on if you
+solve the many layers of the puzzles the
+other puzzles and it tied into it ok
+well out of reach of these gives me out
+today no don't all right so this is the
+third puzzle and why I'm not giving you
+guys absolutely all the answers here
+tonight no one else has seen a tailless
+but I want you guys to go out and play
+with these because there's a lot more in
+these than just this and at the ending
+it really wasn't the ending so we have
+something else if you have the time to
+go out and play so this is number 3
+again if you're drawing all this artwork
+on a plane or an airport you get a lot
+of weird looks so puzzle three was
+Morris code which really [&nbsp;__&nbsp;] a lot of
+people up in this day and age a solution
+was pretty easy was the name of date of
+the guy who created Morse code no one
+solved this there was a tone in the
+background one of the instruments that
+was actually Morris
+if you listen to it it stood out more
+than the others but again Morse code is
+it that widely known so we try to
+encourage people to take into stuff that
+they may not be exposed to that's what
+all these puzzles are about so this is
+puzzle for again on an airplane it gets
+weird when you're drawing the stuff a
+lot of these things have each puzzle has
+seven layers in addition with the answer
+that you can play through and solve
+puzzle solve for was actually solved by
+Brian here which he is already gone but
+Brian was the only one that solved it
+embedded inside the actual audio file
+was images and what you had to use is a
+piece of software called sonic
+visualizer which is available for Linux
+OS 10 PC everything the puzzle hint in
+the picture was asking 85 again and it's
+spelled out the word sonic visualizer if
+you download sonic visualizer and load
+the audio file into it what you do is
+you open up the spectrum analyzer plug
+in and sweep through the file you then
+we'll find text inside of the sine waves
+and the spectrum and the waveform of the
+audio file so in there we embedded a
+question how many people pre-registered
+through eventbrite in 2013 4p sites las
+vegas 404 people but again you can
+actually see something inside a spectrum
+of the actual wav file this is puzzle 5
+you notice less and less things become
+evident and some of these pictures and
+there's less than us clues we have to
+dial them down because we are keeping
+track by using the layer system of how
+far people were getting and we want to
+make these accessible so we dialed it
+back five again Morse code spelled out
+please download sonic visualizer and
+apply to the music file when you open it
+up it asked you to retweet to squirrels
+on barrel on hex code cve 2015 which was
+the besides 2015 slogan hex this was
+actually solved a couple days before the
+conference but again we're trying to
+introduce you to things that you may not
+be a
+or play with or have an opportunity to
+at work or in your daily lives so a lot
+of people had problem tax code which is
+weird and we want to get it out there as
+well as Morse code we found out that
+Morse code was really a stumbling block
+so this is last one this is number six
+if you notice it's not quite the ending
+so if you guys want to play through
+these I'd encourage it and do some more
+also we've had an interesting incident I
+don't know if you saw Chris Nickerson
+speech at Circle City con or I besides
+India African what is his last talked go
+ahead and watch that and the problem
+that he's been having with the stopper
+we put the stalkers name at the puzzle
+so have fun because we don't give a [&nbsp;__&nbsp;]
+and if they want to come around again
+we'll gladly oblige but this had a lot
+of extra stuff in here and this one
+again was the sonic visualizer because
+we start dialing down and down and down
+because we wanted you guys to play when
+and have fun so it was really freaky
+when people start finding words letters
+and the images inside of the actual wave
+forms of the audio and there's some
+other plugins and software out there
+that will help you I'd actually
+encourage you to go at the sands reading
+room there's three papers in the sands
+reading room that will help you through
+all of these so we added layers into one
+gauge how people were doing to add
+additional information and to kind of
+see how things are going we we're about
+ready to launch something that allows
+people to facilitate captial flags and
+other things and we tested that by and
+some other things in with this game some
+of these were never solved so that's why
+tonight you guys got a head start go out
+and start messing with them tweet out
+the answer is go have fun just mess with
+it there's all sorts of [&nbsp;__&nbsp;] hidden in
+these puzzles when loss comes up to you
+and shakes his head you know you're on
+to something so we've had an outpouring
+for the artwork and everything else will
+get that out to you guys for free and
+available somehow that highlights images
+and things we do have some surprise
+that's coming
+down the road because we're going to
+wrap up everything six is not the end if
+you guys want to continue playing it's
+still on that's the secret that no one
+soft the b-sides so you guys should go
+out have some fun and see where else you
+can you take this so with that we're
+going to go and tip the demo gods here
+and tonight I'm going to teach you guys
+how to forge stuff but we're not going
+to forge just anything because you know
+it's boring I want to show you guys had
+a forge a federal ID badge and what not
+only that we're going to print one out
+right here right now so we're going to
+get really [&nbsp;__&nbsp;] dirty and i'm going
+to show you guys so when you guys leave
+here you'll be able to do this exact
+same [&nbsp;__&nbsp;] for free if not next to
+nothing also please take this back to
+where you work tomorrow we go hey we
+should probably reevaluate the badge
+policy because we're fart so everything
+I learned from honey badger today there
+is no disclaimer because it's just we're
+[&nbsp;__&nbsp;] we're going on deep deep deep
+dirty everything here you're going to
+see now don't do it I had a percent
+guarantee if you do this [&nbsp;__&nbsp;] that we're
+about to do now without lawyer or help
+or legal assistance men and black will
+come get you it's not fun so I don't
+have time to talk about myself if you
+want to come up and talk to me
+afterwards I work for la res and I run
+spoils the barrel which does world
+championship of social engineering over
+here so any measure doesn't give a [&nbsp;__&nbsp;]
+it takes what he wants and that's what
+you need to do when you get into red
+teaming and social engineering
+especially when it comes to badges
+badges are the number one thing that's
+going to get you in everywhere that was
+the theme for b-sides this year if you
+play the SEC TF and the CTF Shitler the
+badges in fact we use this batch printer
+here if you came up to the table saw me
+working the first date besides ran out
+of badges we were printing the
+additional badges for b-sides on this
+printer so it's pretty fun a desert get
+you in everywhere the funny thing about
+badges is no one's really
+expert no one looks closely to the
+details and that's in your favor so you
+can do whatever the [&nbsp;__&nbsp;] you want that
+tape whether the [&nbsp;__&nbsp;] you want just like
+honey badger so this is a thermal
+printer that we're going to demo and
+this is how it works basically you're
+taking an image from a computer puts it
+on a transfer Phil rolls it over and at
+the same time there is a second ribbon
+that goes underneath the cym cakes cyan
+yellow magenta and black which layer up
+all four layers to form your colors sits
+underneath so when that image goes
+across that transfer film and sits on
+top of the thermal ribbon there's a
+printhead that's actually heated up and
+fuses that image directly to the card so
+it's not ancient it's actually fused to
+the card so you can't scratch it up a
+scrape it off or do anything this is
+what the real badge printers you see for
+like guards businesses and big
+installations use it's the same
+technique this is also st. printer
+techniques that are used to make
+driver's licenses so if you get into
+this stuff they might background check
+you or you might get some interesting
+phone calls to make sure that you're not
+printing ID badges and driver's licenses
+for 16 year old kids these printers are
+ridiculously expensive if anyone's ever
+going to have to look at a batch printer
+they're just [&nbsp;__&nbsp;] expensive the
+reason why they only make maybe 60 or 70
+of these a year the manufacturer does
+because it's not worth it to them
+meanwhile everyone else in the big
+industry that does inkjet printing and
+everything they crank out huge numbers
+of both print cartridges and printers
+the only reason why security printers
+are so expensive the card printers
+there's not a high demand for them and
+they only make a small number every year
+especially if you break one you're
+totally screwed in some instances so you
+want to get a printer cheap this is how
+you do it go tall off a business or
+Gopal at CDW call
+the action manufacturer asked for demo
+mumbles you can get up to eighty percent
+off on a demo or open box model to get
+return to CDW or other big box stores
+and other things also go into a business
+that does these like keiko and ask them
+hey can I have your showroom model I
+know you've had a lot of miles on it but
+you know I'll take it I'll redress it
+and be done you can walk out of showing
+our models for under 300 bucks if you
+want to also educational discount if you
+know a student or teacher whatever you
+can get educational discounts which are
+awesome not only for hard work but for
+software whatever you want to do this
+even cheaper isn't free go to your hotel
+business office that's the best free
+printing service you'll ever find around
+town because some some higher-end hotels
+here in town the people making the
+business offices are very very very
+helpful because they want to make sure
+that you as a guest are thoroughly taken
+care of so using a hotel business office
+if you're traveling doing red team or
+pen testing engagements you always have
+access to one of those go down there
+print out a badge put it on top of a
+plastic card or even [&nbsp;__&nbsp;] a credit card
+and these badge holders on over there on
+the side I like the badge holders with
+the things on the side so they can't see
+the edges in Atlanta so no one can
+really see from a distance that it's a
+piece of paper in front of a card it's
+also good to hide some the defects and
+details from afar and these personalized
+ones that are around your neck like this
+you don't have to have rhinestones it
+discourages security guards from getting
+into your personal space to grab that to
+verify so if you want to go even cheaper
+than free go to local print shop and as
+for print free samples because you have
+a client that wants to do something and
+you're just not sure you need to take an
+example to him to show them so you can
+make the same local print shops will
+help you out there for free when it down
+keep it simple stupid you'd be surprised
+of how little work you have to do it up
+badge to actually fool people people
+aren't looking that close at it they're
+not little
+the microscope they're just seeing [&nbsp;__&nbsp;]
+from afar and from about the distance of
+me to terrorists usually like oh he's
+got a badge he's cool just [&nbsp;__&nbsp;] let
+him in or if you're tailgating they
+don't really care look they're like oh
+he's got a bad job it's okay if you walk
+behind me it doesn't beat because he's
+got a batch so keep it simple stupid
+because you would be surprised how easy
+it is the most important thing with this
+process if you're going to have a forge
+badges is oh sit you've heard me yell
+about this all the time beat it into if
+you do pen testing anything Red Team
+social engineering this is your first
+step you have to do this you have to do
+the research why I'll show you here in a
+second because if you don't do it you're
+going to fail but you also find some
+really cool [&nbsp;__&nbsp;] so enough talk let's go
+break [&nbsp;__&nbsp;] let's go prints and badges
+let's go print met some felonies here
+tonight so the great thing about this is
+we reduce motion so it's like huh we
+need someone Kansas City big business
+that's around you guys so I didn't want
+to do CenturyLink to cause some
+headaches so I decided let's do a
+federal agency USDA is here in town
+let's go for [&nbsp;__&nbsp;] balls out broke
+tonight so if you put in USDA an ID
+badge in Google holy shitsnacks do you
+find a lot of stuff you should not
+including Oh badge templates the [&nbsp;__&nbsp;]
+badge templates online now USDA is not
+unique you should probably go out
+tomorrow or tonight and Google your own
+companies you'd be very surprised so
+very very big ecommerce businesses out
+there you might want to google them and
+see what comes up pick anything from
+like fox news on down it's [&nbsp;__&nbsp;]
+amazing what's out there just by
+googling the badge template I mean
+seriously everything right there that's
+the [&nbsp;__&nbsp;] template to make the badge
+to get in to a federal agency in this
+case the USDA kind of a problem so
+without further ado we're going to
+attempt the demo gods and we're going to
+print [&nbsp;__&nbsp;]
+correct me if I'm wrong but tomorrow is
+your first day at work at the USDA sir
+yes okay just checking making sure your
+legal so Photoshop if you guys want to
+hint or our tip if you want photoshop
+for free the full on it dealt rated
+version legally couple years back don't
+be [&nbsp;__&nbsp;] up and made photoshop cs2
+available with the serials out there
+they just left it I said hey you can
+download it so the entire creative suite
+version 2 from adobe's you can download
+for free just google it look it up
+serials everything they're legit so what
+I use here that's why I use on the road
+it doesn't matter it does everything you
+need to forge everything from passports
+on down to driver's licenses so we got
+the template we just filled some stuff
+in and we're going to make sure it
+prints out and this thing's kind of
+fussy because it kicked out quite a few
+badges for b-sides and we're going to go
+over and if you come over here dressed
+we'll get you a prize out of the candy
+machine here and right now it's printing
+light what it does it takes a little bit
+time because right now it's doing cyan
+yellow right now you can see it's yellow
+magenta and black butt prints each of
+the four colors and then it puts an
+overlay on which I'm not doing Holograms
+because I don't want to get trouble as
+much and the picture we took just quite
+literally in the back of the room a few
+minutes ago there you go through your
+we're good yes so short of this actually
+I mean obviously there's not an actual
+chip in here but I'm guessing you go out
+you can buy blanks that have chips are
+pretty simple off eBay or something like
+that at the syringe it I'm guessing this
+would probably get me past first level
+security oops oops oops I'm sorry I'm
+having problems here's my badge I'm
+legit thanks a lot I'm in a hurry i'm
+late to a meeting right yeah so you can
+print out like i said it's not a hundred
+percent but doesn't need to be for what
+we're doing you saw in just a few
+minutes we just did we had a template i
+was in the back of the room to picture
+him through his ass in template filled
+out a couple things we printed it so
+when under five minutes we're going into
+a federal institution or agency because
+I can guarantee they're not going to
+[&nbsp;__&nbsp;] it and check the chip the chip
+doesn't do anything for entry and if you
+really need to set it off to another
+level there is a group of individuals
+that produce free software out there for
+cell phones that mimics sound
+environments that you might be able to
+use to do a hid beep on a door so you
+might want to do some deep web searching
+on that but again couple things to note
+with this picture is when you take a
+picture make sure it is not sexy make
+sure it is not good-looking make sure it
+is not well photographed one thing I
+like to do in the filter section is just
+give it a little gauzy a blue and then I
+like to add some noise to it and why
+that is if you see his image it's not a
+hundred percent it's a little fuzzy it's
+a little blurry it's little speckled
+because that's what those cameras are
+like at work look at your badges they
+suck because they use these cheap
+piece-of-crap cameras they take your
+picture and they just spit it out so do
+not do a high-res high detailed nice
+looking picture the worse the picture
+so again a couple seconds to search on
+Google look for ID badge employee ID
+badge badge employee badge and the
+company name do that tonight when you
+get home and you'll find some amazing
+stuff that you're just going to just
+your jaw I guarantee will drop on the
+ground so when you guys are doing this
+stuff for pen testing or anything else
+keep it simple take a picture of the
+badge recreate an even with Photoshop or
+something simpler give me a chopper oh
+whatever the [&nbsp;__&nbsp;] you want but keep it
+simple and you can readily print these
+out on just a printer or if you're going
+to go for one of these patch printers
+there's a lot of ways to get them cheap
+and easier you can even go in with the
+USB stick to some of these showroom
+floors and go I have some samples i want
+to get printed and we've done that a
+couple times before jobs and things just
+to see if things will work but you can
+go into Lake a showroom floor with a USB
+stick and ask them to print some samples
+for you and boom you're done go break
+into places when you go back to your
+businesses and offices tomorrow
+reevaluate your batch policy now what I
+mean by that is how many points of
+identification do you have on a badge if
+you look at this thing there is all
+sorts of crap all over it it does help
+to identify certain levels but
+immediately I don't care from the
+distance between me and jurist I can't
+really tell simplify your badges and
+also take into considerations your
+environment as well so the simpler to
+make them the better they are to be
+accepted by employees and they're easier
+they are to be identified by employees
+also make sure that your guards are
+checking the badges physically because
+I've got into some places that I cannot
+mention that you would never believe if
+I did that I said hey I got there with a
+piece of paper I print it off at the
+hotel business office so have your
+guards if there is ever a question grab
+the physical
+and inspect it and also have your guards
+start pulling people out everyone smile
+pull them aside randomly have checks go
+hey can I see your badge does it work
+the other thing to do is have guard
+stations when you have your HIV scanners
+and your guards monitoring everyone
+coming in the morning give them a pop-up
+screen and software so that when someone
+scans the badge the hid reader or the
+rfid reader whatever you're using the
+employees picture comes up that is
+pivotal to guards that will work better
+than any man trap or any kind of doodad
+out there or security gimmick if a guard
+can see when a person scans the badge
+and sees their picture matches the face
+in the system as well you're golden and
+you've got a security guard that's
+actually doing what they're supposed to
+but most importantly make sure you're
+talking to all your employees even
+though we're all in infosec I can
+guarantee a lot of big infoset companies
+we've actually tested and they failed
+constantly educate your employees on
+badges the patch use how they're stored
+in everything and even if it's not part
+of your annual review or training as
+infosec put it in there because if not
+people like me or you're in cycling your
+business and you don't want me going
+through your cube at night it's not
+pleasant because we have fun any
+questions dealer anyone always ask and
+I'll be around it's always come out I'll

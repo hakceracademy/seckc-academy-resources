@@ -1,0 +1,306 @@
+do I guess who has it who hasn't heard
+about it anybody heard about Raspberry
+Pi so I I was throwing them on around
+the top uh topic and
+um one of the things I've been working
+on is a talk on security metrics and uh
+it's not even worry about that but I
+just didn't think that you guys would
+probably be interested in that on a
+Wednesday night during computer so
+decided to change it up a little bit and
+so I'm gonna talk about
+um the mine so Pony with with pie right
+and then I've got five kids so the
+oldest is 19 my youngest is eight and uh
+every Saturday morning I can't find any
+of them they're all downstairs in the
+basement even my 19 year old
+um so I I was looking for this last
+Saturday I found them downstairs and uh
+had an idea the reason I can't find them
+is because they're all watching My
+Little Pony so so instead of being
+pointing with pie like I think maybe
+this will be a talk about my little
+problems
+it's even got the little raspberry thing
+right there
+I know enough that they have a little
+thing on their butt
+so a little bit myself I gave a tool
+talk but I don't think I gave an
+introduction about me
+um so I'm Shogun Shelby Patrol a long
+long time ago had some handle called
+Vendetta
+um and I won't even tell you what I did
+with that because I'm not sure what the
+statue of limitations is but um I was in
+my team so I luckily
+my dad taught a lot of people and got me
+out of trouble and luckily helped out I
+was in the range for a while uh as an
+information systems officer I got out
+and I'm lucky enough that I can do the
+same thing today because I was doing the
+Marines just make a little bit more
+money you don't have to worry uniform I
+don't have to exercise in 18 so that's
+good I'm working in infosec for the last
+several years that's my email if you
+want it now like I said I got five kids
+and uh and I walked around with a tin
+hat thanks to Wayne
+so here
+all right so you know what I have a
+thought about the Raspberry Pi about
+you're going to use it for pen testing
+right yes it's a great little device
+it's small and the size of a credit card
+but there's some reason why I really
+thought it was great because I want to
+have a lot of money so anybody seen the
+the phone plug I think wait you've got
+one right he got his for free or
+something I don't know how he did that
+though okay okay 6.95 for it so it's
+expensive right 600 bucks for something
+that you might drop somewhere and it
+might get confiscated you might never
+see it again that's a lot of money to
+lose I mean I don't have that much money
+but the Raspberry Pi this is at the
+Micro Center is 30 bucks and it's pretty
+good so it's cheap eyes
+I can live with you know those in a 30
+device right I don't know that I've
+lived myself if I had a 600 dollar
+device at the
+um I had potential loses uh small over
+easy to hide something you can see that
+that's the inside guts of a power strip
+got someone's taking kind of pull their
+out some of the electronics in there
+stuck in and Raspberry Pi and uh great I
+mean I've got one of these at home
+that's actually what my thought was I've
+got an old APC UPS like personal one
+it's a little bit bigger than a park
+like a parts grip on uh steroids it's
+pretty big but has like a little four by
+four slot where the battery you know is
+but can't find a battery for anymore but
+that'd be a great spot to stick that
+thing because it's got like you know a
+bunch of Outlet uh power outlets on it
+it's got inputs for for helpful Minds
+fax line and data line right so you can
+tap right into that I'm still gonna need
+someone's desk it'll look like a belong
+there because it's a mini UPS so they
+can see it on it it looks great
+um
+that'll be a great enclosure for one of
+these things I don't think anybody would
+ever really think twice if they saw one
+sentence yes
+um and the pie runs Linux natively so we
+all love Linux in here right because uh
+you saw that
+um I was having problems getting my
+laptop on Windows 8 to work with this I
+hate Windows 8 so I hate windows
+83.00
+but there are a lot of options so
+because it runs Linux there are a ton of
+different intros out there so Kali Linux
+the ones that we're talking about are
+toolbox what is calebly on it they have
+a build or the Raspberry Pi to run on
+arm uh uh stock so we made the tools on
+the Kali Linux distro if you want to get
+it There's the link right there
+um home buying I think they finished
+development on that it's like version
+two or something that has over 200
+security tools installed on that that's
+the one on the show tonight and then
+Pony Express actually did a build called
+raspberry Pome
+um I didn't go count the tools actually
+it's kind of fine to figure out how much
+they have
+um
+and then I found that actually can't
+debating that you got to pay for their
+device to do that their freeware stuff
+they pulled that on there but you know
+it's that's something pretty easy to do
+if you really want to get around this
+attack
+um and uh that actually that was the one
+I wanted to try but it requires an older
+version of the Raspberry Pi uh devious
+build if I couldn't find anywhere so I
+can actually get the belt work uh spent
+like two in the morning a couple nights
+ago we came up and I just told the foam
+pie so that's what I've got pretty
+pretty easy to do the cool thing about
+the Raspberry Pi is that the the storage
+mechanism is an SD card so
+um if you want you can take each of
+these
+um different uh Linux builds put them on
+a separate SD card and throw them in and
+figure out which one you like boots up
+really quick less than 60 seconds I
+think I think I kind of like 43 seconds
+for Coldplay last night so it comes up
+online pretty quick saves everything to
+the SD card SD card for cheap home pies
+cheap okay this thing's awesome
+um if you download the image you can
+then use DD and Linux and there's a
+couple Windows tools to write that image
+to the SD card and then put the cart put
+the card in the box and then power it up
+and then you get
+you get a screen like that so there's a
+line right here I bought an enclosure
+for it just because I didn't want the
+electronics and stuff hanging out but
+so you know one of the things I wanted
+to demo just kind of a start obviously
+you're going to stick something
+somewhere else on another Network you
+want to be able to access that and uh
+pretty easy to establish the reverse SSH
+cell to your box
+um there's this oops
+there's the script there that I have
+can't see it sorry but um uh so it's
+running on it now so it's got a crunch
+up so every five minutes it runs it
+checks the the script runs checks and
+see whether or not SSH tells an
+established if it hasn't it sets it up
+runs it and then then you're connected
+so what you have is on you know you have
+oops
+sorry
+it's all right so what you would have is
+like on the other network and someone
+else's Network you have your little
+Raspberry Pi hanging off go over the
+Internet they go to your your laptop
+where you would have
+um SSH running back tracker or Cali or
+something like that and um is that it so
+I can't see my own screen I love like I
+said I love Windows 8 so
+um
+all right so the Raspberry Pi is up and
+running it's powered up it should have
+run the Quran jobs grip by now establish
+an slh tunnel or attempt to nsh Tunnel
+every five minutes of my box
+um so my box I've got to run into VMware
+there it's already run the SSH services
+so all I got to do
+is run a command to like hey I want to
+go backwards on the sa6 films
+established on Port 1974 back to root I
+love the hopes which is my pie
+so it's going to ask me for a password
+and there you go so for my linuxos
+um SSH back reverse tunnel back into my
+iPhone 5. pretty simple green video from
+there you could run any of those two up
+to 300 security tools and map whatever
+you want
+pretty cool it's got USB on it so if you
+want to attach on a
+Wi-Fi antenna or device a receiver
+whatever you can do that sniff traffic
+if you have a large enough car you can
+SD cards come up to 128 gigs now
+probably I mean you could probably store
+a crapload of data on an SD card
+capturing logs station stuff whatever
+you want so I use an 8 gig card here I
+think it's only using less than two so
+lots of room on that with you to
+download more tools if I want
+um or store stuff on it for exfiltration
+later on
+that's it yeah where'd you get your case
+Micro Center yeah yeah case was like
+there's cheaper to buy the case separate
+and the card separate but yeah it has
+the speed of it I'm going to do it
+anyway or is it fast enough I think it's
+fast enough yeah I mean it's designed I
+mean you can do um you know HD video on
+it stuff so it's not going to be it's
+easy I don't know that I would run John
+the Ripper on it yeah but it has my
+Bitcoin it does my yeah I don't know how
+much he's getting out of it maybe by the
+time he's dying he might have a half of
+one a little bit yeah
+um
+yeah it can slow down so the question
+was around SD cards the read write can
+be a little slow and he's right and he's
+correct
+um so I'm using you know high capacity
+details time to work hard the fastest I
+can get on it
+um it seems to work all right I haven't
+had any issues recording data to it
+um at least that I can see and of course
+I've done all those just on my own
+network at home so you know whatever
+Wireless we're getting bit so
+um I've been doing anything
+significantly you can see it works for
+me nice I mean especially for the price
+hours
+it's powered by there's a question on
+the power strip you know what is it
+powered by so it's powered by USB power
+so you need a minimum I think of like
+0.7 amps so almost any cell phone
+charger so what I did was uh took an old
+Blackberry truck right at and since no
+and you attach into it so just be
+careful you know when you're doing stuff
+like that there's a past you know the
+one that I had there's some passengers
+things you want to make sure they're
+discharged or just you know ramp away
+from them mess around electricity but
+yeah you can tap into that and easily
+tap into the uh the Deadwood Port as you
+want you know I just basically replaced
+it because I knew I wasn't going to try
+to pass through anyway a little more
+citizen for anybody here that maybe is
+doing a device
+on the file system
+yeah so the comment here was if you if
+you do anything like this you know
+consider using true Crypt to encrypt
+your data on your device because if
+someone does grab this and want to pull
+the car down obviously they'll have you
+know access to everything that you have
+in your District right so all your marks
+everything you've been doing so nobody
+would do that no one would do it yeah
+yeah so any questions or comments so a
+lot a lot of cool things you can do with
+a 30 device it's small and um stick it
+anywhere and have a lot of fun that's

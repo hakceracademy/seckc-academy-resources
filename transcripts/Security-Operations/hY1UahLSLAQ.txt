@@ -1,0 +1,978 @@
+uh so my name is steve jensen and the
+presentation is analyzing reversing
+outwards acts
+direct some of you may have heard of
+iran some of you may have not i write as
+a tool
+kit that i created it's basically a
+container
+and a dewey to help pen testers
+use the industry tools that are out
+there
+and it kind of works together with those
+and kind of presents the feedback and
+the results in a pretty little format
+i'm a principal consultant with bear
+code
+my background is i was a former.net
+developer for jack canary and associates
+i was born and raised here in kansas
+city i moved away to joplin
+about 14 years ago that's where i went
+down
+uh i rode defense for quite a while
+between application development and
+application security uh and then it
+eventually
+jumped the fence into application
+security full-time about 2007.
+i've been doing application security uh
+for about 10 years and i've been doing
+local
+penetration testing for about the last
+six or seven
+since about 2009 um i have done numerous
+vulnerability
+uh disclosures trying to make them
+responsible um
+for a variety of industries including
+airlines banks
+agencies things like that
+so the target audience what this
+presentation is really targeted to two
+main groups
+number one are people who actually do
+ios penetration testing
+or they want to learn how to do ios
+penetration testing
+or they work for a company that does ios
+penetration testing
+and for mobile developers anybody that
+develops
+ios applications themselves so i'm going
+to do two things tonight the first thing
+i'm going to demonstrate
+is how we do a kind of walk through an
+overview of traditional ios pin testing
+then i'm going to introduce the tool kit
+that i created to demonstrate how it
+kind of
+automates all those manual tasks and it
+it's a much more efficient process
+the second thing i'm going to do when i
+post it on twitter is i'm going to dump
+the source code of an application in
+less than two minutes
+now i'm going to caveat that with the
+fact that
+it'll take longer than two minutes
+because i'd like to kind of explain
+what i'm doing but the way that i'm
+going to do that
+is going to be associated with known
+weaknesses within
+third-party mobile development
+frameworks when we develop ios
+applications traditionally we develop
+them
+using data objective-c using xcode
+however there are numerous uh mobile
+development
+or global development frameworks on the
+market now
+that allow developers to uh write the
+code once and then compile and target
+multiple platforms
+but these mobile development frameworks
+come with the name
+keep my hands crossed and hopefully
+so with traditional ios penetration
+testing we use a lot of industry
+standard tools
+there's obviously a standard methodology
+that corporations and individuals use to
+do this type of testing
+and these are this is a list of some of
+the common tools the last one there is
+not so number
+but we use our tool to analyze the
+binary we can determine if the binary is
+encrypted
+we can determine if uh stack smashing
+protection is enabled we can determine
+if pi
+position independent executable is
+enabled to prevent copper overflow
+attacks against the binary things like
+things like that uh there's another tool
+on there by
+it's created by patrick toomey and it's
+called keychain open
+basically what it allows you to do is it
+allows you to analyze the key chain on
+the device
+uh for any type of whatever information
+is in there
+another one is obviously sqlite both
+developers and pin testers use this tool
+to
+interact with databases we use signal uh
+we use sqlite to actually dump the
+content of the database to see if
+there's any sense of information
+dumped encrypted we will use to actually
+uh
+if a binary is encrypted which it
+generally is
+during the runtime process when it is
+loaded into memory
+the architecture of the device will
+actually decrypt that binder
+and go about doing its thing in its
+uh restful state it is encrypted however
+this dump decrypted tool
+which is created by stephen ezer
+utilizes
+the process that he does that will
+automatically decrypt that binder before
+this tool we had to do a painting
+we had to gauge the offset we had to
+calculate size and then we had to go in
+and do a bunch of something
+uh the second and last one there is
+class number z after we
+decrypted the binary we can actually
+start dumping the class information
+so we can identify classes and methods
+that are contained within the binary
+it's kind of it's almost like doing a
+high level uh reverse engineer
+the other thing we can do with class lmc
+is actually we can dump the headers
+when you dump the class info you're
+actually dumping the entire contents
+into a file
+at which point you're going to have to
+break through and going through all of
+the classes
+by dumping the headers we can actually
+separate all of those classes
+out into individual files and we can
+start looking through those individual
+files and methods that may be
+interesting within those
+and then the last tool here is theos
+it's not a common tool
+that's used uh theos is really a
+development framework
+it can actually be used to reverse
+engineer apps it can be used to actually
+develop apps
+without using xcode theos was
+created by a guy named dustin howard i'm
+not sure if anybody knows what that is
+but it is my go-to tool for ios reverse
+engineering it's the most powerful tool
+i've found
+it does what i need to do some people
+use is some people do use hopper
+i much prefer this uh some people use
+site print and one of the tools i want
+i'm sorry my mouth is a little dry and
+i'm a little coarse because i was up a
+little lean
+yesterday and nothing makes you yell
+more than seeing nine kids chasing the
+same ground
+so there are already a couple of tools
+or four tools to be exact
+uh out there that do some sense
+semblance of
+uh analysis on ios the first one is
+and it didn't really work for me i don't
+know if i had a configuration issue
+or whatever it was but i reverse
+engineered it as much as i could to see
+how it worked
+and i liked how it worked i liked how it
+interacted and so i kind of used the
+foundation in that
+too as the foundation for the eyelet
+tool uh analyzer will actually kind of
+go through and i know
+or analyze various pieces of information
+associated with the application
+uh snoopit is another tool uh
+it is one of the only tools listed up
+here that actually does
+a bit of reverse engineering it actually
+works more like a debugger
+you actually hook to the process and set
+breakpoints
+at which point you can modify
+information as you go
+for example if you want to if you use
+stupid on a binary that detects
+jailbreak detection
+you can actually set a break point and
+instead of having it return true when it
+identifies the skill movement
+you can actually change that variable to
+false and it would
+proceed forward so it does a little bit
+of reversing but it's more of a debugger
+introspine kind of does analysis as well
+it doesn't do any reverse engineering
+uh it will actually uh detail some
+cryptography stuff for you
+uh read the keychain before you identify
+various pieces of information
+idb the last thing here by daniel mayer
+who's with madasana
+really good guy um he actually released
+his tool
+about two months before i did and it
+took the win
+because i thought all my work was for
+nothing but then after looking at his
+tool i realized mike did some things
+but his his does really good binary
+analysis
+uh he uses usb muxed which means the
+my tool requires wi-fi unfortunately for
+those who
+don't have wi-fi available pretty much
+anywhere
+so these are all great tools and i've
+used all of them to one extent or
+but they didn't end up doing everything
+that i found that i needed to do
+they did a little bit of this did a
+little bit of that but in the end i
+found that i still had to go back to
+doing some of the
+stuff i had to do the manual reversing
+the analysis
+um so that's why i created the
+enlightened tool so what it does
+more than just the end then more than
+just the analysis
+it does hard for reverse engineering and
+i can jump like i said earlier i can
+dump the contents
+of an application in two minutes so it
+really
+changes the game when it comes to uh pin
+testing ios apps
+so irate itself is just a w package uh
+it actually consists of
+an ios objective-c application which is
+the gui on the device
+and then it has several shell scripts
+written in match
+and then it has kind of a python based
+web server
+listing that listens on a port number
+that uh you can actually connect and
+start interacting with those shell
+screens
+so once we once this dividing package is
+installed on the device
+copied over to the device using
+something like an sftp client
+we can actually install it using an i
+file or simply using the dpkg
+installation command after it's been
+installed
+we simply respring the device at which
+point you would get
+now for troubleshooting purposes
+obviously iraq depends on
+other things like iphone installed
+there's a pearl being installed on the
+device so for
+troubleshooting purposes when you first
+install it you'll probably want to
+manually start the listener that way you
+can actually start seeing
+the information there if there is an
+error it will tell you
+that it's missing python actually would
+run it
+so that's the easiest way but if it's
+missing file or said
+or any of these other dependencies it
+would tell you as it moves through
+and then you can stop you can install
+however once you're installed and you
+restrain the device you have this little
+irat toolkit
+icon i want to make clear that this is
+not a tool
+it's a tool kit i wanted to call it a
+toolbox but i was overruled by people
+who told me that was stupid
+so but essentially it is a toolbox
+because if we look back at all those
+tools that we use
+this is simply a container that
+encapsulates all those tools
+it doesn't on its own without those
+tools it does nothing
+do i have to jailbreak my iphone yes
+yes this is only uh it's going to be
+installed on jailbroken device because
+so once we uh once we have the iran
+toolkit uh icon
+up there we can simply launch it like
+any other app on the device that we will
+be greeted with the screen that is in
+the middle
+this basically is some text that tells
+you hey you're here
+thanks for coming and then you uh to get
+it started you just hit the start
+what that does is it creates a port
+listener on the device that you can then
+navigate to
+your browser and that last one will tell
+you
+now we get your browser to this location
+let's
+device i have irat installed and i have
+it running
+it's telling me to list on a listen on a
+particular report where i'm sorry
+navigate to a particular address and the
+port
+so this is the actual landing page for
+the application
+besides having the dependencies that are
+required to actually run the application
+we now also have dependencies that are
+required to actually use the
+functionality
+so if you want to use oh tool the binary
+analysis you've got to have to install
+when i decrypt the data or decrypt the
+binary you got to have the those tools
+installed
+in order to actually use the
+functionality because like i said it's a
+container
+it's not an actual tool on the right
+hand side
+we have a drop down menu and this drop
+down menu is
+the list of all of the ios applications
+that are currently sold
+currently installed on the device these
+applications are
+apps that you would install via itunes
+or the app store
+and they're located on the device under
+bar mobile
+applications and they're pretty easy to
+identify
+so we see there's a variety of
+applications there the one i'm going to
+select is the smart auction
+and what it's doing right now behind the
+scenes is it's running all of those
+otool commands
+automatically reports and there are a
+multitude of there are at least four or
+five
+commands that we have to run to identify
+header information and additional
+information so now it's been returned
+and we can see that it dumps the headers
+for us we can tell
+we can see that the binary supports the
+it is also have pi enabled which is
+positioned
+within an x cube to prevent the flow
+attacks
+we can see that it does implement static
+fashion protection
+basically puts a canary on the stack to
+make sure
+uh we see that it does not implement the
+arc the park is
+automatic resource count and it is a
+memory protection
+and it does not so this as a pen tester
+we would identify this as a voltage
+the last one over here on the left is
+the encryption input down here at the
+bottom
+uh we see the crypt id is zero this
+tells us when it's zero
+tells us it's not an encrypted binary
+it's
+the second tab here is the keychain
+analysis this automates the keychained
+upper factor too many tool
+and what it does when we when patrick
+when he released the tool there were
+multiple commands that had to be
+executed to identify various pieces of
+information within the future
+we can identify certificates and keys
+and generic passwords internet passwords
+each one of those
+is an individual manual the tool along
+so we can actually extend through and
+read the content of the
+keys within the keychain which is if
+you're looking at
+is quite boring
+which is also boring
+then we can look at the generic
+passwords the generic passwords are
+actually quite interesting because this
+is where
+the generic internet password is where
+ios developers will actually store
+information in the kitchen
+if they're going to store username and
+stuff
+the internet passwords this is where you
+for a particular test that i did on this
+device the application itself stored
+the url for the host that i was testing
+and sort the username that i was using
+and then sort the
+password associated so given a situation
+where you have a device that is stolen
+this type of information is actually
+contained within keychain and easily
+easily accessible
+by an attack so the big issues that are
+out there are like bank storing
+sensitive information and things like
+that and this can all be
+accessible by an attacker one of the
+interesting things if
+we go back through the generic is
+i scroll down to find it all of the
+wi-fi connections that you connect to
+with your device are actually stored
+in the keychain this one right here
+the service is called airport that
+identifies that this is a wi-fi
+connection
+and the wi-fi ssid was fbi surveillance
+name
+this is my personal home wi-fi um and
+then the password for the wi-fi
+is right there
+so you have a scenario where you steal
+somebody's device now you have access to
+all the wi-fi
+hotspots that they have connected to and
+passwords and just have to locate where
+as we move forward with the database
+analysis any database associated with
+the selected application will be
+pre-populated into this drop-down
+and all we need to do at this point is
+select the database
+sqlite is then automated behind the
+scenes to grab all the database
+information all the tables and all the
+content
+we see very simply that these are the
+four tables that are written within that
+database and here's
+one of the things to see here is
+obviously
+there are no header columns so we don't
+know what columns there are
+i did that specifically because
+and i'll reiterate this again this is
+this toolkit is not a fantasy of
+all of your testing you still have to do
+your due diligence outside
+the tool so i wanted to kind of make
+sure that people who
+are using the database they're not only
+using this tool
+because there's much more information to
+identify if you open the database
+editor if you open it in a text editor
+and you can identify additional
+information that you're not going to
+find
+all this is to do is to identify
+potential information that may be
+sensitive
+for your application that way you can do
+a little bit more
+information
+it serves two purposes the first thing
+is it will allow you to read the
+last 100 lines of the system if we are
+testing an application
+and it's in debug mode it's probably
+writing information to the system
+and it could be writing usernames
+passwords
+urls whatever the second thing it does
+similar to the database
+tab is it will actually identify any
+text files or log files associated with
+the selected application
+populate those in the drop down and then
+all we need to do is
+select it and then we can read the
+contents of it this is just simply a
+licensing file associated with the
+the p-list viewer or property list as
+they're known
+these are kind of the brains that config
+files for ios applications
+um the the number one the number one
+keyless file that is utilized is called
+the info.peoples
+it kind of is the config file so all of
+your configuration information is
+generally going to exist in there
+so any p-list files that identifies are
+going to be populated into
+this drop down now keep in mind that
+some of these applications they may have
+one or two
+people's files and they have 50 they may
+have 100.
+this one has quite a few
+but the one we want to look at is the
+input pigments
+and when we look at this p-list file we
+can actually start walking down through
+we can see various things like
+was this created uh by a third-party
+mobile development framework
+yes it was because the app base is
+coming
+coming is a third-party mobile
+development framework
+that is out on the market that will
+allow developers to write once
+you can also identify uh additional
+things there's obviously images in here
+we can identify the cf bundle identifier
+bundle identifier is very important when
+we start doing reverse engineering
+because this is
+really the identifier that is used to
+hook into that running process
+when the process runs that's what it's
+denoted as
+so when we build a video tweak as we're
+going to do here in a minute
+we actually have to make sure that we
+include that
+cm level identifier so when the tweak is
+built and it's ready to run
+it knows what process to target
+you can see additional information this
+particular binary was targeted for the
+ios
+we can see down here um
+the minimum os version is 4.3 i'm
+actually
+testing this on a 6.1 device right now
+it's i'm late tonight
+so the input keyless holds a lot of
+information that an attacker or a
+penetration tester
+can garner to start doing additional
+attacks
+to identify how binary is created
+what tools we're used to creating and if
+we know that those schools have
+weaknesses which this one does
+i'm going to skip the header files files
+for
+and i'm going to jump to the last one
+here
+when you close an application a snapshot
+is taken
+of the last image or the last appearance
+of that application on the device
+and that is saved into the location
+within the application
+that way when you launch the application
+again it's going to use that image
+as a transition animation transition
+while it's loading the application in
+so this was the last image that was seen
+before the application was closed and
+page or any available of page within the
+application contains information
+these things two tabs are really where
+the tool sets itself apart from anything
+else
+the theos tab the header tab they work
+together
+eos like i said is a development
+framework that allows you to create
+applications without xcode
+but it's also a development framework
+that allows
+us to create tweaks to actually reverse
+ios applications
+and there are basically four things four
+pieces of information that we need to do
+within the irs tool to create a theo
+suite
+we need to provide the project name
+which is anything you want we need to
+provide the package name
+the author name and then that bundle id
+that i referenced earlier that is very
+important reversing
+i'm not worried about remembering that
+the tool remembers your 48
+automatically
+so what we're going to do is i'm going
+to go ahead and i'm going to walk
+through the process
+this would take me less than two minutes
+to actually create the tweet
+add the code restrain the device and
+dump the source code
+but i'm gonna walk through it a little
+bit so it's gonna take a little bit
+maybe two minutes and fifteen seconds
+so we're going to tilt our project name
+we're going to give the author name
+which is just me that's all we need to
+do
+and submit behind the scenes it's
+executing all the theos
+commands that it needs to do to create
+the tweet create all the files
+associated with it
+and then this information up here at the
+top
+is actually our confirmation network
+down here below in this drop down
+it provides us two files associated with
+vsp the first one is the main file
+and the second one is tweak xm the pcxn
+is where the actual
+execution the code that we're going to
+put that is executed that's where that's
+going to go
+i'm going to have to type here real
+quick so we're going to load the make xm
+file i'm sorry the makefile and there
+are two things that we need to specify
+the first thing we need to specify is we
+need to specify the architecture
+that we are targeting this device is our
+version 7 architecture so we simply
+so we have detected the second thing we
+have to
+tell it is the target the platform
+target in this case it's an iphone
+uh the platform target will be separated
+by colons
+you're going to tell it the platform
+that it's targeting you're going to tell
+it what compiler
+unless it's going to default to a
+specific compiler and then you're going
+to tell it the version of the sdk
+that you're going to be targeting so
+type
+it's this
+we're gonna tell that the platform is an
+iphone we're targeting the latest or
+default compiler to compile the actual
+app for the compiled suite
+and it's targeting the 6.1 sdk the rest
+and then we can actually go to the big
+file i'm sorry tweet.xml
+now the content that you see here
+the format of this tweak.xml
+so you're going to start out with a book
+percent book which tells you
+the class name after this is the class
+name that we want to hook into
+we're going to target the specific cm
+bundle identifier for the running
+process
+and then when this class gets loaded
+we're going to hook into this class
+and then we're going to target this
+so for now we're going to stop right
+here and we're going to jump over to the
+header
+tab now one of the cool things that
+theos does is when you dump the headers
+on an application
+when you dump the headers on an
+application
+you can actually use theos it has a
+logify script
+and what you do is you pass the header
+name the header file name
+to that logifi script and it will
+actually output you
+uh the proper format that the theo
+school understands to actually start
+logging information
+so we take if we take a look at one of
+these header files it's going to come
+back in a different format that you may
+be using
+because it's going to it's going to
+match the format that is expected by
+theos
+it's going to have the percent of this
+is the class name that it's going to
+look into
+these are the various methods associated
+with that class
+that we can actually start logging
+now the kc dc developer conference this
+morning correct
+and there are going to be a couple of
+sessions there where they talk about
+developing ios for mobile applications
+using a variety of
+mobile development printers one of them
+is xamarin
+this one i don't know what the other
+talk is i think it's kind of an overview
+it didn't
+target a specific mobile platform or a
+mobile framework
+the application the third-party mobile
+framework this is great this application
+is created
+and you can create applications in koni
+using either javascript
+or this particular application was
+created using javascript
+which means the developer wrote all the
+source code in javascript
+they then compiled it and when they
+compiled it it created an ios bias
+but it's part of that process when we go
+from javascript
+to objective-c being able to run a
+native code or a data platform
+we have to have some type of way to
+identify the conversion
+within these coding mobile apps i use
+javascript
+within the app directory there is a js
+right here and within that directory
+there is an app underscore strip.js
+this is the source code for the
+application
+the only problem is
+it's encrypted so we can't really do
+anything with it in its current form
+so we're re-rooting so we have to create
+a post we agree we should engineer it
+and try to get into some semblance of
+so within the header files because we
+were talking about a js scripts
+there's a js script loader header
+which is right here this is the brains
+of that operation that conversion
+process
+we select that it's going to return the
+class integral
+and the methods that are contained
+within this
+and within there there's a particular
+particular method that we want to look
+at
+actually does the conversion for us you
+see we have some
+our first one here is the contents of
+the js scripts directory
+that is the directory we just looked at
+that finds that js file
+and then it loads within memory we have
+some deallocation
+method we have similar archive scripts
+that kind of that basically loads the
+javascript file for us
+the one that actually does the operation
+that we want
+is the evaluate script what it's going
+to do is once that javascript file is
+loaded in memory
+this method runs to convert that
+encrypted information
+to decrypted javascript that the
+so the simple thing that we do here as
+log all of this information we just want
+to target this one particular script
+that we're looking at
+i'm sorry one particular
+now if we were to save this right now
+and build it
+we re-stream the device and we run the
+application what would happen
+if we looked at the console the console
+is where we can kind of analyze the
+information
+it will actually start dumping a ton of
+javascript
+but we wouldn't want to do that we
+really want to so we don't want to have
+to go through it
+and kind of run through all that stuff
+we want it nice and pretty
+so what i did was i wrote some custom
+code
+for those of you who don't speak
+now theos is going to allow us not only
+to log information
+it's going to allow us to inject our own
+custom code into that running process
+we can inject our custom code even to
+run in conjunction with
+the original developer written code or
+we can actually overwrite
+what the developer wrote and run our
+custom code
+is this little fragment right there that
+basically says run the original code
+that was there as well
+if it's removed it will run this code it
+will ignore
+everything that the developer wrote
+which would
+kind of be cool if you wanted to hook
+into a method that uh that implemented
+certificate thing and you wanted to
+override it so it didn't
+you know bypass the certificate or if we
+wanted to
+target a mobile banking app that every
+time you did the transfer
+to your bank i injected custom code that
+would also scan some money off your
+transfer and put it in money
+so as long as we have the the dot or the
+percent board
+parameter there it's going to run the
+original code as well
+so like i said for those of you who
+don't steep objective c basically what
+this does
+is it's going to take two parameters and
+take a file link which is actually the
+name of the javascript file such as
+a.js then it's going to pass the script
+which is the actual javascript
+that the developer wrote and what it's
+going to do is it's going to build that
+file and then dump that script content
+into that file
+and then move on to the next file and
+it's going to do that until all those
+javascript files
+within that encrypted file are done
+once once that's done
+once these parameters come in we're
+going to create the js files
+directory within the documents directory
+and within that directory this is where
+we're going to create our files
+we're going to take the file name we're
+going to create a file then we're going
+to take the content of that script
+and we're going to write it into that
+file and it does take some time to build
+it because it's
+got to actually do all that stuff and
+then it actually automates the
+compilation process and then it
+automates the actual copying of it to
+we see down here below the tweak has
+been built and it's installed in the
+library mobile substrate and i'm
+collaborating we can confirm this
+if we come back to our device
+we go to library mobile substrate
+dynamic libraries there's our li
+js file that we just created
+so we know we created it properly and it
+went through
+a copy of where it needed to be so at
+we actually want to test
+our theo sweep we created here's the
+documents director and we see that
+i'm going to go ahead and stop the
+application
+the iran application on the device
+now that we've copied the tweak into the
+mobile substrate
+we have to restring the device so that
+the software is repressed
+and it can identify that tweak we just
+added
+so i'm going to come in here and
+restring the device which will take
+probably 10 seconds or so basically
+refresh
+let's back up and the smart auction is
+here the
+last icon on the second row there
+all we have to do launch the application
+once the login page comes up the process
+is done
+it's done it's run our tweak now all we
+have to do is make sure that it worked
+so what we do we're back in our
+documents directory here
+and refresh you see we have our js files
+directory that was created
+and then we have all of our javascript
+files now that's
+that's pretty unique that's pretty cool
+that it created all those files but what
+we can do now
+we've now dumped the developer resource
+code for the application
+at which point we can start going
+through and doing the source code
+to identify potential vulnerabilities
+that we couldn't identify
+so like i said earlier the iran tool is
+a container
+it just simply is a gooey to interact
+with these other tools
+to make the testing uh it automates them
+it makes it more efficient and it makes
+it easier to do more advanced reverse
+engineering
+and obviously that last point is the
+important one it's not a thing i see it
+for everything you still have to do your
+you can get iren is released on uh
+i actually released it back in march uh
+through barricode
+uh but i just put it on github it's
+freely accessible
+it's not associated with any product or
+service offered by america
+it is released over the gpm license and
+free
+the source code and everything else is
+out there if you have any questions or
+concerns if it's not working for you
+hit me up at that email address or hit
+me up on twitter
+i'll be glad to help you appreciate your
+time

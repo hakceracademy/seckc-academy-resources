@@ -1,0 +1,541 @@
+I do when I thanks office have fun for
+giving me the opportunity to go after em
+here so when I was looking I mentioned
+earlier to see when it's very difficult
+hibits me to talk with the dawn's so
+impeccably going into a real quick I'm
+awaiting your drink on the info say
+punishment I don't know some [&nbsp;__&nbsp;] has
+been asking months to give this talk on
+so here we go so I am a spin Ariel a
+long time let's slide out Bobby oh so I
+was just a little bit about me I'm your
+maker cocoa those they were soon you're
+hollering probably work at the same
+place so so so really I really do work
+with some pretty guys our team is our
+job is discovered understandably as
+Brett's in order to prevent them from
+liberty to discuss so I've been involved
+with the hackerspace I love seeing some
+black face guys here tonight im
+co-founder sexy and and I pretty well
+pipe right but really really what it
+boils actors i really like trading I'm
+hackers how to hack ok maybe because it
+keeps me at atomic you guys are having
+that usually good for [&nbsp;__&nbsp;] so um trendy
+can read that vector but I've never been
+a box to see it but I know someone has
+gone wrong ok so my assumptions about
+you ok really who this lockers for is
+it's really who this talk is horse
+people are trying to break into infosec
+I know most of people here already in it
+so this is talk baby out for you what a
+who are trying to talk to as for those
+people that are ready to make the step
+go for my tea you know and get into the
+infosec side updating those that are
+already in and you can get a little bit
+of something but that's my target
+audiences today so let's talk about what
+is infosec and this is actually a big
+question you're such a simple slide but
+it quite it's pretty big so let me just
+start down you know where you at i sold
+this side from that guy right there so
+don't you know don't think I booked us
+together so infosec is huge there's
+there's lots of areas that you cannot
+get into with it the second it really is
+important right now you identify what do
+I want to get into all right I'm going
+to go through these real quick and I'm
+going to talk about the different areas
+of it infosec but before you jump your
+career in infosec I really want you to
+think about what is it that I want to
+get you again what is it a really
+interesting we can go there so security
+systems admin engineering these are our
+thermal systems policy designed security
+information event management so these
+are basically the system's the admins
+and engineering around how do we get the
+intelligence that we need to protect our
+environment right so think about the
+security appliances are IPS or web proxy
+the field interweb somebody needs to be
+in engineering how these are deployed
+are they in the right area right are
+they running to current the right policy
+are they detecting the things that they
+need to detect security governance this
+is the Playboy section of security okay
+these are the people that are more
+interesting than anybody these are the
+people displaying our policies and our
+theaters right so security risk
+governance making sure that people you
+know follow our policies on making sure
+that we have they were prepared for
+disasters and then we are making sure
+that our employees understanding when
+they click on that think they're
+actually not going to get really
+involved okay
+risk mitigation for price so I kind of
+loved a lot in two sections of I
+apologize but but if you take a look at
+compliance ease my superior making sure
+that be we are reading the letter of the
+law for different regulatory compliance
+regulations talk about that but risk
+assessments right making sure that our
+that we have 0 matrix handle exceptions
+right be as security people just can't
+say no that's on her job as I said you
+know you need a way to understand okay
+the answer it has two PS work around
+that right penetration testing motor
+ability assessment I already mentioned
+regulatory compliance but you know this
+is a going through making sure that work
+that we're being a lot of that on it so
+thread and exploit management making
+sure that we understand what are the
+threats are facing us do we care about
+Pilatus ssl thread right do how does it
+impact our environment and what how
+should we we mitigate that that issue
+and importantly is it in management
+making sure that we're ready once once
+we are reading you know the soon bridge
+right make sure that we're ready we have
+to get a team we have the capability and
+we have two procedures respond that
+instead of containing it and get
+ourselves back to the normal state of
+operation so okay I know that that was a
+time to get through and I apologize by
+the way I do understand that this is
+probably not one of the more
+entertaining especially after welcomes
+us off but I so now let me know what we
+want to do right I mean maybe we don't
+get we could talk about that later but
+how did he get oh it is actually pretty
+easy right so you don't need to sit back
+and think about how we get
+going to go you just don't go you know
+if you want to travel for a bit for
+example you just don't hop on I'm going
+to go you need to prepare a little bit
+think about what am I going to need it
+what am I going to need in my back
+pocket in there what are the things they
+need to get there and that's really what
+we do so first let's develop to elevator
+pitches and and really it's this simple
+and pretty young rising I just wanted to
+get into the input set consider this is
+where you start 71 develop to elevate
+[&nbsp;__&nbsp;] if I said if you come up to me
+and say bill I want to get it an infosec
+I'm going to ask you number one what do
+you do right now stump and to who you
+want to be all right so it's so bad
+earlier we mentioned here at the
+different areas a business said I want
+to know what are you doing right now and
+I want to know where do you want to be
+so second take that second the second
+elevator pitch and identify the skills
+required to be an expert in that area
+okay along the way ask for help look
+around you they're in resort 50 people
+in this room that are probably and
+someone in here is probably can we
+detect that what you want to do who talk
+to that person move in here and you know
+as a shorthand I want you look around
+who in here raise your hand if you are
+not willing to talk to somebody give
+advice
+I'm serious so number you need to
+identify those skills that it takes to
+become an expert sit back and thing if I
+was going to be an expert in this field
+what are those skills I need all right
+so i'm going to put down some things at
+the penetration tester and just just
+brain mapping what are some of the
+things that I need to do to get those
+skills right so number one I'm going to
+need myself I'm going to need a
+target-rich environment something that I
+can act if you come at me saying I want
+to penetrate be a penetration tester i'm
+going to say talk about this is packed
+and if you say to me but I'm really act
+anything I want to become a penetration
+tester so i can add things i'm going to
+say it look right get yourself a target
+rich environment there is so this is a
+brilliant time in age to be to be a part
+of information security right there is
+so much available to us right now then
+you know that was never available to
+like our parents generation right get it
+go to call it you've had this study
+right now we have if you want to go have
+a system you can either use systems like
+show in or you can build your own really
+use system place again they're hilarious
+laughs okay Hey Joe can I i I'm you show
+me a Hagmann okay I'm sorry yes I took
+you can get a new demo systems i may not
+give it a feel where these but there are
+systems like lettuce portable TV ll let
+these systems are purpose-built to be
+hacked hey metal is an operating system
+built to be hacked dbls is a datum
+vulnerable ways guess what is built to
+do right web code is a web application
+is terrible right you know download
+these things can happen right set to go
+get yourself some industry standard
+tools Nessus in map metasploit
+can keep going and go have that [&nbsp;__&nbsp;] you
+know don't scale it go figure it out and
+have it all right if you haven't seen
+the OS Alton burrito create them again
+and I go tan go back and hacked up and
+take a look how do i how i can get that
+stuff right well while you're going make
+sure you're understanding exactly what
+you're doing right you're building those
+skills okay you want to go into us into
+an interview you want to sit down and
+wait bill says talking about the system
+can hack you know what in my job right
+now I work for they'll does I don't have
+access to access them so here's what
+I've done I built target rich
+environment my house I'm used to tools
+that downloaded like Nessus it back
+metasploit I have found one abilities
+and in that environment I've had them I
+seen SQL injection I've seen cross-site
+scripting right and here's some of the
+output that I found out me did i hack it
+yes sir I do that then the question from
+non-human back there was how much does
+it cost to do this cause nothing but
+time right you know that's all you have
+if you come to me you say I don't have
+enough time that I'm going to tell you
+you're not dedicated all right all it
+takes is some time it don't tell me you
+know all the things of the system with
+with VMware and all the other virtual
+services are out there you can you get a
+slippery there we go virtualbox now you
+can get three virtual box of you is all
+for free but along the way make sure
+you're doing this in with you can
+present this as evidence okay make sure
+its purpose and what does that mean that
+he's you're doing it for a reason okay
+don't just go home an axe up do go
+command except to learn make sure it's
+required all right and what I mean by
+that is I make sure that you're able to
+repeat that right so don't you go it
+downloads and exploit from the internet
+you know you may or may not know exactly
+what it's split sleep explain how I made
+it up with that with that explict go to
+explain when you ran it what you did I'm
+in measure you document the output
+because someone might be busy i will
+show you too many I'm gonna do right so
+and also make sure that like dough
+okay and friends don't let friends I
+upon don't just said you know get it to
+let go hack that don't do that
+interesting what the vulnerability is to
+find an x-ray it's an easy to like
+pedestal eight actually go ahead
+excellent so the third so I'm going to
+go back up a little bit second identify
+the skills required to become an expert
+espanola way too long monoxide apologize
+third prioritize no tangle skills okay
+so what that means is we identify the
+skills if you think and expertise to
+have we're going to prioritize taking
+skills so it only takes 20 hours to
+learn a new skill and look at this this
+is an actual learning curve and if you
+take a look at it it makes sense here's
+a missionary turn is departing so the
+way our brain works is if we we learn
+very quick on the learning curve and
+then over time it has been become an
+expert it really does slow if you take a
+look at language language you only have
+to know 80 of the of the most common
+phrases to be fluid complaint you wanna
+speak Chinese you only have to know 80
+phrases all right do you think you can
+learn 80 phrases in 20 hours yes that's
+less than one week after work if you
+want to learn Chinese you convert your
+knees and less than 10 very nice
+we have 4g by vauxhall let me tell you
+how you do that demand first you
+deconstruct the skill you didn't break
+down these skills into the course and
+find the most important things to
+practice first if we're talking about
+Chinese identify and prioritize one of
+the most common phrases used in
+determining which prioritizes this is
+people's these peoples least common one
+of these what's that where is the local
+sex shop in Chinese along the way
+self-correct make sure you're looking at
+ballard reference material and
+correcting yourself along the way is
+okay to be wrong you know what I would
+much rather somebody company as a nice
+run a kid baby but I'm used to tried
+right and I correct yourself a long way
+and also remove barriers to learning so
+make sure that you identify and remove
+anything to distract distract focusing
+on the skill to learn this could be a
+lot of different things depending on
+your current price situation this could
+be home right some people can run at
+home some people kid because he kept
+like wait right so maybe wish to take
+some time off of work or something and
+go somewhere else and from there I'm not
+going to tell you how to do that remove
+those barriers to learning practice only
+purpose at these 20 hours I'm telling
+you you can get the skill that you want
+the less than 20 hours is actually ours
+have to be right in a row what does it
+take long what a page two months three
+months that's okay it only takes plan so
+really what it matters when you're
+sitting in an interview all right all
+right you're sitting in that interview
+it doesn't matter what you've done it it
+matters what you're feeling I want to
+hear as a hiring manager I want to hear
+what are you doing right now the
+benefits me and if you doesn't it
+doesn't matter if you do that work just
+matter if you're good oh if you're doing
+that sexy as long as you can tell me
+what you're doing that's what I
+along the way make sure you're telling
+people what to do it this is this is
+where a lot of our a lot of our
+community fails right is we're very
+introverted we'd like to work like the
+word our own you know it sometimes let's
+face it you know I'm sorry but we're
+just helping out a socialist a year I
+apologize back there I've been here like
+so we're just as input set professional
+for generally not so social there this
+is i love the triple easier you can work
+the social game really easy alright if
+you want a very successful at popular
+Twitter account and you want to prove
+what you're doing you need to do the
+Tripoli its entertain educate engage so
+entertaining doesn't mean funny I know
+some of us you know some of us are much
+more funnier than others but really what
+it's going to do is is entertainment
+probably 150 180 h by important people
+record about looking for interesting
+ideas there's 50 people here today
+wanting to eard interesting like is okay
+what can you do is engage those people
+with what is it that you feel
+interesting and trust me going to
+[&nbsp;__&nbsp;] god okay talk about what you
+working on remember it doesn't matter
+what you've done matters what you're
+doing talk about what's good about
+educate share something that you've
+learned right along the way if you're
+building something and building a tool
+and you learn for example a good example
+to be as and I was teaching myself
+Python in those contexts share scent of
+things and they sound absurd you
+everybody knows you know the dash
+capital a in in Mac will tell us all the
+submissive brunette you know what not
+everybody knows that cheered us up on
+Twitter Facebook or whatever your
+favorite I space account is where share
+that their prey 50 yeah occasion amazing
+jewelry and engage in quite honestly
+engage is it really does go back to
+first learn entertain but make sure
+you're asking question make sure
+just engage the others and most
+importantly get involved all right so I
+don't know they have to talk to this
+crowd about this but it getting Falls
+right now give the city is amazing
+market be happy earlier I talked about
+people who are not talking about that
+the five-minute tool top I don't think
+you guys understand the opportunities
+you have in front of yourself right
+there in the jewel talks the reason why
+we made the five-minute rule plus
+purpose was multi-home right number one
+if you make it to like 45 minutes I'm
+telling you have a paper form that feels
+like 30 sec okay but in the background
+you've taken a tool that you do you
+didn't know somebody else wrote this
+will be you have to pry it right Travie
+jewel did you learn where up you figured
+it out and you put up a few simple slide
+can you go back to with that point very
+well but they didn't share that
+information with your peers when you're
+standing up here to the microphone cure
+the edge right you're gonna be sure an
+actual with your peers and quite
+honestly you have little knowledge I for
+everybody's going to talk you know
+blotter piece of cake your back you are
+you know everything there is about all
+right that's why they're just not just
+one quarter uh guys I'm telling you a
+second AC it is of course you know this
+is the opportunity to get up here we've
+already had a great time it might have
+another one you had a great audience
+here to people that are willing to learn
+here's the time to get the ball also we
+have great in other great on groups
+against city there's a hackerspace that
+a Friday environment right there's a
+loss team that is around web application
+of penetration testing 2600 group is I'm
+still around heard by because we've got
+wait Bruce here can you get involved so
+when it breaks down to it when you're in
+an interview and be able to respond to a
+where I've we're at any [&nbsp;__&nbsp;] up a lot of
+times if you look around I have a
+question all the time I'll times people
+come up and introduce myself then
+they're all asking oh you thought beep
+ready
+but there's nothing better to be able
+say damage a sec AC or hey I give a talk
+you know that was posted online or I'm
+you know real active on twitter if you
+saw me there be prepared to answer that
+question okay so here's our party oh
+that's great and all build but something
+to improve ourselves and we're now on
+track but when i go to to the job site I
+need to find how I do it I go sorry go
+on the website it says i need seven
+years of experience right any masters
+degree in whatever you know that's fine
+I understand that I did that quite
+honestly um started on all right if you
+can say for the last five years I've
+been building an environment I can acne
+in the house I've got you have been
+working on my porch innovation or if you
+want to go into the incident response
+I'd i hack my systems and then i go in
+at tripod Epis that's going to go a long
+ways while hiring manager who quite
+honestly hopefully didn't use of the
+slide except in each seven years for
+years but that probably came from the HR
+person guys biosig matter what you're
+doing okay then start your work right
+now I'm is there things that you're
+going to be doing is your work right now
+that could help get you where you want
+to be start asking you know if you want
+to be in intestinal if you want to be an
+IR is there something that we're doing
+right now to pick it up there so so
+sharing you better talk about that but
+and it started pretty excited quite i
+want to say all you need to do is just
+keep going so both very last slide I am
+here is about security certifications up
+varsity guys I am a fan of security
+certifications you can't sit on that
+that's good so so I am a fan of security
+certifications as as I marinated for
+right now I have a stack of resumes okay
+so i put out of both i think it
+resonates I've gotta start somewhere
+episode somewhere now I'm not just going
+to choose the people to have the
+absolute biggest cancer patients and I
+will tell you with something that I look
+for it is definitely not the postal rate
+but it's part of the story right what i
+am not a fan of and quite honestly my
+advice to you is if you go into a job
+why are the circle certification perhaps
+if it were me i would call the tape to
+consider that but but if I could you
+know say i would suggest people after
+those and then so once we have you know
+what mostly talk about the Apple
+knowledge but it gave me experience go
+ahead so huh I didn't want to throw our
+road quick slide here for those who
+accessed through it endured that top
+who's hiring it right is anybody hiring
+sister died okay alright so those guys
+that are looking for a job I want you to
+look around and inland look there's
+people hiring account by honestly I'm
+hiring too okay there are people in this
+in this yeah oh no I'm saying there are
+people right here that are trying to
+find you okay listen to me there be in
+this audience that are talking to point
+you right so this is the opportunity
+like i mentioned earlier this is the
+time to go introduce yourself the people
+stood up introduce yourself and say here
+are the things i'm doing here is what
+i'm interested in here to compel bigger
+it here if I matter here's what I want
+to be just go along the way am I gonna
+so I'm hiring on these slides are
+available right now and if they /em
+since that should go say I'm giving it
+to my page
+incident response which is badass I
+can't believe that no one we've got that
+our bed and that's all I got so thanks
+guys

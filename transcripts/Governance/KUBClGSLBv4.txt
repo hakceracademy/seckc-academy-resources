@@ -1,0 +1,1572 @@
+all right all right
+set case c let's hear it let's hear for
+[Music]
+bill
+all right so hey i want to introduce our
+first speaker um but i have a little bit
+of a story so
+so i went to dave the dave cochrane over
+here he's going to be our first speaker
+and i said
+what do you want me to to say when i
+introduce you he's a very humble man
+didn't want me to do much slow what i
+did is i went on the internet
+and i googled dave cochran kansas city
+so i could give
+uh you know so i have a little bit of
+your background served so i could give
+you
+you know a good story and what i found
+was a very heartwarming story
+i found that we are in the presence of a
+celebrity
+it turns out in january 2019
+a a homeless man driving a car with with
+just trash bags for windows was driving
+to the chief's game
+and and found a a car pulled over on the
+side
+and there was a chiefs player who was
+stuck and dave cochran pulled that man
+out not knowing that he was the chief
+player
+and sit him on his way so sir i realize
+that's not you but there is another day
+and when i run in that man i'll show you
+i am minnesotan it's an easy mistake
+anyway
+um i do want to i do want to give you a
+good a good proper introduction
+so so dave cochran here um he is we were
+just talking earlier and if you haven't
+if you have kids that are into building
+robots or something after the talk come
+and meet him
+he's a coach for uh lego world
+from world's lego league and they made
+it all the way to the finals in fact i
+think they won they brought home the
+trophy
+i saw the uh i saw the championship so
+anyway with that
+let's hear it for our first speaker of
+tonight dave got
+[Applause]
+dust check check check check check check
+yeah he turned the mic off which is just
+fantastic of him
+all right so this is my users can't
+infosec and it's everybody else's fault
+but
+mine a couple things before we begin
+first off fun choice i am intentionally
+using comic sans for two reasons
+reason number one reason number one it
+is proven
+to be more legible to people with
+uh dyslexia and other similar
+uh learning disabilities reason number
+this talk is not gonna be very very
+technical it's not gonna be be
+super fun super exciting there's not
+going to be anything exploding i hope
+it's also not meant to be an indictment
+of any one person in the room
+or even any community in the room so
+much as
+kind of uh hey we could probably be
+doing this different and better and
+maybe we should
+um which is what this talk is i'm
+getting ahead of myself how are you all
+doing tonight
+i'm not nervous you're nervous
+so without further ado let's answer
+johnny the tackling alzheimer's patient
+who am i
+yay technology you know what we're just
+or not why are you technical
+difficulties one second
+you know i swear to god i did rehearse
+this
+i mean i could but it wouldn't be nearly
+as fun
+yeah just a second or three here
+see this folks is why you want to use
+new technology and not the old [&nbsp;__&nbsp;]
+there we go give me just a moment get
+this loaded back up and we'll be on our
+way i promise i can even start from the
+yeah like technology's always worked for
+go get down well he's working
+on his i.t issues let's see some hands
+uh
+who's this is your first time in second
+let me see some hands
+oh we got one right here all right
+hey why don't you yell when you got that
+going hello
+what's your name it's going tyler who
+brought you to
+casey
+make sure
+so you brought tyler to that kc good job
+i'll buy you a drink
+you too all right let's give this stuff
+oh he brought him too
+all right well hey actually dave i've
+got a little bit of a uh
+admission here so if you guys don't know
+we have here a little tradition although
+i'm wondering if we should maybe get
+past that first slide
+before we give this big vision anyway
+if it's your first time speaking a set
+it's not a [&nbsp;__&nbsp;] right
+all right so i promised i'd start on the
+right slide so maybe we should
+so answering johnny the tackling alan
+thomas patient who is this guy anyway
+i have an associate's degree in computer
+forensics
+i have a bachelor's degree in computer
+forensics
+over a decade in retail which don't do
+that
+i am currently an interface engineer in
+a big healthcare
+i.t company in the local area that is
+not in any way shape or form responsible
+for sponsoring or even in most cases
+aware of
+the fact that i am doing this tonight i
+can neither confirm nor deny that sir
+all right so the whole point of this
+talk is that
+we in information security are not
+really
+good at getting people to do
+the infosec things and we can prove that
+by the fact that we had how many slides
+was it with the news like 5 000 or
+so there's a couple of reasons that this
+is a recurring consistent problem that i
+have found with
+you know a few google searches and like
+uh way too much time on twitter
+first off logic is not nearly as
+intuitive for people as we want to think
+it is
+this is from august of 2017
+sorry july 2017 then prime minister
+malcolm turnbull of australia
+was asking a bunch of companies
+for some backdoors in their
+cryptographic algorithms
+and they said we can't give you a
+backdoor and still have it be secure
+it's mathematically impossible it would
+be against the rules of mathematics
+to which he replied well you know it's
+great and all but in australia i'm not
+doing accents because
+you don't want to hear that trust me
+it's great and all but in australia the
+only laws that apply
+and then there's the fact that people
+are really bad at computers and
+and there's a bunch of people in the
+audience right now sysadmins and
+helpdesk
+are going duh but um
+no really people people are not good at
+computers
+uh a couple examples here
+this is presented without comment the
+secret kc is a non-partisan organization
+the presenters views do not necessarily
+etc etc etc but donald trump refuses to
+use a secure landline because he really
+cyber is hard you are completely correct
+all right more people than that no db
+come on
+okay there we go so a couple weeks ago
+months ago whatever's ago i forget when
+i made this slide deviant
+did this deviant went to send a sexy
+snapchat picture to his wife and he
+he claims it wasn't too revealing i
+believe he's still employed so he's
+probably right
+but i mean if somebody like him who's
+basically an
+a a red team celebrity can still [&nbsp;__&nbsp;]
+there's not really a lot of hope for the
+rest of us
+so here's the mean of the presentation
+this is where if you're taking notes
+you're going to want to get your
+highlighters you go into circle stuff
+underline everything this is a study
+done by the organization for economic
+cooperation and development which is a
+club of industrialized countries
+uh they asked questions of 215
+942 people in
+uh 33 countries between the years 2011
+and 2015
+with at least 5 000 people in each
+country
+they graded people based on their
+responses to this test which i'm going
+to get into the details in a second
+level three would be
+if you were able to complete the task
+the test they were given
+you want to know what percentage of the
+emails
+sent by john smith last month
+were about sustainability if you could
+get that answer you are in the top
+5 of computer users
+in 33 countries
+all right level two would be the task
+given
+you want to find a sustainability
+related document
+that was sent to you by john smith in
+october
+level one find email
+that's 29. i should point out by the way
+these are the uh
+the oecd average scores that i'm showing
+right now
+uh we'll do the us once in a second um
+and then the the sub one level is
+and that's 14. now i got i got to be
+honest i kind of lied there is another
+level
+to the to the scale here
+the people who just can't use a computer
+just straight up
+i don't know how to use a computer and
+uh
+so on the global scale
+40 of people are at or below the level
+of computer user where delete this email
+is an achievable goal
+people are not good at computers
+i promise the u.s scores here they are
+we're a little bit better arguably
+um we have fewer people who can't use
+computers at all
+but if you notice the top two categories
+are basically the same i think there
+might be a percentage point or two
+difference but
+by and large they're pretty much the
+same
+so i started thinking myself you know
+i've got these two degrees granted
+they're sequential but i've got these
+two degrees
+in computer forensics what kind of
+things do i have trouble with
+what kind of things make me pause and go
+advancing slides is really tough you're
+very clever
+have a cookie so i came up with a bunch
+of things that don't
+actually help users but that we think
+help users
+i can barely delete an email
+um i'm pretty sure the screenshots from
+firefox because that's about all i use
+um and it's just saying you know hey the
+security certificate has expired you can
+go forward if you want to but
+we don't recommend it and i said okay
+that's great firefox
+but um um
+um firefox you don't have the best uh
+best track record with with security
+certs and the
+keeping up to date thereof
+now that shot's going to your head not
+mine
+um but security search in general are a
+personal peep
+of mine because i suck at
+updating cas at getting the good certs
+and not
+using the bad ones every time i try and
+update the ca it takes me like three or
+four tries i usually [&nbsp;__&nbsp;] it up each
+time and then i have to go either find
+like a 20-minute youtube video
+and you know learn how to do it and
+still [&nbsp;__&nbsp;] it up once or twice or get a
+friend to walk me through it
+and i'm arguably in the target audience
+for this kind of thing
+admittedly i don't do security stuff on
+a daily basis
+but i'm arguably still in that target
+audience this should be the kind of
+thing that i am at least
+okay at and i will grant
+absolutely grant that it should not be
+an
+easy thing to do right we don't want
+people going in and double clicking on
+something and all of a sudden they have
+all the security sorts ever because that
+way lies
+bad but it could still be a lot easier
+to
+do and nobody seems to be caring to take
+the time to make it
+easier for anyone at all
+it was hard for me why should it be easy
+for you yeah [&nbsp;__&nbsp;] that attitude man
+uh other things that don't help this is
+a prominent infosec person who i will
+not name
+because i did not get their permission
+to use them as an example of the bad
+i recognize that the topic of the tweet
+has
+[&nbsp;__&nbsp;] all to do with infosec generally
+speaking
+but if i am a user who has
+trouble deleting emails which as
+previously established is
+at least 40 of the population
+and i see this and this person is in
+charge of security at my organization
+i don't feel confident going to them and
+saying i might have done a bad
+can you help me that seems like a really
+really bad idea to me all of a sudden
+because this person has clearly
+expressed
+that they don't really care
+to educate or to help or to teach
+at least based on this one tweet there
+are many more from the same person
+that display the opposite but i might
+not have access to that i might not have
+visibility to that i might not know how
+to find
+those other tweets because i have
+trouble deleting
+email
+like it was 2018 like it was yesterday
+says the guy in the corner thank you guy
+in the corner i appreciate the
+assistance
+something very very fun i i say fun
+incredibly wrongly happened on january
+13
+of 2018 whole bunch of people
+got a text message if you lived in
+hawaii
+that said hey north korea just shot a
+bunch of nukes at you
+it turned out to be a false alarm but
+nobody knew that
+for a good few hours
+of terror and panic because
+and here's why this happened that's the
+interface
+actually i'm kind of like that's the new
+version of the interface
+um they added a link
+the the red link is is what they uh
+what they actually clicked the yellow
+link is what they should have clicked
+and the green one at the top is the new
+one that they added so that this doesn't
+raise your hand if you think that there
+was any sort of are you sure you want to
+send a get the [&nbsp;__&nbsp;] out message to
+of course not oh and there's there's a
+there's another reason
+by the way uh hiema is the hawaii
+emergency management agency in case
+anyone cares
+um there's another reason that the panic
+the governor could remember his twitter
+password
+there are opportunities everywhere
+is is the takeaway that i'm trying to
+get at now i mentioned
+at the very beginning of this that i've
+got over a decade of retail experience
+which i still don't recommend
+this is the part where i'm
+self-deprecating
+when i was working retail one of the
+things that i did is i would sell
+electronic stuff to people who had
+no [&nbsp;__&nbsp;] clue how to use it
+they would come in and they would say i
+can you be more specific no
+okay let's talk
+i'm not going to stand here and tell you
+that
+anyone that i sold a camera to has ever
+been featured in national geographic's
+you know
+annual best pictures of the whatever
+companion because
+that would be [&nbsp;__&nbsp;] and while i do
+tell a lot of [&nbsp;__&nbsp;] that's not
+something i'm willing to go to
+uh but they did at least learn
+something they walked out confident that
+they could turn the machine
+on and use it for its intended purpose
+and maybe even do some neat other stuff
+with it or show off some features to
+because i would talk to them i actually
+got in trouble
+for talking to people too much because
+no you can't be sitting there talking to
+the customers you have to make the sale
+then go back to whatever you're doing
+talking to the customer is what i was
+doing no no not that the other thing
+again don't work retail it's it's not
+but do maybe because it helps you learn
+how to
+talk to people which i think we can all
+agree
+i made it funny so
+how do we get past this particular
+hurdle how do we get people to listen to
+us
+and do what we want them to do well
+first thing that i can think of
+is that we need to work on our messages
+uh you don't want to use the same super
+in-depth technical explanation
+when you know great uncle harry
+comes up to you at thanksgiving and says
+hey so tell me about this here
+uh two factor something i have your
+grammar
+that you would use with the person
+sitting next to you tonight because
+great uncle harry doesn't know
+from joe um similarly
+i thought this was a really really good
+you want to make sure that the people
+that you're giving a message to
+the c-suite is different from peers is
+different from
+relatives is different from your pet
+is different from etc etc etc
+what else can we do well better
+communication and better tools which are
+both
+really easy to say i completely
+acknowledge i know that
+and not necessarily easy to do
+but i mean most of us probably aren't
+even
+trying when 40 of our users have trouble
+deleting an email i'm going to keep
+hammering this point because it's a
+really really good point to him
+uh one thing that i've noticed
+personally is that a lot of us tend to
+think
+that good communication means precise
+communication and that's not necessarily
+going to be the case all the time or
+even most of the time
+precise can be good can be helpful
+but a lot of the time it just gets
+people confused especially
+if they are the kind of people that have
+trouble deleting emails they don't care
+about the difference between shot 256
+and shot 512
+or sha128 or whatever else
+they just want to know how to not get
+their [&nbsp;__&nbsp;]
+[&nbsp;__&nbsp;] which is a completely fair goal
+to have um
+so there's going to be some counter
+arguments i can already tell people are
+going to come up and they're going to
+say okay but
+how do i make them understand why we
+need them to do this
+and i'm going to respond right now in
+advance
+have you tried talking to them
+have you tried listening to them because
+a lot of times the questions that we
+think we hear
+are not really the questions that people
+actually have
+the best question the best response to
+anything that someone comes up to me and
+asks me for information on that i can
+think of
+is show me what you need
+because we've all had somebody who came
+up to us and said the computer doesn't
+work
+okay what do you mean by that and it
+turns out that they were just having
+trouble getting to the right homepage
+or that their monitor was unplugged or
+that they couldn't print because
+printers are you know the devil's
+anywhere
+but if you got to actually understand
+what they are
+asking before you can answer their
+question and help them progress
+and if you can't delete an email you
+might have trouble explaining what it is
+you mean quickly and concisely and for
+all you know the computer
+actually is broken but you have to ask
+the right questions
+another kind of argument people might
+bring up is how do i get them to do what
+i say
+again people are willing
+for the most part to learn and to adapt
+and to
+use new skills but they have
+it's a lot easier to get them to do that
+when you give them a reason
+to do that that they can internalize
+because we said so is not a great reason
+who here has seen the uh correct horse
+i know there's more people than that
+i showed that to my mom last night
+because she was very very proud of her
+10 character uppercase lowercase numbers
+and symbols
+password that she is for website
+and i had to tell her that doesn't
+necessarily make it secure here's the
+thing
+she texted me this morning she said okay
+you know what i completely understand
+what you were saying that was a very
+good explanation
+you gotta meet people where they're at
+not where you want them to be you're not
+the quarterback lobbing the football to
+the receiver you're handing it off to
+and then of course well why should i do
+any of this why do i care
+because we're in information security
+for one of two reasons possibly both
+reason number one
+paycheck reason number two
+ultimately like maybe that's not i'm
+gonna go into work today and help people
+but that's the reason that we went in
+there a lot of us
+is we want to make the users experience
+better we want to make people
+safer we want to keep [&nbsp;__&nbsp;] from getting
+owned
+that's helping people that's why we're
+you are in fact at least a teeny bit
+at fault for the fact that your users
+can't induce that but you can help them
+get better if you really really want to
+i mentioned earlier i work for
+and most of my clients most of people i
+talk to are doctors and nurses
+i don't want my doctor to be an
+information security professional i want
+my doctor to be a medical
+professional when my doctor and nurse
+clients call me up and say hey this
+thing isn't working what the hell
+that's okay it's good in my mind
+that they aren't 100 familiar with all
+these things
+and that they need help understanding
+them and being doctors and nurses are
+probably not that dumb
+probably there are exceptions but
+probably
+but they're able to learn they're able
+to adapt
+but that shouldn't be their focus that's
+our focus that's why we have the jobs we
+do
+that's the last bit here i saw this the
+other night i thought it was a great
+message
+you can fight your peers or you can work
+with them but it's easier when you work
+i've been dave cochran this has been my
+i'm just about to lose my
+i wanna love you guys
+[Laughter]
+[Music]
+so
+[Music]
+so
+[Music]
+did you really yeah on the website i
+missed it on the announcement page right
+below
+what's up mommy hey man hey you been
+losing weight i'm trying working
+good thanks uh how long are you gonna go
+15 20 minutes okay or maybe sign a full
+signal five ten minutes
+yeah okay anything you want me to say or
+just make up whatever i want to say
+oh make it okay it's good i mean what
+watch this
+this is actually not a deep dive we're
+going to stay right on the surface like
+this guy
+everybody everybody
+right so this is an introduction don't
+haggle me
+i'm just going right across the surface
+okay so you not want me to heckle you
+okay it'll probably throw me way off but
+i need to i need that sort of like a
+test me man well i asked him i was like
+are you okay with him
+or me heckling you and he's kind of like
+yeah that's why he didn't look ready
+and
+[Music]
+um
+well let me go make sure that it's all
+[Music]
+so
+[Music]
+so
+[Music]
+so
+okay all right give me that mic
+all right we got about five minutes but
+i thought i was gonna start uh
+real quick i'm gonna ask some trivia
+questions here who's ready for some
+trivia
+[Applause]
+all right how many long life or set kc
+life risk do we have in the house
+oh we got a few got a few all right
+who can tell me where was the first set
+kc held
+no i think i heard it over here
+it wasn't gerts it was coaches we got
+we got it coaches all right where is
+setkc
+yes it is the hearts and minds of all
+that exists that's right caleb
+that's right all right
+let's see how many locations has that kc
+five five the answer is five kansa is
+our fifth
+location and we're never leaving
+all right um what is the correct way to
+pronounce set kc
+that's right that's my favorite trivia
+question
+um who came up with the idea of set
+casey
+well that was a very wow were you part
+oh my gosh that oh that's the next one
+okay who came up with
+it uh that person was alex flowerman on
+a flight back from defcon it was defcon
+14 i think all right so who came up with
+the idea of set kc
+that's right it was me it was bill
+smeartoon i'm sorry um one of our
+bartenders names
+what
+it's actually cat
+where well it's a cat
+all right oh this is a good one um what
+is the first name of the guy who is
+most likely to steal your watch at set
+kc
+no no not bill that's on number two
+gene that's right it's gene all right
+with that
+let's go ahead and introduce our next
+speaker this is caleb christopher
+all right we're going to learn all there
+is to know
+we're going to do a super deep dive into
+cryptography
+who who of you looked at the set kc
+website
+um and saw caleb's description
+did anybody decode that raise your hand
+don't yell it out
+all right i'm gonna get it over you
+ready go get
+kale thanks man
+[Applause]
+start my timer here well
+in case you didn't decrypt that it's
+base64 go figure it out
+it'll be fun it's like a field trip
+right do it on your phone right now
+okay so one thing i want you to know
+right from the start
+you're excited to be here okay now this
+is going to be
+a big deal those of you who are familiar
+with this clip will understand what i'm
+saying
+this is actually not a deep dive we're
+staying right on the surface of the
+issue okay
+we are not going to crack through the
+ice and get into the mathematics or any
+of that junk
+i get headaches trying to read books
+about that stuff i've got a
+certification
+about encryption dude don't go there
+let's stay at the surface level all
+right this is an
+introduction
+very well okay so what i want to do
+i'm going to introduce this is the
+problem right cryptography is obviously
+the answer
+but how do we use it how do we get the
+answers
+we've got three questions how do you
+talk privately to someone
+in a crowded room let me hear some
+answers how do you do that
+that's right different languages right
+so if i want to know how to have a
+private conversation with bill bill do
+you speak croatian
+yes for this example you do okay
+does anyone else speak croatian thank
+you
+we're going to say for this example no
+all right you get you
+following me now so bill now you and i
+can talk in an open room other people
+can hear it they can
+know what we're saying without
+understanding it they can that's how
+encryption works all right that's what i
+want to do
+that's the problem we have to solve now
+we need to solve in real life across the
+internet
+how do you know that what you said or
+what the other person said hasn't
+changed
+right so if we switch to written
+messages and he has to write a note like
+in
+elementary school in middle school and
+pass it to me we have to trust other
+people to hand that message across
+and all the way up here to the stage how
+do i know that
+from the time it left his hands to the
+time it comes into my hands it hasn't
+changed
+that's one of the problems we're going
+to solve with cryptography and then how
+do i prove who said what
+how do i know that bill is actually the
+one that sent that message
+right these are the questions we want to
+answer with this talk
+all right you get into the definition
+stuff here blah blah blah basically i
+want to keep private stuff private right
+we can solve more problems like we just
+saw in the previous slide
+but but
+here's the exciting part so google has
+been tracking the use of the word
+cryptography since 1800
+okay so that's 1800 right there
+right about there really low low usage
+right
+not a lot of people talking about it
+they want to send a private message they
+walk down
+to their neighbor and talk okay this is
+1900
+right about here there's a little
+plateau so
+during that plateau i just googled some
+stuff to figure out what was going on
+just out of curiosity
+your mileage may very interpret it how
+you want interesting things
+at that time i found there was the box
+of rebellion
+the formation of the irish party the
+world's first wireless transmission that
+certainly wasn't encrypted but maybe
+they were thinking about it maybe they
+search google
+uh mckinley was shot and the socialist
+revolutionary party was started
+so there's a bunch of relatively
+sensitive topics maybe it came up at
+that time
+and then in the late 1900s
+we see this huge spike why any ideas
+wrong a man named bruce schneer
+wanted to sell some books and get some
+speaking engagements so
+he spam the google search results to
+make it really popular
+he succeeded in his mission and then
+what do you think happened right there
+he retired
+and then it dropped off sharply and then
+right around the 2010s we had
+the rise of bitcoin and ransomware and
+people are re-interested in cryptography
+right now if you don't know bruce
+schneer
+you want a deep dive go read one of his
+books he is one of the the leading minds
+in cryptography okay
+i was kidding he's a respectable man
+so if you forget nothing out there if
+you remember nothing else
+from this talk what do we want from
+crypto
+cryptography pain that's right
+did you say it in english all right
+it's all about pain p
+privacy confidentiality
+a authenticity we want to know who said
+what
+if that was really the person who said
+it i integrity
+i want to know that the message hasn't
+changed from its original state and in
+non-repudiation this is very closely
+linked with
+authenticity but it's more of a legal
+concept again guys don't skid me
+i'm standing right at the top of that
+layer of ice we're not going down into
+the pool into the freezing water
+okay p-a-i-n what's it about
+what's cryptography for everybody
+this is painful everybody say pain at
+the same time what is cryptography
+there we go it is painful to study too
+okay visual aids cryptography
+brings pain that's a paintball gun on
+the right and a man in the shower
+do you want to talk about pain okay
+we have some key terms here i'm slapping
+because i didn't put this in my speaker
+notes and i'm looking at a blank screen
+i only have speaker notes on some slides
+so note to self play text this is the
+easiest one
+it says what it is right a cipher this
+is
+an algorithm with which you encrypt
+plaintext the ciphertext is the text
+that has gone through
+a cipher we get what's called a message
+digest from a hash function
+now this is essentially a one-way
+encryption that's not meant to be
+reversed
+okay cracking
+not the same thing as reversing
+we're going to spend a lot of time on
+these two here because we want to solve
+that for those problems of communicating
+privately
+and maintaining we want to achieve full
+pain right so
+a symmetric key this is synonymous with
+you'll see all sorts of these just know
+that they're all talking about symmetric
+key
+encryption private key shared key
+session key secret key
+all four of those five of those mean the
+same thing
+okay now here's the thing with symmetric
+cryptography that's what that's me and
+bill talking
+in croatian we both know what each other
+is saying it's very fast and easy for us
+to speak
+a language that we know natively
+computers can do the same thing
+with encryption the problem anybody
+what's the problem with symmetric
+cryptography
+distribution of keys yes sharing
+passwords etc
+same thing so how do i tell bill what
+language to speak
+without any of you knowing that's the
+problem
+and that's a scalability issue for
+symmetric key
+encryption now it is very efficient
+that's one of the
+big benefits asymmetric cryptography
+you'll see public key cryptography pki
+public key infrastructure this is a
+what happens here is we generate a key
+key pair
+private very good and you have a public
+key which you publish this is
+counterintuitive to some people why
+would i publish my key
+the way it works is something that is
+encrypted with one key
+can only be decrypted with the other key
+so i want to publish a public key and
+let you encrypt things with my public
+key so that only i can
+decrypt that that achieves
+confidentiality across an open medium
+so let's look at it this way as an
+example
+uh you there with with the boxers yes i
+can tell you're my example person right
+here
+so let's say you have an imaginary lock
+box
+and i have a padlock and i chuck my
+imaginary padlock out to you and you
+catch it without getting hit in the face
+now you can write whatever message you
+want inside that steel lock box
+drop it in there and then lock it with
+my padlock and then you can have other
+people
+your mules carry it to me when it gets
+up on stage and i
+unlock that box i'm the only one with
+the key then i can read your message can
+anybody else read it along the way
+not for the purposes of our example okay
+this is a very simple illustration of
+how some
+asymmetric cryptography works
+now the same is true digitally
+in the reverse it's not quite the same
+in real life with physical lock boxes
+right but i can encrypt something with
+my private key
+that then anyone can decrypt with my
+public key
+why would we want to do that
+yes because something that is
+encrypted with my private key can only
+be decrypted with my what
+public key that means i must be the one
+who wrote that message
+there's your authenticity so
+then we get some other terms cia very
+common term abbreviation
+whatever you call those in uh insecurity
+confidentiality integrity and
+availability
+we're always trying to keep those three
+it's a balancing act
+and then we have pain what's that stand
+for
+p privacy authenticity
+integrity and non-repudiation
+it's very similar to asymmetric right
+it's like half asymmetric
+cryptography i can take
+a large file put it through a hash
+function and a
+fixed size block of text comes out that
+represents
+that file if you change anything within
+that file
+the output of the hash function changes
+that's the purpose of hashing so i can
+send you a file
+send you what the hash output was tell
+you what algorithm to use
+and when you receive the file you run it
+through a hashing function as well
+and if it matches bingo you got the
+right file
+if it does not match then that has been
+again symmetric key this is
+not scalable sorry i get mixed up on
+these
+so talking up here by the way any one of
+you could have given this talk
+all right just a couple of hours of
+study so let's hear let's have some more
+talk submissions on
+intro stuff so we get more speakers up
+here
+so submit your key achieves
+confidentiality but not all the other
+stuff
+it's fast but it has problems with key
+distribution
+asymmetric we achieve non-repudiation
+with this
+we can and it is very easy to distribute
+keys
+because you publish one publicly okay
+achieves full pain
+all right here's the quiz as a team i
+think i got the three questions
+okay keep these in mind now what's an
+everyday
+example of communicating privately
+sure web browser very good
+are you heckling me this doesn't feel
+like heckling i thought you were gonna
+heckle me
+i studied many years in the amazon
+forest of [&nbsp;__&nbsp;]
+you might have done it all right
+so if you have a lot of data to transfer
+which one do you want to use
+which type of encryption symmetric or
+asymmetric
+symmetric because you have a lot of data
+it needs a transfer it needs to be fast
+if you're a web server and you have
+thousands of clients that you're
+connecting to and trying to talk with
+which are you preferring asymmetric or
+symmetric
+symmetric why can't you use symmetric by
+itself what's the problem
+exchange key distribution it's very
+difficult to get those out securely
+now if bill and i met privately outside
+and discussed
+we were going to speak croatian or some
+other language then we could do that
+privately but that's not possible
+on a scalable in a scalable fashion so
+how do we handle key distribution
+efficiently
+we switch to asymmetric
+or public key cryptography if we need
+integrity non-repudiation and
+asymmetric or symmetric asymmetric
+public key cryptography so what's the
+problem with asymmetric this is just
+review
+it's slower thank you now
+so how do we get the best of both worlds
+we use a little something called hybrid
+cryptography keep an eye on the colors
+here
+red for asymmetric so a client obtains
+the web server's public key
+then that client uses the public key to
+encrypt a freshly and
+freshly generated private session key
+what kind of key is that
+symmetric so we use asymmetric to
+connect
+we generate a symmetric key
+we then send that over that
+asymmetrically encrypted symmetric key
+to the web server and after that we
+start using that as a session key why is
+it's in use for one session and then
+it's discarded
+so we just solved our problem so
+a visual representation step one you
+start with asymmetric step two
+remind me one more time what's the word
+why why do we want to use for
+cryptography what's it all about
+pay privacy authenticity integrity
+there we go okay
+hey how's everybody going anybody drunk
+yet
+all right so uh we're gonna give a quick
+talk
+about the b-sides badge the uh
+challenges
+the challenges that were built into it
+so um
+not very long i'm gonna run through this
+if you went it'll make sense
+if not yeah it might make sense yeah go
+next year
+bucks
+so um on the badge this year we went to
+a couple different challenges
+the first one we had was the beacon
+search
+and crypto so with the beacon search we
+wanted to use the wi-fi that was built
+into the badge
+so we built in a simple scavenger hunt
+we wanted to include the leds in the
+scavenger hunt
+and we had six leds so we had six wi-fi
+so basically when you turned the badge
+on it checked if you were at the
+conference
+and started scanning for those access
+points
+and it would also save your findings so
+we wanted to use a little bit of memory
+kind of expand our experience with the
+8266 and it will save to eprom so if you
+found the first one in the third one and
+you shut your badge off
+you don't have to start over with first
+so initially when you turned the badge
+on it had a site a cylon
+kind of pattern where it would go back
+after about 15 seconds it would turn on
+the wi-fi
+and check for any of those access points
+that were around
+now we made the access points we dropped
+the power on them as much as we could
+so that you'd have to be within about 20
+or 30 feet
+to pick one up we also put some in
+lockers
+i threw one in in a bag in the back room
+um so try to different things to try to
+make it to where you had to search them
+down
+who who found all the uh
+and then once it's scanned it would show
+you which ones you found so you'd have
+and then it would turn off the wi-fi and
+start the cylon
+scan again what we did there was using
+the wi-fi on the a266 uses up a lot of
+power
+so we wanted to try to extend that power
+throughout the whole day
+or two days if we could who had to get a
+second set of batteries
+and once you found all of them it would
+go into random blinky mode
+again because we saved all those flags
+to the memory
+if you turn it off turn it back on you
+so if you have a badge right now and you
+didn't find all the access points
+real simple name and access point batch
+pirates zero one three zero six
+let the badge find it and then it
+we also had a factory reset so we didn't
+do it
+you're welcome if you if you run an
+access point called badge pirates dash
+nuke
+it will factory reset and forget all
+your settings so basically
+somebody please do that because i've
+seen some some badges around here you
+can reset everything
+and to cheat and win all of them yeah
+there wasn't one we didn't build that in
+there
+so moving on to the crypto challenge
+part
+we had two crypto versions one was a red
+herring
+i know sis aaron who's not here cussed
+me out all day
+because he kept coming up with red
+herring as the decryption
+which is what it was the other one was a
+bronze fell
+cipher so
+the grand cell cipher was on the
+non-electronic badges so
+we had 250 electronic participant badges
+plus
+a 75 more speaker and
+sponsor and other ones those had the red
+herring on it
+the 500 non-electronic had the actual
+cipher on it
+if you can't read that that's actually
+in case you want to write it down
+[Music]
+there are because we use a grand spell
+there are two keys
+a numeric and an alpha and those are
+both found
+on the badge itself in the copper layer
+so they'll be embossed on the back of it
+you have
+the number up there in the top left one
+three three seven
+so basically if you decrypt
+that encryption you get
+an ssid and a password that ssid and a
+password
+will give you access to an access point
+which is currently running
+somewhere and on that access point
+there's a text-based adventure game
+complete that text-based adventure game
+and you'll get information on how to
+come up to us and give us
+so we had one person solve this we had
+one person solve this
+the first day and i'm very proud of him
+and that is that guy so i want to bring
+for that guy we are going to give him
+one of our uber badges one of the pirate
+there were five of these made so
+he's got one of them
+so the challenge is still alive but you
+can't win that because he already won it
+i want to also give honorable mentions
+to sis erin there
+far left archwick zilla
+and x mcmillan yeah so sebastian i think
+is probably the only person still here
+so sebastian come on up we got a
+a consolation prize for you too so we'll
+put a picture of this out but we did
+a challenge accepted completed sao
+specifically for these challenges so
+uh we only we only had two of these that
+the the first two were one
+uh one for the counterfeit badge
+challenge and then arden for the
+for this but we had um
+these people they locked themselves in
+rooms
+to do this so yeah they locked
+themselves in the room while everybody
+else was out partying
+and worked on this crypto challenge and
+if you can't tell sis aaron lost his
+mind during this thing
+so on the badge was there any more
+cryptos was there any more challenges on
+there
+maybe an led sequence maybe the keypads
+or the traces
+spelled out something maybe maybe not
+it didn't sorry those were red herrings
+too
+we threw some other stuff in there
+because we knew people would be looking
+at the
+led patterns so we tried to hint around
+that
+and there is some traces on there there
+are some pads
+that may or may not be used in the
+so references um the crypto challenge
+the
+i have a we have a website uh
+cryptochallenges.com
+where we have some some crypto
+challenges up there that we've done in
+the past for set kc
+um i have some 101s up there for
+different types of crypto
+cryptanalysis so if you've never done
+any crypto at all
+but you think it would be interesting
+head to that website and try
+some of the one-on-ones i'm going to
+have a 101
+on a groundsfield crypto on how to solve
+it i'm going to use
+this as the example of how it could be
+solved
+and this write-up itself will be on
+blog.batchpirates.com
+which can also be found on
+badmintonpirates.com
+i want to go through the match pirates
+credits so we've got jiggle billy and
+pcor back there our software developers
+they worked on the software for the
+badges
+network did the awesome kids badge you
+got to see that there was a laser tag
+sharks with lasers on them
+[Applause]
+white hat steph back there worked on the
+game design for the uh
+for the tech space adventure and i get
+more designs
+so after the universe thanks for staying
+for the credits
+but we heard you little guys love leds
+no 650 leds what
+so this is going to be our setkc badge
+for defcon this year
+um look on slack follow us on twitter
+we are going to have us a pre-sale for
+sec kc members only
+for cost i'll give you the code
+or cost of this badge you'll get this
+badge
+or wait until it goes on sale everybody
+and pay out
+like 20 times as much and i'm gonna
+retire after this one
+bill only gets one at cost real quick
+he's got some
+who here knows how to solder who loves
+to solder
+who's heard of maker faire all right
+so we got we got invited this year
+to build a learn to solder kit for maker
+fair kansas city
+so uh in the past uh the make
+organization
+has uh kind of designed their own learn
+to solder kit that
+has been used as part of uh maker faire
+to kind of teach
+uh people how to solder uh during the uh
+during the event and this was this is
+our design
+for um the learn to solder kit for this
+year
+we've been asked to to kind of help with
+running the learn to solder village as
+part of maker faire
+and we are going to have uh we're doing
+a call for volunteers
+so if you if you want to go to maker
+faire and you don't want to pay to go to
+maker faire
+this is a great way to do it if you
+volunteer for a shift
+you will get in the maker faire for free
+so
+those shifts are going to be uh either
+three or four hours a piece
+it runs on a saturday and sunday june 20
+20th and 21st i believe
+i will post a link on twitter
+and on slack for a sign up sheet
+if you're interested if you've never
+soldered before and want to learn how to
+solder and then teach
+people how to solder we will do a
+workshop to teach you how to solder how
+to
+unsolder and help people troubleshoot
+their bat their their solder kits as
+well so it's a great opportunity
+if you've always wanted to and never
+have this this is an option
+uh for you to or an opportunity for you
+to to get those skills
+so follow us if you follow us on twitter
+at badgepirates
+um or or catch us on slack uh if you're
+even kind of just remotely interested
+sign up we'll get some communication out
+around this um but and we'll we'll kind
+of maybe follow up uh
+uh what's up guys my name is ryan uh
+i'm with dev security um i'm just gonna
+quickly kind of recap the ctf that
+happened at b-sides
+the mud ctf um i'm not actually the best
+person to probably be presenting this
+but dan is out of town and so
+i'm going to be doing it so some quick
+facts
+the ctf that was at b-sides was a mud
+framework which is like a multi-user
+dungeon
+the whole design and kind of idea was
+all a dance thing
+it was just kind of a twist on normal
+ctfs where instead of doing the jeopardy
+thing
+you have this like dungeon you crawl
+through and you find different
+challenges as you're going through
+it was a team-based ctf uh the challenge
+categories we had were crypto forensics
+mobile web
+stego phoning reversing programming
+and then some miscellaneous ones we
+couldn't really categorize
+and then there was actually real world
+hacking ones where if you went to any of
+the villages
+around b-sides you could also earn some
+flags at the different villages
+uh all the in-game challenges were done
+by like the depth
+kind of crew a bunch of us just
+contributed different stuff
+so the scoring breakdown so overall
+there was actually 50
+possible flags uh the total possible
+points was
+i think that's 2 970
+000 i think that's right uh 21 teams
+uh scored at least one point um
+the top team was trust boundary with
+872 000
+the most flags they were actually tied
+with sexism for the most flags at 18.
+uh and of challenges solved
+31 of the 50 possible challenges that
+were in the game
+were actually solved and then that
+bottom little chart
+is just the teams and how many different
+challenges they solved
+and on the right side is the all the
+scoring breakdown
+and by the way at the end it was kind of
+a cluster i wasn't actually there
+but at the end i guess it was a cluster
+and if you were on one of those
+top 10 teams and didn't get your prize
+bag or something just come talk to me
+after
+because i think not everyone got their
+stuff but just let me know
+the flag values uh we can post that
+stuff if you wanted i don't know if it
+really matters
+the top five most solved uh stego one
+uh crypto one reversing opponent web two
+which i don't know why web one wasn't
+more but i guess that's not worked out
+uh and i will just quickly kind of show
+you guys what these challenges were like
+even though it was like a mud uh kind of
+dungeon design you still kind of popped
+out a lot to
+web challenges or crypto challenges or
+whatever so challenge one this is the
+most solved challenge
+was a simple stego level one
+this was a file that you found that
+would be hosting on a server it was this
+little critter i don't know what that is
+actually
+the best thing to do with these when you
+first get one is to check out the exif
+data
+uh this one was pretty simple because
+once you put this into like an exit
+viewer
+the description of this image was
+actually the flag so
+pretty basic one quite a few people
+solved it
+and so next time if you ever play
+something to look for
+the next one i was going to cover was
+sago 2 which there was only two people
+that solved
+so you came across a note that had this
+text on it
+which is just it doesn't quite make
+sense at all
+uh it's kind of an out of order looking
+sentence maybe
+the hint was it's a nine-sided circle
+i don't know if that hits completely
+good but it's good enough
+definitely once you figure it out um
+and so nine sided circle you can kind of
+see
+just because you know the flag formats
+are gonna have those brackets
+and it's gonna have flag in there you
+can try to try to figure out how you can
+make
+the word flag with the bracket the
+nine-sided circle was a pretty big hint
+because if you take
+the ninth letter every ninth character
+in the string you can see that it starts
+to spell out flag
+there and so if you loop through this
+entire
+script or text you can find that you can
+actually go with a simple little python
+one-liner
+just to print off the ninth character
+and if you run that you'll get the flag
+that
+walker nearly bachelor teacher stood but
+a little bit tougher and not a lot of
+people solved it
+um so just something to look for next
+time you play
+we had 19 challenges in the game that
+were never solved
+so we'll just save those ones for next
+year i guess
+that's nice for us we made a bunch of
+these challenges
+and lastly one of the challenges that
+wasn't solved
+is actually still posted on our twitter
+if you go out there's an image there and
+if you look at it something
+clearly looks a little off about that
+image a little
+shot of the kc skyline but if you go to
+the twitter page you can download that
+image if you solve it
+message me on twitter or slack or
+something and we've got prizes that we
+still left over from
+the ctf anyways and if you still want to
+solve it send me the flag
+it's in there good luck with that
+[Applause]
+and if you have any issues with the ctf
+or questions uh
+come to me afterwards dan's out of town
+but he would probably have
+thanks ryan good job
+thanks you did a good job on this etf
+thank you all right well
+ladies and gentlemen that concludes may
+2kc see you next month
+it's always on patch tuesday
+[Applause]

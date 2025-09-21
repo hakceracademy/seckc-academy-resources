@@ -1,0 +1,1841 @@
+good evening thank you for everyone for
+being here apparently very good Joel's
+gonna deliver for us tonight so
+apparently we are the brave souls that
+are not paranoid about Kovan 19 because
+we really get together with a group
+without hearing and at least once good
+housekeeping thing again red canary we
+appreciate there are partnering with SEC
+you seem to appreciate their investments
+in the local cybersecurity again early
+tonight folks so we appreciate their
+partnership and their investment in the
+local hacking community so make sure you
+go by shake his hand I think there's
+just one guy back there and learn a
+little bit about what they have what
+they have to offer there you have some
+dirt ants so go talk to have a drink
+ticket speaking of tickets
+besides this coming out I should know
+but it's like April many something like
+that we have three b-sides passes to
+give away this evening now you're gonna
+play on this worse this is not sexy as
+an organization reaching out that's not
+how it worked instead to pick two
+members of set Casey bought tickets and
+said hey we want to donate these we want
+to give these away so here's how we're
+gonna do it and we're going to just do a
+random drawing Martin is over here or
+the watermark with your hand it's nice
+and dark in here Martin is over here
+he's gonna head back into the arcade
+area and we're gonna follow our world
+rules of where it stayed behind the SDM
+Paul Martin has rented tickets okay I
+leave that you all are going to be
+totally cool with this yes they match
+the free drink tickets that are being
+given out by red Canary no they do not
+have the markings on the back
+the red canary tickets have yes they
+could be forced but hey we're not going
+to go down that route
+Martin has these tickets between now and
+the start of our second talk second talk
+I should have that memorized I don't
+remember when it starts it's gonna start
+in about an hour that before that talk
+we're gonna do the drawing for those 3d
+sites passes all right that's how that's
+gonna work but let's go ahead well let's
+get into our first feature talk for the
+night we have Brent stone Brett's going
+to be presenting this evening on reverse
+engineering ICS thank you all right all
+right we got one one more time good
+evening sexy yeah yeah my name is Brent
+stone I'm gonna be talking I'm gonna be
+feeling about three years worth of
+research it's about 50 minutes it means
+I'm gonna be laying on pretty thick but
+don't worry this back-up plan one
+everything's on github that bolded link
+right there just if you can remember my
+name keep the flyer you can find the
+github repo and go from there so if
+anything it's confusing doesn't make
+sense you want dig deeper or you just I
+wasn't doing a good job making it clear
+doing this presentation you can go into
+that repo and I guarantee it's pretty
+well documented and there's working
+proofs of concept there and data you can
+work off of so don't worry about if
+someone goes over your head now I can
+dig into that alright so having some
+problems
+one second all right we're back
+all right there we go all right so
+industrial control systems why do I care
+whoops all right one can't make John
+robots robots about industrial control
+systems ever since I watched robot jocks
+in the 80s didn't love John robots it's
+these legends basically for example if
+you're going to watch your daughter
+taking a seat next to a guy couple years
+ago and he was very uncomfortable this
+[Music]
+[Applause]
+[Music]
+now still hating it here we go
+we're good I'm good alright alright so
+also there's a great talk recently at
+RSA this year basically any industrial
+control system you might work with
+professionally or as a hobbyist it's
+either gonna be not documented right
+what should be no documentation provided
+no automated facts is gonna give you
+this back before the car that you're
+driving right that's gonna be completely
+opaque to you this is gonna help me do
+that figure out what the heck your car
+is actually doing especially to get
+self-driving got a car like my funny
+bear took my family in there where it's
+kind of a sick part in there and just at
+the car take what we're driving from me
+I didn't fight it
+that raised concerns obviously you want
+to do more than just trust your om out
+there have your best interests in mind
+okay especially think about medical
+electronics right moment you can find a
+lot of money from what they did with the
+to verify and then finally it was a
+couple days to hear a teacher or
+something like that
+Walt I'm being a [&nbsp;__&nbsp;] patience for a
+machine learning and a little bit of
+math alright also why do I care over
+that
+so what am I gonna be talking about
+let's talk shop first really me I'm
+talking about diversity and what I get
+here is I need to make reverse engineer
+but also this way of thinking about
+reverse engineering industrial control
+systems there's certain properties
+specifically control systems that are
+necessary properties of your normal
+Network like TCP IP networks that you
+can exploit and think about realism
+ecologist complete about diversity of
+those messages are big set and then
+finally get into the actual applying
+reverse engineering piece all right
+[Music]
+alright alright okay the key thing here
+[Music]
+firstly they're trying to say
+[Music]
+I just wanted to turn ability I want
+delivery guarantee migrate brakes and
+actually I don't have to worry but I
+lose flexibility I have to fix end
+points tactics driving and we can do
+that for baggage which we do lose men
+down we do game is there force make a
+full decision afterwards and we could
+use that term baggage for coming in -
+all right so pretty cool things that
+happen to become of this trade off first
+Halos even fix for me all right because
+you know any men that the manufacturer
+a priori al4 halos can be formatted so
+we needed to send on a wire all the
+things work know how to interpret it all
+right the other pics Palin's longer time
+each of them the networks of device the
+message the exact same message every
+single time it's time for formatting but
+they violate most these devices are
+going to send seriously all right some
+of its accurate advisory are updates
+every millisecond or every 10
+milliseconds or something like that and
+then finally again network IDs are
+typically used so you can without doing
+anything prior terry object that they
+use you can uniquely identify it
+probably this Center and step are going
+to share these typically for the same
+reasons before and this is just Murphy's
+we see anything okay you can see stuff
+you trying to belittle 3-over working
+work with me I got one of those I think
+I should bring it back hey so another
+thing that happens just rolling on so
+because we're working with servos or
+Motors is a broom broom particularly
+another Creek analog signals right
+proximation analog signals and like you
+didn't understand those chemical time
+series that were essentially samples
+over time every time looks like observed
+payloads at the top I've got a penguin
+as I think here and then I extract that
+out so I looked at or I interpret that
+binary data or a hexadecimal data as
+integers and then now I can label that
+all right this is my vehicle speed Wow
+there is a lot of room or well how do I
+[Music]
+one system but if I've added a little
+bit of red to it so some prey now I've
+had a little bit more than versity but
+not quite diverse right for [&nbsp;__&nbsp;] a
+little remnants and edibles again and
+then if I had a lot of rabbits and then
+a little bit of deer takes a more and
+have all types available so the way that
+you can quantify this is the chain of do
+this change in information theory of
+entropy now I have a numerical way and I
+understand how diverse the signal is and
+this gets to how do I differentiate
+wizz-wizz signals from the state signals
+okay for those of you identify or
+disproportionate importance the
+difference of the different specimens in
+my sample population whether that's the
+numbers letters and your plaintext
+you're trying to encrypt or this is your
+time series data that you came up
+industrial control system if one type of
+value is over-represented then you're
+going to
+a less diverse population and the goal
+of cryptography is to create perfect
+diversity by maximizing entropy same
+thing of compression that looks for
+repetitiveness and then it just
+simplifies that to a single value is
+saying alright just repeat this seven
+times alright so now that we've got a
+way to differentiate state from more
+analog signals so that's one step in the
+process of automating this next part is
+how do we actually break apart these
+payloads so let's say we've got a
+sentence and we want to break that up
+into its individual words each word it
+would be a token this process is called
+tokenization if you've ever worked with
+compilers or something this is what the
+written butter is now look at payloads
+one way that you can look at the data is
+take the whole sentence of one big chunk
+not a good idea but you could do it so I
+take my payload take it one big chunk I
+get some output but it's probably
+nonsense now if I actually put a little
+bit nuance in this and I take part each
+individual word now I get each
+individual time series and this goes
+back to the design trade-off of having a
+just real control system oftentimes for
+speed I need to embed multiple pieces of
+information in a single payload and that
+one transmitter is sending that same
+information over and over again so I can
+exploit that to try to find what
+individual pieces of information are
+embedded in the payload so how do I do
+this there's actually an extremely
+efficient method for doing it using just
+X or Z so let's say I'm looking at data
+coming over the wire I mean here I've
+got a 10 bit palos I'm looking at
+transmissions from top to bottom expire
+occurring over time so the top payload
+is the first observation I see the first
+transmission from that industrial
+control system agent and then the second
+payload is line number 2 etc etc so I'm
+looking at all the payloads coming
+across the wire when I do is a pretty
+copy of that data and you can also just
+do this with a few registers if you
+wanted to I shift it by one row and then
+I XOR
+observations against each other what
+this tells me is when it flips from 1 to
+0 or 0 to 1 I can record that through
+the X or as a change okay I'm looking
+for diversity and now I've got this
+record of how many times if it is
+flipping well because we're using
+torrent machines because we're using
+binary encoding which almost every
+modern computer has to use you're gonna
+have a lis significant in the most
+significant bit and by necessity if you
+have numerical data least significant
+bit is almost always going to transition
+more frequently than your most
+significant bit not only that but it's
+going to be a generally smooth gradient
+of transition frequency from your most
+dearly significant bit so you can do
+this by just summing up the resulting
+xor matrix and if you look at it
+visually then you get a pretty good
+educated guess on where the unique
+pieces of information embedded in my
+payload are okay and we're doing this
+all by looking at diversity of single
+bits or messages as a whole and now this
+is a real-world example for my prius at
+the front we got some some sort of
+checksum and then we've got four
+instances of my rpms and then we got
+swarm at a dead end
+okay so we've got two elements to break
+apart individual payloads and then
+compare pay list you know whether it's
+an analogue or maybe a digital signal so
+how do we how do we tell one signal
+looks like the other apples and oranges
+all right so this is one example of the
+results of breaking apart a payload and
+the output as you can see in the middle
+I've got four instances of data that
+look almost exactly like each other so
+if I'm trying to automate this I want to
+find all these instances that look like
+each other not just in this payload but
+across other payloads in the ICS and I
+want to correlate those all together
+okay so here's agent one zero one and
+two these are different parts of my car
+talking on the network and as you can
+see pilot and
+orange almost the exact same data is
+being transmitted and this is makes
+sense right I've got four wheels each
+wheel is telling me how fast it's
+rotating and so I'm going to get
+repetitive data but then you get in this
+more nuance if you look at the blue okay
+this right here what they do look
+similar so how do I actually capture how
+similar everything looks and make a
+decision about that
+all right well ecologists already
+figured out how to do this we have a
+million different types of bugs and
+we've got a systematic way of
+categorizing this bug looks this similar
+to that bug it's a tree of life okay and
+then we've got a machine learning
+technique that does the same thing idle
+narrative hierarchical clustering
+writing anything like that essentially
+just says you give it a distance metric
+okay so how similar these two things
+look and then I will tell you how to
+group them with the creep this time
+let's call it dendrogram but you can
+think of it the same way as a tree
+length how similar are these two animals
+alright nice thing about hackle America
+clustering we don't need to know how
+many different types or categories ahead
+of time which is critical most of these
+machine learning techniques you guys
+give it a guess ahead of time how many
+categories am I expecting hierarchical
+clustering doesn't force you to guess
+and I could also work with a single
+distance metric like pairwise and then
+like I said that dendrogram gives you a
+very intuitive idea of how similar
+things look and how the network is
+looking in this case I'm just using as
+long as one animal in this group look
+like another animal in this group or a
+signal looks like this signal I'm gonna
+say the whole group over here looks like
+this group over here okay that's single
+linkage like that but there's other ways
+to go about that like I want to look at
+the most dissimilar representative of
+this group and the most dissimilar
+representatives and use that as a metric
+okay there's different ways to do that I
+haven't explored these other ways of
+doing it if you want you know get
+published or do some research
+something worthwhile to do okay and then
+how do I actually get the out of my top
+Houston one of these signals look like I
+interpolate and then I create my
+correlation matrix correlation matrix
+basically just says how similar is this
+squiggly line look to the other squiggly
+line you could have this big matrix here
+you plug that into the clustering
+algorithm and then it goes from there
+again if you're not familiar with
+machine learning or anything's going on
+your head please look on the github and
+we'll explain everything if I get a
+distance matrix so I want high
+correlation to represent load distance
+okay when I'm clustering you just take
+one minus that correlation matrix so if
+I have 99 percent correlated behavior
+then I want a very low distance so you
+just do a conversion and then you plug
+that into the clustering algorithm it
+all works all right so now I've got a
+way to extract information from my
+payloads I've got a way to say what
+information in each payload looks
+similar to each other automatically and
+in the general sense and now let's take
+it one step further okay this is where
+it gets a little bit heavier so let's
+say cars in particular they've got a
+protocol J 1979 same way that the
+Environmental Protection Agency and
+nishta National Highway Transportation
+Safety Association found out Volkswagen
+was cheating was because the whole
+reason that that pork is underneath
+their drivers column is you hook up to
+it and then you hook something up to
+your exhaust pipe and then you can say
+alright the car is doing this and my
+emissions are stay below this threshold
+so J 1979 is the federally mandated
+protocol that the car should comply with
+so I can ask the car certain certain
+questions like what is your current rpm
+when is your current speed now that's
+only covering about 10% of the total
+carb
+everything else is proprietary hidden
+and obscured which is why Volkswagen
+Nissan and all these other people right
+get away with this for so long so I've
+got a little bit of data labeled data
+I've got a way to cluster them together
+so I've got my speed rpm but now I've
+got all these other signals are
+proprietary I would like to know what
+they are
+well I can objectively say automatically
+say well there's causal relationships
+right when I see this line go down or if
+I see the slide go block this other
+thing that I don't know what it is goes
+down or up all right there's a there's a
+cause and effect there but I can observe
+it visually well I can also observe it
+automatically to algorithmically
+so this goes back to predator and prey
+right as my foxes kill whopper my
+predator goes up my prey population is
+gonna go down until it gets to a certain
+point where they run out of prey they
+start starving they die off the prey you
+know repopulate and then this cycle
+starts all over again you've got this
+cause and effect well I got the same
+thing here it turns out that there's
+some really exciting science going on at
+UC San Diego and elsewhere called
+empirical data modeling we've all
+learned this trope whether in math or
+something that correlation does not
+imply causation
+well causation implies causation and
+there's actually a way to test for
+causation now and let me give you one
+example of how we do it so what they did
+is one experiment from he's an ecologist
+a guy who kind of built on this George
+sugahara he was looking at a cell and he
+gave a special ink to the cell to
+fluoresce as it was doing something I
+don't know I'm not an ecologist it's the
+way it is he took a time series of how
+brightly that self will rest over time
+so here at the top we've got this time
+series that we're observing and then
+again
+right now but you can create this sort
+of three-dimensional representation or
+actually n dimensional representation of
+this time series so you kind of get like
+a 3d model of what's happening as you
+can see it's kind of spinning around
+here and then when it's about to go dark
+again it's gonna hang out the bit slow
+down here so right now see it's almost
+totally dark and then it's about to go
+back and you'll see it kind of trench
+first this little road right here and go
+back up and what that gives you is a lot
+of predictability now you have without
+knowing what's going on in that cell
+that you can have an extremely accurate
+model of what is happening so again we
+don't know what the manufacturer made
+this thing to do or we can predict a
+priori what we were trying to get out of
+this system but we can't create an
+accurate model and so what what this
+looks like in practice is your car is
+what's called a dynamical system okay
+so you're part of the car so when I was
+looking at this data what happens is I'm
+over here and I'm anticipating I'm
+coming up to the stoplight so I press
+the brakes on my speed my brake pressure
+goes up and then it goes down when I
+come to a complete stop and now I've got
+other data that's coming out with the
+same system your cars one system let's
+call this my rpm and let's call this my
+vehicle speed okay so all this stuff is
+related to each other there's a cause
+and effect going on throughout the car
+and when you plot all these again we can
+make this three dimensional or n
+dimensional representation again I'm not
+going to go into much detail why why
+that is but what I can do is just
+looking at the time series I get out of
+the car from the stuff I already talked
+about I can recreate this and now make
+predictions on stuff I don't know what
+it is so if this is my rpm and speed
+that you get from J 1979 and I don't
+know what this group was I can still
+measure how strong that causal
+effectives and what this allows me to do
+is if I've got this then I've got this
+representation this is my model for
+brakes this is my mom
+rpm turns out there's a one-for-one
+relationship between these two the
+mathematical term for that a field
+morphic relationship again I'm not
+trying to impress anyone with these
+words but I'm just throwing it out there
+so you've got it available what happens
+is as this is going around or a little
+cool little sketch here every single
+point on here it's going to relate to
+exactly one and only one point over here
+so what that allows me to do is just
+like machine learning where you can make
+models that predict okay my next values
+gonna be ten my x values gonna be eleven
+based on my previous values you can do
+that for this stuff that you have no
+idea what that data is and it's in this
+dynamic relationship you can use these
+models to make predictions of each other
+the net effect of this is now I could
+look all right this is my RPM and this
+is my unknown
+let's break if I take kind of three
+points on that model I can and I move it
+one time stamp look at how accurate that
+prediction is for where the new value is
+on that model now I can quantify how
+good my my my manifold is for predicting
+the end state here is now I've got my
+speed got my okay I don't know what this
+is but I can't tell you how strong those
+causal links are okay and this goes back
+to the automatic piece well now if I
+have several instances of training a
+supervised learning algorithm saying
+like hey speed in rpm if you see this
+kind of causal strength and you see this
+causal strength to another cluster over
+here because we've trained this this
+system I know that's a break okay so now
+you can get into this thing where is
+completely unsupervised at some point
+you can reverse engineer your entire car
+as long as enough people add data to the
+sort of training model to say like hey
+I've observed by rpm and speed have this
+strength of the causal relationship on
+to my braking signals and now we can
+completely automate the whole thing
+alright so let's go to the actual
+application here this
+the code that you would see on github
+the whole point the only thing you're
+going to need to modify is this first
+part up here to change it to any other
+protocol I've already changed this code
+to several other protocols and by and
+large the only thing you need to take up
+here there might be a little bit of data
+massaging that you might need to tweak
+here and there but by and large if you
+want to use a different protocol other
+than can just change the protocol
+specific pre-processing that's on the
+github lexical analysis is why I talked
+about earlier you take tokens like this
+is the sentence you break it down
+individual words processes knows lexical
+analysis your compiler does it all the
+time and this is how we specifically get
+after algorithmically the process I
+talked about earlier where I've got
+multiple pieces of information and been
+in my payload I want to get these time
+series out of that I see these hills
+right here you can just do a hill
+climbing algorithm so you start at the
+first bits a bit zero okay I'm gonna
+move to the next bit is that bit greater
+than or less than the one I just saw if
+it's greater than then I'm going uphill
+it's less than and I'm going downhill
+okay this automatically counts for a
+little endian or big-endian encoding
+another necessity of Turing machines of
+binary encoding now I just want to keep
+adding the bits together and assume that
+they're all part of one message as long
+as I continue to go uphill or I continue
+to go downhill if I also have a big
+change in that then I can assume that
+I've come to one of these edges right
+here okay and now I need to start a new
+there's a new piece of information
+embedded in this paling once I reached
+an inversion a five I'm either I was
+going uphill and also known packet 0 or
+I'm just going downhill and now also Dan
+went back up start a new thing and then
+beginning with wherever that new bit was
+start there and forget
+process all over again two little tweaks
+to this simple hill climbing that you
+can do is wand decide if you want to use
+padding mix so a lot of times
+manufacturers for one reason or another
+decide not to use a bit at all so there
+will never be a flick it just always be
+zero or always be one every single
+payload that's transmitted so you can
+decide alright do I want to include
+those padding [&nbsp;__&nbsp;] when I put my
+cluster and interpret this data the
+second thing you can do realize there's
+not always a perfect Hill going so you
+can see here like I've got a little bit
+of a bump down I went downhill a little
+bit so when you look at this cone on the
+game hub there's a thing with a variable
+American accent version well that's not
+allowing you to do is account for it
+going downhill does a little bit and
+accept that and continue to cluster
+those bits together to group them into
+one piece of information and that allows
+me give you a little bit of flexibility
+in tune it
+I have not explored using different
+values or smarter ways of doing it I
+just picked point two for every single
+car and looked at work good enough for
+me but certainly something that could be
+improved on and then finally semantic
+analysis is this process of I've got a
+sentence I broke it up into different
+words but now I want to know the word
+sentence what type of word is it it's a
+noun okay so now I've got I've applied
+to meaning to what one of those that
+goes back to the apples and oranges
+piece you know I know one thing in this
+cluster is rpm because I asked for that
+information
+I could say everything in that cluster
+is rpm that process is known as
+semi-supervised learning but the way a
+semantic analysis performed slice and
+dice those payloads interpret the data
+as a time series now this is another
+piece where I got I just ran out of time
+he got a little bit lazy and I could
+definitely use smarter people to help me
+with this is I just assumed everything
+was
+integers but that's obviously not going
+to be the case a lot of time numerical
+down over there there's nog numerical
+data so if you look at the code just go
+in the back step I'm just sort of
+punched it just assumed okay you're
+gonna be a buffer and you're gonna be an
+unsigned number normalized interpolate
+so like I say everything that's working
+on the network it's gonna probably send
+things synchronously some things aren't
+asynchronous but things are gonna send a
+different synchronous rates so one thing
+might be sending thousands of message a
+minute another thing might be sending
+one message a minute so I need to be
+able to compare those two equally so I
+have to interpolate my data to whatever
+my most frequent transmit rate was and
+then go from there
+technically the correlation matrix which
+I talked to you if you have to clear
+correlation matrices don't worry about
+it it's just a measure of how similar
+two things are filter based on that
+Shannon Index okay so if I want to say I
+don't care about state I don't care
+about digital signals I just want the
+analog because that's what I really care
+about I personally chose to filter those
+out but you can make a different
+decision and then I removed any negative
+correlations so I've named if I mean if
+this goes up the other thing goes down
+that's negative correlation I just
+ignored those for the time being in the
+current code but there's something you
+could definitely work on cluster them
+and then partially done look at the
+causality between clusters I talked
+about one thing I did not get time to do
+was build that supervised learning
+algorithm again all this code is on
+github and is 90% of the way there to do
+the supervised stuff but it's gonna take
+a little bit of extra effort alright so
+how well does it all work what I found
+is almost every every single car I had
+over 90 percent consistency or accuracy
+now anyone that knows working with
+interpreting data if you're off by one
+bit that's gonna screw up your whole
+interpretation if you're only assuming
+everything is a signed integer that's
+also gonna screw up your interpretation
+so being 90 percent is not good enough
+you need to be 100 percent accurate even
+99 percent accurate
+kind of rough so if I miss that most
+significant bit that's gonna be a big
+problem for me if I missed at least
+nificant bit I could probably survive
+that but what I found is over time no
+matter what driving conditions I was
+working in or if I split and recombine
+my data in a bunch of different ways I
+maintained a lot of accuracy on the
+question of how do you know accuracy
+without knowing the truth data that's a
+whole another topic that is in the
+documentation but basically what I found
+is whether I was driving on a runway so
+I just was on a straight drag try pedal
+to the metal I've got to the end turn
+around pedal to metal went all the way
+to the other side or about driving the
+city or if I was in my full community
+form I worked at home the results were
+identical except for the city driving I
+dropped one I've changed one thing in
+practice I think I filtered this out and
+again I'm just using don Tunes
+parameters I'm not particularly trying
+to be good at this I just use default
+settings that I thought looked okay good
+enough so it's pretty accurate so far
+but certainly be improved with that I
+was I got a fuller with the 17 cars I've
+personally looked at I'm happy to walk
+through the results and output and
+answer any questions so I open it up
+yeah yeah so so the two questions finder
+stood them correctly the first question
+was from an academic standpoint well
+what's the kind of the Venn diagram
+between computer security machine
+learning and just traditional computer
+science is that fair one I just want to
+really truly re-emphasize that I am a
+terrible hacker you know if you define
+hacker in like a very general terms why
+are even a cybersecurity person in a
+very general term of you know making
+things - using things in an unexpected
+ways to get cool results then sure I
+consider myself a hacker but if it's
+something like the next speaker you know
+working through the Christmas and
+holiday hack challenge I would bond that
+stuff all the time I would consider
+myself a decent computer scientist and a
+decent machine-learning guy
+what's the overlap that really I think
+that really depends on your goal is if
+you're really trying to make if your
+only goal is like maximize your paycheck
+then certainly machine learning and
+cybersecurity are great and if you can
+combine both of those then even better
+if you've got the time really my biggest
+recommendation to anyone trying to get
+into this field and develop their skills
+is take a statistics course before you
+do anything else even computer
+programming if you understand statistics
+and you understand linear regression in
+particular just that very I call it
+foundational but really it's almost kind
+of master's level you can do you'll
+understand machine learning a hundred
+percent better than people who does
+click the button understand statistics
+go from there the second question was
+about the embedding so the other nice
+thing about empirical data modeling and
+what George sugihara's doing is this can
+also automatically be done so
+determining the correct embedding so let
+me let me back up real fast the I'm
+using the word embedding what embedding
+means is how many dimensions are
+using so two-dimensional is a plain
+three-dimensional is kind of what I
+shown you the time series is arguably
+one dimensional okay all the EDM stuff
+and there's a link to it on the github
+and there I barely understand it enough
+to talk about it
+it can automatically tell you the
+correct embedding so if you remember
+Jurassic Park okay and he has a you know
+that chaos theory thing of like you know
+butterfly flaps its wings and then it
+affects you know the someone crashed in
+China okay this is the same field of
+study what this empirical dad model I
+could do is yeah well the butterfly
+flapped its wings but it really didn't
+have a substantial effect there's
+actually it'll automatically tell you
+how many things you should consider when
+making that model to capture what's
+necessary so it'll tell you the correct
+embedding so for me like if I'm trying
+to make a model for my break I just give
+it all the data that I have and it will
+tell me which data I should be using to
+recreate that manifold so I'm so sorry
+yeah so he can tell you what what what
+and change between metric is English
+units displayed that doesn't change the
+data so one thing I did the sidestep
+that problem is I normalized everything
+so I assumed everything was numerical
+data again was a cop-out move on my part
+I assumed everything was numerical and
+then I normalize it normalized it and by
+that I mean scale it from a zero to one
+so whether it's using US or metric units
+it's gonna create the exact same time
+series if that makes sense
+but that's a cop-out because at a
+certain point you might want to know all
+right well what is my actual value and
+that's where you're gonna have to do
+some manual reverse engineering sailing
+all right it got me all the way I've got
+I know exactly what bid somewhat
+transmitter I'm paying attention to but
+I want to know like the actual speed or
+the actual rpm that the car considers
+you're gonna need to like add a scaling
+factor back to that time series to find
+that out so one one that I'm thinking
+about one thing that would be an
+interesting research Avenue is because
+we've got this de 1979 data I can't get
+the actual vehicle speed and then if I
+know like okay I think this signal of
+this time series is vehicle speed then I
+can probably just do a division or a
+multiplication and get figure out that
+scaling factor automatically so if you
+if for example can you you have some
+truth data available then you might
+of straight-up legit as a reminder the
+raffle tickets for the three besides
+passes first two are normal you're just
+your normal entrance badge last one is
+one of the sites of blinky badges those
+things are are super super cool I didn't
+get one this she's ready to get signed
+up in time but those are those are
+pretty cool so anyways I can't see
+anything right now but Martin should be
+in the back he's wearing a beige sweater
+he has ticket still left one one ticket
+per person see him and we'll do a
+drawing here we're gonna move Jonah up a
+few minutes just trying to get you guys
+out here a little sooner
+so 10:15 this were the tunes and we've
+got the second talk where Erik's gonna
+talk through the doing very well in the
+sands holiday hat shop alright last talk
+I was really excited about both of these
+Fox tonight you not gonna go any to
+another meeting in Kansas City get tech
+talks like this like this is this is
+just amazing material hair jeona is up
+next some of us have played around some
+more than others with the sands holiday
+hackathons Stan's holiday hack challenge
+as somebody that has did on that and not
+me Brody progress I have high levels of
+respect for those that have navigated
+through that and err
+come talk to us about his experience
+within Turk there you go thank you the
+last talk tonight oh man thanks everyone
+for sticking around later than usual all
+right hopefully this is beneficial to
+you guys to explain what happened but I
+will be talking about the sands 2019
+holiday hike challenge and how I was
+able to hack my way to super honorable
+mention
+so yeah that's me Eric I go by giotto
+okay raise your hands
+um who's I sneaked on the sands holiday
+hug challenge does anyone actually
+donate those those what it is he's a
+little bit I'll explain a little bit
+what's going on that way we can have a
+little foundation on everything so this
+is an annual hacking challenge made by
+the same organization they do cyber
+security training certifications and
+things like that so Sam's in the cover
+Noctowl troupe they come together every
+year they make this holiday hike
+challenge so released around December of
+every year mid December let's just say
+December 15th and you can think of it as
+a CTF we didn't aim the bass challenge
+where we have to truly have to use you
+know cybersecurity skill sets in order
+to solve these these challenges so
+that's your progress you can actually
+formulate yourself a write up submitted
+into
+holiday challenge group and you can get
+entry into a contest so this contest
+they give out swag select t-shirts and
+stuff but they also give out some pretty
+cool prizes such as a subscription to
+networks so we have never been networks
+before I have not either
+suppose it's pretty cool you can
+actually win that they actually have
+training so on the main team live
+training they give this a lot for free
+just by submitting into it so a lot a
+month after the window closes so close
+around January February they asked the
+winners they will go over a couple
+different categories one of which is the
+honorable mention also give out a super
+election which their words not mine is a
+category to give out for people to win
+above and beyond their entries their
+write-ups are considered superb
+demonstrated and speaking as well so
+[Music]
+[Applause]
+[Music]
+okay I figure I was well let's just say
+that they hand out three grand prize
+winners I was not one of them the
+winners that did wind and awesome if you
+go to a website the holiday hack
+challenge website you can actually see
+the winners that one what they did in
+their write-ups awesome stuff okay so
+instead this is the annual hacking
+challenge right so this actually is
+hosted every single year and what
+happens if you miss either this year's
+previous year's things like that will
+you actually go back and actually work
+on these if you've missed them due to
+whatever reason if you weren't available
+didn't have the time weren't there yet
+we're born yet
+I mean yeah there's still only today for
+you to practice on so check them out if
+this has any interest to you they're all
+theme based so in 2017 it was called
+winter 2015 they had a nova near home
+challenge it was like this command and
+control device that you had in your home
+that was beating out pretty cool Dean
+base which makes it a little bit more
+fun winner when you're walking through
+everything so last year the 2019 one was
+called cream cone two previous year was
+called cream con basically Santa Claus
+and some elves are hosting this
+conference up in the North Pole so this
+year our job was to figure out who stole
+these two turtledoves and why did they
+get up so i want to go over a little bit
+on what you can expect when you do the
+same holiday
+because I had I hadn't really spent that
+much time on it and honestly I was kind
+of weird out it just felt weird for many
+reasons
+what a [&nbsp;__&nbsp;] you just have like this
+avatar that you're hopping around with
+and it was really confusing I kind of
+want to hear that out that way you're
+not kind of intimidated or turned off by
+something like that the very beginning
+so we log in for the very first time you
+have this avatar you're navigating
+around with the arrow keys and the mouse
+and all that you will bump into these
+NPCs these characters that have green
+riding over their name you can actually
+interact with them click on them they'll
+talk to you and tell you about what's
+going on what you look for I kind of
+just go over the whole theme of this
+whole challenge so also you'll notice
+that these NPCs I'd be standing next to
+this Raspberry Pi terminal what this
+terminal is it's considered like a mini
+challenge something that you can do in a
+relatively short amount of time
+the challenge is buried in types so for
+example one of them this year was like
+an ID tables challenge so if you've
+never done anything able to pour one of
+these sounds just do that you actually
+block stuff pretty cool PowerShell is in
+there as well you need to do navigation
+look for a particular file maybe like a
+Christmas present
+whatever put it all in there you can do
+it really quickly at the library at some
+computer that isn't yours and lock it
+actually conduct these it's a little
+mini Linux terminal pretty funny so if
+you do these mini challenges they
+actually help you towards the grand
+challenge
+what are these grand challenges well
+these grand challenges are the
+objectives that you're actually trying
+to solve as the story line there were
+twelve last year they range in
+difficulty so the easiest is a little
+bit difficult more difficult as it goes
+hardest right but you want to solve
+these and then you can kind of enter
+into this contest if you want to have it
+right there was a wide range of
+challenges both offensive and defensive
+which I thought was pretty neat right
+you think of holiday hack challenge you
+always take a packing crate you think of
+something offensive exploitation
+whatever but it's not necessarily the
+case they've actually done a variety of
+different things so I thought this was
+pretty cool I am on the offensive side
+and learning the defensive techniques
+skills was pretty fun to actually use
+for the first time or go a little bit
+more depth on something I had not done
+previously there was even a full bloom
+Enterprise so if you've never heard of
+sports before or never used one before
+you can actually use it here in the
+holiday hack challenge you can log in
+and run queries run pivot searches stuff
+like that and if you have even done that
+before they have these
+my challenges that help you learn
+process so you never even log into swamp
+here's your opportunity to literally
+explode with a sponsor no that's pretty
+neat okay like I said there's all kinds
+of stuff a lot of different type of
+offensive things but it wasn't like run
+and map ryan Metasploit run this exploit
+like that wasn't what the whole
+offensive side was in this i thought it
+was pretty neat because everything's
+like machine learning a lot of scrutiny
+not evil but just know that it wasn't
+just run this exploit before so run this
+technology in a malicious way in a way
+that an attacker would and again really
+cool stuff in my opinion a lot of times
+you either write your own scripts or
+they give you something to my work
+different languages that you may or may
+not have used before so just the things
+that may be learning is fun that's what
+we're doing this here's a list of what
+it's actually show right these are
+things that if you actually completed
+the entire all they have challenged you
+would have actually done and used all of
+these skills here all these schools
+again in my opinion pretty cool there
+was even a challenge around ki beti i
+did not know what key bidding was first
+time i was really introduced to me
+it's a way that if someone were to take
+a picture of your car keys or a picture
+of it and post it somewhere that you can
+see you can actually reverse that out
+and duplicate that key physically just
+by having the bidding data of that so
+don't post your house keys online
+because someone can actually make a
+physical copy of it and we actually
+demonstrated that in the holiday hack
+challenge again pretty pretty neat stuff
+okay so there are a lot of write-ups
+already online this challenge has been
+going for once about the winners have
+been announced so there are plenty of
+places you can go to actually read about
+and learn the steps needed in order to
+figure out each challenge I'm not going
+to do that instead I'm going to go
+behind level rather than 10,000 feet
+maybe three four thousand maybe a
+thousand but not granular enough to
+where these steps are reviewable
+it's just in the house its dreams
+anywhere there will be no go down here
+just really have everything there all
+the links all the things you need for it
+that's not what I'm trying to do but
+hopefully this is a way that kind of
+gets you interested in doing the holiday
+hack challenge and and I'm just kind of
+showing you my thought process what
+happened okay so as we progressed
+through the holiday hack challenge we
+are presented with objective eight ruled
+it further down in the
+[Music]
+okay so what happens is because the
+problem is in order to enter into this
+contest you need to be in health
+humans are not able to submit and what
+this defense mechanism is is this
+CAPTCHA portal what does that look like
+well here's what it is essentially um
+this CAPTCHA has 100 images ranging in
+items right Christmas trees Christmas
+presents candy canes things like that
+and we're given an option to choose
+three images that they tell us what they
+are right and select all those images
+that match that item the problem is in
+order to do that we have to do it all
+under five seconds so you don't have all
+the time in the world to select each one
+individually you actually have to
+identify them within five seconds so
+what's the problem here well the problem
+is that that's impossible
+a hundred images to be able to go
+through to identify and answer we cannot
+do that ourselves we need to figure out
+the way to actually buy
+as this so how do we bypass this well we
+can actually use machine learning I
+mentioned that this is a prequel Cod
+right so the whole thing of the
+conference so there are security
+professionals that have made videos that
+you can watch that may or may not
+pertain to the challenges that we're
+dealing with so if you watch a
+presentation that might say hey this is
+machine learning you should check it out
+if you don't know machine learning is
+but this presentation here that I'm
+talking about is about tensorflow this
+tool the machine learning tool so it's
+basically a tool that if you give it
+information images in our case if you
+give it images it will learn what that
+image is for example let's say you send
+in a bunch apples well another picture
+of an apple later on oh that's right so
+for the holiday hack challenge which
+means old tensorflow we actually got to
+use it again it's not just knowing what
+it is actually applying it with it all
+of this so you have a VM that you have
+that you install and you give it about
+25,000 images that actually starts to
+learn what everything is
+so what we have our machine learning
+software setup the next thing was to
+identify what actually this is capture
+that's doing right what kind of
+communication is going on I noticed
+during the whole thing that the
+communication basically when you go to
+capture it sends you back this JSON
+garbage right and JSON has these base64
+encoded stuff in there right so what
+does that really mean I'm kind of
+confused because what actually happens
+is is all 100 images are base64 encoded
+so we were to take one imager but I
+from that JSON data set it would
+actually be cool to a PNG image so now
+tensorflow if you were to give that a 64
+to tensorflow
+decoded it starts understand what you're
+giving it so how did I solve this
+challenge well but I use Python I won't
+worry with the code again but here's
+just a high-level so my steps that I
+took for this was the first thing was to
+identify the three items the CAPTCHA
+actually gave us right so we go this
+capture portal says she's a Christmas
+present a Santa hat and a Christmas tree
+or whatever we had to identify that from
+the response that was given to us to
+dicapta the next thing was decoding the
+JSON page 64 syntax right so now we have
+a hundred images that are in PNG format
+we then send all 1u images all 100
+images through tensorflow so Matt was
+able to identify if one of those items
+matches one of the three items given to
+us after that we needed to figure out
+how to respond actually this caption has
+a response that we need to give it once
+we figure that out we were good to go
+and were able to bypass this caption I
+thought it was pretty neat that's why
+I'm trying to explain it right now
+hopefully I did a good job all right so
+the next objective objective number nine
+this was the one right after objective
+number eight right so after we helped
+Krampus
+it'll submit an entry into this cookie
+contest he's like dude dude thanks so
+much the help you know you helped me out
+here you've gained my trust I got this
+problem right the problem is I'm this
+owner I'm this webmaster of this website
+and I can't access myself
+credentials can you hack my website for
+me so we actually gives us permission to
+hack his website we are led on that
+sequel injection vulnerability so we
+kind of have an idea of what we're
+trying to actually solve here so we're
+using this website provided right and we
+notice like a university student portal
+where you know students are able to like
+login or by master login but like
+applying for classes check their
+application statuses and stuff like that
+so as we're actually navigating around
+this website right we're looking for
+sequel injection right we're calling the
+website looking for something that we
+can inject into so we come across this
+application form if we were to just
+submit an entry like any other person
+would we would get a message saying
+thank you very much your application has
+been successfully received and that's it
+however if we were to go back to that
+same form and actually put an apostrophe
+within the first name field write an
+apostrophes kind of like a basic test
+winner when you're trying to look for a
+sequel injection flaw if we were to send
+that we received this message right here
+right so this is the sequel syntax error
+message stating for us or at least
+believing on that India vulnerability is
+president right maybe a sequel injection
+vulnerability as president how do we
+exploit something like this well as I'm
+going through the exploitation process
+right using something like
+Purfleet you can use whatever you want
+but if I want to send that to the
+repeater it start manually
+durability I would give this message
+right here basically saying that my
+token is invalid or expired right so
+what does that mean what's actually
+happening here well I noticed right so
+looking through my proxy history of try
+to understand why I am getting a message
+like this and what's happening is
+there's this token that is being added
+to our submission form on its own right
+and if we do not have that token then we
+actually get an error message saying
+that the token problem for whatever case
+but if we were to include that token
+like it is done automatically without us
+doing a manual process then we would be
+okay the problem is we're not we're
+having trouble exploiting it because of
+this token right the SI serve token is
+preventing us from actually doing
+anything
+so how was I able to bypass this well
+you know anybody that was super map is
+hopefully okay well single map is an
+automation tool used for sequel
+injection you can use something like
+sequel map to automate the the attack of
+that vulnerability so I use that for
+this exercise the problem is like 10
+getting that same Hermes trying to say
+that my token is invalid because I'm not
+updating my request with the proper
+token so this is where a module within
+sequence and it's basically a way that
+you can become more regular with your
+attacker or granular with your request
+that you're submitting so I created a
+custom tamper scripts possible within
+Python that was able to hold the token
+that was being grabbed
+before my request and including that
+with
+actual application form request once I
+was able to do that that message now
+went away the problem is then the way I
+was actually running my attack and this
+was probably a fault of my own but the
+request header that i was submitting was
+incorrect essentially what I did to
+correct the header was a youth burp
+suite there they're matching replaced
+functionality so I proxies sequel map
+drew burp suite found that incorrect
+header that I was submitting and I
+replace it with the correct header at
+that point everything was fine my attack
+was able to go through and then using
+sequel map I was able to actually
+exploit this vulnerability okay
+so objective 10 this was the the next
+the next objective and everything and
+honestly was probably the most fun for
+me it was but it was manageable and I'll
+try to break down the steps needed
+because that's what everything is right
+you're trying to break down these
+difficult tasks into something a little
+bit more manageable so this challenge we
+use item we actually used item in this
+challenge we used Wireshark we had
+scripting there was some reversing going
+on a lot of cool stuff so after we help
+Krampus with the sequel injection
+vulnerability he says but check this out
+I noticed that there was this encrypted
+document that was on my web server that
+he think goes on to say that this
+encrypted document appeared to be
+encrypted by this piece of software that
+they use at the University and the
+problem is in order to decrypt a
+document you need to have the secret ID
+that secret ID will give you the
+decryption that the Christian key in
+order to decrypt that document so for
+this objective we were giving you some
+information that we were giving the
+encrypted document itself we were also
+given the tool used to encrypt and
+decrypt documents essentially this
+document being one of them if we can
+figure out a way how and we were also
+[Music]
+believe this document was encrypted so
+we're giving everything we needed in
+order to solve this exercise but how do
+we actually do that well it comes down
+to understanding that we have this
+encrypted document we need to decrypt it
+right and this can ultimately done be
+done with brute force okay
+so first before we start going down that
+rope that hole right we got to
+understand and formulate ourselves a
+plan right so we want to use Wireshark
+because this encryption tool actually
+does web request out grab stuff and then
+brings it back in so we can use
+Wireshark to capture that data we need
+to do some reversing
+so we need to understand what encryption
+tool is actually doing that way we can
+actually kind of do something with it
+right and we need to have some scripting
+involved in order to automate this whole
+process we are reinforcing this okay so
+our first challenge is to understand how
+the tool actually works right so what I
+did was I started encrypting and
+so I created a document let's just call
+it air txt the content eric is awesome
+and we sent it through this encryption
+tool what happens on the other end well
+we were provided with the CID we were
+provided with the secret ID and then we
+were provided with the document itself
+that has now been decrypted make note of
+that seed ID because we will come back
+to that later the next thing was the
+decryption process what does that look
+like well when we decrypt it we actually
+have this provided with the secret ID if
+we provided with the secret ID we are
+then provided with a text document and
+make note that the whole time I use
+Wireshark again to actually intercept
+this information and get an
+understanding of what's going on okay
+what is this see thank you
+well the seed ID was given to us every
+time we actually encrypted a document
+every time we risked encrypt this CD ID
+would be popping up to us so what was
+that well it turns out it was actually
+unix time or epoch time it was the
+string in numbers that was on our screen
+if we were actually working to decrypt
+that we would be given the time frame in
+which we decrypt or sitting
+the time frame in which we encrypt our
+document so when I encrypted my document
+Eric
+txt this D value was given to me very
+useful later so the next thing we need
+to understand was the algorithm tool
+actually used this scope but just know
+that when we actually disassembled our
+tool with Ida we're looking around for
+functions right that might look
+interesting one of the functions is
+actually the algorithm used by this tool
+after we figured that out we now had
+more information right when did we have
+well we have the algorithm the tool used
+that's very helpful in maybe creating a
+point of proof of concept
+polc we also have the C value this T
+value decrypted into the epoch time the
+timestamp in which the document was
+encrypted at least our document right
+and then we had the time frame in which
+the document was encrypted by the
+attacker so we know the attacker
+encrypted at a certain time but how do
+we create that well maybe we convert
+into epoch time right so what did I do
+that to solve this problem well the
+first thing I had to do was find out
+what time the document was encrypted out
+so we know what that is what I did was I
+converted that time in time that came
+out to be about 7200 keys or assuming
+7200 seed IDs after that we needed a
+creative script in order to figure out
+the decryption key so what can be done
+right we have the algorithm in which
+this tool uses we can send the seed ID
+right that date that epoch time through
+the algorithm and actually get the
+decryption key the problem is we don't
+know what key it is so let's just do all
+7200 and have 7,200 possible he's after
+that the next step was pretty simple we
+now had 7200 possible encryption keys we
+now created another script that would
+decrypt that document each and every
+time it would fail 70 199 times but one
+time it would actually work that one
+that worked is the key that we needed
+and we were able to decrypt the document
+yes so the question was did I create 70
+100 99 documents fake documents in order
+to figure this out no I had that one
+document but I had 7,200 keys one of
+which would decrypt that document so I
+had 70 199 failures no I created a
+script that would run that absolutely
+yes
+great question so you would have want to
+fail so it's an exported document what
+would not occur but there was collisions
+so I didn't have about 10 collisions
+where it was a valid encryption key
+because someone around that same time
+frame created a an encryption or sudenly
+created an encrypted document but it
+wasn't the right key for that document
+so I did have some collisions where I
+had a document that was corrupted
+however I just kind of manually went
+through all 10 or 15 of those and one of
+which was actually the clear text
+document all right so this will be the
+last exercise oh I'll be going through
+it's the 11th one right I'm kind of
+going through order here just to kind of
+get an idea and make you understand what
+the whole theme looks like so the the
+10th lock or excuse me the the whatever
+exercise actually I might miss one right
+so the 11th exercise actually is where
+we figure out who
+[Music]
+of this operation that we're talking
+about their name was written on the
+sheet of paper and this sheet of paper
+was locked away in some crate the
+problem is this crate was locked so we
+need to figure out how to unlock this
+crate so there were 10 lakhs that were
+on this crate this crate was essentially
+a website right that's what the crate
+looked like it was a website and there
+were 10 lakhs on its website in order to
+unlock each lock there were a series of
+riddles to help you kind of figure out
+what the code would be so what are the
+riddles would look something like open
+the console and scroll a little so what
+does that mean well if we start
+understanding what the riddle trying to
+tell us basically it's telling us to if
+we if we were to open up our websites or
+web browsers we would go to the console
+tab click on that and then we would see
+this code this 8 digit alpha alpha
+numeric code and what that code would do
+would unlock that lock right so if we
+did that 10 times with the ten different
+riddles on 10 different processes that's
+what all that's what all 10 lakhs look
+like so they all had the same process
+the problem was all ten crates or all 10
+lakhs would refresh every time we
+refresh the website so if we were to go
+back to the website press refresh button
+and go it would be a different code so
+the code used to be 1 2 3 4 5 we refresh
+we actually understand what the process
+was not necessarily what the code was of
+that process that that makes sense so
+all this can be done do your web
+browsers developer tools so if you've
+never used developer tools before this
+is a great exercise to kind of navigate
+around and understand what's going on in
+your browser because a lot of
+goes on your browser that you don't
+actually see so upon completing this
+exercise unlocking all ten lakhs we are
+presented with an image who says who the
+villain is we're also giving the amount
+of time it took missus all day so this
+taste it took four minutes and twenty
+seconds and we were given a rake our
+rink is called casual which kind of
+sucks right no one wants to be casual
+we're not here to be casual there was
+this kind of this heating message given
+to us like the side challenge what did
+this side challenge say well it said
+something like well done do you have
+what it takes to crack the crate in
+under three minutes I thought to myself
+well I already challenged the burning
+defeat of this challenge but there's
+this side challenge okay I can do that
+so refresh the page I answered all the
+questions to unlock the locks
+once I submitted it a new message
+appeared to say good job do you have
+what it takes to unlock the crate
+another one okay I can try right I have
+a process right now I was able to kind
+alright let's go ahead and stretch out a
+little bit let's click around as fast as
+we can through web browsers developer
+tools and I was able to submit an entry
+in under five spur to me in under one
+minute so then the message said to me
+good job do you have what it takes to
+unlock in another five seconds and
+that's when I realized that this was no
+longer just a challenge around
+understanding developer tools it was a
+challenge around or shooting a side
+challenge right because we don't have to
+do this but it was a challenge around
+automation right can you actually
+automate the process of your developer
+tools
+so I decided let's go ahead and do it
+right so in order to automate this
+process I use bash I also use this tool
+called selenium selenium is this
+framework I heard of in the background
+essentially a way for you to kind of
+automate testing within your browser
+usually done by developers really great
+for a lot of scenarios right attacking
+maybe one scenario so I was able to
+unlock nine out of the ten lakhs
+using this method which was great right
+the problem is what was that well it
+turned out this lock was an image it was
+actually a picture of the eight digit
+numeric code and my script was grabbing
+out text right I was prepping pretty
+stuff and cutting through things and I
+couldn't do that with what I had in
+order to figure that out
+I found the tool it was called tesseract
+tender act is an open source text
+recognition engine it essentially allows
+[Music]
+so I incorporated it into my script at
+that point I was good to go I was able
+to actually unlock all 10lakhs with
+automation rather than having to go
+manually through each developer tool or
+assuming
+developer tools manually for each lock
+ultimately I was able to solve the
+objective and about one and a half
+seconds which I was very proud of okay
+enough about the travelers about the
+objectives or whatever then we went
+through what were some of their
+challenges
+well let's think about it one of the
+most rewarding challenges I say to learn
+something for example look I had not
+used one before my first is something
+that I'm very familiar with as a product
+but I never used it before however in
+the holiday high challenge only one
+actually died in the long run queries
+can they learn what this actual tool
+actually does there was also another
+tool that I found really interesting was
+called JQ I had never used JQ before
+essentially I had this uh yeah trip
+notes I had this tool cool take you so
+basically it's a way if you have a bunch
+of JSON Jake you can help you parse that
+it essentially think of it as said akka
+and grep all at once I mean it's awesome
+so now I have JSON data I'm resorting to
+JQ because I learned it from this
+holiday hack challenging ok let's talk
+about recording real quick recording is
+something that we never really think
+about but it's something that we know we
+have to do it's something that's very
+common
+right up for a challenge at CTF a puzzle
+whatever it is we need to have some type
+of report on it right Badgers we need to
+explain what we did right the problem is
+a lot of times when we're going through
+all these challenges we figure out a
+problem and then we go to the next one
+because we're like hell yeah but if you
+go back to that first one and you don't
+have good enough notes you're gonna not
+know how you actually solved it right
+you're gonna come back to me like right
+through a board you're like I forgot
+number one that was weeks ago what do I
+actually have to do so take good notes
+right make sure you actually document
+what it took in order for you to do it
+that way you can replicate your steps
+but in order to you know for this
+holiday hack challenge you don't have to
+submit a report a lot of people didn't
+there's there's numbers around that you
+don't have to but if this is something
+you want to do in order to win you know
+subscription and net Wars or have an
+opportunity for Santorini here's what I
+did not that I want but I guess that was
+close
+all reports are gonna look different
+there's there's people that even wrote
+mercy even made youtube videos of their
+explanation of each for mine it was just
+a PDF document I had about a hundred and
+eighty pages total since I had so much
+content so many objectives I put it all
+on a table of
+that way you know if you wanted to jump
+to objective seven or objective ten you
+can just click there I included as much
+output if I could in order for the
+reader to understand what they're
+looking right or what they're looking at
+right so if the question will said you
+know do this the answer was do that I
+try to document that and actually put
+that in my write-up
+I certainly put screenshots in the
+write-up that way it helps again the
+reader to understand kind of where they
+are if they're lost or they're just
+reading a bunch of text they can't read
+look at it a picture to better
+understand so for my write-up ultimately
+oh I did so we start off with those math
+berry raspberry pie terminals I sold all
+of those I had the the main objectives
+the create challenges I solved all of
+those as well and then there's all of
+these like mini challenges
+so the create in under five seconds is a
+mini challenge you don't have to do but
+for me I submitted that and I guess I
+got honorable mention or whatever so
+that was pretty cool
+there's also one around this holiday
+packed room which is like the Oregon
+Trail they have difficulties on easy
+medium and hard I wrote about that kind
+of documented what it took in order to
+defeat each and every one but I mean
+this is just something that I did for my
+report I mean you don't have to do it
+there's so many people that did
+different things but this was just my
+way to do it in alright alright so to
+throughout this up this was just my
+experience with the holiday hack
+challenge of 2019 I mean I had done it
+in previous years but I never home
+whatever but this was the first time I
+actually just sat down and attempted it
+and I'm really glad I did because I
+tried to explain all the things that I
+learned right like Cory says the very
+beginning of the day I mean we don't
+want to learn right this is why we do
+things like this and I learned a lot I
+mean hopefully there's stuff on here
+that you don't know because this is an
+opportunity to learn wide variety of
+different challenges right offensive
+defensive high difficulty low difficulty
+things that we don't see every day
+has anyone been keeping it before maybe
+maybe not but this is your opportunity
+to do that a lot of fun so I was lucky
+enough to have time to complete this but
+if you want to enforce that this took a
+lot of time I'm not trying to say that
+it took 10 hours or whatever it took a
+little bit more than 10 hours but I did
+not you know I was lucky enough that I
+actually visited my parents over the
+holidays of my wife and kid and you know
+they go to bed early because they're
+littler they're old or whatever and I
+was able to work on the challenges then
+so
+clock hacked away a little bit later
+than I should and then figured out in
+the morning but I mean we're all busy
+people I get that and one thing I want
+to say a wise man once told me way back
+in the day that I mean if you think
+you're busy just know that between the
+hours of 11:00 p.m. and 4:00 a.m. pretty
+quiet so if you don't think you're
+having any time to do something just
+know that maybe early in the morning you
+can do something but drop it up join the
+spec you see slack in there it's a great
+channel CTS specifically is been very
+active lately a lot of people just
+trying to learn new things and a lot of
+people that you can actually bounce
+ideas off of regardless of what channel
+you're in but at the bottom is the right
+up to my right here's the link to my
+ride up if you want to read it I saw
+there I go in a lot more depth on on
+each and every topic so hopefully you
+can check that out if you want to but
+but that's about it if you want a later
+I'll be here
+[Music]
+[Applause]

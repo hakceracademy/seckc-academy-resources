@@ -1,0 +1,300 @@
+defcon was from one of our good friend
+zack facile from chicago and he talked a
+lot about log management and it was one
+of the few blue team talks that I saw
+but it was really really well done
+talking about some new stuff but Joel's
+talk is going to be better and why
+because you can hear it today and Joel's
+generally going to be better so let's
+give it up for Joel who's going to talk
+to us about open source log management
+tonight hi how y'all do it now the goal
+of this presentation is I wanted to go
+over I hate the mic they say ah ok so
+one of the things I want to talk about
+is log management and I wanted to go
+over the steps you want to do to plan
+out log management and then we'll go
+over some of the open source
+technologies out there that you can
+so my name is Joel Kirchner a little bit
+of everything geek participate in ccc
+Casey can cities hackerspace along with
+set Casey
+so
+we want to manage laws I mean obviously
+security wise we want to build an
+accurate time line and we want to be
+able to go through and recreate a
+situation
+also then there's a hunk o sam says so
+and
+network administrator you'll want to set
+baselines for your network and in order
+to do that you want to get an idea of
+how it takes
+so these are all good reasons to do log
+management
+anyway
+back to the time
+so
+and security wise you want to also set
+up potentially security event and
+information management so all of these
+things
+so just about yet we have this internet
+vices anything that you
+and ultimately you're going to be
+pointing all that Internet of Things to
+a log management system it doesn't sound
+like
+there's two types of vlog management
+that you'll
+you'll have log management which is just
+you send everything it's brother to it
+it captures it and stores it into a date
+doesn't really do anything with it you
+can set it up later to go through and
+pull out the bits and pieces you want to
+look
+most
+snapshot
+log event management is where it goes
+through
+pulls all that information out
+and kind of creates a situational
+awareness which is a nice thing to have
+welcome in management
+if you know exactly what you're feeding
+it
+really good impression you get
+reporting all that kind of stuff
+you can do a lot of ad hoc searches so
+you can get an idea
+what your cisco switches are doing or if
+somebody's hitting it with some type of
+denial service or some crap like that so
+LEM
+log management
+is about taking an accurate picture
+so
+or not so much that situational
+awareness but being able to create
+so
+the 300-pound gorilla
+yeah you can have a syslog server but
+when you need to go through and dig
+through that data looking for what went
+wrong
+how big was this disastrous reach
+you're going to be dealing with a lot of
+date so
+you can do regular expression
+expressions
+your log files and that kind of stuff
+Brett through it but doing a regular
+expression on a thousand messages is not
+as doing it on 20
+eat the mic they say sorry I suppose we
+so for you cissp Zach what does CIA
+stand for
+ads
+there you go good
+so confidentiality
+is the database secure so you're
+throwing all these logs into this log
+server is it could be secure this is one
+and is it only accessible to the people
+that you want to have access to
+the other part of a log management
+system is integrity
+man there are terrible terrible things
+you can do to an unprotected log
+management sir yeah you can sit there
+and just fill up the logs to know when
+and then they can't see what's going
+what you're doing it's horrible so does
+a log management solution does it
+and then accessibility
+how many people on your team or in your
+company would you trust to go through
+atlantics prompt and do a regular
+not would you trust them with root
+okay okay so it is it's a very small
+handful of people that that have access
+to this thing so you have no helpers
+okay something bad happens so
+accessibility is a big deal
+and then also managing access to those
+this is another thing you want
+some of the open source solutions and
+the formatting screwed up here just
+because I converted from google docs
+so gray log2 is one that I've been
+researching
+and it's a brand new project they just
+took the code and completely rewrote it
+so it started about earlier this year
+about February
+one of their first releases
+it supports LDAP
+runs on Java which
+but
+so then there is Elsa which is something
+that's part of security onions
+but
+that one and then there's Octopussy
+wonderful not safe for work name great I
+don't know how its sell that to a senior
+oh I want to sell you Octopussy it's
+great
+so
+these are all in one solutions they hook
+into LDAP they work nice and all that
+kind of stuff but we get into scaling
+problems Octopussy uses flat files for
+its data storage they're just XML and it
+eats up cpu like crazy Elsa uses my
+sequel in the background which they say
+oh yeah you can cluster it
+and then grey log it just rewrote it and
+there
+new code
+but if all fails
+there's syslog syslog I mean has been
+with this since the beginning of time it
+is simple in its stupid
+fluent and logstash floor I think is in
+Ruby and log stash is Java and
+essentially it behaves kind of like
+syslog where you can just tell it to
+open up different ports and different
+except different formats and background
+that transfers it into a whatever
+database you like is just kind of this
+man in the middle where it just passes
+your data wherever you want to
+so but it by itself doesn't have a user
+interface so it's kind of hard to use
+same thing with logstash same thing
+Oh SEC is nice but it's mostly it's a
+security event manager so it's going
+through things and looking at security
+events so
+and the web interface for it is kind of
+weak
+and like I said with great log to
+scalable you can sit there and cluster
+the hell out of it
+it is painfully easy to scale this out
+like I said there's some growing pains
+but I've been testing it at work it does
+when you get beyond that things get kind
+of
+and then of course
+simple ubiquitous cheap
+and stupid
+711
+so vlog events are usually bad between
+1k in 100 K
+very
+you don't necessarily you won't know
+ahead of time what your offense per
+second so how many logs per second are
+you getting and how big are those logs
+so what you really have to do is you
+have to go through a test sample it from
+your actual live environment I don't
+peaks and surges
+with Peaks like somebody turns on say
+auditing
+Windows Server
+that's going to drown
+you're if you don't have a good plan log
+management system you're going to drown
+walls
+not
+rabbitmq
+input plugin
+grey log which allows you to sit there
+and just pull from that so it absorbs
+the initial
+front attack of the log search and then
+you're just sitting there drawing it
+down
+so a little bit of math
+so events per second essentially it's
+the number of events you get over a
+period of two seconds so when you're
+hunting for a log management system this
+is going to be one of the questions they
+also you need to figure out over time
+how much traffic are you
+you think Oh 1k you know well that's not
+a big deal i got a 100 megabit network
+well
+if you got a big network
+I'm working with something like sixty
+five different locations with
+each of them with a windows in team
+that generates a lot of logs so you take
+you know an otherwise small amount then
+you sit there
+anybody who works in a big company
+you're dealing with a serious amount
+that's a non-trivial amount of bandwidth
+also storage so
+you take the average size of your log
+multiply it by your events per second
+multiplied your events per second that
+size
+seconds
+so if I have 15 million events in a day
+173 events per second
+calculated over here it turns into five
+terabytes
+bad but it's still a lot of storage
+and then there's companies that I know
+that their events per second it's like
+they're dealing with 400 gig and day
+and having the store forever
+that's
+so also when you're dealing with large
+amounts of data it becomes important to
+know what the database back-end is
+my sequel
+who here has dealt with a stock my
+what happens to that database when your
+okay like the new 5.1
+I will say 5.5
+what happens to it there's a
+like even with Microsoft databases what
+happens to the database over time just
+as it gets surges and geeks
+it gets big
+and my sequel doesn't have a way
+so it gets ugly
+so when I look at a solution says oh we
+so
+short talk but I'll make sure it's
+posted online and this is just a list of
+I've got a question actually so
+from what I know from forensics one of
+the biggest challenges is the fact that
+so many different systems will deal with
+times and dates differently
+do any of those tools normalize on input
+or do you have to deal with five
+terabytes of data that is in multiple
+time zones well you're going through
+stop let's see here Greylock normalizes
+with sis logs mostly you're collecting
+off from a whole bunch of different
+servers so that's where that kind of
+time shifts
+if you have a centralized log management
+you
+awesome anyway anybody any questions
+alright let's grab the that you need to
+yep

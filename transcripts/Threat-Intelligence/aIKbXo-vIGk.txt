@@ -1,0 +1,325 @@
+all right up next is Adam with oh my
+now okay here's one thing you guys turn
+off your phones I'm leaving my phone on
+because if I have to leave in my phone
+rings uh my wife could go into labor at
+any point in time as of now so just
+letting you know that and the name of my
+talk is uh being gangster on your Wi-Fi
+how to cheat on your Wi-Fi to help your
+neighbor out so that's a key point that
+we're helping someone out and we're not
+doing this on something that you were
+do a little bit about me my name's Adam
+I go by twizler I'm a Senior Systems
+whatever I got a degree in some stuff
+uh nothing new on these slides or really
+anything new Under The Sun It's all been
+done before but at the same time I just
+want to educate the people that might
+not know about what some of this stuff
+is and a lot of this don't hate me it's
+kind of scrip Kitty and so I'm going to
+talk in depth about uh this other
+page which is a warning uh educational
+research purposes only I'm not
+responsible for misuse failure to follow
+the laws in your country State BL blah
+activities Direct related to the
+material are uh solely your
+responsibility don't be D again the
+first person that was ever charged with
+a Wi-Fi cyber related crime was Albert
+Gonzalez the soupnazi he did the TJX
+Corporation credit card scheming hack if
+he's spending 20 in the pr so don't do
+this unless you're
+opiz so some of the stuff we're going to
+talk about Wi-Fi is everywhere we
+obviously know it's everywhere it's in
+everything but some of the things that
+we don't know about are the little
+default items that are stuck in your
+routers for WPS so let's go over some
+cool Hardware that I use to do some of
+this testing one of these is a Canna
+this one does about 15 DVI if you stick
+one of these a defon out your window or
+if you live in a big city and you you're
+in New York or something like that we
+got Wi-Fi routers there's about seven of
+them up here anybody that has sh West
+this is your one that's default from
+sure West if you might utilize that
+service fair
+warning and here's a little can little
+one this is a omnidirectional that's
+pretty good and then I would recommend
+if you're using Cali
+guy this right here is an alpha card
+it's a USB card it's probably one of the
+best ones for backtracks but I wouldn't
+recommend it anymore and thanks to one
+of our members in here whom I know will
+not go to too much detail Mr Jo uh what
+we want to use is a TP Link High Gain
+and this is what I use to do all the
+penetration testing so I would recommend
+not that I have any affiliation with TP
+Link but this one will work with C
+Straight Out of the back for doing the
+the various fun that we're helping
+people out doing because we own it uh
+what's the deal so I'm going to talk
+about how to do WPA2 WPA
+WPS the thing about these hacks are hey
+we can do these hacks able to run but
+WPS cracking it'll take about 8 hours on
+a core 7 processor this is going to take
+some time and then you're brute forcing
+on the WPA stuff so it's as good as your
+dictionary but most people aren't going
+to be really having the cryptic stuff
+some of the members in our room that's
+different story so what do you need some
+of the tools that we're going to talk
+about Airman NG we're not going to go
+very much detail on that we fit this is
+a AP finder cracker does WPS search
+Wi-Fi honey it's an honorable mention
+one of the cool ones is Reaver if
+anybody saw some movie that might ring a
+bell and then there's bur Wi-Fi cracker
+and prit I want to start going fast
+because I don't have that much time so
+I'm going to talk like we're an auction
+give me $1 okay so airon what does it do
+it enables monitor mode packet capture
+dumping handshake captures that kind of
+stuff it's not that cool Beacon frames
+probes authentications associations
+let's get to the good stuff so WPS what
+was it it was for a Wi-Fi protected
+setup and it was basically used for
+getting your printer for getting it on
+the Wi-Fi now as of the Wiki page that I
+just read in 2014 some networks using
+the standard could fail for RO Force
+attacks even Wikipedia has it out now so
+WPS once again is for Grandma to get on
+the router so Grandma we love you but
+love we can't do this at home so
+basically what it is is you're pushing
+two buttons right here the after you do
+the two button push
+over here it kind of works like
+Bluetooth and then you can get on your
+Wi-Fi let's get to the
+races so let's say that this is your
+stuff and uh you have some lady that
+lives in your building and you're in a
+skyrise and she forgot her WPA password
+it's over the holidays and AC Network
+company install it in her atct so you're
+helping her out and this lady why do I
+have her on here this is hii Lamar she
+Spectrum frequency hopping she invented
+it so she was also an actress and
+mathematician in the 30s hopefully
+someday my own daughter will be like
+this lady because she's amazing so flap
+for her because that's what we're using
+to do this talk on um you're going to
+need a Wi-Fi card that can perform from
+misus mode bssid basic service
+identifier some of this stuff but we'll
+we'll go on so WPS hacking basically
+what it is is reer and this guy named
+Craig Hefner he was the genius behind
+this and there was another Swedish guy
+that figured it out so when you're doing
+the WPS hack there's the first little
+four nit number and the second and
+there's 11,000 possibilities that happen
+but what it does is it actually sends it
+the first four and then the second four
+so it doesn't do all the numbers at once
+it does a chunk and then another chunk
+so basically you're getting owned and
+Reaver came from the movie Serenity if
+anybody watching Firefly you know the
+reavers people eers well this is the
+Wi-Fi eater and so what is it
+doing it's basically well before you do
+any of this you want to change your Mac
+not that you're going to do this on
+anything you don't know and you use
+airon NG and you use this reav tool you
+go into the monitor interface your BSS
+ID cuz you're helping the lady out it's
+upstairs and it's going to look
+something like this and you're going to
+do reer the interface the BSS ID the mac
+and then you're going to start sending
+some Beacon
+frames and after you send these Beacon
+frames it'll start not Beacon frames
+just packages but anyways it'll start
+trying numbers and then it'll receive
+the numbers and it's going to be four
+four and in about 7 hours you're going
+to crack it all of the different routers
+that I had here every one of them was po
+I was able to get every one of them and
+if you start looking and using Reaver
+and some of these other ones to go out
+and look for networks that have WPS
+enabled well in my home network just
+looking around what was around my house
+there were 55 different items that were
+available to do
+this so this is the command line way and
+then you go go and there's WPS and it
+keeps trying it gets to 90% and that was
+one of the ones that I own cuz it took 7
+hours so I did it on my own stuff um
+please note that the WPS Reaper attack
+takes a long time and Mac filtering so
+you're saying well it doesn't matter
+because you know I'm going to have mac
+filtering and some other stuff
+somebody's trying to do this they're not
+going to get to me as long as you can
+see that the Roku box or something else
+is out there you can start capturing
+handshakes and doing some other things
+like that and you'll see their Mac
+address and so then they're getting
+owned as well so this is a pretty good
+one now I'm going to talk a little bit
+more about some wash and stuff but then
+we're going to go into what's scary
+about this so using the wash command you
+can do some fun stuff like seeing what's
+out there and it's all default in Cali
+it's all installed for you another good
+one when you're trying to help someone
+out with Wi-Fi because this is stuff
+that you're using to help someone not
+that you're doing something nefarious
+and you all own this stuff is Wei and
+basically this is one that you use to
+roof course through a dictionary attack
+and this is so easy that you just do it
+on the command line type in this little
+Command right here and it'll start
+spitting out
+information about what access points
+have WPA WPS enabled and so now we're
+going to try to do something with some
+WPA hacking so you've got this nice long
+cryptic password and we've got something
+out there called attack net GE set casc
+so that was one of the routers and they
+have WPS and they have a Prett crypting
+password and remember this is only a
+good as your dictionary file so get
+going to start using some Pearl scripts
+if anybody writes Pearl or python or
+whatever you want and get some badass
+dictionary
+files and you can start popping boxes in
+about 35 minutes I had a nice long
+password with set KC long password and
+it just does it for you there's no
+intervention from you you don't have to
+be very smart so start worrying about
+the neighbor kid across the street
+that's uh been playing his bedroom too
+much his parents put in some kind of
+router that made it so they couldn't get
+on bad sites on his own network so now
+he's going out to yours uh and as a
+bonus the we fit it also does WPS
+hacking for you so it can do the pin as
+well so this is just a default one
+that's uh we fit I like it I recommend
+it but now for the grand finale there's
+this and I love this I even put the
+heart at the top because this one's F
+Wi-Fi cracker and it's kind of a newer
+one in Cali it's been around but
+basically you don't have to know any of
+your Aon NG stuff now let me repeat that
+you should know how to do Aon you should
+know how to do all of this but this does
+it for you and this is so that the
+script Kitty down the street just puts
+in the interface that's active so one of
+the Wi-Fi cards I showed you you just
+pick the drop down box they'll say yeah
+I'm here let's start doing some hacking
+then it'll tell you if you have weap
+enabled WPA enabled or
+WPS it it's going to do some damage it's
+written in Python a little QT four and
+it's really for a backend on the SED
+tools of aont and G if familiar with
+those but you get a nice display page it
+looks like this there's my attack linkis
+like negative
+soldier man down we got contact anyway
+so we got an essid we got a bssid and
+we're going to do a regular attack and
+it's going to go through my dictionary
+that I chose over here and this is
+literally your mouse click click like
+Grandma who was here earlier in the page
+could do this and you're going to start
+popping boxes pretty fast through your
+routers and then you can go do SM
+various stuff and here in the end this
+one was 1 2 3 4 5 6 7 8 9 0 just for
+demonstration purposes but you get the
+idea it's it's that simple we're not
+talking something that's very hard that
+the average Joe is not going to be able
+to do if you live in an apartment
+complex start worrying that the computer
+guy that's kind of does it on the side
+down the street is now trying to get
+into your access
+points so where's the action kicking at
+Old School you had to do all this stuff
+and no Reaper commands you had to do the
+wash commands you had to wait all this
+time and hopefully you didn't get out of
+your bass shell and things like that and
+then you had to do some things like
+AirPlay and G and redo all of this now
+with for Wi-Fi cracker it it's all
+automated you've done nothing you just
+open it up and it's over game over so
+conclusion this is kind of where it's at
+what it's gotten to it's a whole lot
+easier and again don't do this unless
+you own the device or the item so once
+again remember the AKA Su Nazi who doing
+20 in the pin a little F Wi-Fi cracker
+we' got we fit Reaver and with those
+three items you'd be surprised because
+how many people are at home that they
+have a little 10-year-old kid that wants
+to get on his brother's iPad they're
+going to play their farm games or
+whatever in Farmville or Facebook and
+the p
+I don't know entry point1 121 it's
+usually one Alan
+americ uh T letter thing so uh I'd say
+try a lot of Chiefs and different
+variances of NFL teams with four numbers
+after it be amazing not that I
+know thank you very much and I
+appreciate it you guys have a great
+night

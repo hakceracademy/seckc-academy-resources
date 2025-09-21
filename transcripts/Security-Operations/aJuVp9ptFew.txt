@@ -1,0 +1,1093 @@
+use many cats as a as a proper tool to
+get some information out so I am
+thrilled to learn more about this handy
+utility that we'd like to call mini cats
+let's give jealousy a big round of
+applause it may be guys quick show hands
+who's familiar with me gets you an idea
+of every man who's used it before and
+who can like pass a ticket like it's
+nobody's business
+he'll be lost all right cool so today
+we're gonna talk about a little little
+not meeting cats we'll talk about some
+of the functionality we're not gonna get
+through all of it there's a ton of stuff
+to imagine maybe cats spin under active
+development it's like 2007 so it's 11
+years old you can't do math and it's
+there's just a lot of cool stuff that's
+gonna do so we'll go through some of the
+basics we're gonna talk a little about
+the defensive side of what you can do to
+the Technium cats and even some
+prevention hopefully and we'll leave the
+rest up to you if you're interested
+enough there should be some resources
+where you can go and dig a little deeper
+so Mimi cats is a brainchild of Benjamin
+Del V who decided he wanted to learn C
+and thought you'd make like one of the
+most badass Red Team tools and testicles
+etc as is like hello world so he's been
+working on a Ben Scylla to is also
+another another contributor they both
+are French so I probably butchered both
+of their names so apologize to them when
+they don't watch this and yeah so maybe
+cats a lot of times you talk about pen
+testing tools people are the impression
+that things are like proof of concept or
+it's a cute tool that a pen tester uses
+but you're not gonna actually see it on
+your network with me me cats if that's
+what you think you're wrong the minor
+tech work outlines different groups of
+of adversaries who have been seen using
+Mimi cats as a point of reference ATT
+one which 500c a people one as live as
+associate people's over
+sharmee which is part of chinese
+government in ET 28:29 who you may be
+familiar with cozy beer and fancy bear
+both obviously the Russian government
+and DNC hacks have been seen using baby
+cats in 1832 the Vietnamese group that
+targeted private industry and ap t-34 is
+an Iranian cyber espionage group that
+also targets private industry so if you
+are a member of private industry if
+you're a government group if you're
+associated politics it's very like that
+you can see me me cats on your network
+Florian Rafi is also a pretty well-known
+a security expert or however you want to
+say it has seen nation-state groups
+actually using me me cats with the
+pre-compile tool so jump on the github
+just download the zip and start going so
+there's there's not even an attempt by
+some of these groups and some of these
+groups would call you know in advance or
+nation state level to hide the fact that
+they use I mean the cats are using
+default versions the same stuff we're
+going to talk about saying the same
+stuff you can grab and download and run
+your networks if you want to learn more
+about me me cats expand on what we're
+talking about today there is a wiki on
+the github page if you can figure out if
+you get to get that github there's a
+link for a wiki and you can jump in and
+read about all the modules and functions
+that we're going to talk about today and
+several others so we won't you can also
+check out gentle Kiwi which is Benjamin
+delphi's handling check out his Twitter
+feed he's constantly posting screenshots
+of things you can do with me cats things
+that are not as well known things that
+people maybe haven't heard about yet
+you'll finally if you jump into the wiki
+there's some things that aren't
+documents it there he's kind of
+documenting some of those things that
+way at least some of the talk cities
+done so he also got some slides floating
+around another really good resource is
+ad Security org if you haven't been
+there it's Sharman caps to site URLs at
+the top
+he's got a none other stood out any cats
+were eaten to consistently updates and
+documents a lot of the different
+function
+and how to actually use it so it's a
+good resource if after the talk tonight
+you decided that this is something you
+want to play with and you can't quite
+remember what you know how something
+works or you want to look further in
+this in different functionality so jump
+I didn't secure LSA is a module we're
+gonna look at first we'll use that for a
+lot of things that's it's used for a lot
+of the most popular things that the
+beaming hats does it requires admin or
+system privileges so for most of what
+you do with it it's required their
+system privileges because you're gonna
+jump into delivering in for the L SAS
+process which is it does a lot of
+important things in Windows and putting
+authentication storing session
+information source pins for your pins
+for your smart cards a few smart cards
+for login the pin will actually be
+stored there there's a lot of
+interesting artifacts if you're an
+attacker or if you're doing forensics
+that you'll find inside that process so
+you need to be elevated and and a little
+bit how to get there if you don't know
+how so if you don't have local admin
+privileges on your workstations at work
+and I would rent a adventure I guess
+that a lot of people do buy a lot more
+people than they want to admit a couple
+of suggestions as well go into privilege
+escalation if you want to run as admin
+there's a there's a PowerShell script
+called powerup you can use he'll do a
+lot of work for you look for common
+configuration issues the bull about
+privilege escalation there's also a tool
+that's been talked about I think it's
+five in three years
+someone talked about called Windows
+exploits a gesture which will look for
+missing patches that allow colored
+escalation and if you want to run a
+system then you can use PS exactly this
+passive the S flag that'll open a local
+command prompt as system you can also
+add a computer your target host into
+that so that to the S flag you do slash
+slash hostname or IP address and it will
+open our mote a little bit a remote
+session with local command prompt you
+so to start out we're going to go to
+github we're gonna jump into the
+releases and download the maybe trunk
+zip file the same one that we'd seen
+earlier we talked about earlier with
+nation state level up attackers have
+used this is a pre compiled version and
+if you do it you're gonna find out
+chrome doesn't think you're an adult you
+can decide what you want to download so
+they're gonna walk it for you if you
+city like a minute a little bling if you
+if you jump into settings and search for
+protected there's a setting you can just
+toggle that off in chrome will stop
+so Beverly have exp we're gonna unzip it
+we're gonna navigate to it with an admin
+command prompt and once we get there
+these are the commands we're gonna run
+we're gonna be V Katzen exe just running
+that alone will give us Internet
+interactive prompt or interactive
+session with VB cats we're gonna call
+first the privilege module and get debug
+privileges and that's gonna give us the
+rights that we need to read from the LSS
+process then we're going to call this
+set the secure LSA module and all the
+two colons will use the logon passwords
+function so it's second that's that's
+all going to happen up here but it's
+gonna happen fast enough I want John
+if you see an error message after
+privilege in debug it means your
+opponent running is admin just a heads
+up once you do that you're just like
+this crazy wall of text and I'm gonna
+scroll up there we'll keep the top and
+start working your way down you can
+actually log this to a log file and you
+can find that in the wiki how to do that
+but here I found for sec a C user on my
+windows window main domain into the
+exact director domain I've gotten in CLM
+and sha-1 hashes for that user now we'll
+talk about we can do with with hash in a
+little bit but the problem is you want
+to know plain text passwords well that's
+kind of thing me Behance is most well
+known for and we're gonna say that we
+don't have the ability to see those
+right now they're null so what's going
+on well maybe Katz has spurred some
+changes and windows and since Windows 8
+1 and Server 2012 by default Windows
+doesn't blog or store your plain text
+password in memory anymore and after
+people kind of whine about it the
+windows 7 they would have back ported it
+with this KB now if you've installed
+this KB on your Windows machine you
+might find that your still store and
+your windows 7 machine you might find
+you're still soaring plaintext passwords
+the reason that you're still storing
+them is because there's also a registry
+setting that has to be set now since
+we're an attacker mode here we want to
+face this so we're just going to jump
+into their industry and we're gonna
+navigate to this feed in Windows 8.1
+2012-2016 2010 etc this key probably
+this value doesn't exist by this d-word
+value use log of credential so we're
+going to create it and set it to 1 now
+if you're on the defensive side you want
+to stop this you want to stop storing
+the plaintext creds and in memory you'll
+send it to 0 so once we do that we're
+gonna jump back in
+[Music]
+and you'll need to log off and log back
+into the cig effect or at least that's
+been my my experience some ones that
+so get me get all kinds of crazy out but
+let's go back on the top and move shut
+back down and this time again Weber said
+Casey user we've got hashes and we've
+got a password okay so what have you
+learned or eliminate the events will be
+learned we need to be monitoring
+registry settings okay we need to if
+you're not doing that you need to be
+doing there's a ton of persistence of
+assets there's some privilege escalation
+methods that rely on changing registry
+settings I'm doing evil things with them
+so if you're not currently doing that
+and you're in your network we'll talk a
+little bit about how you can monitor
+that for free in a few minutes but it
+needs to be something you're doing if
+you want to get a larger list than just
+a couple of very settings we'll talk
+about tonight the minor attack framework
+is a really good start for finding out
+all kinds of registry settings you
+should be monitoring you want to go in
+one of those you want to set those with
+GPO don't this run PowerShell script
+across your network and think you're
+done because as you see it's easy to
+change and once you change it it doesn't
+get changed back if you're not you're
+not you know using GPO to Senate it's
+the question now besides just be looking
+for registry changes or what else do we
+see when some behind this kind of blue
+team portion of the talk sis lon
+when we run with this the regular
+kingdom pal injuries you'll see all the
+image to my the data is preserved and
+Delpy has been kind enough just even
+kind enough to sign the time the
+application for us and we'll see that
+all the metadata like product me me cats
+for example be me cats for windows is
+all getting logged so those are all
+pretty easy indicators that's someone
+some lazy attacker has been running this
+stuff on your network so talk about
+registry settings the freeway let's
+monitor those with system on is to set
+up to blog for registry changes a thread
+should keep deletions and in alterations
+and one of those places we can look is
+then 12 when we created that use log on
+a credential value it created a log so
+we can actually look for a target object
+being created
+with that path to register value and and
+an alert on that if you're afraid of
+setting up system on your network
+because you think it's gonna blow your
+your log handle our way you can actually
+target individual logs like this you can
+have it just log if the target object
+matches this value so you could just get
+a long win this thing in pairs and not
+get hundreds of thousands of logs from
+the endpoint you can you can tune it
+down and some of these things the Swift
+on security system configuration which
+is running in default in the lab I was
+using did not detect I had to enable
+some other things so just a heads up if
+you're running that you may not be
+covered it's good idea to test another
+event has been 1913 and that's rules
+he'd be word by you changing for that
+it's being set to one that's the
+indicator that someone's doing something
+naughty additionally a cyber war dog is
+another really awesome blue team tried
+hundred kana kind of person head heads
+at the nice write-up on I didn't find me
+cats being around a memory and one of
+the things he talked about looking at is
+granted access values so you can see
+here if you were able to that the
+granted access is ten ten at the target
+image of L SAS sourcing is something's
+requesting permissions on all sauce and
+that's the specific permissions are
+requesting with the process specific
+access rights the reason that's getting
+logged what that means is that there's
+individual permissions processes can
+request and and these are the processes
+specifically that VB cast is requesting
+at the top of bottom values in the way
+that it works is that each of these
+different sets of permissions has a
+numeric value and it works really
+similar to have some other herbs and
+Linux where you have values that you can
+add together and the sum that you end up
+with is going to uniquely be a a certain
+set of values being requested so with
+that there's two cents of granted access
+values that are pretty well documented
+you'll find one is ten ten the others 14
+10 it depends on whether using a new or
+older version and VB cats I've seen
+somebody say you they have also seen 14
+3a but those
+match up with the access permissions of
+the windows documents I'm not really
+sure at sitting up there
+but if I mention I'm always a target in
+image is gonna be else ass and you're
+gonna have a call trace it's in Colonel
+base and ntdll that ll or if she'll
+codes use the same person a document of
+the other [&nbsp;__&nbsp;] granted access value
+additionally outside of the grants at
+access values event 97's going to show
+you when one image is loading another so
+what happens is VB cats is gonna notice
+a set of specific deals they're kind of
+unique to it when they're all put
+together there's a bunch of deals at
+Lowe's but there's there's five the
+cyber where dogs identified that a
+unique made kind of loads in a pretty
+large environment and again you might
+have to miss and test it your
+environment but if you see these five
+DLL is loaded by a single event in your
+environment there's a good chance that
+what's being runs probably mini cats
+it's at least worth investigating
+so there's several kinds set up to
+identify me to catch me around your
+environment okay some other things are
+the word I'm going to talked about the
+registry key to change to use logon
+credentials
+what about antivirus husky antivirus so
+this isn't going to be about an
+immersive Asian but there's a couple
+things that I've done or that you can do
+that are kind of easy wins with
+antivirus if you don't just want to
+create an exclusion to turn off on the
+machine you're testing on something of
+IRS offenders will just create
+exclusions automatically in specific
+directories like Symantec adds in first
+chain servers so if you know where
+they're creating those exclusions
+you can just drop your files there a
+in case you don't know where they are
+you don't wanna read the documents
+summon have IRA spenders picking on
+somebody again well actually documented
+for you in the registry so the plain
+text so you can just navigate to it and
+read you can see the folder exclusions
+you can see file exclusions if their
+people are splitting my file name which
+I suggest you do neither ever you can
+exclude my hash to make life a little
+bit harder perfectly not md5 but these
+two that's just for example will give
+you a list of what file names are not
+going to be scanned so just rename II
+can't sneak around that way last year's
+sacred cow tipping with Black Hills up a
+sec Kerry Roberts documented that she
+does have some Find and Replace on
+strings like she changed me be cats to
+me be dogs and got rid of a couple
+function names I just find replace them
+with Lissette scripts and ended up
+bypassing every in a virus in virus
+total so another option you want to if
+you want to play around with it you can
+also just change file formats and see if
+the antivirus is good identify
+JavaScript being run since me me cats is
+it on my project you can compile with
+this JavaScript using the products at
+the bottom which is called that Jade
+script seeing compiled is JavaScript and
+run it with Mike C script so run open a
+command prompt as admin c script out exe
+call the javascript file and it'll be a
+fully pal version of meemic acts as
+javascript there are a couple versions
+of that floating around right now and i
+found is that a lot of them are not
+running the newest amy cats and so some
+functionalities broken so you may have
+another option is not to write me to cat
+statistical don't worry about antivirus
+add-on all we need is memory of the LSS
+process so we can do is we can do mini
+done using task manager if you have a
+GUI access open task manager
+scroll down to else SDXC right-click
+create a mini dump and when you do it'll
+write out to the local temple directory
+and you can just exfiltrate that off the
+system however you want to move it off
+and you'll be able to use mini cats onto
+your own system we don't worry about
+what antivirus installed and what logs
+are being sent to the sem and you can do
+things safer that way
+don't have GUI access arguing is
+something programmatic and you can use
+propped up from sysinternals and do the
+same thing and with that it's really
+nice because you can script it so a nice
+feature with windows event hogs is you
+can have it create or process or script
+when a certain event happens so you can
+look for a certain person or user
+logging into a machine and when that
+happens run your popped up you'll know
+that you have a dump that includes their
+credentials and if you want to be really
+sneaky then you can trigger an a velar
+when you have that set so you get
+whoever's doing triage logging into the
+computer and giving you their creds
+unwittingly so once we have that dump if
+we're gonna go this route we want to see
+what we're getting to do dump it this is
+what we today we're gonna run maybe cats
+again on our own machine we need to run
+in that manner system again but this
+time we need to make sure that the
+version of Windows we're running on our
+machine matches the version of Windows
+that was run on the victim machine is
+right on the victim's machine you can
+get free trial versions of Windows from
+Microsoft if you look hard enough so it
+shouldn't be a problem to do that so we
+run TV cats secure ll say : Chloe beat
+up mini dum they do the path to your
+dump file hit enter and then again ulis
+runs q LS a logon passwords in profit
+and this is what it looks like
+[Music]
+Hey once again plaintext passwords okay
+okay another option you do when I run it
+on the disk you want save a file to disk
+is you can use PowerShell power tells
+your friend that Power Cells kindly
+becoming a little bit a little bit old
+hat I was kind of pretty really popular
+for a long time now
+Microsoft isn't a lot it's a lot more
+about what PowerShell is doing and
+there's you know endpoint products can
+keep you from any powershell or make
+life really hard if you want to but
+we're gonna do it anyway well there's a
+script called opt cats that's we want to
+use don't run it if you're doing this in
+your network don't run it straight off a
+github
+run from somewhere you like trust okay
+when doing on this I'm using the one we
+get in the Empire project here there's
+also a project called power sploit and
+there seems to be out of date
+functionality is not quite working then
+the latest Windows 10 but Empire since
+working pretty well
+and guessing it's probably being updated
+more frequently with that link with that
+that file we're gonna download we're
+gonna use an IX download Gradle IX is a
+short version above expression what
+we're gonna do is use that net within
+PowerShell to download the contents of
+that file into memory we're going to
+execute it there so you should never
+write a file to disk if you're doing
+this also there's no defect we're using
+HTTP you can go both ways with github
+potentially some antivirus products that
+have like IDs don't always inspect SSL
+so even though they might flag this and
+alert if you try to download it in clear
+text
+switching to SSL will solve some
+problems so put them both together it
+looks like this big blob of text another
+I'd just read the command or wrote the
+command into the variable and ran it
+which makes like a little bit easier
+with with quotes and things and here's
+what looks like a copy pasted that I'm
+it's gonna take a minute to download I
+and once again sec kc user really sucks
+ok another option so we've dumped your
+text plaintext friends right we've done
+clear clearly sort of texts and memory
+let's move on a different path attack
+this one's kind of fun it's it's a
+persistence method windows allows you to
+write security support provider's then
+you can plug in to else ass like ones
+are going to use until in Kerberos etc
+you plug those in and load them and
+they'll let you do some kind of fun
+authentication see things and Mimi Katz
+was cool enough to write one that will
+just let you log passwords that are used
+to a text file and that's what we're
+going to do so there's two things you
+need to do once again we're going to
+change the registry setting there's a
+game they're not gonna read to security
+packages you're gonna add the name of a
+dll that's included me be cats
+maybe lid and then we're gonna drop that
+DLL into system 32 which is the same
+location that Alsace is living on your
+Windows machine once we do that we're
+going to reboot the machine that'll help
+slow the DLL and when we do we end up
+with this you can see you haven't system
+32 kiwi s SP is the text file that that
+was written to and here I'm out
+passwords both for a local user vagrant
+and AC user so once again we're able to
+find clear text friends and the nice
+thing about this is once again you can
+you can host someone into logging on if
+you don't they're gonna log on by you
+know this is a site you know it's been
+getting blocked or triggering a be alert
+you can use an IKE are string you just
+want to make sure they another night
+there's this other method of doing this
+also called bin SSP and it will be
+cancelling hatch memory of else ass and
+real timing off the reboot don't to
+logout or do anything it'll start
+writing this text file for you and what
+I found is with the latest version EB
+cats it forces a reboot
+I think things don't go well so there's
+probably a bug so if you're gonna start
+production system and you're going to
+use mmm SSP because you thought hey this
+is a lot easier than rebooting a server
+I would advise against it until you've
+tested it and know that it's new fix all
+right so talking about a couple of ways
+getting clear text creds but now we're
+not going to need passwords anymore
+we're gonna move into the land of pass
+and hash and pass in the ticket those in
+Ceylon hashes we saw before we're going
+to figure out what we can do with them
+now with passed the ticket we haven't
+seen the Kerberos tickets yeah there's
+different modules going to do that what
+we're going to show you how to export
+Kerberos tickets so that we can reuse
+other people's Kerberos tickets in our
+session also as a side note and if
+you're like laughing at Windows right
+now because maybe hats makes it look
+pretty silly with their single sign-on
+links these attacks also work on the
+necks not with me me cats specifically
+but Benjamin develop a digital Kiwi has
+released a tool called TKO ke ke o which
+will allow you to convert Kerberos
+tickets for Windows to be able to use
+them in Linux and vice versa and he's
+also if you check out his Twitter he's
+got a little image showing you how to
+extract those tickets or save those
+tickets often to files on Linux that you
+can use this way all right so we write
+into it pass the hash again we'll call
+me me cats the debug privileges we're in
+Zampa log on password because we want to
+see the in teal and hash once we have it
+we're gonna call the secure LSA module
+again and the stuff will use the PTH
+pass edge
+function and we're going to define the
+user that we use in the domain and the
+interim hash and a command we want to
+run
+so in this case I'm gonna I'm gonna run
+PS exact I believe it against the domain
+controller from a regular Windows 10
+machine because I'm gonna find and domi
+that and then credential and I'm gonna
+have an interactive system session with
+[Music]
+let's pull back the top looking at the
+creds here's psych KC admin hat oh wait
+no plane no tax credits that's okay we
+have an Intel him hash copy that thing
+eventually I'll find the bottom again
+and we're gonna pass the hatch here okay
+I'll say P th users suck KC admin
+domains win domain you use your domain
+name for this not window a paste the
+hashing and next we're gonna have the
+it's exact - s slash slash IP flow
+domain controller and CMD now we have an
+interactive shell on the conveyance on
+the domain controller on Windows 10
+machine CA murnian system and those name
+is DC that's the domain controller us
+and we'll back out to show you where I
+was running so I am said KC user that's
+what I was and when Tim was the machine
+so the next next feature is passed the
+ticket so this one's a lot of fun as
+well so we're going to think of Kerberos
+ticket out of memory that belongs to our
+user and we're gonna inject it into our
+session so that we can pretend to be
+that user cuz single sign-on it's
+awesome so again
+prob'ly bug that were to use is secure
+I'll say tickets exported and that's
+gonna export all tickets into the
+directory we're currently running out of
+so if you're gonna do this like you're
+trying to be sneaky maybe jump into like
+a program data or subdirectory that's
+not hidden by default on the user's
+machine after you do that we'll get
+ticket stopped we're gonna purge
+Kerberos tickets they're already
+existing for our session we're gonna
+pass the ticket for some point Kerberos
+whole club PTT which I have finger
+should be : : PTT that's a ticket file
+we'll listen see it's their exit and
+then we are effectively working as that
+user it's just a demonstrate it works
+PTT is a user account that we're going
+you're secure I'll say tickets / export
+all it's crazy alphabet stuff and yours
+the director I was working in you can
+see all the Kerberos tickets that were
+dumped some these are any machines
+against and things that we're not going
+to use for this but when I want it's
+right there want to rename it to make it
+a little bit shorter and easier to read
+which isn't really necessary copy it
+so we're gonna list tickets we could see
+there some tickets already existing for
+my session so we're gonna dump those and
+purge them
+I think see they're going and now it's
+time to pass the ticket pass it to me
+Kerberos PTT the name of the ticket who
+you have listed there they are exited
+back to the regular pan prompt and now
+I'm going to create a username - PTT
+with a secret password
+don't use my password and we were
+successful so why not they can remember
+the domain admin is a group to overwrite
+why steal passwords and open a minute
+and there we are check to see without
+use it look like in oh look they have
+domain admin birds packed again sigh
+cool so that's kind of a quick run out
+of how we can use many hats to have been
+around and our different options that
+you got but you might be asking this
+point like you said there's a lot of
+traffic and immunity cats what else can
+I do
+well have a creative golden ticket you
+guys heard of that golden ticket means
+you can like make your own tickets so if
+you've got access to a domain controller
+you had then access you can create a
+shadow copy or use some other method to
+get the MT in TV in TBS did file that's
+going to contain hashes for every user
+on the domain once you do that you can
+get the the into them hash for the care
+of the TGT user which is the person that
+creates all the tickets like this is the
+big boss at the end of the video game
+and you can use this crazy string
+attacks to create a golden ticket using
+that ntlm hash there's also called
+silver tickets who sort of know game
+modes for that sorry guys these are
+silver tickets summer think it's like
+the like this ugly stepsister of of
+golden tickets but they're actually like
+a lot easier again because you don't
+have to have like admin access the
+domain controller you just need you can
+use a machine hash or servicing out hash
+where the golden ticket is gonna be a
+TGT ticket so I you can create your own
+TGT tickets silver tickets will let you
+create your own TGS tickets a little
+more limited use obviously you can't
+like like right you're gonna pass
+everywhere likes golden ticket space
+feel like Zack Morris like make you guys
+own hall passes skeleton keys yes
+I've seen all three times skeleton heats
+another cool function it's not needed as
+often anymore but we would allow you to
+do is patch memory and else ass once
+again and incidentally you walk into any
+account on the network using a single
+password which in this case but default
+doesn't be be cats but as long as that
+machine's not rebooted you'll have
+access to any column that have
+credentials or anything else you can go
+where you want to the users actual
+password is totally unaffected so you
+don't have to worry about them being
+locked out or anything else this really
+works if you have multiple domain
+controllers new domain you're going to
+patch each of those with skeleton key or
+it's only gonna work when you're off
+against the specific domain controller
+that you've backdoored so if you're
+interested maybe cats so you wanna do
+some more research there's a lot of
+other cool things I'm gonna do suspend
+and log into the event log service
+without like killing the service you can
+also clear that along with your died
+without having the little event logs
+been cleared
+logs showing up if you have like
+credential manager you can dump creds
+from their United to be admin so if
+you're in this user session you can dump
+their passwords you can allow multiple
+RDP session so without the cows that
+you're supposed to have to do that if
+you would like GUI instead of command
+line access there's a whole lot of fun
+stuff you can do I love to read up on DC
+sync and DC shadow accounting the newest
+hottest fun things you can pretend to be
+a domain controller basically without
+actually happen to be the main
+controller
+another protection other protections
+jumping into some other defense present
+process Lyta some of the windows
+introduced that is meant to keep you
+from reading and doing nasty things with
+memory of alsace or the processes if you
+divide them in this case else has
+unless you're also protected process
+which me me cats shouldn't be you can
+send that by running the tender the
+d-word running this ppl to one under
+domain the problem is maybe cats also
+comes with a side driver again this is
+something you can detect people like
+install drivers you should have an alert
+if it's something like be me cats but
+meeting at spotty ball time if you don't
+attack the driver being loaded can turn
+that off just fancy crimson guards and
+another protection that's been put in
+place basically isolated virtual
+environment that separates user space
+from the place you're storing your
+secrets in alsace it's it's actually
+it's pretty cool some windows is doing
+there's some limitations that you have
+to be running like windows 2010 or sorry
+Windows 10 or 2016 TPM chips referred
+for that and there's some places where
+it doesn't actually still provide any
+protection that you want so there's
+still a kind of fall short sill for the
+reading on the defensive side of you're
+interested in how to protect privileged
+access credentials and users handle
+topics you can look at Windows has done
+a good job documenting things some of
+them require like newer versions of
+Windows and take a lot more effort to
+put in place so I can make your life a
+little bit harder what I would suggest
+or recommend or what I'm gonna propose
+is be a little different way to go about
+protecting your machine okay so we're
+talking about a new ring and hack pass
+now if you've been pay attention for the
+attacking entity
+stuff you're gonna see there's a lot of
+attack pass right that's kind of what
+some of the tools that the rents talked
+about do is they look for ways to go
+from wherever you came to foothold in
+network to don't make Advan or whatever
+your goal is so if you pay attention you
+have an idea that work site so let's say
+Joan herb his workstation all around the
+left the attacked its fished so that we
+reversed shell out to at the China or
+wherever else and once he's in there
+you're patching machine decides to login
+with workstation admin threads to those
+patches and blades patching Firefox or
+whatever else once it does that because
+the attacker is already on that machine
+they're going to be cats and now they
+are that user right if you haven't added
+in access to a machine you are whoever
+logs into that machine meaning cats
+since you have workstation and you can
+log in the domain admins workstation and
+once you're there from you cats again
+and when they use their domain admin
+friends you can grab those on the memory
+ok roasting a pass the hash cetera those
+other attacks gonna be the bar so some
+of these things are gonna be mitigated
+with newer versions of Windows but you
+can get the idea you're looking at ways
+to to go from somewhere that's not that
+important or network so that is if you
+enumerate all those things in your
+network and look to eliminate those
+using like host-based firewalls and a
+couple of types of technologies you'll
+find that it makes it much harder even
+if you have credentials to do bad things
+so the idea what a challenge to do is
+when you look at your network you look
+at segregation etc assume that your
+credentials are known to an attacker so
+now I'm just looking at VLANs and
+segmenting like the important parts of
+your network because what you do that
+you kind of create like a donkey kong
+scenario right i think you can kind of
+move laterally until you can move
+vertically I'm glad it again so you can
+find the pivot point through the VLAN
+and you just you kind of keep doing that
+which is what we've been learning in the
+so a suggestion don't allow client
+computers to talk to each other it's
+simple it's easy it's free and use
+Windows host rates firewall don't allow
+SMB they don't have any kind of
+connections between those machines if
+you use husband's firewall or some other
+technology that logs it you're gonna see
+other cool things like port scans right
+if you don't want to over overfill your
+your your log management you know
+solution would have just one important
+eighties hit on the client machine you
+see the Niagra port 80 you love that or
+you know see a lot of the nice rapport
+80 or 442 or common ports you can make a
+hand phone five five or ten and you
+would see probably every ports going to
+have those in your network because those
+are the port's that scan additionally
+look at your look at your servers in
+place and identify what your ingress
+servers and what your egress servers
+ingress servers are so that all of your
+users are going to access so that you
+ticketing system a lot of people are
+accessing that that's ingress server if
+you have a file server that's hosting a
+ton of file shares that's an ingress
+server the things that users connect to
+are in dress your egress servers are the
+things that connect to your users may be
+very different function of a bit of
+login to your user computers so then we
+treat it differently okay you know yeah
+but yes
+to put that all together and we end up
+with host-based firewalls that kind of
+look like this
+we don't allow the file-share computer
+ever login to connect or making out a
+network connection to our user computers
+and we don't allow our users to ever
+connect to our egress servers except for
+in the case of the couple of admins so
+are a few domain admins or system admins
+and such that need to get to the egress
+servers are able to log in there and
+what that does is it changes your
+attacks to receive data fish the admin
+not just a normal user this all makes
+sense
+additionally you have a domain
+controller piece and the best way to
+mitigate that is if you had to approve
+Windows whole to privileged access
+workstation take a workstation that no
+one can connect to a separate a
+workstation don't use a VM because just
+sharing the same Hardware write a total
+supercomputer and use that to manage
+your domain controllers if that's the
+only place you're ever using your domain
+admin threads the chances of that
+machine getting out are pretty small
+because there's really no reason to
+browse the web no reason to use email
+there should be no reason for something
+from the outside to end up on that
+machine unless there's physical access
+in addition to kind of segmenting your
+network this way I recommend the you
+tear your lawns so the credentials that
+you would use for tier two you like your
+workstations should not be able to log
+onto or than a to your servers ops I'm
+going to be that you can often get to a
+file share but you're not going to
+create an interactive or network voila
+to your servers or your domain
+controllers in the vice-versa
+the Krenzel you need to get onto your
+wsus server should not work to log into
+your client machines well okay so that
+this I just think it's a lot more
+complicated because no one's network has
+like six computers on it but then that's
+the reason talk about tack passes you
+wouldn't continue to you can continue to
+do right beside you can create
+additional levels of credentials there's
+additional tiers additional tiers I've
+kind of weird computers look like the
+idea is if you don't need to connect to
+it don't
+if you enumerate your attack paths this
+should really start to minimize the
+number of attack paths that you see then
+start closing those off as well and the
+idea being that the path to domain admin
+there should only get a few nodes that
+are able to get there and they should be
+very close there shouldn't be a three
+node hop because any of those three
+nodes getting owned means domain admin
+gets out yeah so that's this is a really
+super well documented anywhere this is
+kind of what I've come up with another
+people come up with it we talked about
+I've seen this use it's not super
+difficult to use like host-based
+firewalls and Windows or on Linux it's
+something you can push out and in like I
+said these a couple of rules should be
+things that you'll need to create some
+exceptions with the exception should be
+pretty pretty limited and should give
+you it should really changes the way
+your network looks to an attacker so for
+my lab just shut up Chris long if anyone
+doesn't have a Windows lab and you want
+one there's this cool project called
+detection lab I use this vagrant and
+Packer and VirtualBox or if you're going
+to pay some money you can use it with
+VMware and it's basically the pre-built
+domain you can just throw up
+not like puke you can you can build it
+on your machine
+I was able to work
+Windows Linux subsystem of my winix and
+Windows machine there's scripts to build
+it automatically in Linux and on OS 10
+so if you need a Windows lab that'll use
+trial images but because it's using it's
+the whole build is scripted out you can
+actually tear down and redownload images
+and build it back up overnight and then
+have to worry about like trials expiring
+and then thing that you might know
+there's there's no domain user setup so
+you gotta create your own users and then
+deal with some group policy stuff but
+not only doesn't have the domain setup
+OS queries are any set up on its system
+on with Swift on Security's a setup is
+on there there's a handful of other cool
+tools flunks already set up there's a
+Windows Event log for a whole bunch of
+stuff for you to not only hear the tax
+but also have a lot of the artifacts
+that you would need to have to figure
+out how to mitigate or detect those
+already are just built in but take
+how does two-factor play into it okay it
+depends if your if your to factory
+network access then really your
+computer's becomes a pivot point right
+if you if you're requiring to factor for
+like a VPN connection then once you've
+connected no more two factors required
+so you just pivot through that machine
+and you're into the next network if
+you're using it for logons like I said
+smart part of pins are actually stored
+in else a so you can find pins for those
+that kind of depends on what it takes to
+interact with them additionally you know
+Kerberos sessions have you got sessions
+established it's something to play with
+I think you might find that I need
+someone body if everybody has actually
+done this past ticket it's may be
+possible and those scenarios I'm not
+it does you have to create the d-word
+value on newer Windows versions but this
+is all run on Windows 10 so yeah you you
+can you create that evaluate the viewer
+doesn't show up there but once you
+create it and set it and log out a lot
+my cloud here you're good to go
+any other questions I watched in the
+last six months so that was very well

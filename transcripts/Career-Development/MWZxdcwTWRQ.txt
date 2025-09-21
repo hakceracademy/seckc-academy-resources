@@ -1,0 +1,312 @@
+i currently work for tennival
+i build the help build the compliance
+side of tenable building audits and the
+plugins and code and such
+i have a website at savingflight.com
+most of what my focus is right now is
+trying to help people get into infosec
+and that's what i'm talking about
+so make your own way means
+don't count on a degree
+that's what i did i was always told that
+i needed education i needed
+to submit to open source projects and i
+needed all the experience to get these
+jobs
+and i didn't really want to do that
+and if you're experienced then
+so my journey started a long time ago
+when i was in
+middle school i think i found a website
+called happy hacker
+so i read the website
+and i was really interested but i really
+had no idea what i was doing i had no
+idea that
+this person really didn't know what they
+so i tried but i didn't get very far
+here's some of the articles that i found
+telnet the number one hacker tool
+satellite hacking
+but that's what i thought was cool so
+that's what really inspired me to teach
+myself how to do it but this was a long
+time ago and i had no idea how to use
+google i don't even know if google was
+but that's where i started that's where
+my interest came in so i joined
+the air force with the intention of
+doing good things
+and i studied arabic at dli which is in
+monterey california
+and
+after kind of getting acclimated to to
+the language and in class i ended up
+meeting someone
+who
+was in i.t and i knew that this is what
+i wanted to do
+he was a server admin linux server admin
+so he gave me this list
+of things to go through because at the
+time i had gone through
+a quasi ethical hacker course i think we
+used metasploit and one exploit which
+was like
+ms-811 or something like that and i had
+no idea how it worked but i did it and i
+got credit for the class and i was using
+doing a class that was prepping for
+network plus so he gave me this list and
+said
+you look like you have the knowledge
+to start
+and it's hard to read but basically he
+said
+build some virtual machines
+set up a server with a bunch of services
+learn to program
+subscribe
+to blogs and stuff
+so i took that and i started studying
+while i was in arabic class i was
+answering arabic questions while i was
+reading
+o'reilly books that he gave me that i
+printed off on little quarters at like
+eight point font
+and i used that to
+introduce myself to
+infosec and programming and what i
+wanted to do which wasn't arabic
+so
+fast forward a couple of years i got out
+of the air force and i didn't know what
+to do i was serving tables for a long
+time
+and
+i
+was selling cell phones so i was working
+at t-mobile
+and i met a friend who who actually went
+to centric here at kc
+and he said it was a good opportunity to
+get started
+in iit and get some certifications
+i really didn't know any different i
+didn't know exactly what i wanted to do
+so i started
+excuse me pardon me here i'm sorry to
+interrupt excuse the interruption please
+but we have a tradition here at set kc
+and uh cory isn't here but first time
+speakers take a shot i think everyone
+all right
+so at centric i i uh they do
+two tracks
+they do a programming track which is
+in.net i think and a network admin track
+the network admin track takes you
+through some certification microsoft
+certifications and i got my mcsa and i
+got a security plus and some other
+things cc
+ent
+i knew it wasn't going to be enough to
+really get a good job but it was a start
+and it was a direction
+so i started in help desk i wanted to
+get into security full-time i ended up
+getting a job with uh booz allen
+hamilton doing validation diet cap
+validation at the marine corps on
+banister road
+there was kind of my first start in
+programming
+we had a lot of road tasks that we had
+to do over and over and over building
+spreadsheets taking retina scans
+and
+i still didn't really have enough any
+cool what i was doing but because i had
+taken a cisco course i was able to do
+some of the router stuff and i started
+learning
+how to poke the servers
+to validate what we were doing and prove
+that we were either secure or not
+so about halfway through my time there i
+was there for about a year and a half
+i wanted to do full-time development
+so i started asking some guys who were
+in
+software development
+what what i needed to do to get in full
+time
+they told me i needed a college degree
+i think i was on
+year 10 of my bachelor's degree
+and
+i didn't want to get a bachelor's degree
+they also told me i needed to get some
+experience in open source projects
+and i didn't really want to spend the
+time i just wanted to jump right in i
+was doing scripting already it wasn't
+good
+but i knew that's what i wanted to do so
+i did some googling this time i knew how
+to use google
+and i found a site that taught me how to
+do some web programming and i took that
+experience and started working in my job
+which was officially security
+validation i started building a tool and
+that's all i did for about six months
+full time
+i was able to get a job at the federal
+reserve doing that
+pretty much the same thing
+and
+after that i got a full-time web web
+development role and then i started
+doing some freelance projects
+um
+so basically my point with what i did is
+that a lot of people ask me how how to
+get into security how to get into
+software development whatever it is and
+a lot of answers that people will give
+you
+are
+are a path but they don't have to be the
+path
+and
+it's not as hard as you'd think i i
+certainly didn't have enough experience
+to get the jobs that i got but because i
+had
+because i knew what i wanted and i had
+some experience in in my job i was able
+to
+just start in a full-time web
+development after that
+i'm now
+obviously working at tenable and i've
+had a couple of job offers in pentesty
+so
+i knew back then that's where i wanted
+to go and that's
+kind of veering around ended up in
+pentesty
+so
+the thing that you have to kind of be
+wary of that
+now a lot of people will claim to know
+what they're talking about
+and i happen to come across a lot of
+people that told me to take long routes
+that if i had listened to them i
+wouldn't be in infosec now i wouldn't be
+getting jobs for pen testing i wouldn't
+have been a software developer
+so
+it's important to find people who know
+what they're talking about and ask
+places like this are great because
+there's lots of really good
+skilled people
+and they'll know how to get where they
+go they'll give you a path to take and
+um it's important to consider that but
+it's also important to consider what you
+want
+and that's what i did i knew that i
+didn't want to necessarily finish my
+degree i did eventually but it wasn't
+until after i got my job
+so there's definitely
+bypasses to getting into where you want
+how expensive it would it be to just
+skip practice and get right to perfect
+my wife tells me that
+th that's me
+there's a lot of times where i just want
+to get right into it
+and the key thing to remember when when
+you want to get a job in infosec or
+you can get your available on if some
+experience is a great way to put uh
+put in front of an interviewer and tell
+them here's here's what i've had
+experience with here's what i've built
+and it's good one because i've always
+been able to say this is stuff that i
+worked on my own time i didn't do it
+full time
+and managers like that
+so it's helped me for sure get it get
+the jobs that i've gotten
+tenable was one of those
+i do work at work which is
+like i said just
+make sure that if you
+if you have an opportunity at work to do
+what you want
+try and incorporate that into what you
+do day-to-day because the full-time
+experience of doing that is
+is irreplaceable you can't you can't get
+update your resume with those
+experiences
+is what i did so everything that i did
+basically i put on my resume
+no matter what it was if i if i worked
+with
+tomcat and i wanted a development role i
+put tomcat and they didn't need to know
+that it wasn't at a full-time job
+i knew how to set it up i knew how to
+develop code for it and that was what
+mattered to managers and it got me into
+places that i wouldn't have been able to
+get
+um i think the most important thing that
+i've run across is i did this a lot on
+my own i had one person at that sheet
+that was up there that gave me some
+advice and some direction and it was
+great because he encouraged me
+and he kind of gave me a route to take i
+didn't finish it
+based on what he wanted but
+i was able to start
+and i had a path you can google any
+topic right now on how to get a job
+reddit will have 100
+different
+different questions about how do i get
+into this and some people are mean some
+people are
+nice some people will give you valid
+answers some people don't
+so
+it's really important to find someone
+who knows what they're talking about
+don't just take advice from anyone
+ask people who are in it
+and
+get information from them about how they
+got in and
+what what you should do
+uh to get where you want to go that's uh
+that's probably the most important thing
+helping people out and if if you're
+already in infosec or you're already a
+developer find people that want to get
+into where you are and help them
+i wish i had someone i know that there
+are people that uh that want help so
+it's it's key to to uh
+to filling the gap the cyber gap i guess
+is what

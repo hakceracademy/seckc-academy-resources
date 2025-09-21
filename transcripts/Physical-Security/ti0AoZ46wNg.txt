@@ -1,0 +1,408 @@
+oscilloscopes so as you can see guys
+that are married if your wife says you
+need a bunch of old and older computer
+equipment to add to the stack of
+Richard's gonna give us some great ideas
+about how to add to that pile of old
+crap that you've got really put it to
+good use and I'd also like to point out
+that we had no problem connecting the
+oscilloscope to the projector but
+guaranteed we will have problems with
+Windows 10 later on
+let's give somebody not me Richard a big
+round of applause so yeah I'm RSA X BC
+of our 6 BC dotnet and that's my
+projector and not the oscilloscope which
+is great and this talk is called intro
+to oscilloscope because last fall school
+closed and redistributed a ton of test
+equipment on Craigslist and it ended up
+in a bunch of your guys's hands and not
+everybody knew exactly what to do with
+it
+so just kidding this is actually the
+first slide is electrical safety on the
+red diagram you will if you connect any
+two points on the red diagram you can do
+that because if you were ever in doubt
+put one hand behind your pocket I'm not
+a good safety speaker this is about as
+far as we're going to go but if you open
+the oscilloscope there are a bunch of
+things in there that will kill you so
+this is the general overview of how the
+oscilloscope and system processes stuff
+the first step is you start with a
+signal something that you want to look
+at like it might be a pin on a
+microcontroller that you're not sure
+what it does and that is your signal
+then the signal goes into one of these
+which you can't really see very well and
+I should have put a picture up but I was
+I was busy last night this is called a
+probe it's a specialized piece of wire
+after that it actually enters the signal
+actually enters the oscilloscope this is
+called acquisition or digitization
+depending on the type of oscilloscope
+you have be it analog or digital
+oscilloscope then kind of just sits
+around and waits for a while until a
+trigger occurs a trigger is any event
+that makes it do something usually the
+something is take a picture the goal the
+basic intro of an oscilloscope is to
+allow a human being to see electrical
+signals that are going really fast
+waiting faster than humans can see or
+really slow so slow that it doesn't make
+sense for human to sit there and stare
+at it you can run something for 10
+minutes and later you get a printout of
+what it looked like which is the the
+next step and then once you've done that
+you take some measurements and that's
+pretty much you just do that in the loop
+and that's how for example you discover
+like what pins on a new product that
+you're taking apart contain the local
+serial console you need to route the
+device so this is the first thing that I
+need to teach you and this is the grid
+it's it's literally just a gigantic
+Cartesian plot and it can mean basically
+one of two things usually what it means
+on the x axis is time and then on the y
+axis is voltage and we'll play with
+these with these soon the tick marks are
+artists to scale I guess there's a
+there's basically on an analog
+oscilloscope your knobs will tell you
+what the tick marks mean on a digital
+oscilloscope usually the screen will
+just say like each tick is one bolt or
+each tick is 5 milliseconds so that's
+what the grid is mean on older analog
+scopes there's really nothing but the
+signal displayed and so that's why you
+gotta look at the knobs to know what it
+means
+so yeah pros these are the fancy pieces
+of wire a bunch of the oscilloscopes
+that people picked up this fall did not
+come with probes and so you have to find
+those on Amazon and they're like five
+bucks to general families active and
+passive probes
+to everyone in this room that's not
+designing high-speed electronics you can
+get by with cheap passive probes it'll
+be fine
+active probes actually contain
+amplifiers inside the wire to make your
+weak signals or fast signals more
+visible differential versus single ended
+there's basically you can get a probe
+that has two tips and that measures from
+point A to point B and it looks at the
+differences single-ended is the picture
+of there where it has a single ground
+clip and then everything is referenced
+to ground ground in this system means
+zero volts the the baseline of negative
+plug on the barrel plug at whatever
+you're supplying this is very common in
+the sorts of consumer electronics that I
+hack one characteristic probes have is
+capacitance if you have a choice you
+want that to be low basically that will
+determine the bandwidth of the probe you
+want wide bandwidth you want low
+capacitance but if you have for example
+a 60 megahertz scope it doesn't do any
+good to by 200 megahertz probes by 60
+megahertz probes for your scope there's
+also a little switch on there it's tiny
+and in this particular picture which I
+really should have found a better one
+the switch is black on a black probe so
+it's invisible but it'll slide is
+somewhere between 10 X 1 X maybe a
+hundred x and it'll effectively scale
+your voltage range for you and we just
+have to make sure that setting is set up
+in the scope true true to what's going
+on so the first thing we're going to do
+is prune out our probes
+and the first thing that you need to do
+whenever you set up a new oscilloscope
+or even move it or the temperature
+changes a lot in your office is called
+probe compensation and what this is is
+we're effectively matching the
+construction tolerances in the
+oscilloscope to the construction
+tolerances in the probe both of which
+change with temperature so we'll just do
+a quick little tuning to make sure
+that's right
+almost every oscilloscope unless you
+have something made in the 1930s has got
+a little calibration point on it and
+it'll be labeled and it'll tell you what
+and so in this case what what we have is
+a square wave and this is a very common
+calibration signal the most common
+unless you get into high-end fancy stuff
+and I have the switch in the wrong
+but basically when this is yeah so my
+attenuator switch is in the wrong
+position which is causing this to read
+out as a very silly number but if that
+were in the correct position this would
+actually be a 2 volt signal as this
+should be 1 1 mol another goal and it's
+also 1 kilohertz which you can see 2 200
+microseconds oh no oh that's already
+this particular Silla scope as a digital
+one has some fancy tools and one of the
+fancy tools is that it measures the
+signals going in for you automatically
+which is just kind of an D so basically
+this is showing that we have a
+calibration signal it's at least really
+close this is an oscilloscope that I got
+for free so this is within the
+acceptable tolerances of pre
+oscilloscopes a 2% deviation there is a
+space in here where you can open it up
+and try and fix that but yeah so this is
+our oscilloscope you can see the period
+of the signal this is a signal the
+period of a signal is measured from one
+point to the exact same point on the
+next period
+on the next waveform so you can measure
+it from this falling edge to the next
+falling edge and you would see that the
+period is 980 microseconds and this is
+just how we measure repeating waves but
+we're here to kick shot glasses off the
+stage and also to calibrate this probe
+on the probe itself and you need a
+screwdriver your probes will actually
+come with a screwdriver you'll look at
+it and you'll say why is there a plastic
+screwdriver I don't need this and you'll
+throw it away and then you'll think oh
+richard reminded me that I needed this
+magic screwdriver because it is made of
+that is also a poorly tuned program this
+is not enough this is too much but right
+there and right about there when the
+square wave looks square the thing is
+correct the reason this is made of
+plastic is that if you make one out of
+steel or nickel or iron it'll actually
+couple into the system magnetically and
+cause basically it'll Bend your way for
+in a little bit and then you'll think
+you're directing for it you'll take the
+screwdriver away and it will also look
+wrong and then you'll take a bunch of
+measurements and all of your
+measurements will be wrong so that's why
+the screwdriver is made of plastic and
+so we're gonna switch over and get some
+some test data real fast and then we're
+all right so these waves so yeah
+triggering is the general concept that
+we're gonna let these signals run until
+something interesting happens on the
+older analog scopes what's going on is
+this is there's this electron gun and
+it's ready to fire until some event
+happens the event happens the gun sweeps
+across the screen and this amplifier
+that's looking at your signal goes up or
+down based on what your signal is doing
+and that's how the oscilloscope fires
+all this digital stuff has done way way
+differently but the general concept
+still applies we need some of the bends
+to say take a picture now and show it to
+me in this case the event as you can see
+there's a line digital scope it's right
+there
+but it basically says is that when this
+signal crosses this threshold take a
+picture you can ignore channel 2 for
+additionally if we move this line up on
+the wave the wave actually shifts over a
+little bit and if we move it down it
+shifts back oh my gosh it's amazing it's
+like how bits are made and we'll get to
+that in a little bit and then eventually
+basically we take this too far out of
+the way the oscilloscope doesn't know
+what to do and it just lets kind of fly
+around there are two options you can
+either have the virtual electron gun not
+draw at all or you can have it just
+freely draw whatever it sees and that's
+[Music]
+okay I want you to watch this sine wave
+on the top and I'm going to change it
+around and you're gonna listen and
+you're gonna see if something
+interesting happening so this sine wave
+if we look at the spacing on it is again
+about one kilohertz and as we change
+that will actually hear the tone coming
+out of the speaker change as well so
+basically that's how the introduction to
+oscilloscopes works and then I think
+we're going to need to take a short
+length five-minute break and I'm going
+to come back and show you how to read
+the baud rate of aur which is actually
+what you want to do as soon as you crack
+open a physical device connect a
+Raspberry Pi that we can talk to with
+the serial port up to the oscilloscope
+so we can actually see what's going on
+and so what you'll see the first thing
+that you'll notice is that the signal is
+up way high in the air and that's just
+normal with house serial courts work
+they usually idle either high or a
+negative voltage on the old PC style but
+this one is sitting at 3.3 volts which
+is a good indicator that we have a
+serial port if you had to plug this in
+while the the Raspberry Pi was booting
+you'd actually see a bunch of garbage on
+coming out of the serial line as there's
+data as the kernel boots off and prints
+out the D message long but now that I
+have this hooked up so a serial console
+if you can imagine his space bar which
+is like hex 20 and the bits are backward
+but other than that that's pretty much a
+byte hole might over the over the wire
+will try and get a more interesting one
+a cool Joel can you also hold the letter
+a it's right here okay ladies and
+gentlemen this is the letter A as seen
+electrically on a you are there's
+there's a few things going on here that
+you may not immediately notice number
+one your words are not synchronous you
+have no idea when the bytes going to be
+sent there because there could have been
+any amount of time over here or over
+here but between mites so how do you
+know that the UART is about to go the
+this the first bit is always the start
+bit on it you aren't
+it's just when the data first
+transitions and we measure everything
+else from there so the first step to do
+would actually be to measure how and why
+that pulse is and in figuring out the
+baud rate of a you are what you what you
+need to do is find a single bit like
+this would be a good example this down
+and up or this up over and down this is
+a bad example because it is noticeably
+wider than any of the others this is a
+bad example also because it is about two
+times as wide as any of the others this
+one which is the the last bit in the
+byte would work fine and then what you
+can't see because we're only sending one
+byte at a time is there's actually a
+stop it here also so in total there are
+ten bits per byte a start bit 8 data
+bits and a stop then because this is
+eight and one the most common serial
+format
+and so to measure the baud rate
+basically the the simplest thing to do
+is to look at this period of 20
+microseconds from here to here and say
+okay that's about half so 10
+microseconds which would be around 100
+kilohertz if we were actually to zoom in
+and and measure you can see it's kind of
+a little bit short which means if it's
+shortened period it'll be fast in
+frequency it's actually in 1150 200 the
+default baud rate of a Raspberry Pi
+serial port if you spend a bunch of time
+cracking open embedded devices and
+looking for serial course you'll see
+4890 811 5200 are like the three most
+common ones that show up pretty much
+everywhere so that's how a serial port
+works and I have one last neat little
+demo for you all right you can let go
+jewel
+[Music]
+so currently you see two sine waves and
+these are these are the same sine waves
+that are looking at earlier there's
+nothing special here on this fancy
+signal generator though I can take them
+and I can slowly delay one of them so it
+doesn't quite line up and you probably
+like why is like oh boy it was guy
+turning it on that's not that exciting
+what gets more fun about this is that
+this oscilloscope supports changing out
+the axes so that we can draw stuff so
+right now what's going on is that the
+x-axis is one signal and the y-axis is
+another signal and so as we start to
+bury the day is the the relationship
+between those two sine waves as soon as
+we have a sine and a cosine which are 90
+or 270 degrees how to pay is depending
+on which way you're looking you actually
+start to see a thermal which is probably
+not particularly interesting but what's
+cool about this mode is that you can
+hook it up and use a sound hard to draw
+I don't know if you guys have any
+questions of oscilloscope basics I don't
+have do that's the device with the
+points over and over and over again so
+the question is repeating the question
+for the whole room is when you actually
+do the hardware hacking basically what
+do you just probe something and move the
+device and the answer is a hundred
+percent yes you kind of like if you have
+some sort of indication of how the
+device is booting will be it like an LED
+that says armed or a screen that turns
+on you wait that long
+and you just probe it in on the board
+and you'll wait now there are a bunch of
+tricks like if you find four pins in a
+row it's probably power you are in one
+direction you are in another direction
+and ground that is the the most common
+four pin header that you'll find in an
+embedded devices if you don't find one
+of those or if you don't find some maybe
+like just random other a connector that
+you're interested in growing the next
+place to look is immediately next to the
+CPU look for like two points and that
+will usually be Rx and TX which are the
+one direction of the you are and the
+other direction of the you are I don't
+know that's that's kind of kind of about

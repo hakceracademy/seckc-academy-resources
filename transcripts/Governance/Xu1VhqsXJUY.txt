@@ -1,0 +1,157 @@
+I work for LZ and what I do is I'm part
+of the International Red Team so what
+that means is I usually have 2 days to a
+week to learn a new language and then
+get dropped off in the country social
+engineer people and then break into
+buildings and you have to work with DJ
+slurp yes I got to work with DJ slurp as
+well um so recently I found myself in
+China which is a whole another set of
+restrictions and guidelines you got to
+deal with you can't exactly pack up the
+red team bat and go over there with a
+bunch of lock picks and bars and other
+things so we had to take in a lot of
+different considerations cuz we went to
+go attack one of the largest uh
+component manufacturers e the
+microphone the microphone we we went to
+go attack one of the major uh component
+manufacturers on the planet which was
+out of China so that's where they make
+all the little uh components and
+everything for the boards and whatnot so
+what we ended up doing is uh going over
+there and having to deal with a firewall
+now if you see here on the lower left
+there there is one Walmarts in China and
+yes they do have rednecks in their
+Walmarts as well on the right is a
+binder full of keys that's a key to
+every lock that exists in the factory
+and that's the trophy I got to take home
+so we social engineered living daylight
+something them so the biggest thing you
+have to worry about when you go to China
+whether for business or anything else is
+the great firewall of China and we
+always hear about it how they use it as
+a tool of Oppression to squash down
+things you can't get anything out and
+it's actually really well designed uh
+one of the main things I had to deal
+with is I was in Shanghai and wushi and
+in Shanghai they have one of the main
+hubs uh where they filter everything and
+they shove all the traffic in so they
+have entire teams of people like from
+the PLA and whatnot sorting through all
+your results so in addition to I can't
+get out of the country I don't want
+everything PR through through because I
+have to exfiltrate data from a
+client so when I went to use Google
+you're greeted with the screen now the
+best part of this is depending upon what
+it finds on your user agent string it'll
+shut down malware to you and put an
+agent on your machine so they can keep
+track of what the hell you're doing cuz
+they don't want you to use Google if you
+press anything on that screen it just
+doesn't work so that just shoves out
+malare they don't want you to do that
+you can use Yahoo and two of the results
+of every page on Yahoo you can actually
+click on everything is censored so it's
+a major major pay in the ass so how do
+we get around
+this because they even detect you're
+running proxy filters so here you can
+see I was my IP and you can see that no
+proxies in place they don't like that
+did you take the China salary survey no
+I didn't I didn't click on anything over
+there so what's the number one rule of
+lock
+picking anyone number one rule lock
+use anyone else number one r lock
+picking check the door sometimes
+sometimes it's open you don't have to
+take this is one of those cases cuz
+we've heard about the big bad firewall
+of China it blocks everything so wonder
+if I could just use a sock 5 proxy and
+shuttle around it so we're going to
+Tunnel through the firewall pretty
+easily with just two
+tools if you open up and just use putty
+which you can get a putty. org it's a
+Windows terminal ulation if you just set
+up a local port at 1088 or whatever you
+want for a proxy set up a basically a
+sock 5i proxy
+uh but the caveat to it is you're going
+to want to find a box like a collocated
+box that you have outside of the country
+that you can actually ping or hit so you
+create the profile in Pro uh in uh putty
+like you would for normal setting and
+you're going to save but you simply add
+in uh the 1088 and the forwarding and
+the destination and whatnot and save
+it you then log into that box your
+coated box or server simply SSH into it
+log into it leave it up and run
+go into uh Firefox simply put in uh
+everything for your socks 5 proxy as a
+local host and shuttle all your traffic
+through that and does it work well my IP
+changed you can see and they still don't
+detect any proxy but the big question is
+if it actually did work and we got
+everything out of the country and uh
+took care of the client and everything
+which we did so as you can see it does
+work it is that simple simply just using
+socks 5
+proxy Firefox and putty you get around
+the Great Wall to China the firewall and
+after everything everyone had told us
+about it and everyone hyped it up we
+expected something really crazy but it
+was as simple as just those two steps
+and you were round it so if you need to
+you can find putty at putty. org uh one
+of the uses for this is if you're doing
+blue team you can start using this
+technique to your uh right your firewall
+rules and your networking fix to make
+sure nothing can get out uh red team
+it's pretty obvious why you want to use
+this to get through and bypass stuff for
+all of you that travel uh I'm not saying
+this out loud but for all of you that
+travel to hotels and you have to pay for
+the Wi-Fi and the portal comes up this
+is a great way to thoroughly evaluate
+that before you spend your hard-earned
+money on that Wi-Fi at the hotel so
+that's pretty it much it it's pretty
+quick here
+you if you use this to evaluate
+boo oh um like at an
+airport on
+flights
+uh Blackberry is in dire streets because
+no one really uses them much anymore if
+they're doing a promo right now for the
+Blackberry 10 and whatnot for your uh
+going to on flights whatever it's called
+if someone was to use a user aent agent
+change string to change your user agent
+string on your browser to Blackberry
+10 I'm not saying anything but you can
+well we like evaluation
+[Applause]

@@ -1,0 +1,602 @@
+yes yes before I get started I want to
+kind of kick around an idea and throw it
+out to you guys and see what you think
+part of the reason this talk was Bill
+was to kind of fill the need a longtime
+tradition if you talk about assembly ATS
+that Casey you have to do shop was that
+you hear yes all right
+so real quick um the Assembly level zero
+they had you up there that you see this
+is really the ID and I'm with for
+feedback not necessarily right now but
+it's really to fill a need where I see a
+lot of talks over the over the course of
+SEC Casey we've been here how long four
+years five years and that guy's the
+talks that you guys see upset Casey is a
+snippet of what you're gonna see in a
+bigger level conference derbycon
+shmoocon Def Con guys these are the
+talks that you want to be at this is the
+the material that's being presented here
+is amazing and I think a big round of
+applause to all the presenters
+especially you telling us Tom's good job
+today
+all right so here's the idea I want to
+really start thinking about if you're a
+presenter or if you're an attendee
+I want to start tagging talks with maybe
+a level of of how that talk how you feel
+as a percent of that talk or resonate
+with the audience or ISM as an audience
+member you know what to expect I go to
+talks that set kc.org and I see okay
+I've got a level three top which is an
+expert talk am I an expert in that topic
+no let's definitely talk I want to be
+out right you do not want to live in
+little zero and level one there are
+people who need to be in level 0 and
+level 1 that's awesome
+my talk right now there's a level zero
+okay so I really kind of feel like if we
+can if we can span that spectrum of
+talks we are hitting the audience and
+we're doing what we're here to do why
+are we here
+educate worth that's exactly right so
+guys my talk right now pal lives at
+level zero
+maybe level one okay assembly language
+at as presented we do here to assembly
+language what do you think you think a
+little zero I don't hate it it's on
+fleek somebody say on fleek if you sit
+on please see me after her got something
+to tell you pal all right so here's what
+I think when I see assembly total colors
+oh this is very reminiscent of Trixie
+already all right guys so let's just
+jump right into it we're at level zero
+keep that in mind okay we're not looking
+at we're not gonna we're not gonna write
+shellcode tonight we're not going to
+write assembly code on screen no none of
+that where's the maybe for Andy later
+like in a secret room back there all
+right so what's assembly what is this
+Emily
+all right sim please forgive my language
+that's the lowest level of abstraction
+to the CPU without being machine code so
+before I'm issuing commands directly to
+the CPU I'm writing in assembly okay
+that sounds super boring to me it's but
+we need to understand um assembly is
+dependent on the platform so we're gonna
+focus on x86 so if I start writing
+assembly in this whatever pic the
+processor that's what we need to focus
+on so we're gonna focus on x x86 and
+64-bit and we'll kind of get into that
+it really will kind of cover what kind
+of cover why we're going to talk about
+how we're gonna learn it simply because
+right now 15 minutes is not near enough
+to learn something
+actually maybe it is um so why do we
+learn assembly why don't we want to
+learn x86 64 assembly anybody if anybody
+can answer I got a coin for you reverse
+engineering okay punky I got a corner
+here I'm good but she'll come all right
+maybe we want to learn about maybe we
+want to reverse good we're in that way
+maybe our sandbox environment just have
+a zero-day dropped and we don't trust it
+oh that is um and really because
+learning assembly or learning anything
+is we're not getting week or learning
+something we're getting stronger
+learning something and strength is never
+weakness this kind of the most
+so one of the things that I want to do
+here besides why we want to learn it and
+x86 is everywhere it's not our phones
+yet but it will be um well one of the
+things I want to do guys is provide a
+learning platform and support structure
+to learn assembly so no we're not going
+to learn it right here in this talk no
+we're not learning everything we need to
+know but but what I want to do is be
+there and create a path for you to learn
+that and then as a collective as a set
+Kacie collective we can learn these
+things not only that but guys when we
+have let's look at Kevin and Patrick's
+challenge all right if we know assembly
+we know we are stronger in song
+challenges not only that but when we are
+Def Con and Section C destroys that [&nbsp;__&nbsp;]
+then oh yeah
+right so what I got a chance to code
+English yes so mean all right move along
+all right so here is how we're gonna
+learn assembly all right
+god that's hideous who can't see that
+everybody
+[&nbsp;__&nbsp;] smack trim so we don't this this
+slide so here's what I'm gonna do it
+this slide is going to be in slack
+channel which is already there a slack
+channel for assembly created so I'll
+just office walk you through it real
+quick and in the middle of this is the
+set KC x86 64 simply 101 top which
+you're in right now and what we need to
+learn over here on the left is
+architecture registers ending this the
+stack instructions tools yadda yadda
+yadda yadda yadda okay we're not going
+to cover again this is a basic level
+talk we're not going to cover that right
+now in depth because it goes against the
+spirit of the top pop pop read that's
+right don't a humor gave talk well is it
+all right lowly should talk about buffer
+overflow yeah buffer overflow who wants
+that talk all right couple people
+let's show us that think we're we've
+grown how many people understood every
+assembly instruction in that top okay
+Thomas did course Thomas did so I'm
+gonna go spill on channel this we're
+gonna learn everything on the left and
+to accomplish that we're gonna do
+everything on the right even though
+things on the right I've set up a set
+Kacie reverse engineering lab okay
+I have a slack channel for this very
+talk micro corruption which is reverse
+engineering game and a bitbucket chant a
+bitbucket repository I've set up etc etc
+etc and I promise you we're done with
+all of that however long that takes
+outside of this talk you guys are gonna
+be like Errol you see assembly you're
+gonna be like yes alright so we'll get
+is an assembly will get us an internal
+simply talk if we don't learn a couple
+of instructions okay finally get on with
+it right that's it for he's our house
+for an hour and a half and then I get it
+okay I get it
+you suck pal
+you get up here I'm just kidding all
+right so instructions what are
+instructions to a CPU
+what are underwater instructions
+instructions set in assembly in that
+context is set of math instructions that
+the processor can execute okay that's as
+far as we're gonna touch it right now
+all right so the thing the two things
+we're gonna wonder tonight or pop push
+and pop and so I gotta say yeah I don't
+train I wanted to bring 500 push pops
+tonight you know eye candy
+push pop welcome to 2000 all right so
+here we go so we're pushing pop we have
+to kind of assume the stack now what's
+the stack anybody I'll give you a coin
+if you can explain it data structure
+last in first out okay yeah you already
+have a point Bell put something on pop
+it off okay so the stack is we're gonna
+envision it right now
+all right we're gonna vision the stack
+couple different ways first way this is
+a blank Word document that whole you see
+right there
+blank word doc okay and the stack stack
+is conceptual area of memory which is
+designated to the OS for the program to
+run okay that's that's the that's the
+nine this is a Word document
+version of that all right so we have a
+word document now here's what I want you
+to page when we push something off onto
+the stack we're typing a word in our
+Word document
+when I press ctrl-z in that word
+document I want to undo what I just did
+we're popping out the stack okay let's
+just just keep that
+all right so we are gonna take our word
+which is actually a sexy logo push we're
+going to push that next word on the
+stack we're going to push the next one
+on okay so as you can see black red
+green last in first out so the last
+thing we we pushed onto the stack is the
+first thing that's coming up
+all right let's let's go through this
+real quick so in that order we're to
+start popping stuff off the stack just
+like that
+undo redo think of it in terms like that
+okay now that's the stack again guys
+this is keep in mind basic level loved
+one we're not digging into it this is a
+15 minutes clock it was worse or if it
+was longer years right oh my god get
+your power glove alright so real quick
+to understand assembly at understand
+assembly we need to just we have to
+cover certain things after cover syntax
+okay
+so maybe we pump this stuff off alright
+so this is an eye chart I get it all
+right all the way all we want to cover
+on this chart all of you want to cover
+on the slide is when you think of Intel
+syntax I want you guys to think of
+algebra or C if you're so inclined so
+when we think of the order of operations
+right we so real quick to cover that the
+the two grey boxes are saying the exact
+same thing and different syntax exact
+same thing alright so what we're going
+to do is we're going to focus on the
+Intel syntax mainly because see what I
+okay we'll just move on
+who's bored all right good good so guys
+to cover to cover the things that we
+want to cover I'm really jumping around
+to do an assembly level basic basic talk
+you have I would work glossing over
+things that are huge concepts okay but
+that again is why to go back to that eye
+chart that trend talks about like that
+is why I want to build the support
+structure so if somebody in this
+audience is a level five or a level leap
+or a level whatever and they're like
+this talk is super beneath me pal you're
+not you know this is week guys I
+encourage you to jump in that slack room
+and start helping us okay let's let's
+learn it together all right so we're
+gonna learn a couple registers all right
+we're only going to learn registers in
+the context of doing a demo all right
+yes sir question why are there ours
+instead of bees on that slide
+spell check our SP versus the SP tray so
+I think that's a little too advanced
+okay just ours equal ease that's what we
+keep simple okay good good point alright
+so we're not going to guys we're not I
+spend a lot of time on this rbp stack
+based pointer RSB stack pointer RDI
+destination point for string operations
+are ax source function and returns
+values okay that's all like just just
+alright so here's how we're you
+demonstrate this again fifteen-minute
+I'm not spent a lot of time who
+recognizes the syntax of that code see
+that's right so here's another way to
+visualize the C code okay that's the
+same thing that's exactly thing
+who can interpret that as easy as they
+can interpret this who gets a piece of
+malware that has the C code package with
+it
+anybody okay okay all right so this is
+back to the syntax slide as you guys can
+see one of the things that's important
+to note let me see if my green laser
+works
+you see these percents so this is a TNT
+syntax so if we think about the order of
+operations here this is just to
+demonstrate demonstrate syntax this is
+Intel syntax okay this is exact same
+thing exact same thing alright so here's
+what we're gonna do we're gonna do this
+I know I know it's hideous all right
+who's taking no it's probably nobody
+that's fine okay so these slides are
+gonna be in the Miss slack room okay I
+encourage everyone who is interested go
+through this exercise well the the
+instructions are right here alright
+we'll go through it together if you get
+stuck etc etc we'll uh we'll go through
+it together so um who knows what GCC is
+who knows what this top line means right
+here oops compile see somebody other
+than Brian it's good right I don't know
+it's the standard C compiler on Linux ok
+new standards so you compile on Linux
+that's right what is she what is the
+yellow what is the switch GG DB me see
+both that's right that's right why do we
+want to include that switch because you
+we want to debug it that's right all
+right so the switch tells us or out the
+file of the compiled thing all right and
+then our input file is that set K C dot
+C and as you guys get some
+I've used the computer before I started
+out all right so here's the contents of
+set KC I see right down there
+very simple you guys can copy this paste
+it and then run through these exact
+commands okay and what you're gonna
+learn and what we're going to do is
+we're going to start stepping through
+we're going to start turning it into
+okay the everything we learned about the
+registers and the instructions we're
+gonna we're gonna look at those things
+okay so do you guys want to see the demo
+are you going to skip that or wait okay
+okay just make sure all right hold on
+a little bit more I don't work work all
+right all right that was Bill that's
+right I get it
+let's play them off like I get ball
+thing okay
+all right everybody can read this yeah
+all right good so what we do we got that
+we're gonna mute our mic well I'm gonna
+so what I say the first thing we're
+actually peep this Oh [&nbsp;__&nbsp;] I refuse to
+alright guys dares there's our code
+alright let's go ahead and compile that
+stuff what did you say Thomas watch it
+throw a compiler error alter of you a
+alright so what we've done is we've
+issued our compiling command we've said
+we want to develop commands on or debug
+symbols on right and we tell this is our
+output set KC and we get our input file
+right alright so guys zero here's what
+we're gonna do if you didn't like
+memorize the previous slide we're at
+challenge time what we want to do is we
+want to find a base memory address of
+the string I'm too sexy for a GUI
+ok so that's what we're after I'll check
+dump I love it yes that's correct so
+what we're gonna do is we're in type
+object dump if I can like focus D SEC a
+see whoops we're gonna ask it we're
+gonna tell it all right what is this
+somebody tell me what we're looking at
+assembly of second disassembly
+a section of what okay all right I'm
+gonna tell you guys what we're lower
+after if we if we went back to our C
+code we saw how do we start this program
+what we have to what do we have to do
+the main function is for after we can
+push it out push it out way out
+this should that should start
+all right so I'm gonna just quickly burn
+through this we're looking for the main
+function why are we looking for the main
+function that's how C starts that's
+right so guys here's the representation
+does anybody see a problem with what I
+said earlier versus what I see now all
+the ours are in lower case that's pretty
+good all right I want to point something
+out this what syntax are we looking at
+right into a few ATT's syntax is exactly
+what we're looking at I told you we're
+gonna focus on gonna tell sometimes
+that's right I don't I don't like that I
+don't know how to read it well I mean I
+don't read it general so guys we're
+gonna quit this by pressing Q all right
+here's what we're gonna do we're gonna
+use gdb to disassemble this thing
+who could send gdb does debugger it's a
+debugger that's right what do we use
+support it to understand us program John
+all right all right so we're gonna use
+gdb and again everything I'm doing right
+now is in the slides and I know this
+intro talk but we are going to cover
+exactly why all this works and exactly
+and so when you're in front of a piece
+of malware it's not this easy and we're
+gonna show you how to step through every
+single thing understand the instructions
+yadda yadda yadda next thing you know
+were reverse engineers and we
+making up two million on pono right I
+mean that's awful
+all right so let's quickly burn through
+this I don't know what my times like um
+okay cool so gdb we're in the debugging
+platform we're in the debugging what
+about what do I want to say it's about
+your we're in the debugger to look at
+our program okay so in this slide so let
+me just point out real quick I have
+every command you need to type and when
+you see parenthesis gdb exactly like
+it's right here
+that just means issue the command right
+after you see this
+what's your in gdb okay so the first
+thing we want to do so the breakpoint
+that is an amazing list gesture by the
+way okay that is not what we want to do
+what we want to do is we want to set
+disassembly oh my god all right flavor
+to what I said oh that's right thanks
+okay so guys we've we have set our
+debugger in exactly how we want to view
+it okay we don't want to see Intel Pro
+I'm sorry we didn't want to see itself
+we don't want see ATT all right because
+we're on the Linux platform if we're
+debugging this in Visual Studio Express
+2000 X we're going to be presented with
+a different different presentation of
+this exact thing okay and yes what we're
+going to we are going to do everything
+you main line so here's you know we're
+gonna work in command line we're gonna
+eventually work up to to a GUI because
+gooeys are raising who is that's trying
+to ask what GUI stands for can anybody
+help me out
+so what do we want to do first
+alright celebrate pulling is awesome
+this is a moment okay
+yes Alex said disassemble mein yes but
+how do we how do we know we want to
+disassemble me alright we did look at it
+first but let's just pretend you're
+stupid and we forgot we should look at
+again how about this oh we tell the list
+all right what do we know now oh there's
+my there's my main ok I probably want to
+set a breakpoint at me right because
+keep in mind guys that the challenge is
+we want to know the memory address of
+where that function I'm too sexy for a
+GUI is being printed ok set a breakpoint
+what's a breakpoint what is the
+breakpoint a breakpoint is a we're
+telling the the dissimilar when you get
+here stop right no two main what's it
+yes so that's a good point so the set a
+correct point you can do a couple things
+it's a break main all right sweet I love
+it or because I'm super lazy in fat I
+type break - okay B equals brick I know
+it's - and I know B is short for break
+all right sweet okay now what I learned
+it does start with an R I want to run
+the program and I want to stop at my
+it's often a written okay it did not
+return so if we went back to the seat if
+we went back to the see you're gonna see
+when it completes its gonna return Lee
+okay now tell us this point what we want
+to do is we want to disassemble we want
+to disassemble me okay because the
+objective of what we're doing is we want
+to know the member the memory address in
+the what back in the stick of where did
+this thing is all right let's just
+pretend we're dealing with shelcha we
+want to know where the thing is
+right wheeler disassemble me what's that
+give us Oh God seriously all right so if
+we went back a couple slides I call out
+these registers our VP is what base
+pointer all right so cuz we're an Intel
+syntax and everything a little bright is
+being copied into the left okay all
+right so we see let's move down we have
+it we haven't even looked at that move
+okay mov we know what push all right we
+see push we see something something
+weird you know 0 X 4 0 0 5 d 4 being
+moved into EDI all right I wonder what
+that is and we see a call we see this
+puts TLT what is good spiel taken
+anybody anybody answer that this is a
+function but I didn't why is it why is
+it there for an F that's right
+but printf all right on me back over to
+it's the lookup table right okay so puts
+app is putting something into this
+memory address and then I see my
+returning right there 0 X 1 3 3 7 is
+being moved in EAX I'm seeing that then
+then I'm seeing our VP that returned
+base pointer right Thomas looking ready
+it's popping off the set so what we've
+done is we've pushed it on the stack
+we've executed it we're popping it back
+off ok that's all we're doing so how
+does this tell us right here where in
+memory that string is being is being a
+friend it printed F okay so what we're
+going to do is si all right so we've hit
+our break point we want to step into the
+next instruction we want to keep
+stepping si or step pi okay those two
+things are the same again I just like me
+lazy
+so step or si or step into alright oh
+look we got our break point of main now
+we're at the printf function on too sexy
+for GUI okay that's exactly where we
+want to be but where is the base memory
+address for I'm too sexy for goofy who
+can help me get there what what do I
+okay I'll tell you that's double worth
+them we're gonna no we're not step is a
+good good idea know what we're gonna do
+is we're gonna use the memory exam tool
+or examination tool in GeV okay which
+again guys it senses like super
+introductory talk I'm just going to just
+going to type in so to initiate books to
+initiate that examination tool we're
+gonna use X slash and I'm going to tell
+it 24 characters in EDI we see a move on
+the third line down if you see the
+little arrow over here's the left okay
+we see this is being moved into idiotic
+okay then this is being moved into this
+and so on and so forth and then we see
+our return right here so what we want to
+do is we want to tell it I want to
+display the characters up to 24 in the
+register EDI and what we have is I'm to
+set Casey for a GUI and that's preferred
+so these are the type of challenges that
+we're going to solve in the in the in a
+slack channel okay these are the types
+of things we want to work on together
+well let me give my let me get my thing
+going here again so again guys
+everything we just did right here on the
+slide okay here's the code you can
+compile just copy paste these commands
+I've tested it although if you have any
+trouble somebody in the slack channel
+will be able to help okay
+so we'll cover that real quick so the
+demo we just did obviously so one of the
+things um when we were disassembling
+something
+really just investigating something this
+is and I know what this looks like but
+this is let's commonly refer to as a
+anybody stack diagram okay this is a
+notes page just notes page all right it
+contains all the registers we just
+talked about instructions
+you know hex math except cetera so again
+we're glossing over that so root code on
+one wig thing I'd like to say is these
+slides I put under the the Creative
+Commons license so you wanna borrow um
+or just take something alright guys
+that's it email me if you have any
+questions

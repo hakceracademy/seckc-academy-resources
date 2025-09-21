@@ -1,0 +1,438 @@
+Alis and some of the ads take up more
+bandwidth than the entire page load I've
+I'm waiting for the page to be
+responsive from the JavaScript because
+it's still trying to load this ad from
+their slow server uh I loaded a page and
+all of a sudden it starts playing a song
+or some random British guy talking at
+100 DB I don't really care I just want
+to look at the page and worse is when
+the ads pop up like we're an ad
+supporting website if you would like to
+read the thing that you clicked here to
+maybe find out if you care about it
+you're going to have to click through
+these 14 ads so I set out to get rid of
+that uh why did I care about DNS um well
+we know host files and they're not cool
+cuz I have more than one computer at
+home I have devices that are trying to
+connect I got people that come over I
+don't want them wasting my bandwidth on
+ads uh I don't want them dealing with it
+on their device and you know I got save
+that bandwidth for really what matters
+SOC
+videos or maybe the
+dojo because if there's one thing that
+Ken uh why did I care about free Wi-Fi
+well I'm on Google Fiber and for those
+it so I mean clearly I'm not using my g
+mar um also you know if I'm getting out
+free Wi-Fi I don't want people to be
+hopping over to my network you know I do
+not keep the default router settings but
+I do know people that come to these
+meetings come to my house so I want to
+make it a little bit more secure um and
+then there's my neighbors every day I
+look at my lovely router that stood up
+that says free fiber unsecure
+and I get all of their Mac addresses I
+know their names I've never met them
+because Tina's phone Terry's phone
+John Frank's
+iPad they're the great people that are
+trying to use my bandwidth for free it's
+fine so instead what I do is I ride them
+through tour you know give him a little
+bit of the nice stuff also I'm an exit
+node so okay helping people out in Egypt
+and so the process it started with uh me
+wanting to throw my computer out the
+video what's
+that I wouldn't know uh somebody told me
+that there's this uh website that's
+supported by all of the TV companies
+called something like free TV video
+online I don't know but uh it apparently
+has no ads it's kind of nice
+but one of the nice things you find a
+starter host file it blocks malware
+sites blocks shock sites blocks ads and
+the shock sites is really important uh
+because somebody mentioned previously
+MADD MC Fetti happens to be in the
+audience today and when he saw this host
+file he said you know what octopus girl
+that can be a shock site immediately
+puts that into his browser and realizes
+that people shove
+places he decided to sites probably
+needed to be on
+there um so I tried buying nine cuz it's
+supposed to be the de facto standard for
+DNS
+servers and it's got multiple files the
+configuration you got to put it at least
+in two files there's going to be a lot
+of different stuff uh then I found DNS
+mask and instead of spending hours
+trying to find the documentation I spent
+minutes getting it set up and ready to
+go so simple to convert from a hooks
+file to a DS mask file and it's even got
+DCP server that is off by default but
+that is Handy for the Wix
+set so a little bit more about DNS real
+quick um according to neotis DNS traffic
+is the majority of web
+traffic and so you're constantly
+reaching out and pinging and trying to
+figure out what this website is hosted
+at today where DNS mask is a caching
+server so if anybody on your network
+needs to know that this guy's going to
+interrupt
+me I a surprise right you had no idea
+this was going to
+happen and and on the plus side as I am
+a non ala H I brought a designated
+shooter
+with wait was thatty and that was the
+so I mean every local computer has its
+own settings for DNS cash and if you
+kind of watch like if you're in Chrome
+you can go to net utilities DNS and
+you'll see how often it just clears
+itself well this keeps it local so the
+one time somebody goes you're good um
+majority of your traffic is the same
+websites so why spend time and bandwidth
+going to
+8888 all the time for the same
+results and and so there's also the top
+500 websites that you guys might be
+familiar with so you can use DNS mask if
+you wanted to whitelist things and you
+know all kinds of fun stuff with DNS you
+know like messing with your friends and
+your guests that come and they like to
+Myspace so the Raspberry Pi set up I
+need it I wanted an Ethernet portter so
+I didn't go with the model A went with
+the model B+ and 2 days later they came
+2 but it was $25 for the B+ at Micro
+Center versus $70 for a kid I needed a
+power supply they had for five
+bucks just a generic Android phone power
+supply works just fine micr SB cards I
+spent $8 to get a 16 GB M Micro Center
+from their house brand uh a Wi-Fi
+dbo is decent one is only 20 bucks on
+Amazon if you buy the kit it comes with
+a little mini Wi-Fi adapter and if
+you're planing to be an access point
+it's not really going to help you out so
+went with something that's going to be
+good give me plenty of range from my
+whole house and it's just going to cost
+me my time because I don't need the case
+box I actually just rolled up some stuff
+in made little pegs stuck it in the Box
+got an xacto knife and cut out only the
+ports that I'm currently using works
+perfect and I I didn't plan it the first
+day I turned off the lights after I put
+it inside the box I put the little red
+LED on the corner of the box that
+actually has the raspberry eye so now I
+press and so my goals obviously screw
+the Cal's pigs that pay my
+salary um I I understand that things are
+supported by buy ads I get it everything
+costs money you can ask me for a couple
+bucks I would rather pay a couple bucks
+for a website I use or an app that I use
+instead of pop off ads shaking ads
+sounding ads ads that pop up in the
+middle of me trying to click on
+something ads that pop up because I
+clicked on
+something and you know cat videos are
+really important all right I don't need
+to know about your other channels of
+your other cat
+videos unless it's about bacon but you
+know that's fine one of my other goals
+was an easy install so after you set up
+your Raspberry Pi I wanted to be able to
+one script and you're
+done because I know people and I don't
+want to support them um I did want to
+allow DNS leakage from tour like I said
+I'm already in exit node but um I might
+as well if I'm forcing all of my guest
+users through T I might as well block
+the ads there so somebody else doesn't
+have to pick up their band with slack um
+and above all the queries so DNS mask
+pretty easy to set up that way if you
+guys use slunk or gra or whatever you
+choose to query your sis loog with it
+already outputs is there and I'll go
+into a little bit more detail about what
+itly logs
+later so time for the quotes uh no um
+that little middle finger to AT&amp;T is
+another fun story that has nothing to do
+with octopus girl uh Linux admin friend
+of mine was trying to set up this on his
+home network that he went ahead and paid
+for the AT&amp;T rental on that lovely modem
+slash router that they provide and they
+assume that you were going to R AT&amp;T
+Erse and they force you to use their DNS
+so if you use AT&amp;T you are screwed uh
+you cannot configure your router to use
+this type of DNS unless you have an
+extra router behind it I do for you
+because SC
+AT&amp;T so the preparation is pretty much
+same as every pie I've got it set up for
+rasbian which is one of the popular ones
+then you need to log into your router
+give it a static
+IP give it a static IP I had one person
+ask me why it wasn't working when he
+gave it a dynamic IP yeah if you can't
+find it later then you have to set that
+IP to your primary DNS and then 8 that
+888 which for those of you that don't
+know it's Google fre DNS that you can
+use unless you're in Brazil where it
+gets hacked a couple times a year
+then you got to plug in your Wi-Fi dble
+and get back onto your piie preferably
+with SSH because why do you need to set
+up and monitor and keyboard just for
+your
+piie okay the code it's very very hard
+I've got three things I've got just DNS
+there's two
+commands get the file run the
+file if you just want to set up for
+Wi-Fi get the file run the
+file why not both get the file run the
+file
+and you can do this in a state so if you
+want dingess see how it goes then do the
+Wi-Fi see how it goes or vice versa
+that's
+fine why
+not so what does it do uh the first
+thing we're going to do on the DNS mask
+install script is update and upgrade the
+current system I do not trust any of you
+so I am not doing a live demo because I
+Wi-Fi also it takes some time and if all
+of you are for some crazy reason
+actually on the Wi-Fi here then it's
+going to be
+clogged going take me a half hour just
+to do an update and upgrade I do have
+that as a fors so when you run the
+script it doesn't even ask you to
+confirm it's just going to do it for you
+uh the same thing happens for the DNS
+utils and DNS mask install then it
+creates a weekly Prest to reach out grab
+the blockless pull it down parse through
+using a BL of said commands and change
+that 127.0.0.1
+into 0.0.0.0 so you do not have to set
+up a local web server to try to pain
+constantly the 0.0.0.0 just
+automatically says oh there's nothing
+done so again it saves you a little bit
+more time then it immediately runs that
+contest and will ask you politely if you
+so the Wi-Fi one it's a little bit nicer
+I decided to be nice to tell people what
+was going on it tells you it's doing a
+thing then it does it it updates and
+upgrades again it installs host APD
+which is a fairly simple access point
+application and grabs DNS mask because
+it's Standalone you may not already have
+it it configures your WL zero to have a
+static IP and it saves the IP tables
+which I hear IP tables are a pain for
+some people
+so this does it automatically then it
+offers the ability to set an SSID which
+it checks to make sure you don't exceed
+the 32 character limit and if you don't
+want to pick one you know AT&amp;T Wi-Fi
+will get somebody to hop on at some
+point so it equ calls right there AT&amp;T
+Wii then it configures host ad as the
+access point and more so next it reaches
+out it grabs tour It configures Tour it
+sets up for logging
+and then it abl for to start a boot then
+it routes the traffic Sands the DNS
+queries in the tour so it'll first
+check ping the DNS of whatever's
+configured so if you don't have DNS
+already installed with the first strip
+it'll just go to whatever your default
+is it'll H your local DNS and then it'll
+go and take that and Route it through
+tour then again it saves those IP tables
+so you don't have to think about it and
+it has to restart some Services uh d s
+MK is pretty easy you configure it on a
+fly it loads everything into memory and
+then you restart it to tell it to
+refresh that configuration
+file and again you're not required to do
+these together because there's a
+configuration
+directory very handy when you need to
+configure multiple things but didn't
+read the documentation right the first
+time so the both script well
+um yeah did those both
+and so now you've forgotten those two
+commands already you didn't take out
+your camera phone to take 50 million
+pictures so what do you do I created a
+repository that's completely open it has
+a read me file that has those exact same
+instructions on it
+GI no it's on bit
+bucket cuz I have a bit bucket
+account it's so easy even your Linux
+it's so easy even developers can do
+it it it so easy maybe your help that no
+no could do it there's Ted there he's
+looking out he's like hey they told me
+to run these commands is format C the
+right
+one now now if your cat is like that one
+down in the corner take that show on the
+road don't even ask me about the
+script and and elen admin was the one
+okay so the logs lots of logs as soon as
+there's a request that comes through it
+says so and so as IP requested this
+particular address then it will tell you
+did we already have it cash I
+immediately told them what it was if not
+server and then it tells you what the
+response was so if the response comes
+back as these four different servers uh
+this one random 86 server it tells you
+all of that right in the logs and
+contrary to all the walkthroughs that
+box
+yes unlike your local router probably
+does so that was one of the nice things
+I was going through well how am I'm
+going to update this to IPv6 because uh
+that developer that tried to install it
+he is also on Google Fiber and
+apparently they have a secondary DMS
+hidden for
+IPv6 so he had to disable IPv6 on his
+regular computer so it would force it
+over to the raspberry
+5 just one of many gotchas that I don't
+care
+about all right so Lessons Learned uh
+buying 9 will hurt your head trying to
+decipher their
+documentation all kinds of pains with
+buying 9 I
+mean it says oh it's simple it's easy
+all you do is turn it on and then you
+configure this rpz note then you have to
+add another line in the main file then
+you have to create five lines in that
+rpz file that tells the point to your
+original rpz and that's way too much
+processing compared to DNS mask DNS mask
+I say here's a host file get rid of
+everything that
+starts with the pound sign because it's
+comment remove all 127.0.0.1
+replace it with the formatting address
+equals SL name of the server 0.0.0.0
+done oh and delete any random Windows
+parage returns and things like that
+that's also in
+there uh as I mentioned before use the
+configuration folder instead of the main
+file for DNS
+Max as you know I did the first one
+pretty easy simple hack and then I
+decided to do the Tour Part and realized
+I was going to have to reconfigure my
+weekly Cron job just to add an extra
+line to the end of the file so I went
+back and I fixed that it's much nicer uh
+the crown weekly folder this presents uh
+prevents your user from having to hop in
+and do any manual coding because in your
+batch script you can't natively edit the
+exact CR task process that you want
+because it forces human inry so instead
+you can just use the crme weekly folder
+you need to test it uh test it and then
+bring in John
+C and that bottom picture is just for
+him to go ahead and divide by
+zero that is the guy that I call when I
+need to make sure it won't
+break everybody needs that guy it's the
+tester that was like I don't know what
+happened I hit control
+7429 enter and it did this why would you
+do that didn't tell me I
+couldn't I was following the
+instructions on
+did you do step three well I did step
+two what step are you on now four did
+four now you know why it had to be one
+single thing because one file and one
+step after you've configured your
+network otherwise that guy is going to
+find a way he's going to break it and
+it's going to suck cuz he's going to ask
+you
+questions I did find that any file can
+be grabbed from
+bucket uh it actually has a simple
+format you just have to have the user
+the repo then you use raw and you can
+pick the branch so if you decided that
+you want to go off on a special Branch
+name and get the file that totally works
+right
+there I did find that out the hard wve
+when I set it up to the current revision
+file in the Raw
+section and I kept trying to do an
+update and wondering why I was getting
+nothing so I was just wasting
+downloading and reapplying the exact
+same bi every
+week so that one's a little important
+work and there we go so right up there
+at the top is where you can go on bit
+bucket to grab
+this and all of you were awesome for
+listening and laughing occasionally at
+a

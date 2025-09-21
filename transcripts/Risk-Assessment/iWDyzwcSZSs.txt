@@ -1,0 +1,773 @@
+here we go okay guys I'm Ryan
+I threw the slides up in a PDF so you
+could also like a look at them on your
+phone and kind of follow along I kind of
+realized that it's hard to see some of
+the smaller text so you want you can go
+download them follow along we're going
+to be talking about a tagging active
+directory the whole plan for this was to
+kind of make a hacking series and go
+through the different tools and
+techniques pentesters use when they're
+trying to basically take over your
+company or take over your Active
+Directory environment first and then
+maybe some more glute they're gonna try
+to find with that so again I'm Ryan
+I'm a full-time pen tester with Devils
+security we're here in Kansas City
+downtown on slack I'm awesome
+if you want to go say what's up so
+active directory let's start off with a
+quick definition or I'm going to try
+it's gonna be like the worst definition
+of Active Directory you've ever heard of
+you know we're taking a class but that's
+fine Active Directory is defined by
+Microsoft as the Active Directory
+directory service is a distributed
+database that stores and manages
+information about network resources as
+well as application specific data from
+directory enable applications so what
+does that mean Active Directory is a
+giant list of objects everything in
+Active Directory is an object it's
+mainly defined by these four what we're
+talking about the forest and the domain
+so what's a forest a forest is this
+complete instance of Active Directory
+it's a top-level container container is
+also an object in Active Directory that
+contains other objects and this is your
+security boundary I think a lot of times
+it gets kind of confused whether your
+domains or security boundaries but
+they're not really your forest is your
+security boundary so what's a domain a
+domain is another type of container
+object this is the administrative
+boundary so you can apply things
+administrative Li to your whole domain
+at once or individual objects but yeah
+everything's in objects so there's users
+I've got this great little graphic with
+my triangle of users they're systems
+resources services everything's an
+object and everything that is an object
+has attributes that tributes are just
+things like names IP addresses locations
+permissions if you ever you look up
+someone at your company and you see like
+their phone number that's like in a
+tribute to their user object and they
+call it active because it's always
+changing all this data is being
+replicated throughout the whole domain
+and the whole forest at all times and
+all these attributes are creating
+relationships and groups amongst all the
+objects and that's a really bad overview
+of Active Directory and what it really
+is
+we've been gone attacking Active
+Directory I didn't want this to get
+confused with a pin test so I do pin
+testing
+normally but an Active Directory attack
+isn't necessarily going to be considered
+a full pin test okay so this is just
+looking at really the post exploitation
+phase of a pin test like a generic pin
+test there's lots of definitions out
+there but you start off with like
+scoping and then you have recon and you
+have scanning exploitation post
+exploitation so this is kind of like
+after we've already gotten on to a
+network it is of like a mini pin test
+consider it because there is you're
+gonna do some recon on Active Directory
+or do some scanning amongst all the
+objects and maybe some exploitation but
+I just didn't want that to get confused
+like this isn't just a pin test there's
+a lot more to a pin test than just
+attacking Active Directory so what's all
+involved are we dropping these sweet ly0
+days flinging them around your network
+or what exactly is happening when a pea
+tester comes in to attack not really and
+a lot of times after we've got our
+initial vector in there we're not using
+any exploits at all from that point
+we're just looking for weaknesses in the
+configurations of your Active Directory
+environment and we're gonna use some
+tools and look at some tools later about
+discovering these hidden and a lot of
+times unintended relationships between
+all these objects and all those
+attributes that are applied that not
+everyone's really aware of so what's the
+point of attacking Active Directory well
+like ideally you know we want to get all
+the users passwords that's always good
+to have and a little bit further
+we want to find like blue maybe things
+that they think are important so if
+you're attacking like a bank you
+probably want to find their finances or
+their bank accounts and all the info
+there and in the end we want to provide
+some remediation and detection advice
+and through this series I kind of want
+to this first one's going to be the
+overview of like the whole thought
+process and theory behind like what an
+attacker is going after and then we'll
+do some toolbox and ideally then we'll
+do some how we can actually find these
+attackers inside our network because
+even though you have a bunch of
+firewalls and a lot of antivirus
+protection when I've got one every users
+credentials I don't I'm not using any
+exploits to already pee and do another
+box if I have their creds you know so
+but there is ways we can still find
+these people
+so the basic theory I don't know how
+well we can probably can't read that
+from too far away but this is the start
+here and we're going to loop through
+this but if you think about it this is a
+really awful way to really explain your
+external attack surface but there's
+three primary entry points for an
+attacker there's the web servers that's
+anything you're hosting that's facing
+the Internet right so that is everyone
+kind knows that you can have your sequel
+injection in earth or whatever getting
+in on there that's another reason why
+your domain admin should never log into
+a web server that's hosting anything
+your users there what I'm talking about
+email or if they're out clicking on
+links or surfing the internet and they
+get hacked somehow they didn't take it
+over and then I think one that kind of
+gets missed is like a VPN if you've got
+a VPN on
+side and you don't have to factor off
+and I can guess one of those users
+passwords I'm kind of already inside
+your network with look valid users
+credentials and that's all I need really
+to escalate up the domain admin in most
+cases so back to start we start off and
+we get some credentials so how do we get
+credentials besides just password
+guessing on your VPN if we've
+compromised a box we can run like
+something like responder and I do plan
+on going through these like more in
+detail using the actual tools coming up
+but responder you can kind of capture
+creds that are flying around your
+network and you can either relay them
+SMB signing isn't turned on or you can
+actually capture the hashes and crack
+those hashes and then have creds already
+you can pass the hash password spraying
+there's a lot more commonly used to get
+into networks and I think people realize
+and you've got people with passwords
+like summer 2017
+that is a lot more common than you would
+think like if you're in an organization
+of over a thousand users I guarantee you
+someone there
+as winter 17 or summer 17 or autumn 17
+as their password and we can scrape the
+internet as an attacker for email
+addresses that are out there and then
+just the brute force essentially but
+really it's the same password against
+all your users that are on the Internet
+and if you don't two-factor on bond I've
+already got away in and I'm going to
+look like a normal user on your network
+there is actual exploits too so with the
+length of web servers we can get sequel
+injection or a destabilization
+vulnerability or some of those ms phones
+and then post compromise once we've gone
+on a box we
+to be using mimic katakana extract
+credentials out of memory or you could
+prop them else ass stuff we'll get into
+a little bit deeper you'd be surprised
+how many times I've seen a password CSV
+or passwords text on someone's desktop
+where you open that up and it's every
+password to every machine they've ever
+logged into and then things like GPP
+passwords and sis ball and Kerberos
+dinging I don't want to get that too
+much right now but so we get creds we're
+back in our loop the attacker grabs the
+CREZ they're going to check if they're
+high privilege or not and what I mean by
+high privilege is the in game as we're
+trying to get a domain admin right but
+we don't necessarily just need a domain
+admin there's lots of different accounts
+that can basically become domain admins
+or already have the rights to access the
+domain controller all of these accounts
+here are considered these like tier 0
+accounts and this is just these are the
+built-ins by default you can also have
+groups that were defined in Active
+Directory that have the same kind of
+privileges but after we find out our
+user doesn't have high privileged access
+then we look to spread so and I'll just
+slow down and go through this a little
+bit better coming out but if I've got in
+on your network because I guess
+someone's password I'm gonna see where
+they can go access a lot of times domain
+users have local admin and like across
+the network or whatever box I get onto
+if I dump the hashes and realize that
+you're using the local admin hash
+everywhere I can now log in to any box
+and all I got to do is try to find one
+of those domain
+or privileged accounts and so now we're
+gonna spread and we're gonna look for
+where are those privileged users where
+and these where can the user that I
+currently have credentials for go and
+how can I get to those high privileged
+accounts so I'm gonna be looking for the
+paths that get me there and there are
+lots of ways to identify access for a
+current user Metasploit got a few
+modules with SMB logins where you can
+just spray around the users credentials
+that you have and possibly login to a
+lot of machines or a few machines in
+mascot scripts there's command line or
+you can just look for the groups they're
+in you can run some PowerShell
+there's a lot of Power View and Empire
+modules that will automate all this for
+you and after we have identified our
+access we're gonna move and we're gonna
+migrate to a new host and the idea here
+is that I get in your system
+and then I find out where that guy can
+go and I'm gonna move to another box see
+who all has been logged into there get
+all their credentials and see where they
+can go and it's gonna kind of loop
+around in that process and there's
+there's just lots of ways you can
+identify this access there's also lots
+of ways you can migrate to these new
+hosts there's lots of simple ways once
+you have credentials like this exact
+turn SH or WMI which passed the hash
+golden ticket skeleton keys all these
+really not even really that advanced
+techniques that I can use where I'm not
+really exploiting anything I'm just
+using those credentials I have sometimes
+you do need to exploit another box if
+your person has no paths but we'll get
+into that and there's a lot people think
+they're external parameters like their
+main security boundary but they don't
+realize once someone's inside if you
+have an admin admin on your tomcat
+servers that aren't exposed to the
+Internet I can still take advantage of
+that as a just a normal user inside your
+network I was talking about lateral
+movement one time a little more dev and
+someone told me that pass the hash was
+fixed and Microsoft solve this with
+things that came out in 2014 but there's
+been a recent post by harm Julie about
+this this kind of looks like a site in
+Devon because someone called me on it
+but and yeah they did fix where accounts
+that are members of the local group
+administrators and are no longer able to
+execute code with WMI RPS exec so I
+can't get an admin users hash and spray
+it but that doesn't apply with local
+admin or the default administrator group
+so if you're not using like something
+like laps in your environment
+if I get any machine and I dump its hash
+I can spray that hash and login
+everywhere if you're using the same had
+been password
+and it's also doesn't apply to domain
+accounts that were granted privileges
+but aren't part of the local admins
+group another thing they didn't really
+cover when they fix that is you can have
+an up-to-date environment disable your
+default administrator account and if I
+have a fred's for a local admin user
+from a different box RDP still works if
+I have clear text for initials but it's
+kind of just like a site
+they're so back to the theory so we
+migrated to a new host and then we're
+gonna do the same thing we're going to
+use something like many cats just
+extract the memories that pass or
+extract the passwords out of memory and
+then we're going to check if we have any
+high privileged users identify the
+access and spread out and then migrate
+to a new host again and so I'm going to
+try to visualize this a little better so
+we've got the Bob's password he's gotten
+summer 2017 or something and I've logged
+into your network now in your VPN so
+that's not going to show of any in the
+logs it's something malicious right so
+Bob can access or he has a session on
+like these two computers so I can log
+into both these computers as Bob by
+remoting in and these computers or
+servers whatever they are having to have
+some other users logged in so they've
+got Joe always logged into this one John
+and Alice are over here on this yeah so
+then we're gonna find out that John also
+has a session on this lower machine and
+so now I can I can jump into this top
+box get John's creds and also be able to
+so that's going to be through something
+like NEMA cats or we can also
+impersonate his token if he's passed
+delegation tokens once we have a shell
+in that machine and we get local admin
+which is oftentimes either granted to
+everyone or something as simple as like
+get system surprisingly but like with
+the mini cats pics they did remove so I
+can't pull the clear text creds out of
+like W digest but what I can do if you
+have exchange setup those friends will
+show up in clear text still or if I have
+it's hash any falls in those other
+categories I can do that but if you do
+drop in which I need to once we get to
+the tool talk specifically we'll see
+this a little better but if John's
+logged in and I can impersonate his user
+token then his user token has the same
+security context to allow me to log into
+this box at the bottom here so once we
+do that we find Mary who's logged into
+this box and it's the same techniques we
+either person ate their token or we're
+gonna dump their credentials once we've
+done that you can figure out that Mary
+is a a part of this group the sequel
+admins and the sequel admins can
+this other machine and so Mary can
+access that machine now we log into that
+box and we find our domain Adam and
+Steve and so this used to be for attack
+it was a very manual process where we
+have to basically just do that you don't
+they just keep on spreading and you have
+50 shells up inside empire but
+Metasploit and each one you have to go
+enumerate for all the sessions they're
+active on the boxes and see if you can
+impersonate their tokens and then spread
+out and that's where some of these new
+tools are coming in where once I really
+just have Bob's access to the network I
+can just query Active Directory for
+where all this information is and that's
+just as a regular domain user and so
+that's kind of the scary part about is
+that anyone can ask the domain
+controller who's got sessions where and
+all these what permissions they have and
+what groups they have and then back to
+our we've got privileges we finally
+found Steve we've got a high privileged
+account so now we've got domain admin on
+your network and we win it's like the
+happy time for the attacker because they
+finally get to do their hash dance and a
+lot of we also used to have to actually
+like either add a new domain admin as
+using the domain admin or you have to
+manually log in to the DC and then hash
+dump the DC but now we can just DC sync
+which is a simply a tool where if you
+have domain admin credentials you can
+you imitate that you're a new DC on the
+network and then how the Active
+Directory works with how it's always
+replicating that data all your domain
+controllers are constantly doing syncs
+like every 30 minutes I think by
+meatball well you basically set up and
+say hey I'm a new DC
+now we're going to get in sync with
+everyone and then the DC just passes you
+all the information you need and every
+users hash so that you can also
+authenticate other users but you're
+actually not really a DC and so you've
+now got everyone's password there's
+volume Shadow Copy NTDs extract or
+things we can touch and then they can
+really bed themselves with things like
+golden tickets which I don't recommend
+anyone actually try on their domains
+because it's really hard to get rid of
+it's something like you have to shut
+down ad for I think like ten hours and
+have the password reset twice before it
+actually goes away and so if someone
+generates a golden ticket which you can
+do with mini Katzen that'll be part of
+the mimic ATS talk but they can
+essentially give themselves a ticket
+granting ticket in your domain that can
+off anybody to any machine or any
+service at any time those aren't great
+but you're not totally done once you've
+got domain admin you want to look at
+things that are important was that
+company value you know if they're a
+software development company you might
+want to steal all their code base which
+is a lot of times accessible to an open
+like internal github you know like you
+want to OFF everything inside as well as
+externally and also you can look at
+things like enterprise admin Enterprise
+admins can own every domain that's
+inside the forest so you might have
+other forests so I mean some companies
+have a lot of forest and domains inside
+them other ones don't but there's also
+like the UNIX environments you're not
+gonna have access to that directly with
+ADT but a lot of times you can jump onto
+someone's computer and steal their SSH
+keys that unless you bought any of the
+UNIX environments and so that's the
+basic theory around attacking Active
+Directory so nothing is really using
+exploits like mini cats isn't
+necessarily an exploit because you can
+manually do in the cats does you can
+take a proc dump of else ass and find
+the MD for encrypted passwords out of
+there and decrypt them and have people's
+passwords so it's not something you can
+really patch against and I think a lot
+of people just think if you put up a lot
+of antivirus and protections against
+exploits that's going to save you but
+when I can just use the permissions that
+are already granted to a user I don't
+I'm not going to show up against any
+antivirus and so I was this is kind of
+like a plan and the tools that at least
+I use pretty frequently inside Active
+Directory that I'm planning on talking
+about I didn't think I'd have enough
+time to really cover like Empire
+Metasploit for like your command and
+control servers and then crack my eggs
+egg and responder and impac it and bay
+things like that so that's going to be
+in January hopefully we'll start with
+the command and control servers and then
+we'll start after that with like
+different tools we can use to spray
+those credentials where we can get those
+credentials and steal tokens all that
+fun stuff and then I did have bloodhound
+I wanted to talk about so that I could
+kind of get to that a little quickly
+bloodhounds a recent project
+I guess I found like two years by Waldo
+captain Jesus and harm Joey and this is
+kind of that process where we've
+automated that whole trying to find out
+where my user has access if that access
+is linked to any box that has a domain
+admin on it or
+user that also has a link to domain
+Advent on it and it's based on a project
+called eighty controls pass by these two
+French guys Lucas
+booyah and Emmanuel brass I thought it
+was kind of interesting it's like these
+guys had most of bloodhound done in 2014
+I think and like the whole ACL update
+that they recently came out with and but
+it's like all their stuff is in French
+and the PDFs on it are in French and so
+I think they just didn't marketed enough
+and these bloodhound guys just took the
+idea Paul stood a little turned it on to
+English and build a bloodhound but yeah
+I mean that's a really cool project like
+their latest release was called who can
+read the CEOs email edition and that's
+kind of saying where you have a user and
+you say show me a path to the CEOs email
+and it maps it out for you like what box
+need to jump on
+so bloodhounds great for both red and
+blue teams I think they Talon a lot
+about the blue team's can use this to
+find all these unintended like a lot of
+times if you get a big domain and you
+just query for all the groups in that
+domain you're going to look at like a
+hundred different groups and it's hard
+to keep track of over the years like
+who's part of whatever can change
+passwords for other users and it's to
+looking like automating all that for you
+really well it can quickly identify
+these uh control relations between
+objects in Active Directory it looks
+something like this which I'm sure you
+probably can't read much
+was it forward on this thing so like
+this is kind of showing that same thing
+so like these green dots are users and
+the yellow dots are either machines or
+brutes and so like this user is part of
+this group who's inside this group who's
+inside another group that this other
+users are part of and so now I can I
+think further down like a bat group
+enforce password change on this other
+user which this is stuff that would be
+really hard just as an attacker to like
+figure out without logging into like all
+your systems but when I can just query
+ad and find this app at this path it
+makes it really easy where I might only
+need to compromise one machine and the
+whole network to be able to get a domain
+admin and then things look like DC sync
+I never even need to log into the DC to
+ever get all your users passwords and so
+it's really good at identifying these
+highly complex attack paths and
+visualize them in graphs it's been ran
+on like really large environments and so
+if you have a big environment you run it
+it might look something like this this
+is obviously a lot more machines and a
+lot of users but you can see all these
+unintended connections and like this
+might really be all these users just
+logged into their workstations but
+because of all their groups and
+attributes and permissions you could
+just laterally spread across these
+networks and they talk about like the
+six degrees of separation you kind of
+think of like that where I know a guy
+knows a guy that knows a guy that can
+hang out with Kevin Bacon yeah exactly
+and setting up bloodhounds just real
+quickly you can install bloodhound now
+in Kali with just an amped-up date and a
+half to install the light hand and then
+it will take care of the neo4j server
+install that will set up and you can
+just run bloodhound and launch it and I
+do have this up and running hopefully
+[Music]
+let me see here
+[Music]
+ramier my screen first
+[Music]
+alright so bloodhounds so basically just
+to run bloodhound which we'll go over
+with the Empire review module that's
+built-in you just it's a PowerShell
+script you call invoke bloodhound
+there's different objects and properties
+you can collect but by default it's just
+going to kind of run the basic
+attributes of every user and every
+session that they have across the
+network and other groups and how all
+those are all related and so you just
+run in both a bloodhound it's going to
+output for CSVs with like the trust and
+the groups and the users and the
+sessions you load them into bloodhound
+and you'll get something like this and
+this is kind of just like a view and you
+can type in any user's name this is kind
+of like a generic set up one to not show
+any like customers data but it's got
+these nice little queries where I can
+just kind of find like what's my
+shortest path to domain admin or like
+this view is so where are my logged in
+admins alright and so this is going to
+show all these users on the right side
+and have sessions on all these machines
+and so I know those are the machines
+that need to target if I ever want to
+get a domain admins hash or if I want to
+be able to impersonate them they're
+logged and I can impersonate them and
+that you can find like the shortest path
+to domain admins and it will run a
+little query and this is kind of that
+the same idea so if I only got this user
+out here a ward he does have a path the
+domain admin it might take me a lot more
+groups and boxes I have to navigate
+through but you'd be surprised how many
+of your users that should have no way to
+be a domain
+have a clear path there just because of
+where they can log into and that's
+mostly what I wanted to cover for today
+because I think I need to spend a lot
+more time showing how what blood hounds
+gathering and then how to actually run
+these tools but I wanted to give
+everyone kind of a general sense of like
+it's not just like scanning your network
+and trying to find exploits and hack
+into your DC or pack into a bunch of
+different blocks it's a lot of times
+there's a lot of easy paths where it's
+it's hard a lot harder to detect when
+the user isn't doing anything malicious
+and they're just jumping around your
+network either impersonating users or
+stealing their credentials somehow and
+so yeah in January I hope we'll be
+talking about and setting up all those
+c2 servers and starting to actually
+attack stuff so thanks what so I got my
+two questions yeah hey Ryan spill sir
+I'm gonna ask a question I can see go
+ahead yeah so what kind of credentials
+do you need to run bloodhound you need
+domain user just the domain user nothing
+elevated and no privileges nothing and
+you can run a Romanian workstation that
+supports PowerShell and if you have I
+mean we could go over later like there's
+lots of ways you can get around if
+you're like whitelisting PowerShell
+there's lots of ways to launch it but
+essentially PowerShell any user
+so go home and run this I'm sure
+somewhere like a large company would be
+a one of those massive ridiculous
+I know Malcolm betters talked to her
+before the guys like ahead red teamer at
+Walmart and he has some amazing graphs
+running bloodhound at Walmart that are
+just insane but from my defender side
+can we detect that the usage of blood
+huh
+yes yes we can and I do find out having
+a full talk on just detecting these non
+exploit kind of reconnaissance stuff and
+I have really started to like
+Microsoft's a TA or advanced threat
+analytics it throws up a nice dashboard
+and it will instantly tell you if any
+user did something weird like query for
+where every users logged in where every
+single machine is on the whole network
+but yeah Microsoft's ata at least for
+one that's not promoting any specific
+product will detect this thank you yeah
+any other questions about I guess I want
+to clear up anything about like
+attacking Active Directory and
+pentesting in general so if you have any
+what January I want to kind of pick back
+up they've all talked a little bit about
+empire and getting that set up but I
+figured I'd started first with the
+command and control servers that's how
+we're going to be talking and pivoting
+through the network and then next we can
+go with the tools that are used to like
+spray around credentials and some
+different like medicine modules to like
+enumerate the network and we can look at
+some stealthier ways to avoid something
+like Microsoft ata but yeah after that
+ideally we'll do some defensive how do
+we detect this and then I'll show you
+some other really scary stuff where some
+guys have thought it'd be great if so
+we've got this nice little attack path
+but what if I could just take this file
+feed it to a program and it will auto
+execute that attack path for me and so
+now I need to spire this up and once I
+get that guy in your network that's got
+summer 17 it'll be about five minutes
+until I have a domain admin I can just
+fire it off it'll automate the whole
+so it depends on like if we're trying to
+be really stealthy or if we just want to
+get it over with quick the problem with
+a lot of these monitoring tools is that
+it someone actually has to monitor them
+and so if it's you know down in the
+corner it doesn't take long once I have
+my attack path to just step on through
+and have two main admin and once I've
+done one side EC sync or have all your
+creds then I can just log out and I
+don't need to log back in for whenever
+you know like it's now I've got every
+users password and who knows when
+they'll actually figure that out but it
+it has been a lot quicker there's also
+tools like Deathstar that will automate
+from when you use responder that's
+that's a tool we can go over where a lot
+of times they're like if you are all
+think to a printer to print something
+you're sending your ntlm creds across
+the network and this tool will take them
+which they're not crackable hashes
+they're like net ntlm version 2 and it
+will reload them to a different box with
+a the command different than print like
+login or send me a shell back or launch

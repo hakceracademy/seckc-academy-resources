@@ -1,0 +1,783 @@
+let's welcome Ryan appreciate having it
+back alright I've actually got two
+presentations today crazy this one's
+actually the first one is really short
+of an announcement but I was trying to
+get SEC Casey signed up for something
+and realized that Microsoft might have
+an issue so hacking nonprofits for
+profit
+step one it's a pretty short process as
+you look up nonprofits there's websites
+that give you their GI ends and
+addresses
+step two is go to nonprofit Microsoft
+comma slash register sign up using that
+info and I used my own gmail account
+address you create a user ID they give
+you a on Microsoft domain then you just
+wait you check your email in like four
+hours later I was approved set Casey was
+an improved nonprofit eligible receive
+discounts from Microsoft and then my
+favorite part was when you logged in it
+gives you $5,000 and azure credits to
+use per year as a nonprofit which I
+thought was pretty neat considering they
+did like zero checking of any kind
+I didn't use any sexy emails or anything
+so I think you could just kind of loop
+through a bunch of non for all
+and sign up for a lot of azure credit if
+you really wanted to but we'll have to
+figure out what to do with all that I
+was thinking maybe the CTF people could
+maybe host some stuff and we could have
+it up all the time or they do have some
+hardware discounts also if you want to
+buy microsoft surface tablets there
+might be able to get my idly the
+software discounts i thought we'd be
+able to use but it's for like on-prem
+devices only or something for nonprofits
+so I don't really want to get into that
+area but yeah so we've got some Andrew
+credit to use and what to figure out
+what to do with that so now the global
+admins are one of my favorite things to
+do is find XSS I talked about it quite a
+bit
+I know lately I've been talking about a
+lot of Active Directory but exercise is
+kind of where I started in security
+really well maybe like hacking Wi-Fi and
+your neighbors and stuff but XSS is
+pretty bad a lot of people just think
+all you do is pop alert boxes and that's
+all we really get out of it but I'm
+gonna hopefully persuade you that it's a
+little bit worse than people think this
+whole kind of idea came from a story I
+read this was up on like medium on a
+while back I don't know if people read
+this or not but this guy wrote this kind
+of post about harvesting your credit
+card numbers and passwords from all
+kinds of different sites and you don't
+really know about it the whole idea was
+that you create a silly weird piece of
+code maybe that'd be somewhat useful to
+some projects in like this case I've got
+a little console application that just
+changes the output
+that your console is now colorized what
+you can do is then use different
+minifying and obfuscating techniques and
+he was hiding a bunch of JavaScript that
+would basically anytime it was on a page
+that had credit card numbers or
+passwords in it it would scrape those
+and send it off and it was really
+convincing because they talked about a
+lot of ways you can sneak pr's in and
+people won't maybe check every little
+reference you make in some open-source
+projects and if you have something that
+looks quirky and kind of like a nice
+feature like colorizing the console you
+can then push that out to as many
+open-source projects that you can and
+just hope you get accepted by one or two
+and then instantly you're referenced on
+tons of websites and all of a sudden
+you're stealing data off tons of
+websites and they made it really sneaky
+they made it so that it maybe only does
+checks every that every fifth time it
+sees a site that the user visits that
+has a credit card password on it they
+get everything they change the different
+servers that they collect these on they
+don't run if the domain that it's
+running on is like dead or UA or test
+and so they try to hide this even if
+people are using this on own personal
+sites they maybe don't notice that it's
+got this malicious data in it so the
+whole idea was kind of just to find a
+way to make something really weird sneak
+some malware into it and then submit it
+across a bunch of different sites and I
+think it's maybe a little more possible
+than he really said so today I'm going
+to be talking about some features of
+html5 some stuff they got introduced
+really back in about 2014-2015 we'll
+look at WebRTC and
+prior works and then this little demo
+issues thing I have that I don't have
+with honorable server up anymore because
+I had a crash but then we'll look at
+some other crazy html5 features that you
+can do all through basically cross-site
+scripting there we go so WebRTC WebRTC
+is html5 expect to have real-time
+communications or real-time media
+communications to websites this is way
+back from 2011 they announced it it's
+real popular with any time you do video
+conferencing it's probably using WebRTC
+that was kind of like its major thing up
+at first this is all done in JavaScript
+so you don't have to add any plugins or
+you don't have to accept anything and it
+provides the browser's access to devices
+including like your camera the
+microphone screen and sockets so if you
+go to the like html5rocks my first web
+RTC a few things that WebRTC
+applications can do is get streaming
+audio video and other data they can get
+network information such as the IP
+addresses and ports of the host they're
+running on and they can exchange this
+data with other clients known as peers
+that your peer-to-peer talking on
+networks and this can even go through
+matted networks and firewalls
+so those sound a little interesting
+considering this is all just being
+hosted on webpages web RTC kind of how
+the whole thing works to be able to send
+that data between different clients or
+browsers is ideally what it's supposed
+to be working on but because you can
+access raw sockets you can actually send
+it to any host you can read the text the
+mouse movements
+get images files etc you can send those
+over the line so that's how you're doing
+screen sharing things like that this all
+resides inside the browser you don't
+really have to click ok these things are
+just like available to run web RTC has
+plenty of demos you can go visit their
+sites and look at how it works I won't
+get too deep into the actual code part
+really there's a picture of how it works
+on the bottom and if that looks kind of
+familiar maybe you've seen that in some
+kind of security right up that's because
+I thought it looked a lot like how about
+hands look there's a signaling server
+and then they shoot out commands to
+these other little hosts that are
+running so the real-time communication
+without plugins is kind of their whole
+thing it's the the re rtcpeerconnection
+is the API responsible for managing
+those connections there's two specific
+traits that is peer-to-peer
+communication between the browsers or
+hosts and this also can operate over UDP
+which is a lot more quiet on networks -
+it needs a way to send those messages
+that part is not described or really
+documented in WebRTC they kind of leave
+it up to the developers to pick however
+they want to make the webpages make
+requests and talk to the other post
+depending on which protocol stack you're
+going with if you're on like TCP and
+developers out there will know of this
+kind of stuff you have xhr SSE
+WebSockets you can open up and on the
+UDV side there's ice stun turn these
+things work around NAT admire walls I
+don't want to go too deep there the ice
+is the interactive Connect
+the establishment as the framework used
+was established peer-to-peer connections
+between clients on a network the problem
+they had originally with this and why
+they had developed this was because if I
+know you are IP address that's probably
+your public IP address and not your
+actual host computer's IP address since
+we need to get through those firewalls
+and actually talk to your house so they
+figured out a way how to make it
+basically bypass all that and adding and
+everything and try some different things
+to get different routes and basically
+chooses the best route to another host
+it's important to us really because it
+gets us internal network addresses so we
+can actually find these hosts and
+provides a way to communicate to these
+internal hosts on any port we want to
+talk to it was of course designed with
+some safety in mind that they thought
+okay well browsers are sandbox so we
+can't really escape out of the browser
+the scripts can't interact with the
+underlying OS okay that's fine we can
+only send things out there's same origin
+policy cores which I'll talk about a
+little bit later these are some of the
+prevention slash things that lessen the
+Prevention's on which apps can talk to
+weather apps if you've done pen testing
+you see like clickjacking and things
+like that it's a lot of times just
+missing headers on servers but it's like
+who they'll accept connections from who
+they won't we can access the media and
+local resources camera microphone but
+the users are prompted for any of those
+actual device access things and then
+encryptions mandatory so all this stuff
+always talks encrypted so it's a lot
+harder to look at and that's kind of the
+neat part too is that this will be a lot
+harder to find on your network when it's
+communicating so to look back at what
+some people have already
+worked on there's a guy Matt Bryant he
+developed a tool called sonar Jes this
+is like a really smart Google software
+engineer security guy his idea was
+basically that we can identify other
+live hosts on these networks and we can
+actually fingerprint them based on the
+resources that they have because now
+they have the ability to probe internal
+IPs on their network and I'll show a
+little bit of that later but the wave
+our TC has calls that basically let me
+get the localhost IP and then using just
+cider notation we can kind of scan the
+slash 24 based on that hosts IP so we
+can scan their internal network and then
+by hooking different requests and by
+hooking I mean like if you try to
+request something with like an onload
+event without having to know too much
+JavaScript it will either air out or not
+and if you set a timeout when you try to
+load something you can kind of identify
+whether that resource is actually there
+or not so his idea was okay well if I
+can do that then maybe I can identify
+like certain routers and he wanted to
+identify routers based on their unique
+set of like when you go to the login
+page of any router it's going to load a
+couple different images and those are
+pretty unique to each router and so you
+can correctly identify what router
+people are running on their home network
+by making requests to known router
+defaults like 10 10 10 1 or 192 168 1
+sep 2 2014 owes the request needs to
+make to change the DNS settings
+router and this is on these people's
+internal network so now you can point
+the dns to his own and basically
+man-in-the-middle anyone that visits its
+website and that's kind of where we're
+gonna build on the rest of these
+exploits so how this works is he's
+opening a web socket I'm sure you can't
+read that at all but I may be zoomed in
+so you can read a little bit but you're
+gonna check an IP you open a socket open
+up these web sockets to an IP you
+generate a random ID you're assuming
+you're gonna scan the whole slash 24 you
+hook all those other different functions
+the on air on flows on open and you kind
+of just try to identify whether you air
+what I give that resource or not you
+save all those compare them to a
+database of fingerprints that have been
+developed basically by going and
+visiting the home pages of a bunch of
+these different routers and then this is
+the timeout function that you can see if
+a host is basically alive or dead and
+that's how you can kind of that was like
+the first steps in being able to map
+internal networks through basically a
+cross-site scripting attack when after
+you so this is yeah more of the router
+so like an easy router has those certain
+chip files and style.css and you know
+they're always gonna be at 192 168 1 1
+address so I just know I can scan that
+check for all those images if they're
+there I can identify that that is for
+sure an Asus router and then make that
+post request that's gonna change the DNS
+settings so to identify those other
+resources this is probably a deeper into
+the code too but the build a bunch of
+attributes you hook those attributes
+whether they load or not their images
+IDs added a bunch of different stuff so
+you can save all this in a database
+doesn't really matter the fingerprint
+database is what its gonna compare to
+this is another file that's just
+JavaScript that's also hosted on that
+page basically you pick a router you
+tell it what resources are going to be
+there and where and so you can add to
+this thing this is open sourced so
+people have been adding in there and now
+there's like tons of routers that have
+been mapped and identified to this and
+then we had a callback functions so if
+you do identify that router and then you
+would put in that exploit code now to
+generate that exploit code is actually
+pretty easy thanks to verbis weed burp
+suite provides us so this is a post
+request caption and burp suite that is
+actually making a DNS change if you
+capture capture that approxi there's a
+function of like the generated c serve
+POC you may have seen if you use that
+much at all that will basically generate
+JavaScript for a page that it wants you
+to run on your own that will demonstrate
+kind of the sea surface AK all you can
+do is then just generate that C surf POC
+copy and paste the code that actually
+makes the request you can get rid of the
+rest of the HTML and you paste that into
+that same fingerprint this is just a
+view of that AC router the images are up
+top and then the actual xhr request that
+makes those changes is down below so
+once it correctly identifies that router
+it
+so the actual exploit page is pretty
+simple
+you have to import the sone rjs script
+and the fingerprint database script and
+then you just start and then it just
+runs and it's as long as the people are
+on the page it'll be scanning their
+slash 24 trying to identify all these
+different resources this is kind of the
+example of all the default routers I
+kind of have known IPs if ever setup a
+wireless network you know that you're
+always gonna have one of these types of
+network addresses the 192 168 1 1 or 172
+1601 that's another thing people have
+kind of contributed to and gathered up
+is they won't load all these routers up
+figured out what are all the pretty
+common default people use and so we can
+kind of create a list to scan those and
+then try to fire this exploit off flexlm
+is someone that made a full request I
+don't think sonar ever accepted it but
+that request added the ability to
+actually just pick any range of
+addresses so now I can actually just
+load up and tell someone to start on
+10.0.0.0 host is so we can actually pick
+any network ranges and the only thing
+that really hinders this is just the
+time that they spin on that webpage
+that's that guy so then beef beef most
+people probably that came along it's
+been out for a long time but they
+started to add some of these features
+beef mostly focuses on the client
+themselves for the exploits
+you set up a browser hook which is
+basically like a JavaScript file you can
+bed like a store across site scripting
+poem we reflected if you get someone to
+click you made your hook and then they
+added the network scanning abilities
+that sonar had
+they basically imported all that
+mountain beef and they give you nice
+little graphical references of what the
+networks look like they added a lot more
+fingerprints for different web servers
+because the same thing worked so that if
+you have a tomcat manager I can request
+every one of those resources to the
+slash HTML / manager and then check for
+images on there that mapped to Tomcat
+and pretty reliable reliably tell you
+what type of Tomcat server they're
+running on those hosts and all these
+basically you can just post back to a
+listening server just with a get request
+all the info you need and then the that
+server that's listening and all of us
+logs will have all this information that
+you can extract so then beef started
+taking a look at more of the web RTC
+features they kind of use that get
+internal IP address they imported that
+land man figure so you can actually take
+IVs and start scanning them with the
+intention of ideally like changing these
+routers DNS entries and exploiting them
+then they added some cores and
+cross-origin scanning tools that can
+actually tell you whether course is
+enabled which is sort of the protections
+basically it's going to stop any other
+website from like getting resources from
+your website the problem with that is
+that it doesn't really prevent you from
+making that request so if i don't care
+what the responses are it doesn't affect
+it too much and that's where i move into
+the one-shot payloads that have came out
+in a last I'm just saying the last few
+years it's really been for a long time
+that we've seen one-shot payloads that
+do malicious things but through
+basically like a get or post request
+we've got a lot of different exploits
+that we can pull off that basically
+cause remote code execution there was
+Drupal getting that's kind of like a
+one-shot pro request will then result
+with command execution Apache stress was
+pretty recent in a big one that was in
+the news there was this is an Apache
+Tomcat where you can just put up a war
+file and post it shell-shocked there's
+one in the user agent headers that's a
+header you can set with a checks xhr
+requests cyber are kind of RCE just
+recently in the password ball that they
+see would let you unlock the house
+without all the details out of it
+iOS 6 drop find that's a one-shot
+bowline that came out on against a
+really old shot yeah I did say one shot
+laughs that was just one shot um yeah so
+I had six prop line it's a single shot
+one payload right and this is kind of
+all getting back to and one of my
+favorites Java deserialization bones
+these are usually done with a single
+request to an in point like the invoker
+servlet there's one in the new states
+cookies there's lots of Javanese
+relation bones but there's plenty of
+vulnerabilities out there that if you
+know that the host is there invulnerable
+you can fire off exploits that then will
+get reversed shells back and what we
+kind of getting out here is that you can
+put all this together so you can
+reliably through cross-site scripting
+fingerprint hosts that are vulnerable to
+one-shot payloads and then fire off
+exploits that get reversed shells on
+internal network O's so that even if
+most networks are getting better about
+having the perimeter be pretty secure
+but if you've ever done any kind of in
+DES work you know the internal networks
+usually have a lot of outta day things
+and a lot of wonderful services well now
+we're talking about any of your users
+browsing the web and then as long as I
+don't know how to keep tabs up but I
+usually have like 50 tabs up running all
+the time well as long as the other
+things up and not paused it's can be
+constantly scanning your network and
+trying to identify and fingerprint these
+hosts so can we use these html5 features
+to scan the internal network identify
+hosts and gain code execution I think we
+could
+I've been poorly trying to design some
+tool to mostly do all this I'm mostly
+based off sonar work I've been looking
+at adding beef skewers and
+cross
+request to kind of check that ways I'm
+not firing things off that I know aren't
+going to work but basically it's going
+to take in a host or Network and then
+you're gonna pick your exploits you want
+it to load up you generate that it's
+going to give you JavaScript and another
+feature I haven't quite got to but and
+we'll talk about that it's like actually
+let me bring it up actually here which I
+don't have the vulnerable I had it is a
+server running that was going to be
+honorable to this but it broke so this
+is this guy running locally right now so
+you can basically pick from a bunch of
+these single-shot vulnerabilities that
+I've been working on getting going up
+and going oh I'm here here hold on let
+me in slideshow there we go all right
+ah the all right webpage you can kind of
+read it I definitely stole some free CMS
+webpage we kind of build the defaults
+out but the general idea that you pick
+exploits that you want to make depending
+on what they are some of them and I can
+actually generate the shellcode for in
+the JavaScript other ones are currently
+hard-coded I'm working on figuring out
+how to get like the Java EE
+serialization moments we have to
+generate those long random strings that
+are like basic c4 encoded in the
+JavaScript I think there's probably way
+to do it if I learn better JavaScript
+and then you can kind of give it a host
+and pick I don't have the output script
+up here but here's the thing so you
+launch these to a slash 24 and say scan
+and here's some debugging stuff still in
+there and this source is scan that
+network but really from the user's
+perspective they don't see anything
+happening you have to actually open up
+the console and you can see that these
+web sockets are launching to all these
+different hosts as it's going except for
+I don't have any hosts right now so
+they're all just unreachable listen I
+have a fingerprint anything and we can
+also launch exploits towards Nene's
+house
+that will see these fail ones you see it
+fail that post if you go into the
+network tab it's interesting that verb
+doesn't pick any of these up because it
+uses these WebSockets so bird point
+actually catch these so if you're trying
+to use Bourbon to proxy in the stuff it
+won't show up when we get to the c2 part
+at the end they originally figured out
+that like a lot of the network and
+antivirus stuff isn't looking at
+WebSocket WebSocket traffic that's not
+really HTTP traffic as soon as it makes
+the connection establishes that it can
+send stuff to a endpoint it switches
+protocols over to this WebSocket stuff
+that's just kind of like raw data going
+back and forth so if you launch ass boy
+let me so the only way to get rid of
+that is scanning from running now is
+basically to refresh the webpage will
+stop it permanently if I have this
+embedded as it just a script it
+basically just keeps on running no
+matter what if you're on that page
+you're always going to be getting your
+networks in and trying to identify hosts
+there live and fingerprint them so if we
+try to exploit something I want exploit
+everything
+next plate one thing you see this gets
+picked up it's only going to show up
+early in this network tab this network
+to have kind of gives you some debugging
+but this attack so this shows like the
+payload is generated this is one of
+those serialized objects that it tried
+to send to 10000 one that ideally would
+generate me reverse shell that then
+would call back home to whatever
+attacking server I have setup on my new
+as your command control servers and some
+of the other features are coming one I
+really want to add that it's going to be
+kind of the next step which is in a
+different development mode but it will
+generate basically you tell at the range
+or whichever you want to scan it'll
+generate minified javascript that
+basically will look like if I can bring
+this
+go
+like no this so if you've ever read
+minified javascript you see these in
+webpages all the time they usually
+reference things or trying to save space
+on the resources they load you're not
+going to have an easy time trying to
+find out that I've got exploit code in
+there that's scanning the network and
+sitting exploits and it's very common if
+you've ever visited any popular web page
+and kept that Network tab open they make
+all kinds of different requests and all
+these tracking cookies that are built
+into every website that we've all heard
+about that all shows up there it's very
+hard to kind of look through and
+differentiate between the different
+things and then I just started thinking
+of more ideas you can do with this one
+thing is I think that you could level a
+fishing part of it I don't know why most
+fishing campaigns usually just send
+people to a page and try to accept just
+a they try to get credentials as long as
+that person has something up you could
+basically be scanning their internal
+network all you need is them to click
+then so you don't actually need them to
+accept anything it just opens the page
+and starts running and you can half-way
+reliably scan their network depending on
+how long they spin there and if they
+have any of those horrible hosts inside
+their network you can exploit one thing
+that it does require those than to hang
+on the page so one idea I had was like
+if you've ever played like flappy bird
+or any those embedded JavaScript games
+you can throw something like that up get
+people to click on
+there and play that game for a while and
+don't know they're getting skinned
+during that time yeah that the next
+thing I was looking at was mobile device
+profiling so and this is probably being
+used already I think most of this is
+probably being used already I just am
+surprised it's not talking about more
+because it's all been out for quite a
+while and all this was back in like 2015
+that the browser was really implemented
+most of these features was you know it
+deep links deep links allow web pages to
+launch applications out of the web page
+so if you've ever visited like Facebook
+and then it launches like hey we want to
+just launch this on Facebook or like
+YouTube will then just open in YouTube
+there is using deep links and those look
+like for Facebook it's just havethey
+colon slash slash it's kinda like the
+protocol becomes whatever they have to
+register it in their URL scheme they
+register it in the App Store or with
+Android is a little different since in
+the manifest file anyways what I was
+able to do was host a web page that then
+launches a bunch of these deep links and
+then makes a request back well I have it
+here just changing the page itself so I
+could test this isn't the greatest idea
+because it does then launch the app and
+then as soon as it launches and doesn't
+time out it closes it so you see like
+Facebook open YouTube open all these
+apps start opening on your on this web
+page but you can kind of reliably also
+figure out what other applications this
+mobile user has just from that in your
+website I did a bunch of work on that
+making it trying to make it like close
+faster and working everything and then I
+found out that chrome has an
+experimental feature called
+get enabled apps that just lets the
+webpage access all the apps that are
+available so that's coming it's
+experimental now but I'm assuming
+they're going to get there their hope is
+that developers are going to start
+registering which sites are allowed to
+query them the problem is now if you
+don't register then any site can query
+if you have an application there so I
+can then profile whether you have a bank
+or just different things you can kind of
+figure out about someone just from them
+visiting your webpage the next step is
+web USB and this did get talked about a
+little bit earlier on with Bluetooth by
+the web USB it's this awesome feature
+that lets the browser's interact with
+anything plug in the USB ports on your
+computer
+recently Marcus in high stature one of
+the golfers beef gave a presentation and
+it was like in January where they were
+able to bypass two-factor UV keys
+because of the huge easy to plug into a
+USB to use the fishing
+that could access those USBs take those
+tokens and submit them and be able to
+bypass those like hard tokens and that's
+just more of an html5 feature another
+one that we did came up earlier was the
+cloud that's the guy found out that he
+could write a web page that used web
+Bluetooth to access and then talked to
+the kids pets that were in range of the
+computer these are all just built-in
+features what blue this is one of the
+experimental ones you've been able it I
+think right now what USB is enabled
+currently it will pop up and ask you
+about stuff I think their demonstration
+was kind of a page that was just a
+phishing page that require that you be
+key to be entered and they were just
+able to access even Keys values and then
+submit it to the actual site side of the
+fake phishing page looking forward I
+want to keep on working on more payloads
+there's lots of different sea surf
+website opportunities if you ever done
+any like we're press a key you know you
+can as an admin write pages that have
+huge P stored in it and give yourself
+like a back door so if you could start
+to identify users when they hit your
+cross-site scripting that are logged
+into a wordpress site somewhere on their
+internal network you can then make those
+post requests that upload malicious PHP
+and kind of give yourself backdoors on
+web pages there's a lot of there
+I don't have any of the USB or web blue
+that outputting just the minified
+payloads with just the single exploit is
+kind of the next feature that's almost
+done and then something I found recently
+I've been looking all this is using
+WebSockets as a command and control
+server this guy I don't know his real
+name is hacker names like our Knox box I
+think he found out that I enh have
+access to the comm document on the
+component object model in Windows and he
+can actually use ie and edge as a c2 and
+it's all over WebSockets his specific
+task was he was hacking like blue code
+proxies and found out that blue go
+proxies just ignore WebSocket traffic
+because it's not technically HTTP HTTP
+and is able to kind of reliably use
+WebSockets at the c2 on an internal
+network and that's that's all I got

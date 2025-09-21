@@ -1,0 +1,270 @@
+cool talks are originally we sent them
+to be a five-minute talk about a tool
+that anybody might use you don't have to
+be an expert in any of you guys can do
+the toolbar guys and gals everybody can
+do jewel talking and please talk to me
+or talk to any the organizers or just
+submit a talk on the website if you're
+interested in doing this or it come talk
+to me if you don't want to do one and
+but you have an idea for one that you
+like to hear orderly but yes the toolbox
+just a great way to kind of talk about
+stuff that might be kind to comment but
+some of us might not know about or I
+hear about it all the time but I'm
+embarrassed ask about it because like Oh
+everybody knows yeah so also I want to
+do something a little bit different this
+one and dual talks and me we will start
+off a new training at the end of the
+tool time I'm gonna go through your go
+through a bunch of examples in here but
+at the end if you guys have an example
+something accompli you support come up
+here and talk about I like you hear from
+two or three people out here that catch
+me pretty easy because it's commonly
+school so please come you know at the
+end of this talk if if you have an
+example that I haven't talked about come
+up here and talk about tells how to use
+that cap so neck at its kind of lie
+units cap only instead you read and
+write from a socket so it's written by
+popular originally from I think about 20
+years ago it's really old tool yoga
+rewrote it within map so there's
+actually a couple of areas around there
+mostly the same but there are a few kind
+of different options that they have the
+house was built kind of under the UNIX
+philosophy do one thing do it well or
+with other programs with pipes and tanks
+in from one and out to another so
+basically is like illegal so you can use
+netcat which is NCS man you can take
+anything from standard into whether it
+be something tight could be helpful from
+another process and then goes out to the
+net it could be to another you can
+porn on a different machine running a
+service or a random ports you want to
+test her going to be to another netcat
+instance on a different machine so it is
+kind of like sorry guys and it's kind of
+a local clothing ilysm that everybody
+gives to this one for whatever reason so
+there's so many things you can do with
+it you can do rock connections like to
+another process you do simple web server
+UDP server client you do basic chat
+mechanism poor scans proxy you can have
+a unit process yeah server copy files
+you can do other cool things like since
+Lyons real slow one at a time or good
+but there are so many things that can do
+with that so how do you use my cat well
+install it first of all but it's
+probably already installed on most
+platforms under mac OS that comes
+pre-installed at cool from most linux
+distros you install from repo it's
+called in map dashing path as i use in
+that variant on the L enterprises on
+experience medic a PSD on VPN
+derivatives I'm going to know those not
+quite so sure about whether I'm sure
+there are plenty of resources out there
+you can find so how do you use netcat
+there in terms of options for it I'm not
+going to really go through them all here
+but you can specify you want to use IP
+before I can be 6 you can specify
+listening port there's a you can do
+source routing with it and so the
+proposed to be a little higher you can
+set weights and there's tons of options
+so read the man page on it and check it
+out especially because somewhere
+earrings have some options wherever some
+don't so here's an example of how you
+might use it this is a very basic
+example so I've got basically war
+machine on top and the second machine on
+the bottom on the top machine running
+that cat coming to shoot be4 3137 on the
+bottom machine i'm running metcalf a
+shelf or listen listen I'm 43 1337 and
+you're typing so I was sure
+either way of describing this but on the
+first line hi there that was tight time
+machine a and what's out this typology
+be those very basic you know it's just
+when it comes in a one machine goes out
+of the other vice versa if you want to
+do something a little more substantial
+like conventional sayin telnet server or
+a city mail server on the shoot so that
+cat to the machine day for 25 to talk to
+Ella Tiki said a short little message or
+whatever you want to do you can even set
+it up to be a basic web responded like
+you have something messed up and like oh
+my gosh I can't get internet running
+again I don't know what's going on so in
+an expedient with responder here it just
+runs my step a little command where
+you're listening and you're just having
+a basic where the response being echoed
+into it so the common theme here is
+everything is using the pipes are using
+standard in standard hour and you can do
+four of them you can make a to a machine
+and profile and this is a simple way to
+do a file transfer to us here at all I
+know there's no integrity verification
+but well they hey there works in you
+know but you do something underneath a
+real quick you can do that comes from us
+so if you're connecting your binary
+source well actually has a format for a
+parameter for dumping hash data if you
+want to do like funny network we can
+just put a whole lot of data internet
+cat on both machines or one machine or
+whatever and you know it has fascinated
+and come in through the UNIX bite it's
+going to go right back down the network
+interface let's say I want to set up in
+a reverse shell and this is a very very
+basic way of doing it obviously there
+are other ways to do it it might be
+somewhere so here you run neck out with
+a listener and on a different machine
+with my reverse shell I run neck
+actually forex execute and then you
+gotta
+a sub n sh you can't just type SH you
+got a paper for a Q&amp;A otherwise your
+heirs person's name or number and then
+what's interesting here is there no
+legacy props here so you see first line
+I just a dinner all what's going on Who
+am I am a response but there's new shale
+rocks or anything like that it's very
+basic no-frills but it works another
+cool way to use neck cat is a to make
+quicker use of your ssh Jumbo's so a lot
+of times you'll have like one machine
+wind SSH sitting on border and that's
+only machine even ssh2 and then you
+gotta say to another box so what I want
+to do as I could put a nice of hawaii hi
+association fee and as a proxy command
+so this is your connections other hosts
+it just runs ssh to the following host
+through netcat and then all this is
+going to do is for your traffic for you
+but instead of SS aging in the machine a
+you get a lot of profit sshi machine be
+he could do it all in one go you can run
+all sorts arbitrary commands so the
+piece of the dash leaves so if there's
+any common unix utility if you want it
+to be networking at a bird man no no cat
+Becky back to the file and the port that
+you want to listen on and then connect
+to that core and see the results there
+another cool uses to make a proxy hurt
+you know takes no time to set this up
+actually they use this today because we
+have a fun egress filters on our
+firewall and the stream that I want to
+lose to do is I mamata port I don't know
+what that text is a big enough but
+recently I just ran a while loop and all
+it does is running that cat listening
+out for 23 which is a privilege support
+that's why I could run as root which is
+obviously this is something you want to
+do every day but this is a nice way to
+be DM fix for things here what we're
+doing is that we call them 850 commander
+what that does is create you
+need a named pipe and the need plague is
+a special file that standard n goes
+directly back to standard Eileen time to
+type to that file but what's cool about
+that is usually when we're using that
+cat the first command I to netcat as
+standard how it going to the standard in
+a vet cat but what standard out netcat
+just goes to the terminal so what we
+want to do is get it back to the first
+program so what we're doing on the first
+and second program which are neck at
+this case we just change our standard in
+and standard out on those files in a
+pipe and set up the screen and that way
+what we're doing is bouncing the traffic
+back in and out and as the traffic comes
+through here so that's those are my
+basic examples of you can use my cat if
+you want to check out other alternative
+there's a critic at which is uh if you
+want to have encrypted traffic and but
+that's basically it so I don't like to
+invite anybody else up here who is using
+that cat and would like to talk about
+how the easy so two or three people just
+come right up take the mic and tell me
+how you use neck out and everybody's
+shot I'll tell you what here we go got
+Joel here so for cyber petri and so for
+the cyber patriot challenge they have
+one of the test images they riddled it
+full of netcat instances doing shells
+and so it's like reverse shells and
+stuff like that we had to find them he
+had to find them and then you had to you
+know take them offline that he had to
+course document in version except for
+the challenge but so that's an example
+of how to use netcat to maintain
+persistence all right thanks we got
+another example yeah 11 quick little one
+is uh so n tack which is the like a
+guess they get a poor goat neck at it is
+it is what's that yeah an apple right i
+did my found if it comes on any links I
+think maybe Callie has it but yeah when
+you most importantly it when you install
+an app on windows
+you're weird like when I was like me
+I've been hit with an map on there did
+you get any fat which is like an
+enhanced that hat and as it's all the
+same features and as ssl support so if
+you're trying to diagnose ssl connection
+it's pretty useful for sometimes looking
+into SSL connections is the Pope so so
+NCAT on Windows is an excellent tool
+awesome things yep and anybody else set
+of examples going once going twice uh
+yeah yeah one come on up here come on up
+here you're probably already talking
+about it reports p.e if you don't have
+internet you guys and c minus EV and you
+can check for up reports but one of the
+cool things you can do NS e minus Z
+means face- you and check for UTP ports
+absolutely very good okay we got an
+example that was a successful xperia x8
+so uh thanks a lot for able to talk if
+again like i said you guys can do the
+tool talk please sign up to do one we're
+gonna talk to me if you want to hear
+something on an interesting topic thanks
+[Applause]

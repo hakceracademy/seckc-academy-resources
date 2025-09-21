@@ -1,0 +1,215 @@
+Let's get this kicked off. Who's ready
+All right, Killian, you ready to
+go? All right. Well, I'm going to
+introduce our first speaker tonight. We
+have Killian Ditch up here ready to give
+a speak. Guys, I want to hear it. This
+is Killian's first time talking to Sec.
+[Applause]
+Thank you.
+So, Helia is going to be talking about
+cracking a physical hash tonight. Once
+again, I do want to remind those newbies
+and those that have not talked, this is
+a great opportunity to talk in front of
+a crowd. Uh Killy's going to be giving a
+5-ish minute uh talk. Let me tell you
+something. 5 minutes goes like that. So,
+if if you're interested in get up and
+speaking, make sure you visit
+talk.kc.org. Kelly, I'm going to pass it
+over to you. All right. This is an eat
+the mic 5:15.
+Okay, cool. Hopefully.
+Hi, my name is Killian Dish. This is
+about the fifth set, Casey, that I've
+been to. Uh,
+decided while I'm somewhat of a noob
+into infosc itself, I've been doing
+lockpicking for a little bit longer just
+as a bit of a hobby. Some of you might
+know it. This is just a bit of a short
+presentation. Um, first and
+foremost, most of these slides are
+courtesy of tool.
+um link is on the other pages but it's
+copy left by Degan Dolan. Want to make
+sure that everyone knows that I am
+reusing this material. It is attributed
+and it is free for others to do the
+same. All right. Um basically the idea
+was if you're trying to crack passwords,
+you usually don't have the actual
+password itself. you have a hash and
+you're trying to either determine what
+will make a hash that's the same
+resulting in collision or finding the
+same number of the same characters that
+result in the same
+hash. I was thinking this kind of the
+same thing in regards to a key and
+picking the lock. You have the key which
+is the password or the hash password and
+then you have picking the lock which is
+setting the pins into the various um
+positions that will then open the lock.
+I'll go into a little bit of detail in
+regards to how locks are actually
+constructed some of them and I have the
+hopes of being able to do a
+demonstration. Fingers crossed on that
+one. So first off get some
+terminology. Um you got your your basic
+keyway, which is where the key goes in,
+of course. Um, the plug, which holds it,
+rotates. You got the driver pin and the
+key pin, and of course, the spring keeps
+everything in
+between. If you look at from the side,
+you can have anywhere from, you know,
+one pin, seven pins, etc. Just keeps on
+getting older whenever you do
+that. If you don't have a key, you can
+see it just kind of jams whenever you
+try to turn it. If you have a key, it
+lifts it up. The driver pins lifted all
+the way out of the way and the plug is
+rotate. Take a look at it from the
+side. It lifts all of them up. And if
+you look at the shear line, all of them
+line up and the plug is able to rotate.
+Nothing is causing it to jam like it was
+here.
+So, we're allowed
+to use key or we're allowed to pick
+locks because they're not designed
+optimally. Well, they're designed
+optimally. They're not machined
+optimally. In a perfect world, they
+would look like that. Pretty much a
+straight line of pins and they would all
+bind at the exact same time. No, one
+would be ahead of the others. In
+actuality, they look a little bit like
+this. They get worn. that may not be
+machined, drilled properly. And so you
+get in, you get unevenness. And what
+that causes, as you can see, this line
+of pins doesn't work. Well, if you look
+at um and there's that one that's
+binding before the others. Therefore, if
+you can then lift that one out of the
+way, you'll then be able to find the
+next one that binds and so on so forth
+until the lock opens.
+The way that you do
+that is like so. Basically, if you can
+manage to keep the plug turning and add
+enough friction so that when you're able
+to lift that driver pin all the way up,
+it
+sticks. You're then able to make sure
+that that one's set and move on to the
+next pin itself.
+One issue that you run into is if you
+lift the the pin too high, it binds on
+itself. So that is the key pin binds as
+that that's a good lift. Moves in back,
+finds next one that binds, lifts it,
+moves it to the next. All right, where
+is it? And really, it's kind of guess
+work unless you know what you're doing.
+And there it overbinds. You're going to
+keep trying to rotate it, but you can't
+lift the pin up any higher and the plug
+So, this is just kind of a little bit
+bit of a demonstration of how it all
+works together where you twist it. You
+take your pick and you take your tension
+wrench, put the tension wrench in, turn
+it, and you start testing the pins to
+try to find the one that binds because
+it's going to have a bit more friction
+whenever you lift it up as opposed to
+the other ones, which is going to be
+free. That one's going to stick. You can
+feel that and you lift it up. Once it
+lifts, the plug rotates the tiniest bit
+and you know that it's set. You can then
+next. And you can also feel when the
+pins have set most of the time because
+they're looser when they don't have the
+pressure of the spring pointing down
+lock turns. Now, that's all the slides I
+had. And there's a reason for that
+because, well, this is pretty much going
+cooperate. That's a lot darker than I
+That will do the trick. Please flash me,
+Bill. So, first I've got
+fairly cheap
+padlock simple padlock drop. And you
+look into it. We've got the keyway, got
+the plug, some pins that you can kind of
+see. And the first thing that you want
+to do is find out how many pins are in
+You take So you take the flat side of
+the pick.
+Usually take the flat side of the pick
+and you can press all the pins in and
+And you probably can't hear that, but it
+actually does
+Click, click, click,
+click. It quits. And there you know how
+many pins there are and about where they
+are in the location in relationship to
+pick cuz you don't want to be jamming
+pick all the way to the back of the lock
+So you set your tension wrench in
+applying pressure so that the plug turns
+just a bit which gets that first pin to
+bind. Then take a pick. I'm using a half
+diamond. And slide it
+in. It's a bit of a tight lock. So
+works. Excellent. So you get it in and
+one. And and you test the pins and you
+turn back making sure that your pressure
+wrench. It's often really stubborn one
+and it unlocks.
+[Applause]
+So, that's when you're actually having
+to pick a lock. A quick warning to
+anybody who is buying cheap locks, don't
+get
+these. I'll show you
+why. They don't actually have any pins.
+They have a simple catch in the back
+that holds the HP. So really, if you
+have a curved tool, you take it, put it
+into the
+back, and it pops open.
+Almost faster than using a key because
+you don't have to worry about making
+sure that you get that spinny bit
+Kelly. So, Killian, where you posted up
+at? If anybody wants to see that lock,
+no, one of those two locks. Are you back
+over here? Yeah, you're back over here
+if anybody wants to see those locks.
+Right. Yes. By the two lovely ladies
+over on the side. All right, let's hear
+for Kelly.
+[Applause]
+All right, up next we have Mattie
+McFatty making his way down the the
+runway. Hey.
+Uh, who needs a quick break or who wants
+to keep going? Quick break. Say woo. All
+right, let's keep going. All right.
+All right. All right. All right.
+Nope. You got your minute start just
+now.
+You guys should get a drink. This will
+take a while. So, I'm curious. Uh, who
+here by show of hands GPS worked great
+to find this
+spot? All right, let's try the opposite

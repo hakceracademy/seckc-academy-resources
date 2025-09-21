@@ -1,0 +1,358 @@
+he is
+fromc everybody knows Joel say what up
+Joel up Joel all right Joel's going to
+talk about sticks taxi something I
+guess all right Joel you got 15 all
+righty
+so standard disclaimer uh do not taunt
+happy
+funball
+um so some the KE problems we run into
+doing security and trying to defend our
+users against you know the horrors of
+the uh Multiverse is uh information
+sharing so the only way we so far I've
+seen that we can get accurate
+information is through a subscription to
+some type of research firm so and for
+big corporations that's that's well and
+good because you got you got cash to
+throw so you you can pay a firm to do
+your your research and give you the the
+down low on the the horrible stuff
+that's coming down the pipe but um as
+far as like like individual small
+business businesses individuals small
+organizations school districts that kind
+of stuff where you don't necessarily
+have a lot of money to throw around you
+know it'd be nice really to be able to
+uh get good quality free threat
+information also when you're part of a
+large large organization where you have
+multiple business units uh it would be a
+great idea to be able to share thread
+information between your various
+business units so uh on that idea is
+that um what a key problem that we run
+into is that we're a day late dollar uh
+thread information has a shelf Lun and
+it's not very long you know it lasts for
+about a day uh by the time you get um a
+day old piece of thread information it's
+probably useless um so that's kind of
+the key problems that we have
+uh another thing is that we don't want
+to communicate with each other uh a key
+problem is like for instance we have
+this perceived uh legal obligation so uh
+in business you know you have PCI yeah
+so there's there's that big fuzzy thing
+around PCI yet that that PCI says that
+you can and can't do certain things and
+so you're always questioning you know
+well what does PCI have to say about
+that and then you talk to your auditor
+and the auditor well it depends on the
+auditor you get um so you have that big
+kind of moral quandry there or you know
+is it so is it kosher um and then you
+know then you have the if we share this
+thread information
+are our competitors going to get the
+drop on us for somehow or something like
+that uh or if we admit this are we
+opening ourselves up to litigation you
+got a bunch of that stuff floating
+around and it really kind of causes
+problems it clogs up the flow of
+information because when one
+organization gets hit with you know some
+of the crap uh then it' be nice to get a
+heads up from you
+know heads up to the rest of the
+community and getting heads up from the
+rest of the community uh telling you
+that this is going on and this is what
+um then you have the problem of so if
+we're in the mood of if we're in the
+mood to communicate with you know
+business partners and you know the
+public at large um well how do we do
+that then you get into we get this
+information somebody sent us an email or
+a news article and so how do we
+translate that into uh a snort IDs
+signature or how do we get that into the
+CIS Cisco intrusion prevention system or
+Brand X intrusion syst you that kind
+um there isn't really a common lingo uh
+out there I mean you get an email you
+get a link or something like that and
+it's kind of
+hard um and then once again it's time
+sensing so how do you get this
+information from point A to point B
+quick and accurately and in a way that
+you know people can understand and work
+with um so literally
+so one of the solutions that's come out
+there and there's a lot of solutions out
+there these are just a few and these are
+Open Standards so you got U sidebox
+which is the Cyber observable expression
+uh which is kind of the formatting of
+uh of the actual thread information and
+then
+um sticks which is an exile format put
+it all in and then taxi which is a
+methodology of of sharing that so if you
+know what RSS is RSS feed you get news
+feed off a website uh that's a means of
+aggregating news to different websites
+in a fairly quick automated fashion
+that's what taxi is so you go through
+and you build your uh threat object uh
+with threat actors that kind of stuff
+and then you publish it just like you
+would in RSS so that's the beauty of
+Taxi and so anybody and everybody can
+use this and then uh recently a is
+taking over this open standard and is
+pushing forth a new version of it that
+should be a lot easier to use so that's
+kind
+of overview of one of one of many ways
+to share information so sticks contains
+uh a bunch of different you know very
+nicely colored icons that describe
+different parts of the threat you have
+the threat actor which is the actual
+potential bad guy now very r rely do we
+have uh an actual name to face you know
+you can't really get an attribution on
+the Internet it's it's really hard uh
+but you can generalize So based off of
+the location of the IP addresses based
+off of uh all the information that
+you're able to gather about this person
+you can come to a certain amount of
+conclusions and so there's been a number
+of authors that have uh proposed ways of
+naming conventions so that we can say um
+let's see here panda is uh for China so
+uh certain types of Chinese attacks will
+be uh for instance against governments
+sometimes they'll be against uh Commerce
+or something like that and so they'll be
+given Whimsical names such as uh uh
+cranky Panda or something like that and
+so you'll have these generic uh threat
+actor definitions that you can attribute
+to that while you're still researching
+put exploit targets that's what they're
+shooting for that's what they're
+targeting uh course of action is uh how
+they propose you should remedy the
+situation uh an incident describes an
+actual attack uh an indicator
+contains multiple observables so an
+observable would be an IP address an
+email uh a DNS name something like that
+that you be able to identify the
+potential attacker the attack
+by um TTP is the type of attack uh and
+then campaign is that if you have a
+thread actor that's been doing a lot of
+this over time uh then you can take a
+look at thread actor and say well we've
+been able to attribute it to these set
+of IP addresses uh this set of attacks
+has come from here so we have several
+different campaigns that we can
+attribute to this
+thre an example of this would be from
+the Ron so we have this uh brat problem
+and constantly getting up on your back
+and beating you and so we've attributed
+to the threat actor as brat um so the
+incident that they mention specifically
+is that a brat like that on your back
+then their TTP is Ault and battery
+indicator a surprise physical attack and
+observable is targeting blind spot in
+tet back and observable size n cowboy
+boots um the target was unsuspecting
+punks
+and then course of action which is app F
+times so there's some open tools out
+there and how to properly uh that will
+make use of uh uh transmitting and
+receiving information from sticks and
+taxi um Soul Tru uh open source project
+and then you can get open source uh
+threat feeds from hax.com
+um Ultra Edge is a virtual machine that
+and Halo taxi is you can just get your
+your threat feed from there so there's
+multiple threat feeds that they
+Prov Vault has a service called threat
+exchange the idea is that uh it's a web
+site and then you can set up an account
+there uh and then you can create uh your
+uh threat objects based off of Articles
+and observables and that kind of stuff
+and then it allows you to share it out
+kind of like you would a Blog
+um so it's different from sticks
+although it makes it uh can contain
+information from sticks so the nice
+thing about it is it has a really nice
+web interface where you're able to build
+uh threat objects pretty easily just by
+putting in an article and it scans the
+article for for uh uh file signatures
+and IP addresses and DS stuff and then
+you can build it pretty
+easily um then you can make use of it
+using some of their developer tools and
+and then also uh they have some uh
+scripts that you can run that can
+or um potentially some of the ways you
+can uh export this information you can
+dump it into uh osm which is the open
+source uh security information manager C
+A rules bro IDs rules a taxi feed like I
+mentioned
+earlier and so you can get an API key
+once you create an account there and
+that uh you can also find more
+information about threat intelligence uh
+tools at this G Hub address uh for H
+slat uh it contains information about
+tools and Frameworks that you can use
+and some reference
+materials um that's something that Cory
+had given me so if you have any
+questions we'll be able to help too um
+common problems when you R uh run into
+thread information especially Community
+stuff is you have have uh problems with
+loops where somebody so you have a feed
+that references somebody else's feed
+that references somebody else's and then
+you start having feed loops and lots of
+Replay problems so that's something to
+keep in mind when you're trying to get
+thread information you need to vent the
+sources make sure it's
+accurate and then things will help uh
+Inspire communication is that you have a
+CA log uh 2015 and has liability
+protections for sharing thread
+information between organizations so if
+uh legal says I don't know about that
+you can say well we're protected
+undersiz um and then taxi allows for you
+to transmit information between business
+units privately so point to point so you
+don't share something automatically to
+the internet you can Target who it goes
+to go Blue
+Team all right um so problems we talked
+about untimely communication uh of
+threats uh lack of common terminology
+and worry about liability and potential
+Solutions
+uh taxi otx and uh some of the new
+automated tools
+um so I'll open the floor up for
+discussion
+items any questions yeah so Booz Allen
+and others have promoted this indicators
+of compromise kind of thing the military
+whatever group are that that would be
+maybe a part of sticks or layer into
+sticks or is a separate initiative are
+they related I haven't I'm not familiar
+I know that there's a couple different
+uh thread analysis things like the uh
+stoplight system I think one of them TP
+um so there's a couple things like that
+I know sultra uh includes some of those
+things in addition to sticks and taxi so
+uh that would be something to take a
+look in there but I'm not familiar with
+that there's open ioc be
+another there's a lot but you know you
+might want to talk about something that
+um you so one thing that with Oasis
+taking over we're looking at a format
+you want to talk about that a bit Yeah
+so anybody who's actually worked with
+XML it is a
+God I I mean let me tell you if
+you want to change the format or
+something like that or add in variables
+it it it it is just Unforgiven uh Json
+is a lot easier to use and potentially
+you can dump it right into JavaScript
+which means that you can have uh a lot
+of browser side processing or
+potentially use a lot of uh
+um not server B solutions to be able to
+aggregate that and view it and display
+it and work with it so uh that's
+definitely a good uh move on their part
+I believe
+um then working with false positives
+from uh sources that's another issue um
+so you have the social media uh vote up
+or vote down kind of thing going on so
+otx has that where you can subscribe to
+a feed or un unsubscribed and so you can
+kind of get an idea of what the quality
+of the feed is based off that uh taxi
+feeds I don't it just depends on the
+who's doing that how you rate a feed or
+something like that I haven't really
+looked that far into it but right any
+other questions are all the Fe are all
+those feeds private um the feeds they
+don't have to be private so you can have
+uh you can Mark a threat as a public uh
+code white it's a color code system uh
+so white is public so free to give out
+to anybody uh if you set it as yellow it
+means uh just amongst the people I want
+and then if you mark it as red it means
+it only goes to the person who is meant
+to be sent to so it gets into when you
+have this sharing inside of an
+organization you can flag it to only go
+to the intended recipient uh or you can
+flag it for General Distribution uh so
+you have that ability to Mark something
+and make kind of like a document
+classification so something like that
+other questions
+what about the
+CRA How how do you not turn this thing
+into a water hose you're grounding
+problem that is a real problem uh
+biggest problem I've seen isn't really
+identifying quality so much as dealing
+with the quantity uh and you have a lot
+of Open Source Solutions out there and
+they're great but they just can't handle
+the amount of traffic you're feeding uh
+sultra if you open up the floodgates on
+that it'll kill um I mean it'll it'll it
+can dump into the databas but when you
+try to do any type of filters or
+transports or exports dies just because
+they don't they don't know how to
+program right so they just shove it all
+into memory until it runs out of memory
+and kills the
+process all right everybody that's time

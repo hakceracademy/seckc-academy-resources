@@ -1,0 +1,317 @@
+my name is Maddie mcfatty I'm going to
+tell you guys a little bit about
+something called XML external unity tax
+i like to call it xml back door i've
+been working with trust boundary for
+about a little more than a year if you
+haven't heard of a it's the nation's
+best security consulting agency in the
+entire world so check us out and so xml
+sucks it's boring right but what if i
+told you that many xml parsers have a
+thing called external entities that they
+can load that offers almost a xml
+backdoor way way um every time I'm
+running a test and I see xml I get kind
+of a little tiny nerd boner because the
+impact is so huge wow you can get lots
+of stuff from this um and Alex just had
+a engagement I think what three weeks
+ago were you uh for you it was a pretty
+soon here you talked a little bit about
+it all right sure ah yeah so I can
+definitely the excitement we get when we
+see an XML request is pretty
+indescribable like it's like oh I can't
+wait to see if this thing is vulnerable
+that I can't see because it's kind of
+like the there's a go off top 10 this is
+noah the XC is like the trust boundary
+top one like it is we compromised some
+serious a lot everything every
+every maybe two months not enough which
+made to the two of us on every using
+ecstasy so it's awesome we get giddy
+every time and then if we get further
+down the Prada further down the path and
+it's awesome so anyway it's tell until
+the story about the most recent 1i yeah
+it was a real serious web service really
+long down they've been tested year after
+year after year after year basically was
+looking at kind of a no findings require
+I mean it was going to become just a few
+finding to some low-level stuff and it
+had like 250 web service requests
+and a number of the night that I finally
+found one that XML and I yes yeah so
+excited and looked at it it was and
+vulnerable to X I see through multiple
+steps just figure that out with it mats
+can explain to you and was able to pull
+down I think if I wrote a little python
+script which automated attacks but I I
+grabbed all the common file systems off
+of a linux box sorry by McCann you're
+talking along and and automated rieber
+so I took it like a default install
+linux box and automated that requested
+all those files and got a ton of sense
+is that I pulled down like a gig or two
+off this very sensitive web service so
+it's a really cool it's really cool
+binding so you guys should definitely
+pay attention to if you're interested in
+exporting it or defending against it
+definitely is done thanks Alex oh I'm
+like he said every parser is a little
+bit different so what is it I hope you
+guys can see it um XML specification
+allows for entity declaration oh and
+this allows an XML documents to be a
+little more dynamic they're almost like
+variables so you see that first one has
+an entity called why why in and so that
+second entity right there would resolve
+to let me show you hopefully okay so the
+results to what he said is yes so you
+can kind of see how the variables are
+combined to create that sentence there
+and the one underneath I hope you can
+see that foo bar that the f entity and
+the bar and the team would combine to
+put the fubar element in the element
+element that was awkward to say so who's
+infected there's lots of apps that use
+XML lots of them lots of formats rely on
+XML lots of configuration files for
+tools that use everyday use XML and
+protocols like so is it as kind of a
+flavor of xml and
+some of them use it without even knowing
+it I had an engagement that was a JSON
+web service that on a hunch I tried
+submitting XML instead of JSON and it
+digested it and it was vulnerable to xxe
+so I'm sure the coders didn't even
+realize that that their JSON parser
+would would take XML and so who cares
+well you should care at a current care
+because you can define an external
+entity so you can see this one is
+defining the XX e element that's going
+to attacker com so I can include I can
+make calls out from your XML parser to
+an attacker control domain and so is
+this this is a valid xxe declaration and
+you can see that one was trying to
+include the local file NC password if
+you guys have been on Linux you know
+that's bad um so what can you exploit
+you can do denial of service with
+something like this this is called a
+billion last attack what that does is it
+include entity within entity within
+entity and when you expand that it's
+over a million lol's I'll file
+enumeration so you can specify some file
+on the system to see if it exists then
+we're going to maury shin kind of the
+same thing but you can specify a local
+network that's behind the firewall to
+see if it exists port scanning is kind
+of the same thing but with a port
+specified on the system directory
+listing some parsers like that one Alex
+was talking about actually listed the
+directories for him as he was going
+through so he just he just had to
+automate downloading the files and then
+finalize filtration if the service
+doesn't reflect the file back out you
+can do a filtration by combining the
+fact that I can load an attacker
+controlled website and a local file so
+you can put those two together to make
+the call to the attacker website include
+a parameter of your file so you can you
+can export rate at it that way and
+sometimes this happens without off I had
+an engagement where it was a as a web
+service they were doing everything right
+they had an auth token that changed but
+the problem was that all pokin was an
+XML element so
+had to run through the XML parser for
+them to figure out who I was and the
+parser was vulnerable so I had a file
+exfiltration without any authentication
+whatsoever okay so here's a demo
+let's see okay i'm going to set it to my
+dad come on demo ok so there you Ferb if
+you guys are not familiar with burp you
+should get familiar with it and there's
+a website or half of one Wow and this is
+just like a mailing list that you're
+signing up for right on the left and
+then burps care on the right there is
+not a lot of space on this screen I'm
+really sorry um so the labor scare works
+if you guys aren't familiar with it as I
+make requests on the left you can see
+they're processing through on the right
+so i can see the requests coming through
+on the right so i'm testing this web
+service la-dee-da and i submit a post
+and I look at the request and it's xml
+and guess what i just got a nerd bar so
+i want to see if it's vulnerable to x XE
+oh I'm going to do the short version
+instead of the long version because I i
+made this proof of concept so i know it
+is all this all this does is when you
+submit something that says sorry that
+name is already taken down there at the
+very bottom so I'm looking at this
+request its XML the response is sorry
+that name is already taken so I want to
+see if it will accept an entity
+declaration sorry copying and pasting
+pay no attention to the magician behind
+the screen okay so I'm putting it right
+here
+hopefully
+I
+okay so the partial load it I send this
+request and it came back and it looks
+like it digested it just crime what
+would be really awesome it's if this foo
+element would be reflected back out in
+the response that that would be more in
+the money so I behind my name here I'm
+going to put that variable and see if
+it'll come back and see it says that
+name is already taken Matt south XX e so
+that's also mess reflecting variables
+back out from XML parser so here's
+here's the sweet spot if we can do if we
+can do a file on the system then we'll
+we'll be in the money sorry this is
+really hard to do one hand and you guys
+okay that didn't work hold on hold on
+there we go oh yeah so there's the NC
+password file reflected back out from
+the XML parser let me yeah let me wrap
+it up and then I'll let you guys off the
+hook
+sorry guys yeah okay so the question is
+how do you stop it encoders in the past
+have just said okay let's not reflect
+stuff back out so that NZ password file
+they're like let's not do that well that
+didn't work because there's error
+messages so I can tell whether a file
+exists based on different error messages
+even if you have the same error message
+come back based on the response timings
+like it might take longer to parse a
+file that exists versus the file that
+doesn't exist so I can enumerate files
+that way and then these guys Timmer and
+Alexei developed they did a black hat
+talk about the out-of-band attack that I
+told you about earlier where you combine
+the fact that you can make external
+calls with an internal file attached to
+it oh so let's try that again how do you
+stop it a lot of parser libraries added
+the option to disable it XX e that
+didn't work because most people have
+never heard of this so a lot of coders
+didn't go out of their way to disable it
+because they didn't know it existed so
+third time's the charm a lot of horses
+disable it by default and that seems to
+work pretty good providing your
+libraries are up today for this proof of
+concept I had to download Django that
+was two years old so if your apps more
+than two years old and uses except XML
+it's probably vulnerable to this and ok
+so in summary XML is all over the place
+XX es super bad if you're depending make
+sure it's not vulnerable if you're
+attacking check for it because it's
+really sweet if you find it and that's
+it I'm myself lots of people talked
+about this kind of stuff ahead of me so
+um yeah this wasn't my idea anyways
+whoa good job Maddie and fatty I my turn
+over you Alex yeah I just wanted one to
+mention one more thing that like I've
+never had a scanner find it I've you
+have you met ha so yeah scanners don't
+mind it even birth which is a freaking
+awesome scanner doesn't find it well it
+has one check for but for whatever
+reason never works I mean it's kind of
+complex to test for oh yeah I made a
+little do you guys know what buzzing is
+has anyone ever heard of buzzing inputs
+it's where you take different types of
+attack payloads try some plus an input
+and see if it's vulnerable I made a list
+for xxe fuzzing that I'll make available
+to the mailing list because I've never
+found one anywhere I had to build this
+so I'm gonna share it with you guys if
+you want to try it out oh and the proof
+of concept i'll upload to if you guys
+want to play with it so look on the
+mailing list tomorrow or whenever thanks
+and so scanners aren't good at finding
+it is difficult difficult to find an
+automated fashion because it can kind of
+two crowd xml request to work I know
+what you want it and also pin tester
+light up though the web application
+hacker's handbook is pretty much the go
+to reference on web application fin
+testing I don't think that you mentioned
+it like its it was kind of a obscure
+vulnerability and tell more recently
+which is why I mean why every time we
+find it I mean everything it it wasn't
+found on the previous year's test it's
+becoming more and more prevalent just
+like maybe like simple injection was 15
+years ago or something like that it's
+it's a big deal right now and so it's
+important that you have people that are
+aware of it testing your applications is
+definitely good good people who can find
+it so it's a yeah you need the right
+tools in place you need to be looking
+for this because as a mass show even if
+you're just accepting JSON authenticated
+you can be vulnerable to a authentic kid
+you know if anybody's come up with a
+snorkel
+checking that in mind I had no idea if
+someone has a spell role that it's I I
+mean verb scanners got it a bourbon
+scanner the newest version has a rule
+that will do a simple check but each
+parser is different so you can it's
+almost something you have to manually
+test yeah I don't know who'd be
+difficult to test for on the defensive
+side but I guess if you're looking for
+the right payload it's possible I guess
+I have no idea there's a there's a storm
+rule that 4x huh question any questions
+all right thanks hitter would go alright
+thanks man even fatty I'll see block oh
+we're going to be quite five minute
+break luggage set up and then we'll go
+there

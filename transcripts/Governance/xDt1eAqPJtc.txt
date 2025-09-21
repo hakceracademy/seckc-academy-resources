@@ -1,0 +1,647 @@
+he's going to talk about small and
+medium-sized business cyber stuff which
+will apply for anybody and that is
+working on very limited budgets with
+cranky management's let's give a big
+round of applause thank you it is super
+cool to get to be with you guys tonight
+and that wasn't actually a spot-on
+introduction there because that is
+exactly exactly what we're going to be
+talking about so my name is Nathan on
+slack I'm known as the fitness chicken
+and we are going to look tonight spend
+about the next 20 minutes or so looking
+at the state of cybersecurity in the
+small the medium business space now my
+direct experience is going to be with
+the small business aspect of that and so
+I really can't speak directly to
+organizations that are in that 250
+employees on up but those that are below
+that yeah we have simply can talk about
+I don't like to spend a lot of time at
+the beginning of a talk introducing
+myself because ultimately when we get to
+the end you guys are gonna decide you
+know you're gonna you're gonna have it
+you're gonna eat them behind total clown
+or competent and I don't think there's
+anything I can say at this point that's
+really going to affect that so
+ultimately I'm just going to tell you
+I'm my kid's dad and one of my kids the
+one that's in your what is that lower
+lower right made the cookies tonight so
+I was really proud of her for taking
+that on and then bringing that so
+anyways
+she did good work
+so Abby Abby delivered on that I want to
+start off with some examples here so
+let's kind of set the table a little bit
+for what
+cyber security looks like in a small
+business and I'm going to be painting
+this picture with a really large brush
+tonight and I know there are exceptions
+to this in this room tonight because
+I've talked to some of you but yet let's
+look at a couple of examples first off
+this was a number of years ago I had an
+owner of a company came 35 40 employees
+something like that and he walked into
+the office I was standing in he had a
+cell phone in his hand and you couldn't
+tell that he was on the phone and he
+hands it to me he goes in Nathan would
+you talk to this guy and I'm sure what's
+going on he goes so he called me and
+there's a problem with our website okay
+I didn't know about this and and he's
+trying to help me fix it okay you know
+the red flags are starting to go up now
+get this the next thing he told me was
+he's trying to log into an account and
+I'm trying every password I can think of
+when we can't get it to work and I was
+just like oh no like why did you stop at
+yours did you try your wife's like why
+are we limiting the scope of the damage
+here first examples second example this
+happened three weeks ago I got an email
+from a lady that I work with as an
+organization probably 30 to 50 employees
+something like that just as Nathan is
+this still our admin password sure the
+next line domain admin password right
+there in the email that's bad news but
+it gets better I'm like well you know I
+mean you got to acknowledge it so my
+guess note to self time to change
+password all that and then I realized
+that there's a little fw on that email
+chain I'm like let's see what the
+history on this is ah so there's a new
+employee the new employees running up
+against a UAC prompt so we provided the
+domain admin
+in this email change to the new employee
+to try to get past the UAC prompt guys
+that's the state of cybersecurity and
+small businesses now so when you are
+sitting at Thanksgiving dinner and uncle
+Ernie talks about how his auto body shop
+is running you can realize this is
+probably the kind of stuff that's
+happening there our aunt sally's and
+beauty salon it's a real disaster like I
+like walking into a small businesses
+seeing the iPads with the swipes on them
+cuz I'm like okay I feel a little bit
+comfortable but man if it's a Windows
+machine like I wonder which card I want
+to change out here because I'm going to
+be cycling this number probably in about
+three weeks it's just a really really
+really bad news so let's look at the Y's
+behind this anything there's three
+reasons that cyber security is such a
+disaster in most small businesses first
+of all it's expensive it is absolutely
+expensive I was attending on was that my
+SSA meeting from a couple of weeks ago
+and is presented by carbon black okay so
+great product you know no problem with
+him not making fun of them at all but he
+spent the whole presentation saying
+antivirus is dead we have a new model
+right he's selling application
+whitelisting can read between lines at
+the end of the presentation I said hey I
+work with small businesses how are you
+what do you see in the adoption for
+small businesses with this application
+whitelisting okay Gremory antivirus is
+dead oh if you have less than 100 seats
+we don't talk to you but the good news
+is that we just acquired an antivirus
+company
+what like really this is where things
+are in I have longer than probably
+recently they said we want to talk to
+you bout your sock okay Mike well I
+joined a club called a sock Club I get a
+new pair every month just hits the
+credit card that's all I know about
+socks what do you know about them okay
+we don't get cool toys like that in the
+small business environment secondly
+there is no compelling regulation now
+I'm a fan of minimal rules let people be
+adults and make the right decision I
+know my worldview is very flawed but
+there's no compelling regulation some of
+you are probably sitting out there
+thinking wait a minute what about PCI in
+a small business environment when I walk
+into an organization to help them with
+PCI the whole goal is slow production
+like we want PCI to have as little
+effect on that organization as possible
+everything possible that's out of scope
+that's out of scope really you have this
+if we do this we take it out of scope
+you don't have to worry about it anymore
+I had a conversation in a hallway with
+an executive who's looked me in the eye
+and said Nathan this PCI stuff is crazy
+there's no way other businesses are
+doing this we just there's no way like
+we're not going down that road and I'm
+like well actually I think other
+businesses are but but it's just it's
+not having an impact
+same with HIPAA but with small providers
+as well lastly minimal executive
+influence maybe those are really quiet
+tonight do you realize that really
+really quiet that's okay but it's just
+weird anyways you know if you work for
+an organization like DST or Cerner
+okaythat's isso or that senior
+compliance officer they are grouped they
+are picked because that is their passion
+in a small business well you know IT
+kind of falls under maybe the
+administrative maybe the office manager
+gets it and in cybersecurity well that's
+maybe not quite as important as figuring
+out how to provide a new computer to the
+staff members every five years
+like that's what you really are
+concerned about from a bunch of
+standpoint everything else is like well
+we really don't have the ability to look
+at that I'm gonna say weight percent
+alone this is what six months ago or
+something like that I'm gonna say cyber
+insurance is actually making things
+worse because now when I present
+something to a client I say hey you know
+can we talk about funding for this kind
+of talk through they're like no no we
+don't need to do that we have cyber
+insurance like okay do you realize for
+questions little checkboxes is what it
+takes to get a cyber Rider against your
+building policy for checkboxes do you
+have a firewall I mean right that's
+probably a helpful question but who
+doesn't
+there's no quantifying there's no
+technology let's just have a firewall
+like are you really bringing the
+business without that yes you have a
+firewall
+do you have an anti-virus is it updated
+that's valid because I worked at the
+place not too many years ago now if any
+of you work to remember on IBM actually
+had an antivirus where the update
+definition files were distributed via
+floppiness via interoffice envelope so
+it's a valid question do you backup I
+mean literally four questions check
+boxes there's no verification there's
+nothing that pushes anybody towards the
+best practice if you back up and you
+have sort of an anti-virus
+we're good and we'll write you this
+policy and really most people don't even
+know what their policy covers or what it
+does for them so again it's really
+almost causing more problems than it's
+fixing now I think a lot of you were
+like me because I see a lot of go to
+these different conferences you go and
+you said you you hear these
+presentations you know what we've gone
+through so far you've probably heard
+before I get snot rocket science and
+this point in a traditional talk right
+the plane is kind of flying level we
+start into a nosedive because we start
+throwing around all kinds of technical
+jargon like hey you know he fix this
+defense-in-depth
+okay I've studied for the CISSP I've
+heard that layered security if you guys
+weren't secure world then you know I'm
+making fun of secure world keno with
+that picture right there right we spent
+our lunch time learning about castles
+and secure role you know it just takes
+us no sigh but let's not do that instead
+let's be really specific amount of stuff
+let's be really specific let's start off
+with an example of something that
+doesn't work two-factor authentication
+right we all know this is a wonderful
+thing it's a really good deal sure you
+know we should probably avoid the whole
+SMS because of the whole sim swaps in
+that thing but it's better than nothing
+but maybe because no matter with
+acronyms than I am but you know we can
+do the app and we can do the time-based
+token based or whatever that acronym is
+and then it's free and we can train our
+user and had to do two-factor
+authentication okay hold that thought
+Microsoft made 270 plus a million
+dollars on office recently like the
+article I was reading didn't heavily
+quantify that a lot of that's last
+fiscal year when that was or anything it
+made a ton of money and of that you know
+they probably invested like 180 K in
+developing new versions of office what
+is the flagship app in Microsoft Office
+it's outlook right everybody runs
+outlook and I know we got a lot of Linux
+users in this room okay you guys are
+probably running money I'm really proud
+of it but we all know that when you are
+ready to redline productivity like when
+you are really gonna crank the work out
+you go to Windows VM up and you run
+outlook I mean everybody
+Outlook Outlook does not work with
+Microsoft's two-factor authentication oh
+it works on webmail but who uses office
+365 webmail if you're doing webmail
+you're a G so a user it's irrelevant so
+it really only applies to the admins so
+if we try to start walking down and
+providing enhanced access and we have to
+have a conversation with users on
+application passwords hey here's how to
+factor works but it doesn't work here so
+I have another password can I take it no
+you can't pick it it's got a gender why
+can't I think it well because this other
+password you have this other password
+and that's linked to to factor when you
+have a different password yeah so can
+where can I use this patch we use it
+everywhere what can I write it down on
+and you're not gonna remember it if you
+mean it's like it's just this downward
+spiral who knows how to create
+application passwords and office 365 is
+not that hard but having that
+conversation with an end user that
+doesn't get security that doesn't get
+virtualization that doesn't get all
+these terms it's a spiral it's a
+downward spiral so this is an example of
+how something that a small business can
+afford doesn't even work for them like
+we can't even to factor in Outlook which
+is a pretty critical application now no
+this is not a solving so as in I take in
+the sole and then what do we do cyber
+security is not on the radar you know as
+an IT as an IT consultant in small
+businesses I'm pretty much told hey
+Nathan go do a good job so I'm gonna say
+that there is this gray area that there
+is this slack space that I operate in ok
+is not heavily regulated it is not
+something where I'm being given granular
+direction like if you're in a larger you
+know you're working in a knock or a sim
+or something like that I mean your job
+responsibilities are pretty nailed down
+small businesses are totally different
+totally different there's a guy that's
+an IT provider for a local company that
+is
+it's a fast-food restaurant so he is
+highly valued as the IT provider for
+them until one of their chain
+restaurants has somebody callin at lunch
+and then it used to dispatch to make
+sandwiches and then he's pulled back off
+that and he's put back on his very
+valued job as IT provider for this
+organization small business is just
+different so how do we can so if you're
+me what do you do like how do you move
+this bar for so we're going to go
+through and we're going to look very
+specifically again not rocket science
+but below hanging through what are the
+things that I walk into an organization
+and look for if you're in my shoes you
+likely can come up with like maybe seven
+of these nine things like if we just
+watch a you know what do you like to
+look for what can you do these are gonna
+be things that you can do in a small
+business to actually move that bar
+forward without a mandate from
+executives without really nice capital
+and I'm operating funding just things
+that you can kind of clean up as you go
+first of all let's get rid of local
+admin this is a total given in most
+organizations I know some of you here
+have managed to get that with moved from
+your users but this is a really really
+tough thing
+so a really tough thing to do because
+people don't like to hit walls so let's
+drop below the lab but how do you do
+that I have struggled with this like
+literally this is a wall I banged my
+head against over and over and over
+again the way that I have found to be
+most successful you have a new user
+starter okay you're usually going to be
+you know nice to introduce yourself hey
+you know you're getting them settled
+into their computer and then you tell
+them hey I'm going to let you run wide
+open for the first couple of weeks while
+you get settled into your computer and
+then because you're productive and you
+use outlook you're gonna make a reminder
+I don't think you can do that in that
+can you anyways you're gonna make a
+reminder to read this
+user in two weeks and you're gonna gank
+ogle admin from it you tell them that
+you go go you keep it running I don't
+you know just kind of getting settled in
+your computer so I'm gonna tighten this
+up a little bit and I'm gonna I'm gonna
+make this a little more secure for you
+let me know if you have any issues at
+all I want you to be 100% successful
+here but I don't think you're gonna
+notice you ain't see prompts they're
+gonna come up it's absolutely gonna
+happen but you've communicated and you
+have worked this in I haven't found it
+virtually impossible to remove local
+admin from existing staff and
+particularly in existing executives like
+it just doesn't work but you can do with
+new staff often if you're if you're not
+successful with it what about domain
+admin ah well this is a lot of fun like
+domain admin is just sort of the company
+directory it's probably the management
+directory for this organization because
+everybody's in there like nobody knows
+the power like we just need to be able
+to reset passwords
+oh you delegation is totally foreign so
+let's clean out domain admin okay this
+is another thing people just want it to
+work
+domain admin works in small business
+that's the formula we just wanted to
+work domain admin just removes the walls
+right why don't we want to mess with
+groups and sharing and all that kind of
+stuff the other thing I'm gonna say
+that's ultimately very critical in this
+is get to know this organization there
+are so many stories I remember one
+company in particular that I came across
+this little daus program that was used
+for an ACH okay that's fine but it was
+only used for ACH functionality in
+payroll time that was a pretty big deal
+only has it work who runs this who knows
+anything about it too even contacted the
+bank for this No
+so really dig into that organization and
+find out now before you laughed at me
+okay I'm gonna blame NIST on this
+because I'm just doing some research for
+this and this is literally one of their
+leading thingses and a small business
+from a cyber security standpoint in 7621
+says you surge protectors okay that's
+great
+what about deal need data loss
+prevention again people that small
+businesses don't like to hit walls they
+don't understand it because they're all
+powerful especially the executives but
+most organizations are gonna have let's
+say some really important spreadsheets
+maybe it's a customer list maybe it's an
+employee left something like that
+what about feeding that data into the
+DLP like you may not be able to just
+mass blog credit card and socials and
+stuff like that because maybe they
+really want to be able to email out bank
+outing numbers or something like that
+okay still not a good idea but man it's
+amazing that much of that stuff's gonna
+cross with a credit card or a social but
+you can do something in a small business
+so much of what happens it's just
+stupidity it's just people don't know
+they don't think so can we use the free
+DLP that's there in order to protect on
+that and we got a patch do you realize
+that the greatest thing that protects
+you from a windows compromise is Windows
+Update that's really scary
+they windows update breaks it's just
+like more often than outlook Windows
+Update is a real weak link in this whole
+chain so I'm sorry but I mean if you're
+not doing anything you need to at least
+be doing wsus and I can go it's painful
+I run and I currently running but I've
+had a really bad luck with convincing
+clients to buy into an rmm you know most
+of these remote machine management tools
+will do patchy and third-party patching
+let it's great but I having trouble
+convincing my clients on the value of
+that so I'm stuck with wsus at different
+times
+[Music]
+most small businesses firewalls this is
+their egress right it's really easy it
+doesn't take up much space but this is
+something that you can tighten up one
+you don't have to go to management in
+order to get approval for this you can
+tighten up X the the the egress route
+you don't have to really do anything you
+can get this tightened up you can do we
+really need unlimited outbound DNS do we
+really need that now about unlimited
+SMTP we can tighten that up we can we
+can scale it back a little bit so again
+something run as soon as I get my hands
+on that firewall I already know what I'm
+gonna see on the hangout PCI requires
+this but I remember our whole goal with
+PCI is make it not apply so kind of have
+to work a little bit with that one of
+the interesting things that I found with
+a small business is that if you asked to
+do something like hey I want to update
+this or do whatever there's a pushback
+they're like well let me know we need to
+we need to let's talk about that but if
+I walked in and asked to clean something
+on them oh yeah please thank you thank
+you we really appreciate that so what
+can you clean up remember security
+complexity is the enemy of security
+right we've all heard that well there's
+probably some truth and that so let's
+clean things up I was looking at an
+organization recently that had a a group
+policy which was pretty important that
+disabled PowerShell we tighten it up you
+know everything has to be signed it was
+this great great group policy and it was
+applied on an O you with only user
+accounts and now that group policy
+applies to computers so applying it to
+an O you with all the users means it was
+net doing nothing so let's clean this
+again getting permission and clean up is
+a really really really important thing
+like it's usually sure absolutely things
+and you go for it alert management you
+know we can get toned down to stop do
+you guys mean guys that work in your
+sins and you
+teamers and all that like you're good in
+that but the rest of us get tone-deaf to
+alerts so did we turn them off like
+would you know if there is a computer in
+your organization that was constantly
+being reinfected if there was something
+persistent you had this rolling battle
+between your antivirus sometimes you do
+sometimes you don't this is one of the
+ways for you to demonstrate to
+management that you were totally on top
+of things is if you're telling them hey
+you know we keep getting this will work
+for this computer man I'm having to keep
+working on this and I'm gonna wipe it I
+mean whatever but do you have your word
+management tuned to the point that
+you're not tone-deaf and you're actually
+able to be responsive because I could
+get tone-deaf I mean there was one time
+that I was getting in like 60 backup
+emails a day and I win I can't do this
+and I did that about the same time thing
+that I realized one of the server's
+hadn't backed up in three months because
+nobody's gonna notice if they don't get
+one out of 60 emails that just doesn't
+stand out to you so do your alerts tuned
+in such a way so from a slack standpoint
+okay from this great area that you
+operate that I operate in you know where
+it's just it's black and white Nathan
+you know do a good job for us like let's
+just do this there's not a lot of
+direction given one of the things that
+you need to pull out into the open and
+get out on the sunlight is the backup
+policy so this is crazy important
+because there is nothing that is more
+misunderstood than backups when it comes
+between me as a service provider and an
+executive so get this
+and write it down I've had people ask me
+to restore files from six months ago we
+have three weeks we only have three
+weeks because you didn't want to buy
+more equipment but I need this file back
+I deleted it like six months ago is that
+going around Christmas and and and and
+we don't have it so what are you doing
+that you're like combing all the
+computers like is it at an offline files
+cache or something like that is so
+inefficient so documented one of the
+biggest things you need to document is
+what kind of what does it take to
+recover what do we need to do if your
+RAID controller on your server or your
+sin totally blows up and you lose every
+bit of data across that Arang what does
+it take to actually get back up and
+running the executives need to know this
+here's the challenge with that in a
+small business you don't have a lab so
+you definitely don't know
+so it's an educated guess tell them them
+say I don't have a lab for this and but
+you're prepared so if they say well what
+would it cost always be prepared with
+numbers you would be amazed at what is
+approved at a knee-jerk response I had
+the things that I haven't asked
+management to improve I said hey can we
+replace this that's getting old we're
+not giving them performance out of it
+you know we're nearing end of life on
+this the manufacturer just sunsetted it
+you know it's mothballed hello let me
+think about it and give me some time
+budgets are tight right now and then
+something goes wrong and that executive
+walks in and says what about this like
+well struggling with it was it cost to
+replace manon I don't have a number
+right then and there on that but if I
+have a number okay let's do it
+that's four grand I know for those of
+you with DST for Graham is like like the
+good sense bill on a project for food
+and sandwiches but in a small business 4
+grand is actually a tangible project ok
+you know for 10 15 20 30 right it's all
+right in there I could replace this for
+4 in go for it let me just like that
+you'll get stuff approved that is so
+Saudi jerk so needs your guy had a
+thousand dollars and overnight shipping
+approved on a server that I'd been
+asking to replace the first
+months finally died how could can we get
+a replacement why get it tomorrow if you
+want it's fine I'm like it's gonna be
+expensive for overnight it's fine we
+need it thousand dollars an overnight
+shipping for a box so have your backups
+documented have them clear and defined
+you need to know exactly what they are
+so let's wrap this up as a consultant
+you're gonna be the common denominator
+in multiple organizations either as the
+loser low-end pork and fig or you're
+moving the bar forward you have a vision
+for what this organization needs you
+have a direction and you're heading that

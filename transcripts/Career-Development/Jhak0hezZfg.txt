@@ -1,0 +1,256 @@
+all right first off sorry about the
+audio we had no idea that if we plugged
+into HDM audio it wouldn't work
+so we tried hard to resolve that and
+unable
+to all right my Talk's called lights out
+gorilla radio I'm going to tell you how
+how to hack houses radios cars using and
+using R Radio
+frequencies uh so first off what is
+softwar defined radio uh software
+defined radio is a radio for every
+frequency so right here I have a
+software defined radio and it will
+broadcast from listen and broadcast from
+30 mahz to 6 gahz which is a very very
+wide range and actually it will
+broadcast outside the range as
+well um so why is software designed
+softwar defined radio in important uh
+radio security especially is important
+because it's it's kind of everywhere
+it's on car key fobs it's on uh baby
+monitors it's on home surveillance
+systems it's on cell phones it's on skus
+systems which is in the bottom there it
+controls windmills and there's a guy
+that comes to set KC who wrote software
+to control windmills
+wirelessly and it's on drones there was
+a incident where the uh United States
+had unencrypted drones that they knew
+about for a long period of time and they
+figured nobody's going to break into
+this it's a a radio signal it's at 450
+MHz or whatever nobody's going to figure
+out that we're broadcasting
+our um surveillance video over this over
+this signal and what happened was people
+were buying $26 of Hardware like this
+and listening in on our multi-million
+dollar drones and we're still haven't
+even encrypted all of our drones this
+day and this was in 2008 so and sorry
+this was the shite uh um Muslims I guess
+the rebels that were uh listening on
+these signals seeing what we were doing
+on over in
+Iraq um so the point of this talk is so
+we can build better security identify
+the issues and uh um and and resolve
+them more early on before we before we
+deploy
+them so if you're looking at a um a
+radio broadcast frequency like a like a
+home surveillance system one option for
+attacker is to jam that system so if you
+have a hack RF like I have here and
+that's let's say that's at 2.4 GHz you
+can actually broadcast a stronger signal
+and um override that frequency so nobody
+sees anything uh another option is to
+replay that signal so if you record a uh
+kind of a blank signal or something
+where the um
+where that nothing is happening on the
+on the security system you can actually
+just record that info and then broadcast
+it back so if your signal is strong
+enough then it'll appear that nothing is
+happening uh over that surveillance
+system beyond that you can listen and
+receive so basically if you're sitting
+there with hack RF or any sort of
+software defined radio hack RF is just
+one of them hack but hack is the one I
+own so that's why I'm mentioning this
+talk uh you can listen and um receive
+the signal and then um from there you
+can just decode the information and try
+to identify what's going on uh beyond
+that once you've listened and received
+you can actually just transmit the
+signal um so you can broadcast your own
+signal telling uh the receiver whatever
+you
+want so we'll go into some demos here uh
+at first I kind of looked around my
+house and and were there's just radio
+frequencies everywhere there's radio
+radio control devices everywhere and one
+of the things that I found was I have uh
+a couple fans that are uh controlled by
+remote that you can set the fan speed
+and turn the light on and off so I was
+like okay that's a that's a good Target
+it's uh definitely something that's kind
+of um connected to my house and kind of
+important because you're um you can see
+if it's turned on and off oops sorry the
+uh go ahead and play that demo so here I
+am standing outside my house running
+running a script and my lights turn on
+and then I run the script again and my
+lights turn off and that is pretty cool
+it's pretty scary and I can do it to my
+house but there's only so many you can
+open up the back of this and choose
+between like eight frequencies so you
+can affect a wide range of Lights with
+enough power uh it's uh I mean I
+definitely do it in automate my home
+house own house which is cool but um
+it's uh it's also nice um or it's also I
+guess scary to know the if if it's a
+PowerUp signal it can affect the whole
+city or something like that um this
+isn't going to work but you can also
+broadcast your own radio station I
+and
+r
+so that's me tuned into a uh signal that
+was static before I broadcast to it uh I
+recorded it with this mic at like 640
+MHz and broadcast it back at 91.3 really
+not hard but it's pretty cool to just
+replay things at different frequencies
+and see what you can do so from there
+there's other attack scenarios
+that's that's kind of nifty tricks it's
+it's uh it's fun to do uh but there's
+other other tax scenarios like in an
+office environment so um I was kind of
+looking around thinking about what's
+actually something that we care about
+for security and I have a wireless
+keyboard here so I decided to look at
+that and here's the a picture of the
+wireless keyboard that I have nobody
+else has the same
+one
+so so what I did was I looked at the
+fcci ID and found out that it was at 27
+MHz and then I listened at 27 MHz and um
+was able to find the exact frequency it
+was broadcasting at so here's a video of
+me listing at 27 MHz and you can see
+I'll play it here you can see me my my
+keystrokes and my mouse movement my key
+strokes on the right and my mouse
+movements on the left and I was able to
+find the exact frequency that my
+keyboard was broadcasting
+at so from there I was able to uh do
+replay attacks on my
+keyboard um we'll go ahead and get to a
+demo of that and actually I can hop out
+here all right so here I'm es into this
+uh Linux box which is controlling the
+demos um let's do add user
+first so I so I'm telling this hack RF
+to run my run the script that I that I
+wrote here and I'll I'll go ahead and
+execute
+it so this is
+uh bypassing UAC and adding a user and
+these computers are completely
+disconnected and now it's adding it to
+group all right that was replay so this
+was playing to this receiver I probably
+could have put closer but it worked um
+and so yeah that was just replaying
+right now from this uh hacker F to this
+wireless keyboard receiver which is fled
+into USB here so it was telling that
+what keys were pressed in replying it at
+added sorry I'm trying to find where
+Ates and we can see that it actually
+added the user
+here user I just
+added we go ahead and delete that since
+you're on the same network I am and you
+beyond that I can also another attack
+that I recorded was a netcat um attack
+so instead of adding a user I'll
+actually um try to execute a net cat
+shell so starting net cat listener on
+Port
+31337 and we're listening so um if I
+connected this I didn't want to look up
+look up the IP address I didn't have
+enough time to prepare but this is ready
+to go I can just have a remote shell um
+yeah I think I will be short on time if
+I actually look up my IP address right
+now though so I'll go ahead and move on
+beyond
+that all right so those are two keyboard
+replay attacks and um those are I those
+are really cool I enjoyed
+them but beyond that there there's
+additional attack so I wanted to know
+which keys were being pressed I I can
+record something that press but I
+actually wanted to know if somebody else
+owns the keyboard like in an office
+environment which keys are being pressed
+so I um went to decode the signal and I
+I started off with something like this
+it's just kind of some gibberish up
+there it's just some radio noise
+basically and was able to identify the
+type of modulation that was using so
+once I demodulated the signal I had I
+had a better signal to work with and um
+from there I was just a noisy signal so
+I applied some additional filtering and
+was able to end up with a clean signal
+that's actually Miller encoded signal um
+each of those uh Peaks mean something
+different and that's um kind of what I
+ended up with there and this is the gnu
+radio graph that I built to get to that
+point so once I built that that compiles
+into Python and I was able to modify
+that python to actually decode that into
+ones and zeros into into bits and and um
+tell which keys were pressed so we'll go
+ahead and do a demo of that um so again
+I'll connect to
+my I'm on this computer now just since I
+can't play two screens at once and run
+strip Big Chill um all right
+so uh we are listening this this
+keyboard's completely disconnected it's
+it's talking to that computer but I'll
+go ahead I have it on this table here
+and I if I type uh should
+typing all right so on this wireless
+type
+the th this computer can tell what's
+being typed by this wireless keyboard
+and these are I know they're close
+together but they're completely
+disconnected so both computers know it's
+thanks find where
+right okay so that was it for the demos
+I uh um so I've shown you how to hack
+lights hack computers and hack cars and
+hack FM radio and also hopefully shown
+you some uh reasons to um be aware of
+radio
+security and hopefully this gives you
+some things to think about around your
+house and helps you kind of think about
+you

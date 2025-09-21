@@ -1,0 +1,546 @@
+into doing one threat Intel in the last
+50 years I always read a lot of blogs
+saying
+Oh threat actor if you don't I can
+ignore it that's you know once you get
+that level it doesn't matter unless
+you're law enforcement man that's a bit
+of it so we'll see
+so I graduate from the EBA and 2011 go
+Hawks
+I've been a network security engineer
+for our vest since then most on building
+the sim doing perimeter defenses stuff
+like that a lot of computers really
+start diving into maturing our threat
+Intel program to beat that sim as well
+as be distributed decisions around our
+environment so we're talking about a few
+things to kind of lay the stage for why
+this isn't that hard of it thing to do
+so what is the threat landscape look
+like today how can you do it internally
+and how do we build these profiles and
+then how do we get more efficient at
+building them because from experience
+you started it crashes the interns and
+it's real power and you find better ways
+to do so the current state of Intel is
+has a lot of in some people say here a
+lot of fun in the news but these are
+actually some numbers that were pulled
+together by a resurgence people say that
+you know Cecil say they get too much
+data there people can't do anything with
+it they need a hire a certified person
+that only does threat Intel we all know
+that's kind of BS the stuff that they
+get they don't really turn that into any
+family which kind of sits in a database
+although we get all these feeds we don't
+really do anything with them but if you
+don't do anything with them nothing you
+can't find the trend you can't find
+patterns I can't figure out who's really
+trying to attack you so and then some of
+these numbers that at the bottom that
+really kind of drove home for me trying
+to build our song and stuff like that is
+socks aren't using data they're just
+kind of flying blind
+from their Intel so this is kind of the
+model of using Intel that I like to turn
+that I got taught to me that I like to
+try and reach back out
+there's pro long run and fly fly is
+nobody ever actually gets there it's
+perfect all you're really worried about
+is budgets and dude than cheaper
+crawling is kind of where a lot of
+people actually are that from the
+numbers that we saw before you're
+pulling in maybe a thumb feed through
+yeah you're sitting that your sim maybe
+you're putting in your firewall but you
+haven't I'm the false positives and you
+don't know why and you don't know what
+any of it actually is you get to walking
+and you can search start small kind of
+build your way up you can't you know
+quality over quantity people say oh I
+got all these speeds I've got tons of
+feeds from all over the place button to
+start scrutinizing and looking for
+positive rent shows three out the ones
+that are noisy and aren't actually doing
+anything and it could be that there may
+be just six months behind that some of
+these bad IDs are still got a piece but
+maybe they're doing malware this today
+maybe tomorrow they're doing mission
+maybe the next thing they're doing her
+iPod so we don't really know you have
+until you start tracking them over time
+you need to really prioritize your Intel
+needs a financial company versus a
+higher education is totally different
+education or totally different Intel
+needs we're going to have different
+questions you need to answer to your
+upper management most kind of where
+we're starting at now I'm really working
+on
+Doniak into the business asking our CFO
+hey what what do you look at you up what
+can we do to help and then the big part
+and a lot of people will say that how
+you really grow they're starting to
+share that data with other people that's
+where you get in told that you have
+stupid data it is if you give it to
+someone else and they try to stick in
+their sim they don't watch got tons of
+positives
+and then really moving beyond ILCs
+Iowa seas are great but if you can start
+contributing those to maybe a family of
+malware or something that a hosting
+provider of a factor that all he does is
+buy infrastructure and sell it back now
+to the bad guys you're making progress
+in identifying trends and then lastly
+you should be pumping that Intel of what
+you find out beyond the IOC to provide
+context back to your stock so that they
+are finding more than blind this is what
+they call a pyramid of paint as you make
+your way up things get harder
+well there's one missing and that's
+actually actors and that's kind of for
+reason everybody always said these were
+hard to do everybody said unless you're
+law enforcement you don't need to go
+after bad people you don't need to know
+who's actually at a community but the
+actual importance is context for your
+handles you can track the changes in
+behavior you don't have to actually have
+their actual name to be able to
+attribute it to a person you see the
+same person attacking you over and over
+and over again and you see the same
+thing over and over again you could
+probably say it might be attributed in
+the same person that at least you can
+label that you know the profile label it
+and provide to your song so that the
+next time the next time they see that
+they're not even blocking something for
+the hell of it they're not chasing the
+tail looking for something they are
+actually chasing the person it kind of
+gives them more Drive and I've actually
+seen that in our own analysts as we've
+built some of these profiles for
+different things they have more Drive to
+hunt down this person maybe we can see
+if it changed you can see trends and
+what they're doing we can also see if
+they've changed behavior maybe we have a
+hosting provider that is selling
+infrastructure to an exploit it but
+tomorrow leads and now selling machines
+B is for a c2 for ransomware that's a
+fairly significant change and you might
+you would see that in your environment
+that's totally different way so unless
+you actually track and know
+this person and how they're actually
+doing what they do then you have no way
+until you get someone with ransomware or
+you see get up beat with C tooling you
+don't know anything about them you don't
+know what they came from this is not a
+way to be proactive we always talk about
+when we're talking about building our
+Intel which is up in management we're
+trying get that half step on the
+attacker see how we might find out the
+day of that these people use the c2 but
+if we can find out six months earlier
+that they bought this infrastructure and
+they've been sitting on it that's a lot
+it's a lot better after attribution is
+not hard if you start I'll see some work
+to after yeah it's probably going to be
+hard you start the other way around and
+you look at what they might be trying to
+do what and building TTP's and stuff you
+can then find the IOC based on that and
+that it's a lot easier but it's also
+capable to start with the i/o seasons
+whoa this is kind of one of the graphs
+that I haven't tried to divide people
+are kind of breakdown of how actor
+profile really isn't that hard
+you have your top couple and that kind
+of gets you there your decision mostly
+it doesn't financially driven unless
+your government or a bigger company and
+dealing with nation state most of us are
+most of us zero that the financially
+motivated problem we're guys that are
+just trying to make a buck the next part
+is their capability there's all
+different levels but rules are these and
+when domain how they buy their domains
+we're they getting them from what type
+of malware are they using all I found is
+different stuff and then you have the
+evidence that they left behind one
+that's here's your beats I think you're
+getting some your IOC taking how to
+paint that big picture but then on your
+side how can we how what opportunity
+giving them are you giving them the
+opportunity to enact that ransomware on
+your machines so lining your
+capabilities to your opportunities helps
+you go to their upper management oh hey
+we have these risk because these actors
+are doing able to do these things and
+until you can play this out for your
+executives they're not gonna listen them
+and they're going to
+whatever but MSNBC puts out on the
+Saturday morning news so how can they be
+you the lie about a song that's one of
+the big things is really driving some of
+the new models of sock building I socks
+really utilize the Intel and everything
+they do this is kind of one of the
+graphs that I've found that helps
+explain that the best you have your
+Intel feeds coming in that kind of fun
+funnels in you that way you can get your
+quality of your means based on like a
+blocking but you also have based on you
+have your own analyst hunting for things
+you have your Intel team hunting for
+things as well that's Intel as well you
+you know get attacked every single day
+their livestock show we have modern
+hunting net that's a great sources of
+Intel Singh who's scanning your firewall
+on a daily basis are a huge tripping
+your signatures on your IDs that's Intel
+you should be pumping that back in your
+own system with context of saying what
+you saw
+so the next time you see it it might be
+different or it might be the same in
+that way you can start that tracking of
+that person may be probably the same
+person doing things over and over again
+or maybe a couple different IPS that
+doing the same thing on a pattern that
+you can now say hey this is it reveal
+all this to one person the other side
+the that graph is you know you take that
+home store of the data building those
+trends and patterns and then you're able
+to predict where they might go we
+predict ahead all the time more onboard
+of whatever you think the tax might be
+coming in the future and this some of
+this type of stuff kind of helps you
+give some that data so now that we know
+maybe we should track actors what do we
+do now who's one of the things we are
+actually one of the perfuse cases for
+buildings was a social media case
+someone posting some fraudulent type
+stuff about our company online on social
+media we wanted to build a profile from
+a Boston who said okay one bill okay
+let's do it so
+we thought that it could be big as we
+started talking through and thinking of
+all the things we could build profiles
+more based on all the Intel we receive
+that's not IOC poor it really started
+painting and we decided to build a buek
+core metrics phishing scam target your
+brand a lot of the times we've seen by
+tracking the same person and building
+additional sites where are accompanying
+it's we can tell them that that's the
+same person doing it over and over again
+whether they change their who is whether
+they change whether they're hosting it
+how they're doing it how they're sending
+it up Internet the holidays a lot of us
+and saying hey that's the same person
+and they want us to get it taken down
+quicker quicker in each time then you
+gotta attack targeted attacks against
+your environment it's the stuff that is
+not normal the normal day-to-day stuff
+and maybe a targeted phishing scam a BDC
+scam as we saw in the open-source Intel
+social earlier some of that stuff that
+might say hey we need to start tracking
+this a little bit deeper and then just
+industry observe trend so being whatever
+industry you're in they're seeing next
+attacks all the time maybe we should
+start tracking some of these actors and
+building and try to get ahead of these
+things where they may make their money
+and then physical trends we all have our
+locations that we operate out of
+invisible threats in those locations not
+weren't an actual threat I have to
+profile makes it easier if you do be the
+handsome hope to law enforcement you can
+and have a little paper that you say
+this is what we know about the person
+already this is what they've done to our
+company and here's what we think might
+be
+probably build one this is kind of what
+I was the first time I went to Milton
+one you had to sit down with word and
+start typing in information what should
+I do if they're doing a little research
+we already had a pretty tall client at
+the time so it was kind of familiar with
+the term of sticks and taxi sixes
+understand you're coming more of a
+standard at war threat Intel and I found
+a few poor metrics that they really
+wanted to capture about a person it
+really helped me figure out what I
+should be gathering you got the title
+meant to really be anything it doesn't
+have to be the person who's really named
+I've seen companies new the herpe model
+you need just picked every new attacker
+you go down the letters outfit pick a
+name that allows you to at least be able
+to call them something and then tribute
+ability something you can do many
+aliases that you find for the person if
+you're dealing with someone that you
+find on the dark web or social media
+layout all are different identities
+maybe email addresses for ICU or
+different things like that
+what type of attack tomorrow they are
+they have to read through your company
+or they find where a guy are they a
+ransomware guy what what made you start
+tracking them and then it gets into the
+motivation their sophistication and the
+confidence and then where you diner in
+itself so that way people going back
+lieutenant notes where you got your net
+something maybe they can make it better
+in the future so let's build our inertia
+profile first few that we did we did it
+learn to compare to those PDFs Lonnie
+shooting of those executives some people
+who might need to be doing things with
+them
+we kept our SharePoint site and then we
+kind of kept the dependents with all the
+additional details that our team would
+like but maybe the exactly that's really
+didn't need and help and then we briefed
+our demo site management any time we
+built into these so that way our
+engineering group maybe our seeso knew
+what couple attacks and what type of
+got hard after a few nobody knew where
+they were
+nobody knew to remember which from act
+Rhodes did what you can't search amongst
+them very easily kind of open them up
+and agreed on then it's difficult share
+with others uh you can't unless they
+have accidents in action or points I'd
+already told sites are pretty locked
+down to our team so it's kind of hard to
+difficult the share but this is not a
+then I'm not a advocate for the 500 but
+here's one of the pockets will be used
+we had a five I was like well let's
+start store these in there it's built
+around snicks most of the current ones
+out there even the open source ones are
+built around steps and taxes so you can
+build them there so that kind of gave us
+a place where more people have rights to
+get in we can send them out a lot easier
+and it just going to give that central
+repository and you can search and you
+can actually in tribute your il sees
+that you're seeing to those actors or
+those TTP's that you are tracking about
+the actor a lot lot later than it'll
+work on it also allowed us to be
+consistent you can build templates in
+these or how you're filling out
+information about the actors that way
+the new analyst comes on they don't know
+how to write one you can capture the
+same information every single time and
+that has really helped us a lot the loop
+as our team's grown more and more people
+involved here's another part of the
+consistency asks the same questions
+beyond your stare opens the open text
+field asks a lot of questions every
+single time so that allows it allows for
+that consistency
+I was alluded to earlier it also allows
+you to correlate it with your other data
+you can call your beads come in and you
+can say well these beads we know along
+to this guy these ideas these domains
+these email addresses all belong to the
+sky we can attribute that to him any
+signatures we've written to block him we
+can add those in there and attribute we
+can attribute any TTP's that we know
+about this person directly here now if
+we see new people starting to do the
+same thing
+maybe they were working together maybe
+they're competing maybe it's just
+another demonstrator and maybe this
+guy's changing into somebody else
+it also makes it very easy to share
+those these problems are built for
+sharing you can usually let them connect
+to you over two sticks and taxi and grab
+that information as well it also makes
+it easy to export internally and gets an
+executive very quickly it also allows
+you to drive listen to other people
+those are here's a recap you know thirty
+until is not Eagle on spring well today
+most people think about threatened just
+those ICS they receive they don't really
+know beyond that what to do with it
+you know think a little bit deeper out
+of the box maybe how we can start
+grouping these and start using these a
+little bit better we can also make our
+software smarter and not harder you know
+the line we can give them the tools to
+hunt and make them one to go after
+people if you give them an actual person
+to tap it though after versus my feet
+they're more likely to find more data
+for you and then just keeping them on P
+also you know as you grow your
+environment please continue to share it
+helps our whole community as we share
+and see things Donna how many times that
+seed but in the in the news someone
+stand up don't know that's not what
+happened this is what happened and
+that's this is how we all get better and
+I appreciate time any questions
+[Applause]
+okay a question for you you said you've
+used a couple of thread tracking systems
+at work can you go over some of those
+that used and have you had a gin is
+there any good of open-source tracking
+systems out there that yeah so so we use
+that there's someone out there that's
+open source that we had started with
+ultra that was the pretty one that was
+kind of sponsored to have it on the
+whole six and taxied movement we moved
+into with some troubles that we moved
+into a paid model and moved into
+actually at the threat stream platform
+but there's a free one that they have
+sponsored once soldier died there's
+those stacks which the guys who support
+all of this as well then also ones like
+Yeti commitment that myth myth yep as
+for tracking specifically malware
+related is a miss that's great
+trying to get some of that and all being
+moved into other tools is apart but
+there's some of those multi knows one
+for specifically around people on those
+in grabbing helps a lot but but
+threatening total platform like Yeti is
+I got a woo I got a question it's not
+really for you it's for everybody else
+in the room because I'm just kind of
+curious what other organizations that
+they're trying to do threaten actor
+attribution like outside of law
+enforcement and you know government
+folks who is who is actually trying to
+categorize threat actors as individuals
+as a part of their soccer security
+operations and it's going to like look
+at the and see you else is doing this so
+I'm kind of curious does this mesh with
+what everybody else is seeing their
+environments like how how is it
+different than what you're what you're
+so the problem that we see is when one
+person is using paid service and
+everyone's not that's where information
+sharing dies and so we've paid we used
+to pay for earth there with anomaly but
+the thing that we strive to is to use
+open source is that's the easiest way
+how we build in our model it actually
+sits we have a perimeter miss and we
+have an internal Miss we've just met
+maybe we can share keys my UUID we can
+start sharing information on my
+perimeter miss I can validate where
+you're getting your information from
+at the same time if you could be good
+Intel you could bring it into my in
+terminus so our interim internal Miss
+has capability of automatically talking
+to the IPS IDs they can build signatures
+we can fully automated all a lot of that
+stuff and that's the big problem
+everyone that has these like platforms
+that store all this information you got
+to do something with it it's not
+actionable it's terrible I mean I like
+like hey you want 10 gigs of data let me
+send that over to your instance and then
+you keep it and then I'll just delete
+mine and I like think man get that ADA
+back from you but I lost mine yeah it's
+almost like if you really wanted to
+store all your mp3s just like right into
+some like codecs and just ship it into
+somebody else's like for the
+intelligence part but so where where I
+see this is like I really would hope
+everyone would start using this where
+we're really trying to push a lot of big
+players if you're is the insert it in
+sharing information come talk to me we
+do a lot of that with other third party
+it's government's whoever we're just
+trying to get everyone to one platform
+it's open source and we're all working
+together ansible whatever you want to
+use docker bare metal machines
+Google black worm Amazon we're trying to

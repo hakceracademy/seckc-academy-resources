@@ -1,0 +1,442 @@
+thank
+you all right I'm going to try to eat
+the
+microphone okay so um I'm MADD mcfatty
+by the
+way hi um I'm going to give you a little
+talk about cubes OS who here raise your
+hand if you've heard of Cubes OS if you
+know what it is you told me about it
+cool um keep your hand up if you if
+youve used it or tried it okay and if
+you use it as your main go-to computer
+at home all right it's kind of what I
+thought those who've used it or try it
+or use it at home you can go get a beer
+cuz this is really high overview um but
+if you've never heard of it or never
+used it uh I think you'll get a lot out
+of it so um this the story of cubes and
+my my love affair with Cube started um
+when I realized that if someone wants to
+own you they're going to I don't know
+why I put that quote in in quotation
+marks cuz I said it but it makes it seem
+more legit um last year I was on an
+engagement and I was trying to get a
+reverse shell I kept uploading a metpo
+payload and Antivirus kept shooting me
+down and I said I I can't get this I got
+remote code but I can't get the shell
+and Alex said well just write your own
+shell duh and so I whipped up a shell in
+Python uploaded it I got a reverse shell
+antivirus couldn't catch it and I was
+like wow that's really easy like hackers
+have and I'm not even that good if like
+if I can do it someone else can do it to
+me and couple that with the fact have
+you guys heard of the 25% rule with
+fishing like the fishing companies that
+that send out fishing emails no matter
+how how much training they give it the
+percentage never drops below 25% meaning
+a quarter of the time someone somewhere
+is going to fall for a fishing attack so
+you couple those two things together and
+and the bottom line is if someone
+directly targets you you're going to get
+owned so last year I was traveling and I
+realized I did everything with one
+machine I was watching Netflix I was
+doing client engagements I was uh like
+putting all my vacation photos on there
+and it scared the heck out of me I
+realized all my eggs were in one basket
+so I realized that segmentation is is
+kind of the best way to protect my my
+separate interest because hackers are
+after your data right they they don't
+care about your computer well they kind
+of care about your computer but they're
+after what's on your
+computer so
+um how how do you get segmentation how
+do you separate the stuff one way is
+sandboxing um sandboxing doesn't really
+work well though because it shares a
+monolithic kernel so if you pop the
+kernel all your sandboxes are at risk so
+they get all your
+goodies um why not just run a bunch of
+VMS like through VMware or virtual box
+problem with that is virtual box is
+designed with ease of use in mind not
+with security in mind have you ever
+plugged in a USB thumb drive to a
+virtual box that says hey do you want to
+use that on your client sure here you go
+have you ever they they share hard
+drivve share files they share a network
+adapter so it's not really built with
+security in mind um also uh there was a
+recent talk at derbycon about uh it's
+called Houdini
+hypervisor and they showed uh guest
+guest OS is stealing the clipboard from
+the host OS so all that to say the
+clipboard is not secure the the drives
+aren't secure it's not built with
+security in mind I think it can be
+hardened but it's just designed to be
+easy um and one option is having two
+separate machines one for your home one
+for your work I think if you're not
+using something like cubes this is a
+good option but since you can't copy
+paste between your home and work
+machines you often end up well I just
+need to log into Gchat real quick from
+my work machine or oh I need that email
+from work I'm going to I'm going to log
+into my work email from home so the
+lines get kind of blurry because you
+can't share information between them so
+what's a nerd to do well cubes OS comes
+to the rescue cubes OS is a security
+focused operating system based on Linux
+and Zen and it provides security through
+compartmentalization so it's it has
+separate VMS for
+everything um it has has everything you
+want in a Harden operating system things
+like uh mandatory full full dis
+encryption um it's got anti-evil made
+protection in the Bios Tor Network
+access through honix and it's designed
+with the idea that a motivated attacker
+will get you if you're being
+targeted and you can see from this quote
+Edward Snowden likes it so he's like
+Public Enemy Number One if someone's
+getting targeted it's him uh best of all
+it was developed by a female Jo
+Rosa is a super smart
+cryptographer so cubes has some
+crit um some Basics like I said
+everything's in segmented in separate
+domains so you see I've got a hypervisor
+that you never really interact with on
+the bottom left here I have my work
+virtual machine that's got things like
+my email um web browsing and then uh
+burp weite for penetration testing then
+separate from that I've got my personal
+VM where I do web browsing listen to
+music play games does anyone play Angry
+Birds anymore is that even a thing I
+just got a picture of a game I don't
+know and then untrusted VMS like like
+for for Content you don't trust but
+cubes takes it one step further let's
+get crazy let's put the network on a
+separate VM and the firewall on a
+separate VM let's put storage on a
+separate VM so you know maybe W to cry
+or or some sort of storage attack won't
+affect it it'll be trapped in that VM
+and let's put USB on a separate VM so
+things like rubber ducky attacks other
+things like that are trapped in that USB
+VM and then the entire guey is
+controlled by what's called domain zero
+and that's a separate VM which has no
+internet or USB access at all
+controlling the whole thing so you can
+see it's it's not just segmented it's
+hyper
+segmented so let's see how it
+works this is cubes that you're looking
+at right now we're going to start with
+um
+this cubes VM manager think of this as
+like your task manager and windows on
+the left here you see all the different
+domain uh virtual machines that I have
+and there's a lot of them there's a
+whole heck of a lot of them um in the
+this little icon here shows whether or
+not it's started it's got a template
+which I'll explain in a little bit CPU
+usage memory and hard dis
+size
+um domain zero is kind of what you're
+looking at now it controls the entire
+guoy like the start menu here um
+different desktops all all this stuff is
+controlled through domain zero and it's
+kind of annoying but you cannot install
+any software really into domain zero so
+it besides little customizations it is
+how it is which is kind of frustrating
+um templates are these VMS I've got a
+few templates down here I've got honix
+Fedora and I guess oh deian and instead
+of it would be annoying to install up
+updates on nine different Fedora VMS so
+what happens is when you boot any one of
+these VMS it takes a copy of your Fedora
+template and uses that so you you can
+update in one place or install software
+in one place and have it have it use the
+template um you'll notice all the
+different colors so they call this
+window decoration for security um the
+different colors represent my different
+domains so I know if I'm typing in
+facebook.com it sure better be in a
+yellow bordered window because that's my
+personal window um same with my work
+domain that's a blue window so if I type
+in any work rated stuff it goes into a
+blue window it helps me keep my domains
+separate but it's also controlled by
+domain zero and no one VM has control
+over the entire screen so you can't you
+can't mess with the
+colors
+[Music]
+um so we've got disposable VMS as well
+which are kind of handy these are
+ephemeral VMS that disappear uh when
+you're done with them when you click it
+it has the boot up so it takes a little
+while longer um and you see it's
+starting up here so this is a web
+browser and a disposable VM and when I'm
+done with it I can exit out of it and
+you'll see that VM will disappear so
+anything that was written to the hard
+drive any exploits that happen
+um is that how much time is gone left
+left I have 19 minutes left W okay
+I thought I only had 20 minutes I was
+like trying to burn through
+this okay I'm I'm going to slow down
+then um we've got uh Hardware VMS as
+well no my mistake my
+bad I can't ma is my time up
+oh you guys are messing with me um so
+Hardware VMS are more like a traditional
+VM um I've got things like Windows untu
+and Cali Linux on on Hardware here and
+this is what really sold me on it it's
+got what's called seamless uh goey mode
+with windows so I can run Microsoft Word
+in a Windows VM and it's working
+seamlessly with my cubes goey so I can
+copy paste to it I can I can move files
+to it and it it's almost like like part
+of Cubes it it makes it a lot easier if
+you're if you have stuff you have to do
+in
+Windows um USB VM is where all of my USB
+devices go when I plug them in if if I
+need to use a USB device on another VM I
+have to assign it manually so I have to
+say Okay this memory card can can go to
+my personal VM or this webcam can go to
+my work
+VM um Network VMS are these guys here
+I've got a couple the default network is
+cynet here which um between that and me
+is the firewall VM right here and then
+you can do other VMS uh I've got a set
+casc VPN VM right here for the
+network and um honix is a is a tour
+based uh VM that that communicates over
+the tour
+Network and lastly my Vault this is a VM
+that has no network or USB access at all
+and uh you ask like why would you do
+something like that that's kind of silly
+but that's where I keep my keypass file
+so it it doesn't have any access to the
+outside world really but you
+can yep and so that's a good question
+she asked if I could still copy and
+paste and yes you can um cubes to um for
+your day-to-day usage uh for copy and
+pasting and whatnot let's say I want to
+copy from my my work my personal VM into
+my work VM if I contrl C and contrl V
+over there it's separate machine so
+they're not going to share a clipboard
+so what I have to do in my personal i
+contrl c and then I control shift C to
+move that up into domain zero and then
+over here on my work I control shift V
+and then contrl v um down from domain
+zero so it's two extra keystrokes but
+again it's a secured um clipboard so
+it's not it's not all nimbly bimbly like
+these other VMS and anyone can have the
+clipboard it's very specific about who
+gets the
+clipboard um and if you want to copy
+files which is probably your next
+question um it's got kind of a file file
+manager um like a right click cont
+context menu you right click say copy to
+another app VM so this is my personal
+I'm going to copy over to
+work and then in my work VM I've got
+they call it a cubes incoming folder
+right
+here and then from personal that file
+came over and so again you have to be
+really specific about it but it it's
+because it's secure you have to say this
+file is going to my work VM from my
+personal
+VM um this posable VMS come in handy as
+well let's say I get an email from an
+untrusted Source I got this email that
+says I've been selected for one month
+free
+pharmacy um well I don't trust this
+email at all it's got an attachment that
+says not mare. PDF I don't trust that so
+I've got it set up to always open and
+disposable VMS for my email attachments
+so oh there's a Spam message any
+shenanigans that would be going on with
+this message um since it's in a disposal
+able VM When I close out of that that
+disposable VM disappears so even if
+someone has some PDF oday on me they get
+it for about 20 seconds and then it's
+gone well let's say you need to edit a
+file I've got a bill bill sent me an
+email and he asked me to update my bio
+on a on an Excel spreadsheet well bill
+is my arch nemesis and I don't trust
+anything that this guy sends me so I'm
+going to download
+this and save it to downloads there but
+I don't want to open it cuz he he says
+to enabled macros in Excel that's really
+shady I think he's up to some
+Shenanigans
+so I'm going to take this file and I'm
+going to say open in a disposable
+VM so what that does if Bill's got any
+tricks up his sleeve this is now going
+to open up in his disposable VM so if
+he's got some oday macro virus or
+something on me um it's not it's it's
+going to be separate from my work I can
+edit
+[Music]
+it and it's going to save the file to my
+disposable VM and then copy it back over
+to my work VM so you see the the date
+the time stamp has changed but it's
+never actually been opened on my work VM
+and just to show you the changes are
+saved so bills bills file never ran in
+my work
+VM
+um okay let's get real crazy in the time
+I have left um you can do some really
+cool stuff with the network so um all of
+my VMS by default use the default
+firewall here um but let's say you want
+to um use set casc VPN for example I'm
+going to right click go to my network VM
+say use set
+casc
+then I
+so I think SE KC is coming out of
+Switzerland or something Sweden I don't
+know their VPN coming out of somewhere
+weird but that's a different IP than uh
+the kahal IP that we're on right here um
+and uh honix is is a similar Network VM
+but that communicates over the tour
+Network so similarly on my hoix
+VM um the reason it's separate instead
+of just having the Tour Browser Bundle
+together
+is so that if if anyone runs like a tour
+browser oday that you know tries to get
+your actual IP address this is a
+separate VM it doesn't have IP address
+except for the local IP um so that's
+kind of a way to protect you against
+decloaking
+attacks but you can see that I've got my
+set case cvpn right here I've got tour
+over here and I've got uh my normal
+Network right here so I've got three
+different IPS I'm rocking from three
+different network VMS so it's really
+easy to customize and if I wanted to go
+back like oh I don't I'm done using set
+casc VPN I can just set it back and it's
+it's back to normal um so you can do a
+lot of cool
+stuff but it's not all
+roses um there are some problem well not
+problems there are some difficulties
+with cubes plugging in USB devices like
+I said it's kind of a pain um video
+calls are a huge pain well not a huge
+pain but I have to attach my my sound to
+my personal VM then say Okay webcam you
+can use my personal VM now I can be on a
+video call um I cannot share my desktop
+at all because no one VM has control
+over the entire desktop so screen
+sharing is out um it's picky about
+Hardware because it needs a lot of
+virtualization uh stuff enabled and it's
+a resource hog this this laptop has 24
+gigs of RAM because you you guys saw how
+many VMS I have I have like 20 something
+VMS but I think it's okay for some stuff
+to be hard an analogy I like to use is
+carrying groceries into your house like
+you got your hands full you got all
+these bags but oh you got a fish in your
+pocket and get the key out and ah you
+got to unlock the door you drop the
+oranges they're rolling around well
+wouldn't it be userfriendly if there
+were no door on your house you could
+just walk in and walk out as easy as you
+want well everyone sees how foolish that
+would be but I think a lot of our
+operating systems are built that way
+they're built without doors because they
+want them to be easy to use so even
+though it's slightly harder to use cubes
+I think the the the payoff is worth it I
+think it's high time we start putting
+much I um I don't know if I have time
+for questions but I'm going to get
+behind the stuu wall if you guys want to
+come up and ask me any questions do I
+have time for
+questions three minutes three minutes
+for questions any questions from anyone
+can run crisis the question is can run
+crisis I'm not sure what that is sorry
+gameer can you uh can you run it on a
+Chromebook um the question is wellit I
+don't have to repeat it cuz you are on a
+mic um I don't know for sure I know it
+cannot run on Mac hardware so I doubt it
+probably none of the resources yeah
+right it needs a lot of
+resources any other questions

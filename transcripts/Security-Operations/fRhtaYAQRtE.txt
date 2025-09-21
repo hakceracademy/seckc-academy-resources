@@ -1,0 +1,395 @@
+he's going to talk about labs and some
+of the common common tools that we're
+defending against so Matt thank you so
+this is a little talk about some of the
+tools that I use and see and labs that I
+create to kind of you know test things
+out so I want to talk about the lab IOC
+indicators are compromised TTP's their
+tactics patterns giving how I get it the
+IOC is where I store them making that
+Intel actionable as well as demonstrate
+some tcp TTP's that I see in detecting
+and preventing news so I work for Cisco
+sorry I'm also a an arch linux user
+about never out dating so I think I'm
+good I brewed beer I like to ski this is
+kind of a picture of the lab I've been
+kind of building Cisco here since the
+early 2000s and then everything else is
+running on this little HP workstation
+it's also play golf before our discus
+good all right so the lab in this lab I
+get an ESX server it's probably hard to
+see but I had an ESX server in this VLAN
+over here with the pfsense firewall I
+got a broad worker I got a win 10 victim
+I get a server 2012 throw me into term
+another Swedish of offloading system and
+then I get an external callback server
+out in the cloud and there's a Cali
+system somewhere in there so I have seas
+are are attributes that are that are
+known to be malicious like an IP domain
+or a file hatch email address whatever
+attack TTP is to tactics techniques and
+procedures
+these are the things that attackers used
+to kind of get data out you know get in
+and then patterns are things like
+signatures like snore bro scratchy Rav
+so this is how I kind of get these IOC
+so I got a bunch of honey pots out in
+the cloud and they collect malware
+samples that send in to it's really
+terrible diagram sorry but I got a
+cuckoo box down here on the right so
+that all gets sent into that which
+detonates that malware and sends it to
+miss server which then distributes
+that's why I cease to to Pro DNS and
+firewalls
+so has anyone heard of Miss Mis Mis B so
+it was developed by NATO and it's just a
+database where you can store indicators
+and you can enrich them tag them
+basically create a story about what they
+are and you can also distribute them out
+see different tools like snort or
+sericata or bro RPC you know see
+firewalls etc so you can make this into
+actionable it's it's all about you can
+interact with API with curl or Python
+and you can enrich the data you can
+automate a lot of things so yeah like I
+was saying you can you can export your
+automation so they automatically formats
+whatever you put in there and tag and
+mark for for circuit like Pro format or
+give a long tradition here that's that
+Casey if it's your first time speaking
+you get a shot
+[Applause]
+so you can set this up with the taxi
+flat files you can export JSON and you
+can do a lot with it so check it out if
+[Music]
+okay so to make one one way to make this
+into action bullseye export it to pros
+is anyone using pro whoa yeah bro is
+awesome bro is it is really sweet if you
+want to hunt for things or just have a
+lot of traffic and there's just so many
+things you can do to extend it so one
+way is to is to enable the intelligence
+framework so it basically pulls all
+these these ILCs down an ax and a format
+that broke and read and it kind of grabs
+against the traffic so if there's a
+malicious domain you want to match on or
+get alerted on or a hash or whatever as
+long as it's in clear text akin though
+it can block that traffic and alert you
+so you probably can't see it but that's
+what it looks like so like this first
+one is a query to a fab domain the
+second one is a HTTP header to an the
+URL or a domain so that this one's 443
+traffic so you can see that domain in
+the SSL header another way to make this
+stuff actually bones to use our PC so
+you can automatically adjust these
+indicators from from malware that gets
+detonated there's domains when it calls
+back to auto populate that
+your name servers and blocking and these
+are some of the other exports you can do
+routes you can you can just grab all
+hashes you can export it in a sticks
+bro snorts or a CSV file you got a dupe
+or whatever you can throw in there and
+match on that so some some of the TTP's
+that I didn't do any of this stuff stuff
+fly so I make gifts about that activity
+because if you know someone once told me
+that live demos always fail so you used
+to have to go grab all this stuff off
+like no work or hacker forums and it's
+kind of reverse yeah
+the code yourself because people would
+put mistakes in it so you'd have to you
+that you know kind of run it and see how
+it works and really understand how to
+code but these days you just get on
+YouTube and learn about Kali or Cobalts
+drag a corner typed or whatever you can
+buy those things too so they're that are
+really easy so the turbid air is is one
+of the things that we see on a daily
+basis so it's it's kind of like an
+interactive shell or you can you know if
+someone were to execute this on their
+system you could get in and run commands
+you can open a shell you could you know
+do file transfers etc cobol strike is
+another really awesome tool it's kind of
+like a GUI for Metasploit you can grab
+the trial out on these groups and stuff
+if you want like a non limited trial
+whatever to give the more advanced
+things like evasions and if coding and
+stuff you have to pay for it and I
+haven't checked to see if that's
+available or using it but there's all
+these different profiles you can you can
+use to cut up mask your traffic and you
+know change beacon again and just avoid
+being detected so typically you instead
+of a listener like the system mount
+MacLeod gets somebody to run some power
+show
+connect back to that kind of pivot
+through it or you can use a DNS tunnel
+so DNS tunneling is a really awesome way
+to get to get past your your corporate
+proxy or a hotel or on an airplane or
+whatever so it's kind of you'd have a
+server out of out on the internet that's
+listening for your packets your DNS
+packets and then you just talk with a
+certain program and it will decode a
+base64 or its encoded traffic so here I
+have this team server on the cloud
+running COBOL strike and I set up a
+listener on it I got these neighbor
+these NS records set up so I got an NS
+record for you know my domain and then I
+thought they they yeah so the NS record
+answers anything for my domain so when I
+when I send my queries over through DNS
+I'm really long and encoded and that
+actually contains the basics before a
+good traffic so to run a team sir we
+just need Java Linux box and run that
+run the system the password and then you
+connect to it and you can you can run
+that listener and then you can clone a
+website and when someone clicks on it
+opens a full of excuse and PowerShell in
+and then you'll be on their system you
+can also do things like VPN pivoting
+browser pivoting like with beef or
+something and you can now you can write
+scripts to automate a lot of the manual
+tasks now there's another tool that we
+see a lot it's PowerShell Empire so it's
+just like I said before it's really easy
+to use these there's tons of YouTube
+videos on how to use it you don't have
+to know anything really so maybe a
+little bit of Linux so it's similar
+Metasploit it's all menu-driven and you
+can go in you can run all kinds of tools
+you get there's there's one module you
+can run with recorder they'll tell you
+everything everything that's below on
+the system they can just run whatever to
+escalate or ten minute or so another
+another tool that that's pretty cool
+it's called bloodhound and what it does
+is finds the it finds trust
+relationships in Active Directory so you
+can kind of give it around PS exact or
+something and get to where you want to
+go and there's there's a there's another
+enhancement to that called angry puppy
+which is just a script that automates
+all that for you so you just basically
+click a button and it'll spider through
+vulnerable hosts in but not so detection
+I have indicators behavior signatures
+and offloading the indicators are what
+we I was talking about before so like a
+payload like a hash or mine type so
+rolling so frameworks great for this if
+you have you can even extract file off
+the wire if we have SSO under set it
+makes things a lot easier but that's
+really tough to do these days you can
+automate lookups with fires total
+scripts Python or run them through RL so
+but this is kind of like : all those
+tools I mentioned before I ran them
+through all these these other detection
+systems so emerging threat I enabled all
+emerging threats open holes and put
+those tools that I ran earlier had only
+detected these two as two hits and
+they're just like suspicious data quad
+you know an ET policy exe your elf
+downloaded
+I run a custom brave script a forum
+interpreter it picked up every every
+shell that I ran except for us to sell
+both the PowerShell entire of Australia
+used beacons to check-in that with their
+server there pretty much their master so
+colossal strength is 60 seconds by the
+Koala empires 5 seconds so you can use
+things like entropy and frequency
+analysis to to kind of detect those as
+well as you know energy third probe you
+got so using a tool called Vita for this
+so I get it leads the Black Hills
+InfoSec guys ready so well actually this
+is for us this is a script so basically
+the little detect deacons but it'll also
+detect things like you know Network
+feather bug or things like that so if
+all right so Rita and so taking a bunch
+of prologues off loading them running
+through you can see just standard
+deviations and kind of the anomalies
+within that traffic it also did with
+like I said if you have emerging threats
+Pro that's it's really easy but it costs
+a lot you can detect you know things
+like default SSL Certificates but
+they're just really easy to change
+there's another brace cribs alerts on a
+high number of sub domains of your
+Indiana's call and it's making it again
+are they long streams as it's query it's
+another great script so you want any of
+this stuff just let me know so this is
+kind of what DNS tunneling traffic looks
+like from from start to finish or you
+know start to follow that has pictures
+that just keep them longer and then
+here's some so to detect by removing
+some of this amusing you know just
+windows laws or prologues even that you
+can use a pen ID 5140 IPC
+you can see PS it's a name PI stuff and
+pro you see OpenVPN in the comma but you
+have to do what's what's normal what's
+not so you have to have some type of
+baseline to determine what's good in
+these bad let's give these so for
+windows logs these are some of the event
+IDs that we look for a daily basis
+things like about log cleared or
+you know I can't add it to some
+privilege group or lockout it's failed
+audience first Microsoft system on is
+another tool that's really awesome if
+you want to see what's going on with the
+house so it basically turns out host
+into a sensor this is one of the
+examples that I came up with this as a
+kind of tactic so curve arresting is
+where you would create a service account
+or if there's service counter domain and
+you can kind of graph there grab their
+hash like you looked with off crack or
+something and then decrease and kind of
+deep deep hurt their uh their password
+but you can detect this stuff with
+Windows letters so you look for a
+specific event ID 4769 and it's it's
+using rc4 encryption and yes a ticket
+options so contains these attributes and
+you can match all these things out than
+your have something to investigate so i
+created a service account of the path
+with a password pass one two three
+cracked in ten seconds and i made one
+with a really really long password it
+would have taken you know trillions of
+years to crack the farmer keep you so
+the mitigation here is to it's a sacred
+service account passwords really really
+long where he's perhaps or something at
+25 characters or more you can use
+managed service accounts in Active
+Directory
+he's group and service accounts claps
+and changed her Marcy for 280 us if you
+can
+yeah so more prevention so use use ET
+pro LinkedIn inline and blocking use
+egress filtering right so if to prevent
+DNS tunneling if your proxy is the only
+thing that can get out on 53 nothing
+else can you can really do UNESCO so
+only let the things out that you have to
+really piss off your users block domain
+controllers from the internet use the
+proxy for everything ICMP out because at
+the edge because you can tunnel out that
+as well and then harden assistance with
+with things like this or you know some
+type of hardening guidelines really try
+to lock it down by motto if it's like
+only let a user do what they're supposed
+inspect SSL if you can where you can if
+you're using proxies put an IDs if
+you're terminating us and so on a proxy
+put IDs in the middle between the lip
+services and you can see all that
+traffic go in mind with your IPS and
+then I didn't test yourself really
+really see if you can get caught like I
+did this at work all the time I would
+SSH over for 53 out RDP over 4 for 3 I
+would see if the you know guys could see
+me I opened median out DNS tunnel ICMP
+tonal and then if they ever said
+anything I'd just say I'm just doing
+research
+so even with a fully patched Windows
+tank it still 4bb cats and ways to to
+get what I wanted but if you raise your
+domain functional level to 2012 or
+better you get protected groups and you
+have all your domain and request a mess
+of that group and then he tried to run
+me me cats again stone they just look at
+that field that shows the password of
+the hash would just be empty can also
+disable in-memory passwords of the
+registry so after doing that stuff it's
+really really difficult to uh to uh you
+know it's just an extra layer of
+security it is turn on power side
+logging and use system on modify your
+policy to learn another collect that
+stuff so you can ingest that it doesn't
+at least have it for an investigator and
+then if you you know build your own lab
+so all these things are free so the ESX
+a free kvn or fox dr baker packard
+there's even this detection lab this guy
+chrislam created where you can run one
+commandment of download all these
+systems want and system on it and uh
+left everything's all set up for you so
+it's like one command it takes like
+three hours to spin it up and once you
+have it and you can do whatever you want
+check out it could be sandbox if you
+have it I don't know probably got some
+reverse engineers are out here but uh
+it's only one your career you kind of
+get tired of doing that you want to just
+click a button so that's where on that
+Windows has some free eval pins that you
+can grab a even have a free development
+environment with Windows 10 business to
+do and it's it's like 10-feet
+so yeah I guess that's all I got really
+so moral of story is to really test
+yourself and test your environment and
+you know collect what you can to make it
+actionable
+[Applause]

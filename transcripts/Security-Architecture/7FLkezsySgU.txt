@@ -1,0 +1,348 @@
+yeah so let's like my home to that the
+only guy that I don't have to tell him
+how to hold the microphone brian is
+going to talk about scripto this evening
+so let's give them a hand and learn
+about stealing server-side singers
+through client-side crypto it's going to
+be good stuff hello hey so first thing
+it's not just me that runs the sound
+here you know we've got a whole team
+guys who do that stuff down so applause
+for them please cuz these guys have to
+step back all right so how you guys
+doing tonight everybody good awesome you
+ready for some acts tough yeah all right
+cool okay so tonight I'm going to talk
+about as joe said stealing server-side
+secrets through client ID crypto yes i
+realize i just read that off the screen
+you're gonna have to deal with some of
+that tonight but let's get started so
+first thing client-side crypto might
+sound like a good idea yeah there you go
+so the exception ease you know you hear
+about all this stuff is happening at
+browser plugins a blah blah blah okay if
+you're trying to keep secrets from the
+server it might be okay but in most
+cases if you're trying to end encryption
+on the client side you're doing a really
+bad thing don't do it um there you go
+the reason I'm giving the talk tonight
+it may seem like really obvious that
+you're going to do this that you
+shouldn't do this stuff but um
+developers keep doing it so I'm here to
+say stop a little bit about me you most
+of you know who I am but I bring apps
+for a living
+then teach people how to fix them and a
+little bit of networks to but that's
+what we're doing so the stuff that I'm
+going to talk about in this presentation
+are real examples of assessments i did i
+did this year so you're looking at real
+examples of things that happen in the
+financial industry that you guys don't
+ever get to know about because we do the
+assessments tell them how to fix them
+and we protect your asses so that's what
+we're doing so the first example dotnet
+thick client application when we're
+doing these assessments we typically put
+a man-in-the-middle proxy in between
+them in this case there's a thick client
+pretty easy to see everything that's
+going back and forth but if you look at
+the response there this is a soap
+request a typical soap request but it
+includes some data in there that's
+labeled dns name and there's a bunch of
+goblin w train eyes will be able to
+recognize that as base64 encoding and
+then if you try to decode and you just
+see a bunch of garbage when i see this
+what I think is well the data is
+encrypted it sent to the client in order
+for it to be useful to the client the
+client has to decrypt it right in
+otherwise it's just passing some
+information along and why did you bother
+putting it into the first place so next
+step net so we live a mile spy and start
+looking through the code tearing it
+apart um something I found interesting
+here is about TC decrypt string triple
+days oh that's encouraging yeah they
+just don't use it okay cool so you know
+if you anybody knows anything about
+crypto you might have seen a few things
+in there that use purple does Heidi know
+Mac yeah so your translation errors for
+us Krypto people there's a glitch in the
+matrix don't really worry about the rest
+um so that's bad stuff but who really
+cares when they give you the key right
+there see ya
+in order to decrypt that traffic the
+client has to has the power of this
+information or invest have been sent to
+the client at some point so the takeaway
+here is that any time you're doing
+client-side crypto decline all the data
+can be extracted from the client okay so
+when the developments put this together
+you can see they turn to do some crazy
+stuff they put a couple of bites in
+there did some transforms and they just
+didn't think we can figure out you know
+this whole programming thing because
+that's really complicated so I could
+have extracted the cryptic oh you know
+we use Python a lot for scripting some
+of this stuff bring stuff in but that
+would have been taking that would have
+taken too long like half an hour or
+something so instead I decided to use
+research download mono figure out how to
+make it work and compile the whole thing
+source as I thought that'd be faster no
+not really because it'd be faster
+because I want to learn how to do it was
+cool so as you can see there there's
+some quaint slides to be a player but if
+you want to build a library if you're in
+a linux machine or a Mac machine for
+instance you can you can do that so yeah
+in the middle of a project cool did
+something new so um at that point I said
+well I got a cool working stack let's
+load up the library calls and see what
+happens okay dump the cipher text in
+there and literally just made some calls
+to their library and we ended up with
+what the hell is that not yet determined
+so yeah that didn't work so well but it
+turns out later on it to another request
+and when it turns out that the encrypted
+data was actually the back-end service
+that was being requested by the web
+service so you've got a web service
+that's making back end calls further
+behind it and now I can control what
+server those requests are being made to
+so in my case you know encrypt whatever
+I want get those requesting overland
+yeah so finding yeah great
+but you know not really that exciting
+you can change whether requests go learn
+to information about it so the
+recommendation in this case was to use a
+hash of the server name send it over the
+client so there's not actually an
+encrypted going on in the client side
+it's just a lookup date value that can't
+be scooped on the back end side say just
+look it up and see what this the other
+part was or just don't send it the
+client if there's no reason why the
+client ever needs to change one of the
+web service is calling you don't ever
+need to do that so don't do that but in
+the end no implying crypto needed and in
+most cases if you are developer or you
+know developers who are talking about
+building encroaching to a client tell
+them no that's basically what comes
+after all right so that one yeah okay
+cool we did some cool stuff but didn't
+really end up with a real good exploit
+at the end of it this one we're looking
+at a sorceress situation but we have a
+Java thing so we're going to go about a
+go about it a little bit different way
+so again we're watching the requests
+that's part of what we do when you watch
+for a new application just get to know
+how it works see what kind of traffic is
+being sent back and forth when you do
+things like authentication and sessions
+and all that kind of stuff you spend a
+lot of time just getting to know the
+process that takes place to make that
+all happen so in this case we saw this
+making this request says oh blah blah
+blah give me this file it returns back
+and encrypted password at a username but
+if you look a little bit closer you see
+the URL there anybody get into something
+what what does that say Jill regrets
+nobody sequel so yeah it does anybody
+know the sequel server is raise your
+hand if you know a single server is okay
+what happens it
+an attacker gets into your single server
+for your app yeah okay well okay so this
+app we just talked about this the
+client-side must contain everything you
+need to decrypt the data as being sent
+foot and this app talks with sequel
+server in the background and they're
+sending you an encrypted password what
+does that mean so yeah we covered that
+wait yeah yeah we were serious so the
+next point is what did we do with the
+first step well we're talking about is
+Java app in this case so instead of il
+spy we're going to use JD GUI and dip
+I'll decompile the code because by the
+way you're using that meant or Java your
+app is completely decompile well I guess
+you absolutely every call that it makes
+and by the way change the code and
+recompile and no problems whatsoever so
+after you've done that you have and some
+in this particular base hundreds of
+thousands of files that are the contain
+source code you start having to just a
+through them so you go through one by
+one I use them for this and just kind of
+go through and start looking to see what
+we have so I right across this file it
+says import comp redacted commandant
+security encryption ok that sounds
+interesting we're looking at encrypted
+data we want to see if we can decrypt
+this so you can see load properties from
+DB there's an actual object is
+accentuated there and what you can't see
+the lines is a the actual call that gets
+made to decrypt the data so the other
+cool thing about this particular project
+was the
+it's all the grip tugboat was included
+in one in portable jar fun so I could
+you know yeah look a little closer yup
+there's the key you need that to decrypt
+the data so this is it 17 lines of code
+that I wrote and used well and then a
+pom file to compile the project so that
+it could make those calls and there you
+go java dot dash jar hello and we have
+plain text the password and then we
+launder the sequel sorry yeah so we just
+talk brothers what does that mean game
+over so especially the financial
+services industry if at any point you're
+sending data to the client and I can use
+that information to get directly into
+your sequel server let's ignore all the
+signal AdventureCraft that we found and
+you know all the other issues if i can
+log directly into your sequel server
+it's over period because you are talking
+about commonly a multi-ton multi-tenant
+environment where you've got multiple
+banks sharing the same database and
+you've got all these clients and all
+this data and I'm just you know walk in
+there steal stuff from a bank account
+because I have access to the sequel
+server so in this case the
+recommendation came down to the app was
+trying to implement a common web
+application paradigm where you're
+trusting the fact that a user can't ever
+get access to the backend system so
+you've implemented a application layer
+credential for the database single log
+so your users longing your application
+and they're all segmented and you've got
+authors and curls to make sure that they
+came across the boundaries but in this
+case since I was able to control the fit
+client and that will always be the case
+you can't do that
+can't have a thick client connect
+directly to a single server if you're
+going to use an application-level
+credential so either you need to put the
+single server behind a web service call
+like a middleware tears what people call
+it or you implement the Rex
+authorization or authentication corals
+so you have an account for every single
+user who's using the application
+directly your sequel server again no
+client side crypto needed and the
+takeaway is if your developers are
+saying oh yeah well just secure that
+with some cryptography oh no don't do
+that that's almost always a bad idea so
+the conclusion of this is server-side
+secrets should never ever ever be sent
+to the client because I can extract
+anything I want out of your client okay
+and like I said at the beginning the
+exception to that rule is if you're
+trying to keep secrets from the server
+so for instance if you have a password
+manager and you want to be able to store
+that information in the cloud for some
+reason but it's your private information
+you don't ever want the server to know
+about that information then you would
+implement some type of client side
+control don't do it in a web browser
+they're all kinds of reasons why you
+should but if you need to do that that
+is the only exception to that rule
+otherwise don't do sir client-side
+oh that's going to be the same thing to
+I'm not entirely sure I understand your
+question so if you loo did to sequel
+light client-side encryption and I'm
+wondering and this is all under the same
+attack
+in general the rule is if you're trying
+to protect server-side secrets if you're
+trying to keep data secret from the user
+you don't ever want to send it to the
+client no matter what if you're trying
+to keep a secret from the server you
+encrypt it on the client side that's
+what it comes down to so if you're using
+that sequel server or the SQLite
+database to preserve something that only
+the user should ever know that's maybe
+ok I'll caveat the hell out of that
+because browsers are notoriously bad at
+protecting information so if you're
+implementing in a web infrastructure for
+any reason chances are you're screwed so
+the design is your question ok nem
+anybody else ok so so smart cards I mean
+I've seen them use them but we need to
+use a smart card is it your turn apps
+you take place on the card can you
+actually create an application we're
+actually using something like that is
+that almost worked as a separate device
+so that you can do you know encryption
+decryption that way it depends on the
+implementation is the answer Oh in a lot
+of cases it's totally vulnerable because
+anything that crosses my computer is
+accessible to me because I throw every
+bit of that market and everyone in the
+calls there are very very few exceptions
+where all the processing happens on the
+card itself and you can't get hardware
+hugs into it and get access today so
+your answer is it depends at least that
+makes possible
+possible yes it is possible to do that
+haven't seen an example or anybody else
+I was nice both loud senior staff is not
+exempt

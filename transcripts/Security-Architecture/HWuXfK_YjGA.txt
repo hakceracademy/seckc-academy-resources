@@ -1,0 +1,1762 @@
+i'm jc jones i work for mozilla uh i'm
+part of the security engineering team
+and uh they're working on firefox and uh
+for about a year and a half um through
+2014 and 2015 i actually was one of the
+brought that out
+into the world last december and i got
+asked to not get too close to that uh
+speaker
+sorry i got asked to come talk about uh
+you know pki and policy and
+just before i get too started
+please raise your hand if you understand
+the web pki
+if i say that okay great that's fine
+to be honest i often don't understand
+the bloody web pki it's freaking
+complicated so
+let me just then uh start out by saying
+if you have
+uh clarifying questions please feel free
+to just shout them out
+we don't have to be formal here i do
+have a period at the end for q a and
+some ideas for things you might want to
+like your topics
+um but yeah if you've got clarifying
+questions just feel free to ping and i
+did just tweet the link to the slides if
+you're interested in that sort of thing
+so i'd like to start off with a bit of a
+moment of historic reflection if you
+want to think back back back to 21 years
+ago
+the first version of netscape
+got released with https support so
+anybody who was using the internet at
+the time
+probably through aol
+or your winsock client uh could do
+encrypted communication you didn't have
+to actually be you know involved in
+government stuff and it was all this
+asymmetric cryptography that basically
+nobody knew anything about and you know
+we've been at this for 20 years
+and uh they're just it's not enough
+https on the internet after 20 years we
+if you load a website and it's not
+encrypted
+uh your privacy and your security are
+just not uh maintained you know anybody
+all of you know this that you can just
+go uh it's not that hard to man in the
+middle a tcp connection
+and today
+40 percent of page loads are encrypted
+and honest to god that's pretty much all
+google
+like a giant percentage of that out of
+firefox's telemetry
+is people loading google and facebook
+so the internet is just
+not protecting itself the way it should
+we all love the uh
+what five years ago fire chief made this
+really easy to show your friends that
+you could steal their login cookies for
+facebook and screw with them i don't
+know if anyone would have done that that
+would be terrible but
+i certainly didn't do it to anybody i
+know and
+uh you know unless you actually encrypt
+that connection
+people can go
+steal the data they can go change the
+website
+um you may be familiar with the verizon
+supercookie that they've gotten
+smackdown over you know isps are
+we're all here in the united states
+and uh for the most part people here
+play by the rules but uh
+you may not be aware that a lot of isps
+in
+places like india and china in order to
+lower their prices have taken to
+replacing various websites ads with
+their own
+just right on the wire they just uh
+trade out all the ads on like the new
+york times from american-centric ads to
+whatever the hell they want
+or
+some of the more funny ones are places
+there was one provider a self-provider
+in india who replaced any computer
+vendor's website with some indian
+company that sold computer vendors so if
+you went to dell.com you got some other
+local site that would try to sell you
+this happens especially in developing
+markets a surprising amount
+there's another fun thing that just in
+the recent
+recent news aspect of things to add to
+shogo and alex's list from the beginning
+not only are isps doing this but there's
+two major telecoms the paper just came
+out like three two weeks ago um
+two major telecoms in china uh are
+changing the ship at the network
+switches like in the in the center of
+the network uh they are decrypting some
+sites where they can and then injecting
+changing google uh
+page
+the google uh
+analytics to other sites or they're
+changing
+various ad networks javascript to other
+ad networks javascript
+you know this is just happening if we
+don't actually protect our connections
+so the question of course is goddammit
+ietf why haven't you fixed this yet
+um
+why isn't security the default
+after 20 years since you know we've been
+doing this for 20 years and uh the
+honest truth is that it costs money
+um
+and one of the things that really bugs
+me
+is
+you know it costing money to set up
+security on a website
+is an annoyance here in the united
+states you know it's like
+at best 15 bucks u.s
+um
+there's 750 million websites on the web
+today
+uh i think that number is from like a
+month and a half ago
+that number just keeps going up as the
+developing world comes online we've got
+another billion people coming online in
+the next three years and most of them
+cannot afford 10 u.s to go encrypt their
+website so what are they going to do
+they're going to triple the size of the
+freaking web and they're not going to
+have any security we're going to have an
+even harder time fixing this ship
+so
+it costs money
+user experience is hard i've talked to a
+couple of you tonight who have pointed
+out that you've tried to get starts in
+the past and it's shitty
+why is this so freaking hard we need
+something that's free
+um
+i i remember telling people uh you know
+it's a year and a half ago when we were
+pitching this we need something that's
+free and easy and open so that nobody
+has to worry about this anymore we
+can just
+solve this and get it out of the way and
+start talking about bigger problems
+and uh so that's what we did it's called
+let's encrypt and we launched it three
+months ago
+so
+let's see
+thank you thank you
+uh so let's encrypt is a free
+certificate authority it doesn't matter
+you know whether you have money it
+doesn't matter if you're a
+multi-billionaire or 12 year old on an
+allowance setting up your first website
+because you think computers are cool and
+you don't want to have all this get
+you know screwed up on you
+and really doesn't matter if you're an
+organization or an
+individual that's actually also a major
+problem for a lot of folks developing
+world
+trying to go get a cert off of godaddy
+they try to upsell you really hard into
+getting ones that are organization
+validated and you don't have any
+business what the hell
+what's encrypt is also automated
+everything that you do in verifying that
+you have domain control going on is
+built on a standard protocol that's
+there to try to simplify the whole thing
+into you don't have to think about it
+and that works for certificate renewals
+as well
+okay when i say certificate renewals has
+anyone been bitten in the ass by this
+all right i see some hands
+i'm actually surprised you guys don't
+uh do certs on websites much or
+are you really good at looking at your
+calendars
+like i've gotten bitten by this so many
+times in my life
+calendars
+okay and then uh i don't know if we have
+a whole lot of uh open source and like
+uh eff toting aficionados around here
+here but uh oh excellent excellent uh
+but let's encrypt is also a transparent
+ca and everything we do we make as
+transparent as we have been able to
+figure out how to do
+and
+uh every cert that we issue goes into
+certificate transparency which is like a
+blockchain for certificates
+so you can review everything that we do
+it's not like komodo that hides all this
+as much as we can
+we publish transparency statements
+saying how many national security
+letters we have received uh currently
+that number as published is zero and if
+if we had gotten one i couldn't tell you
+but i can tell you right now that we
+haven't gotten one
+uh we're unlikely to get one because
+we're so transparent they'll go to you
+know someone else i imagine
+you know
+the whole certificate authority
+ecosystem
+uh personally i think it lacks the
+sunshine
+that
+i like to see in things that i'm told i
+have to trust
+things on my computer and you know when
+you get down to it uh
+your your browser has 2 000 certificate
+authorities in it that you that it has a
+trust in
+and
+how many of them are out there actually
+telling you what they do every day
+you know kind of makes me sad
+uh and then for all of you open source
+aficionados everything that we do is
+open source
+the software that
+runs the certificate authority itself
+it's a piece of code called boulder
+written in golang that's entirely open
+source it's actually really freaking uh
+stable i'm quite impressed with it
+uh so all of the service outages you
+might have heard of for let's see crypt
+none
+uh even through all this yeah golang is
+pretty good stuff
+the
+the clients the official client uh at
+lutsengrip.org uh it's written in python
+is also open source this presentation is
+open source uh it's on github feel free
+to fork it
+i probably won't get to your pull
+requests during the presentation
+and then let's grip is also a
+cooperative ca we could not do this
+on our own
+two years ago some of my colleagues
+at mozilla uh met with some folks at
+akamai and cisco and the electronic
+criteria foundation
+there was a lot of drinks
+there was a fair amount of angry ranting
+and
+the argument oh here comes the uh the
+shot huh that's right
+that's what i'm doing tonight
+i'm sorry i'm late i had to work it was
+terrible still terrible but i'm here
+and sunset kc is better than no set kc
+and audiences are better than no
+audiences i've got to give a
+presentation for two hours
+over the phone with no slides i'm going
+to be sitting by myself talking to
+nobody in a conference room soon it's
+going to be awful
+but of course audiences aren't going to
+be here without speakers either and all
+of our speakers of course this is your
+first time you've got to take a shot so
+to our wonderful audience please give
+our speaker a big hand while he takes a
+shot
+well done i was tall i was tall good
+luck
+what's going on now
+now you get to finish your talk oh
+all right
+um
+yeah so uh yeah the first four of those
+we were the founding companies and it's
+just a you know a handful of folks at
+each one of those that all got together
+and said we want to do this thing
+how can we put this thing together the
+internet needs it
+um
+the the guy that was the editor for the
+tls specification eric ruskorla told me
+back in december he joined mozilla to do
+let's encrypt and uh to give you an idea
+he's been in mozilla for six years so
+this is not a short-term project it's
+taken a an awful lot of time like the
+company that the not-for-profit
+that runs let's encrypt um the internet
+security research group i know a lot of
+the press coverage has said that uh this
+is all a respon in response to edward
+snowden's revelations that we
+all these companies got together to set
+this thing up
+but it's actually not true the uh we
+found a founding date for the
+not-for-profit isrg is back before
+snowden because it just takes this long
+to set this sort of thing up
+we had a whole lot of challenges to get
+in all
+well not in the web browsers but to get
+across signatures so that we'd be
+publicly trusted and you know
+get all the money this stuff takes money
+it's all our own i don't know if you're
+aware but none of this is cloud stuff we
+have to actually rack
+buy stuff rack and stack it and put it
+in data centers it's good stuff
+so
+um
+all of these companies have uh joined us
+by the way uh
+which
+if you can measure the success of an
+open project by how many folks you get
+collaborating together on it
+uh i think we're doing okay
+my favorite is that we have like mozilla
+makes it kind of hard to uh
+i i think the web browsers like it
+so
+making let's encrypt function
+you know with all this uh simplicity and
+uh that we wanted so that this could all
+just be automated away and we could get
+back to securing
+the more interesting problems of the
+internet
+needed a
+um
+needed a new language to describe how to
+set up servers set up secure servers
+um
+you know
+honestly most of us are protocol
+engineers so we immediately say we
+should have a protocol to do this
+and that's of course what we did
+we came up
+with acme
+we actually had a whole host of names
+that were looney tunes based
+for all this stuff
+all that stuck was boulder the name of
+the ca software but we had we had a
+whole lot of them
+but uh acme automated certificate
+management environment the whole point
+of this is if you've got a website you
+know it does
+it's the normal example.com
+you have in order to be allowed to
+issue a certificate for that website the
+main thing you have to do is prove that
+whoever's getting that cert really
+controls the website that's
+that's the crux of what cas have to do
+and traditionally if you go to
+whatever your certificate authority is
+today
+uh that's typically done by sending you
+an email after you fill out all the
+weird incantations and web forms and you
+click through me no i don't actually
+want the insurance why do i want that
+no i don't need web hosting
+but the crux of it the thing that you
+actually have to do is verify ownership
+of the domain
+so
+we being protocol folks said okay let's
+come up with a series of challenges
+that we can automate entirely because
+email
+as
+anyone who's tried to set up automate uh
+like scripted email has probably stabbed
+themselves in the face at least once
+um there are better things
+so we've got
+three things you can do they all work
+pretty easily you either set up dns or
+you set up a web
+like a file on your web server or you
+just configure the web server itself
+there can be more ways we can do this
+uh we've talked about more we're open to
+more
+uh there are things other than tls
+servers that can be secured though right
+that's what the focus has been on and
+all of this appears in this upcoming
+standard
+uh called acme
+so acme has been taken to the internet
+engineering task force and has a working
+group
+it's also a topic of great conversation
+which is
+if you're not familiar all the
+certificate authorities and the browsers
+have this thing called the see a browser
+forum where they get together and
+work out based policy for what is
+allowed to happen on the web pki what
+does it mean to revoke a certificate
+when do you have to do it what is the
+minimum that you have to do to make sure
+that either a normal certificate is
+issued to the right people or a extended
+validation certificate is issued to the
+right people all of the rigmarole that
+is
+associated with
+with setting these things up is decided
+at a policy level at the
+ca browser for me
+um
+but yeah so there's a there's an uh
+specification out on the internet right
+now it says it expires in a month
+we've got it'll terribly an update but
+uh
+it's out there at uh ietf and it's being
+implemented by the first group is let's
+encrypt
+oh whose dns do we trust
+so that's a loaded question because why
+even with
+i could go on for a long time about dns
+set but um
+so the way all of this does come down to
+dns and you know to an extent their
+registrars and
+their population of
+group domains
+but the way let's encrypt handles
+validation is we go do the complete
+recursive algorithm
+starting from the root for every domain
+and then you know start it dot com and
+then go to
+the authoritative domain or the
+authoritative
+name servers
+that are listed for the uh the
+registered domain and query those and
+follow whatever path so we do not go to
+google dns we do not go to
+opendns as much as we like those folks
+um
+it's
+this is both uh kind of a security thing
+because it's better
+to uh go all the way to the source and
+it's a lot harder to
+man in the middle
+all dns records coming out of our data
+centers if you don't know where they're
+necessarily going
+like speed and efficiency for our
+clients because often people screw up
+and have dns records that point to the
+wrong place
+and if we went to google dns for example
+we'd have to wait on them to expire in
+their cache when we do it directly we
+can rehearse ourselves and
+handle things a little bit more smoothly
+and then the third is the least obvious
+one and it's that
+even google dns strips weird things out
+of dns sometimes particularly things
+like the caa records that we like which
+are certificate authority authorization
+records that you can put into dns
+you can look up the spec it's a cool way
+to say for this website only the ca
+should ever issue for it it's like the
+ultimate white list if you need to
+protect the bank or something this is
+going to be a mandatory standard for
+this
+the ca browser
+community
+probably uh sometime in 2016 and i'm
+told
+and let's encrypt already supports it
+and a number of other cas also already
+check it so you know if you run a bank's
+website dns or something you should
+totally go set a caa record it will ex
+dramatically reduce your
+getting uh fake getting illegitimate
+certificates
+for your site
+does that answer your dns question
+yeah okay we can talk about dns sect
+okay cool
+uh so
+the whole point of the standard is so
+that we can do automated validation
+um what the ca browser form says you
+have to do to issue a search is validate
+that the owner actually controls the
+domain domain control
+so automated validation
+has the additional benefit that you can
+go
+build a completely automated validation
+means you can go build tools into your
+process whatever it is you happen to be
+doing in your ops group or in your
+security group you can just go automate
+this stuff because
+no one should ever have to copy paste a
+csr ever again in their lives
+just
+never don't do it don't tell them it's
+terrible
+and uh it also lets you do uh
+other cool things down the line like i
+really look forward to acme
+some version of it just appearing in all
+the web servers and all of the load
+balancers and everything that i buy that
+i need to do tls on like i just want
+this stuff to work
+i don't want to have to configure this
+anymore maybe set something in my uh
+dhcp config and they all just magically
+get certs
+that would be awesome
+so
+uh
+it kind of takes i lost my uh my segway
+here but anyway it takes me to uh
+platform integration things not only can
+you
+you uh simplify i think this deployment
+within your own
+sites but
+um out on the wild internet a bunch of
+web hosts are starting to pick up acme
+that list is very
+uh abbreviated dreamhouse document and
+wordpress are probably the biggest ones
+along with shopify in terms of the
+number of domains that they've got out
+there but
+uh the list of folks who keep contacting
+us and saying we want to do free certs
+like instantaneous when customer signs
+up just keeps growing the interest is
+getting really really big and
+there are even hardware devices uh i
+have a synology nas at my house i don't
+know if any of you heard of them the
+next version of that of their main
+software supports let's encrypt out of
+the box so when you plug it into your
+house and set up the nas thing it'll
+just get assert
+that kind of stuff is just
+it's just awesome
+and
+the standard
+acme protocol means that you don't have
+to use our software
+in fact
+a lot of folks have found that our
+software may not be good for their use
+case it's one piece of software written
+for the maximum number of people
+possible
+and it's not super flexible
+there's a bunch of them uh there's
+actually one written in pure bash
+bash and curl
+that's it
+it's incredible like i didn't know you
+could do this stuff in bash like it does
+json web keys
+that's awesome um and i maintain a list
+i'd be happy to tweet it
+afterward we can talk about all of the
+weird clients some people are actually
+making lists of like top 10 let's
+encrypt clients it's pretty cool
+um
+down the line i expect there to one day
+be a mod
+mod acne for apache just like
+apt-get installed mod acme and
+have it automatically handle encrypting
+everything for your uh
+you know whatever domains you turn that
+on for i've got a student as part of the
+mozilla winter of security right now
+producing a patch for nginx that does
+the same thing
+pretty sure that patch will not land in
+the main engine x source tree because
+those guys uh are very peculiar about
+what goes into nginx but it's you know a
+proof of concept that this sort of thing
+can happen
+uh i've got a last bullet there a web
+server server that you've probably never
+heard of
+cadi server that's written by a college
+student in utah it's actually super
+super fast it's written in go lag it
+does http 2 out of the box
+it's like super nice and stable
+it has a very uh
+because acme
+is available for anyone to do whatever
+they want to with it they have this uh
+they landed let's support in
+december into the main caddy server
+and the guy who uh beyond author
+made this video and posted it on youtube
+without talking out so he just did this
+all on his own showing off how
+caddy sets up a what's encrypting uh
+protected website
+it's uh it's pretty short it's 29
+seconds so let's uh
+go turn that off real quick
+so
+did that start nope
+there we go so he's going to go
+download caddy well he's already
+downloaded caddy and then he starts
+writing a config file for a
+website mat.life which we already just
+saw then he launches caddyserver it says
+activating privacy features
+and then he goes opens up chrome types
+in the website and it's done let's
+encrypt
+27 second long demo of which four
+seconds we're getting the server
+there was no prior setup
+it did the whole thing in that four
+this whole website that this whole web
+server just handles it for you you don't
+have to deal with this at all it
+handles the renewals it handles ocsp
+stapling it sets it all up correctly
+like this is the future
+you should never have to worry about
+so let's encrypt in the wild
+uh well
+this is the graph of unexpired
+certificates currently active from let's
+encrypt and uh
+we
+launched we had the general availability
+on december 3rd so it's a little bit
+over 90 days ago let's give certs out
+that are 90 days uh lifespan
+which is much less than you get from
+you know one year from whatever from
+other certificate authorities but the
+point is you're supposed to automate
+this stuff and never worry about it
+again
+um anyway
+the little bump you see there is
+actually some of the first certs roughly
+about seventy thousand certs uh expiring
+that didn't need to be renewed because
+in the beginning people were issuing the
+same circle like five times over and
+over again they probably didn't need
+five copies
+but you know whatever
+uh anyway the line just keeps going
+upward
+and uh
+the
+i was at the ca browser forum uh
+face-to-face a few weeks ago talking
+with other certified with certificate
+authorities i was not there on behalf of
+what's in crypt i was there as part of
+mozilla
+though everybody there knew i worked on
+what's encrypt and that made for an
+interesting
+series of like side conversations from
+other cas but one of the main things
+that people were people there were
+concerned about is okay let's encrypt is
+it going to come through and just eat
+our
+eat our business
+and our argument the entire time so that
+we've been doing this you know four
+years right
+has been that let's encrypt is not there
+to go cannibalize the business of
+certificate authorities you know there's
+two million websites on the public
+internet last year that had
+uh encryption that had publicly trusted
+ssl you know tls
+there's 750 million websites out there
+we need to take those two numbers and
+make them the same right or as
+get as many uh websites encrypted that
+as we can and the hypothesis that we've
+had is that people would use let's
+encrypt to encrypt things
+encrypted websites that have never had a
+cert before
+books that are businesses primarily that
+have you know a certificate from another
+ca
+they're probably happy with that they've
+already got a process in place they like
+the insurance that comes along with it
+they want to ev cert they need it to be
+for two years or three years well that's
+fine
+uh our like i said our hypothesis has
+been
+we would be widening the market rather
+than eating people's lunch
+and it turns out uh from our data
+that's true i did a bunch of analytics
+from census io and certificate
+transparency and tweeted this graph of
+back in uh
+19th of february and it like blew up but
+the gist here is that over 90 percent of
+all websites encrypted with what's
+encrypted you've never had a cert before
+it's actually 93.9 and that number
+actually is going up not down
+so that makes me super super happy
+uh as you can see there that's
+uh
+a large number of domains
+uh something
+a lot of people keep asking me also it's
+just one of those questions that's uh
+fun to ask like
+okay you've been at this for three
+months how big is let's encrypt
+and uh
+yeah uh we issued our millionth cert
+so that's one million certificates
+covering 2.4 million fully qualified
+unique domain names
+um and of course there can be many fqdns
+underneath a given
+registered domain so that's one million
+certs for
+1.1 million registered domains
+registered domain meaning something that
+you would go to a domain registrar a uh
+officially speaking an etld plus the
+first label
+so
+and right now as you see there we
+at 1.1 million search this is a little
+out of date we are the fourth largest
+certificate authority in the world
+uh on the public web most of these
+certificate authorities actually issue a
+bunch of certs that don't get logged on
+the public web because they are going to
+companies internal
+infrastructures and you know that's not
+our that's not what we play in but in
+terms of stuff on the web
+that you can see
+so this is only the beginning
+right now the goal is to get every
+website using https
+and this is a big goal
+one that all the browsers are also
+interested in because
+ultimately there's there's very little
+we can do to protect users
+of the web
+when
+uh the contents of their connections can
+be
+made in the middle of the change
+javascript can be inserted people can
+change
+even like the old-fashioned uh
+well
+my login page
+may be served over http but the forum
+posts over https
+which is you know
+i guess it's a start but then we just go
+edit that page on the wire and change
+the form to post the password somewhere
+else
+and then you know redirect it back to
+the https website you know this is not
+good we got to get the whole web
+encrypted otherwise we can't protect
+people
+and uh
+then we need to go get the rest of the
+web you know people are actually already
+using let's encrypt
+for uh
+email servers for chat servers teamspeak
+mumble
+it works fine for all these things even
+though we didn't actually attend the
+search that way
+there are even some clients out and
+whatever we intended they're asserts use
+them
+go protect yourselves go protect your
+users
+and eventually you know
+the internet security research group has
+this super wide encompassing name
+um
+that's deliberate let's encrypt is one
+thing
+we're going to get this right and we're
+going to go do more we've got the whole
+internet to protect
+so
+we wanted to give you know the big
+message to the world
+uh the first webs the first circle we
+issued was for
+helloworld.whatsandcrypt.org
+it was really really cool to go and have
+that say uh hey verified by what's
+encrypt
+so
+this is the uh the part of the talk
+where i get to pop over to questions and
+answers
+and uh yeah please
+i don't know how you like to do q a here
+should we like queue people up or just
+okay so with free comes abuse how do you
+how are you going to maintain your
+reputation going forward okay so the
+question was with free comes of use and
+how do we maintain our reputation
+so here's the thing
+certificate authorities are in a shitty
+shitty position to try to police the web
+the design of the web pki
+is
+that you
+at some time t equals zero you validate
+that the person talking to you control
+the domain that they're requesting a
+certificate for
+and that's it you make this point in
+time observation that's a perfectly fine
+website
+and this person has control
+and then
+the certificate authority's job
+whether you really believe this or not
+is effectively done because even if you
+ask certificate authorities if the
+person starts doing bad things let's
+just say it's
+at time t equals zero this was fine but
+the website gets hacked and then it's
+used for malware it's used for phishing
+the certificate authority
+can go revoke the certificate and nobody
+cares
+no web browser checks
+replications because it's too effing's
+slow
+the only place where revocations get
+checked is extended validation
+certificates and even there
+even there webgraph all web browsers in
+the event that they can't check
+revocation they soft uh they sought to
+succeed right because you don't want to
+give your users a bad browsing
+experience with like oh i'm sorry you we
+couldn't get this revocation status of
+this host
+we're gonna not let you reach gmail
+uh ocsp is like a terror
+i don't know if anyone in here works or
+works on ocsp if so you know you can
+come kick my ass later ocsp is like a uh
+it's a very difficult protocol to get
+right
+and crl are terrible
+the revocation on the pki the public web
+pki
+is basically broken
+so the ability for for cas to react
+effectively to bad actors
+is extremely limited
+what we actually do in firefox
+is we have
+for
+sufficiently high
+profile websites we have a
+block list called one crl that firefox
+downloads every hour that has hashes of
+sites that are bad
+that is how we block known malware
+transmitting sites and firefox and
+chrome has basically the same thing
+theirs is a site shield or no uh
+shoot
+safe browsing yeah google safe browsing
+and firefox pulls some safe browsing
+stuff and ieee edge has a similar sort
+of thing and the browsers have these
+mechanisms that move quickly
+like they take
+uh at most one hour to update
+certificate authorities just don't have
+that ability we made this
+well like it or not
+that cert is good for 90 days or it's
+good for three years and since
+revocation doesn't work as much as we
+try
+the cas are basically powerless to do
+anything of value on malware
+so
+there are systems
+as i said i think personally that those
+are the right place to take care of
+malware and misuse of certificates and
+not at the very very slow
+uh certificate authority site
+site
+follow-on question
+no okay
+uh
+okay so the question was which browsers
+are using let's encrypt as a ca
+so
+all browsers pretty much um the way that
+works is
+becoming a certificate authority is hard
+it takes a lot of time and it takes a
+lot of money
+to set one up and a lot of time aspect
+of it is actually
+because most browsers have a what's
+called a root program that you have to
+go
+through various steps to get them to
+trust you as a certificate authority you
+have to go through some audits uh there
+are peer
+point and time ones and periodic
+recurring ones you have to get all this
+paperwork you have to do buy all this
+equipment that meets all the other
+requirements and so forth
+and after you spend all that money
+and wait you know do 12 or 16 months
+worth of work then you can enter the
+two-year queue
+to try to get into your first web
+browser
+so uh knowing all of this what we did
+with let's encrypt was in that
+background between 2013
+and
+the public announcement and yet actually
+between 2011 and the public announcement
+in 2014 is we secured a cross signature
+from one of the
+original
+sponsor companies
+a certificate authority called
+identrust i don't trust you know
+believes in our mission and they are
+already trusted but in
+all major browsers like the only obvious
+place where they're not trusted is like
+game consoles like playstation uh three
+and
+so
+most things that people use to get on
+the web
+they are already in there
+and they
+signed let's encrypt certificates
+so and since the way public key
+infrastructures work is the trust flows
+down from the root
+uh today when you use a let's encrypt
+site you go and go there in your browser
+whatever it happens to be whether it's
+safari or whatever
+the website
+presents a let's encrypt search which is
+issued by let's crypt which is issued in
+this case by identrust
+let's encrypt
+and i then trust itself up here is
+publicly trusted
+let's encrypt is doing all the work to
+get into the web browsers we've applied
+to all the major route programs and a
+bunch of the smaller ones like the java
+program and
+the oracle java program and you know a
+bunch of others
+like seven programs i don't remember
+them all i think there's a blog post
+about this
+and uh
+the average wait time for this sort of
+thing is about two years so the cross
+signature from ident trust lasts
+way longer than we need it and they're
+willing to stand by us until we're able
+to have trust all on our own and then we
+just swap things out
+bonus side again with the whole acme is
+totally automated
+when
+the search chains for let's encrypt are
+ready to change because we're now
+trusted everywhere
+you don't have to do anything the pro
+assuming you like use the protocol
+correctly used a well implemented client
+all this stuff just fixes itself you
+won't have to ever deal with taking your
+you know binary pem files and
+concatenating them together into the
+right order
+and then launching the programs and
+having it say sorry i couldn't find the
+key i put him in the wrong order
+all that stuff
+so do we have any support is queue
+question one and is there any project to
+integrate with active directory
+certificate services right
+as okay so starting with is there
+support
+uh
+not the way you might think of it we
+have a community website that's run you
+know
+a discus uh forum at
+community.lessoncrypt.org where it's
+like help each other on support issues
+and then we also for for bugs and the
+official client or bugs in the server we
+have uh github you can open issues and
+we're working on all that stuff
+we work with people every day
+in terms of like do you have a phone
+number you can call it 3 3am and say oh
+god oh god my cert expired and i don't
+know what to do
+no we don't we don't have anything like
+that um
+we
+believe we can automate this so much
+that you shouldn't need that sort of
+thing in the future go ahead with your
+follow on and then i'll get to the
+integration
+thank you
+okay so
+then do we have integration support uh
+with things like active directory i
+guess
+uh not that i know of
+this is kind of a fun one because
+um i last year i was part of what's
+encrypts ops team i was like the
+founding principal on that though i'm
+not in there anymore so if you want to
+hack my laptop and try to get the lesson
+qrik you won't be able to all
+permissions have gone
+and i saw
+right from the get-go that we had a site
+running somebody in redmond was building
+some sort of integration for let's
+encrypt
+and was working on that for three months
+i could just see all the requests coming
+in from a
+microsoft uh ip address and they had
+various user agents that implied that
+they were working on
+um
+integrations there but nothing has been
+announced there are a couple
+uh
+there's like an integration for iis that
+somebody put together i don't know how
+good it is
+and there's also like a powershell
+integration that i understand is pretty
+good
+as far as like integrations with active
+directory itself um
+i'm not sure what you
+what what you're thinking of there let's
+encrypt only issues certificates for
+websites
+and
+while you could theoretically you know
+you can get a search for like a router
+or something but there's um
+nothing
+currently that i know of that would do
+that that said
+uh given how powerful powershell is and
+that there's a really good c-sharp
+client for lots of crypt for acme
+already i imagine this is something like
+you just need to go hack on it for a
+weekend you can probably put this
+together so
+okay so getting support for wordpress
+yet yeah so wordpress.com uh rolled out
+let's encrypt last month they issued
+like
+uh a ungodly number of certs in like a
+12-hour period it was pretty cool
+and then there are
+let's encrypt there's like two or three
+let's encrypt plugins for wordpress if
+you have your own
+uh i don't know how easily they work
+because
+uh let's
+wordpress
+doesn't typically have access to
+configure the web server
+but i think they help you along with uh
+like okay here's the copy paste
+uh
+file the drop into the web servers like
+here's the private key or whatever i'm
+not sure exactly how they work there
+on that note there's actually a really
+cool website done by
+somebody else in the community who i
+actually have no idea who he is i've
+never seen his real name but it's like
+get
+ssl free ssl4free.com it's a javascript
+implementation of acme pure javascript
+and it like walks you through
+from
+um
+it runs entirely client-side okay just
+you can like save this javascript to
+your
+desktop and just open this thing offline
+it'll do everything
+what domains do you want to
+get a certificate for and
+then it gives you a
+command to copy paste and run on the
+server that calls openssl to produce the
+correct uh
+private keys and then it says okay now
+copy paste this output that contains the
+csr into this field to hit the next
+button then it gives you another thing
+to copy paste with openssl commands to
+sign stuff it's it's really fascinating
+um
+you have to end up doing that every 90
+days of course so it's not like a
+perfect automation solution but like you
+can do these clients in bash you can do
+them in javascript you can do all kinds
+of sorts of things to fit this into
+whatever your use case might be in the
+meantime until you go and automate the
+i got a couple of other prompts like i
+know a lot about lights and cribs
+operations if you have curio if you're
+curious like how this all that all works
+or how we set the thing up
+uh we posted a blog post some time ago
+about some general things but i can
+answer more more specific questions or
+rehash that if you're interested
+i also know a lot about ca browser forum
+and the internet engineering task course
+and i just got involved in the world
+wide web consortium
+we're losing things this kind of
+visibility when we've gripped everything
+and how we're going to manage the
+traffic to do inspection
+all right that's a loaded question good
+job
+okay so
+talk a little bit about
+hp kp http public key pinning and uh
+browser security and how we do
+inspection in the future
+all right
+okay
+okay so hpkp if you're not familiar is a
+header that you can add into a http
+response that says
+dear browser you have reached my website
+when you come back in the future
+you should expect to receive a public
+key
+somewhere in the chain that matches this
+or this or this or this you can add a
+bunch of these if you do not see
+this public key
+then somebody is fussing with you and
+you should no matter what the rest of
+the the
+certificate chain says you should abort
+and tell the user there's badness
+the idea here is
+in the event that somebody produces a
+man in the middle certificate for a
+website
+when you set up hpkp you tell the
+browser even if you see an otherwise
+good cert if it doesn't have this in it
+it's not good
+and the browsers are supposed to persist
+this for a timeout and you can set that
+to whatever you like
+ssl labs gives you like mega bonus
+points for setting this really high
+which is kind of a dangerous thing to do
+in the event that you change keys
+there's a bunch of different guidance
+about how to do this
+as a note for anybody interested it is
+public key pinning it is not certificate
+pinning so technically you don't have
+when you get a new server you do not
+have to change keys so you can make this
+fairly robust if you want to
+but it has this downside if you are
+interested in observing user traffic
+where if a site pins
+and you have a man in the middle box
+from you know f5 or
+whoever softball whatever you happen to
+have the web user's web browser is going
+to say hey i just got a perfectly valid
+cert that is signed by
+a trusted root certificate authority the
+corporations man in the middle box that
+got installed by the enterprise control
+however it did not come with one of
+these public keys that i was told to pin
+so abort we're done
+tell the user you're being mad in the
+middle and they go freak out
+so this is awesome for users and it's
+not necessarily awesome for those of us
+who might need to inspect connections
+so
+this really affects mobile use cases
+because like the folks that i know who
+do this on like desktops
+who have an enterprise route
+uh just have a policy in place but when
+they are managing the connection the
+first time they strip hpkp headers so
+this never comes up
+but
+all honesty this is a place where the
+security of an enterprise is sort of
+orthogonal to the use the security of
+the individual user
+and i think the right thing to do here
+is to set graphs like in firefox there's
+an about config item to go turn hbkp on
+or off overall and for most people that
+are deploying firefox in an enterprise
+environment you're having to do
+finagling anyway to go and insert a man
+in the middle root ca
+so you might as well just flip that
+graph and just say inside my network the
+man in the middle box or
+the enterprise inspector box sorry
+the enterprise inspection box is
+responsible for making sure that the
+users are secure and connecting the
+right websites we don't need to delegate
+this to the browser so let's just turn
+that off chrome has a setting for this
+too so
+uh i think if you're in a network where
+you control the inboxes that's just what
+you got to do
+and in the bigger big picture
+my opinion here right i'm not speaking
+for mozilla but my opinion is in the
+bigger picture
+while this requires you to do more work
+on an enterprise network
+this is really critical for people who
+are going to coffee shops and connecting
+to the first unprotected wireless
+network who might
+you know uh have
+uh an unknown
+installed uh
+extra route from their anti-virus vendor
+who actually shall remain nameless that
+or any of the other ones that happen to
+be out there and there's real danger you
+know they can go man in the middle of
+their bank connections this is bad i
+i think
+enterprise users
+you know you're out there to take care
+of them we need to do our job to protect
+follow on questions about uh about that
+hbkpp
+enterprise
+so
+if we're going for
+total encryption
+as the end goal here and to protect
+people from unprotected networks or
+questionable environments
+um how would you go about
+it
+stripping out the functionality for the
+public key as you just mentioned
+and
+doing a man in the middle or some type
+of
+protection system like that
+uh
+has there been any work and sending out
+a host-based ids
+of some sort
+for just the browsers themselves
+so you can gather that information from
+the browsers as opposed to sending it
+off network or has there been any talk
+that's interesting i encountered that
+idea about
+eight or nine years ago about putting a
+plug-in and a browser that would be an
+ids
+i haven't actually heard it
+anytime recently and i totally forgot
+about that
+so the question was given the goal of
+https everywhere and just encrypting all
+the network connections
+um
+given that the transport layer is not
+going to be a good place we're not going
+to be the easy place to make sure that
+users browsers are doing the right thing
+and that users are not doing the wrong
+thing
+has the have i given or has there been
+any thought to
+instead of trying to tap the com layer
+tap the application itself to go and
+evaluate risks and such is that the gist
+of it okay so
+basically doing host
+per host or per browser ids type
+functionality
+i i haven't heard about this um
+myself but
+certain antivirus programs like i know
+there's like web defender from kaspersky
+labs that does
+this sort of thing for like i mean not i
+wouldn't judge kaspersky's products
+everybody um
+there are certain project products out
+there that do this thing
+a little bit
+um i don't know of anyone working
+towards this in any big fashion but to
+be completely honest it's the thing that
+comes to mind to me as well that we
+should do
+um
+in the future or even in the present to
+protect these things now uh going
+forward
+i think there's too much of risk in
+mass surveillance dragnet surveillance
+duke to continue to do it on the wire
+but
+we already
+installed antivirus for all of its 50
+success rates
+um
+there's
+uh
+i think it makes a lot more sense to go
+you know in more virtual machines or
+more sandboxes to protect bots protect
+users well there's been an increase in
+threat feeds such as taxi and a lot of
+the other technologies which you have a
+constant incoming fee of known threat
+actors
+and
+allowing a browser to take part in that
+and at least
+tell the person that hey there's a
+question
+i know that microsoft has something
+built into their browser which
+does about the same thing you you said
+that there's a feature in
+uh let's decrypt which kind of or at
+least firefox
+where it goes out to check certificates
+validity
+yeah so um
+the clarification was that
+there's
+like ie has
+their
+i think it's called safe defender uh
+list that they push to browsers
+it's actually fetched by browsers again
+about every hour that has information
+about
+known bad actors and google has safe
+browsing and a uh additional like
+badness list that they send to chrome
+i think they're faster i think they do
+it every 30 minutes firefox has one crl
+which started off as just these are
+certs that are revoked but we've
+actually just
+in firefox 44 we changed it to be a very
+generic structure and we intend to be
+able to put a lot more threat modeling
+data to alert people with things being
+bad we just haven't done it
+i think yeah that this is a place where
+browsers are going to have to pick up
+the slack and i don't know if it's going
+to be the browser themselves or this is
+going to be the evolution of the
+antivirus market
+but there's clearly a need
+it's just um
+yeah
+there's clearly need
+and i think there's room for that
+another question about the hpkp
+for those of us who test web
+applications
+it could be a little bit of a hindrance
+so
+do you see any improvements in the
+protocol happening so that somebody can
+opt
+okay so the question is
+uh for hpk http public key painting um
+is there
+room in the
+future
+movement in the protocol to make it
+easier to do
+security engineering work like uh
+pen testing and so forth that currently
+becomes a real pain in the ass when you
+turn on hpkp
+uh
+not speaking as mozilla here speaking as
+jc uh hbkp
+uh the ietf made some serious errors
+uh in stating it like the main one
+that's missing that's our that we fits
+better in like content security policies
+is that there's no uh notify option like
+uh
+with csp you can save report only
+you know turn that on and
+web browsers are supposed to if they hit
+a failure supposed to report it but not
+but soft continue like continue anyway
+and just uh
+let people know what's going on
+hbkp has no such thing and it makes it a
+real pain in the ass to turn on for
+websites because you have to go on and
+then users hit it and if you screwed up
+they are locked out of your website for
+three months or whatever
+it's
+it's brutal
+um
+firefox doesn't like changing
+uh modifying web standards like that's
+but this is the old school like we
+are the champions of the open web we
+think would all should be done in up and
+uh
+uh you know open and unfortunately hbkp
+is a published standard at this point
+and we need to like fix it at the i we
+feel like we need to fix it at the ietf
+but uh we've been pressured into fixing
+these things from other browser vendors
+from time to time uh
+i i
+you know when i do pen testing and run
+into this the the fix is always open a
+new profile because all the stuff gets
+served saved
+her profile in whatever browser you're
+using
+but of course i'm
+kind of a power user and know what that
+means
+uh
+and technically since it's an http
+header you can also uh configure your
+web server to only uh emit it to certain
+clients
+which is also a kind of fun hack to go
+really screw with people if you want to
+i don't know your website just suddenly
+doesn't load at all in ie i don't know
+what's going wrong
+um other places where you're looking at
+a thin client that's using an or a
+bitcoin rather than using it
+you have limited
+except for just messing with the headers
+that are responding and if they're doing
+hard checking uh
+you know you basically have to
+re-entitle the client
+or
+modify the line code or whatever
+yes
+yeah so hbkp
+um as amazing as the idea is
+preventing uh people from uh
+sniffing traffic on open wireless points
+and so forth
+it
+in practice
+it falls flat in a lot of places
+so you know we don't turn on hp pkp for
+any mozilla property at this point we
+have a pending list inside of firefox
+which is
+same idea but we have more control
+i don't turn on hpkp for any of my
+so
+there are good
+i can point you to some good folks who
+have really great descriptions of how to
+use it well but even that is that
+pointed at end users and not at the
+folks trying to
+do work on apps
+it's going to get fixed it's like too
+important of a concept to sit as it
+currently is but it only became a web
+standard or a ietf standard
+last summer
+so ietf doesn't move super fast
+and the working group unfortunately was
+done so now it has to be reconstituted
+and that will probably happen
+uh
+i'm guessing that may happen in
+argentina in uh next month
+so maybe we'll start to hear something
+about it
+absolutely
+i threw up uh another note about i can
+talk about https anywhere uh everywhere
+i'm not from the electronic frontier
+foundation but i love those guys and
+talk a little about that sort of thing
+please tell me about that
+okay uh
+so that's a
+https everywhere is a
+initiative to go convince
+grant to part one is set up browsers so
+that they
+if a website can be accessed securely to
+force it to be accessed securely it's
+the same sort of thing as turning on
+htst
+or hsts rather i always screw the
+http secure transport secure
+http address restrict transport security
+thank you um
+but for websites that you've never seen
+before because when you put these things
+in headers you have to go to the website
+before you get the pending
+header or go there before you get the
+hsts hd there's a plug-in for every
+major browser that eff publishes that
+just has this like metal list of
+thousands and thousands of websites
+that if you do go there
+it should be https so that you aren't
+you don't get man in the middle of the
+and
+they
+also
+are involved in
+doing scans of the internet through
+scans dot io and the university of
+michigan
+zmapp project
+looking for places where
+there should be https and there isn't
+and
+when they can when there's free time
+they contact folks and try to convince
+them that this is not good for their
+customers this is not good for the web
+go to the right thing and it's a bunch
+of advocacy
+i guess when i say i know a lot about
+https everywhere it's more like a
+general concept than necessarily like a
+have they have they found some stuff
+that should be available via https
+everywhere in other words the
+sts but from a different view it doesn't
+meet the same guidelines it doesn't uh
+they don't get the same
+penny
+so has uh the ssl observatory the
+distributed ssl observatory
+and things like scans found
+places where https should be used but
+it's not in use because of how they're
+looking at the network the position at
+which they're observing the answer is
+yes but again this mostly happens in the
+developing world
+it's super common to force
+well maybe not
+it's
+not uncommon
+to have carriers
+uh
+deliberately kill
+the
+like black hole the packets that set up
+tls
+because they just don't want you to do
+it so then they can't serve ads they
+can't change things
+um
+it we're in a luxurious place here in
+the united states where for the most
+part isps get their ass handed to them
+when they do that sort of thing
+maybe not immediately but you know
+eventually justice comes around but it's
+much more wild west in a lot of other
+places in africa and
+particularly southern asia
+so yeah it does happen and um
+there's very few people that run as i
+understand it very few people run the it
+was
+the distributed
+ssl observatory plug-in in firefox and
+chrome in like asia but the people who
+do it just like triggers constantly
+so
+it must be really hard to try to do
+cool cool so
+um
+i'll hang around feel free to come up
+and introduce yourself again my name is
+jc
+i work for mozilla but i spend you know
+more than a year working on let's
+encrypt
+and i'm super proud of it having talked
+about ops devops
+golang crypto

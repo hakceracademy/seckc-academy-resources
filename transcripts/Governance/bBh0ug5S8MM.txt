@@ -1,0 +1,269 @@
+hello so we're here talking about
+chromebooks we all dread them but
+they're here to take over
+so without further ado next slide
+so brief little history of chromebooks
+so the chromium project started in 2008
+i see i suck at mike's don't worry
+uh so kroger projects begin in 2008
+first hardware in 2011 at google i o
+of all places imagine that google
+um and they became very popular in
+schools
+and they're just starting to get
+everywhere they've actually overcome mac
+os
+in the most popular consumers in 2020
+uh for better for worse statistics there
+source idc sun you know data harvesting
+firm
+the hardware so what used to be cheap
+hardware
+just crap absolute crap plastic
+um hinge is terrible very very terrible
+i've had early chromebooks became
+the same the hardware is still kind of
+meh however it's
+a bit better now and there's now
+more premium stuff way more premium
+stuff
+for example like my pixelbook go that i
+have for testing
+so our next would be uh
+the features of chrome os which would be
+the next slide
+uh or yeah so
+quite literally used to be a browser
+window with some status
+now indicators has android apps
+unoptimized android apps i should say
+because no one puts an effort into doing
+teleporting let alone
+chrome os porting uh
+so yeah just that's just marketing linux
+apps however are actually kind of decent
+you can pass through usb devices via the
+built-in settings app
+and gpu acceleration for you gamers that
+for whatever reason getting chromebooks
+so chrome os is actually based on gen2
+linux
+believe it or not it's
+very devolved from gen 2 i will say
+it still has portage though but
+it also uses core boot as the firmware
+along with a specialized payload that
+google develops called
+uh depth charge um
+core boom payloads are so cool it's an
+open source firmware and it uses
+payloads to boot into other things
+so yeah it's just booting
+however it does some fun stuff as i'm
+so
+um one more slide over
+so it uses verified boot essentially
+calculates
+with uh it calculates a hash shattu hash
+of the rewrite firmware
+and then takes uh
+takes a signature of that an rsa
+signature and verifies that with a
+private key and read only firmware
+um just
+for verified boot uh the read write
+firmware then compute hashes
+of all the non-volatile parts of the
+it hold on
+um
+and an additional protections include
+you know block level verification via dm
+verity
+um which dm verity instead of them doing
+ahead of time root fs verification
+because that will cost like five seconds
+off the boot time and google's like
+we need fast boot time instead we're
+going by a block by block basis on
+demand
+which actually does not seem that
+inefficient
+um usually each time you read from the
+block it only has like a 0.2 millisecond
+uh
+overhead and then
+it also has you know everything in a
+stateful partition that's
+not that's actually you like user data
+and that's encrypted via the tpms uh uh
+well not encrypted utv but
+uses a tpm to store the encryption keys
+like similar to bitlocker
+um and then
+just redundancy as well as making
+updates
+smooth
+and then everyone probably is like wait
+this description of the talk said it was
+open where's the open it sounds
+very locked down however next slide
+um introducing developer mode developer
+mode
+is a very very powerful thing it's also
+easy to get into
+press a few key combos and follow some
+prompts and bam
+you now have a basic access
+um that may sound like it defeats the
+whole point
+of all the security features whenever
+someone could just take ownership of
+but next slide
+that's why every boot you will see the
+screen
+and the average user is like boom
+it only tells me to press space so when
+you press space
+it actually reverts all that
+a user that actually knows what they're
+doing and is actually wanting to use
+developer mode
+they know the hidden key combo ctrl d
+to boot the thing and there's also other
+uh key combos because as i get into the
+next slide
+um developer mode lets you actually do a
+lot of things
+control u lets you boot off of a custom
+chrome os
+media which er
+chromium less rather since you're not
+officially supposed to you know
+run google's proprietary operating
+and you can run
+linux or windows via the control
+l shortcut because it depending on your
+chromebook you're either getting lexi
+bios booting
+or you're phi booting
+which means you can move the whole thing
+if you wanted to
+and just you know you're playing all
+but we could take this a step further
+next slide
+and you could just flash completely
+different operating system
+operating system firmware um
+since like i said earlier chromebooks
+are using
+core boot which is a completely open
+source firmware and google
+when they made chromebooks want the user
+to be able to also own their device
+they have the same philosophy with
+android phones um
+you can write the firmware after
+disabling write protect
+on some old write protect screw on older
+models by unscrewing the screw and
+sometimes you have to peel off that film
+because that's still there everyone
+likes film
+but on newer models they use a custom
+chip called a cr50
+that definitely is a chromium element
+pun
+[Music]
+in order to disable write protect on
+that you unplug the battery you boot the
+systems out the battery plugged in
+and voila um you could also
+if you want to you can use closed
+chassis debugging however
+i'm not going to talk about that much
+because i just simply have no experience
+with that
+and documentation is a little bit of a
+[&nbsp;__&nbsp;] if you ask me
+um but what you can also do
+is that since you're using you can flash
+your own firmware
+you can re this opens up to read only
+firmware that i was talking about
+earlier
+to let you flash your own private key or
+not
+private key that'd be bad public key
+and completely reownership your device
+custom build acromion with your own
+signing keys and it'll be just like
+stock no one will ever notice and it's
+not google
+because [&nbsp;__&nbsp;] google
+and on the next slide as i described on
+it
+there's a few draws drawbacks of this
+yes
+there could be some it's not you know
+completely foolproof
+generally reboot will fix it however if
+you have
+and they have some quality time to your
+hardware
+physical access mind you yeah they can
+probably bypass most protections and all
+i see is
+oh look my device randomly was reset
+sometimes chrome os does that you know
+legit oh in this case
+yeah you just got absolutely pwned by a
+malicious firmware
+and a malicious operating system but if
+you're like that if someone's actually
+that persistent
+towards you you're [&nbsp;__&nbsp;] anyways bye
+bother
+um yeah
+and yeah i guess that's actually about
+it i gave myself plenty of time for
+questions
+so
+actually first about me um i'm just a
+college student at uh ku doing computer
+engineering discord tag
+is up there i'm not going to bother
+pronouncing it since
+mike is not good quality enough for me
+to be able to actually get that
+so but i'm also
+definitely right now my job is in a
+kind of a sticky situation um so
+if anyone has any job opportunities
+please
+get in touch with me i'm scared i need a
+job
+code was not fun on my grades and i
+[Music]
+anymore
+you totally won't regret it i already
+got my
+but uh i also am part of the
+k information security club so if any of
+you guys are casual or don't think you
+are
+because you all look a bit older than
+that uh
+i used to and i use it occasionally
+however
+over at the audio station i have a nice
+m1 macbook
+you might be asking why am i talking
+about chrome os
+well [&nbsp;__&nbsp;] google just simply [&nbsp;__&nbsp;] google
+the reason why this talk exists was
+because we had just had a nice fun
+conversation set kc discord
+and we were just like you know what'd be
+cool this talk
+it is just merely convenience
+[Music]

@@ -1,0 +1,539 @@
+alright so as I ask every set KC person
+that starts to give me some crap how
+many black boxes do you guys have yes
+CGM alright so again I am are and I am
+one of the folks insect ISM tonight
+we're talking about privilege escalation
+master key systems so that's if Dell is
+going to cooperate and work there we go
+so first of all I am building on some
+other people's works Matt blaze most of
+paper in a while back say 15 years back
+and then a lot of the slides a lot of
+the animations I have my slides or curse
+courtesy of deviant from tool who the
+hell am I again art and Meyer I'm a
+retired master sergeant in the United
+States Air Force former OC o-type and
+currently I'm working on my PhD at Iowa
+State
+[Applause]
+first-first I'm worried about the rules
+we always do have rules with
+lock-picking first never pick locks that
+you do not home or have direct
+permission from the owner and do not
+pick locks upon which you rely these are
+our standard two rules tonight I'm
+having a third rule don't go home and
+attempt these techniques I'm about to
+show you without permission preferably
+written permission I'm not gonna come
+bail you out of jail I'm not gonna come
+and testify in court okay first off
+doorknobs padlocks dead bolts this
+applies to all of them they all have the
+exact same mechanism on the inside this
+is kind of what it looks like on the
+inside here's the pin stacks by now if
+anybody's pick locks you are already
+understanding all this the important
+part that I'm going to talk to you about
+tonight is
+master key systems so we see these in
+corporate we see these in educational
+institutions and another corporate slide
+so this is a master key system you
+notice the green do I have color good I
+do you have colored you notice the green
+bits there
+these are master pins as well this
+allows multiple keys to function on this
+lock so on here we've got an example
+where a standard 8 pin or a 6 pin with a
+two pin master and that the keep it at
+six or eight will open that lock so here
+we're going to get into some examples
+we've got Alice's key we'd have a Bob's
+key then we've got Andy's key we
+probably can't read these names and then
+of course we have the janitor key
+splashed up with payment the janitors
+key is gonna work on everybody's doors
+here's our example bit-depth I should
+caveat for these slides this is using a
+standard quick set key way mainly
+because it's only got 7 bit depths and I
+don't want to bore you with 6,000 slides
+as it is I have 260 some of them so
+again here are our bit depths on each of
+these coin or points easel so here's
+example key ways what does that slide
+there we go so here we have example keys
+I'm sorry example lock using which lock
+is this okay so this is Alice's key in
+each lock so up here in the upper left
+we can see the Alice's key works on her
+lock but you'll notice that it doesn't
+work on Andy's locker over here on Bob's
+lock this is the three six two three
+five key if we switch to Andy's key we
+notice the Andes he's not going to work
+on Alice's
+door it's not gonna work on bob's door
+but it will work on Handy's door
+similarly bob's key works on his own
+door but not on Alice's or dandies and
+then we'll notice the janitor key lines
+up fine on both Alice and Andy's doors
+but it actually doesn't line up yes it
+doesn't line up on Bob's down here
+because Bob's is in a different master
+key system okay so first we're going to
+consider Alice's key so any lock that
+she can access with the bidding depth of
+three six two three five well obviously
+it's going to work in our own lock what
+we know about that what do we know about
+the inside of that lock now of course
+this is designed to be a little bit more
+interactive but hey perfect answer
+it's going to work on that lock so we
+possibly this on the inside but we
+actually don't know if there's any
+optional master pinning so this is what
+we're wanting to find out we want to
+find out what those pins if there are
+any master pins on the inside so we're
+gonna prepare an exploratory key so
+again we know that the three six two
+three five works so what we're gonna do
+is we're gonna cut a key at zero six two
+three five so we've got this zero cut
+right here we're gonna leave with the
+next four at bit depths that we know
+function and then we're going to go and
+we're going to sweep this entire range
+from zero through seven which is the max
+for this particular key way we do have
+to be careful of max which is maximum
+adjacent to the specification so for
+different key ways there are there's a
+maximum Delta between individual bits if
+you exceed this you're risking getting
+your key stuck inside on a quick set
+that the max is a three so what we're
+gonna do is we're going to file the
+down one bit because zero is actually
+not a valid bit depth on quick-set one
+is the low is the first bit depth if you
+need to know what that what the
+individual pin devs are you can either
+take a measuring micrometer micrometer
+caliper or we can cheat we have these
+ugly little cards that give you multiple
+key ways and tells you what each of the
+different valid bit depths are so we're
+gonna file it down to one at the moment
+we do have a max violation because we're
+going from a 6 to a 1 so technically we
+should never find this in a lock but who
+knows what locksmith vital trying to
+break swirls so we're gonna go in and
+give this give us a try
+and the lock doesn't open we take the
+key out we file down one more position
+we're now at a to notice that here we
+have two different bit depths that are
+at two but they look different it's
+because we're using a hand file unless
+you've got a lot of equipment for key
+cutting but these are still the exact
+same bit does we're not we don't have a
+max violation now my bad
+max file a max on quick set is a 4 so 4
+is a fours valid 5 is not not valid so
+we're gonna try this key nope doesn't
+open wash rinse repeat we're gonna file
+down another position get down to 3
+we're gonna try that one
+it opens hey does anybody surprised that
+it opened why that's the original
+that's the original key depth so we knew
+it was going to open there at 3 but so
+we do know now that the full front stack
+or the full front pin we're gonna keep
+going because we might have a master key
+or a master pin in the
+or header so we're gonna file down one
+more position to four we're going to try
+that that doesn't work
+remove we're gonna go down to five try
+the key still doesn't work
+remove it get down to a six try it
+voila so what we've just found we have
+found a master pin in that first
+position so all drivers are now raised
+and here's the slide I was looking for
+so we know that we have this three bit
+depth master pin in that first position
+this is what we do know we still got
+four more pin stocks to go now we can
+try the seventh yeah
+here we go we can try the seventh bit
+continuing the rest of the bidding range
+that's the end of work for this key wait
+that's the end of the bidding range but
+if we were on like Saint SC for system
+that has ten bidding ten bit depths we
+so again quick set quick set status
+don't go past the seven they're valid
+deaths or one through seven so now we're
+going to prepare the next key to explore
+position number two so we've discovered
+this master bit master bit depth of six
+at the first pin we leave the second at
+a zero cut and then we use the known
+that the known positions from are
+provided change either the key that our
+dorm managed
+or office manager gave us for our door
+now again zero depth is not valid in
+quick-set so it should not be used so we
+can save time by starting at position
+number one now here we do know that max
+is being violated again but we're gonna
+try it anyway doesn't work we remove the
+key we file down a little bit more now
+our max is okay we're gonna try the key
+in the lock
+no it still doesn't work we pull it out
+file down a little bit more try the key
+and it doesn't work remove the key file
+it down some more try the key and it
+works so now we know again we know our
+positions valid positions on the second
+pin we have two known positions we've
+found four and we know six because of
+our provided change feet so this is what
+we learned earlier this is shows that we
+don't yet know what we've got in
+positions three four and five so we're
+building on this information so okay
+trying to keep up with my slides here we
+know from our change key that we have
+that this is a valid key this or this is
+a change key so we already knew six this
+is what we know at this point and we're
+done with position two so we don't need
+okay I don't have a so the reason that
+we don't need to check positions five in
+position seven on that second pin is we
+do not create single bit depth
+master pins it just they just they if
+you try they get rolled up they jammed
+your locks so you will just never find
+that in the real world so again single
+deaf mastering pins are very very
+exceptionally rare and they're bad we
+just don't use them so to speed things
+along we can just skip those two
+positions we found for and we know that
+six is valid from our change key so
+we're not going to have anything at five
+or seven if we really wanted to we could
+test them we're not going to again this
+this should work this is the from our
+met are provided change key okay so
+further exploring not necessary same
+with the depth of seven as I said we
+don't do single depth pins and fix that
+locks don't go past seven so now we've
+got two of the chambers known we have
+three chambers unknown so we're gonna
+again prepare another key so what will
+come to be put in position one six or
+three so we'll go with the six the
+master pin is this a valid key no no
+it's not this is we it would be a max
+violation what are we put in position
+two
+six or four we'll go with four because
+that's the master that we just found it
+appearing a couple of people muttering I
+heard a 0 and a 1 I would go with 1 my
+slides do say 0 at the moment
+again 0 is not a valid bit depth so I
+would start at 1 as some of you
+commented and then for the rest of the
+key what are positions four and five
+nobody remembers that's okay don't
+belong in 3 &amp; 5 okay so now we're going
+to explore we're gonna sweep this this
+range or is it does anybody remembers a
+chain key change
+he's known depth hint it's on the slide
+- there we go
+okay so what do we know about positions
+one and three yeah we're not gonna have
+single in single bit depth master pins
+so in reality we can start at four so 1
+&amp; 3 would be very unwise we know that -
+it's an it's a known from our change key
+so it can skip it and we can honestly we
+can just go ahead and jump right forward
+and start on for really shortening the
+amount of time that we're going to spend
+trying to find this master key so this
+is a lot more efficient we now have our
+third key prepared we try it it doesn't
+work we remove the key bust out that
+file we go down one more spot get down
+to five try the key bingo we found a
+master pin so this does tell us quite a
+bit
+okay I have bright lights in my eyes I
+can't see if anybody's racing hands
+alright so we know this information on
+our lock so we have six and four in or
+on sorry 3 6 &amp; 3 in the first pin first
+chamber we have 6 &amp; 4 in the second
+chamber and we we know that we have a
+two and a five in the third chamber so
+we still don't know anything about our
+fourth and fifth chamber we seem to have
+position three dialed in however do we
+need to explore bit death number six
+no again we it would be a single single
+death master pin we just don't do that
+what about number seven it is possible
+to have multi master systems now I
+wouldn't test it right off the bat but I
+would take note that I had not tested it
+so with your master key systems you can
+have multiple tiers so that say in a
+university setting the for your research
+labs you have a couple different
+janitors for the big universities that
+one janitor has access to these three
+buildings different janitor has access
+to these other three buildings but
+security still has a key that works on
+everything you can't have multiple tiers
+so there could be something at seven I
+wouldn't bother with it yet I would just
+take a note and come back later if I ran
+into some problems so our fourth key so
+we'll start out with what we've
+discovered so 6 4 &amp; 5 are the master
+pins we've discovered so far the 4th
+position we're gonna leave it blank at 0
+and our 5th position we're going to put
+a tower change e5 notice that again this
+does violate our max so we could sweep
+this entire range but we do know from
+our provided key from our change key
+that 3 is the bit depth here and so we
+are
+more efficient would be to test out
+position one because zero is invalid and
+then hit five six and seven so we could
+either go cut it at one or just take our
+handy-dandy file cut it down to one give
+it a shot doesn't work and I have strobe
+lights now it a good thing I'm not that
+bull up okay so we remove that key again
+we don't need to test too
+we don't need to test three we know that
+three is valid and we don't need to test
+for because two and four would violate
+our we never use single bit depth master
+pins three we know works so of course
+it's going to work we remove the key
+come on down to five we try the key at
+five no no dice okay we remove the key
+we filed a limit further try a six no
+still not worried so we remove the key
+file down to our very last bit death
+number seven and we try the key no
+didn't work WTF okay so question you
+might be questioning yourself but in
+this case position number four for this
+lock is not mastered so what that might
+mean is that our current our change key
+is at the exact same as the master key
+for this one chamber that's still fine
+don't panic if you don't find a master
+key in a chamber or a master pin I mean
+in a chamber so this is what we got
+decoded so far we have one position left
+so this should be our last exploratory
+key so let's prepare it what do we put
+in the first what are the first four
+positions whose memorizing this
+a six four five three we you have some
+audience members paying attention okay
+so then we take our fifth position
+we started at zero file down to one try
+the key right off the bat it opens
+keeping bowl of awesome sauce okay so
+there's a real chance that by now we
+actually know everything again we took a
+note back on the third chamber because
+we didn't actually test one of them and
+at this point we have obviously haven't
+tested everything in the fifth chamber
+but we've got our chain are provided
+change key depth and we just found a
+master pin depth so odds are we do know
+everything from our notes we're gonna
+keep track of what we actually test it
+in case we do need to come back at
+something but this should be our
+mastering bit-depth fully decoded now
+again there could be in the middle of
+that last green one there could be
+multiple max our pins in there we can
+come back later if need be and there
+could even be some more beyond it so I
+but I would honestly just take this key
+right here and go test my neighbors nor
+for my adversarial research partners
+door and see if I get in so this is this
+is what your key though Googlers like
+again this is a nice cut one this is us
+doing stuff with files so we do need to
+be careful since we're doing all this
+stuff by hand be careful that your key
+doesn't look like this if your key looks
+like this while it will turn well
+actually we've got the last one set at
+zero but if we have the last one set at
+one it would turn the lock but you're
+I somebody nowadays just asked what do
+you do then that's a good answer
+run if you've done this if you're still
+in testing this on your own door this is
+where you find the shadiest locksmith
+you can slip in my next $200 to not
+report you to security and fix your door
+so be very careful when your hand filing
+these that you don't end up with a big
+cavern like this then it'll snag a pin
+so this is the internals of our original
+door lock and we can see from the marks
+there those are the mastering depths so
+here's a hypothetical alternate lock in
+the same system again say either your
+adversary or one of your buddies that
+you're wanting to prank and I don't know
+do nasty things to his dorm room
+so our decoded master key is going to
+work there as well and you are the
+winner
+any questions how do you determine which
+one you really want to go with
+okay question was if there are two
+numbers on the same pin that work for
+example six and three like we have on
+our very first pin which know which
+death do we want to go with so in this
+case three was from our change key that
+the key that we were given and six is
+the one that we found go with the one
+that you found so change he never uses
+the same as a master question was does
+the chain key never use what's in the
+master no again on our example here the
+fourth pin we do happen that share the
+master debt with our change key so it
+can share but if you had if you have
+found an additional depth that's likely
+to be your master your change key is
+only worse on your door that depth
+what kind of countermeasures
+inside of corporate clock systems help
+prevent this from becoming a problem ok
+so the question is what kind of
+countermeasures do we have especially in
+corporate environments to prevent this
+typically the the best solution is don't
+use physical keys
+most of us I've seen a few of you
+violating some security policies because
+I've seen procs badges hanging from your
+waist use a system like that so your
+digital system like that will it'll
+prevent this problem and it also gives
+you an auditing gives you a log with the
+you know with back when we were in
+college you had no idea of security came
+in your room
+there's no auditing to these physical
+keys there are some other there are some
+physical key solutions that incorporate
+like a ble or some sort of near-field
+communications there are also some other
+master key systems that make it
+significantly more difficult not they
+don't they don't remove this problem but
+they make it a lot more difficult such
+as like dimple locks like these or
+actually I think this one's a magnet
+lock but if you have like dimple locks
+those are a lot harder than using a file
+trying to drill the perfect depth or
+restricted key ways where you just can't
+get blanks if you know if your doors
+happen to be a NASA you know they've
+copyrighted that you can't you cannot
+get the blanks for that so those are
+some of the solutions again if it's not
+a digital system though with auditing it
+doesn't prevent this from working it
+just makes it significantly more
+difficult if your threat model includes
+a nation state yeah
+just even a so it's not going to help
+you out but if your threat model is uh
+you know the eighteen-year-old kid down
+the hall from your 18 year old daughter
+at college yeah that working I've heard
+that term cite bar so a sight bar system
+okay so side bar systems again just make
+it more difficult in addition to having
+to deal with your vertical pins you've
+gotta SOT you got side pins they don't
+solve that problem they just
+I get significantly more difficult what
+about at home do you have a master key
+system at home I'm looking for the
+okay the question what could you do to
+prevent them from filing a key nothing
+but again it's not a master key system
+so nobody has one that they can play
+with to try to find the master but yeah
+if you've got a $20.00 quick set on your
+any other questions I think I can see a
+hand when I got spotlight timaeus or
+just just yell question was does
+quick-set actually go with no they're so
+quick this this is the the quick set key
+way there are standard quick set has
+five pin five pins and each pin it has
+seven valid pin depths and they are a
+perfectly on a straight line they're not
+true that I could have been fairly easy
+to do there in the mass market you know
+they they turn them out that's their
+model if you want good quality locks you
+step up something like medico or again a
+there there are several other good
+companies but you're gonna you're gonna
+pay for that
+so quick set locks or $20 even cheap
+with my builder these the builders
+probably paying five dollars per lock
+because he's buying them in quantities
+of thousands okay thanks I already thank
+you

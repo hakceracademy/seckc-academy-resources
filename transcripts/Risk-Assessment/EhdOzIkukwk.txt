@@ -1,0 +1,304 @@
+so Nate is going to talk to us about
+Java
+deserialization which sounds awesome and
+I said that fine I haven't drank enough
+tonight um so Nate talk to us about Java
+and pop some boxes and give us some zero
+hand's the
+toast turn
+awesome all right so this is Java
+deserialization and other bad things um
+because uh jav D serialization is
+awesome um it's probably one of the
+first things I look for as a pentester
+when I hop on a network now uh to avoid
+detection by all the other people that
+are trying to catch me and figure out
+what it is the hell that I'm doing so um
+this is probably the scariest
+vulnerability that you didn't hear about
+um because it's prevalent in a lot of
+repackage software people that use JBoss
+people that use Tom capap people that
+POS the past serialized objects back
+around you probably didn't hear about
+this um if you did it was in a select
+you know a group of products so anyway
+but it's everywhere and you're almost
+bound to run across it if you're doing
+any AB testing or anything else so uh
+deserialization is actually a whole
+class of vulnerabilities um so for the
+common web exposures uh they uh say eat
+the
+mic well they told me this is a properly
+mic eat the mic all right
+fantastic so if the application deseral
+deserializes untrusted data without
+sufficiently verifying that the
+resulting data will be valid so that
+means you can send objects to a service
+that accepts serialized objects and
+it'll be processed without pretty much
+any
+verification um you can use crypto
+inside your objects if you want to
+protect them um but almost no one
+does so the problem with Java deer
+serialization is that we have a bunch of
+assumptions from developers uh namely
+that uh all these requests that are
+going to be coming to the service um are
+trusted sources and a lot of times they
+really aren't um the other ones are you
+know typical developer speak it's oh
+it's binary nobody else can read it and
+uh some people you know they tokenize
+their request oh you can't get my token
+um and nobody can create serialized
+objects It's Magic and uh our world is
+all rainbows and sunshine
+so you can see what happened to
+rainbows all right so you ever seen
+something like this fly through
+burp um that is a job the serialized
+object so if you look up there at the
+content type header I'm sorry for the
+people that are sitting in the back um
+it says uh application X Java serialized
+object and that is exactly what we're
+looking
+for so what about something like this
+ever see one of those that's all also a
+Java serialized object because it's just
+a base 64 encoded version of a Java
+serialized object so but you can always
+spot them because you always notice the
+r00 capital a capital B at the front of
+it because when you B 64 and code it um
+these first four are pretty much always
+the same and so it'll always result in
+those first four characters appearing
+that
+way um so this is a tool that was
+written by uh a couple gentlemen um that
+uh will produce nasty um serialized
+objects so you can pass to all these
+Services um so here's how we use wiso
+serial to create a nasty serialized
+object and you can pretty much execute
+whatever you feel like doing um you just
+tuck your OS commands there in between
+the single ticks uh put that into a file
+um because there's going to be some
+non-printable characters in there and
+you're going to need to recycle that
+later and here's how you can find find a
+J boss instance that's vulnerable as
+hell um you can just use a browser to
+scan for this literally you can check
+for this URI and if it responds to you
+with that it responds to you with an
+object then you know that it's
+vulnerable that's pretty much
+it so you don't even have to do vone
+scans you just look for
+that so this is a extreme Jos Ownage um
+with BP um and you'll notice like in the
+bottom part we got like a of crazy
+looking stuff at the bottom there that's
+a poers shell calling a b64 encoded
+payload and uh I'm pretty sure that
+that's an Empire payload um and if you
+guys aren't using Empire and are a red
+teamer a pentester then you're really
+missing out um because Empire is amazing
+um all powers shell non-memory I mean
+it's all in memory doesn't get rid into
+the disc doesn't get SE seen by
+antivirus anything like that so we like
+to wedge Empire stubs and pretty much
+wherever we can um a full interpreter
+shell doing the call back and everything
+tends to get caught by some of the
+advanced endpoint protection you know
+semantic stuff like that so we don't
+even bother with that we usually just do
+imper shells now um so the other one um
+is a Java RMI service so the remote
+remote method
+invocation um it's kind of like RBC
+except using serialized Java classes to
+do so
+um uses jrmp um it's inherently
+vulnerable since it its primary method
+of communication is Java serialized
+objects so if you see this service on
+the network you're pretty much going to
+own it it's it's going to happen so and
+it it's uh it's remarkably similar to
+the pav stones that were used for
+constructing the pathway to Hell which
+we all know was paved with good
+intentions so it's super easy to own RMI
+um using wants a cial uh you just do you
+know jav CP all that good stuff your
+host name the port that your armr
+service is listening on um the comment
+collections one is the method that you
+want to use to try and escape and
+Achieve command execution um so they
+have in the newer Wisa serial packages
+it keeps evolving because they keep
+finding new vectors for command
+execution across many different
+platforms so you've got your spring
+you've got you know one version of java
+that had a terrible implement ation of
+something you know so there's 1 2 3 four
+five of just the Comm collections
+libraries and then there's other ones
+that are typically included in other
+applications so job serialization it's
+awesome I typically look for it before I
+look for anything else because I don't
+have to do a full Nea scan I don't have
+to do a vone scan I don't have to do
+anything else I just look out and I see
+what's out there I try and find the jbos
+servers stuff like that so you see the
+htb part and there's your handy inmap
+command to find all that good stuff and
+uh here's your handy inmap command to
+find all the RMI servers and uh there's
+many others um so I just popped um
+semantic inpoint protection manager I
+think uh 3 weeks ago um it was on a
+client that had this many
+servers um and one of them was running
+the samanic C Point protection manager
+and so we injected some commands into
+so this
+happened I was just doing my regular pen
+testing things and I found something
+listing on
+1099 so I exploited it and I got one of
+these um but as somebody once
+said Chell is only the beginning so we
+decided to go a little bit further down
+the rabbit hole and start looking around
+once we actually compromised the Box so
+that's new um I don't think anybody
+found that one yet um so the Java RMI
+service on solar winds virtualization
+manager um before version 631 with a hot
+fix that they just released um is
+vulnerable to what I just showed you on
+the Java RMI attack um you're locked
+into a low privileged user but uh that
+was pretty much defeated by doing
+that
+so after we had rude um it was kind of
+just scouring the file system trying to
+find stuff and we actually did find a
+sweet upgrade shell script and there was
+some awesome stuff tucked in there and
+that was postgres SQL commands with
+credentials so I issued those same
+commands and uh dumped everything to a
+file and uh then there was some really
+good stuff in there which was namely a
+uh username and password with domain
+creds so all the way over to the right
+that little that little tiny blur over
+there is the domain name I'm
+sorry client
+confidentiality so uh but the uh the
+domain creds themselves the password
+part was actually encrypted so we went
+looking again and uh we just grabbed the
+war file for the application uh that was
+hanging in user share Tom Cat web
+apps and uh then we looked at those with
+JD GUI um if you guys haven't used JD
+GUI um to look at stuff it's amazing and
+if you didn't know a war file is just a
+zip file so you just unzip the stuff and
+then you can go look at the individual
+jar files that are inside of the war
+with jgi and it'll just show you the
+code so we went and found a uh we found
+a function that uh said credential
+decrypt and uh so you had a reference to
+the encryption utility. Crypt function
+so we went and found that function and
+uh yes that is Dez encryption with a
+today so uh this is the function that
+actually decrypts the database contents
+when you're trying to rip something out
+or if it's trying to use those
+credentials that are in the database to
+access some of these other virtual
+machines that this thing manages and uh
+I had somebody whip up um because I
+pretty much knew what I had at that
+point I said you know this is the
+function that decrypts things from the
+database so that stuff that I snag from
+that sequel dump I could probably pipe
+it into this and get what I'm after so
+big shout out to Ryan Preston otherwise
+known as X
+Games um and so I shot him the hash and
+uh he pulled all this stuff into eclips
+and uh wrote a very small um Java
+program which I'm really ashamed that I
+didn't write but I kind of suck at Java
+so that's all right I got about seven
+other languages but Java was not one of
+them so but uh big props to Preston on
+uh on busting that out he haded done in
+like 5 minutes and I felt really
+stupid so and that
+happened after he ran that program and
+uh because of what the appliance
+actually does um it goes out and manages
+virtual machines checks in with them
+everything else these were actually
+domain aent creds so those could be
+recycled and used to you know further
+compromise everything so anyway that's
+pretty much it I want to thank uh Gab
+Lawrence Chris ROV um Steve Breen Brian
+Alexander and especially e games um this
+talk came out a long time ago in
+2015 and nobody really paid attention to
+it until the guys from Fox Glove picked
+it up and I noticed the article and I
+was just like wow this is super serious
+and there actually is a burp extension
+called super seral so but uh thanks to
+solar winds um because they actually did
+respond to me they worked with me they
+fixed almost all the stuff that I found
+and this is just a small portion of what
+I found um I reported to them probably
+nine different issues and they did fix
+all of them but I went back and forth
+with miter about what constituted a a
+cve and what was acceptable encryption
+and things like that and I just didn't
+have the time to Jack with them um so
+the big ones are covered in the two CVS
+that are there but there were other
+issues and they did fix all of them so
+and uh if you found this interesting and
+uh if you would like to do this kind of
+thing or you would like to do that kind
+of thing uh get with me or one of my
+team because we could always use more
+people that like to do this kind of
+stuff so we're all in the back table
+right there just look for that very tall
+fun
+than

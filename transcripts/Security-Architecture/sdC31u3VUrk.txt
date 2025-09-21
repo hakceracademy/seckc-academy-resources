@@ -1,0 +1,858 @@
+anyway let's get right a big round of
+applause thank you hi my name is Ryan
+Preston and we're dead security I'm a
+full-time penetration tester tonight the
+title of talks about classify me please
+we'll talk a little bit about asset
+management asset like kind of hosts
+profiling tools and classification and
+then I'll waste your time on somehow
+some different authentication protocols
+work in Windows and then we'll show a
+short little tack so what are you
+protecting I spoke and a thing recently
+and I started with the if I asked you
+for a list of all of your company's
+assets even within the last month how
+many people could give me that list and
+there was not a lot of hands that went
+up and then it's like did you count all
+your bm's and your cloud resources and
+all your UNIX machines and it's very
+interesting that from an attackers
+perspective we spend a lot of time
+trying to classify a network the first
+thing I do when I get on a big external
+let's try to get a handle on the scope
+and start numerating everything I can
+and then to see from the defensive side
+that seems to be a lot of focus on the
+products that block attacks but if you
+don't know what you're protecting it's
+kind of hard to protect those things
+some things to think about or what's
+currently facing the Internet how many
+total systems you have where is your
+data
+how many menders do you have and do they
+have access to data is that data leaving
+your network these all seem like fairly
+simple things and ideas but it's pretty
+tricky to actually get a hold on there
+are lots of applications that do this
+now and it's becoming more and more
+killer kind of I think called Enterprise
+Asset Management there's a bunch of
+tools I'm not going to list all these
+off
+Microsoft has it System Center
+Configuration Manager it's gonna look at
+all your ad stuff and then there's a lot
+of patch management software - that
+should know where everything's at so
+that it can manage your patching levels
+and then there's all-in-one solutions
+buy a lot of the big vendors that handle
+everything from the firewalls to the
+neck and they do your patching and kind
+of the whole top to bottom stack I kind
+of put these things into two different
+classes one is the active classification
+tools these ones look to profile any
+newly joined devices to your network
+they basically work pretty simply
+someone plugs into the network they come
+and try to identify the host they maybe
+look at some different ports on the hose
+see if it's a Windows box see what
+domain it's in some of the better ones
+have agents that are out so they'll push
+the date it back up saying hey this is
+me let me on the network and if it's
+good they'll move you out of wherever
+they drop to initially or allow you to
+access everything inside the network and
+if you're not good and they say this guy
+can't talk to anyone we're not gonna let
+them out pretty simple
+then there's the passive classification
+tap class these products and the profile
+newly joined devices also it's the same
+type of tools on the back end someone
+connects only this time they don't
+actively go and start looking at that
+device they kind of wait for some
+traffic to come by and then try to
+identify
+the devices in that way I think like net
+spy has some stuff like that these
+devices start sending some traffic they
+monitor the traffic and try to idea
+based on what it's sending if it sees
+any kind of malicious traffic or if it's
+trying to grab something it shouldn't
+because it doesn't know who it is then
+it kicks them off the network some
+really good ones will even profile like
+if I'm trying to exfiltrate
+a credit card out of the network it'll
+have like red X's built around credit
+card numbers or socials and to actually
+identify whether data is leaving the
+network or not and back to the attacker
+mindset so the first thing we do when we
+get on a big test is start to enumerate
+the external network then we break in
+and we can and then we start to
+enumerate the internal network kind of
+the same way where we want to get as
+much of a view as I can because I'm
+looking for the stuff that the defense
+maybe forgot about or developers kind of
+throw up a server on the side that no
+ones can find and if the organization
+doesn't have a handle on where all their
+resources are it's really hard for them
+to make sure everything is up-to-date
+and patched and configured correctly and
+I pick on enumerate just because it's
+it's interested in me that attackers
+spend just 90 percent of their time
+looking around the network for these
+exploits and very little time actually
+doing the exploits if you're not doing
+this currently there are new things you
+can do yourself without buying any tools
+a couple of these I actually use as an
+attacker once we get on networks because
+they help us profile basically
+everything in the network the first one
+is 80 recon that's by census security
+it's the simple little PowerShell script
+you can import it outputs this really
+cool
+excel sheet that I'm gonna try to back
+oh yeah Oh on fullscreen yeah so this
+outputs this nice excel file you can go
+home and run this now it just uses your
+users credentials doesn't do anything
+malicious it just pulls this all out of
+Active Directory it's not me that put it
+out there okay since the security it's
+all some open-source PowerShell stuff
+you can take a look it's pretty neat
+though and you ever use this it tells
+you how many accounts are there who's
+enabled shows you your privileged users
+their groups the computer stats kind of
+every user when the last time they had
+their password changed this is all stuff
+that an domain level user can get and so
+you don't need any special financials
+for this it'll list all your groups and
+SP ends and OU's a really helpful one is
+the computers list because it actually
+picks out the operating systems which
+can be really helpful if you just want
+to look at all the windows xp boxes that
+are still up inside a network for
+instance it'll show the day since the
+last logon that you went touch that box
+it shows what sessions are up and again
+this is all just stuff that you can get
+that was ad recon the next one and I
+don't know how this works exactly I
+tried to put a little video pink castle
+is another tool and they've got a little
+video here where this is like how quick
+it it takes you download it from them
+it's from a guy called my smart logon if
+you've seen him on Twitter he works with
+Benjamin Delfy a lot on the Democrats
+kind of side of stuff you launch this it
+opens up it kind of does an audit on
+your Active Directory infrastructure and
+it's really nice because it shows you a
+bunch of different stuff that could
+maybe be wrong with your Active
+Directory and this is again like a
+totally free tool that they put out I
+think they're trying to promote that
+they're gonna come help you fix all this
+stuff but it'll show your domain
+controllers and then any kind of users
+that are out of date or it finds
+computers that maybe don't require
+authentication users with too many
+rights and then does a whole bunch of
+stuff on just looking around your Active
+Directory and it really doesn't take too
+long to run and then has a nice little
+web interface and everything you can use
+to look at that's pink castle and then
+you can run things like bloodhound I've
+showed that one before that again also
+just uses regular domain creds and maps
+out your whole network that one really
+is more looking at relationships inside
+your network then there's also you can
+in map or masks and even port scan
+inside your network especially for stuff
+outside of Windows hosts and that's just
+some helpful things for you to you know
+mieux self this is more like the
+recommendations of having a list why
+would having a list of all your
+resources be useful one thing it can
+take off a little bit of the pressure of
+your firewalls and Evie and patching
+recently there was like another patchy
+stress bolon that came out and it was
+interesting seeing a lot of the vendors
+posting that they could prove vein
+any attacks that would happen on this
+Apache struts they were looking for like
+reg X's because it was in the URL
+basically of the attacks but I was
+thinking wouldn't it be a lot easier you
+just knew where you had it struts
+installed everywhere and you could just
+look at the versions and then be able to
+go update them seems like it'd be a lot
+easier way to protect your network and
+you'd be a lot quicker about being able
+to patch we spend a lot of money on
+these security products that protect us
+from all this stuff but these things
+would be basically free to have our own
+info and up the security quite a bit so
+moving on to authentic Asian and this
+all makes sense hopefully towards the
+end here with these profilers and how
+they authenticate ntlm authentication is
+maybe the more simpler one a computer
+makes an authentication request the DC
+answers with a challenge the computer
+responds with the challenge using the
+hash of the user it encrypts that
+challenge with the hash of the user
+that's like their password and sends it
+back to the DC the DC also knows the
+password and so it also hashes against
+the password and then compares the two
+responses basically this way we don't
+have to actually send for initials
+across the network we're just sending
+these hashes so when you log in to the
+the first computer you never actually
+send those creds across the network you
+send a response that's been hashed with
+your credentials back
+Kerberos gets a lot more confusing
+actually it makes use of tickets tickets
+our session specific data values there
+are two kinds of tickets there's an
+authentication ticket also known as the
+ticket granting ticket which they use
+too many times they use the word ticket
+in a lot of this explanation besides
+your ticket granting ticket you have
+service tickets when you are first
+authenticating the DC sends
+well here I got better pictures here
+Kerberos authentication so Fred goes and
+logs into his PC next that computer is
+going to make an authentication request
+to the DC the DC is actually the KDC for
+the Kerberos distribution or key
+distribution center but they always run
+on domain controllers it's in two
+requests that domain controller that
+domain controller answers back with the
+challenge a lot like ntlm the computer
+takes that challenge and this is Fred's
+PC and what actually happens is Fred
+only authenticated to his computer but
+the computer actually makes the request
+on Fred's behalf to authenticate up to
+the DC so it takes that challenge and
+encrypts it using the hands from Fred's
+password it's a little more secure and
+then it uses time stamps and so these
+tickets are only valid for short amounts
+of time so you have to respond real
+quickly that way you can't just brute
+force and guess a whole bunch of times
+and hopefully you get the right ticket
+value you send that back the KDC checks
+of the challenge response answers what
+it is what it expects if it's good it's
+going to send back a ticket granting
+ticket to Fred's PC now Fred PC has this
+ticket granting ticket so if fred has
+needs to obtain a sorry now that the
+computer has a ticket granting ticket
+Fred actually hasn't logged on yet in
+order to actually log on and you need
+these service tickets the ticket
+granting ticket can get service
+tickets so then the ticket granting
+ticket goes out and ask for a service
+ticket to launch the process that lets
+Fred log on it does that in the same way
+if fred has any drives mapped or needs
+to authenticate to any other post once
+he's on there they use the ticket
+granting ticket to request more service
+tickets to access these things the idea
+here is that these the ticket granting
+ticket only stays with Fred and then
+these service tickets are only good for
+the service they request for and so it's
+more secure than ntlm and that if I
+capture the entail in hash I can use
+that hash everywhere because it's just a
+hash if I get one of these service
+tickets it ideally should only be good
+for use of that one service or process
+that you tried to steal it from the
+there's a logon process that runs on
+your computers that collects and does a
+lot of this local security Authority and
+that allows the users to log on and keep
+track of these tickets the real key
+thing here is that the passwords are
+known by the computer and the user and
+they're known by the KDC but they never
+actually traverse the network what does
+traverse a network or just these tickets
+that are only good for so long and for
+whatever they're specifically supposed
+to be accessing so to make things even
+more confusing once you have your ticket
+granting ticket and your service ticket
+within those there's access tokens so
+locally on the windows box
+Amanda's identity and security
+information structure known as an
+set up in an access token is just an
+attribute that's within these Kerberos
+tickets specifically if you looked at a
+Kerberos ticket to be the privilege to a
+tribute certificate within that and they
+contain your information like your
+username your groups and your privileges
+access tokens are tied to processes when
+they're launched and it sounds really
+confusing actually in practice it's it's
+really cool how it all works is that
+basically it launches the process using
+these access tokens and those access
+tokens contain the security context of
+what they can access so when you create
+a logon process the access token
+actually launches that process that goes
+and requests those services and it'll
+make hopefully more sense in this FTP
+example because there's also two types
+of access tokens if you're not
+completely lost already there's a
+primary token and that's kind of the
+default token on any process it's going
+to be the primary and then there's the
+impersonation token and this is what how
+they make their authentication kind of
+neat so the impersonation token is lot
+used for client-server type of access
+these tokens enable a thread to execute
+in security context of someone else
+then who launched it I think the easiest
+way to understand that was to be an FTP
+server if you go and log in to an FTP
+server and
+having your own the prot like FTP
+process is running you're actually going
+to the FTP server is going to be able to
+use your impersonation token apply it to
+itself and then it has access to
+whatever you have access to and nothing
+else even though if you didn't have that
+token that FTP service can probably
+access every file so when the FTP server
+when you log in it starts running under
+your context by using your impersonation
+token that's impersonating you now
+so the FTP process running is that user
+and then the token allows that service
+to it that way when it goes and accesses
+a file that you want to download it just
+has to look at its own security context
+at this point and not go redo
+authentication that's part of the idea
+now keep going
+impersonation tokens have four different
+levels of course which one of them is
+even called an impersonation level which
+also doesn't make help it makes many
+sense anonymous is the lowest level and
+that's kind of like where a primary
+token is going to be running at where it
+can impersonate the user as if they're
+an anonymous user they had no access
+it's like no lawful indication so it
+probably can't access anything unless
+everyone can access something then you
+have identification levels which then a
+process a process can pull your token to
+validating credentials but it can't
+really do anything with that token the
+impersonation level lets it pretty much
+impersonating at the personation level
+that means your security context can do
+everything on this box that it's allowed
+to do and the difference between a per
+session and delegation is that
+allegation lets you go to other boxes
+and that I think makes a little more
+sense with a sequel kind of issue so
+share share point so when you
+authenticate to SharePoint SharePoint
+does actually have all those files this
+files are on database servers or
+something somewhere else so you up
+indicate the SharePoint with a
+delegation token and that way SharePoint
+can then use an impersonation token of
+you somewhere else
+it's like a double hop so it gives you
+further access these are important to
+attackers because if you come in with a
+delegation token that I can steal that
+means I can act like to you on the rest
+of the network because I can give myself
+impersonation tokens on a bunch of other
+boxes and that's where we sort of get
+back to where this attack is going to go
+but you can look at these if you've ever
+looked at properties of a user you maybe
+have seen so like for a person you can
+either set this account is sensitive and
+cannot be delegated
+so that means wherever it logs in it
+only can log in there it shouldn't be
+able to log in there and then remote
+somewhere else without having to retype
+in credentials computers can also have
+the same thing where the computers can
+be trusted for delegation there's a
+whole bunch of logon types that change
+what type of token and ticket you get
+basically there's there's interactive
+all accounts and non interactive where
+one you have to type in your credentials
+and other ones you don't
+you probably have seen this when you've
+been using that works and you try to
+access a resource and you just get it or
+you try to access a resource that makes
+you type in your credits again so these
+tokens why are we really talking about
+all of these they're the impersonation
+tokens and delegation tokens are present
+in both types of remote logons it just
+really matters I guess here's the
+SharePoint example here but the FTP
+server
+Fred jumps onto the FTP server gives an
+impersonation level token there so that
+FTP server can impersonate him just on
+that box now Fred jumps onto the
+sharepoint server sharepoint needs to be
+able to go to other resources to pull
+data that it holds so fred jumps on with
+a delegation token that let's say get
+impersonation tokens on other resources
+so there's a lot of ways to attack these
+different types of tickets and tokens
+and access Kerberos can be banned in the
+Middle's a lot of these attacks deal
+with a beam in the middle
+Kerberos you could mean in the middle at
+the very beginning when you first sinned
+that first request the DC responds with
+hey these are all the levels of
+indication I can do a real easy one is
+to do a downgrade attack and that's
+where basically you intercept that
+request and tell the server that was
+trying to connect that it can only
+authentic eight at the very very lowest
+level of one that's very easy to either
+crack because it's not encrypted very
+strongly or you can even push it all the
+way down to ntlm which then you can get
+hashes which we now know or reusable
+versus tickets the side
+down grande attacks the attacks on ntlm
+itself where you can in in the middle of
+the challenge response that happens why
+those are bad is because that if we
+looked and passed the hash attacks when
+I talked about how the credentials never
+cross the network well that means that
+if I have a hash that's the only thing I
+never crosses the network and that's
+where we can steal hashes and not have
+to ever get credentials and be able to
+authenticate the things because of how
+the windows authentication system works
+is it's only expecting a hash it never
+really sees credentials when they get
+crossed across the network ntlm has
+different versions itself
+there's ntlm v1 and TL m v2 v2 obviously
+there's a stronger encryption is a lot
+harder to cracked if a user captures
+that hash but both of ntlm V 1 and B 2
+can be relayed which we'll talk about
+these attacks here in a second so the
+pass the hash I kind of just explains we
+don't ever have to crack the hash even
+if you have a 50 character password if I
+capture that app that was used I can
+just push that somewhere else and it's
+like we already did our
+challenge-response dance and I can
+authenticate these are typically on
+Windows systems
+this was actually in around for a really
+long time this guy named Paul Ashton I
+think was the first like white paper on
+it back in 97 when we were using
+Netscape and this was like in Windows 95
+type of era I think everyone was else
+was rocking Tamagotchis early style was
+at the time the reason why that pass -
+works is just here back on that same
+picture the part I have highlighted
+showing that like when the user
+authenticates that computer the computer
+creates with their credentials the hash
+and then uses the hash to actually do
+all the authentication so that's why we
+don't actually need to get your
+credentials to hijack your account now
+with the pass the hash you can pass ntlm
+hashes but if they're using net ntlm the
+little more secure version you can't
+pass that hash but there's another
+attack you can do that's about a relay
+attack and these are a little more
+popular now and especially with this new
+tool that's well I guess it's not that
+new but the new update is really nice
+you can relay these metonym TLM hashes
+so the normal law happens that's just a
+normal authentication pass back get the
+encrypted token I hash it send it back
+to the guy he checks it with his
+password we're good the relay attack is
+you man in the middle this and you say
+you making a using authentication
+request to go across the network and you
+convinced that a computer using one of
+these tools that you're the guy they're
+trying to authenticate to so they send
+you their challenge you send a
+authentication request to the target
+server you're trying to go to that the
+user has access to they send me back the
+challenge I just for that back to the
+originating server he encrypts it with
+this little password sends me back that
+hash I
+or that on and that computer now the
+minks that I'm that guy because I was
+able to do the challenge dance with them
+and that's just called a relay where
+we're not actually obtaining any of the
+credentials ourselves we're just
+man-in-the-middle in that same scenario
+so there's a tool out there called
+responder it's pretty popular it it
+actually will start responding to a
+bunch of different computers on the
+network that are looking for places like
+hey I'm trying to find this resource
+where's it ad it'll say hey I'm that
+resource come kanakam talk to me and
+then it knows that you're going to send
+some creds over and so it's listening on
+the ports that it needs for those
+credits and you can capture hashes that
+way in Vegas a powershell version of the
+same tool Multi relay is kind of like
+the new hotness here where ultimate 1.0
+was out a while ago and that kind of
+because when we weren't capturing those
+ntlm hashes we couldn't pass them
+anywhere once they upgraded security so
+we had to start in the relays multi
+relay 2.0 was out now and he made it a
+lot smarter so that now it'll basically
+open interactive sessions on hosts and
+keep those tickets that is capturing so
+that it can then authenticate two more
+hosts so you're not stuck with the one
+relay and then you're done when we first
+started relaying it was like you could
+send one command which we usually would
+just draw mini cats so we could dump the
+actual hashes then we could pass those
+but now we can actually launch full
+shells using these relay attacks and
+this is just if anything comes and hits
+this with some of these credentials
+which is why you run responder in the
+first place that's kind of a shot of
+that tool what I came to talk about fine
+after all that nonsense what is this
+asset classification problem that I just
+totally stumbled across in a pin test
+recently when we're trying to catch
+those asses it's like I wish I could get
+someone to just send me credentials well
+if you remember any of those active host
+classifiers they actually if they think
+it's a Windows box that's in their
+domain they will send credentials to try
+to log on and check what processes are
+running and do some further post probing
+to see if you can authenticate and so by
+literally just plugging in to the
+network you there's a couple ways you
+can set up the relays instantly by
+either grabbing the IP address that it
+gives you and just spraying on the slash
+24 you could plug in check the network
+real quick and unplug plug back in once
+you have the relays set up but basically
+you just wait I did this as far as on a
+test and I was having trouble getting
+connectivity to the remote box I was
+talking to use these little Intel boxes
+that have backup LTE modems so we can
+access them from just you know like the
+cloud I guess you can call that one
+there and then ideally we get internally
+on the network but I would have had to
+keep on bouncing the internal connection
+and I forgot that I had left the multi
+relay up in a different window
+well after sitting there for like 60
+seconds some firewall device basically
+came and tried to authenticate to me and
+gave me what ended up being a domain
+admin hash the problem with a lot of
+those asset class became tools is that
+they also need to
+run as domain admin I don't know they
+need to run us a minimum they are
+running as domain admin you probably
+have these if you go look at your domain
+administrators group so I plug in it's
+listening on all the windows ports you
+can even change your hosting to make it
+look when dozy because this is on a
+linux box once you wait in the 60
+seconds it tries to authenticate let's
+be on over to the target and now I've
+basically got domain admin on the
+network in the first minute I was
+plugged in and it's now seen it on a
+couple of different devices so I know a
+lot of them are doing this there's ways
+you can turn this off I found out but
+it's not really on it's not a default to
+be off like they they want to profile
+everything on the network they want to
+be able to access things they want to do
+their patch management and it's
+surprising that they would just be able
+to send Kretz like that and there's
+something the wrong type of credit so
+they should be using a lot of that
+Kerberos ticketing system and try to get
+a service ticket a toss but they're
+sending just like straight login
+credentials and giving ntlm hashes so we
+don't even have to ask or respond on the
+network you literally just plug a box in
+have the relay up and you'll get a hash
+I'm looking for more test cases we've
+seen these on a couple of different
+devices and it's been a known problem I
+thought at first I have figured some
+ground breaking at his broke every
+firewall in the history of the world but
+a HD more wrote a paper about this in 94
+2014 sorry on palo alto x' where he
+noticed that they were doing the same
+thing and he just wrote this little blog
+post about this one line that says i
+think this issue applies to almost every
+system management product and utility in
+the windows ecosystem and i guess
+researching it because it seemed like a
+bigger deal to me but I he just forgot
+about it
+he wrote a hardening paper on some of
+these devices - hey make sure they're
+not sending all these creds and yeah so
+they're kind of the elephant in the room
+is that there's probably a lot of
+security tools were using that aren't
+just these asset managers there's
+auditing tools and services if you're
+doing authenticated scans on your
+network
+those are sending credentials to
+anything in that and your scans are
+probably set up to the scan of slash
+twenty four and run and not you don't
+have that every single host put in there
+maybe because you don't know every host
+you have some of the dev up management
+tools I've seen do this like some
+SolarWinds stuff and then any admin
+scripts it it really matters on how
+you're authenticating into stuff to do
+work and that's a lot of reasons why we
+can move their network so easily it's
+because everyone just uses like RDP to
+log in and so there's credentials and
+hashes just sitting there versus some of
+the more recommended stuff from
+Microsoft which is like use PowerShell
+remoting because it'll actually use the
+ticketing system and give you that one
+service ticket so if I do compromised
+that logs I can only steal this ticket
+that's only useful on that one box and
+not anywhere else in the domain so if
+you'd like I could
+look at your network I'd really like to
+figure out how many of these or start
+kind of profiling them we've seen them
+on a couple things so far the major I
+guess the tags just kind of recap on
+them is the relay attack so even if
+they're sending the net ntlm v1 or v2
+credits which like counteract you can
+pick what type of credential you want it
+to send or try to authenticate it
+doesn't matter so we can do these relays
+attacks we can also crack those
+passwords it's a little harder or we can
+just if they're actually fully logging
+in and I wasn't there listening but it's
+already logged into a box I'm on besides
+the fact that Windows caches domain
+credentials we can also steal the token
+if the audit is still in there
+or auditors still in there and just
+impersonate that user using those
+impersonation tokens and then run around
+the network just like on that service
+some mitigations I'm not going to really
+cover all these but you can harden
+Kerberos there's different ways you can
+disable a week or algorithm so that you
+can't be downgraded and just say I won't
+accept anything else there's no reason
+anyone should be using really low-level
+encryption schemes as long as you don't
+have like Windows XP boxes you have to
+support you should be able to do that
+you can enable Kerberos armoring which
+encrypts that first preaw so they can't
+a man in the middle there's some stuff
+on hardening ntlm you can disable
+restrict ntlm off inside your network
+because ideally everything should be
+using Kerberos you can also disable the
+net in TLM
+the ones that at least you have net MTL
+mb2 still susceptible to relays but a
+lot harder to crack from a password
+cracking perspective also part of the
+relay attacks and the responder attacks
+really rely on SMB one and SMB signing
+to be disabled by default right now even
+in the latest 2016 updates only domain
+Oh actually not even just that makes
+ropes any server that gets promoted into
+a domain controller is the only thing
+that has SMB signing turned on by
+default everything else your network
+does not have SME signing if any
+signings enable then those packets have
+to be signed and then you can't be in
+the middle but basically you just need
+to give her those windows XP and older
+hosts because they only can support SMB
+anyone there's also a bunch you can do
+on your service accounts give them long
+hard complex passwords in case I do get
+that net ntlm v2 hash I then can't crack
+it try to restrict the interactive login
+types and deny access to any of these
+resources that require ntlm
+authentication and then try to follow
+the rule of least privilege I know a lot
+of places say that these service
+accounts need the main have been
+everywhere but they probably don't in in
+the pollow's actually you can disable
+client probing so that it won't do
+you think it doesn't already know the
+counter actually can do the same thing
+you can also modify the counter acts
+type of authentication and tell it only
+to use certain types to get in I think
+there's a lot more of these Paulo just
+has this like little blurb and their
+configurations where it's like if you
+choose to enable probing in your trusted
+zones the agent will probe each IP
+periodically every 20 minutes so
+basically anyone sitting on there could
+just be constantly getting a new updated
+hash of your service accounts which are
+running as domain admins there's also a
+tool called convey that Kevin Robertson
+put out that can detect responder
+someone's trying to poison your network
+it's pretty neat
+some general defense I think I'm like
+running out of time but the Daz nuclear
+logging in don't have a lot of local
+admin everywhere that makes things way
+too easy there's a lot of over privilege
+domain user accounts try to trim out
+those service accounts for da brew
+change the default credentials on
+internal hosts way too often we can get
+onto boxes by using default creds on
+internal networks you can also restrict
+how much of these credentials is stored
+in Windows by default by changing the
+caching directives and implement
+multi-factor if you want to look at some
+stuff I'm going to post these slides and
+there's a bunch of links here on all
+work access tokens and how they were
+and then a bunch of these different
+devices and how they're sending their
+credit and why and that's all for me
+thanks

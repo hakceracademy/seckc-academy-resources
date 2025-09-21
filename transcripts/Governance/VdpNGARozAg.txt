@@ -1,0 +1,85 @@
+the scripts that you can run uh a lot of
+times after you exploit a machine you
+usually get in as a web user and these
+will kind of help you a numeric machine
+do a lot of the work for you to look for
+exports that might be out there um the
+first one I'm going to talk about is
+with security sift put out um the Linux
+privilege Checker and so you can run
+this as a web
+user and when you start running this it
+does lot of the work that you're going
+to do normally
+e e it's doing a lot of the work that
+you normally do manually um looking
+through
+that grab my scroll bar here sorry it
+dumps a lot of info for you here
+it starts off talking about the Linux
+jnel the host name and then starts
+working through the network info um it
+shows
+you the mount results fstab different
+cron jobs and the ownerships are
+environment variables the users your
+current
+user um and then the nice thing is
+towards the end of this script after it
+shows you every
+right
+sorry it also enumerates every installed
+application in the versions so you can
+lift those
+up I can't see the scroll bar from over
+here
+um and at the end of the script it gives
+you some suggestions for for different
+experts that might work on this machine
+um the only problem is this script's a
+little dated and so Hur Labs came out
+suggestor
+which which I have
+here and running this um if you run it
+on default it takes the output of name
+minus r and tells you the different
+exploits that might work on this machine
+so this one's sort of up to date so
+there's not a whole bunch but you can
+level and it'll give you different
+exploits and the reference to the
+exploit database where the PC is going
+to be
+located um so that's it for the Linux
+ones there's also the same kind of idea
+machine the windows exploit suggestor
+same kind of idea um someone else
+actually made it kind of based on the
+thing from contor Labs um this one is
+kind of nice because if you run an
+update with this it gives you an Excel
+sheet of the most current known local
+exploits um then if you are inside the
+machine you just need to run a system
+uh hot fixes and you can copy and paste
+that
+into uh just a text file and you feed
+that into the exploit
+suggestor and it takes a second to look
+through how many people think this demo
+well this should not cause any surprise
+to
+you
+so it's here again for our first time
+speaker
+and so the nice thing about this one is
+that it also references if there's a
+medlo module available currently or if
+it's located in export
+database and so hopefully these tools
+can kind of help you do a lot of the
+manual work as
+criation can just take forever um and
+these will kind of help you out that's
+all
+ni

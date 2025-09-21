@@ -1,0 +1,234 @@
+all right
+okay so
+stupid cisco tricks i have a switch up
+here i'll break out in a second uh we're
+going to use physical physical access to
+basically take over the switch and do
+whatever they want
+standard disclaimer there could be
+profanity
+if you break stuff doing this it's not
+my fault at all i'm not responsible if
+so
+here we have a typical network layout
+you'll have your core you'll have trunks
+going out to distribution switches maybe
+layer threes or routers in your
+distribution points and then we have
+the access layer switches
+which is what we're after tonight
+so
+the access is where we're after uh maybe
+we wanted to pick a portfolio or never
+administrator it's just a dick and we
+won't configure our port so we're just
+going to do it for them
+things of that sort
+so
+here's tonight's victim up here a 2950
+catalyst they're old they
+please note hand is small
+the newer cisco stuff the 4500s and the
+3850s they run ios xe
+that does not quite work with what i'm
+about to show you uh the nx os operating
+system also does not work in the same
+way
+so ios is our sweet spot that's what
+we're looking for right so
+what i'm looking for is being able to do
+a dirt and see this right here i want to
+see the vlan the config.txt uh let's
+ignore that then you got your bin which
+is basically the uh the binary that's
+going to launch on the switch
+so
+what i'm talking about tonight is
+wrongline anybody has worked on a
+network or walked into a situation where
+you had to get into a switch without the
+password
+ramon is a feature that's put there by
+cisco
+it's quite handy uh used many times
+on the front of cisco switches they have
+a mode button
+on on different ones on this one right
+here it doesn't have any modes
+but on on poe switches and things of
+that sort you can use the mode button to
+cycle through different modes it'll tell
+you what number switch it is in the
+stack it'll tell you what ports are
+pulling power and things of that sort
+so what we're going to do is use rom
+line we're going to hold this mode
+button down here and we're going to
+unplug the power and plug it back in
+holding down that mode button so here's
+this is this is that switch i can't get
+in it's super serious
+i'm
+did you try cisco cisco yeah
+i should have but i know
+because it's not there okay so this is
+basically wrong on what you're going to
+see when you hold that mode button down
+you plug it in and power it up it's
+going to give you these uh these three
+options basically so the first thing we
+want to do is initialize that flash
+drive
+so we run flash init and what that does
+is it basically allows us into the
+directory that's stored in the config
+which is where we're after right
+so now
+flash directory
+you see here i have a file called
+config.txt
+so what we're going to do is get rid of
+that
+you're going to want to put
+flash in front of that because without
+it
+yes i'm sure
+to a backup file and the reason i did
+that i'll show you in just a second
+so now that we've got the the config out
+of the way we're going to boot the
+switch
+and if you've ever looked at this it's
+nothing exciting
+once it's loaded it should come up to
+what you would see if you bought this
+switch brand new
+which is without a config which is what
+so here we are would you like to
+configure the system
+actually no i would not
+okay no one's pissed about my high speed
+things that sort look here we are
+now
+ian
+we have just taken over the center
+which is cool and all but everybody's
+going to notice if you take this down
+because look here you don't have any of
+your concealer
+so
+you've got
+but luckily everybody made a backup of
+that file so what we're going to do is
+all those ports are shut
+you're here ah
+we got your feedback
+one thing to note you're going to want
+okay so now if we do a dirt
+we don't have a good fit what the hell
+is
+right ma'am that's your friend
+make sure to write down when you do this
+otherwise you're going to reboot the
+switch you know uh six months down the
+road and it's not gonna happen
+so basically we've we're in we've got
+access we can configure whatever we want
+reports will port wise look at the vlans
+uh things of that sort
+so basically you've taken over the whole
+thing off super secret information i
+so when they start trying to log in
+it'll still work
+because we're right back to where we
+were
+although we were on
+we still had access and everybody could
+get into it
+just as you would expect
+so i know
+if you look down here
+it'll have the username right there
+username i'm privileged
+okay sir uh down here you're asking
+about if people can get in or what not
+as long as this user engine there or
+whatever they got tacx they can get into
+it remotely just the same because you
+got your vty's configured for ssh this
+is logging local but if you have
+uh radio or something like that you'll
+go there
+uh
+so the one thing you can do
+is you can change it copy it get into
+the switch
+copy the configuration back to
+config.text do reload in two days change
+your vlan to whatever you want and in
+uh
+indeed had to use it quite a few times
+because we i walk into an environment
+where i don't know the information to
+get into the actual switch and that
+sucks so it's much faster to do this
+so it looks like it might be successful
+nice yeah so this is ramon these are
+basic the basic options of what we just
+did uh if you do a question mark at the
+beginning you'll get it'll tell you all
+these things
+so the first thing we did was initialize
+the flash which seemed like it took
+forever
+then we look at the flash file system
+you would delete the original because
+that original is what causes that switch
+to load it when it comes up so once you
+delete that original it thinks it's
+raining out of the box after you boot
+and that doesn't really show if it's a
+camera
+so when it comes out the answer though
+we're in we can do whatever we want now
+cover up your tracks
+configure whatever you want just
+remember to write moon if you don't
+write them you're not going to have to
+convict that text and whenever that
+thing reboots you're going to be off to
+be six months down the road when they
+you can do this no service password
+recovery which might slow someone down
+laser cats
+get yourself some of these kids
+what about the smart people check the
+no service password recovery is supposed
+to disable that but i've read a lot
+where you can send breaks and what about
+so the whole thing was kind of based on
+that they had to have yet physical
+access to reset the box to start with
+right yes
+you would have to have physical access
+so the
+premise that because i know you've
+talked about 2950 switches that have
+been around for a while so it's a
+premise that people are putting these
+things on ebay and they have
+configurations by the way absolutely and
+that's about it i've walked into uh
+situations where we had
+switches and closets that have taken
+and you gotta go in and try to fix
+it and you get there and they're not
+hooked up to tack apps so your your
+password doesn't work and so you don't
+have a local account on that switch
+for sure so what you have to do is do
+what i just did in order to gain access
+to it then you can put yourself a local
+account copy
+config backup back into it so you get
+everybody back and then give yourself a

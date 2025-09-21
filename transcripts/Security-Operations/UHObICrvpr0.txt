@@ -1,0 +1,80 @@
+hey how you doing I've been playing with
+this new tool about Wi-Fi for hacking
+WPA and wpa2 with it so I'm fairly new
+to it so yeah so basically Wi-Fi can be
+ran either by apply or asian it's
+automated
+right now is scanning to see any
+and well why find others is with the WPA
+captures trying to capture the handshake
+with with Wi-Fi you can also anonymize
+okay
+but like I say you know with no Wi-Fi
+you can automate your own your MAC
+address and you can also attack access
+you can also think one attacks according
+to uh ^ rock bass I'm interrupting
+you don't know so you want to designate
+a volunteer yeah I'm a designated
+volunteer that's why as you guys may
+know that wibbels traditionary site
+Casey first time you have to speak you
+either have to take a shot Oreo that
+doesn't make me shot to somebody else in
+the crowd
+so our speaker has elected while waiting
+for our handshake here thank you for our
+about to go ahead and interrupt this I
+just got word that I can hear up to
+someone's up couple Wi-Fi so with Wi-Fi
+Wi-Fi this arm is on written in Python
+and it uses the aircrack-ng suite so
+it's like wrapped around it so it does
+use a lot of the functionality of
+aircrack-ng and s as well as some
+right now I'm a not advising my back
+address and I'm attacking a network with
+can you trust not a bit I don't know
+ain't messing with them it does show you
+how many clients are attacked and it is
+I stopped monitoring right now and
+and right now as you're listening on
+Stanford's Network you try to see if you
+yeah
+this process is very time-consuming so
+when I first started playing with it I
+actually said it and went and played
+chess and came back and said this thing
+so
+and every few seconds he keeps it gently
+now packets to try to not be the visual
+if you don't want to be here for five
+years I go ahead probably one of the
+easier
+someone like Star Trek we've got
+right now it's going to elicit open
+attacks
+right now what is doing this is waiting
+for a packet captures or once they reach
+a packet catherine's past a certain
+point
+like I said once for each other packet
+capture past a certain point what it
+well as you see this process can take a
+so one attack was come completed but
+there was no success why fight is a good
+tool for a wildfire cracking and just
+time to some minute you have to have a
+has anybody has anybody not done
+wireless cranking before all right what
+guys smart up to a minute
+yeah you can sit there Neath the waiting
+waiting waiting all the sudden here come
+all the important packets and then a
+Internet's for everybody again so that's
+trying it out live takes it take some
+comfort so you uh did you have to use a
+special wireless part to get that to go
+and then laptop with it were today
+you have wireless card another dozen of
+the box yeah oh that's cool excellent

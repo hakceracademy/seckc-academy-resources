@@ -1,0 +1,1371 @@
+uh so
+it's an honor and a privilege to be here
+this evening this is uh my third attempt
+at giving a kansa related talk
+uh at sec kc
+i think uh two and a half years ago i
+started working on this open source
+incident response project called kanza
+just coincidentally
+and had planned to for those of you who
+don't know i'm from this area originally
+but four years ago moved to seattle to
+go work for microsoft to do incident
+response in cloud service environments
+and uh
+so the
+you know being there for several months
+and then coming back for summer vacation
+i had planned to give this talk at kanza
+and
+there was some confusion mix-up and
+scheduling happened in a way that i
+couldn't give it
+uh and then last summer i was gonna give
+this talk
+and we came back for summer vacation and
+again same kind of thing except we
+decided let's move back to the midwest
+so now i'm living in the area it's much
+easier for me to actually give a
+presentation here
+so
+the talk the title there con's incident
+response an open source in the belly of
+the best
+i'm sure some of you think that's a typo
+it's actually just kind of a joke i
+don't actually think microsoft's best
+but but there you go um if you came here
+thinking oh this is going to be a talk
+about open source uh let me just get
+that out of the way real quick
+i'm not really going to talk about open
+source except to say uh yeah i did an
+open source project while i was working
+for microsoft and you know maybe they've
+had an adversarial relationship with
+open source projects
+in their past
+but they are trying to be more open
+source friendly
+but i would say if you want to do an
+open source project you work for some
+software vendor company pick something
+that they don't make money off of
+uh do it on your own time and on your
+own hardware and maybe talk to a lawyer
+that's all i'm going to say about open
+source the rest of this is going to be
+about incident response
+so uh what is kanza it's a modular
+incident response framework written in
+powershell
+why why powershell well at the time that
+i started working on this i was like i
+said working for microsoft in cloud
+service environment
+lots and lots of machines hundreds of
+thousands of servers some of their cloud
+service environments have millions of
+servers
+so we needed a scalable solution
+for doing incident response
+everything believe it or not
+orchestration automation in those
+environments is done via powershell
+powershell runs millions of times a day
+in microsoft cloud service environments
+everything is set up for windows remote
+management and powershell uh so you know
+if you need to copy a mailbox from data
+data center in singapore to
+a data center or somewhere else it's all
+going to be done over powershell so for
+me that was the the thing you know oh
+working for microsoft now i better learn
+powershell this was a great itch that i
+needed to scratch uh and so i wrote this
+tool
+so we'll just do a little brief intro
+here to this thing
+um
+if you're interested
+in
+this is where you know john benson gave
+his talk before and
+my stuff's going to go sideways right
+um
+yeah good times well we won't do live
+demo we'll just go through slides which
+means i'm gonna have to chop up my
+franken deck even more um
+so i had some design goals when i set
+out to write this thing
+and they were
+basically i wanted this thing to be
+modular not monolithic so what does that
+mean uh if anybody in here is familiar
+with like metasploit it's very modular
+right there's a whole bunch of different
+uh plugins and scripts and those kinds
+of things there are
+and i my first attempt at writing an
+incident response tool was to just write
+this giant script that would go out and
+collect a whole bunch of data points
+from machines
+and bring all that data back and then we
+would do analysis on it
+um the problem with having this giant
+monolithic script that you run on a
+whole bunch of machines and you bring
+back a bunch of data if you need to run
+a collection again 30 minutes later an
+hour later a day later but you only want
+to
+pinpoint a tiny piece of data if you've
+got some big monolithic script it's a
+problem
+you want it to be very modular so you
+can just select the individual pieces of
+data that you want to collect so i've
+got a screenshot later in the slides of
+this and how it works
+the other thing i wanted to do was i
+wanted to produce machine analyzable
+output
+if you're
+having to do instant response across
+10 000 machines 100 000 machines what
+have you
+it's critical that you be able to
+analyze the data
+with uh you know
+a machine has to be able to analyze you
+can't have analysts sitting there
+staring at it all day trying to figure
+out what's going on
+so you've got to have machine analyzable
+output and the last thing is you want it
+to be secure so those were sort of the
+design goals that i had when i wrote
+and here's i'm a not a graphic designer
+here's a terrible sort of architectural
+diagram of kansa so you can imagine
+there's a
+core script in this case it's called
+consona ps1 and then there's a whole
+bunch of collector modules the collector
+modules are just powershell scripts uh
+those powershell scripts do things like
+they'll pull back netstat data they'll
+pull back uh process data they'll pull
+back artifacts from disk you can take a
+memory dump each one of those collector
+scripts has a very specific function
+they all return
+data that can be analyzed by a machine
+uh
+so this is kind of how it works you you
+build a list of what your targets are
+and you put that in a text file just a
+bunch of host names
+and you you
+uh modify
+this file called modules.conf which i
+can't show you right now unfortunately
+but uh i've got a slide later my live
+demos
+off off the charts here so um
+you can figure what you want to collect
+and you run the script it'll go out and
+pull back a bunch of data from targets
+and save it to your machine here is the
+so in terms of being securish
+so that the modular piece was was was
+done there
+in terms of being securish
+powershell and windows remote management
+by default uses
+uh kerberos network logins these are
+the safest kind of login you can do in a
+windows environment
+if you're doing a non-delegated kerberos
+network login basically what that means
+is
+a tool like mimi cats can't be used to
+harvest those credentials so you can
+safely do these logins all day long all
+across your data center to thousands of
+machines
+and a tool like mimikatz is not going to
+be useful for harvesting those
+credentials
+so that was the securish
+and the reason i said security is
+because there's a lot of things kansa
+doesn't do
+that other forensic tools might do like
+oh they hash the evidence so when they
+collect the evidence they generate an
+md5 hash of the evidence and that's
+stored along with it and then you can
+say you know during the course of your
+investigation the evidence hasn't been
+tampered with uh because you've got an
+md5 hash that was created at time of
+collection console doesn't do that
+if you're working cases that may go to
+court
+maybe you want to prosecute somebody
+those are the kinds of things you
+probably want in your tool
+so that's why i say it's securish
+because there are things that it
+probably should do that it doesn't
+it does run across hosts in parallel
+obviously you need that if you're trying
+to scale up
+for
+windows remote management powershell the
+parallelism by default
+is 32 hosts so when you kick off a job
+you want it to run across 10 000
+machines it's going to run across 32
+hosts at a time by default that is
+completely configurable
+another nice thing about this was it's
+read write enabled
+so when i started working on this you
+most of the tools out there the
+commercial tools and even open source
+tools that were available
+were read only and they're read only for
+a good reason right these are incident
+response tools digital forensics tools
+you want to do things forensically sound
+right you don't want to be
+modifying the machines that you're
+the problem with that is
+you've deployed this agent across you
+know 100 000 machines or 5000 machines
+whatever your environment size is
+and you've got an agent that you can use
+for pulling data back but you can't use
+it for
+remediation the nice thing about
+powershell in this instance is because
+it's read write enabled i can affect
+change on those machines i can
+write a script for doing remediation i
+can run my investigation for a few weeks
+i can figure out
+this is the way the adversaries owned me
+these are what their processes are
+or these are the processes they like
+pivoting in
+this is what they inject into this is
+what their injected code looks like and
+i can write a script that can detect all
+of those things on the endpoint and kill
+those processes set up firewall rules to
+block their c2
+all because i have the capability of
+affecting change on those boxes with a
+lot of the commercial tools
+at least at the time that i started
+working on this
+you could not affect change on the
+remote host the tools were read only
+happily i guess
+since then almost all of the commercial
+tools now offer some capability to do
+remediation
+so they've all seen the light
+that you know being forensically sound
+is important but being able to remediate
+is
+so there is
+sort of the elephant in the room when
+you're
+talking about doing incident response
+with powershell and that is
+uh doesn't this thing rely on the
+windows api
+and if i have malware on a box that
+hooks the api
+can't
+malware hide itself you know if you're
+just running netstat on the machine
+can't uh
+malware hook the windows api for netstat
+and hide its network connections if
+you're doing a directory listing can't
+malware hook those apis and
+prevent itself from being seen and the
+answer is yes right you've got root kits
+that are out there that they they do
+these kinds of things it's very common
+but
+you're not strictly limited to windows
+api calls there is a kanza collector
+that uses recall anybody familiar with
+recall
+anybody using it
+anybody familiar with volatility
+volatility users we've got a few so
+recall is google's fork of volatility
+and the benefit of recall over
+volatility is that you don't have to
+take a memory image first so when i was
+working for microsoft it was fairly
+common for us to have
+uh servers with 192 gigs of ram
+and not just like one or two but like
+tens of thousands
+um tell me you know if you've got a box
+in singapore and you're sitting in an
+office in redmond washington and you're
+going to do an investigation
+have fun pulling back 192 gigs of ram
+and a memory dump so that you can run
+volatility plug-ins against it on your
+desktop
+try recall you can basically interact
+with live memory
+and and run
+almost
+well it gets better every day
+the critical volatility plugins are
+available in recall i'll say that so you
+can see hidden processes and hidden
+network connections things like that so
+if you haven't checked out recall
+definitely check it out
+so yes this issue of the windows api can
+be lying to you is important and i'm not
+dismissing it but there are things that
+you can do with api based tools
+to bypass that you can install kernel
+mode drivers and bypass apis all day
+so what sucks about kanza
+lots of things
+um
+one thing that that sucks that's at the
+top of the list here that um
+is not necessarily a cons a problem it's
+just an incident response problem in
+general and that is uh long tails so you
+know if you're familiar with the long
+tail concept lots of one-offs in your
+environment you can imagine if you're
+running a cloud service say you've got
+five different core services maybe
+you've got fifty thousand servers just
+for the simple math sake we'll say
+you've got five groups of ten thousand
+servers each they're all providing five
+different services
+ideally those
+buckets of 10 000 machines
+are going to be very homogeneous
+so that when you run a process listing
+or a directory listing on those machines
+hopefully you're getting back data
+that's very very similar from every
+machine
+unfortunately that's not always the case
+there's lots of little one-offs that
+creep in lots of delicate snowflakes in
+environments like this every one of
+those one-offs is a basically a rabbit
+hole that you have to chase down uh so
+you might have a script that that runs
+across 10 000 machines and you might
+have 150 different versions of that
+script according to the nd5 hash for the
+script that's 150 different scripts that
+somebody now has to go look at
+and make sure that there's nothing
+malicious in any of them
+which is a problem so long tails suck
+and that's that's not a kanza thing
+that's just ir in general having to
+chase down long tails is a difficult
+problem
+so
+if you have any control over your build
+environment try and make all of your
+boxes homogenous
+uh the other thing that sucks is the hub
+and spoke model so if you don't know
+what i'm talking about think about the
+bicycle wheel here uh with kansa and
+almost all of the commercial incident
+response tools that are out there
+they have this hub and spoke model right
+you've got
+one appliance that sits in your in your
+network and it can have 10 000 machines
+that send data back to it
+if you want to scale up to 100 000
+machines now you've got to have 10
+appliances if you have a million
+machines now you've got to have 100
+appliances so
+uh it's just
+the hub and smoke model is broken
+this is not really scale so and kansa
+has this problem
+uh where it's one machine
+lots of data points coming back to it
+so it doesn't scale up like i would like
+it to if you've got fewer than 5000
+machines that you're dealing with
+console works fairly well depending on
+what you're trying to do
+if you're wanting to pull
+process listing network dumps some
+information from the registry those
+kinds of things console will work great
+for fewer than 5000 machines 5000
+machines kind of the breaking point
+and the solution that we had was just
+break it up into
+multiple hubs and and have you know uh
+20 servers running console pulling data
+from the environment
+uh so unfortunately i don't have a good
+solution for that um
+yeah so when you say 20 servers what
+what kind of server do you need to
+so we're just using
+when i was running this at microsoft we
+were just using you know the normal
+server sku nothing special
+talk to the machines in the environment
+we typically like to
+throw up a brand new box that we know is
+hardened that isn't compromised
+and i had
+some stories to tell around that but uh
+not on the mic
+um
+double hops are also a problem anybody
+crickets so the double hop problem is a
+uh
+you know i mentioned the kerberos
+non-delegated authentication right so
+it's non-delegated authentication means
+i can log in from box a to box b and my
+credentials are not stored on this box
+with none or with delegated credentials
+i can log in from box a to box b and i
+can have some process on box b that can
+write data out to box c that is a second
+hop so i'm hopping from one box to
+another to another that's a double hop
+there you cannot do double hops with
+non-delegated authentication so there
+are instances you can imagine where
+you know i'm running scripts from box a
+against a whole bunch of boxes and i
+want all those boxes to write their data
+out to some other
+data store
+the only way you can do that in a
+windows environment is by delegating
+that credential which means that
+credential is now available for
+harvesting
+so kansa initially because i wanted it
+to be
+secure against provincial harvesting
+that was something you couldn't do
+but i was asked to make kansa work
+against azure and there are a lot of
+customers who have osun azure that are
+not domain joined and obviously if you
+have non-domain joined machines you
+can't do kerberos authentication
+so uh cons and now
+does allow for double hops
+so watch out for that if you're using it
+to log into machines that are not domain
+joined uh you'll have a harvestable
+credential there
+and again api may be a lie i think i've
+so look the interesting portion of this
+since i don't have a live demo let's
+look at some case studies
+so after i wrote this thing
+we started using it
+in microsoft
+in cloud services
+and we had some success for it or some
+success with it early on
+and uh for those of you that don't know
+i used to be a sans instructor
+and so i had an opportunity to present
+at the sands digital forensics incident
+response summit and this was the title
+slide i put together this was about
+three months after i wrote this tool and
+went there to talk about it and at the
+time i was filled with you know
+unbridled optimism because i i'd been
+using it and we were having success
+and so i wrote this you know why hunt
+when you can sing large scale hunting
+and analysis
+and then i spent the next you know three
+years working at microsoft with this
+tool and i think if i was to
+do this slide again it would have to be
+scale is very complicated it's just
+depending on what you're trying to do i
+mean go back to the
+issue of pulling down 192
+memory dump off a machine in singapore
+um
+good luck with that on a single server
+let alone you know 5 000 servers or what
+have you
+so the the more honest view of this is
+yeah scale is complicated it a lot of it
+depends on what you're trying to do
+nevertheless
+uh i gave this talk at sans
+um
+and and all of the slides that you're
+about to see were approved by microsoft
+legal for release
+and they're all from
+internal red team blue team engagements
+at microsoft
+so none of this is actual compromise
+unless you consider it to be you know
+compromised by microsoft employees
+actual compromise
+so
+when i started there they had a team of
+pen testers
+and they decided
+you know let's test blue team let's test
+incident response as a process and as a
+capability so let's stop doing pen tests
+and let's start doing red teaming so
+we're going to take this team of pin
+testers
+and we're going to let them break into
+production environments and we're going
+to let them set up customer accounts and
+steal their own customer data and take
+over production environments or or at
+least
+try uh so
+that was the game at microsoft for like
+the four years i was there and and when
+i left they
+uh like a month or two before i left
+they they decided
+enough of this game because it's super
+stressful for the blue team
+uh you know the blue team has a day job
+where they have to actually fight real
+adversaries and then on top of that now
+you've got to deal with the red team and
+because of the way you do red team blue
+team you don't know if you're dealing
+with the red team or if you're dealing
+with
+you know apt
+somebody in your management chain knows
+but you may not know so that makes life
+interesting and difficult
+i do think it was valuable
+it definitely improved security
+uh in the organization
+um and our red team
+those guys uh were doing things that we
+weren't hearing about other adversaries
+doing
+uh for like six months we kept having
+meetings with you know big incident
+response companies to review their
+products and they would come in and we
+would ask them are you seeing
+adversaries use powershell at all
+and and they're like no no no every city
+has never used powershell
+our guys are using powershells for
+everything and and when you have
+powershell running a million times a day
+trying to find the 1000 powershell
+processes that are malicious
+becomes very very difficult
+and then you know eventually
+we would start meeting with these ir
+consultants
+so here's another example uh so this is
+data that was also collected with kanza
+i hope you guys can see this one a
+little better
+um this is wmy event consumer data you
+can guess by the file name so the weird
+strings here at the beginning and all
+caps those are
+made-up host names
+so we collected wmi event consumers from
+every host in the environment
+looking for
+back doors that use wmi
+and this was a technique that was
+relatively unknown i don't know where
+one of the red team guys found out about
+it at the time
+but it was something that that just
+wasn't very common uh auto runs
+from system terminals at the time didn't
+collect wmy event consumers so if you're
+not familiar with wmi event consumers
+this is a
+you know windows management
+instrumentation it's a property or a
+feature of windows that you can use for
+doing management of your windows
+machines one of the things it can do
+is create an event filter
+that just listens for an event to happen
+on the machine and i'm not talking about
+something that's getting rent into an
+event log i'm talking very low level
+windows events
+and you can do things like in this
+particular case the way this event
+consumer worked it was a filter that
+said is today tuesday is it one o'clock
+in the afternoon and is the day of the
+week you know is it an even numbered day
+so if it was tuesday the 12th at 1
+o'clock in the afternoon
+this filter would catch that
+and kick off uh run a script basically
+that would check out to command and
+control
+uh so how did we find this so we just
+wrote a collector for this because we
+read about wmi event consumers and we
+knew it was a persistence mechanism
+and we were the first tool that i know
+of that would allow you to collect this
+data
+so this was a nice thing that kanza did
+and within a few months mark recenovich
+added it to auto runs because we asked
+him to so now this is in auto runs which
+is a big plus
+um so basically it just dumps the
+contents of the wmi event consumers to
+an xml file and anybody care to guess
+which one of these has the malicious
+uh code in it
+first one it's the first one right so
+all we did was dump out
+these these files and sort by file size
+and you can see the first one is almost
+four times the size of the next largest
+one and that turns out to be the one
+uh so this one
+this is a slide where
+uh
+interesting thing about you know cloud
+service environments are going to be
+talking out to ip addresses outside of
+your environment as a matter of course
+right they're serving up cloud content
+or whatever service it is
+so they're going to have network
+connections to hosts outside of your
+environment that's just
+normal
+so we gather netstat data from thousands
+and thousands of hosts and then we stack
+rank that data uh but before we stack
+rank it we build a white list of
+internal ip addresses and the easiest
+way to build a white list of internal ip
+addresses is to run netstat on your
+every machine in your environment and
+take the uh the ip addresses that are in
+the local address field
+and unique them and put them in a white
+list
+and then you can run the query again and
+say show me everything where a foreign
+address is not in this white list and
+those are all connections to hosts
+outside of your environment
+so that's what we did here we ran
+netstat across 5000 machines
+and then went to look for the outliers
+and the ones that are interesting here
+are not the w3wp that's the windows
+web server worker process
+not interesting this cloud service
+those processes are going to be talking
+to hosts outside my environment doesn't
+mean they're not malicious some of these
+might be i don't know but the ones that
+were interesting here is powershell like
+i said powershell runs millions of times
+a day
+that's true but it's almost all intra
+data center you know it's a machine in
+the data center to another machine in
+the data center
+it's very rare that you would have
+machines in the data center talking on
+powershell to hosts outside the data
+center so these were very interesting
+and this is just stack ranking the data
+so you can see there's 10 here there's
+10 different entries for powershell
+communicating out and the line that says
+three if you can see the three it's the
+one in the middle
+of the powershell collection uh that's
+actually an ipv6 address that we just
+failed to filter out because we weren't
+counting on ipv6 addresses being in
+there and that ipv6 address range
+belongs to microsoft so those are not
+interesting
+so we wanted to pivot from this data
+and figure out what these powershell
+processes are what hosts they're on
+so to do that we just wrote a
+and all of this analysis is running on a
+desktop machine nothing special 16 gigs
+of ram not like some big cloud compute
+thing and you can see uh it processed
+911 000 rows of data
+in 3.97 seconds that's pretty good i
+think
+uh you know i'm not a perf expert but i
+was pretty happy with it
+and this was just using log parser to
+query over 5000 files that contain
+netstep data
+so we want to pivot from this and dive
+into those powershell processes and see
+what they
+uh what machines they're on and find out
+more details so we just wrote a simple
+log parser query uh so
+if you're familiar with powershell at
+all this is basically just an at string
+that we're building so we're populating
+this lp
+query variable and we're just building
+out a query and all this query is doing
+is saying give me the foreign address
+the connection process id and the
+computer name
+where the process is powershell and the
+foreign address is in those two ranges
+that are on the previous slide that are
+heavily redacted
+so we run this query
+and
+uh in one and a half seconds you get
+back hey there's three hosts that match
+this they've got powershell processes
+that are communicating with uh
+vip ranges that you asked for and here
+are the process ids
+so at this point you've got a process id
+we've already collected process data you
+know when we ran kansa against these
+5000 machines we collected netstat data
+processed data
+various artifacts from disk and registry
+and so we have all of this data already
+so we can pivot from this into the
+process data so i take that process id
+in this case we'll take the last one
+there the 12208
+and we go pull the details for that
+process
+we have the machine name on the previous
+slide so it's this ac2 coff
+business
+so basically i take the process data
+from that machine that i've already
+collected
+and it's stored in an xml file that was
+created by kansa and we just
+re-serialized that data into this
+variable dollar sign data and then uh so
+dollar sign data at this point is
+populated in the next line there where
+it says dollar sign data and i'm piping
+it out to uh a where filter in
+powershell
+saying
+show me everything in dollar sign data
+where the process id is one two two zero
+eight
+and give me the creation date the parent
+so what i get back is obviously the
+creation date for this process so
+hey it's april 14th of 2014 when this
+happened
+the parent process id
+those things are somewhat interesting i
+guess
+but what's really interesting here
+remember i'm just chasing down leads at
+this point i don't know that this is
+actually malicious
+but at this point when i see
+uh the powershell process that's running
+pretty sure at this point this is
+malicious so i've got a powershell exe
+and it has these command line arguments
+passed to an execution policy bypass
+which basically just says you know if
+there's an execution policy set on this
+machine that is restrictive
+just ignore it
+uh and that is a feature of powershell
+jeffrey snover the chief architect for
+powershell will tell you execution
+policy is not a security boundary
+it's basically there to keep you from
+shooting yourself in the foot doing
+something stupid
+um so don't think you can go set
+security
+or execution policy on your machines for
+powershell and protect yourself you you
+cannot it's easily bypassed as you can
+see here
+they set the window style to hidden they
+didn't want this thing popping up on
+somebody's desktop
+and make it non-interactive and then run
+this encoded command so the encoded
+command here is just base64 encoded
+powershell script and in this case it is
+a malicious script that just says hey
+every five minutes or whatever time or
+noble day set um go out and check in
+with command and control and see if
+there's any tasks for me to do
+so at this point you know we knew this
+thing was malicious
+uh
+we've got the parent process id here so
+we could do a little more investigation
+on on what spawned this thing so we run
+the same we did the same thing we did
+before
+uh except instead of looking for the one
+two two zero eight process we're looking
+for the 1332 process so that's the
+parent process id from this slide
+and in this case it turns out to be
+spools v
+which is very odd spool's b should not
+be spawning powershell processes
+so at this point we know that not only
+do they have malicious powershell
+running in the environment they have the
+ability to pretty much inject into any
+process they want and take over any
+process
+that runs legitimately in the service
+and have it be a back door also
+which complicates matters for us
+obviously
+uh so you know what do you do next at
+this point
+uh
+well for us we would do something like
+there's a collector in kansa called get
+proc dump
+uh there's also get recall
+recall
+unfortunately pushes like a 17 meg zip
+file to the remote host which is you
+know in the in the column of negatives
+for kansa that's kind of a bad thing get
+proc dump just uses the sysinternals
+proctem tool and you can dump any
+arbitrary process and pull that memory
+back and then run your normal
+uh i mentioned earlier you know this is
+a read write tool so i've got the
+capability to uh remediate and execute
+change
+uh on the machines so once you've run
+your investigation maybe you investigate
+for a month maybe you investigate for a
+week you know however long it takes for
+the given environment
+you can build a remediation script based
+on everything that you found out during
+your investigation we know their
+processes
+have these characteristics they have
+these bite screens in them or they're
+communicating with these hosts we know
+these are their c2ips
+so you build a remediation script that
+you can then run across all the machines
+in the environment that will examine
+processes look at process memory look
+for
+connections out to known c2 and clean
+those things up
+you know obviously the in an ideal world
+you just wipe the box and reinstall the
+os
+but when you're running a cloud service
+going in and selling to management the
+concept of oh we have to take the
+service down you know i know it's
+generating a billion dollars in revenue
+but we're gonna have to take it offline
+for a month
+that is uh basically a non-starter for
+so you need
+some capability for remediating short of
+uh just bringing the service down so
+what we did was we wrote a script that
+would look for malicious things
+uh and basically execute remediation via
+various means you know we kill processes
+reboot boxes
+set up srp white lists
+put firewall rules in place that block
+c2 whatever we could do
+to try to kick the adversary out of the
+environment and this is a game of uh
+and any um
+of the big service firms that do
+incident response will tell you this
+remediation is usually not a one-shot
+deal
+it's uh you know you try your best the
+first time and then you keep monitoring
+the environment to see if the adversary
+returns or to see what you missed and
+that monitoring may take
+days or weeks
+the adversary if they want you they're
+going to come back they're going to try
+something else
+we know from a lot of the reports that
+are out there that
+the chinese have multiple teams that
+they will send after the same target uh
+that are from totally different
+organizations so
+uh it
+can be difficult to execute remediation
+successfully but in this case we were
+very successful so we we wrote this
+remediation script and what you see here
+the details are not important but this
+is the console that the red team wrote
+for managing their botnet
+so they've got a really nice
+gui
+that they can use to keep track of their
+botnet and to bring up new servers and
+to pivot into other machines and harvest
+credentials and all of this
+so this is their console
+and i'm so glad this is like my favorite
+moment at microsoft during my time there
+one of the red team members was sitting
+in a meeting with the red team
+and was looking at the console for this
+particular environment the top of the
+screen here every one of those lines is
+a host in the environment that they own
+those are all hosts calling home to
+their c2 in azure and
+normally if those lines are gray those
+bots are healthy
+if those lines turn this ugly texas
+burnt orange color it means that those
+bots are going offline or something bad
+has happened
+and so justin hendricks who's actually
+from this area i don't know if any of
+you know uh he was one of the he was the
+red team guy on point for this uh and
+he's sitting in this meeting and
+everything starts turning orange and i
+guess he just sat there going oh oh
+oh you know
+uh he didn't know if he had tipped over
+the environment you know through
+something bad happening uh and so all
+these boxes were rebooting or just going
+offline or failing or what have you
+but i'm happy to say it was because of
+our remediation script
+we
+very nearly kicked them out of the
+environment which was awesome
+this one box here that shows up as a
+gray line there was something
+hosed about the windows remote
+management service on that machine and
+so our remediation script didn't execute
+but their staff kept running so they
+still had a foothold in the environment
+unfortunately but we got we got very
+very close
+uh so that was pretty fun
+uh so as i mentioned this is an open
+source project if any of you are
+interested in checking it out this is
+where you can where you can get it go to
+github
+slash dave whole
+slash capital k-a-n-s-a
+you can't have kansa without the nsa
+uh so
+it's it's there i'm sorry i planned the
+live demo but
+for whatever reason my uh
+my monitor doesn't want to switch over
+to my live environment
+um
+i am no longer actively developing on
+this tool unfortunately
+uh
+there are like seven forks of it and i
+don't know 150 followers of it on github
+so there are people that are still
+actively contributing to it
+i'm working on a commercial solution in
+the same space that actually uh scales
+very well way beyond what this thing can
+do
+so i'm not actively contributing to it
+because it violates one of my rules
+about contributing to open source tools
+that is
+don't contribute to an open source tool
+that conflicts with the way your company
+makes money
+um so
+but if any of you want to pick up the
+slack and take this on it's pretty easy
+to contribute to
+um
+python
+yes it is python um so here since i
+can't do the live demo here's a
+screenshot of this thing executing this
+is what it looks like when you run it
+so you can see the command line there at
+the top kansa ps1
+you give it a target list and this
+should be some file with just you know
+one host name per line
+uh the push bin argument in this case
+just tells kansa hey i'm gonna run i
+want some third-party binary to run uh
+in this case it's probably auto runs
+uh yeah so in this case there's two
+third-party binaries that are gonna run
+one is handle uh which is another
+sysinternals tool that will dump handles
+out of processes
+so you can get things like mutexes which
+are uh pretty useful for finding bad
+things
+and autoruns is the other one so pushbin
+just says i need you to copy these
+binaries to the remote host when you run
+so that's what pushbin does
+if you run this without the target list
+argument
+if you're in a big environment i
+wouldn't advise it if you're in a poorly
+managed big environment it's a nightmare
+because what it will do is it'll go
+query active directory for the names of
+all the machines in your environment and
+then try and run against all of them uh
+and a lot of people have cruft and dead
+machines in their active directory and
+so you'll have all kinds of problems so
+definitely build a target list if you
+can
+the next thing it does is it looks at
+this modules.com file for all the
+modules you want to run and the modules
+here you can see the jobs at the bottom
+it's going to grab prefetch files it's
+going to run netstat on all the machines
+it's going to pull dns cache arp tables
+process information
+several different ways
+and handle information and information
+about services and service failure modes
+which is another
+auto start extension point that autoruns
+doesn't collect you can configure any
+windows service
+if it fails you can set up a restart
+mode for that service
+and you can have that restart mode run
+any arbitrary command or script so this
+is a
+a little known auto start extension
+point that
+autoruns doesn't collect i've been
+asking mark percenovich to add it to
+autoruns but it's not there kanza will
+collect it for you
+so that's what it looks like when you
+run it
+uh the directory structure where the
+output goes so this is again i would
+have shown this live but
+live demos this is being prepared for
+your live demo failure right
+so this is the directory structure
+you've got this kanza ps1 script that's
+the the core of it the output
+directories here these time stamped
+output directories that means i've run
+this thing three different times every
+time you run it you get a new output
+directory created with a timestamp on it
+the modules directory has all of the
+various modules in it
+i'll show you some of these in a second
+the analysis directory has a bunch of
+scripts in it for doing analysis so it's
+not just about collecting the data there
+are also tools in here for analyzing the
+data
+and for the most part they're just stack
+ranking scripts and i think at one point
+in time there were like 30 different
+stack ranking scripts and it was getting
+out of hand so i just wrote one stack
+ranking script that would stack rank
+anything
+so they've pretty much all been made
+obsolete by a single script at this
+point
+so this is diving down into one of those
+output directories for every
+collector that you ran you get a
+directory with data in it related to
+that specific collection
+so if you dive down one more level this
+is looking at the netstat output so for
+all the machines i ran the sagon
+or against
+i get
+the data for that particular collector
+the collectors are super simple so this
+is one of the collectors this is a
+collector script
+it basically just runs a powershell
+command and that's it
+the cons of the core script the big
+script that is you know thousand lines
+long or whatever it is these days i
+forget uh actually does all the heavy
+lifting of handling that data and the
+output for it
+uh so here's an example of some of the
+analysis scripts
+and like i said you can see all these
+end in stack because they're all doing
+frequency analysis and almost all of
+these have been
+made obsolete by a single script now
+so that's pretty much it i've got other
+slides in here but i'm not going to go
+into them because
+like i said this is kind of a franken
+deck just in case
+the uh the demo did go sideways which it
+did so good example of being prepared
+for that there um so any questions or
+feedback or what have you yeah yeah have
+you seen this used offensively
+so so the question is
+have i seen this used offensively
+i have not seen it used offensively but
+there's no reason why it couldn't be i
+mean
+powershell and windows remote management
+is a great tool for red teamers
+so if you're doing penetration testing
+you know if you don't like incident
+response because it's too hard
+which it's way harder than you read
+teamers
+if you don't like it you can use this
+for malicious purposes you should be
+checking out powershell and windows
+remote management there's a lot of great
+tools out there for it
+you have a question over here
+um okay uh question is is that you have
+a script here that goes out and grabs a
+whole lot of information and then you
+have some
+baked end tools for and analyzing it
+have you tried pulling it into
+a
+uh no sql database type system which
+already has a lot of those
+data things built into it
+um oddly enough that was like the last
+thing i was working on at microsoft and
+so
+back to the open source piece of this i
+wrote all of this almost all of this was
+written on my own time on my own
+hardware on you know after hours and i
+knew it didn't compete with microsoft
+and then we started using it during the
+day job and obviously we'd find bugs and
+we wanted to add new features and so
+some of that stuff started slipping in
+during the daytime and i got the hand
+slapped from microsoft legal for that
+and that is one of the things that we
+did before i left was
+make this thing azure capable so that
+you could use azure for the back end and
+you could shove everything into azure's
+equivalent of a nosql database
+but since that was done
+on microsoft dime that'll probably never
+yes phil so
+what do you mean yes
+yes manager bill
+director director oh director
+so if i want to deploy this in like a 60
+000 node environment what do i need to
+get started
+so the question is how do you deploy
+this in a 60 000 node environment
+well you need to have windows remote
+management configured on all of your
+endpoints
+obviously um
+which is
+it's a relatively simple thing uh you
+gotta run like winner in quick config is
+the command line tool to do it and you
+can turn it on i think you can turn it
+on by gpo
+so you should be able to
+turn this on to gpo you can lock it down
+you can require certificate-based
+authentication if you want
+so
+i mean microsoft's not a problem right
+for us it was never an issue this was
+already there uh before i ever even
+started on it windows road management
+was already turned on people are already
+using it
+to administer everything via powershell
+so for me that was a not an issue but
+it's super easy to enable and i believe
+you can do it through gpo
+is that documented in the documentation
+so is it documented in kansas
+documentation no not the documentation
+there is cons of documentation
+uh if you do uh i wish i could bring up
+my other machine here i mean let me
+take a quick stab at this try harder yes
+i will try harder oh look at this all i
+had to do was go out of my
+computer
+here
+that's literally the worst drop the mic
+ever
+so for good powershell tools
+there should be
+they should be basically
+self-documenting right
+you can you can write help
+so for those of you that missed the
+command just download the tool and do
+get help dash full kanza ps1 and pipe it
+to more and you'll get a pretty verbose
+help listing for you know how to use it
+with use cases and
+explanations of all the command line
+parameters and all that it doesn't talk
+about setting up winram unfortunately
+you have to go read some msdn page for
+that
+so the question is would this be useful
+for a single host um in my opinion no
+the sweet spot i mean
+the sweet spot for this in my opinion is
+running across
+a bunch of machines and looking for the
+anomalies to build leads for a case
+the single machine case if you know
+you've got a machine that's compromised
+and you just want to pull back specific
+things from that machine
+then yeah
+um you know it's great use case for that
+but if you're just like
+oh i want to
+go see if this handful of machines you
+know these two or three machines
+are they owned i'm gonna go run
+something against them like this
+i don't i don't think it's as useful in
+that scenario because uh the primary use
+case is pulling data back from a whole
+bunch of machines and then looking for
+the odd things
+that are unusual
+so it really shines in an environment
+where you've got
+machines that are largely homogenous uh
+with you know the same processes the
+same directory structures the same
+network connections that's really the
+cool
+thank you all we have free
+well
+trent says i should tell you about the
+new company i'm working for um i didn't
+want to turn this into a commercial for
+for some gender so uh all right so
+thank you
+if you're interested i am working for a
+company called tanium they're kind of a
+startup they're in this space um but
+they can scale up to hundreds of
+thousands of machines so
+if you want to find out about that come
+see me after
+thanks

@@ -1,0 +1,515 @@
+How's everybody feeling tonight? Feeling
+good?
+Woo. All right, everybody have their
+drinks in hand. Ready to go? Ready to
+learn?
+Learn. Um, real quick question. Does
+anybody have one of those little tiny
+crappy Mac remotes? You know, little
+ones that you can click a button and it
+goes to the next
+[Music]
+one. Okay, take that as a resounding no.
+Oh, I just flipped through. Yeah. All
+right. Well, then I guess I'm going to
+have to stand right here. Normally, I
+like to walk around, but that's
+okay. Nah, that's okay.
+Thanks, All right. Um, introducing Bill
+Singer. Woo. Hi, I'm Bill. Yay. I'm
+sorry you had to hear about or hear from
+me so much tonight. Um, you know, our
+our normal MC is not available tonight
+and so you had to listen to me all
+night. Um, but congratulations to listen
+to me a little bit more. Um, so tonight
+I'm going to talk about root
+certificates and why we should go just
+go ahead and trust everyone. Um, and
+really, um, what I'm going to be going
+into is how really how SL, excuse me,
+SSL and TLS really kind of works. Um,
+you know, just kind of a real basic
+explanation of how SSL works just so we
+can get a good basis. Um, and then a
+little bit about, you know, in an
+introduction to our 300 most trusted
+advisors, our root certificates that we
+have uh currently installed. Um before I
+get started then oh
+no well tough I guess. Um but first
+before we get started I got to talk a
+little bit about encryption. Um and I
+know that this is probably one of the
+most exciting slides that you ever seen
+but but really I kind of wanted to uh
+describe the difference between
+symmetric and asymmetric encryption
+first. Um so first of all they're there
+just uh just FYI there's there's a
+couple different types of encryption. On
+the first is symmetric and this is this
+is really what you think about when you
+think about a password right so so if if
+the same password encrypts a a piece of
+text that that's needed to to decrypt
+the uh the text that's called symmetric
+encryption. Um generally speaking
+symmetric encryption is is very very
+fast. Okay. Um it it's very easy for a
+system to to encrypt and to decrypt a a
+message block. Um so um sometimes you
+guys may think about you know an exor uh
+an exor example where um if if the pass
+if the password was set KC we take a
+message block we exort against set KC in
+order to get returned back we just use
+the same key set KC and and we can
+decrypt the text um right so along with
+that is asymmetric um encryption and and
+really that's that's our public private
+key pairs all Right. So a lot of you if
+you think about uh um PGP the way PGP
+works is that I have a a private key
+that I keep um and I publish a a public
+key right and and you can encry and
+public key is fine to to give to
+everyone um if they if you want to
+encrypt a piece of text you give them
+the public key they do the same uh exor
+type uh type uh uh I'm sorry you know
+exor the the the message block, but you
+can't use the public key to decrypt it.
+You need the the private key to do that
+and vice versa, right? So to if you were
+to encrypt something with your private
+key, you need the public key to decrypt
+it. So one thing that that
+differentiates asymmetric encryption
+from symmetric encryption is that
+asymmetric also brings along the concept
+of authentication, right? And so this is
+really important, right? So if if if
+we're talking about a symmetric key,
+anybody who has the key can both encrypt
+and decrypt our message block, right? So
+there's there's really no way to prove
+um authentication across that. It's
+whoever has the password, right? If I
+were to tell someone that the password
+and they were to tell someone the
+password, there's no way that I can
+prove that that uh it originated from a
+certain person. Asymmetric's very
+different, right? Because because I have
+a private key that I keep private to
+myself. If you can decrypt something
+with my public key, then um it is
+expected that number one, not only did
+it provide uh it provides privacy, it
+also provided authentication cuz you can
+prove that it came from my private
+key. So let's talk about SSL. Who in
+here knows 100% how SSL works?
+All right, let's try that again. How
+many people in here know how SSL works?
+And it's okay. I'm going to say SSL TLS.
+Yeah, the common the common home is that
+I need to type in HTTPS. All right.
+Well, well played. Okay. Well, here I'm
+going to explain how SSL TLS works in a
+very for dummies. Okay. I'm not going to
+spend all my 15 minutes talking to you
+about SSL, but essentially when when I
+go to a website um and we aren't going
+to be talking about web specific, right?
+But when I go to when I type
+HTTPS, I want to tell you what my
+computer does. First of all, my computer
+compiles a bunch of data about about
+itself. It says, "Hey, here are the
+different versions of SSL or TLS that I
+know about, right? It says here are the
+list of cipher suites that I know about
+in order that I would prefer to use from
+strongest to weakest. Okay. It also
+conveys here's the type of compression
+methods that I know about. Then it adds
+a 32-bit random number and then it
+creates a session ID field and then it
+sends the request to the web server. I
+want to call out right now this
+communication isn't clear text. Okay,
+I'm just saying hello. Hey, let's set
+something up. The server receives that
+information and it generates a session
+ID number. Remember, my client had
+passed in a field of a session ID field,
+right? The server responds back with a
+session ID. The server decides, hey, I
+saw that list of SSL uh or TLS. I I I
+took a live look at that. Here's what I
+know about. We're going to agree on this
+one. It also does the same thing for
+compression. Hey, I took a list of
+everything you sent. Here's what we're
+going to agree on. It took a list a look
+at the cipher suite. That's very
+important. And it says, here's what
+we're going to agree on. It's very
+important to call out the cipher suite
+because there's been a lot of attacks.
+In fact, Alex and Alex uh back at at
+Barley showed an attack um that the
+beast attack where he uh was able to
+middle traffic going to Facebook because
+they were utilizing a a weak cipher
+suite. Right? So even though my client
+is configured to use strong
+authentication, strong cipher suites,
+the server can say, "Yeah, that's great,
+but I want to use uh whatever RC4,
+something like that." Um, and then takes
+that 32 byt that the client said and it
+modifies it a little bit. It really, you
+know, really what we're trying to do is
+just make sure that our sessions are
+correct. It modifies it. It adds a time
+stamp, a date stamp, those kind of
+things. It really doesn't matter. Um but
+then what's really important here and
+this is really the point of the talk is
+it attaches its public key certificate
+right and it says hey I I see that you
+want uh you want to set up an encrypted
+tunnel with me why don't we talk with
+asymmetric encryption here's my public
+key pal right so my my computer receives
+that public
+key all right and my computer says hey
+let's let's check out this public key
+let's take a look at it number one is
+this public key hasn't expired. Is the
+date that's on it is it legit? Right.
+Okay, great. The the the time frame that
+the certificate should live is good.
+Let's go ahead and and take a look at
+it. Huh. This certificate was signed by
+I don't know, Verasign. Who's Verasign?
+Right. So, your computer goes back to
+its rusted uh trusted root store and
+says, "Hey, I'm looking through my my uh
+my chain of trust. Do I see Verasign is
+somebody that I trust?" Yep. Veryign.
+There you are. All right. I agree that
+that google.com, this is the right
+google.com. It's signed by somebody I
+trust. Let's go ahead and send an
+encrypted message back to them that
+contains a symmetric key. Right? Okay.
+Let's go back and think about that right
+away. We were we talked I I kind of
+explained encryption a little bit and I
+explained that the difference between
+symmetric and asymmetric was that
+symmetric encryption remember that key
+KC we have a long uh tradition here at
+set KC. So if you're speaking too
+Are you serious?
+This This is This is SSL for dummies.
+You guys should have seen the slides
+Oh, great. That was Jagger. I'm going to
+fight
+you. Trent knows I have Trent knows.
+Yeah, come at me, bro. Trent knows I
+have one weakness, Jagger. All right.
+Well, we're going to
+fight. All right. Well, I guess I'll
+bring it a little bit more high level
+for uh you manager types. Okay, so now
+we're
+encrypted. All right, but all right, I
+do want to go back. So I I want to call
+out how clever the the people were that
+that designed the way SSL and TLS
+worked. Okay, so we needed to have a way
+for number one, we were comput we were
+compute uh restrained, right? So when
+SSL was first designed by Netscape, they
+recognized that our web servers were
+rest was restrained by processors. So we
+needed to use the fastest encryption
+that we could and that fastest
+encryption was sy was a symmetric key, a
+pre-shared key. The password is set KC,
+right? But how do I share that password
+with a client assuming that everybody in
+the world is watching, right? Oh, I got
+a great idea. We'll use asymmetric
+encryption to encrypt the password, send
+it back to the server, and now we've
+agreed on the password. That is very
+clever. Everyone cheered for Netscape.
+Woo! All right. Thank you, Netcape.
+Thank you very much. All right. So now,
+um, now that we have shared our
+symmetric key, now we can move over to
+the symmetric key encryption. And then
+our comms are are securely shared using
+uh using our symmetric key that we
+shared over asymmetric encryption. Okay.
+So I want to rewind a little bit. All
+right up here in the red box and thank
+god it was red. That was that was
+actually I was wor worried red is very
+hard for projectors right up front when
+remember initially when we when our
+client said hello server here's
+everything I know about and our client
+sitting there waiting and we get a
+message back from the server. Um, this
+is all done in clear text. Okay, this is
+an opportunity for attacker to middle
+themselves inside of our inside of our
+communications, right? This is this is
+the weak spot of our communication
+because at this spot, not only can an
+attacker change our session ID, can they
+change the version of SSL that we're
+agreeing on, all this stuff, but most
+importantly, they can change the
+certificate that comes back to our
+client. Some of you may have seen this
+before. Or if you guys ever been in Burp
+and you wanted to start to middle uh SSL
+traffic and you say yes I want to middle
+this traffic and as soon as you do that
+boom your clients get a site certificate
+it's not trusted right we've all seen
+that boo right but we've seen this
+before let me explain what's happening
+okay so you are are middling that
+traffic and it's coming back to your
+computer and it's saying I am going to
+create a a certificate for google.com
+FYI, you can tell that this has been
+photoshopped by the pixels. Um, but it's
+saying here is a a a public key for
+google.com that has been signed by
+10.0.0.1. Right? So, your computer says,
+"Hey, is
+10.0.0.1 in my trusted store?" Uh-oh,
+it's not. Let's throw up a site security
+certificate not trusted sign, right?
+Is everybody with me so far? Let's hear
+a yes.
+All right.
+Yeah. Yeah. All right. So, let's think
+about this for a second. Okay. The only
+thing our computer our computers the
+only thing our computers care about is
+two things. They care
+about first of all the lighting. Um they
+care about number one is that
+certificate still valid. Is the date
+range valid? If the answer is yes, then
+it goes to do I trust the signing the
+the signing provider of that. If the
+answer is yes, you do not get that site
+certificate error message. So let's
+think about that.
+If if
+google.com is
+legitimately signed by Digi Trust and I
+don't know if it is or not, okay, and
+your
+computer has a trust with Digi a root
+certificate with Digiert, then when you
+go to google.com and they present you a
+certificate, hey, you passed. What if
+you are presented with a with a Google
+certificate that was signed by Parasite?
+Guess what? Your computer doesn't know
+any difference. It says, "Is the
+certificate valid? Is it a is it a
+trusted root certificate I have? Yes,
+and it'll
+pass." Okay. But wait, so that that
+would never happen, right? I'm not going
+to go through these, but this is a list
+in just the last 3 years of of root
+certificate authorities that have
+generated false certificates.
+I want to call out the very first one
+that you can't read, but I can. Um, the
+CNN, which is the Chinese internet.
+Okay, it is a
+governmentrun agency that just
+accidentally issued a star.google.com
+certificate.
+Oops. Right. Digotar. Who heard about
+that? Digi Noar was compromised and the
+attacker the attacker generated over 530
+fake certificates, right? Every one of
+your computers, every one of your
+phones, every one of your computing
+devices trusted Digi Notar and the
+attacker generated a fake certificate
+that you would have no I that your
+All right. So, here's here's where it's
+going to turn into a little bit of
+scariness.
+OSX OS 10, sorry, Mac people, ships with
+203 pre-installed root
+certificates.
+203. So, do you guys know one thing
+that's been pretty pretty interesting
+about having a root certificate is if I
+am an owner of a root certificate, I can
+give out the authority for another
+person to issue certificates. Remember,
+we're talking about a certificate chain
+of trust. That person that receives that
+receives the ability to to generate
+certificates, they can give it out to
+somebody, right? So, I I know that we
+have some law enforcement people in the
+house tonight. I've already said hi, and
+I don't I'm I'm not asserting anything,
+but if I were a law enforcement person
+and I wanted to middle some traffic, the
+only there I have I have three
+capabilities, right? Number one, get a
+root certificate installed on all of the
+computers everywhere. Given that OS 10
+ships with 203, I've probably got a good
+shot. Number
+two, I could I could uh force one of
+these root certificates that we trust to
+generate a certain that that would be
+google.com or whatever that I'm trying
+to middle, right? Or number three, I
+could make a fake
+company and have it installed a as a
+root certificate or even further down
+the line as part of the the chain of
+trust um to generate a root certificate.
+Ladies and gentlemen, you cannot trust
+your root cert your root certificate
+store. The one that I have highlighted
+is a root certificate that was installed
+on both my Mac, my phone, and and every
+one of your devices. And it is it is
+labeled government root certificate
+authority. As I looked into it, do you
+know who owns that? NSA. China. We have
+Wow. So, those who know me well know
+that I like cleverness and that was very
+cyber
+shot.
+As I looked into this, this government
+root certification authority was owned
+by the Taiwanese government.
+Hey, I'm probably, you know what, as an
+American citizen, I probably visit the
+Taiwanese government web pages daily,
+right? There's there is absolutely no
+reason that I should have that
+installed. Okay. Android Android ships
+with 162 pre-installed root
+certificates. One of those being
+CNN. Oops, I issued a fake Google
+certificate. iOS. How many iOS users do
+we have in the house? Bring out those
+iPhones. Hold them in pride.
+Hold them in pride. cuz Apple's iOS
+ships with
+224 system certificates that you can't
+even look at. There is no interface to
+iOS to even look at what certificates
+they ship with. You have to go to
+Apple's website and ask, "Hey, uh, what
+do you got? What root certificates do
+you
+install?" Okay, my favorite thing in the
+world right now is that Windows 7 and
+Windows 8 is the only operating system
+that gets it right.
+Let me say that again. Windows is the
+only system that gets it right. They
+ship with They don't ship with
+anything. They ship with like 15 root
+certificate authorities. And when you
+request one, if you were to go to a
+Taiwanese government website that needs
+a Taiwanese government root authority,
+then Windows will give you that root
+certificate and prove in real time that
+that is that that site is the right site
+that you're trying to visit. It shifts
+with
+nothing. Okay, let's talk about this
+real quick. Here's what I'm going to ask
+all of you to do when you go home
+tonight. I the only thing I the only
+thing I want you to remember is that um
+regarding regardless of your computing
+platform, there is no need for us to
+have 200 root certificates installed in
+our computers. In fact, what you should
+do is you should go through and remove
+everything that you know you're not
+going to use and or just even start
+first and remove everything to an
+untrusted. And when you go to a website
+that you that you tr or when you go to a
+website that gives you that that
+warning, then you say, "Oh, um, and you
+know, did you not know? Yeah, I have
+reviewed." And then you can go back in
+and enable that. I'm going to show you
+in Android how you do that. Oh, I guess
+I'm going to do that in iOS first. Is
+there an app for that? No, there's not
+All right. So, in Android, Android users
+say, "Yes, we finally have that one
+thing on iOS." And we're going to be
+like, "Yay, well, you can't untrust root
+certificates." Um, to do that, you go to
+settings, security, trusted credential
+system. You get a uh you can't see it.
+At the very bottom, there's a disable
+button. When you click disable, it says
+uh okay, are you sure you want to
+disable that? And then yes. The great
+thing about this is you are not deleting
+the certificate. Okay, it's not going to
+cause you cause you any downstream
+problems. All it's doing is disabling
+it. If you were to go to a website that
+needed it, it would give you that, hey,
+are you sure you really want to visit
+this website? In OS10, you can open
+keychain, then open the certificate,
+then you expand trust, which is this
+window over here, right? So I I you
+can't see it. whatever. But when using
+this computer or their this certificate,
+never
+trust. All right. Um, Windows users,
+remember, Windows does it right. There's
+really not a whole lot that you need to
+that you need to do with Windows because
+it there's not very many pre-installed,
+but if you want to see the certificates
+that you do have installed, you can
+remove them, but simply go to start and
+mgr.msc. Uh, iOS users, I mean,
+knowing's half the battle. Um there's
+really not a whole lot more than you can
+do from there. But um with that, ladies
+and gentlemen, I'm Bill Squareen. Uh you
+can see my website, incidentresponse,
+whatever. I hope you guys
+enjoyed. Bye.
+[Applause]

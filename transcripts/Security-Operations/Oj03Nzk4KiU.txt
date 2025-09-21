@@ -1,0 +1,848 @@
+these guys from sec dsm who are going to
+explain to us now
+why i left a ten thousand dollar
+computer running for seven straight days
+and all it got was one sec kc coin
+all right let's start off with the
+misnomer
+bill said this was hacking
+setcoin and that is not correct what we
+did was idiotic and stupid and not
+financially responsible at all but it
+was 100 legitimate and what you see on
+my forehead trent did this and
+the whole defcon parties group is
+awesome so let's give it another round
+sorry
+so i'm going to give this i'm going to
+give this to tom
+tommy's going to start us off with sec
+dsm we make things difficult
+hello
+so
+uh i don't know first introductions
+because you guys might not know who we
+are well this is this is ryan here ryan
+heckman and brent murphy and i'm tom
+holt um we're we came down from des
+moines we've been coming down here for a
+little while now but uh we heard that
+you guys were making some some crypto
+coin and we thought wow
+oh wait before we get started everyone
+do this right now so we've got
+i'm sorry
+now for those of you with defcon you
+might and you went to a talk you might
+have noticed that i didn't get to do
+this at all
+so it is my pleasure to say that we have
+a tradition here at set kc that is not
+going to go away
+if this is your first time speaking in
+set kc you have to take a shot so
+gentlemen
+here's to our speakers and here's to you
+guys the crowd
+[Applause]
+all right so
+where are we so before we get started
+you want to do this right now go follow
+dsm on twitter and then tweet i heart
+section and if you're if you're in slack
+or or you're not it's like go sign up
+for slack right away do it now do it now
+and then if your uh slack handle is
+different than your
+twitter id go ahead and make sure you
+know what that is we'll talk about that
+later
+it's complicated but it's not going to
+be complicated for everybody just wait
+so do that do it now go follow sexysm on
+twitter and then tweet that you love us
+or not tweet that you hate us
+uh so by the way we want to start and
+say we love set kc and we're sorry i'm
+not sorry
+about what we what we've done the evil
+things that we've been doing
+uh
+so to get uh
+when we started this we started this
+about a month ago actually it was
+exactly a month ago is the second
+tuesday of july
+we were sitting here and they're talking
+a little bit more about setcoin we're
+like well what is this thing let's
+figure it out we have no idea when we
+started what cryptocurrency is all about
+none at all like like we heard there's
+like a wallet or something and you do
+mining or something we had no idea but
+we went to the
+setcoin
+github thing or the wiki the wiki thing
+and we learned everything that we needed
+to do
+but what we wanted to do is we
+definitely wanted to mess with sequoia
+all right now
+um
+how we wanted to do that was we wanted
+to we wanted to find as much point as we
+could so we heard that there's you know
+he wants to give out about uh
+1337 coin per day total right so of
+everyone that's mining you know it's
+going to give out about 1300 uh and 37
+coin in it in a day so that's its target
+and we wanted to do better
+we we wanted to do better than that so
+so basically we started
+by uh by cpu mining
+there is this better yes all right
+so we started by cpu mining because we
+didn't know any better so we we uh
+turned on
+what's that oh you want to talk about
+that
+all right so cpu mining so i had like 10
+cloud of cost instances who here is a
+cloud cost customer right yeah those
+guys are awesome one time for a live fee
+so while i'm sitting in this corner i'm
+firing up 10 cloud of cost instances to
+do cpu mining and i'll tell you a cloud
+of costs they kind of suck
+they don't mind very much but when you
+have 10 of them it's like 40 000 hashes
+this is like equivalent to what uh what
+a really shitty gpu will do
+really shitty like a 10 year old gpu
+will do but it was free so why the hell
+not so we did cpu mining and i'll hand
+it off to the guys that did
+that progressed to the next step
+all right so we're going to talk about
+gpu money for a second gpu mining on
+personal hardware so literally the day
+after i get back from the last month's
+set kc meeting i got my gtx 1080 golden
+like founders edition hardware and it
+was freaking b to the a and bill has a
+question did you guys say where you guys
+were from we are from canada we're not
+from kansas city or canada we're from
+and the funny thing is the thursday
+after this meeting every month is our
+meeting so like this is this is a two
+times a week thing once a month for us
+so this is awesome we love it down here
+we love everybody here and we love
+everything this is about and we're
+trying to emulate it up north
+and uh
+we're working on it it's gonna be us a
+yeah there's something to say a like
+we're from canada
+so i get my gtx 1080 in the mail i'm
+like oh man i'm going to decimate these
+guys i must do i'm going to do some gpu
+mining not the case
+the new the new hardware is based on
+pascal architecture which
+none of the miners are optimized for so
+i actually threw in my old two-year-old
+r9 290 which was way better
+and i was getting about
+900 kilohashes which was still freaking
+awesome compared to what the network
+hash rate at the time was and then uh
+we'll pass it off to tom here need to
+talk about our next step in domination
+so our next episode at that sport so
+when we started well i got another slide
+on this good i put this together on the
+way down so i apologize if it doesn't
+it's actually a mystery van oh by the
+way
+we noticed that somebody had a vinyl
+printer over there for his printing
+stuff for vinyl on cars and and uh
+no it's not gonna happen i i know what
+you guys are planning on doing you're
+never going to find that van all right
+just say it
+it's back to the airport whatever it's
+just gone don't worry about it
+all right
+gpu mining so
+oh sorry mining mining on aws what that
+shot is really going in my head i don't
+know right and so
+so after we did some some mining on
+local gpus we're like how do we get more
+right like i don't want to go mail order
+these things apparently on amazon amazon
+web services uh and i apologize if you
+keep hearing every like 12 seconds
+you'll hear my laptop
+we're mining right now actively and you
+know how he said that he gets a coin
+every well he got one point in the week
+right now we're at about 12 seconds
+we're getting a new coin right now so
+anyways just just keep listening it's a
+really exciting experience but okay so
+back to so we wanted to do more so we
+found amazon has a couple of options for
+uh gpu instances each one could do how
+many was it 256 gpu each gpu could on
+amazon can do
+256 kilohashes per second one of the
+boxes would do and one of the boxes had
+four of those cards in it and so you
+could do about a mega hash with one of
+the big boxes or you could do four small
+boxes to get to that same mega hatch
+and and one thing we learned was that
+they charge like i don't know two bucks
+or two and a quarter an hour for that up
+to 26 dollars an hour up to 26 an hour
+how are we going to go to ireland unless
+you're going to ireland and well maybe
+we might have done that so but one thing
+we learned is that they amazon has this
+thing where
+if nobody's using gpu miners
+you could request what's called a spot
+instance so instead of paying two bucks
+an hour for a machine you can pay nine
+[Music]
+the cost gets down to that it'll spin up
+however many instances you said you want
+for as long as the price stays under
+your max bid so and they have gpu miners
+in at least with six regions around the
+world ireland has a whole bunch that
+nobody ever uses
+well it got used for for a little while
+but we found you know even at nine cents
+an hour that can get kind of expensive
+for mega hash right so then after that
+we switched to
+we found these things called asic miner
+oh oh sorry one more one more talk about
+gpu so so gpu like every
+miner
+is optimized for some sort of
+architecture and so there's there's
+cudaminer that's that's that's optimized
+for cuda based video or gpu cards um so
+obviously if you're if you're going to
+use any other miners against the gpu
+card
+test it against gpu miner because if if
+you use one that's optimized for
+whatever platform you're mining with
+you're going to get a better hash rate
+and so we we tested
+i don't know how many and they're all
+forks of the same miner that are
+optimized for different things so i mean
+test play around you're gonna get better
+rates until you you're like okay i'm
+happy with this so we ended up with uh
+with cudaminer mining gpus
+that's right that's right and then yeah
+so nvidia versus ati my understanding we
+didn't ever play with any ati stuff but
+we hear ati video cards gpu cards can
+actually hash faster than the nvidia
+stuff we only had in video aws only has
+nvidia uh so use that as you will so if
+you've got an account
+oh yeah so also on spot instances so one
+of the things that
+we wanted to do to automate this is we
+we created our own virtual machine that
+when it turns on it automatically kicks
+on both cpu mining and gpu mining at the
+same time and then hashes back to our
+own wallets our own wallet server and we
+can we'll talk a little bit more about
+that in just a few slides about you know
+how how we how we were doing that
+uh but then
+asic mining so we discovered that hey
+you know they make these uh they make
+these custom boxes that you can plug
+into a raspberry pi or anything else and
+you can you know and we found the zeus
+boxes on amazon for i don't know
+so the story about 260 dollar asic
+miners so this guy will do 20 28 to 32
+mega hashes per second and it was
+originally listed for 360 dollars and i
+was like so i amazon message this guy
+and i was like hey i'm just getting into
+mining there's this small cryptocurrency
+that i wanted to get involved with but
+this is outside my price range so can
+you bring it down a little bit he goes
+absolutely this is the best binder for
+entry level i'll bump it down to 260 for
+you right so this guy ships it out cut
+deal right like 260 bucks it's a really
+good deal on this miner
+but the shitty part is he's like power
+supply included i was like great this
+thing sucked up 1200 watts per hour 1200
+watt power supply right so he ships it
+to me but the shitty part is is
+the power supply was clearly not meant
+for this miner so i'm out of deathcon
+when it arrives my wife receives it i'm
+like you gotta plug this [&nbsp;__&nbsp;] in for me
+right
+she has no clue what she's doing
+so
+she sends me a picture and it's in like
+four parts there's a power supply
+like a chassis and a top part of the
+chassis and then my raspberry pi which
+i'd already pre-configured for her to
+hook up
+and so she gets it
+and the power supply doesn't fit
+like there are too many cables so it's
+clear that this seller
+stripped out the good power supply put
+in one that he got for fifty dollars
+that just doesn't even fit into the damn
+thing and so we just place it on top of
+it run the cables right through the vent
+hole for the power supply and keep on
+rocking right so i i come home after
+defcon i open up my the door to the
+basement and i'm like holy [&nbsp;__&nbsp;] is there
+a couple fans running down here i'm like
+50 feet away from it and it's loud as
+hell like [&nbsp;__&nbsp;] you not it is loud as
+hell
+and but nothing rocks
+i'm going to reiterate what i said from
+the start
+everything that we've done is fiscally
+irresponsible
+it is not equate dollar to dollar from
+whatever the [&nbsp;__&nbsp;] you're doing to
+setpoint all right this is for the lulls
+we're just having fun
+don't buy one of those all right so so
+back to so yeah so we we're now into
+this for you know nine cents an hour
+plus 265 dollars plus
+you know i think overall we've spent
+well let's see we at this point probably
+about 300 350 maybe 400 easy
+on what we've done and then we bought
+this no no no that includes this thing
+this is the component of it and then and
+then we decided
+wow
+you can buy this [&nbsp;__&nbsp;] by the hour online
+[Music]
+and so this this guy in the blue shirt
+sitting over here by the laptop it's not
+his his name's nate he's uh we're
+sitting here more like oh you can you
+can ebay hash rates what that's the word
+bidding on ebay and he's like no no no
+no there's this badass site you can go
+to called
+mining rig rentals.com and he's beaten
+the [&nbsp;__&nbsp;] out of our ebay hashing
+and it was ridiculous
+all right so now we discover that we can
+uh
+we can we can buy this thing by the by
+the giga hash per hour
+for three hours right so we we run this
+thing up so when we get started a month
+ago the entire network hashrate was 300
+kilohashes per second right which is the
+equivalent of just a little bit more
+than what one small gpu instance on
+amazon could do right and the difficulty
+was 0.002
+i think like when the network force gets
+going it's like 0.0002
+and then as more people start hashing
+the harder it gets so we thought what if
+so our we have we have
+our attack on the coin is basically this
+step one we wait for low difficulty so
+when we started the difficulty was
+really low like that 0.02 i was talking
+about and then and then basically
+um we decided you know if we look at the
+network hash rate we saw oh it's three
+three hundred kill hashes per second so
+we mine the everloving [&nbsp;__&nbsp;] out of sec
+kc coin so we just spin up enough
+instances to really make that difficulty
+like 10 or 100 or right now we may
+maybe a little higher we'll get yeah a
+little bit higher and then and then what
+we do is after the difficulty gets so we
+jumped immediately from 0.002
+to 0.8
+in one day something like 10 000 sec kc
+point right 10 000. not 1000
+10 000 in one day and then all of a
+sudden the difficulty went up to that
+0.8 we're like what the [&nbsp;__&nbsp;] is this
+difficulty thing because we don't we
+didn't understand difficulty and we
+realized oh these things stair step up
+so we apparently blew through the entire
+blockchain and like about from my
+calculations correctly if i'm wrong it
+looks like it reevaluates the difficulty
+about every 3 500 coin so 3 500 coin it
+reevaluates and says well these guys
+have been mining really fast so i'm
+going to jump the difficulty so that the
+next set of 3 500 blocks
+is at this higher rate and so we decided
+well we will uh we will wait
+so once once the once the difficulty
+goes up we'll shut all our [&nbsp;__&nbsp;] down
+wait for the difficulty to go back down
+and then and then we'll start mining the
+overload we should have it again so
+right here you'll see in the graph where
+we started and we jumped up to that that
+uh that point eight and then and then we
+mined it that's that one day between the
+two red arrows and then we waited and
+then it took like a week and a half
+before the it went from 0.8 back down to
+that like zero i think we went back down
+to like 0.03 and we're like guys guys
+guys turn it all back on let's go go go
+and we got another like 15 000 and
+we're really sorry sorry i'm sorry
+and and so and so and then so then we
+jumped it up again and you see so
+looking at the graph here i don't know
+if i can do the laser point or anything
+yeah there it goes so right here was
+where we were playing with it before and
+that's where it went back down like
+right there that's where it went back
+down and then we're like well let's
+really crank the difficulty damn it all
+right buttons buttons
+so then up here
+man i just don't know how it worked so
+then we decided to make things really
+difficult and this is what we started
+outsourcing so like some of this was
+like still gpu mining with amazon and
+then we decided to buy
+and then with the the difficulty went
+exponentially up to 20. so not like
+point anything not one not two but 20.
+so
+and then hilarity ensues because we're
+like you know i posted in the slack
+channel i'm like uh hey looks like
+somebody like it's like 1.5
+mega hatches right now wasn't it like
+300 kilo hashes and circles like
+and uh you can't read in the screenshot
+there but yeah i have a screenshot of
+what bill posted whereas 12
+yeah 13 13 uh mega hashes is at this
+point zero six difficulty point zero six
+difficult yeah this is when it was still
+relatively easy
+right so then we made things really hard
+and we became hashing addicts so one of
+the things that we discovered is that we
+were doing things independently and
+mining to our own wallets and we didn't
+we couldn't see what each other was
+doing like i couldn't tell when this
+this joker spun up you know six mega
+hatches and that one spun up 30 mega
+hashes or that guy over there
+so we decided we needed to figure out
+what we're doing as compared to everyone
+else so we created what's called a
+cooler and that in that cooler uh we can
+see like what each other of us is doing
+so collectively we're basically mining
+our stuff against everybody else in the
+network so we can so you know one of the
+concerns we had is we're like we're over
+spending right so you know if they're
+hashing at 300 kilohashes per second we
+probably could just get away with
+you know 600 kilohashes per second or or
+maybe if we want 90 of the coin we can
+go to like you know a couple mega
+hatches per second he said we're
+overspending but we're also stupid the
+air is thinner up north and it's way
+colder
+indeed so
+so then uh supra over here as we uh as
+we got really became addicted to this
+we're like how far can we go and that's
+when we got it all the way up to 5.5
+gigahertz not killer hashes not mega
+hashes but giga hashes right
+so and i told you where we were well
+what we got up to
+or where we started and where we got up
+to now with the state of today like
+today we got here and we're like
+we were at when we walked in the door
+we were at
+127 mega hashes so there's another
+gentleman in the back uh who yeah right
+actually he's right here
+he's got he's made it difficult so we
+were at 127 mega hashes
+and as of right now
+uh 14 gig hashes
+14 giga hashes so that's 12 million
+kilohashes per second remember we
+started at 300 kilohashes per second
+we're now at 12
+oh yeah by the way we made some friends
+while we were at def con and actually is
+that b-sides one guy told me i've got a
+peta hatcher that's sitting idle in
+florida right now so
+it may could might start up in a little
+bit anyways the current difficulty is
+now sitting at 19.82
+19.82 and so here after we're done today
+we mined the ever-loving [&nbsp;__&nbsp;] out of all
+of the coin if we turn this off it's
+probably going to take about a month
+before the difficulty gets back down to
+so you know people with a backup of the
+pro that goes away for death time for a
+week will get any coin
+now let's talk about that for a second
+so you start off at a real easy hatching
+rate the penalty to one
+skc makes a ton of sense you ramp that
+up and obviously the value goes up
+because you're spending way more money
+per kilowatt hour no matter how you're
+hashing this to make one skc and this
+this was the case with bitcoin you get
+you get it real early you make a lot of
+money and it drops off
+we're not doing this for financial gain
+we're not going to screw everybody over
+for the until the end of the time you
+know this this is for the walls and it's
+all for a good time so
+um don't be discouraged to go start
+mining skc just because of the hash
+rates you see on the screen you don't
+have to
+like i said it's not it's not fiscally
+responsible to do what we're doing and
+and as far as i'm concerned i'm done now
+that we've done this
+so i've spent hundreds of dollars
+and i think we all have a piece so don't
+be don't be discouraged bill you're
+and the cool thing with that is
+you get a percent
+even if you don't
+discover you know you know that block or
+whatever you get a percentage based on
+how much you mind to that pool
+of
+of the payouts
+so that's pretty cool i'm like i'm i
+discovered nothing for days on end
+because the guy in the blue shirt over
+there was mine that they ever love and
+[&nbsp;__&nbsp;] out of it but i had mine long
+enough that i was getting something out
+of it so
+we will post it on seconddsm.org if you
+guys want to mine to the pool that's
+totally cool we're totally cool with
+posting on sec casey it's all fun you
+know we're just we're just having fun
+oh yeah by the way uh if anybody has a
+really good question your name is not
+bill
+i have a
+limited edition sec dsm paper wallet
+right here with a private key loaded
+with
+500
+kc coin right here so that means you
+could take this wallet right now walk
+yourself over to the swag booth and get
+yourself some swag like
+how awesome is that so when people come
+out with some good questions here
+tonight this is yours so question right
+here what percentage of the economy do
+you now control
+percentage
+so the question is how much how much
+so we currently control
+69
+of uh set casey
+tonight through the end of tonight yeah
+yeah all right i got first to comment
+because i [&nbsp;__&nbsp;] quit because you guys
+we're sorry sorry
+all right well well here okay so sir i
+coin
+you know what [&nbsp;__&nbsp;] it everybody look
+under your seat
+there's a paper wallet underneath almost
+every seat in the house
+with 501 set kc coin on it all right
+pull it out right now not every scene i
+apologize we didn't make billions it's
+25 000. we had 25 000 that we threw at
+this so it's all under your seat we just
+taped up a little envelope uh there's at
+least two or three per table
+like even along the bar side here you
+might have a wallet
+so here's the here's the thing you have
+to use this coin tonight tonight so
+right now or sometime tonight before
+they close up you gotta go over and get
+swag that's enough swag for a sec kc
+velcro patch or whatever it is they're
+willing to sell you for 500 kc coins we
+put 501 on there so we can cover any
+kind of transaction fees so you got more
+than enough that you can go over there
+and and and dos the uh the the uh
+the the swag the swag table so now so
+now the public
+owns
+sixty percent
+of sec kc controlling shares come on
+guys you guys own it
+it's all you guys
+so the reason why you have to use this
+point tonight and tonight only is
+because we made those paper wallets we
+have all the private keys you have a
+private key in your hand but we have the
+private key too so if you don't use that
+coin tonight we're going to take it back
+so i want you all to go over there right
+now and wipe out the swag from mr
+swearing
+big and you can combine stuff together
+they got i think for 60 bucks 60 000
+points or six thousand six thousand of
+that you can get yourself a hoodie so
+you and you
+20 000 you get a t-shirt to start to
+start working with your friends and you
+know if they're at it if they get run
+out of patches go together and get a
+t-shirt
+oh yeah yeah
+oh yeah yeah yeah so i i apologize so we
+actually even had more so we only had
+time because we did this all before
+defcon do we only have time to make 50
+or enough point at that time to make 50
+wallets so i apologize if you didn't get
+a paper wall under your seat go look at
+the seats around you that are empty they
+probably have one too
+and so
+we have a bunch more coin to give away
+so anybody that's following sexism on
+twitter and give us your slack handle we
+will go give you 500 one point right now
+that you can go go now and then you can
+yeah we'll give it to you in slack and
+then you can take that over i know
+tonight only so
+yeah
+the question i have was i never noticed
+on the bottom of that chair there's the
+coin for the lawn paper wallet right
+there
+uh the question was i never really saw
+an increase on the network so like on
+the uh on the
+wallet um
+app it it shows you how many people are
+on the network i never saw that go to
+like a stupid number it was always like
+five six seven i never saw a theory so
+here's here
+so the question is like hey i didn't see
+a bunch of people connecting in on the
+network and this is kind of the secret
+to our cooler like at first they were
+trying to figure out who was finding who
+is mining the bitcoin and so uh since we
+hit it all behind one ip address we're
+all mining to that guy and that guy was
+the one guy talking back to the pool so
+so you never tracked anything back to us
+you just tracked it back to the pool and
+we may have done things like if you find
+our cooler because our pooler is out
+there and when you're mining you can see
+everyone else is who all the ips are
+running so i may or may not have found
+the the tip bot and if other people were
+looking for ours and you show up without
+the right name you might get a website
+dedicated to bill swearingen not saying
+it did i'm just saying it's possible
+so anyway go find go go go research go
+find some stuff
+but yeah tweet us now oh question
+so it's an arms race right so any time
+that you raise that hash rate up
+you know if everybody stays at the hash
+rate it's going to keep going up in
+difficulty so our attack is basically we
+mind tilt it's really stupid difficult
+and then we turn all of our stuff off we
+just got too addicted and like how big
+can we make this high score go and
+bill's like hey you guys want to come
+talk about it and so we kind of ditched
+our like wait for it to go down we did
+that a couple times where we got the
+hash rate up and then we waited for it
+to drop and then we we ramped it back up
+again so at this point after tonight
+we're going to turn it off
+so there are some really well-known
+vulnerabilities within
+cryptocurrency like the 51 attack and
+double spending attacks so these are
+attacks against the blockchain itself in
+which you don't necessarily have to have
+a lot of cpu resources well
+the 51 attack you absolutely have to
+have more than 51 percent of the total
+mining capacity but these are attacks in
+which you can
+you can say
+that you spend some money wait for it to
+be confirmed and then spend that money
+again so there are double spending
+attacks and every one of you i will
+recommend go look at double spending
+attacks go look at 51 attacks and hack
+the [&nbsp;__&nbsp;] at a sec kc coin because that's
+what we were trying to do we just didn't
+have enough time with defcon so
+absolutely go look at those those
+blockchain attacks and exploit the [&nbsp;__&nbsp;]
+out of them because security c coin is
+primed for those attacks not many people
+are mine in it we're going to back off
+tonight have added
+i'm going to thrice say this was
+fiscally irresponsible oh yeah
+go back to that last slide
+where where people are trying to freak
+out and they're like who turns on some
+[&nbsp;__&nbsp;]
+this is what it was about from our
+perspective we threw hundreds of dollars
+at this for zero game we've given it to
+you guys it was for fun
+but this is what it was about and
+hopefully this is what the spirit
+of what we do you know between groups is
+about it's about fun it's about learning
+it's about you know
+from my perspective i knew nothing about
+cryptocurrency mining
+until that night brandon brandon is
+sitting right there spinning up
+instances trying to figure this [&nbsp;__&nbsp;] out
+and the next day i'm like well i got
+this new card i'm gonna try it too and i
+knew nothing
+this
+this uh this guy right here had been
+mining it for a month and hadn't said
+[&nbsp;__&nbsp;] so he's a sandbagger
+he hasn't said nothing
+so i blame everything on him
+and i'm gonna give him the money
+so
+are there any other questions
+uh
+and i oh by the way i also wanted to
+pimp out dsm because you know that's
+what it's all about so
+so we thought actually we thought it'd
+be really hilarious if set kc coin was
+completely controlled by des moines
+i think we almost got there i kind of
+feel like we did but anyways so the
+second thursday of every month so just
+take sec kc
+add two days come up to des moines and
+you can come hang out with us some more
+and
+nudist is polo
+right
+dsm polo we got a sec dsm
+limited edition defcon shirt 24 right
+here it has a ctf built into it come up
+to sec dsm on thursday we'll swap we'll
+we'll give you some swag questions
+when is the field trip what is what is
+set kc coming up to dsm the question is
+when is set kc coming up to des moines
+anybody any there's two days from now
+not thursday and since the booze is free
+at sec dsm you need to let us know ahead
+of time so we're prepared we also have a
+competition barbecue
+member on thursday he is catering
+competition barbecue so all you casey
+[&nbsp;__&nbsp;] that think that you can
+barbecue come up to des moines and we'll
+show you what's up
+once again this is tom paul he was the
+starter of this he's insane he was
+mining he's a sandbagger he didn't tell
+anybody else about it and until it's too
+late
+and by the way you won't find our
+vehicle i know you're looking i know
+you're looking you're not gonna find it
+no i know what your plan is i figured
+yeah right
+yeah this is brandon this is ryan i'm
+that was fantastic

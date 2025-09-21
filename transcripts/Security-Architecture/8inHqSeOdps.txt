@@ -1,0 +1,554 @@
+all right so
+before i get started here i don't know
+so here's my disc paper we saw one
+earlier he breaks up using this it's not
+my fault i told you not to do it
+this talk may contain strong language
+parental discretion is advised
+also i'm not liable in case of accident
+or responsible for accidents or
+responsible for the advice i'm giving
+you now if you don't take
+my profanities but i might curse during
+this presentation
+so
+does anybody even know what a is anybody
+use this product yeah
+i think you're sweet that's sweet okay
+so a is the advanced intrusion detection
+environment
+it's a filing directory integrity
+checker it's pretty sweet because it's
+free
+free is always the best it'll be all you
+gotta do is be able to compile it that's
+great right
+it'll run on almost any nix operating
+system i've used this on solaris
+red hat slackware
+ubuntu cali as we'll see later
+uh hp ux i believe i even got to spin up
+on that
+it's also free
+to download right here on sourceforge so
+please go there
+what does aid do
+it creates a database from the rules
+contained in the configuration file
+basically you're going to take a
+configuration file and you're going to
+lay it out you're going to say i want to
+watch this and i want to watch these
+characteristics of this
+and if it changes you know
+let me know the next time i check
+now
+once you initialize the database
+based off your configuration that you
+set up you can use that to check the
+file system for changes it's pretty
+slick now i say database here
+it's a dot db
+you know i
+i don't know exactly the whole file type
+but keep that in mind there's no actual
+absolutely
+the rules files support various
+attributes such as hashes permissions
+time user group uh it grows extended
+like i even saw that there was some
+essie advanced linux stuff that you can
+check on although i don't do any of that
+in this talk uh you might want to check
+that out if you're into that kind of
+stuff
+all right so here's basically their
+sourceforge page
+i noticed i clipped the developer's
+i don't know if anybody's into that kind
+of stuff yeah
+so you can brew add that or whatever i
+so how do i use name
+i use it to monitor system level
+binaries that shouldn't change
+so your s bit shouldn't be jumping
+around unless you pass your system
+makes sense right these have been uh
+directories in one line perhaps you have
+a certain application that you don't
+want the version to change you can tell
+hey hey watch that and let me know if
+anything changes whenever i check
+so it'll let you know
+and then you can come back like the card
+and say hey why did you think that you
+could change files like i wouldn't
+notice
+so you can keep users honest and enforce
+change control
+so the big question is always is it in
+cali it's not by default but it can be
+for free all you have to do
+is
+get it which i'm not doing here i'm just
+searching to check to see if it's there
+first thing i did here was which aid
+which if it's in your pad it'll show the
+full pack to the binary using which if
+you're not familiar with linux and
+because cali likes to put things
+wherever they want i did a fine for root
+to see if i could find the binary and
+print it out and it returned no results
+so then you got to take it to the next
+level and look in the aft repositories
+and doing an app cache search
+for aid and e-grepping for any line that
+begins with aid i was able to find these
+four results and i highlighted the one
+that we're looking for
+the static binary for aid
+when you install it it's pretty standard
+app get installed all right everybody
+that's done anything in
+any debut or youtube based distro would
+have seen this a hundred times and
+graduate dependencies
+uh and right here you think it's about
+to be over
+and then you're like wait
+every time i use a there's only one
+config file a.com that's the only one i
+a whole bunch of stuff i really don't
+care about so i'm not going to cover any
+of the extra
+plug i'm going to work strictly with
+just the a.com file
+uh
+so
+looking at the man page
+it's basically these are the two i use
+for the most part i use check and i use
+a knit
+uh i initialize the database and you've
+got to move the database new file into
+the position of the database and then
+from there on out i use it to run the
+check if something's funky it'll say hey
+something's funky
+so
+there's also the ability to use this
+update command which i'm not familiar
+with the way i've standardly used it i
+just use inc for the most part
+there's also a compare which was
+intriguing to me because i hadn't seen
+that option however i did not try to use
+that
+uh i didn't have two urls one up at the
+time you know check it out let me know
+uh you can also check it to see if
+you've heard dark the config with my
+stick
+so
+you want to run egg for the first time
+and this stumped me so i i hit the
+program so you really don't have any
+control over where the binaries were
+going jesus picked the wheel the
+developers of the taking package
+what is the deal well finally i figured
+out unlike the other ones i've used it
+once the full patch of the could fix so
+the
+dash little c here that you'll see
+throughout this talk
+is giving the pack to the egg config
+that i'm using so once i figured that
+out i was able to give it to my seat
+config file and i initialized the
+database and it's like hey that's cool i
+got a brand new database called a.b new
+and i put it in var lib a3 that's
+awesome
+and if we do a long listing of this file
+we'll see that root owns it and by the
+way even though it says awesome set kc
+that's just a ps1 export i'm really
+running all of this is rude
+so
+six
+and when i try to do a check
+with i'm like okay
+i know i need to fix
+the config and i'm like let's check see
+that's because i haven't moved it into
+place yet
+so here i did an alias on the command
+line because everybody's tired of typing
+i'm going to see it's really big
+and trying to tap that out so then i i
+did it again i still can't find my
+database file so i copy the existing
+new file that i just created on the last
+screen and i put it into place for the
+adb and i do a check and at this point i
+don't have anything defined in the
+aid.com
+and so
+yeah that's great sweet you're not
+watching anything
+all right
+so
+the config file looks dusty uh the
+database file
+is you can set this to whatever you want
+so var lim paid aid.db is the default
+the database out new i think that's for
+those people that run that extra option
+besides i want to see i think you can
+update if you take advantage of these
+two things all right she's exit
+this right here are the checksums now if
+you notice this is where we first get
+into a definition
+now checksums here
+is basically a variable that ain't knows
+that when we say i want to watch this
+file with checksums it's using
+sha-256 sha-512
+and then down here has some extra
+extended acl stuff
+here's another just more definitions of
+different things that you can flags that
+you can use to monitor files owner mode
+basically only watches permissions users
+uh the group and the file type
+we have some other ones static i know
+this and they'll build off of each other
+so i know data also contains owner mode
+which contains these so you can really
+do whatever you want
+this uh because of the cali
+ain't comp it didn't really have a good
+list of these i mean you might be able
+to pick a few i pulled this out of my
+port installed on my mac
+after i updated xcode things to make
+this work
+so those are just some shorthand flags
+of what it's referencing
+so here i initialize the database and
+because i still have an alias i don't
+have to pass the config
+and
+also
+i move the database new into the
+database
+tailing my eight config i now have this
+directory called temp set kc and i'm
+watching checksums on it
+after i initialize it i checked it
+everything's working okay looks good
+so what if i want to disregard checksums
+come back to owner mode so owner mode
+there's permissions users groups file
+type now this is our group and owner and
+i get some other garbage data in here
+but the set kc test file at the bottom
+i'm basically declaring that there's a
+test file dot text in the directory set
+kc and it has owner mode is what i want
+to watch on it
+the next thing i do is initialize the a
+database and move it into place and run
+a check on it everything's cool at this
+point nothing has changed it doesn't
+notice anything and we're all good
+so looking at a long listing of this
+file you see that it's 644 permissions
+uh and when we look at the contents of
+it you download it you get test file dot
+text testing testing one two three
+when i echo the same thing back into
+that test file
+i run a check again using the same rules
+and obviously i'm not doing any kind of
+end time anytime checks because it says
+hey everything's cool we're good
+so then i you know take it to the next
+level and echo we always tested
+production into my test club and i want
+to check on it and it says hey
+everything's cool
+uh
+no that just changed but because i'm
+watching owner mode
+and not check sums aid doesn't
+understand it's doing exactly what i
+told it to do so you got to pay
+attention when you're monitoring things
+to make sure that you get the correct
+mix and match of permissions that you're
+trying to accomplish
+so when i change my my file and then i
+run a check it blows up so this thing
+does actually do something besides just
+here it tells me that i'm watching three
+files uh once changed it basically says
+a file permission is changed it tells
+you what file that is it tells you that
+i'm going to see this in the back it was
+so i heard you like check somethings if
+you remember earlier we had a thing
+called checksums it was a bunch of sums
+to check something for you to check and
+so here it is again in case you forgot
+sha there's a bunch of different ones
+and now i've changed that test file to
+watch checksums instead of
+just permissions i want to know if the
+contents of the file change
+so i reinitialize the database remember
+to reinitialize the database after you
+change your config file
+i move
+the database new in the database its
+favorite thing i want to check
+everything's copic
+so i come back and i look i still have
+the test file
+i look at it again we always test in
+production
+i enter the same thing back into it and
+check it again
+and the hash hasn't changed
+so the check was successful everything's
+okay
+so then i said why should we test let's
+just deploy
+deploy
+test test text when i run a check it
+blows up it says uh you have changes
+and looking at this the long list
+laundry list of checksums that we had
+here it tells you the difference and
+shows you what changed up here the test
+file and then the hash difference
+so if you don't test this out and you
+think you're going to get an expected
+result you might want to test that out
+for example
+when looking at the test file we still
+have 755 permissions on it i changed
+this to a checksums
+and we're watching we're watching the
+checksums on the file now if i do is
+anybody familiar with get the get back
+on setback extended attributes on xbox
+yet so
+basically when i do a git facl
+on the test file it shows that the user
+basically the permissions that are up
+here 755 is is
+what we have so i did this command here
+set facl
+modify user os read write execute for
+this test file
+and then i do a long list on this text
+file you'll see a plus sign was added to
+the long list
+that was missing up there
+so now when i do my check it still
+thinks everything's cool
+i don't know
+not everything's cool it's changed
+but because i'm watching checksums
+aids sums do not change when extended
+acls might change so that's something to
+be aware of these are some of the
+gotchas
+when i do a get facl to check those
+again
+you look at this and the boss has read
+write execute so that means you can make
+don't worry about that
+so i have this because i get tired of
+typing a minus c
+a
+move i made a little script called
+fixate so when i do this cat which
+fixate it's just showing you the
+contents of that so fixate is referenced
+later that's what it's doing
+i change back now to owner mode and i
+run fixate and then
+re-initialize the database and moves it
+into place
+and then i run set up acl again and take
+away right access for myself
+and i'm like hey you know what do you
+think it's like hey something changed
+but
+i don't think it really understands what
+changed because the permissions were not
+775.
+anyway so be aware that this on extended
+acls might be bad output but it's still
+going to catch the change
+so when i set it back i'm saying hey
+boss is cool he can have right access to
+the test file and i run the check again
+without reinitializing and it's like
+okay everything's back the way it was
+originally
+brian here is an overachiever
+and he sets up a he's like watch this
+i'll i'll make a text other people on
+the weekend in case anything changes in
+that directory and then he watches fall
+probably a bad idea because 4 is going
+to change quite a bit so we're going to
+introduce
+the bang the knot
+prefix here so if you use an exclamation
+point and a bid
+it'll allow you to ignore certain files
+you know constantly changes or you don't
+care to watch
+so i run fixate and i agree initialize
+i do a long listing of this this is my
+directory set kc i have blue screens
+which are quite entertaining
+set level and test file
+i i'm running check and everything's
+okay and i look at my current set level
+and i said three i'm like man i really
+should have got that
+machine in front of it
+so i'm like no it's cool i'll i'll make
+my second level four so i have a four in
+the second level and i'm trying to level
+up right and aid's like oh no i don't
+think so i see you i see what you did
+there
+it catches the hash changes uh because
+i'm doing a thing now i make one called
+hash's and motor which does permissions
+and checksums so make your own pretty
+cool
+so i run fixate again and if we look oh
+i happen to have right access to a so i
+just won't watch my sec level and up my
+second level now goes to 11. so
+we're
+it has been so much fun
+but wait
+what would it be without an actual use
+i ran into a problem where we had a
+certain user who had access to a certain
+web server who would
+i think they were editing this file
+wordpad or word and it would put the
+escape m sequence when i bi it was
+pretty awesome
+so
+i said i got just the thing for you
+we're gonna set up aid
+and basically here's how it went
+i had an aid script
+for check and alert and a config setup
+to watch
+the home the home directory book
+the directory of patching http docs dirt
+which derf is the user and when dirt
+blocks in their home directory has a
+directory called website and the website
+is meant to board a symbolic link over
+to a subfolder and apache that has
+extended acl permissions that allows her
+to roam free run freaker before watching
+you
+because now when you call in and you say
+i have no idea what changed i i really
+i have two scripts once check it out.sh
+and it runs the top of the hour every
+hour every month every whatever and one
+runs 15 past the hour
+so the first one we're looking at check
+it out
+it says set casey wright ross sign up
+the example bash script will
+automatically rotate
+if something changes
+it's like hey i'll send you the email
+output that's awesome now i don't have
+to do any work it's like automated stuff
+it's cool so i set my email variable and
+then i set up this test using back ticks
+or something it would broken extra
+spaces at the end and so i just said to
+turn those off in case there isn't
+and that sets it to a numeric value
+and then i also set up this tech file uh
+attempt check it out dollar dollar
+process so if my test is greater than
+five so i'll get eight outputs more than
+five lines
+it's not cool
+i need to run a few things so it runs
+aid and it runs the check and it pops
+out the results into this temp file and
+then it runs user bin mail x minus x
+with the subject does something changed
+on and it says the date and it emails it
+to me it emails me the test the temp
+file
+now to use this it won't work right out
+of the box you're going to need to set
+up your mail transfer agent whether
+that's send mail and you need to set up
+a smart post relay or whatever this is
+you can't just copy and run this for the
+something changed on the system uh i
+emailed the changes to email and puts it
+in the email and then it casts that file
+and then i remove my template the only
+reason i'm doing these echoes typically
+i wouldn't but if you
+have crime logging it could caught that
+into the log and maybe give you a second
+place
+so here i have one check it out i don't
+really care sign up for talk seriously
+sign
+automatically checks because i don't
+care it's changing it's just going to
+send the changes to this log file here
+so it does the same check if it's
+greater than five then it echoes out
+something changed on date and sends that
+to the log file then it casts the
+results of the change into the log file
+and also re-initializes the database
+moves it into place it doesn't send me
+anything and it only locks it once
+however which in this case would be 15
+minutes
+so
+when you're monitoring the monitoring of
+the monitoring of the monitors
+you need to make sure you copy aid off a
+database off the system or at the very
+least you want to hash it because
+the version of the database you're
+looking at is not the version of the
+database you're looking at
+with that
+does anyone have any questions that i
+it's only limited by the nastiness of
+your imagination if you wanted to watch
+someone's bash history file every 15
+minutes and if it changes say hey i saw
+you did that and email them all the
+anyone else

@@ -1,0 +1,659 @@
+okay it's 6 15 and i'm a stickler for
+time
+so here we go um all right
+let's see if first time i've done this
+okay let's see if my timing's worked out
+so
+uh if you've never been here before
+maybe this is your first one
+maybe you've been too drunk at every
+meeting you've been to uh this is the
+news
+so excuse me i do this in ignite format
+uh it's a drinking game now too oh [&nbsp;__&nbsp;]
+all right i'm already going slow so
+where do you get the links uh that's
+gonna be on our slack we've got this
+newslinks channel you should go in there
+uh check it out let's see two drunk by
+615 lol that's right i can still read
+comments too
+twitch get the [&nbsp;__&nbsp;] out of here i got
+zoom
+uh here's the new feature i told you
+about shot time let's test it out real
+quick
+okay yeah it works okay cool so
+first and foremost um if you didn't know
+what's happening uh you should have
+you should check out the def con safe
+mode content it's all up on the media
+server now
+it's pretty sweet you can go get it uh
+it's and it's all there you didn't even
+have to bring hard drives this year so
+that's pretty tight
+thunder spy is the thing uh oh my god
+where are my notes it's covered by the
+chat
+uh this is uh something affecting all
+thunderbolt equipped systems
+sucks to be those that's a lot of things
+now uh you should they got a thing you
+can run to see if
+you're vulnerable to it you should maybe
+think about running that i don't know
+um yeah yeah definitely take a look at
+that why is this 15 seconds staying so
+much longer than
+the last 15 seconds no what's happening
+are my are my timings booked
+oh oh god i'm gonna have to manually do
+this
+[&nbsp;__&nbsp;] okay here we go moby friends uh
+let's see 3.7 million users of moby
+friends
+some barcelona-based dating app uh it
+was originally
+one over let's see what it contains uh
+email address uh uh
+relating to a book big uh [&nbsp;__&nbsp;] oh hey
+they're they're working okay
+uh rdp attacks are on the rise so
+probably not surprising given the
+pandemic and everything
+work from home is completely shifting
+what defenders have to deal with and
+what we've known how to deal with for
+some time
+if you don't have edr on your systems by
+now uh [&nbsp;__&nbsp;] you you're [&nbsp;__&nbsp;]
+uh so let's see facebook did a thing
+where uh they changed the sdk and on ios
+it made a bunch of applications go bro
+and by burr i mean oh man it's pinned
+why am i
+i should be showing up here not you ben
+webb there we go
+come on show me no where did you go uh
+whatever
+samsung zero click ball oh yeah like
+there was a thing that affected a bunch
+of samsung phones
+uh like all of them made since 2014 or
+some [&nbsp;__&nbsp;] god dammit [&nbsp;__&nbsp;]
+uh and uh yeah [&nbsp;__&nbsp;] patch that [&nbsp;__&nbsp;]
+uh this guy got this two thousand dollar
+bike uh
+and uh and it got brick because they got
+bought or sued or some [&nbsp;__&nbsp;]
+and he didn't want that to go away so he
+just decided to fix it with a raspberry
+pi you can learn about that if you want
+to click on that link when you see it
+uh you know i'm gonna come out and say
+it not all leaks are bad all right
+uh there was this cat that uh uh what
+they're calling it project whispers
+uh 10 million internal images from over
+100 discord servers run by neo-nazis and
+uh qan on people and [&nbsp;__&nbsp;] like that
+uh we had another leak here that's a
+little figaro it's a french daily
+newspaper 7.4 billion records containing
+uh personally identifying information of
+42
+000 users including your plain text and
+or hash password
+md5 that won't take long or anything i
+read some shitty news about firefox
+today but before i read that i read
+about this
+which is firefox relay that's coming out
+on a beta near you
+maybe who knows they killed off their
+whole like uh threat intelligence team
+today if
+you hadn't heard so ah that [&nbsp;__&nbsp;]
+sucks uh
+some cat did a really cool investigation
+on pyc
+files so figuring out what's in those
+their python cache files
+as it turns out sometimes really
+sensitive stuff gets stuck in there so
+uh basically you know take a look at
+your pyrc file add them to your git
+ignore [&nbsp;__&nbsp;] like that
+uh we got a leak here from ais cellular
+this is thailand's largest cell network
+they pulled this database offline that
+had
+millions oh excuse me billions of
+real-time internet records on millions
+of thai users uh basically you could see
+what someone was doing in real time
+creepy ass [&nbsp;__&nbsp;]
+contact tracing obviously a very popular
+topic right now but uh very
+delicate topic as well so qatar had a
+mandated like install
+thing and it turned out they done [&nbsp;__&nbsp;]
+up and you could see someone's gps
+coordinates and health status so
+mathway had a breach uh but they didn't
+even know about it until they saw
+25 million of their records being for
+sale on the dark web that [&nbsp;__&nbsp;] sucks
+uh they're a really popular like
+education app on uh android and ios
+so that [&nbsp;__&nbsp;] happens i guess uh this
+researcher got a hundred thousand
+dollars from apple for figuring out
+something about jwts i don't know
+i read this really light i wasn't really
+sure what happened it gets really
+confusing to me so maybe if you're
+smarter than me
+you can look at this and know what's up
+uh and more funny news uh some hackers
+decided that the chicago police could go
+[&nbsp;__&nbsp;] off and they decided to uh
+air over their radios tay zonday's
+chocolate rain
+and of the classic [&nbsp;__&nbsp;] the police by
+nwa
+so ah that's fun west tech is a company
+that got breached you probably haven't
+heard of them because defense
+contractors don't usually like to be
+heard about
+but they have a lot of clients like the
+air force the navy
+the army the joint service agencies um
+but it's it's cool
+nothing happened probably right uh
+sophos had a state of ransomware report
+that they dropped again this is just
+like a
+view of things but sophos is a global
+company so yeah go for it right they
+probably got a decent idea
+they they had a thing uh maybe maybe
+take a look at it it's a good data point
+uh apparently the rhodium's got a lot of
+zero days right now as for ios they're
+just like hey quit
+[&nbsp;__&nbsp;] sending us to it we're not
+paying you [&nbsp;__&nbsp;] uh used to be like five
+hundred thousand dollars for a zero day
+that went down to like two hundred
+thousand for
+uh over the past like three months or so
+oh hey shot time all right if you're
+[Music]
+these boots are from our defcon party if
+you're cool you would have one
+all right uh cloudeye is this company
+that uh that
+got exposed as a malware front so they
+were basically saying like hey we'll
+hide your binaries from being able to be
+reverse engineered
+uh which is a legitimate service and
+everything but it turns out these guys
+are like soldered to malware people too
+i knew i would have to do this someday
+uh yep we did a thing
+um you can read about it if you want to
+uh
+some social security numbers may have
+been compromised
+oops uh the uh south africa bank post
+bank
+uh they they got a problem where they
+suspect some employees took the master
+key
+uh and have actually made off with like
+3.2 million dollars worth of stuff on
+that so
+that's got to be a fun thing to put in
+your dr plan lamp phone is something
+amazing from those [&nbsp;__&nbsp;] at ben
+gurion university uh they
+have figured out how to record a
+conversation by looking at the lamp
+uh which sucks to be them because my
+broke ass only has
+one light up in that lamp that's why the
+lighting's so bad in here
+uh ripple 20 is a thing that happens so
+uh
+trek tcp ip stack that's that's a thing
+uh and it's used in a lot of things so
+dependencies everywhere i actually think
+i have that in a slide later
+uh it probably affects you uh this
+company galcom they
+ended up having a series of plugins that
+uh collectively have been downloaded 33
+million times
+uh this company that awake toll uh
+figured out that they've been slurping
+personal data uh so [&nbsp;__&nbsp;]
+uh golden spy this is some tax software
+that was told to be installed on some
+western companies devices to uh be you
+know
+cool with china and turns out it was
+spying on you ah who knew
+uh wow that never happens right [&nbsp;__&nbsp;]
+um here's a interesting academic paper
+on as this title
+shows identifying the unintended arms
+of cyber security countermeasures that's
+kind of thoughtful right like you got to
+think about well [&nbsp;__&nbsp;]
+could some of these things we're doing
+be doing maybe a little wrong what's
+going on here uh microsoft uh the cyber
+security field cto had a really cool
+post on her thoughts on social
+engineering
+um talked about reciprocity scarcity
+authority consistency
+liking things consensus pretty
+interesting post actually
+uh encore chat this is this thing that
+maybe your drug dealers were using to
+buy and sell drugs and the po-po
+totally gone all up in that [&nbsp;__&nbsp;] uh your
+drug dealers probably well unless they
+live out in
+uh europe land and stuff but um
+oh and on that point i guess if you want
+to see if your drug dealers are
+screwing you over uh here's a data point
+this one company made a dark web price
+index i actually just did that all for a
+joke they didn't even include drugs in
+this so
+can't even check my prices what the [&nbsp;__&nbsp;]
+man
+um let's see so we got analysis of a
+home security camera so this is a
+chinese home security camera service
+which i thought was kind of interesting
+that they totally like didn't talk about
+uh the title or anything of this but
+kind of some interesting things that
+they touch on
+on uh what sort of privacies you're [&nbsp;__&nbsp;]
+uh there's this person i don't subscribe
+to [&nbsp;__&nbsp;]
+uh i browse our all with an anonymous i
+don't even log in
+[&nbsp;__&nbsp;] reddit um uh this is a really cool
+post to
+uh on how to clone a credit card only
+takes a minute to do
+take a look at it uh the eff have this
+really cool new tool that they can show
+us how to
+uh uh how the police are spying on us
+in our own little areas so even that guy
+up in iowa you can see the different
+ways the popo are spying on him than me
+down in columbia
+uh apt-29 has apparently been targeting
+kobit 19 vaccine development data
+this is kind of one of those things
+where i'm like hmm can you buy them
+though
+like this is kind of a global offer why
+why the [&nbsp;__&nbsp;] are we even holding all
+that together
+right like like [&nbsp;__&nbsp;] them but [&nbsp;__&nbsp;] you
+too
+um so there's uh interesting posts by
+epsecure talking about a case of some
+counterfeit cisco switches uh here we've
+got like a comparison between two of
+them
+um i guess b be careful about that sweet
+deal you find on set kc
+my secret is these boots if you knew use
+the bottle [&nbsp;__&nbsp;] you
+uh let's oh ios 14 is doing a cool thing
+where uh you get to
+opt in to the advertising identifier
+it's the eight idfa you vodka hands
+uh who the [&nbsp;__&nbsp;] gonna opt into that
+nobody [&nbsp;__&nbsp;] targeted ads they're going
+away
+maybe probably not they'll be around uh
+f5 had a really big vulnerability with
+the tmui
+interface uh apparently a lot of people
+just don't give a [&nbsp;__&nbsp;] about it
+and just don't want to [&nbsp;__&nbsp;] patch it
+um so i i don't know why but you can
+look that [&nbsp;__&nbsp;] up on showdown they're
+all there
+f1 uh so did nicole be i can't even
+pronounce that sober uh has uh
+held an argentinian isp ransom for 7.5
+million dollars
+interestingly enough this hasn't
+actually affected any of their customers
+so they know
+how to i guess get them to pay it's all
+internal [&nbsp;__&nbsp;] uh diebold is uh talking
+to
+the people that have their their atms
+and like hey we've seen some black boxes
+that
+apparently have some of our own software
+in them and we don't really know how
+that got in there but we're gonna find
+out and
+not gonna tell you that uh let's see
+this dude uh meow that's
+uh for the lulls i guess thing like it's
+just smashing they just
+delete [&nbsp;__&nbsp;] you know there's no
+explanation there's no i'm gonna hold
+this right ransom
+[&nbsp;__&nbsp;] you it's gone i kind of like that
+method honestly like you don't deserve
+nice things
+um a thing happened on twitter uh you
+can take a look at that this is some of
+the more sinister stuff that happened
+with the thing beyond the you know like
+the bitcoin tweeting and all that [&nbsp;__&nbsp;]
+everyone had fun looking at that
+um uh yeah that was the thing they also
+caught the dude
+uh at least who they think it is but uh
+in
+typical government fashion they didn't
+protect the zoom meeting
+uh and and it got zoom bombed with porn
+stuff
+uh i'm removing people as quickly as i
+can when a disruption happens snatch
+that after one zoom bomber interrupted a
+lawyer
+i just i like to think of how that must
+have played out that must have been fun
+oh no
+it's not going again i have to jump it
+okay and uh
+another so actually i actually hated
+this article i read it later and i
+realized i was like you don't [&nbsp;__&nbsp;]
+even give any evidence to that
+but hey just just an announcement
+bitcoin's not anonymous if you didn't
+know that bitcoin's not anonymous there
+are some that kind of are z-cash
+uh dji dji has been kind of being a
+[&nbsp;__&nbsp;] uh again like
+overall a lot of people get upset about
+it anyway dj has been kind of being a
+[&nbsp;__&nbsp;]
+and some over permissive apps uh that
+were bypassing google plays uh update
+features
+uh basically kind of a danger for people
+um garmin got
+[&nbsp;__&nbsp;] recently uh anyone that has a
+garmin device probably knows that
+uh they ended up paying the ransomware
+[&nbsp;__&nbsp;] you garmin
+quit ruining it for the rest of us quit
+[&nbsp;__&nbsp;] paying people you [&nbsp;__&nbsp;] morons
+um alexa pond my enemies so uh there's a
+really cool
+post about a guy a group of people i
+guess maybe who uh
+uh wind up submitting 234 skills that
+violate these skills like terms
+and they all get approved some of them
+took more than once to go in but they
+did
+uh let's see avon the makeup company uh
+they got breached uh
+no i'm sorry they leaked some [&nbsp;__&nbsp;]
+because they didn't secure their [&nbsp;__&nbsp;] uh
+what did this include full name phone
+number
+date of birth email home address gps
+coordinates and uh 40 000 security
+tokens some internal ship
+promo.com got breached uh let's see that
+contained 22 million user records on
+file
+uh let's see the compromise data and so
+it's in there [&nbsp;__&nbsp;] uh approximate user
+location your ip address first last name
+your email address your encrypted hash
+salted password so yeah i guess that's
+nice
+cwt got breached let's see one of these
+[&nbsp;__&nbsp;] get
+uh let's see oh they paid the ransom
+[&nbsp;__&nbsp;] you cwt
+um they the attackers initially demanded
+10 million but they haggled them down to
+4.5
+so go you i guess ohio actually did a
+pretty cool thing
+uh they've got a vulnerability
+disclosure policy for
+election related websites so not
+election [&nbsp;__&nbsp;] but election related
+websites it's a start
+okay um have i been pwned is going open
+source
+uh troy hug tried to sell it because
+he's tired of running it that [&nbsp;__&nbsp;]
+didn't work
+so i guess he figured he'd open source
+it
+i don't know contribute it's a cool
+project but
+shot time and katrina made
+some toasted ravioli and she made it
+early and then she's [&nbsp;__&nbsp;] like she
+smells so good uh okay snapdragon of the
+toaster ravioli not the vodka
+uh checkpoint found a bunch of uh
+details of snapdragon processors which
+is in like every [&nbsp;__&nbsp;]
+uh android phone ever um
+and they patched it but it's what's it
+gonna get to you
+so capital one hey they had a settlement
+um
+i'm gonna let you read my math i mean
+i'm pretty math idiotic but i think that
+checks out
+um my [&nbsp;__&nbsp;] with google plus is worth
+twelve dollars you [&nbsp;__&nbsp;]
+proctor you had a breach so these uh
+this affected
+uh like accounts from 2015 back um
+and yeah what the [&nbsp;__&nbsp;] man uh this had
+unencrypted passwords what the [&nbsp;__&nbsp;]
+proctor you you guys [&nbsp;__&nbsp;] suck
+uh intel just had 20 gigabytes of files
+uh
+leaked or breached nobody really [&nbsp;__&nbsp;]
+knows actually just
+there's 20 gigabytes of stuff that some
+of it says like restricted
+and [&nbsp;__&nbsp;] like that so there's people way
+smarter than me parsing you
+uh there's a black hat talk on satellite
+communications and
+we all assume that like oh you can
+probably listen in on satellite comics
+it probably takes like much [&nbsp;__&nbsp;]
+money or some really cool tools
+uh the tools are cool but they only cost
+like 300 so
+there's that um google was uh testing
+out some like security stuff
+uh they they uh this guy fire
+in his house they found it and that's
+how we learned about
+google's merger acquisition of adt so
+that's cool
+ultra lock uh opens with just a mac
+address so this is an interesting post
+from
+someone i've already forgotten about uh
+and then they found out this the
+blog author actually found out oh like
+by the way pentest partners figured out
+that these guys
+[&nbsp;__&nbsp;] up everywhere uh ether oops is a
+thing
+so uh it has a logo um basically this uh
+this relies on i got a dog in here
+that's [&nbsp;__&nbsp;] with [&nbsp;__&nbsp;] on the ground i
+don't know what it is
+uh uh this involves uh exploiting faults
+in ethernet cables
+uh let's see zello that is a uh thing
+that allows you
+uh let's see first responders
+hospitality services transportation
+people use it
+um they might have gotten email
+addresses and hashed passwords they
+don't say
+what the password hashes are though so
+[&nbsp;__&nbsp;] if i know what that is
+uh maze ransomware uh [&nbsp;__&nbsp;] up lg and
+xerox pretty recently
+so they got what uh 50.2 gigabytes from
+lg
+25.8 gigabytes of xerox uh i got a bunch
+of crazy [&nbsp;__&nbsp;] from lg
+not so much for xerox i put
+this slide in there to give myself a
+all right let's get some tools um link
+lock this is a thing where you can
+essentially uh send someone an encrypted
+url
+i don't really understand how this is uh
+like any easier than [&nbsp;__&nbsp;]
+like why wouldn't you just use signal i
+mean you just send it over a different
+secure channel anyway it's a thing
+uh cigarette that's a big windows thing
+that you probably patched by now and if
+you haven't [&nbsp;__&nbsp;] you you really should
+have bro
+uh any any windows dns server it should
+be patched should have been patched like
+yesteryear man uh defcon ctf archive is
+live so these cats
+are currently running the defcon ctf and
+they were like hey let's put all the old
+[&nbsp;__&nbsp;] up there so if you're looking for
+some fun [&nbsp;__&nbsp;] to do
+maybe check out that defcon ctf archive
+give them a little bit of biznass
+uh boot goal is the other thing hey it's
+got a logo it must be serious
+uh this is uh vulnerability and grub 2
+boot loaders so
+again in order to actually exploit this
+you kind of already have to have a
+situation where you're already
+[&nbsp;__&nbsp;] but this does permit persistence
+hey shot time
+i wish i had put in a slide here for
+toasted ravioli time
+i wish i'd quit pouring vodka on my
+pants shots
+they all are still well behaved they
+didn't take away the
+stuff uh feston and that's the thing
+uh if you want to be famous and find
+some of these unsecured uh s3 buckets
+and [&nbsp;__&nbsp;]
+go download that go hack some [&nbsp;__&nbsp;] i bet
+it works
+uh intel owl that's a pretty neat thing
+i've been [&nbsp;__&nbsp;] with at work actually
+um that single pane of glass [&nbsp;__&nbsp;]
+like if you just want to paste something
+into a thing and be like hey
+show me stuff about that thing check out
+intel
+owl it's not bad uh root shark is a
+thing where you feed it p
+caps and it tries to give you
+interesting stuff in those peak apps
+um which i guess is pretty cool i
+haven't actually [&nbsp;__&nbsp;] with this yet
+but
+came across my feeds and it's i like
+giving you tools
+this is funny to me because i saw this
+happen live so i had a bunch of users
+reporting emote [&nbsp;__&nbsp;] to me
+i went to go look at some of the older
+links like a day later and i saw these
+gifts and i'm like what the [&nbsp;__&nbsp;] i'm
+gonna see a blog post about this in a
+month
+it only took like two weeks so whoever's
+doing that you're [&nbsp;__&nbsp;] awesome i will
+buy you a drink at defcon
+uh see data this is a company that makes
+uh
+fiber to the home boxes so these are
+things that your isp probably drops in
+places
+they got a bunch of like hard-coded back
+doors in them because this company's a
+dumb [&nbsp;__&nbsp;]
+uh chrome for whatever reason just
+[&nbsp;__&nbsp;] hates
+the url bar uh so basically uh now
+they're only showing the domain so
+like i got this story off android police
+it's only shown androidpolice.com even
+though
+androidpolice.com and www.are different
+things
+did you know it was world password day
+at some point between now
+and whatever the [&nbsp;__&nbsp;] our last meeting
+was
+you do now so that was the thing go tell
+people
+what a good password is it's a
+passphrase uh so the internet archive is
+uh
+currently hosting like 1.4 million books
+for people like downloading [&nbsp;__&nbsp;] they're
+like hey pandemic this shit's crazy
+uh y'all should take a look at this um
+and now they're getting sued
+so i don't really know where i sit on
+this copyrights suck dick
+uh and hey if you haven't read this uh
+marcus hutchins
+the the wannacry savior and as it turns
+out the
+uh uh kronos bandit one in the same
+check it out read that story it's pretty
+interesting to hear it from his uh
+point of view and uh that my friends

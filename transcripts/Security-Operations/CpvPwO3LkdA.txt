@@ -1,0 +1,679 @@
+without further ado I want to get Aaron
+up here who is going to talk to us about
+all right so start this presentation all
+right let's try it again
+so like you said in case you guys didn't
+get enough of this at work we're gonna
+talk about how you can do some home
+network security monitoring at all but
+we're gonna do that but with the cheap
+and easily or at least that's the goal
+so Who am I for those of you that don't
+know me this is a list of things that I
+am or do in my free time I like to talk
+about the things that I am or do yeah we
+can go over that later
+also you don't have to you don't have to
+listen to it's this shit's on github you
+can go read about this later you go talk
+to people so why would you even want to
+monitor your home network in the first
+place okay I think people in this room
+generally fall into two separate camps
+okay so we've got people who are
+security analysts they weren't in
+security or you are trying to make your
+break in security okay a lot of times
+you'll have side projects you're working
+on no matter what cam you are in and
+this is a good side project to have in
+order to keep your skills sharp and
+furthermore attacks art really
+restricted to the enterprise network so
+your home network is basically a
+honeypot that isn't designed to be
+available but some people do find it so
+kind of nice to be able to fact-check
+what's going on on that home network and
+then sanity check your network devices
+hey maybe I want to make sure that my
+Smart TV isn't sending my thoughts up to
+Mother Russia or some [&nbsp;__&nbsp;] I don't know
+and then of course so you know sans
+critical security controls number one
+number one thing is inventory of
+authorized an unauthorized devices so
+it's nice to know what is actually on
+your network and with at the end of this
+talk you should have the ability to
+figure that out of course your dad more
+troubleshooting support which should
+something
+be working over the network that should
+you let a little bit more insight into
+that with your packet captures and then
+the biggest thing that we're going to
+talk about tonight is it allows you to
+create your own alerts okay so it's nice
+that all these products that come out
+have all sorts of alerts that are baked
+in but obviously everyone's environment
+is a little bit different okay so what
+you want to get alerts on might be
+different than what someone else in the
+room wants to get alerts on so everyone
+can have their own alerts alerts for
+everyone and I mean why not
+sounds like a lot of fun so you might
+have noticed we looked at this talk
+preview I said this is going to cost you
+like 50 bucks and I [&nbsp;__&nbsp;] up I lied
+turns out that you really can't do it
+with just the edge router Thanks
+okay I thought you could and you can't
+the issue here is that for most all the
+internet connections okay your ISP only
+wants one forward facing you know device
+okay so if you plug a switch directly
+into your modem usually your ISPs gonna
+freak out and you're not going to get
+any network connectivity whatsoever I
+don't know if this holds true for Google
+Fiber I'm not lucky enough to live here
+I come out from Columbia so those of you
+who are on fiverr
+you might have a little bit more lot
+with that but vocalist who have regular
+[&nbsp;__&nbsp;] ISPs we need something on the
+modem in front of the modem I should say
+in order to do some that for us okay so
+what I ended up doing is I did use that
+edge router as the well router on the
+edge aptly named right
+that is what provides that to everything
+going behind it then I've got that net
+your switch find it that is just a
+simple fight board managed switch it
+supports port mirroring okay and that
+it's very important and it's what we're
+looking for you might also want to grab
+this Ethernet adapter that I have listed
+here you don't necessarily have to but I
+have found that some hardware NICs act a
+little bit silly with this setup and I
+don't know exactly why that happens but
+I have had flawless luck with this
+little 15 dollar USB adapter USB 3.0
+again I haven't had any throughput
+issues you might have through goody
+two-shoes again some of you guys out
+here at Google Fiber
+I'm not maxing out by one gig links
+whatsoever then goes so now and then
+what else needed so we've got VirtualBox
+here and then security onion both of
+those products being 393 everybody loves
+free so alright then Doug look too bad
+this is what we are working towards here
+okay so we've got our modem there on the
+left side you are connecting one end of
+that into your edge router connecting
+another link there between the edge
+router and that net your switch so we
+were doing here is we are bottlenecking
+the traffic that is happening on the
+network the real important parts are
+happening under right there and or right
+there also right there
+so what you'll end up doing in these
+settings is you will mirror both of
+these ports over to this part here that
+gives you a span imported and then is
+what we are going to be sniffing on that
+is the interface that we will use in
+order to sniff all of our network
+traffic
+the major benefit here some of you might
+be saying well Aaron why don't you just
+plug it into the wireless router let's
+cut out the middleman
+well unfortunately if you do that you
+will get all the traffic for your wired
+network however not the wireless network
+okay so that is the major benefit of
+this setup here is that using this
+scheme you will be able to capture every
+single bit of traffic happening on your
+network both wired and wireless awesome
+ok so the next set of Slevin a lot in
+the next set of slides are literally
+going to be step-by-step instructions
+you know one of this to be done cheap I
+wanted this to be done easy what's
+easier than reading a table although
+block breathing so we're going to go
+through these pretty quickly I might
+have some things that I touch on
+specifically regarding these slides
+nothing here really this is how you
+install and download virtualbox once you
+unbox that edge router X again doesn't
+have to be an edge router really it can
+be anything that will provide that of
+course for throughput reasons you might
+want to make sure that whatever this
+device is has one gigabit ports not
+maxing out at a 100 Meg or anything like
+that so again this is a good piece you
+can find it
+like 45 bucks at micro Center sometimes
+40 bucks so no affiliation with them
+really wish we had one in Colombia this
+is how you can connect to that edge
+router might default out on the box just
+got to connect it at zero do a little
+finagling what are those default
+credentials yeah bad Ubiquiti update
+your firmware on there that'll give you
+some additional wizards to use to show
+you how to use that or download that
+firmware image and upload that but a
+little bit more configuration there mm
+you don't necessarily by the way have to
+go with the two different networks I
+chose to do that one reason why you
+might want to do that actually so no one
+saw earlier for anyone that might have
+missed it was about honey pots and one
+of the things that he mentioned that you
+can do in order to help them gather more
+data is to deploy a Raspberry Pi on your
+home network and have it collect more
+data for that honey net however of
+course that is a caveat you want to make
+sure that you're not needlessly exposing
+any of your other home devices to
+additional risk so what you can do using
+the edge router not necessarily with
+another piece of hardware but you can
+create a separate VLAN on you know any
+of those empty ports that are there and
+you can actually connect your Raspberry
+Pi to that you can also do it on the
+switch as well if you could have gone
+the switch you would actually get the
+traffic and you would see that so again
+you would have to span all of those
+ports again not a big deal
+where you can put it up there you don't
+want to fill up your your burrow
+instance with a whole lot of noisy
+alerts do do nothing special there so
+deploying and configuring the GS 105 e
+nothing too major there you will want to
+do that over a web GUI for whatever
+reason the only software that they
+provide is compatible with Windows only
+ooh nobody likes that and unfortunately
+they give you an unencrypted HTTP page
+to log in at so try and do this when
+stuff there so you turn on this fan port
+again nothing's super crazy here okay
+and your
+want to configure your wireless router
+to act as an access point so again you
+don't need two routers on your network
+we are going to take that Wunderlist
+router that you presumably already had
+present and we are simply going to use
+that as an access point your wireless
+network information isn't going to
+change at least it shouldn't have to
+depend on the individual wireless router
+these are the steps to do it for a lot
+of men your products and your device
+might vary and then at that point when
+you have done all of these things crack
+open Wireshark start running a packet
+capture on that spanned interface and we
+should see traffic look at that I got
+GLS I got HTTP I got protocols coming
+out my ass
+we are down mirroring all network
+traffic and we're doing it with our host
+level of granularity check yeah okay so
+what do we got next now we got to go
+ahead and deploy and download security
+onion so again we go through stuff here
+4096 mega bram is what you're going to
+want optimally okay and you if you don't
+have that available okay that's fine too
+big is it's pretty good in my experience
+again those of you with Google Fiber
+might see you might have significantly
+different mileage okay you guys have a
+much more saturated link than I do but
+one pour is sufficient so again you're
+only using one of your cores not a huge
+strain on your main desktop bit of
+things to go ahead and configure with in
+VirtualBox so the biggest thing ok so
+again two major virtualization platforms
+VirtualBox and then VMware products a
+lot of people might use VMware products
+for work if you have access to that
+awesome there's nothing wrong with using
+VMware I wanted to give a free option
+though so in the VMware it will be smart
+enough with security onion when you are
+setting up the monitoring interface it
+will put it into promiscuous mode for
+you ok VirtualBox will not I will not
+tell you how many hours I spend trying
+to figure out why I could see traffic on
+Windows but I couldn't see the traffic
+and security onion it's because I was
+not allowing from his newest mode 3
+virtual boxes that were good after so
+yeah be sure to change that it will save
+you from a lot of no sleep and
+hair-pulling put on the bag and this is
+how you install security onion hooray
+hooray this is how we will configure
+security onion again hooray hooray
+nothing special to look at here if you
+purchase all of the hardware all of the
+address information that you see there
+on the one 92168 one one network that
+will all be correct again though you
+will want to use separate addressing if
+you have a different home network setup
+we go through the security onion wizard
+yet the bet that give all these settings
+and we keep flicking around and we keep
+clicking finally what we will do and
+this is not part of the actual security
+onion setup spritzes we're gonna plug a
+hole into the firewall and the reason
+we're going to do that is you probably
+don't want to be tapped into that vm all
+the time doing your research looking at
+your logs in particular reason being is
+that for whatever reasons security onion
+and VirtualBox don't like to play nicely
+when it comes to displays I can't seem
+to get it to go any larger than that one
+is it's 640 by 840 or whatever that
+stock resolution is so absolutely
+terrible go ahead and punch a hole in
+the firewall allow HTTP access from
+anywhere you could further restrict that
+if you want to but now not only are we
+monitoring all the traffic but we're
+capturing all the traffic sir and we're
+still doing it at the per host level and
+where did all my disk space go so okay
+that is one thing that I do want to
+mention I didn't specify and how much is
+to give this virtual machine again you
+were mileage may vary so at home I've
+got a few desktops couple smart TVs and
+my wife does God knows why on Pinterest
+I get about 10 gigs of logs per day they
+on average a little bit more fun binging
+something on Netflix your log retention
+for security onion is going to do then
+very heavily on how much disk space you
+have to throw at it of course the good
+thing being is that this space it's not
+super expensive now okay so for what 50
+bucks or whatever
+go grab a one terabyte hard drive
+connect that to your computer just said
+VirtualBox to always use that you'll
+change if you can fix in there to
+reroute where your logs are going and
+when man thank you man you've got
+retention for god knows how long at that
+point again you might use up or you
+might use up less nice thing about
+security onion is that it is very easy
+to configure when those logs rotate how
+often they do it compression algorithm
+etc etc so all right all that's really
+cool but all that is stuff that happens
+out of the box so quick show of hands
+how many of us earlier with bro way
+fewer hands and responses that I got
+here ok bro is [&nbsp;__&nbsp;] amazing alright
+that no two ways about bro is innocence
+and event-driven architecture it's
+connection oriented it is a monitoring
+tool that is monitored based off of
+connection so correlation bro doesn't do
+any of that
+ok they don't you know this is an open
+source project that is up to you that is
+up to you the analyst how do you
+correlate how you use that information
+the reason that we're using security
+onion here again easy was part of this
+talk ok a lot of you in this room are
+probably very capable of spinning on the
+CentOS VM setting up a bro from scratch
+maybe something up and out stack in
+order to visualize it instead of Elsa
+which is a really ugly interface that
+they give you their security onion pay
+yeah if someone's saying woe to that I'm
+sorry else is ugly so what can I do out
+of the box though ok so security onion
+has a lot of things pre-configured for
+bro as you can see here you know what
+are your top connections what are your
+services dns info HTTP Kerberos it's all
+a lot of this all of this comes right
+out of the box
+it's going to detect this and it's going
+to make note of it now see ghul is a GUI
+interface that is provided by security
+onion that will let you deal with events
+as bro sees them and that's a really
+good way to sort of become familiar with
+what is happening on your network but
+doesn't allow you to do any custom
+alerting ok and that's kind of half of
+the point of this whole talk so
+if you want to make custom alerts these
+simple answer to that is gross frantic
+okay so ro basically a lot of what goes
+on there on the back end and it's done
+via gross prints okay this is basically
+a programmable software or a network
+monitoring tool here is a specific
+location where you will actually store
+your shared strips again if you aren't
+setting this up in scratch might having
+a different location this is where you
+would do it if you were doing this in
+security onion and our collection of
+custom alerts these strips are going to
+make up what is known as a module okay
+and a module these three things or eight
+or three I guess parts so we've gotten
+the main dot bro
+all right this is where you are going to
+bake in the logic for your alerts we'll
+see examples of this here in a little
+bit you need one or more rows spritz
+okay so when these scripts do will be
+the functionality of your alerts of what
+you are doing there and then we've got
+this loadout profile which is basically
+just sort of a list of hey this is what
+this module takes this is what I use in
+order to do what it is that I'm doing so
+what I've got here is we're gonna make a
+template or rather if you were walking
+through this side by side you would be
+making a template we're gonna make this
+custom notices row okay so what we want
+to do with this as we as a name implies
+make some custom notices now at a
+minimum what a module script needs to do
+is declare the module name so that it
+can actually be used and then provide
+all of the variables everything that it
+is going to allow other processes to use
+other scripts to use something pools
+happening over there that needs to be
+added in the export block and we will
+see an example of that momentarily so
+for now what I want to do to show you
+guys about this is to create just some
+notice types okay and we're gonna see
+what that looks like and you can kind of
+sort of see that so we've called this
+module custom notice and we're gonna put
+all of our custom notices in here so
+I've got to redefine statements in here
+we're taking the notice type and I'm
+adding one called group start and adding
+one well bro stop
+that you can guess what we're going to
+alert on it you so what is the next part
+of our module years we need a name dot
+grow again this is your event driven
+logic component okay so two events will
+happen every single time in main that
+row regardless and that is growing in it
+so when growth starts and Road up when
+row stops so our template script here is
+going to take advantage of both of these
+events okay so here I am loading my
+custom scripts and custom notices so
+that's the morholt path of where that
+module is being stored when bro starts
+I'm issuing a notice that notice is of
+type custom notice rows start and we
+passed a message bro engine started we
+do the exact same thing when bro stops
+nothing super exciting then we need this
+load bro and it's just going to be a
+list of files that are needed by this
+module and what do we got here custom
+notices and main duck room literally the
+only thing so again this is a very
+bare-bones example of bro scripting okay
+now we need to make sure that bro is
+actually going to use that module so
+here we go through the steps of going
+into bro control installing that updated
+custom script and then restarting bro so
+that it is using the script again I show
+you which command that you can run in
+order to check that your custom script
+is actually being run and then sure it
+up once it starts back up yeah you guys
+can kind of see that so a few moments
+after of course Elsa has to take a
+moment to catch up and everything but
+where we see here custom notice bro
+started we did it's a Casey
+all right so cool
+now I haven't noticed when bro starts
+and growth stops but normally it's not
+going to start and stop and when it does
+I probably did it as I put in something
+new so let's take it a little bit
+further okay now bro scripting is super
+complicated again this is basically its
+own programming language and it would
+take hours to explain bro scripting at
+length but one thing I will show you is
+a very important event as for a security
+alert against concern and that is the
+new connection event
+okay so again bro is an event-driven
+thing so here we see we've got the event
+new connection and what this contained
+it contains a connection so with that
+it's represented is see usually this is
+get generated for every single
+connection and it contains that
+connection object that object contains a
+lot of juicy information okay so we've
+got the origin ID we've got the
+destination IP and a whole hell of a lot
+more using this data type using this
+object we can sort of think up already
+some more meaningful alerts okay so
+maybe comparing the origin and or the
+destination with some bad list you can
+also compare the HTTP info with some no
+malicious domain list again take a look
+at what important what a protocol is
+being used if anything weird is observed
+maybe make a notice of that so here's a
+fun trivial example I went ahead and
+made a script to detect beam users on my
+network so as we can see being user
+detected and 181 680 147 teach him to
+fish or drown them do whatever you want
+how did we do that well I've added in
+this little bit here so we see event new
+connections so every single time a new
+connection occurs we make a little if
+statement so if the responding host is
+these words
+my deeds that I associated with Bing if
+it sees either of those in the
+responding host Center then it's gonna
+go ahead and fire off that alert and
+again we can see here that notice
+messages sent I did went ahead and add
+another notice type in what I said
+custom notices so again no cheesy little
+examples slightly more advanced than our
+simple bro start bro stop but again at
+this point I think the wheels should be
+turning in your head you should kind of
+see the sort of utility that is
+available to you when you have full
+network packet capture at your disposal
+so what do you do from here okay you got
+all this [&nbsp;__&nbsp;] set up you made some funky
+little alerts you you know told yourself
+you're wasting time every time you go to
+Facebook or reddit or something what
+else can you do so again bro scripting
+is mad complicated do yourself a favor
+if you are interested in this taking it
+further start reading up on gross
+documentation Pro has been around since
+the 90s the documentation is it's an
+open source project so you get what you
+pay for it but it's better than many
+open source projects that worked with
+definitely check out sigil as well again
+that is that GUI framework that is there
+to give you information on alerts that
+Roces out of the box again that's it's
+just a really nice way to start to
+become familiar with your home network
+and additionally to you know start to
+see what sort of things that you might
+want to create or involved alerts on
+there are a whole bunch of bro scripts
+on various people's github and I will
+start making some myself again you can
+make all of these scripts yourself or
+rest on the shoulders of giants again
+don't reinvent the wheel unless you're
+trying to learn so again what was I
+doing here in creating these tutorial
+starts definitely reinventing the wheel
+I am NOT the first person to have done
+that obviously but it does get me a bit
+more familiar with bro scripting there
+is a really cool hardware tool called
+these zodiac FX it is a Software Defined
+Networking board about the size of two
+raspberry PI's it is a four port
+Software Defined Networking switch it's
+like a t3
+ships from Australia bro has another bit
+in there holding that control framework
+and what med control allows you to do is
+send messages to Software Defined
+Networking endpoints and allow you to
+actually act on what you are seeing so
+instead of bro being an intrusion
+detection system Umbro some teeth man
+make it an intrusion prevention system
+if you see someone SSH guessing on your
+home network give him the [&nbsp;__&nbsp;] moon
+get him out of there you don't need him
+knocking on the door and then
+additionally so again I did set out to
+do this as easily and cheaply as
+possible as it turns out that had been
+going down so well I would have liked to
+have seen the edge router be the only
+component I'm damn sure that I am very
+very close to that but I haven't quite
+cut it yet so fingers crossed hopefully
+I will have that figured out by the next
+iteration of this talk I've got a whole
+bunch of links that you can take a look
+at as far as where I hold that
+information from some things that might
+help you out as you are doing this at
+home again I didn't provide all of the
+screenshots that would have helped but
+you know something's better done that is
+the end of what I've got there is places
+that you can get me up on this is not on
+it up right now because I'm really lazy
+but it will be either later tonight or
+very early tomorrow morning so that's
+the picture that you want I do have
+other talks up there as well yeah what
+am i take away so you was
+d-link today thank you you're [&nbsp;__&nbsp;] yeah
+okay so I've tried a d-link and tp-link
+and both them the monitoring mode will
+drop off or eventually crash so if
+yeah that very good luck with it and so
+there is a commanding advanced security
+onion pseudo so static type that out too
+less and you will actually get packet
+details they bring it out very nicely
+and the logs for you this is only been
+running in my environment for like 48
+hours or so zero drop packets so far
+though again keep in mind I am on
+Mediacom SLI SP I don't have lovely
+fiber like a lot of Eugene's stuff
+another note for people with Google
+Fiber whenever you look in a third party
+router as your main router you're going
+to take up with one that's hit
+especially if you're doing any routing
+between multiple network behind so step
+ahead so definitely something to think
+about and maybe if any of you guys with
+fiber to let me crash at your place for
+like four days or something I'll run
+some tests I'll play around I'm pretty
+cool
+yeah [&nbsp;__&nbsp;] second networking speaking
+of sucking at work so let's just say to
+the users that I have at home make the
+users of my office in patience so if I
+was reading about putting a setup like
+this what exactly am I looking in terms
+of risk of the internet going down and
+other people in my household and rating
+bring it so I would say that your risk
+is relatively low again I haven't seen
+any faults happen at this point and
+actually so we're going to go ahead and
+scroll back to the network diagram I
+said it's a really good question you
+know any time I do any of this research
+I have to say babe I'm gonna [&nbsp;__&nbsp;] on the
+network for a little while
+okay and then I told how I cannot
+interrupt this window to her marathon so
+shouldn't anything [&nbsp;__&nbsp;] the bed I would
+imagine it's going to be this guy or
+this guy the new things that you were
+introducing into your network the nice
+thing about all of this though is that
+if things go pear-shaped and the
+significant other starts chatting you up
+and getting angry just put the direct
+link back in you know you can you can
+figure out the sniffing whenever he or
+she goes to bed yeah remember happy

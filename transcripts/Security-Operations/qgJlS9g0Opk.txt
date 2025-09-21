@@ -1,0 +1,363 @@
+here to introduce and e Barrett from
+Shiloh security talking about DevOps and
+audit proofing without pissing off your
+auditor so young anyway here's day oh
+alright so money to alibaba track go get
+time back for hell damn it oh my own
+Shiloh security LLC we specialize in
+auto preparation compliance work writing
+policies basically all the stuff that no
+one here wants to do so call me I'll
+come vote for you that's my one ad
+experience with a lot a lot of large and
+small companies doing a lot of roles
+within information security and DevOps
+is a process used by a wide variety of
+businesses both large and small to
+facilitate the deployment of new systems
+applications including embracing a
+systems as a source code ideology
+auditors especially those of the PCI
+variety they don't get it and they have
+a hard time grasping how compliant to
+their standards this talk is going to
+detail how those process can't processes
+can be compliant and give you your a
+manish ammunition to educate your
+auditor the next time they ask you what
+docker means going to first outline the
+challenges faced by the organizations
+today then I'm going to talk about the
+standards themselves and then I'm going
+to talk about how you can hopefully
+navigate all the minefields that your
+order is put in your way all right so
+standard disclaimers I anal I'm not a
+lawyer I'm also not an auditor even
+though it's played one before and then
+what I say or present doesn't constitute
+legal advice or an opinion of an auditor
+you can blame Obama but don't blame me
+all right so a few months ago we had
+leapt agree salir inherit he did an
+awesome talk here at set casey on the
+relationship between security and DevOps
+i'm not very hash that DevOps is awesome
+when done well and you can seamlessly
+integrated security into it with a
+little bit of work developers should be
+embraced and included as partners rather
+than adversaries during the application
+security portion of your day so think
+virtualization that's pretty cool too
+who wants to fill and manage rooms full
+of physical boxes and spend a couple
+hours building a new server you can do
+it easily with virtualization so here's
+where things go wrong your auditor
+doesn't understand these concepts for
+example if you tell your auditor that
+your environment is made up of
+containers where service is to sign to
+numerous hosts if it are automatically
+built and destroyed based upon
+operational load they're going to look
+at you and think that you're crazy
+what's even worse is that standards
+bodies don't understand or even to find
+these concepts it's not necessarily the
+auditors fault we can't blame auditors
+for being ignorant things like this when
+organizations like the AICPA that's ssae
+16 standards body a HHS they they
+developed HIPAA and the PCI Council
+aren't doing a good job incorporating
+them into their standards standards may
+address cloud computing or try to
+awkwardly integrate some basic
+virtualization terms they may even get
+crazy and publishing addendum to their
+standards like the PCI council
+attempting to shove cloud and
+virtualization into some rigid box and
+then vigorously patting themselves on
+the ass when they were mentioning
+multi-tenant again with anyone want to
+guess when the PCI council released
+there were last updated their
+virtualization guidance 2011 that's how
+reason that [&nbsp;__&nbsp;] is so they they do not
+keep up with the times fortunately
+technology is changing in pretty rapid
+pace and the standards bodies are
+basically doing a horrible job keeping
+up ok so we need to talk about let's
+have some real talk about auditors so
+when you get an audit organization to
+come to your company you are not getting
+the 18 you're not getting the B team or
+the C team you are getting the fresh out
+of college just past one of the isaca
+exams and maybe their have their cissp
+exam people who are getting paid [&nbsp;__&nbsp;]
+money to ask you about your firewall why
+because the a B and C teams they all
+cost money how are they going to make
+profit if they send those teams over to
+you guys
+hey they don't want to send the guy with
+10 years experience out to every client
+from here to mudlick Kentucky we're
+fighting crappy outdated standards and
+experienced auditors but rarely use or
+administer the technology they're
+questioning you about as you can see
+here I just want to illustrate I don't
+hate my auditor I'm not here to make fun
+of the honor I don't think the slaughter
+is stupid I love my otter alright so
+this is my my 1 Edward Tufte slide so
+you will not get anywhere correcting or
+insulting your auditor no matter how
+tempting it may be it will only lead to
+negative outcomes which will result in a
+never-ending examination of every
+process task helpdesk ticket log file
+pretty much guaranteeing that you will
+fail your audit here's the real problem
+these these organizations are basically
+the ones that are causing the issues by
+don't even get me started about the
+certification courses that they have the
+PCI especially has 14 Q essays or 4i
+essays which is their internal of
+security auditors they're promoted by
+standards bodies as a way to ensure some
+level of baseline technical knowledge
+but they're just covering the basics so
+the bare minimum to be able to read and
+understand the standards so literally
+this is a firewall this is what a
+firewall does this is a router this is
+an access control list that's the kind
+of stuff that they teach in those
+courses so that's the people you're
+getting when they come out all right so
+the standards this is not an exhaustive
+list separation so you got right here
+separation I make room for Jesus right
+okay separation of duties between
+development tests in production
+environments basically if you code you
+can't deploy that code to production
+practically a core develop DevOps tenant
+especially in small environments tell
+accompanied with five IT people all of
+which are developers that they need to
+hire dedicate members of their staff to
+only sis ops that's not going to go over
+well asset inventory so you're expected
+to maintain an accurate inventory in
+architecture again this can be difficult
+when you have an organization that's or
+a network architecture that's very fluid
+change control and provable so everybody
+loves change control you still have to
+fill out the tickets you're not going to
+get away from filling out the tickets
+but you can get creative in the ways
+that you've developed those tickets and
+you integrate that into your development
+process application development sdlc put
+the tools the security tools in the
+hands of your auditors get creative with
+your sdlc finally separation of dev QA
+and production environments so again
+we're talking about leaving room for
+Jesus here never the two shall meet
+we're going to talk about how you can
+get past that all right so we're going
+to let these of the answers to your
+problems answer time alright so the for
+reverse thing education so again we're
+talking about people who aren't
+incredibly experienced you're going to
+have to educate them on how they all
+your network and how they come in and
+interpret the standards that is
+extremely difficult the standards though
+are very high level so you can get
+creative with what you want to do don't
+be condescending don't get angry don't
+get complex keep it simple and don't lie
+being honest is the right thing to do if
+you get caught in a lie you're just
+going to get screwed over later on and
+then after re-architect your network sip
+iced it yeah speed a treat your auditor
+like you would treat a five-year-old
+child asking you about how to use a
+computer good okay oh it is so
+separation of duties right it doesn't
+have to be full-time separation of
+duties you get into the upper a to write
+the code and developer v to review and
+deploy it you can have a developer right
+to code then have a deployment done by
+the manager who doesn't code at all as
+part of the approval process the keys
+here are to document your changes
+reviews and deployment stuff so again
+going back to the whole change control
+thing you still have to put tickets in
+but you can be creative you can do
+anything okay asset inventory
+architecture they love diagrams PCI
+wants a cardholder data flow diagram
+they want a network diagram and one of
+inventory and want a spreadsheet you got
+to tell him everything every single
+system does unfortunately there's no way
+to get out of the architecture you're
+going to have to do a drawing we just
+remember to maintain the drawing you
+should add and remove constant host so
+the host move around or the change where
+they're added or destroyed maybe because
+you're using containers or however your
+your infrastructure is virtualized
+reflect that in the drawing make sure
+you pick that up and you make a note of
+it the key here is to accurately cover
+what you're doing the inventory is the
+same way they want to see IP address
+hostname primary function so give them
+that but make sure the dynamics of your
+environment are covered here education
+is really really key so again you're
+you're explaining to them the concepts
+that you're using the thing you're
+coming back and you're saying okay this
+is how I've architected my inventory to
+make sure that everybody understands and
+to make sure that right here this system
+you
+you can have like a commonality for
+system names you can have a commonality
+for IP addresses you build those
+environments up and down and so those
+will be dynamic all right change control
+you have to document your changes I
+don't care if it's an email thread
+Twitter an open-source ticketing system
+paid a hundred thousand dollars a year
+for an application it has to be done you
+have to document your changes we're
+gonna get that works text X messages
+work I'm going to deploy this
+application approved works just
+documented screenshots review and
+approval can be accomplished in DevOps
+especially if you batch your changes now
+I know badging changes is kind of taking
+away all the fun out of out of DevOps
+and kind of taking us backwards but hear
+me out you have small individual changes
+they can all be reviewed and approved in
+one ticket you have to build ticket in
+your process but it's still possible to
+maintain the inherent agility of DevOps
+by creating a day's worth of changes and
+matching them in one ticket so you're
+not doing a ticket for every single
+little stupid change for virtualized
+environments education again is the key
+have pre-approved or defined changes
+already in place so that when you when
+you ramp up your environment because
+your load is over fifty percent or
+whatever it is that's a predefined
+change those systems are going to be
+built they're going to be built to a
+certain configuration standard that
+you've already defined same way with
+tearing them back down again you don't
+need a change control ticket you can
+define that already same with your move
+from a QA to prod environment there are
+a lot of people here who have a QA
+environment and a prod environment and
+when it's time to switch instead of
+deploying doing some big deployment and
+installation they just say [&nbsp;__&nbsp;] we're
+switching it over and suddenly your QA
+environment becomes your production
+environment and vice versa you can do
+that that can be your approval for your
+deployment and approval for all of your
+all right application development is
+separation of bards you can see here
+that we are getting a little bit closer
+right we have taken away the Holy Spirit
+in Jesus and we're now melting together
+we're not even one though there's still
+some separation we're getting closer all
+right so secure Cody put clothes in the
+hands of your developers how's this like
+I ain't yeah I didn't put a not safe for
+work tag here your fun it's not rated oh
+yeah there wasn't we get an IV check
+right all right security awareness
+developer training it has to be done so
+didn't get somebody you to go train your
+developers on how to [&nbsp;__&nbsp;] secure code
+right teacher what cross-site scripting
+is teaching why it's bad set up a bug
+bounty program set up a capture the flag
+program get really creative with that
+b/ci council will love you because
+you're doing something really cool and
+you're doing something awesome and at
+the same time you're teaching your
+developers will the importance of secure
+coding then give them the tools that
+they need so they can do their own
+testing you don't have to batch up so
+you spend a hundred thousand dollars or
+whatever on some big tool to freaking
+test hit your dynamically hitting your
+web applications all the time and some
+environment get them to do the analysis
+on their own so that way when they
+deploy it to QA and that suddenly
+becomes prod it's already been tested
+get creative with your sdlc your destiny
+focus on meeting the spirit of the
+standard so so i should have mentioned
+that before but you know there's letter
+law spirit of law that's what you're
+going for is the spirit of the standard
+it's there it's really high level so
+figure out how to best interpret it for
+you and then educate your auditor on how
+that's really awesome and you're being
+cutting-edge if you don't have a dev
+environment that's okay use your local
+workstations is dev and then have them
+perform testing their get it in the QA
+performed broader functional and or
+security testing before it's released
+into production however your releases
+again create that one ticket approve all
+changes in QA done check and suddenly
+you have an approval that you can show
+for
+every single change that you just DevOps
+to get that all right education your
+honor is key again you have to maintain
+that separation what is what is QA and
+dev doesn't always have to be that it
+can change justo intermingle them
+remember we're still we're together but
+all right that's me if you have any
+questions contact me I appreciate your

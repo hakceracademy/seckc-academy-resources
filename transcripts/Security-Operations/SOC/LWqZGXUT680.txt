@@ -1,0 +1,317 @@
+- I were talking and I'm here talking
+about the linear in the Google Analytics
+my little Ronnie on mobile on abrasca a
+graduated silver things about federal
+holidays a degree in information sure I
+always try at a large school 200 company
+out of a peak and then from there I have
+worked as here usually hungry my first
+time I like throwing a ball at
+monster.com and then in addition to that
+I like being outside integers and read
+Milton a lot of years probably familiar
+one Google Analytics is when you're
+losing your harness is a home run by
+Google that allows domain owners to
+track users on their site women got
+their how long they've been there what
+means when they've gone to go on support
+this is useful for invasions give a help
+and decide what content and it will
+products or whatever services a lot of
+non limitless because we'll some insight
+to what their users are looking at and
+then your people in developing cities it
+primarily works on the fact that a
+referer header is how long an HDTV so it
+says I'm on this page and click on it go
+to the next day so that next page nobody
+came from them so Google's like all that
+information and I can throw seen a
+picture of what you did law over there
+sometimes a little annoyed
+it will time I get to the main where the
+rest are desperate small beauty Lily
+they got 80 flicks from Google and was
+be 400m of losers and water woman said
+on average this is amount of time
+Britain idea whatever information you
+can derive from it and satellite
+experiences in cities and other websites
+so I want to win always on my blog and I
+noticed everyone Holly was just some
+gear press the other things from my free
+traffic direct ID or social lovin stock
+XYZ or midnight online he is clearly
+this is a live in traffic people are
+coming to my blog from these sites so
+it's am so sorry
+and whenever something like this comes
+up I always try to think about how the
+bad guys or what I go and use it for how
+would I our usual bad things and so how
+do I interpret evil and I would use
+Google Analytics do nasty things I would
+perform those books and television
+gather and I'll target for the
+organization I wanted to laughter and I
+build a job get out what that company
+does you know figure out what the
+customers are and figure out any money
+really charters and whether businesses
+and why
+and from that idea I can start to think
+about things that maybe we might be
+interested in and this is standard for
+doing any photo engineering staff a
+million dollar standard market and then
+the Turkmen is doing whatever you like
+so after Norris isn't it started it is
+threatening about saying that they want
+to put and in business-to-business if
+you think about things they want to
+click from Google Analytics perspective
+which is a web traffic perspective so
+what that means is let's say I want to
+isolate and each gentleman or a recent
+moment is probably interested in point
+of field they're in vice versa while
+veterans are probably interested in
+rebuild so and I want to go out the
+retail company I would set up a site
+that looks like one day under and then
+tell the traffic comes from that wanted
+point cell under site three different
+innocent either American from the point
+of sale letters Aminu go down a list if
+you're University no he got me through
+horrible
+like I said colleges in Newark or what
+have you
+after you build that out the next seven
+students now I'm going to ask for an
+expert will sign on building whether the
+ABA exact revenge alarmist or maybe the
+single particular target even have has a
+cross site for cross-border
+vulnerability you know not it and so you
+can sure come along about the Penn
+Staters outside opens and off
+immediately process shipping which is a
+cookies must honor one of the highlights
+ago which is that last point about
+Google Analytics is eliminated and
+they're already on Google Analytics
+abused you know
+the main and click on it and in the
+derivative of the Google Analytics water
+divider second bedroom frequently hear
+about it so after you spell that up you
+just got here at tons of traffic to your
+targeted sites and then hopefully an
+admin will get interested in very
+cliquish product so it's a very reliable
+why did you know I could probably use
+nothing exists so the next person rap on
+buildin how are they doing it and asked
+basically a supposing the question how
+do I always work when you photos into
+analytics you did a unique identifier
+which is basically how little loans what
+fight extract and they give you a little
+tentative dollar the bath you solve
+every single thing that you want to
+dress this we put it in the header in
+the player honors page already and when
+these are comforted by that of Josh's
+excuse both round even bigger trips and
+extra grass also the metadata about the
+user
+how long has been there or they're going
+hella gotta go on is important and then
+they like all of this data and I
+starting at the penis which are about
+how what users a little bit so I want to
+do that to when it table that now make
+requests to boil read some flashlights
+but I want to do that I have to figure
+out of our questions minutes and there's
+two options freedom option one in our
+endogenous and I looked at at once it
+was like much fun option to the pool
+that's awesome
+and out of the video and they do and the
+reason for this is is that when the
+ever-growing popularity of people manage
+applications this whole refers they're
+going to build a bigger about aliens
+backing on pace to orbit more as pages
+and reloading there's an event so they
+made all this documentation so that
+developers of these applications can
+fill you in to learn little sin' of
+these tools and so I learned is after we
+got the documentation that serves the
+required trailer the first wish and
+started real talk is the protocol
+version we Charlie been on one so I just
+have to be there soldiers one that
+unique identifier we talked about
+earlier so when the request we will know
+some traffickers belong to and a client
+ID which is actually an interesting
+thing because this is unique identifier
+for each user and it is randomly
+assigned to you this isn't really in
+track you engage the page so they know
+either ones here and they're here
+they're here again Stratton's rough
+edges connected speech for you which is
+the most common type of fifth night
+there's another one like stream viewers
+at you and it goes back to the backpack
+google water kind of let people use this
+to the best fitting so if you're writing
+and doing is we can choose this type
+spoke earlier and shouldn't need to do
+that for the bowl the next three
+parameters are all about will see your
+heart the whole path final package who
+knows what's wrong and then the next
+thing is what were most interested in
+invest
+and that is the doc metaphor application
+came from and the last thing was a
+primer called anonymize ID which says
+the presence and the addresses of
+Federer will be anonymized a
+contradiction was for eleven men were
+won over schools were blessed over and I
+said you know if there's some traffic
+coming from face of a mountain and I
+said that often Google they'll get in in
+some colleges back but it was join us
+soon can give Wireless loyally and sure
+enough says use on the site right now
+from the main back stories you can do it
+that's pretty cool but it's not really
+useful in itself you kind of have to be
+able to do it a lot and really fast and
+so that means seems inevitable which is
+automation and whenever I want to sit
+down and write something I'm usually
+kind of got to consider your user and
+other gaming and it knows it's analyst
+thing or go on to find work and anyways
+a full engineering school get exist and
+the framework that's all about full
+engineering rules and so that we talked
+about earlier like hdfn harbors already
+exist in the full-blown hearing toolkit
+so we probably use either working anyway
+to do in folders like this also if it
+makes sense to write modules of that hey
+Tyler
+yes we have a tradition here at SEC JC a
+certain time you take our first time
+jocks gotta take a shot
+[Music]
+no ideas marble or full engineering
+he'll get kinda like that name
+gladly what it was written it it's
+Python pages so that's tribune desert so
+that is so I'm going to see you in this
+hi oh so we responded in Italian I can
+all right going to be telling this code
+is without the official book I didn't
+book it repo so you should have it if
+you darling
+first yellow solution and you'll get my
+module just in the third-party modules
+original there and then Google Analytics
+stat incredible is the models that the
+primal centerpiece but I wanted to go IQ
+mode manual mode basically is a decision
+annulene are all primers which as other
+resources yes it did something different
+manually so the automatic mode was
+really want and what that does is it
+makes a single kid request he's
+targeting and from that get request it
+pulls out these identifiers and all the
+metadata about the page so I'm going to
+pull down page on my blog we're gonna
+use that auto page and the right hands a
+little pause there we did anything to
+get our questions and everything out at
+this point does any problems getting
+unique antenna for it and think identify
+or anything like that to tell you that's
+a problem and the next thing you got to
+do is tell the page you want super
+referral
+those if you need your attacker patrol
+site in this case I'm going to say a
+second D dollar then we have the option
+to adjust a load which is basically all
+parameters and we'll take a look at
+something I mentioned earlier was that C
+is my ID is highly attractive or painted
+too beige is very important but this I
+need and ran behind because it's not
+it's going to think the same users
+refreshing the page over and over over
+so the sugar automatic things that are
+in the box so we hand in a hey was this
+got kicked off you come over here you
+will know with it turn off scissors
+liver here
+you know your aunt Rebecca team so that
+double reason won't move it and so
+things don't show you how to do a little
+bit for a second every second one
+fundamental is that in a realistic
+scenario you probably want to do a
+report in a few hours or something
+because you can google is actively
+trying to stop well expand those it kind
+of disability a bit trouble it's
+important to kind of consider your heart
+students if you're expanding you know
+Paige was literally one popular you
+probably get away with a lot more
+whereas if you're standing with some
+known insight you know if you go like
+crazy
+geography coming out of one and
+refreshing the tig over time yet where
+very up and you can be getting over here
+Canyon or single by Mac let me come back
+over here this exists in this prison
+when I first came frosted and started
+thinking about it probably back in
+September and peoplemetrics
+and I was about it I made colleges
+number one minute stop it I had my
+reservations about how cool it was like
+you're kind of interesting living today
+to be in a get request but it was a
+little more like a few months later a
+normal one just came out and immediately
+I was like wow I did something cool like
+I'm still not I'm ready yet but what it
+also holding is that where I founded for
+the reservation I primarily it
+convenient for food so what it means is
+that there are other applications
+so any decisions that are made from web
+analytics could potentially be
+influenced for an animal is there any
+website that maybe items go on sale
+because a lot of people look at and not
+buying it you can potentially new that
+sandal or traffic to that item also on
+the hardware level and in this
+particular case you know if you Sam
+abunch of former Thompson a lot its soap
+other anything that's all I got

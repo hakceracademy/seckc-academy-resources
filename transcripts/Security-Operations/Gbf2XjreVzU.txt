@@ -1,0 +1,1004 @@
+to have him and he's gonna talk about
+car hacking tonight I'm sure we'll drive
+home with a better stronger sense of
+security after listening to this let's
+welcome Grayson yes looks like we got
+the ice so by the way if anybody even
+know ice is an acronym for an internal
+combustion engine so that's how this
+came from so anyhow this is an intro
+talk if you guys remember we had the
+colored badges before I think greetin
+was level one this is gonna be a level
+one talk here so hopefully this will get
+your feet wet I've talked a lot of
+people and I've been kind of getting
+them into this over the past couple of
+years and people are kind of wondering
+how to get started this is a little bit
+intimidating at first to get started in
+this stuff so that's that's what this
+talk kind of left of my goal is to cover
+hope to go over some things some
+pitfalls I ran into and at the end
+definitely ask any questions you can
+catch up with me and I brought some of
+my some of my tools and some of my
+adapters and stuff here I'm gonna lay
+them out friends so you all can take a
+look at and see things that I got so
+yeah basically this talk is about
+you know Carnegie so anyhow there are a
+lot of different atop the tag vectors
+when it comes to car hacking what is car
+happening I mean that's a pretty broad
+scope of things I mean the most basic
+level one could just be any basic mods
+like some people in order to get a
+better response from their engine could
+put
+a resistor in line with their throttle
+body input so that way they could like
+make a more rich fuel mixture I mean the
+harbor mod scheme can go crazy from
+basic to crazy but those are more of
+like mechanical and basic electrical
+modifications the your car stereo you
+have an entertainment system the info
+system all of that there's a that's a
+whole broad area as we've seen from
+talks in the past the telematics unit
+that's going to be a new fun area and
+that's kind of at the the forefront of
+everybody's focused right now because if
+you can access these cargo motely now we
+want to jump in to the other parts of
+the car from there and then there's the
+the network and bus communications so
+all these cars are so high-tech now
+there's so many microcontrollers and
+computers and in this car that they all
+have to communicate and that's really my
+focus for tonight it's going to be the
+network and bus communications so there
+are a lot of different interfaces on the
+cars the legacy interfaces of yesteryear
+probably from about 1996 through about
+2006 those are like the the keyword
+protocol 2000 was more recent one for
+that nerds of p1 PWM the VFW the ISO
+protocols and those were what we need to
+first came out there's obd one interface
+which first came out when cars needed to
+have better emission standards and we
+started seeing fuel injectors for the
+first time and catalytic converters and
+the o2 sensors and uh a weenie one said
+that you have
+system but every manufacturer had their
+own obd2 came out and they said okay
+yeah the standardized everybody has to
+have there's a protocol and the protocol
+needs to give this kind of information
+if you send this requests but they
+didn't specify electrically how that
+worked so they have the same plug but
+they have like several different
+wireline protocols that went on that
+same plug and then finally outside of
+the those interfaces there there's
+Bluetooth and Wi-Fi that you can talk to
+the telematics unit or the entertainment
+system of your car that leaves a whole
+new area of focus as well but in either
+modern adaptation obd2 and 2008 mandated
+that we had a standard protocol and that
+would be the can protocol that is more
+common and ubiquitous that everybody
+Susan finally they standardize actual
+wire line protocol that everybody is
+using and pretty much any car
+manufactured since 2008 up until
+recently you can plug in with a can
+interface and talk to it with the same
+interface is gonna work with almost
+every car and now they folks started to
+emerge paths out there some it's
+superseded these protocols a little bit
+there's a anfd which is a new higher
+data rate because now there's so much
+data go on across these networks they've
+had to figure out a way to make a
+backwards backwards compatible protocol
+with can but also a little more data
+through the wire there's automotive
+Ethernet which is
+cool thing a friend of Mines car is a
+BMW and it's all automotive Ethernet you
+plug into that thing with the automotive
+Ethernet adapter and you just pulled the
+HDP and gives you an IP and I mean
+that's pretty simple right that is I
+don't know exactly what standard that I
+believe it's still compliant but I don't
+know the specifics of that and then
+there's a wind interface a win as the
+it's a very short-range very small
+device count Network that's used for
+like it might use just inside your car
+door and that'll go between a car door
+control module and say the mirror the
+windows the blinker light in the mirror
+all these things is going to go over
+another network bus that's it's just
+like a subnet so the kid bus is what
+we're here to talk about today because
+this is the you may notice thing that we
+could do a lot of interesting things
+with that how the can bus we're gonna
+find something common on every car that
+we go into to interface with a can bus
+and that's this thing right here
+anybody can you tell me what this is
+called
+all right campus iron obd2 anything else
+yes it's a connect a legate er
+okay I'm looking for the DLC for the
+data link connector yes this is a j1 962
+so the j1 1962's I say he standard that
+specifies his connector but the DLC is
+really property and everybody calls to
+the obd2 interface there's two types
+there's a type A and type B no one's
+ever going to use a type beat but just
+kind of keep your eye out if you see the
+one that's blue on the front as type B
+is for 24 volt systems the car side is
+female the connector site that you're
+going to deal whether it's a male
+it's a 16 pen interface it's always
+going to be accessible from the driver
+seat of your car so no it's Jenna you
+should sit down to the driver seat you
+can reach this thing you can find it all
+you got news the shield just feel around
+it's going to be right underneath the
+steering wheel probably sometimes they
+have a cover over it now what's
+interesting is that not all of the buses
+on your car are going to be on this
+interface only one of them is mandated
+different manufacturers will actually
+put leather buses on this on this
+interface so here's a look at the
+connector here this is a we have a
+female connector pins 1 through 16 on
+here
+when they're 8 on the top 9 through 16
+on the bottom the higher numbers are on
+the side with the nub their bins 4 &amp; 5
+are the ground pin 16 is going to be
+plus 12 and it's going to be active all
+the time so those are the only standard
+wires on this interface for the most
+part like I said from the 2008 model
+year around now pretty much all cards
+are going to have pins 6 and 14 with the
+actual can interface on it and this is
+the cables that you're going to get at
+the interfaces you're going to wire to
+are going to use these two lines here
+now other cars and other interfaces do
+use different ends on T on the connector
+typically 4 and 16 or competes for the
+can so remember the old verticals I was
+talking about before the the first
+original led to verticals those will use
+lines like this right here 2 and 10 are
+going to be PWM tens and actually just
+two is the vp w vp w doesn't use a
+differential so let me go back here real
+quick there's a can hi in cantaloupe and
+what that is the cam it's actually a
+differential interface so what it does
+is signals across both the wires at the
+same time instead of like a TTL signal
+where you're going to have like you're
+going to reference a signal to ground
+these are going to reference against
+each other so the can high is going to
+go high
+side while the line goes low on the low
+side and that's also with these BWM
+lines do it's also a differential
+interface the VP no you isn't and that a
+uses only a single wire in reference to
+ground the kwp mm the the keyword
+protocol that's another one of the older
+ones it's also differential they have
+the K line and then a line K line and
+you've been K line so yes this is an IRC
+joke I heard a couple chuckles so that
+was good there's a so obviously
+different manufacturers can elaborate on
+these connectors you can see here what
+GM is doing they put all ton of
+connectors or a whole the whole ton of
+muscles on there line so you can see the
+can line the kwp the pwm line they also
+have a leading speed can bus on their
+interface as well as a low speed can bus
+which is probably going to be more like
+when four does a little differently
+here's their been out on four they've
+only got it's pretty simple it's a power
+ground to high speed can buses the
+regular interface and the second one
+they call a high speed campus - so the
+next question is however I'm going to
+hook up to this and that's with our can
+bus adapters so there are a ton to
+choose from I've got a bunch listed here
+the contact is one that I like I know
+Eric the designer of it it's pretty cool
+let's open our hardware it's not too
+terribly expensive
+it has jumpers on there so if you get
+the wrong type of obd2 cable you can
+actually change the jumpers on so and
+it's also flashable as an STM
+microcontroller on it the the pro
+it comes with pre-loaded on it as it's
+like a steer a standard serial interface
+and by using that you can actually use
+it on Windows and Mac OS machines but
+you can actually flash it and have a
+native camp bus driver that works on
+Linux which is what I like about it
+because then you can use some of the
+canned tools that we'll talk about here
+later the Panda is another cool
+interface that's by conahey guys they're
+self-driving car company they've
+open-source a lot of their stuff
+although I'm kind of mad at them right
+now because there's a bounty on the
+model car that I had to upload some data
+on some of the self-driving parameters
+and they just pulled that bounty after
+food yeah yeah in their defense
+Ford did just announced that they're not
+gonna make cars anymore so they're going
+to make a trucks and SUVs only and I
+guess the Mustang so are they still
+whereas a matter of broody major problem
+with the self-driving ugh so you can
+actually send on the Ford you can send
+drive-by-wire commands to the steering
+wheel now steering is hardly but they
+have a link keeping assist mode on there
+but Lane Keeping Assist shuts off after
+10 seconds so ok kind of makes it hard
+to have a self-driving car with that
+there's a value km 3 and I think it's
+they're just trying to be either on it
+was 695 dollars but I guess you get it
+free can interfaces so pretty good yeah
+I think it works only on your windows
+and only one of their they're very very
+cheap or figure software there are do we
+know shields these are pretty cool smart
+phone makes one seat studio makes one
+and if you want you can just get an any
+basic SPI can interface I make these
+little modules are like 10 bucks it's
+basically that all of these things have
+the same thing in them there are a few
+actual can interface modules microchip
+is the most popular one and all it does
+is spit it out to SPI so then it's going
+to go to another microcontroller that's
+going to convert it to USB or Wi-Fi or
+whatever that protected module you're
+going to use but you can actually give
+these first units 10 bucks just takes a
+little bit more effort to wire them up
+and then there's a home wired and
+wireless modules these are super common
+on eBay if you see like a wireless obd2
+adapter that's pretty much what this is
+going to be it's going to offer like a
+Bluetooth serial link you're going to
+hook it up to your Android phones it's
+going to emulate a serial port and it's
+going to talk to that Helen 3 to 7
+protocol so but those are pretty cheap
+they work okay but you can't get full
+support under that
+offensive target system otherwise it
+does work pretty good with standard
+diagnostic tools so the protocol is that
+these adapters talk there's L three to
+seven I just spoke about like I said
+it's mostly Windows the loss of protocol
+is going to be used for socket cam it's
+going to be a little bit more comment
+this is the default that a lot of these
+interfaces talk then there's a GS USB
+interface this is going to be a native
+driver basic as soon as you plug this
+into the Linux device it's going to show
+up you're gonna have a new interface
+show up under difficulty and you're
+gonna see your can zero and their face
+on there and then there's the J 2534 SAE
+standard and that's basically all for
+all your windows diagnostic tools and
+stuff there's a lot of tuner tools and
+stuff so it's not to be like I'm not
+talking down upon a by any means it's
+just a kind of a different target of
+world we're gonna be doing so once you
+get your interface typically you know
+most of these are going to be just like
+a box you're gonna have to get your
+cable to these don't worry they're only
+ten bucks they're pretty much universal
+and yeah just go for Oh buddy new to
+cable on Amazon eBay whatever you want
+will find it for 10 bucks I promise you
+so you heard after you have your cable
+there probably some other accessories
+that you're going to want to get but
+these are going to make life a little
+bit easier for you and help you with
+your debugging first of all there's a
+splitter cable these
+you can probably get over 10 to 20 bucks
+I like this one here because it's got
+all 16 pins connected you'll see it's
+pretty common that like if you think
+about it that connector that way you're
+looking on before that's got a db9 on it
+there's 16 pins on the obd2 port so
+obviously a good a number of these pins
+are not connected so if you're lucky
+making it something other than the the
+canned interface if not well then you're
+kind of out of luck you'll have to get a
+new cable and build your own but with
+something like this also since it's a
+ribbon cable you can split them apart
+maybe do a little bit a hacker you with
+that if you need to the cable man that I
+mentioned before is just kind of
+something and I put together on my own
+and this is something I haven't seen
+anyone else talking about so this is my
+original work that I bring to the table
+so there are a bunch of different type
+of connectors that you can get to and
+what am I thinking like plugs and stuff
+to kind of hook up to other devices on
+the bus so the obd2 interface or that
+DLC interface it's going to be the only
+standardized connector that we're going
+to deal with once you get out from there
+like if you're going to want to plug in
+directly to your lane keeping assist
+camera that's gonna have its own plug
+that you're having that'd mean you'll be
+able to find that anywhere unless you go
+to a junkyard and cut it out of an old
+car so you're not going to want to take
+these connectors apart trying to build
+your own you're going to want to
+unobtrusively connect into these wires
+and that's what this cable kit here does
+so first is this the piercer the piercer
+is this cool little job I hopefully this
+picture is kinda descriptive you can
+kind of see
+what you do is you pull back on the
+little grey tab there and a little metal
+needle will stick out there and then you
+can actually be here send you a wire
+here so what all it does is kind of go
+through the insulation it's kind of like
+the vampire town on the old rt-11
+network cables whatever they're called
+so once you remove it it doesn't
+actually damage the cable very much
+it'll still be like a very tiny pinprick
+in it and it's good to tape it up for
+best practice but if it's like inside
+your car inside the firewall it probably
+doesn't matter too much but this is good
+at under intrusive way to kind of tap
+into a cable another thing really handy
+that I got is a back Pro Kit and what
+this is has a whole bunch of very tiny
+Winer connectors that kind of looks like
+this and what it does is allowing you to
+kind of with the connector intact kind
+of go in behind it and then that make
+contact with the connector on the inside
+of it here's a picture of it in action
+so this way you don't have to dismantle
+anything you don't have to worry about
+damaging the wires or anything like that
+and it also helps you not have to work
+back in the wire and trace your wires
+out of that make sure you get the right
+ones you're going directly into the pins
+so you know exactly which picture
+connecting to and then finally there's
+this really cool tool I don't know if
+anybody has ever played around with
+are you going to die for that sorry
+so yes exactly this is the same type of
+connector ease and alignment and set and
+the part that I'm most fascinated that
+day even as the single spike it's kind
+of like that piercer I showed you in the
+other but the bed of nails is really
+cool if you guys if you've never used
+this I absolutely recommend getting
+these connectors and playing around with
+it but the bed of nails has a whole
+bunch of little tiny little needles on
+it and it'll pierce through the wire
+make contact and this is a great way to
+make a temporary connection it's good
+for data you can actually you know talk
+on the canvas with this it's really cool
+and you can buy the connectors
+individual you don't to go to if you
+want to go to the teenager who's stolen
+from a telephone trailer or something
+like that and buy it from them so so
+once you have your connection it's you
+can go ahead I think it's time for us to
+hook up our interface and start
+receiving and sending data so first step
+was we're going to connect the device
+and this is where I had a problem when I
+first got mine I had a problem with my
+with my can interface and it wasn't
+working it's kind of pulling my hair out
+didn't know what I was doing wrong so
+and obviously there the different
+interfaces are gonna have their their
+nuances and stuff but basically whenever
+you first connect this is like I said
+before I use the contact works for me
+and on the contact there are a couple of
+LEDs there's a green and red LED
+whenever you first plug it into your
+machine will light up solid like that
+until you bring the interface up once
+you bring the interface up and it makes
+the connection will go out and then
+you'll see a green light
+a little green like that might like so
+you see a kind of flickering value here
+this is what you'll see if you're
+actually plug into the DLC connector for
+the DLC I'm sorry LC connectors kind of
+redundant but you'll actually see that
+flicker and that's actually indicating
+receive data on the canvas whenever you
+transmit you'll have a random linking
+life to the transmit data if you have no
+lights at all then it says you're
+probably not connected the interface may
+not be working as well as so another
+problem I had whatever getting started
+was not knowing what the baud rate was
+so if you have a market those code I
+highly recommend getting one of these
+they're pretty cheap and buy them by
+using a pocket otoscope you can actually
+configure out the baud rate of a signal
+point across the wire that will save you
+a lot of time trying to reconfigure an
+interface and choose a baud rate on it
+so if you actually if you look on here
+the whole yellow line is the time for
+division so it's showing five
+microseconds per division began actually
+the division lines are too light here's
+how those two white lines but they're
+hard to see but if you actually look at
+them wave the wave form on here and look
+at the holes the pulse can help you
+determine the battery so the formula for
+Barry is basically one over time which
+is your time slot obviously if something
+doesn't line up exactly with the number
+of divisions on your own
+you'll have to have to get cement go
+from there but so like if we're the only
+have two microseconds which is what the
+pulse I have in this description one
+over two microseconds is equal to
+500,000 or 500,000 codes per second so
+this is a good way to kind of verify the
+baud rates and save a little bit of same
+of you for yourself so yeah yeah you can
+look it up actually I had a lot of
+difficulty with that I went and I looked
+I'm white
+you know what's the battery for campus
+on forward and I didn't find much it
+turns out 500,000 is pretty standard
+everywhere and the reason I have Bronx
+with Bari is because of my interface
+just didn't plain-old it more so once I
+got that figured out lastic for yeah
+500,000 is our finder cave is pretty
+much standard there are some other
+you'll see other references the ice
+pecans medium speed so it really depends
+on which bus you're connecting to so now
+that we're connected we need to actually
+bring the interface up and basically so
+the can interface if you're using it the
+way I'm doing it and it shows up as a
+native Kanda my city just used a regular
+IP route to tools to bring up your
+interface and configure it so I'm
+dealing set up kins
+0s specify the type which is can and
+then a bit early and then there's a
+another thing that you want to do with
+the one I'm using in the queue length by
+default is 10 so you'll actually get
+buffer overruns and stuff if you're
+sending and receiving too much traffic
+so if you say your queue length to 1000
+that's a good general workaround
+and then we can see here that the the
+link is up and now we can start working
+with it this is a regular network device
+so we can actually use Wireshark
+as well as the other Kin Kin tools and
+this will work
+so so here is a this is a thousand that
+we're going to see from can dump this is
+actual can dump data here so uh the can
+protocol has a couple of parts to it
+this so we can see here the dock the
+first column is a can zero that's the
+interface that I came in across so if
+you actually can have multiple
+interfaces kind of connected to all your
+different camp buses and I receive all
+this data the second column here the
+three-digit link is arbitration ID where
+RMIT we call and it is a the maximum is
+seven F 0 0 0 through 7 FM so it's not
+quite 24 bits its I guess it just be 23
+bits in length so they're in the
+brackets it's the length of the data
+these are all hate byte data but there
+is a longer protocol called hi so can it
+actually allows longer links and then
+behind this is actually the payload
+itself so this is what our cam traffic
+looks like so if you want actually send
+data we'll use can send and Kansan is
+for sending like individual packets so
+the way it works is can send you only
+the interface and then you'll send a
+payload a packet and the payload packet
+is composed of the harbor ID and the
+pound sign and then the payload
+afterwards and this is an exaction
+example right here of a camp packet
+that'll a lock the doors at least on my
+car so that's why I don't have anything
+where I was hooked up to my hand
+interface without what you all would
+want my car doors
+so so there are a ton of candy tools out
+with tons of tools there's camp player
+can sniffer can't sniffers kind of like
+top it'll actually list like the most
+common traffic that you're getting
+across these except filters and stuff to
+a other than doing it live kind of not
+really sure how to kind of show you guys
+can top our camp I will show you the
+traffic is assorted like that but
+basically you'll use all these tools and
+you said like basically you'll take the
+can dump data if you can divide the file
+and send like portions over the time
+like my methods were like finding
+commands and stuff there and I'm like
+Dora unlock c'mon guys are really easy
+that's a good one to start with anybody
+can do this and you'll hit like you
+start your can dump hit the unlock
+button then you stop you can't down and
+then you can play back this file divide
+it in half if it repeats an operation
+then then you found the R by D in that
+section if not you haven't then just go
+to the other half and just keep going
+from there and there's a question up
+front using wireshark earlier there's
+Wireshark decode
+yes there is a actually a what what do
+they call those that like a filter for
+decoding can now it doesn't actually do
+anything it's not gonna tell you like
+what the art IDs are all its gonna do is
+format it in a proper like with our
+right what's an art ID what's ISO can
+portion whether or not and then the
+payload it's not going to tell you like
+what the payloads actually do and that's
+a good question so you get a fuzzy dice
+[Applause]
+so the key tools are really cool there
+are a lot of them just kind of play with
+they have another good tool to use is
+carrying caribou it's kind of like an in
+map of the camp bus stuff and basically
+once you have a handle on reading the
+camp data and playing backhand data and
+you can see that it's really freaky
+whenever you do like to play back if
+you're just capturing everything you
+play back everything all your lights and
+stuff will go crazy your car can be off
+in the key off at least my model and
+your air conditioning will turn on so
+it's it's amazing all these things are
+sitting on the wire and listening all
+the time regardless of the engine state
+so there are a lot of systems on your
+car that you can talk to and and these
+are the water actually listen to the
+different varieties so one thing that
+I'm particularly curious about the plane
+look right now is the lane-keeping
+assist and Link even work and if you're
+not familiar with this what it does on
+your car it will actually have a camera
+up front and some of them will also
+interact with the radar sensor up front
+of the car and it's basically using a
+computer vision to look and figure out
+where the lanes are it's kind
+for like center line markers outer line
+markers and that's going to try to keep
+you within that Lane and in conjunction
+with measuring the distance of the car
+in front of you and looking at where
+you're at the angle of your steering
+wheel and this kind of thing is going to
+try to guide you because you're going
+out of lanes or if you have guidance
+turned off and may just alert you like
+my car and will vibrate the steering
+wheel and tell you is really be drifting
+out of the lane so what's cool about
+this so with active Lane Keeping Assist
+which is available in so many models of
+cars it will actually send data to the
+steering wheel control module which will
+apply to order to the steering and
+obviously there's room for shenanigans
+here there's a room for actually doing
+cool stuff with your car like if you
+want to have a drive for you but like I
+said my car there's after 10 seconds and
+locks out the steering wheel module
+offers the 10 seconds of continuous
+input so that may even require a deeper
+hack that was actually modifying the
+firmware there which is way above my
+level but I think someday we'll get
+there so you can see here with this
+diagram that the large number of
+different systems that were
+interconnected to so the idea may if
+that's the vexing eternal mirror
+assembly that's actually where the
+cameras hooked up on this car the camera
+actually does all the calculation
+with innocence the data over the campus
+but it talks to all these different
+mantras the body control module the
+steering control steering column control
+module there's a gateway module on here
+because they're multiple buses on the
+car this is all taking place on I
+speaking to bus the instrument cluster
+is on high-speed campus three on my car
+I am was pretty much all cars gonna have
+this game would be module and I
+mentioned this before and all my car the
+gateway modules directly on the DL C so
+the DLC exposed this as you hopefully
+you guys can see here but the main hand
+bus I speak and one connects through
+that's the main can interface everybody
+talks to high-speed can best to is also
+passed through I speak can't breathe is
+it on and everything here as well as a
+medium speak and bus
+I have gonna have to go through the
+gateway module the gateway module just
+think of it like a router then it's
+gonna route certain types of traffic
+from one bus to the other so along with
+this there's there's so many
+opportunities to explore obviously like
+the different modules there are a few
+modules that will actually span multiple
+buses so disconcertingly enough the
+entertainment modules one alone
+on multiple and buses so the so there's
+a lot of room for exploration here I'm
+highly recommend looking at like the
+factory service manuals it'll do a good
+job of outlining exactly which modules
+are connected to which and buses and
+kinda give you an idea like my system
+the high-speed camp 3 there's not a lot
+of interesting stuff on there there's a
+serum of control Mach or the the
+steering wheels on cam 2 which is
+exposed out of the PLC which makes it a
+lot easier to work on cam 3 is an
+instrument cluster module and a few
+other boring things so I'm not too
+yeah so there's gonna be a lot of trial
+and error so the heart my keys there is
+a little bit of method to it typically
+in general the more the art ideas say
+the 0 and 100 series are going to be
+more important devices so it's going to
+be like your engine control module thing
+like that the 300s on my series of car
+are going to be some other trim options
+so like my door functions are in the 300
+series the 700 series is VDS EDS is the
+universal Diagnostics that's going to be
+things like your your in health obd2
+scanner you can scanner that uses UDS in
+DDS has certain standardized things for
+service some of these values are
+documented but it's not there's like no
+universal format out there is no
+universal wiki unfortunately it takes a
+lot of speed longing and this time to go
+get the data so there are a few projects
+and they kind of work on stuff or has it
+actually the project called I think it's
+open xev or something like that and they
+actually had an open interface so you
+can connect to the canvas and control
+certain functions of your car but they
+have a very small set of I think 27 ways
+you can interact with it and they were
+very closed off about other stuff so it
+would seem like a nice idea but once
+you've got to do a little bit you
+realize that no they're just trying to
+make something for people who
+manufacture accessories and not really
+help out people like us akima hey i has
+also done a lot of work on their
+self-driving platform and they have a
+standardized file format as well and
+there's some day down there on that but
+again it's another ad hoc project and
+there's no single place that you can get
+so some references here awake open
+garage thought of work is great this is
+run by Frank Smith who was the guy who
+write the car hackers camp hood which in
+a highly random man battery service
+manuals are awesome you can see wiring
+diagrams from your car I mean that's
+it's worth its weight in gold so
+children's are good and all but but it's
+hard to be the factory service manuals
+for most brands carrying Caribous that
+didn't map like tool what it's talking
+about this is really good for fuzzing
+and rolling through a series of data on
+like specific are babies or specific
+range of art my keys this is a really
+good way to trigger certain types of
+activity for example if you know your
+doors on 300 range or you know the
+actual art ideas on you can roll through
+and you know watch for activity on there
+and then the Miller and valasek paper
+remote exploitation of home
+I'm altered passenger vehicle this is a
+great read that's very in-depth and they
+talk about they're pretty famous back
+from a couple of years ago so and then I
+want to give it a quick shout out to
+some people here got great Smith hood
+over garages that's the author of the
+book I talk about Eric and chick he
+wrote the or you make see a can't act
+it's pretty cool guy he's got a couple
+of did another pretty awesome recent
+hack on denial-of-service of vital
+messages over the can bus power hacking
+village is great fun not only have they
+been at Def Con but they're at so many
+cons now adays and if you don't make it
+to death on put you make it to another
+problem with them I highly recommend
+checking him out talking to the dc25 or
+any village CTF to you Dre host on pol
+XB c w9 zoom equipped we have a channel
+on psyche Cieslak our hacky it's not too
+terribly active but cool stuff comes
+across it so i recommend everybody join
+if you're interested in this stuff and
+Charlie Miller and Chris Val say they
+did think the presentation makes it look
+pretty chill but they actually when you
+read into the stuff and what they
+thought it took a lot of work a lot of
+time and they really did pave the way
+for a lot of us that's the end of what I
+have
+[Applause]
+there are some questions from the
+audience
+and then anybody who doesn't want to ask
+questions can also we need never be
+after and I will show anyone s questions
+once you come on up here so we can give
+the mic so everybody can hear your
+questions and then if you want to ask
+question to private later and I'm going
+to pull out my bag of connectors and
+adapters in South Africa routier check
+one there's a mic up here so a poem have
+you been able to save your settings or
+anything that you have been able to save
+into your settings or anything that
+you've added to your vehicle no I have
+it and actually that's kind of a
+different area so programming is a thing
+I didn't talk about and that's something
+I don't know a lot about programming I
+think typically you'll access kind of
+like when you do the UDS services when
+you're asking for like the status of
+like the engine controls are not going
+to stop them
+but typically in there they have set a
+ways to save settings for your vehicle
+but I believe those are manufactured
+independent and usually there's
+third-party software like for scan
+befores and like I'm pretty sure every
+major manufacturer gonna have some
+software other than get to change some
+of the settings but but no for things
+that I do typically so uh I think well
+one thing I kind of glossed over that's
+important is though the ginn bus
+whenever it sends data it's like sending
+a command and that command is for right
+now so whenever that command is no
+longer received by the unit it's gonna
+stop doing it so if they receive
+something and think okay I'm gonna lie
+this for like you know X 30 milliseconds
+so if I send like a door unlock man
+that's gonna keep pulling the unlock
+button as long as it's receiving that
+command I'll stream that data house but
+as soon as I stop sending that demand
+all right other questions come on up
+here together questions for the crowd
+there's a microphone next question sound
+if I question about the negotiation of
+the communications on the bus okay is
+there a possibility of collisions I mean
+when you're talking about just doing a
+packet capture is it work more like a
+switch Network or a hop or that's a
+really good question I don't know all
+the details of this it's kind of like I
+believe it's like a csma/ca type network
+I believe so this is a bus network
+everybody sits on the bus
+there's termination on the bus at two
+ends I think it's a hundred and seventy
+over peoples network and but yes
+basically since the chips and everything
+patrol a little of the layer one layer -
+I don't know exactly how this portion
+works but it does automatically detect
+collisions and then backs off and it
+will do retries there's actually like an
+acknowledgement capability as well I'm
+not sure if this even that happens on
+cars but yeah there is some mechanism
+for for detecting and handling
+collisions and the best answer I can
+give is for the most part it just worked
+I would assume like the lower the arc
+number you said the more critical
+processes and would also assume as far
+as that negotiation goes that those
+would probably get higher firewood as
+well I believe so so I'll bet there's
+probably part of the back-off algorithm
+is time base and it's probably going to
+be like a shorter time base for the
+higher priority all right ease but yeah
+yeah that's excellent question I don't
+know a lot but there should be good
+resource rescrew they will explain that
+I have two questions actually okay
+firstly is there any way to best walk
+out anyone from remotely accessing my
+car say okay well is there anything that
+you'd actually recommend for knowing
+okay
+so that's kind of a loaded question it
+depends on you know more the vintage of
+your car is how how exactly your
+mechanism works or what do you mean by
+walk down I assume you mean ignition
+well yeah so more door locks a
+technician locks for vehicles
+so for door locks just keep that bus not
+exposed to the outside where somebody
+can get to it and trigger it because I I
+mean
+I would say approaches like a hacker and
+like you Pierce carry your own system
+what for the weaknesses and those so
+I'll give a brief example a long time
+ago I said a four pound LCD and a salad
+officer died with my friends and got a
+little drunk and a lot of keys in the
+trunk so what I do and my car had a door
+eject button inside the club box so I'm
+get to that but it only works when the
+ignitions on this so that way the
+thief's don't break in but obviously
+that button is right there in the glove
+box you can pop that out I was able to
+hotwire that to the cigarette lighter
+plug and pop the trunk open so obviously
+if you can get to give physical access
+you can unlock the car so that'd be the
+first step is to protect that but as far
+as other things you know I mean there's
+not much you can do to protect like be a
+remote keyless entry that's like a whole
+different class of problems right there
+so second question can we hack your car
+absolutely go for it although I no
+longer not warranty garbage so
+don't break the firmware but no process
+but yeah we can yeah if anybody ever
+wants to work around on my car if like
+you have a car that's too little and
+then I began bus yeah meet up with me
+I'm always up for a key and no other
+questions so like I said I'll be down
+here I'll I'll pull out my bag of
+connectors and the batteries and stuff
+that people can look out Oh break
+someone one more question by the way
+man that's my talk to a while thank

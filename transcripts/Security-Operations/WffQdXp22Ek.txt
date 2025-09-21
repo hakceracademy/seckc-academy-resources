@@ -1,0 +1,306 @@
+or it also supports gelf which is a
+Greylock
+format and there's a lot of options out
+there uh that have just kind of popped
+up in the last couple of years uh as far
+as log management goes um snort supports
+uh logging directly to my SQL um at
+small scale that's fine it works great
+um at medium and large scale that's
+Troublesome um
+I've seen my SQL servers you know
+cry so if you're in a big environment
+and you're dealing with mult you know 10
+or 20 or 50 gigs a day of of IDs traffic
+uh probably not the best option um gry
+log is something that's popped up in the
+last 2 years and it's based off of
+elastic search um so uh it uses
+clustering techniques and you
+essentially set up gry log to absorb all
+your Cy log and then it loads it into an
+elastic search database which is a
+schema database allow allowing you to
+search and do plain text on it uh and
+then also extract fields and build your
+own dashboards so it's still being
+developed but it's getting better um and
+then kind of a simple stupid Solution
+that's kind of a halfway point between
+you know gry log and just gripping it
+yourself uh arsus log has a plugin which
+allows you to hook directly into the
+elastic search database and then you can
+use a uh program called Cabana and
+Cabana allows you to go through and
+search and basically do the same things
+that greylog can although uh my chief
+complaint with cabana is that it is not
+an Enterprise tool um there's no login
+system it doesn't hook into L app it
+doesn't you know have multiple users
+it's just whoever has it can and if you
+haven't protected your elasa search
+environment then they could anybody can
+can search your database so uh be
+careful with that uh oim is an open
+source uh security information and vent
+manager and it has a bunch of it has
+cotta and a ton of Open Source bested
+breed sensors built into it um which is
+it's okay for small environments once
+again it has real problems when you try
+to scale so you can pipe all your uh
+snort logs to it and then it'll be able
+to parse it and give you some good
+reporting and Graphics uh and then I
+mentioned Splunk
+before live demo live demo isn't going
+to happen because uh I didn't follow one
+of my rules so um remember pay attention
+to the quality of the SD
+card are Micro Center cards quality
+cards they are
+not uh I got a Microcenter special at
+one point working with earlier raspberry
+PS I put it in there and then you know
+halfway through the install the file
+system disconnected and then got all the
+way through the install and through the
+first Boot and then halfway through the
+first boot it disconnected from the file
+system and it gave me a kernel panic and
+it just kept doing that over and over
+and over again and it was just because
+that that uh SD card manufacturer and
+controller just couldn't handle it on
+the Raspberry Pi
+so
+um I mentioned before getting up to date
+rule sources so emerging threats is a
+good resource and snort. org you can
+also get updated
+rules and both offer free and paid for
+services and snort from the package
+repositories tends to work cotta tends
+not um so you may if you the advantage
+of using cotta is that it is super fast
+so if you have a multi-core system with
+Oodles of RAM and you're trying to
+monitor 10 gigs of traffic s cot is the
+way to go um snort is Old Reliable and
+well understood and well documented so
+uh because the Raspberry Pi is built for
+a small environment snort is probably
+the best option in that there's less
+configuration to do and less hacking to
+do on
+it and you may be tempted to enable all
+the
+rules don't do
+that it's
+bad um so if if you do that then it's
+doing everything uh including checking
+the fields of the IP package to see if
+uh the sequence of the connection is
+correct and the acts and sends were
+exchanged in the correct order and it
+goes through and it tells you if
+somebody's trying to use you know uh
+file sharing and I mean some of that's
+interesting but you know it it just
+gives it it floods you so be very
+careful you want to go through each of
+your rules and match against things that
+environment
+oh sorry let going uh pre-processing is
+is a feature that's in snort and I think
+there's some pre-processing features I'm
+not really familiar with surot I'm
+pretty sure they both support it
+pre-processing allows it to go through
+and as the IDS signatures are coming
+through true if somebody's taken
+like like most inmap scans don't show up
+inside the store there's like one that
+you if you use the really loud obnoxious
+inmap scan it's going to show up but
+anything else pretty much doesn't show
+up so um pre-processing have to do that
+it'll go through and actually uh take
+the traffic and then go through and make
+sure it's decoded and resequenced
+scan and clean your logs regularly um
+with these little SD cards there's not a
+lot of storage and you can generate an
+awful lot of logs very quickly with this
+so uh setting up a scheduled task using
+cron to go through and clean out that uh
+logs directory is a really important
+do and then making sure the operating
+system of course is up to date is a good
+idea to app get
+update yeah or else you'll have
+something on your network that's
+terribly vulnerable if you don't update
+it so you make sure that this is part of
+activities and when you're working with
+snort and cirata they use roughly the
+same type of configuration language to
+create rules
+um it's really easy to go in and if you
+look at the format at the bottom here
+it's uh you can set up an alert tell it
+that you want to look at TCP
+uh give it a variable for your home net
+and then uh any port to any external net
+with external ports of 661 and 668 and
+then you can put in a message that's
+going to show up uh as part of the
+signature uh and
+then let's see
+here this is a new skill for me so I'm
+still kind of re still researching it
+but
+um in this case it's looking for a join
+statement for uh
+IRC so IRC is p 666 667 in that range
+and so this rule goes and takes a look
+to see if somebody's making a IRC call
+and what's the importance of IRC
+somebody in the CNC butet so what
+they'll do is they'll connect to a IRC
+server go on network join a specific uh
+chat group and then the command and
+control server bot is there and it gives
+it in instructions for you know whose
+day you're going to ruin um so take a
+look at snorts website and also Sera
+website on kind of how to put together
+rules they're really cool um and don't
+forget that if you find something really
+cool like a zero day you know make sure
+you go and you know give something back
+so don't keep it a secret you know if
+you have if you find some cool rules
+that will detect you know zero day
+activity in your environment yeah don't
+keep it a secret don't be that guy sell
+that
+sh so uh any questions yes on alerting
+um how did do you just have somebody
+monitoring the physical system or do you
+are you able to p through emails or
+anything of that so um the question was
+is that how do you do alerting and uh
+with snort you have a feature you can
+enable that will send Daily Report reps
+of all the uh alarms that it receives so
+that can be part of it so it can just
+email you and then you can take a look
+at that email and it'll tell you okay
+I've received these you know these
+signatures so I might need to take a
+look at it um another thing you can do
+is it depends on the log management
+system or U security information and
+management system uh a lot like for
+instance uh oim will do alerting and
+Reporting and it does it based off a
+crosscorrelation
+so if it detects that there's a snort
+signature then it also detects that
+there's a surge in network traffic and
+it detects that there's a warning uh
+from the workstation that uh you have
+malware uh then it'll cross correlate
+that into that computer's infected and
+send you can program it to send emails
+you can have it run an arbitrary SK
+shell script uh or something like that
+so that would be one way of uh live
+alerting that you can do with OS with
+gry log and some of the other kind of
+Management Systems they're not that good
+at alerting uh they're good at
+statistical information so if if you
+take uh measurements of your network
+traffic then it can tell you that you're
+doing more Network traffic you know
+outside of business hours therefore
+there must be something wrong but it's
+not really meant for security event
+management so osim is kind of built for
+that and so it would be a better choice
+uh just for off the-shelf uh alerting uh
+you can go through and create
+alerts just by having a Chon job do a GP
+on a on your your CIS log you know text
+files and looking for specific keyw I
+mean that's rough
+but does o tie into
+long um om does
+not um it if you if you go to them and
+give them money they will give you their
+log management system which is they they
+sure is is great and it just blows up
+every 6 months dies lose data okay I
+didn't say okay anyway um I had I've had
+experiences not necessarily good ones so
+um that's for a small scale environment
+OS is a good option any other questions
+yes you try uhing Arch Linux Arch
+Linux uh and what Arch Lin do you try
+to
+of um well that gets
+into you could literally do this with
+any type of Lance the reason why I chose
+raspian is that it has all of the uh
+software and hardware and Driver updates
+repackaged in so it's really it's the
+one that's uh meant to be you know
+installed on there everything else is
+can be installed but it may not
+necessarily have all the stuff you need
+to make it work right there's
+Rasberry well yeah I know that it's out
+there it's just doesn't
+necessarily
+yeah everybody has their favorite flavor
+of
+L I would say it's my favorite what
+about
+performance Network performance like I
+said you peek out at about 480 and
+that's just the limitation of USB 2 you
+can get gigabit U ethernet adapters for
+USB 2 but I mean they're not going to go
+beyond that
+um if you're using a passive tap um
+you're talking about two ethernet
+adapters one for the incoming stream and
+one for the outgoing stream so keep that
+in mind so and that can only do uh 10
+100 ethernet anyway so I I think for I I
+think the limitation on this is that you
+could do gigabit Ethernet uh it's just
+and most gigabit Ethernet doesn't hit
+gigabit all the time it'll bounce around
+about you know 5 or 600 so it it's
+doable um like I said once you start
+getting to the point where you're
+overwhelming it uh where you're hitting
+the maximum uh ability of it to process
+ethernet traffic then you need to look
+at getting a more expensive solution uh
+then on my last option here I wanted to
+every in the security business you know
+whenever you visit somebody's house they
+show off all their cool crime fighting
+equipment so this is uh something
+that
+darn
+you new ma all right well that's it Joel
+kersner
+everybody
+so wow thanks so how about these

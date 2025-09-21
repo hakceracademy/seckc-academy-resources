@@ -1,0 +1,422 @@
+kids basically play as blue team while
+right team destroys them during the
+course of the competition the college
+peeps also get these index from their
+CEOs and other people telling them great
+ideas that they need to install these
+insecure packages and keep them up and
+let red team just have at it then
+scoring is based on if they get the
+indexed on how well they keep red team
+out and how they can respond i got into
+spunk by that we had to set it up during
+one of the competitions and then we had
+to send all the logs to it and then use
+it to prove a red team attack and then
+we got points if we did a good job we
+got some points we just got done stuff
+like that so it was fun I loved it I'm
+also in turn for the state of Oklahoma
+it was fun talk to the FBI few times it
+was it was enjoyable just launched
+traffic see China try to hack it to the
+state agencies all the time same with
+Russia yeah it was it was interesting it
+was a big eye-opener because I was fresh
+out of college only there's no way that
+really oh man alright what is spunk um
+it's a big data and data you know it's a
+big data and data analytical tool has a
+free enterprise version there's also a
+diversion which I'll talk about a little
+bit later there's a monitoring learning
+tool it's a sim security information
+event management this is what most
+people here are probably focused on SVC
+security alerts you can correlate them
+all that fun stuff magical one River
+maze at happiness and the day just
+really just a lawyer agent system for my
+day-to-day work right now I just
+maintain spunk for a bunch of developers
+who love the pump all their application
+logs into it and they use it for
+debugging they can find bugs and
+critical vulnerabilities before they go
+to prod which is awesome parts of spunk
+there's one you could do an all-in-one
+server where everything just lives on a
+single instance normally the free
+versions like that but you can
+have all levels like that but it's
+basically split between like a web front
+end which is a search n and they can be
+clustered if you plan to split it out
+with the newest version 6 2 which came
+out last October I think this is where
+the users would log in this is where
+they type in their searches stuff like
+that is where they didn't search for the
+logs on the indexers it's where the data
+and the logs actually live they can also
+be clustered since 1st &amp; 5 I think so
+it's nice um spunk basically uses a flat
+file system from the logs it's really
+weird they don't use a database they
+don't you see Bowl they don't use any of
+that is basically of their own magic
+formula there's also the cluster masters
+which basically just an arbitrator make
+sure the clusters stay maintained if
+one's down what blogs need to be active
+searchable stuff like that same for the
+search has which search ads should be
+active stuff like that and then the
+licensed master which spunk themselves
+care about the most basically you log
+volumes per day so gigabytes per day and
+spunk basically says okay this is your
+license this is how much you can log per
+day to the indexer so I'll talk about
+what happens if you break that a little
+bit later there's also the spunk order
+it is used to send the logs from the
+servers to the indexers you can have a
+set up to like a structured format to
+like a specific index which basically
+just like a barrel where your logs would
+live knowing what you want from spunk is
+pretty important also spunk has a ton of
+like random phrases one is like finding
+accuse here before Trojan does there's a
+tshirt there's a sticker another one is
+taking an shiyt and stuff like that but
+like if you're planning to use funk or
+any blog our Gator you got to know like
+what you want to log make sure you're
+not just pouring every single log that
+you think you wanted because you're just
+going to make a bunch of know
+ways and it may not be helpful to
+anymore you also gotta figure out like
+how to correlate your logs make it
+useful do you want to do like preventive
+stuff with spunk to where like if you
+see these attacks you run a script on
+spunk and turn off a poor or you just
+want to be reactive or if you saw an
+attack and you've got a user that says
+hey my laptop's dead and you can launch
+that laptop you can going to spawn look
+at what they did look at their traffic
+stuff like that also what kind of
+attacks sequel injection you just sequel
+injection just basically front end tax
+or going after the host themselves stuff
+like that other sins on the market is
+like arcsight blog logic is another big
+one HP ArcSight there's also another one
+elk which is pretty popular that's not a
+sim more just another log aggregator
+that one's a more popular open source
+one that's gaining traction why is
+pumping in security they have a special
+premium app that you need to pay for on
+top of spunk right now that I'm version
+30 um it helps it adds a bunch of
+features that people want out of their
+sim it adds dashboards fancy graphs
+stuff like that it also adds a different
+what's the word agents that will
+basically pop up or like if it sees the
+Zeus version it will tell you hey this
+new version was installed on this laptop
+stuff like that it may also meets
+certain Department of Defense standards
+um I couldn't find out which exact
+standards they meet but uh I that's what
+I've been told they've they meet certain
+standards obviously a salesperson told
+me so maybe they're lying but here's a
+basic set up a spunk this is kind of
+what I'm getting my lab to set up as I
+have like the windows box you had sought
+for Iran and goes straight to this phone
+server you have just another linux box
+you can also have a spawn for installing
+that those go in port
+nine and seven which is a special spawn
+thwarting party uses that's just the
+default for it can be anything when
+swung server here just like the
+all-in-one and then like you have some
+like pfsense and you can send stuff via
+likes this log so you can also have like
+before installed on just like your any
+user laptop stuff like that so depending
+on what you want along you can basically
+throw it into spunk and see what happens
+and then try to format it so spunk can
+use it and your end users can use it how
+do you get spawn just download it from
+their site when you download it it gives
+you a temporary enterprise trial license
+maximum indexing item of 500 megabytes a
+day which you can go through pretty
+quick enterprise license like said
+multiple user accounts user controls
+distributed search data routing we get
+the clustering basically you get
+deployment manager point managers
+basically something where you can deploy
+the borders on two devices with splunk I
+don't have much knowledge in that
+because we use other stuff for our spunk
+instance we actually use chef to push up
+the configuration in the app so for home
+dev you go to dev dev song calm this is
+actually the developer trial license it
+gives you the enterprise version 10 gigs
+a day so it's quite nice and then 6
+smoking every sick the license itself
+expires in six months all you have to do
+is like send an email to spunk say hey I
+want this renewed and they'll send you a
+new license fun stuff there's also an
+academic curriculum I centers as five
+games a day for a year it's the same as
+the velka license except it's five gigs
+and it's for a whole year instead of the
+six months it's set for using it in labs
+and academic use smoke enterprise is the
+big one that people like this is the one
+where you can actually use the
+enterprise security app on it and all
+the other premium apps that smoke calls
+it these are apps you have to pay for
+additionally stuff like that this is the
+big thing when you hear
+it's really expensive about spunk this
+is the version they're talking about
+they tout you don't get charged the
+number of users you don't get charged
+for course or the amount of nodes pretty
+much store whatever you want on these
+you have as many instances as you want
+as long as you don't go for the license
+of so many gigs a day being indexed so
+that's your big one you could have like
+a non pride and pride and they can share
+one license of like the 10 games a day
+but if your non pride instance does like
+11 gigs and your pride does one gig they
+both get strikes stuff like that I'll
+talk about sponsor strike system as well
+in a bit there's also a new version of
+spunk which thinking on this year spunk
+light you only do five users you have to
+have a single server you still don't get
+charged for what you put in it and then
+you don't no charge for the total amount
+based on your gigs pernais license so
+other things to consider if you're
+wanting to do spunk or any other log
+aggregation system for me out logs in a
+minute away timestamps are really
+important for the logs time zones are
+also really important because you don't
+want to go three to four hours into the
+future to try to find logs because they
+have the wrong time stamp or wrong time
+zone this has happened multiple multiple
+times people you know send me a you know
+angry email saying hey my logs were in
+splunk but they're old and I can't find
+this and I know it just happened we look
+and then we have to look into the future
+like you're sending your logs to the
+futures please fix your time stamps it's
+happened more times I've lost count so
+source types this is like HTTP logs fire
+logs stuff like that fun times making
+sure your long and useful data you don't
+want to just dump as much stuff as you
+want because then it doesn't come in
+your photo on then you ruin your license
+which is where it comes two strikes five
+strikes and a 30
+rolling window and what's punk will do
+is basically you can keep sending logs
+into spunk and it will keep indexing it
+and storing it for you but after the
+fifth strike you can no longer search
+any of the stuff that you've indexed you
+have to send spunk I'm really sorry
+email I didn't mean to and then they
+will normally lift it and be like don't
+let it happen again and when our sales
+person comes to talk to you again we'll
+make sure to remind you every five
+sentences that you broke your stripe
+license and you should buy more more
+spunk spunk cloud just send it into that
+magical Cloud you don't care all you
+know is your logs are going to the cloud
+and they will be safe and your users can
+just log into this magical Cloud user
+interface you don't have to worry about
+setting up the servers you just have to
+worry about paying for that license
+because everyone's going to send all
+their logs to your cloud instance I
+think it's kind of controlled with certs
+but I haven't dug into it yet we don't
+use it where I work so sorry hunk
+another big thing this is for the Hadoop
+cluster stuff like that they charged per
+node it's still quite expensive as well
+a couple grand per node but if you can
+get use out of it then maybe it's worth
+it for you are the way we used to do but
+wasn't padded with hunk so we couldn't
+do anything with it either spawn MIT is
+also kind of new got released last year
+it's to get at like mobile data into
+spunk basically have mobile application
+stuff like that it's able to pull the
+information out of that and put puppet
+in the spunk as well and spunk will put
+in a nice format so you can search it
+other spunk apps like the fire fire eye
+appt Palo Alto cisco security suit I
+mean they've a bunch of stuff it's
+pretty interesting some are most of them
+are free spunk now has more premium apps
+the main security one that everyone
+is a premium app that you have px4 but I
+think fire I college I think they're
+free but you have to have like the
+device itself and you have to agree with
+them and basically you have to have
+swung to send longs to and you have to
+have their license obviously spunk just
+want you to send everything into it and
+buy as much license as possible because
+I mean that's how they make money um
+what am I like to focus on is a hoe
+monitor app because it's good starting
+place it's pretty interesting it's a
+it's made for like home routers somebody
+that but like it's also compatible
+pfsense I have not gotten peta sense to
+work really well for spunk yet I haven't
+tested this app I had an esxi host set
+up but it died on me so I class it away
+and I'm trying to rebuild my lab now so
+we'll see um it also has what's called
+bad guy hunter dashboard I've got a
+strange out of it after this it's pretty
+interesting it could be a good place to
+start set up a single spunk instance vm
+virtualbox vmware stuff like that have
+your home router that you have don't use
+Google's home router because I can't
+find a way to get logs out of it and I
+spent a couple hours looking so if any
+of you have google fiber anyone google
+fiber yeah if you know how to get the
+logs out of that router please let me
+well yeah okay so maybe if I give
+another talk in the future I will be
+like yeah I figured it out but we'll see
+um it's really interesting has a bunch
+of neat features involved in it bunch of
+stalking that like side good 100 a bad
+guy Hunter dashboard is pretty
+interesting I'm like I said I'm hoping
+to use it for future talks and trying to
+get my lab set up to actually show
+attacks going into different systems
+using than having one's gonna spawn and
+then correlating it showing in the talk
+how to back truck back step in to attack
+and see where stuff is coming from
+here's that screenshot i was talking
+about this is basically just seeing a
+guy from china you know try to ssh into
+this guy's router so it's pretty
+interesting Wes phone can do for you
+it's great it can also be really really
+expensive I looked at prices by anyone
+make this a sales pitch I didn't mention
+but it does run several thousand dollars
+so polite like I said a little cheaper
+but to me for smaller companies
+instances but they do have the dev spunk
+license that pretty much anyone can
+download you're not just use it for
+prior to use so you shouldn't because
+it's bad like sad songs great get
+multiple types of logs like I said
+system log router farmer logs all the
+funds I'm even those cranky window logs
+that you need to use to find out why
+this user downloaded this piece of
+malware it's all you can send that
+straight as long it's fairly
+straightforward to get set up um you
+just basically there's this is a really
+good tutorial on spawns website as well
+basically you punk stuff in and it will
+tell you how to do some graphs eating at
+a spawn vm set up fairly straight
+forward step by step they make it super
+simple linux windows it's pretty simple
+um like I said their documentation is
+really good for both the free and paid
+they have an IRC channel that I will
+list on the next slide
+and they will respond to questions
+anything you need great they've got
+customers in there and basically spunk
+engineers as well although answer all
+your questions it's it's definitely not
+a magic box you do have to work to get
+stuff to actually look the way you want
+you can't just you know decide to start
+on a Windows client and then be like I'm
+going to send every single log that this
+server holds into spunk and see what I
+find well you can and you're probably
+gonna be like there goes my license
+because that may have happened as well
+to me sorry I'm spunk downloads funcom
+also for the devil my sins dev spunk com
+I didn't know about this till like
+earlier this year for some reason that's
+where you can get the dev 10 gig license
+it's the enterprise version this way you
+can play with all the bells and whistles
+and developer setting they have it so
+you can create apps for spunk and
+basically make them more money the whole
+monitoring app i have a link here but
+the IRC channel it's not he is that the
+org pound spunk bunch of smart people in
+there they know they're talking about
+all that fun stuff a lot of customers
+that you like terrorizing catamites of
+logs a day and they have these crazy
+setup so a lot of them are really no
+basic ins and outs on how to get your
+spunk set up correctly also thank you
+thank you said case c villa you ramble
+big things cans a haul for hosting us
+again and see you on the whens bride Oh
+second Tuesday right second Tuesday
+right that's not true it's that X second
+Tuesday's is it changing know so I
+exactly
+oh yes murder tomorrow thanks i'll
+listen this on anyone have any questions
+I so hope not I wasn't ready for

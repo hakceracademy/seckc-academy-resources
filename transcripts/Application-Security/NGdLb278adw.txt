@@ -1,0 +1,256 @@
+but again I'm Thomas gardener and no
+give a little talk about PowerShell it's
+gonna be pretty high level we're not
+going to get any code or going to get
+Nick we're not going to get any
+programming it's just um an introduction
+of some terms and maybe some things that
+if you want to start writing powershell
+scripts you should probably know ahead
+of time just from a little experience I
+had with googling some issues anyway so
+now shown basics batch files are so
+1990s um let's get started so we're now
+the cover of total things one is a
+little background about power shell
+itself I'm gonna talk about scripting
+and then what Windows execution policy
+is and how to bypass that to actually
+execute your own scripts and test stuff
+and then lastly we're going to go talk a
+little bit about w mine which is
+interfacing with the Windows operating
+system itself and using some some tools
+to convene introduction to using some
+tools that malware can use to do anti
+forensics type stuff so a little bit of
+background um power shells originally
+created for sis admins it's Mosley's for
+automating processes which to do that
+you have to write scripts but it's also
+done interactively by the user so I
+think now since maybe windows vista
+every windows machine is have para shell
+on by default if i'm a malware a writer
+i like that because i know what's going
+to be on a machine ahead of time for
+example I might not know that Python is
+going to be on machine ahead of time on
+a Windows machine so maybe I don't want
+to use that they don't want to write
+Python scripts but i do want to write
+back powerful it's also build on top of
+microsoft.net framework if you've never
+heard of done that before it's a
+sprawling mass of crap um
+better word it's actually really nice
+because you can do a lot with it the
+problem is it's not very simple or I
+guess very easy to use unless you've got
+a lot of programming experience ahead of
+time also lastly I'll put a little
+disclaimer on this officially released
+in 2006 according to wikipedia we all
+know how reliable that can be I didn't
+check my citations there so fire is
+still in riddles go out get an F on this
+report but wait you're right oh boy yeah
+I know right believe it or not I'm not
+so noticeable so um officially released
+in 2006 according to wikipedia all right
+let's actually get the scripting a
+powershell so like i said before the
+original purpose is automation it's made
+for system administrators and it was
+made as kind of a sort of supposed to be
+an improvement on batch files and in
+order to do that mark club decided hey
+let's make this author going in it to
+help with creating new objects creating
+an easier way for people to I guess
+program there and interactive Windows
+machine so undergoing it just means you
+kind of describe programming language or
+you describe objects in Windows as you
+kind of wood in the real world like a
+car has two wheels so it was a truck
+they're both vehicles so vehicles would
+have sorry I say two wheels i meant for
+before anyway i'm getting off track my
+car congratulations for your car has two
+wheels alright
+anyway back on track another term that
+you might want to know at a time if
+you're getting truck started in the
+PowerShell is a command 'let it's used
+everywhere basically a commandment is
+just a little snippet of code that's
+prepackaged and pre pre made for you as
+a programmer to use at a time you don't
+have to recreate things you don't have
+to recreate the wheel as my old math
+teacher would say it's just technically
+it's a compiled dot hack code and it
+works just like every tool if you use a
+lot of Linux grep could be its own
+command lit LS could be its own command
+line stuff like that and lastly modules
+modules are a lot like command 'let's i
+think the technically just different on
+the on the back end but they work really
+similarly and they have some of the same
+other they have very similar output
+files like a dot ps1 is just a script
+that PSM one is technically a module and
+there is some extra features you can do
+with modules that you can't with a
+script script directly but that's
+actually outside the scope of this
+presentation because only have five
+minutes I think I've wasted four and a
+half of them talking also this image
+right here this is an image of power
+slowly on github powers voice is a
+PowerShell version of the metasploit
+framework that's been always been
+covered again and again and again here
+at set Casey it's meant for exploitation
+of systems power spot powersport
+specifically for windows it's pretty
+cool so check it out if you're really in
+shouldn't I alright so if you're going
+to start talking about scripts you have
+talked about execution policy but by
+default a lot of Windows systems set
+execution policy to completely restrict
+it that means you cannot run scripts and
+that's supposed to protect the user from
+being attacked by malware now as
+security people we should all think oh
+we're pretty happy with that unless what
+Penn
+tration testers in which case we don't
+like that but execution policy it's a
+pretty easy concept it's a lot like
+again I'm gonna go back to unix read
+write execute where only certain things
+can happen to a script depending on what
+permissions are set for them but
+execution policy is a little more
+complicated you can have certain options
+to restrict based on certificates so
+kind of like how encryption uses some
+certificates you can sign scripts like
+microsoft consign the script so that
+every Windows machine can read it knows
+of the Microsoft makes keep it based on
+that or you could restrict based on what
+the source for the script was for
+example you could have what's called a
+remote signed execution policy that just
+means that any script that isn't from my
+box cannot be executed unless it's
+signed by a trusted publisher like
+Microsoft or they could have an
+all-or-nothing execution policy which is
+a script can be run or no script can be
+right now to make that last slide
+completely pointless we'll go over how
+to bypass execution policy just in the
+regular windows way we're not going to
+get anything to hackery right now I hope
+to go over that next morning if my talk
+that is will be submitted gets through
+deny deny crap okay so there's two
+primary ways of bypassing execution
+policy one of them is a persistent way
+which is actually saying the execution
+policy with a tool called set execution
+policy it's very aptly named tool to of
+the common ones you'll see are
+unrestricted a remote signed which just
+allows you to run scripts test then
+debug them all things you kind of need
+to do if you're going to start getting
+into scripting or our shell the problem
+is that it requires admin access
+hopefully you have that on your local
+machine and if you don't then that's
+probably not
+machine you're probably at work and
+people like me are going to see it and
+get on your ass about it so please don't
+try and do that at work unless you have
+the permissions for it there's also a
+read file way which is on / script basis
+and what you can do is you actually you
+can read the script that you're wanting
+into memory and then pipe it into a new
+power shell process which means you take
+the memory that you just read in and
+then throw it into new power shell
+process PowerShell and execute that
+script just as if you execute it from
+the command line the only difference is
+that you have to run it as a no profile
+and that means that there's no execution
+policy to find so windows will run it
+automatically but there's a big problem
+and that you cannot interact with this
+script to be honest I can't find a
+problem or a reason for that exactly but
+I think it's just do do the way the
+piping works and and you can't really
+have a sort of continuous interaction
+with a one-off process like that if
+anybody has an answer for me please see
+me after this talk please don't shout it
+out because I want to be embarrassed by
+how dumb I so less last part of this is
+interfacing with wmi and here's actually
+where we start to talk about sec you see
+related things so wmi is referred to as
+the windows management interface in all
+this is it's a set of tools that system
+administrators and other people now
+where authors usually can use to filter
+through event logs or go look at network
+interfaces but look at running processes
+stuff like that so it's a good idea the
+problem possesses admins and malware
+authors use off in the same kinds of
+techniques getting running processes
+useful technique for anti forensics for
+malware authors if you find that maybe a
+virtual box is currently running
+system you can know oh maybe I'd only
+run in here too same thing with network
+adapters if you find VirtualBox has a
+current network adapter you don't be
+running on that system maybe and that's
+an easy way to get around really knob is
+reverse engineering that kind of
+automatically does things without
+actually thinking about about them ahead
+of time and lastly I'd like to point out
+that as far as w my goes there are new
+methods that are constantly being
+developed in fact the inspiration for
+this talk was a black hat 2015 talk
+that's right is here just a month ago
+that's titled abusing wmi to build a
+persistent asynchronous vilas back door
+by matt graver it's a really cool talk
+if you like white papers like i do give
+it a read he's got some great slides to
+that do a really good job of talking
+about the low level in the high level
+aspects of para shell and how this works
+again the test i scoped this talk though
+it's only a five-minute talk so i can't
+get too in depth with it other than that
+that's it i have some resources on here
+if the slides get posted there's some
+links that you can use to that's it
+thanks
+and

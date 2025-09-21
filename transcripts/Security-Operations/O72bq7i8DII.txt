@@ -1,0 +1,376 @@
+so this just a um a little talk on
+creating a USB toolit so uh first I just
+want to give you a little intro about me
+so I'm a senior the South High School um
+21st century program there called case
+um sof kind of switch from programming
+to more of a security Focus as a friend
+and I um decided that we would kind of
+want to go down that
+path
+So So currently an intern for Joel over
+there as a security analyst for the
+my ruin this kid life
+so
+I Network just to play around it
+servers machines and other things just
+around because my parents said I can do
+it on theirs um so Med framework um I
+love learning was possible that's why I
+hey trust me I'm a
+lawyer
+so this is this is your first time
+speaking yes you still have to take a
+show yes you do yes you do if you're a
+school administrator put your head
+down it's not going to take away the
+scholarship
+right that like champ somebody post that
+time so anyway I love to learn that's I
+like
+Psy a lot of different
+possibilities that I'm obviously can't
+even
+talk
+M like two years of experience so it's
+nice to know that um so now on now what
+we're doing so so um what we're building
+is just is just a tool bit so we need
+obviously is a flash drive signs depends
+on what you want to do um you is a
+wonderful multi USB Creator um and I'll
+explain all these a little bit more
+later um there's EAS for master uh any
+live Lin distribution you want uh live
+Lin distributions usually
+are
+um well any and just there's nothing
+persistent about it unless you get one
+that is
+assistance um true GP manager and um
+what use these should look like or what
+use these I should choose um obviously
+purpose like I said you want something
+inous like on Drive um flash is pretty
+cheap um there's Micro Center you can
+buy one for 32 gig $1 and 32 gig and
+pretty nice uh Yi uh it's so it's a
+multi USB flash mulle operating systems
+and dising diagnostic tools and more um
+just a little bit about it there's some
+of the popular more popular live dist so
+open Su Cali Tales Zilla D um it also
+allows for unlisted ISO so you can make
+your own uh you can make your own live
+distributions if you want or just modify
+already existing
+ones um the find distribution you want
+so there's uh just the examples band for
+destroying information tails is an o t
+um Clonezilla is for miroring discs and
+I like to use disc for watch that um
+they have a lot of updated information
+and um as well as BR in depth specs and
+Google is obviously a best friend you
+can find uh what you want
+there um so we're creating in here we're
+creating three partitions a visible
+partition that you can U by the way this
+is all for um pest or not P well
+fantasting with Windows for the most
+part um so the way Windows works is it
+reads the first primary partition when
+you're um in it and uh so we're creating
+anyway we're creating three partitions
+the visible one that's that you're going
+to be visible in in uh in your regular
+offering um then there's also an
+encrypted that we're going to use TR for
+and then there's the multi so um this is
+also event so you can um walk through is
+on YouTube when they post it
+up so what you first want to do is you
+want to wipe out whatever you have there
+on your regular USB drive uh obviously
+everything's going to be wiped off so
+keep backups select the right drive and
+ter so as it out you want to create your
+first this is going to be visible and
+order does matter so you want to create
+it in order um one thing that I mention
+you want to plan out how much space your
+diss are going to take up because
+everything is kind of based on that um
+so you're creating your first primary
+partition uh you can do whatever file
+you want remember 532 there's a 4 c um
+and space make sure it's um next will be
+the encrypted
+just create as a logical you know
+however much you want um and be generous
+you never know what you're going to find
+um the last is going to be your Yi uh
+partition you you're going to want to
+create as a primary um and you can use
+all the left all what's left of the anal
+space uh this is what should look like
+uh what you want to do actually is you
+want to also convert the verse back to
+logical uh the reason for that is when
+you
+are creating the partitions when you set
+the first one up as logical it creates
+like a 7 MB an alocated space at the
+beginning and that was kind of annoying
+to me so I put into primary then
+switched it back to logical
+later um your computer should now your
+Windows machine should now see your
+partition now you're going to uh go
+ahead and open up you as slight your uh
+partition uh so uh when you first use it
+you want to format your bathroom with
+the little check check box they have
+there um select your distribution and go
+ahead and just just find it if it's not
+in there there's the sh isos which you
+can use to find it if it's not coming
+for some reason I guess what it does
+does it download the iso if you don't
+have it or uh no it
+gives no it does not but it gives links
+to where you can so there's there's
+there's a whole list on the on the Y
+website there's a list of supported isos
+that you can find and you can you
+know um so it gives last little warning
+before youit create um just telling you
+what it's going to do
+basically um this is what it shows as
+it's um setting it up and on the end
+it's going to say would you like to add
+more
+isos um and you can gu so the reason I
+put this in here is what I'm going to
+add next is conv by conv and I really
+like it I haven't really seen anything
+like it and if you guys have um that's
+free that that would be great uh I
+purchased a $50 personal license for it
+um and what con does is you you but um
+you boot you boot you boot it um
+and and basically disables the the
+password I won't over right but it's
+really an accent apparently it now
+supports 8.1 authorization or online
+authorization um but I haven't tried it
+since it also has Mac OSX
+support um a vulnerable uh for f VA what
+is f VA vulnerable
+is that's pcri um I I don't know
+um so when I when I purchase it for some
+reason it won't show up when I do
+purchase ore something so I add I add it
+with a listed ISO um from RAM and you
+can see if you forget I do forget what
+you put on you can see all list of
+install ISO just by clicking the the
+your remov
+all um once you're finished adding
+distributions uh you want to convert it
+back to a
+primary yeah convert it back to a
+primary go ahead and apply the
+changes adding more later you you switch
+you just switch the first partition back
+to logical and you'll get access to your
+um your e
+partition um so it's now look like this
+right you have your first partition
+which is you're visible it's primary
+then your second which is you're
+encrypted or will be encrypted um
+partition and then your third will be
+your multi um it's R your Yi it's Ren
+multi when you partition it and that's
+going to be a primary encryption as well
+you can have more encrypted partitions
+if you want that for some
+reason um encrypting the partition so I
+use true I've used true and I use a the
+hidden hidden encryption so there's an
+outer and inner layer um and I'll exp
+more later as
+well um
+so you can do this with you know Windows
+true you just have to uh put the
+partitions back and the rest of the
+partitions so I just do it when I when
+I'm testing the the flash d I just made
+out um true is officially unsupported as
+of May 2014 um and I haven't I haven't
+seen an alternative that does the
+same um your first boot up will look
+like this obviously won't have the set
+that but um but you can you can change
+that out and I'll tell you about that
+later too um categories just depend on
+what
+you um
+so uh when you first boot most um most
+live distes will look like this so
+you'll have options you can you can even
+install from it um I haven't looked at
+the live USB persistance kind of M for
+the C live um but it looks pretty
+simple um next you want to okay so once
+you're in to Cali you're going to start
+out your true GP um create a volume with
+Partition and drive and there here's the
+standard for so if you don't you didn't
+know already so standard um that's just
+just a right um and just has one pass
+right but you're hidden so what it does
+is it creates an outer and an inner
+layer um oh please correct me if I'm
+wrong on any of these things um
+so uh creates an outer layer and an
+inner layer your outer is kind of your
+front Bing you know the thing it gives
+in here is um if you have to give out
+your password uh for extortion or
+something um you you give out the outer
+password um that way they they don't
+even know there's
+an um and I'll go into accessing those
+later um you want to make sure you
+select the right
+partition um obviously you don't want to
+accident
+else and it takes long time so uh this
+is where you select your algorithm your
+cash algorithm um I just start with and
+there's of resources where you can
+figure out all the all the
+differ um here so here the outer volume
+password um I just I randomly said
+people will believe that um it is the
+only if you have a f i just made that up
+prob um
+so
+2015 um now
+you're now you're about to format with
+or format um or encrypt the partition
+now you're going want to move your mouse
+around it says down there um to increase
+the
+strength okay so now so you're setting
+up your front um what you want to do
+when it's finished uh you want to open
+up your outer volume and you want to
+stick some files in right you want to
+make it look um as you know it's you
+want something a little bit sensitive
+but not something that you wouldn't that
+you would care if someone else had you
+want to make it look like um like it's
+something
+important um so so now for you're in in
+volume you're just setting up the same
+you choose different encryptions of
+different different hatch algorithms and
+now you're choosing your volume size so
+say you put 2 GES worth of um of
+information in your outer outer volume
+um then you so was
+8 put six as the hidden volume
+size um now you're creating your your
+ooso special password for your hidden
+volume this is where you keep your
+really sensitive
+um
+that um so contains the the meat of your
+adventures uh here you're just choing
+file system type so whether or not
+you'll store largers uh store files larg
+than 6 on the
+volume um so here it talks about if
+you just write the outer volume you have
+the possibility of overwriting some of
+your inner volume stuff and and you
+really don't want to do
+that so here's where it comes to
+mounting the true
+partitions so to not your inner inner
+Tri partition this is where all all your
+sensitive stuff is you're going to just
+type in your your super long complex
+password um is obviously more sens Poli
+your second if you want to access your
+outer layer for some reason uh you're
+going to want to go to options and
+choose to protect and volume when
+bouncing other when mounting outer
+volume this will keep it from
+overriding um
+number number three uh so oh yeah your
+three choices so number three you forced
+some password um just the um outer layer
+password um so customizing your
+new right so when I had my setc
+app uh you customize that by just
+changing whatever picture you Chang it
+to
+640 and just rename
+it and there's it's right in the
+multi um can you can customize it your
+name contact
+information backround a friend of mine
+even got his flashight back once because
+somebody booted it on accident and they
+they turned it into the the office but
+yeah nothing
+back uh so you finally completed
+few things so what set
+allow or too
+support what if there lock on or pass on
+the BIOS um so this is where PL manager
+comes comes in handy um manager allows
+for you it keeps it keeps uh USB and C
+drivers on it um so you can Mo operating
+systems from hard CD or
+you can start from a floppy if it really
+doesn't support CD for a CD or
+cation so here also is if the BIOS is
+locked or there's a pass um obviously
+someone can tell you've been there when
+you've done this um cuz you're removing
+the the laws um there's more specific
+instructions online but I just want to
+give guys an idea
+so there's a there's a battery on the
+mother that you can use take out and
+it'll reset um and there's also a
+password um clear SE jper let
+called what about defense so we know
+about attacking want to know about
+defense as well
+um obviously we want to put a pass on
+the BIOS and I just went over how that's
+circumvented um with physical access so
+we want to like lock the case so no can
+get into it or um just keep it out of
+out of their hands um some companies
+such as schools set the computers to
+automatically from USB uh to speed up
+for Imaging however this work is for the
+attackers ad attackers Advantage um
+maybe look into some other ways to do
+this as well as keep it
+secure um yeah so that's all so I just
+wanted to do a quick thing so I'm
+looking for an internship this summer
+um look just a base knowledge see see
+what I enjoy the most I contact me
+at6 gmail.com or talk to me after um and
+I just want if there's any

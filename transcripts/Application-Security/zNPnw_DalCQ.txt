@@ -1,0 +1,956 @@
+wonderful kick-off and next we're going
+to learn about kind of coding securely
+how many people in here at one point we
+would call themselves a shitty web
+development if you're not raising your
+hand you're lying
+so mr. Johnson here is going to get up
+here and tell us about some frameworks
+that people can use so that they are not
+nearly as much of a shitty web coder as
+as I am wherever was let's give a big
+all right so yeah I'd say Casey there's
+lots of talks about break and stuff so I
+figured I at least try one on how to fix
+some things so this talks about wasps
+Sam and actually a lot of other software
+security assurance frameworks kind of go
+into all of them or well many of them so
+Who am I why am i here talking to you
+about that my title I'm a security
+architect and net smart but really kind
+of the body of work that I've been
+assigned is any code that net smart
+mates any company makes I'm kind of
+responsible for helping to build in in
+the most secure way possible as far as
+the stuff that I've been working on or
+it might kind of previous companies I've
+always worked in software departments
+but I've never really been a coder
+myself I've been kind of software
+adjacent I'm coder to Jason for a long
+long time and a band security for a
+while too I've helped to build Software
+Assurance programs before but in this
+part I really got to kind of build it
+from the ground up so I looked at a few
+different tools and figured I'd pass on
+some of the knowledge I gained to this
+group so what is a software security
+assurance it's really it's a very broad
+process and some of the frameworks that
+I go into they define it differently as
+well it's really just anything about
+software creation and modification and
+helping to protect the data that the
+software touches now that data could be
+Phin credit card numbers just like
+pretty much any app but it also be logs
+or analytics that's based on that data
+it could be a lot of different things so
+kind of this talk is really targeted for
+a lot of different people who are
+adjacent to or they actively develop
+software it's not just for developers
+all these frameworks touch people and
+take compliance roles or even in
+operations roles there there's plenty of
+stuff in here that a CSO would be happy
+to see and really even third-party
+testers might be able to see kind of
+some like a road map for a client for
+example on getting their own work more
+mature
+so this is kind of a list of the models
+that I talked about in this that's
+certainly not the holistic list but is
+anybody the room use any of these
+anybody we got any Microsoft STL people
+oh man I'm not sure if I can make that
+any bigger I will take that a little all
+right so yeah there is there's stuff
+from ISO NIST Microsoft's STL is kind of
+more one of the more famous ones and
+then the V sim and the OAuth Sam are the
+two that I'm going to talk about in a
+bit more depth so this is a bit of a
+kind of timeline related to software
+security assurance I start this at Bill
+Gates trustworthy computing memo that
+was kind of a really big moment for
+secure software development when he
+specifically said security needs to be
+built in from the beginning of all
+Microsoft products and say which one
+about Microsoft certainly but they're
+the products were like provably better
+after the implementation of the SDL
+since this is your first time talking a
+sec Casey a good shot
+[Music]
+thank you all right yeah good good
+so on this timeline there there was
+definitely some work right after that
+the OWASP salmon missed 800 started
+about the same time but even though
+there's a gap there that was mostly just
+because I didn't want to fit all the
+crap that was going on these are all
+active every single one of those is on
+the last slide our active living
+frameworks that are continuing to be
+developed they're being added to so yeah
+there's there's lots and lots going on
+and kind of a secure software framework
+space all right so I so basically if you
+know I said you know what to expect it's
+a real process based approach it heavily
+relies on an established risk management
+process but really the important thing
+about 27 to 34 is that it's a homely
+like half done
+so you can't very realistically adopt
+this and it's also the only one of these
+frameworks that like the content for it
+is not free on their website you have to
+purchase it in Swiss francs so there is
+the stuff there's content out there
+there's pieces there in draft but mostly
+this one is about half done so this 800
+yeah you certainly aren't expected to
+read that on the left there because it
+is just a giant wall of text the whole
+document is it's pretty hard to read and
+it is a little dated it came out at the
+same time as the iPhone 3G the the NIST
+800 standard has supposed to only apply
+to government organizations but I've
+seen places that are kind of government
+that work heavily with government
+organizations adopt miss standards - or
+at least kind of partially adopt them
+for all these knocks against it it
+actually is a pretty decent standard and
+it lays things out pretty
+well it doesn't really help you build a
+roadmap as much but it does have some
+some heavy controls in place that would
+help you build pretty secure software so
+not terribly readable but certainly
+practical yeah this is kind of an
+example of a chart - this is like one of
+the phases yeah don't worry about
+working but you can see that they do
+have a bit of visualization to help kind
+of drive the software process through
+there and whether where the different
+checkpoints are alright so Microsoft
+this is kind of the beginning of mini
+software frameworks a security
+development lifecycle that they got
+really was the genesis of some of these
+they they focused on security they've
+got a lot of different security gates
+specifically within this lifecycle and
+it's pretty comprehensive and it's
+definitely living it's not really a road
+map builder though it doesn't really
+take you from where you are to where you
+need to be and it's it misses a few
+pieces compared to some of the other
+frameworks like it doesn't know anything
+about operations or governance
+specifically in there I mean there's a
+little bit about operations on Incident
+Response and that sort of thing but it's
+if you if you're on a team that works
+with Microsoft stuff heavily it actually
+it wouldn't be a bad one to adopt they
+have a I think they have an agile
+version of the SDL as well that you can
+kind of adopt that if feels kind of here
+your code management your code building
+process
+so the besom is one of the ones that I
+wasn't even aware of before I started
+doing research in this but I'm really
+glad I found so this is not a security
+assurance program per se but it's a
+descriptive view of what other
+organizations are doing related to
+security insurance so really the example
+is like when you download this PDF
+you'll get a little my item that says
+80% of surveyed organizations perform
+external penetration tests for example
+and that's it's very clear that's in
+there that is fact it is a survey of a
+hundred and nine organizations I'm going
+to list off a few here inside but it
+really just it asks them what portions
+of security assurance they're they're
+doing today so it's really and you can
+kind of cut them by like healthcare or
+something along those lines to see where
+your organization compares to many
+others in your field and that's those
+are just great to have those facts are
+so a couple of the example organizations
+are like Nvidia Adobe Lenovo Verizon
+Splunk and Cisco and there's plenty of
+other big big names that participate in
+this but really all they do is besom
+sends a kind of qualified interviewer to
+in videos offices and they just ask a
+bunch of questions and they say prove it
+and they do that every year it said
+beasts m8 that's because it's the eighth
+one they've released and they started
+tracking some of these organizations
+through so you can actually see one of
+the really nice things about visa oh the
+trend is definitely increased maturity
+everybody seems to be improving
+now slowly but it certainly is
+improvement
+over time it also does full of cool
+charts like this really what this is
+showing there's a green circle and a
+blue circle in the spider chart the
+twelve dots around it are like the
+security practices that are measured in
+the be sent and the going outwards
+towards a chart is more mature so like
+this one is a great example the inside
+one is health care health care is
+consistently less mature than cloud
+which is the green one so you can see
+that like health care and cloud are
+actually pretty close on compliance for
+example and that kind of makes sense
+health care organizations had to deal
+with compliance for a long time they're
+pretty heavily regulated but pretty much
+everything else like code review that's
+one that cloud just just is like one and
+a half maturity levels above health care
+on average from the surveyed
+organizations so you can make some kind
+of nice
+some nice observations about your
+organization compared to the rest of the
+world based on the data from the piece
+and one of the helpful concepts that the
+BCM really defines well is this concept
+that the software security group that's
+just it's really the people in the
+organization that are responsible for
+making software secure and my
+organization that's pretty much me but
+that's gonna kind of that'll kind of
+grow over time as more people get
+trained on these things and it's just
+having that kind of really set group of
+people that are responsible for that and
+it gives like good things like a ratio
+of how many people in the software
+security group compared to how many
+developers that's a ratio that you would
+think with the I don't know you can like
+try and justify hiring more people based
+on that for
+[Music]
+and really everyone struggles to that's
+one thing that you can see in some of
+these bigger organizations who think
+that some of these places really have
+their stuff worked out on average they
+they probably don't so a few of the fun
+stats from the BCM 67% of organizations
+provide awareness training wow that's
+two-thirds that's not bad they
+definitely could see improvement there
+let's see 25 percent identify their PII
+data inventory man that that number
+seems very very low couple these other
+stats 48 percent of organizations
+educate executives on security stuff
+specifically that seems like a pretty
+low number - since that's the thing that
+would result in turnover oh and 11
+percent have a bug bounty program and I
+actually thought that number was higher
+than I expected
+that seems pretty good and that number
+is growing as one of the fastest stats
+and the B sent me over here so all right
+bow boss Sam so that stands for software
+assurance maturity model and it's its
+purpose really is to help organizations
+build a program to make software more
+secure over time this is kind of a big
+this is the structure of it there's four
+main business functions governance
+construction verification and deployment
+and then underneath each of those
+there's three security practices each of
+those security practices has its own
+maturity level which I guess can kind of
+start from the implied at zero all the
+way up to maturity level three
+and these actually map directly to be
+Sims 12 so if you look at like the stats
+on be SEM and you're like well nobody
+else in my my factor my particular silo
+is that mature on X but we really are
+then you do pretty great so governance
+is the first of the business functions
+there's three sub pieces strategy and
+metrics is really the way that
+organizations look at business risk this
+is kind of a few different things here
+having a roadmap on increasing your
+maturity and aligning it with the
+business risks is what strategy metrics
+is generally focused on policy and
+compliance is kind of how you manage
+compliance in the organization how you
+make sure you know when HIPAA changes
+and you need to you need to deal with
+new things how you make sure you know in
+PCI changes and education and guidance
+is really just like keeping all of the
+tools sharp for all personnel to build
+software construction is really about
+how an organization defines goals and
+creates software within the development
+projects threat assessment is like a
+threat modeling it's making sure you
+understand who who would benefit from
+misusing your systems and then
+prioritizing those those kind of attack
+vectors on remediate again security
+requirements is about proactively
+spec'ing out systems to be secure from
+the beginning like what is our session
+timeout why is it that that amount is it
+actually a regulation that our session
+time has to be the X minutes and not
+why minutes a client asked for that was
+the types of things that security
+requirements having a mature security
+requirements program can help to answer
+those can be like this is compliant
+it can never be longer than 30 minutes
+we don't care what the client says those
+are those are really nice things to be
+able to say to be able to say quickly
+based on a mature program and secure
+architecture the the whole point here is
+kind of like secure by default when you
+make a new app when you add on to an
+existing app you want to know that the
+components that you're collecting
+together are secure
+maybe you shouldn't use PHP maybe you
+shouldn't use struts maybe you should
+get rid of that all done an updated
+WordPress those are the types of things
+that secure architecture really helps to
+manage so a verification has kind of
+three all of these have three but a
+Design Review is the first this talks
+about like software attack surface so
+you'd actually identify what the
+different attack points of a piece of
+software are and those are the types of
+things that you can kind of build on you
+can say well based on our threat models
+that we identified in the last couple of
+practices now we have our attack surface
+how do those two kind of go together
+data flow diagrams are something that
+kind of is a result of having a good
+design review process implementation
+review is basically code review and I'm
+going to go into deep dive in a couple
+of slides on what implementation review
+is but security testing is kind of the
+the external the black box stuff this is
+running SAP or w3f against your against
+your apps and maybe having automated
+tests because you're your QA
+organization uses automation having ones
+that specifically exercise the security
+features in potentially malicious ways
+really this is kind of all of these
+there's kind of a common refrain as you
+gain maturity you really you start small
+you start really basic and then you kind
+of add automation and then it's then you
+enforce the rules that you've helped to
+define
+[Music]
+and the last business function is
+operations issue management is really
+Incident Response that's one of the key
+pieces of this but it's specifically
+Incident Response in the context of your
+applications the applications that your
+company creates so it's really about
+consistency communication having a solid
+disclosure process those are the types
+of things that issue management starts
+to lay out for you and then environment
+hardening is just patching and
+monitoring this is a one that it's
+difficult but I do it deep tail and I'm
+one here in a second to operational
+enablement is really about the
+communication between the dev teams and
+the operators of the actual software so
+a great example here is like an
+installation guide that you know that
+all these config items are available for
+the for the software and you know very
+clearly how those make the application
+behave but the application does support
+2048-bit keys but the default is 1024 or
+something like that those are the types
+of things that are in are in this
+documentation and are very clearly
+communicated between the actual
+developers and the operators and whether
+that be the clients themselves or if
+you're a cloud operation or something
+like that code signing is a kind of a
+maturity level 3 thing here or if you
+get really solid but you get a great
+code signing process that makes a life
+easier but you kind of have to build up
+so I'm gonna do a deep dive for for
+three of these security practices and
+kind of take you through the idea of
+going from maturity level zero to
+maturity level three each of these
+maturity levels they offer a bunch of
+different things but activities are kind
+of one of them so education and guidance
+returnee level one is it's two basic
+things its technical security awareness
+training and building and maintaining
+technical guidelines so to really meet
+eg1 you have to define how your
+organization would see those are met
+based on a set of metrics and then you
+actually have to do it which that's
+usually the hard part but to start with
+these are usually not that tough so
+technical security awareness training
+depending on where your bar is depending
+on what your organization is this could
+be sending everybody out watching
+YouTube videos it could be a more
+complicated like half day training and
+building and maintaining technical
+guidelines I could just be a wiki or a
+link to my wasp and some specific
+guidance on that so each of these also
+offers a costs estimate and this isn't
+like a dollar figure but it's like a
+licensing is the cost you have to think
+about for this one the time that someone
+would take developing training content
+is one of the things you'd have to think
+about and that's those are available for
+every single one of these maturity
+levels - which is really nice
+educational guidance maturity level - is
+a role specific training so that means a
+project manager might get security
+training but it would be different than
+the security training for a developer
+it'd be different than the security
+training for a BA it'd be very role
+specific to their part of the software
+lifecycle it also has a concept of
+security coaches the idea that the Sam
+has here is that say like an architect
+level developer gets ten percent of
+their time dedicated to security
+consulting and they would then they take
+extra training
+to be able to be like a secured
+developer but then that time they kind
+of float around various different
+projects in the organization and be
+consulted with for to make all those
+pieces of software better and
+educational guidance level 3 this is
+like the top level you've got a role
+based examination or certification so
+like an x mark for example this would be
+you are a certified secure senior
+developer or something along those lines
+and that means they've taken an
+examination they've completed certain
+amounts of training whatever we really
+decide that is but they may be certified
+and maybe if we have a particularly
+sensitive project we might say we have
+to have a certified architect and a
+certified developer on this project at
+all times but that certainly would make
+the project better and make everybody
+feel a little better about that and part
+of the reason why I'm going into these
+is because you can't really just skip to
+the maturity level 3 each of those
+really builds on every single one before
+it very well and the the same the
+content for it shows kind of how that is
+and even though the metrics that you
+measured at level 1 like just plain old
+security awareness training those are
+something that you measure at each level
+again so they're they're totally
+additive eg 3 education and guidance
+pretty level 3 is 1 plus 2 plus
+implementation review is code review is
+kind of the the foundation of this and
+really level one is it's two pretty
+basic both points it's number one you've
+got a checklist of there's things you
+should look at when you're reviewing
+code and that can be simple I mean you
+can find ten examples of this on a lot
+and then number two it's that you point
+to review high-risk code and that you're
+going to show you've done that and
+that's usually not that high of a bar
+for dev teams and that's that's great
+both of those things are pretty easy to
+implement and I guess that many dead
+teams are already doing that so that
+means a lot of dev teams are already
+implementation review certified level
+one time it depends on exactly how you
+set your metrics and you measure that
+but that's kind of what they are level
+two is using automated code analysis and
+making that a key part of the
+development process and there's the
+documentation has a little thing to say
+like accomplishments of ir-2 so if you
+are a or two these are the nice little
+bullet points you can send off to
+leadership you can say that development
+is enabled to consistently self check
+for code level security vulnerabilities
+and stakeholders are aware of
+unmitigated vulnerabilities to support
+better trade-off analysis those are kind
+of the real goals of implementation
+review level two and you should be able
+to say yes we do all these things when
+you've completed that level three is
+just a bit of customization of your
+automation that you've already
+implemented a release gates so an
+example would be no new high
+vulnerability x' from static analysis or
+no high vulnerability from static
+analysis those are the types of things
+that you would implement here and
+[Music]
+yes Oh like a success metric for level 3
+is say 75% of projects are passing a
+code review on it in the past six months
+so that means you have to figure out the
+number of projects you have to audit
+some of them and then you have to figure
+out whether they pass or not and that
+could be lots of different things
+the actual audit itself but that's kind
+of the number that it rolls up to and if
+you've met those types of success
+metrics you would be IRR 3 environment
+hardening this is really just management
+of your hosts that are running your
+software for cloud organization this is
+pretty important patching monitoring
+tools like a CCM and puppet are really
+going to be the ones that come into play
+here and really you just want to make
+sure your environment is healthy so a
+level one for this is like having active
+or having real documentation for what
+the technology stack is for running your
+software on these hosts that's that's
+tougher than you might think but yeah
+documentation is certainly a piece
+that's usually kind of thrown by the
+wayside when you're just trying to get
+something to work security updates the
+third-party components starts to kind of
+come into play here as well how many old
+jQuery versions are referenced in your
+site that might be kind of an issue to
+really makes environment hardening a
+routine process that you are monitoring
+against a baseline you actually have a
+process to take hosts out of a non
+compliant status and pull them back into
+compliance and you have formal
+expectations for that and then three is
+really just you have an audit program
+you've no different tools one of the
+interesting things that you'll get to in
+environment hardening 3 is that you
+specifically have like talk back and
+forth between developers and operations
+folks like hey we've got these f5 these
+are files do all kinds of really awesome
+laughs stuff that might be able to help
+your
+so then the developers are thinking
+about that when they build it and the
+devs and the hops guys are talking that
+means you've got a more secure product
+that means you're leveraging a bunch of
+functionality from say the f5 switch you
+might not be able to do before
+you might just kind of turn them on and
+say please work so that's those are some
+of the great benefits from having a
+really mature environment hardening
+security practice so based on all that
+really what is the Sam it's a 72 page
+PDF on the website the OWASP website has
+a wiki on it as well that most of the
+data is on but the PDF actually has a
+little bit more data which is kind of
+nice and a bit better stuff on it so
+I've been like control laughing around
+this big old PDF for a while and it is
+it's still very usable there's a there's
+an Excel document they assists with
+assessing yourself the idea is like the
+Excel document has a bunch of questions
+and then it kinda has this drop-down for
+answers and based on those answers in
+your organization it will give you a
+maturity rating so you can go home and
+test yourself or well not go home but
+you can say well I think we do security
+awareness training so you can say oh
+yeah yeah most of our dogs get security
+awareness training and I don't get you
+like halfway it's a maturity level one
+so there there's a few different tools
+out there but mostly it's just content
+in like long form and it really is it's
+surprisingly usable even in that form
+it's not just a big wall of text there's
+lots of great charts and there's lots of
+great organization
+[Music]
+so the self-assessment is really one of
+the first things you do implementing the
+Sam this is basically asking and
+different people from around the
+organization different questions the
+there have been very few organizations
+that I've been a part of that I've been
+able to ask like one person all of the
+different questions for this lifecycle
+like hey do we perform do we check into
+it every year to make sure nothing's
+changed in the context of our
+organization and also do we patch our
+servers like usually that's different
+people that answer those questions so
+you're gonna read a few different people
+based on their domains they can answer
+and you kind of fill that out in the
+assessment on basically one what you
+think and this little document here this
+is just a screenshot but it'll give you
+a little number over there on the right
+of where it thinks your maturity level
+is for this is education a guidance
+number one so you're importantly there
+that's the type of thing that you can
+so eventually you get two results and
+it'll kind of look like this so you can
+see that say for policy and compliance
+you have a bunch of particles you're
+partially there for maturity level three
+on issue management you're partially
+there for maturity level 3 but on secure
+architecture like you got basically
+nothing so you can take that information
+and you can kind of start to feed it
+into your relevant process oh there's
+there's a self-assessment detail which
+is basically the same thing it goes into
+it but really all it is is proving the
+fact that you answer those questions or
+not proving the fact that you did have
+75% of developers actually take training
+and the self-assessment the detailed
+self-assessment that's what you'll
+perform at the end of every phase to
+prove that you have actually made it to
+the next maturity kind of milestone that
+you meant to so it's like an audit but
+it's everybody's internal so it's a
+little friendlier than the normal audit
+[Music]
+so a road map you build it on these you
+can kind of see like the first one you
+ramp up a little bit early so in phase
+one you ramp up to maturity little one
+but then you kind of skim the face you
+just let it sit at little one and then
+you go all the way up to level three
+towards at the end down here in this
+bottom one this one you you just get
+level one you skip phase one totally and
+you don't even ended level three two
+that's one thing about the the Sam I'm
+in building your own roadmap it's like
+you don't have to get to the maturity
+level three it just might not be right
+for your organization some of these
+things just are not going to be as
+important for your specific organization
+as they would be for everybody else and
+that's a really great thing that the Sam
+is built to be very flexible it's built
+to work around your organization's needs
+and you build your own roadmap it just
+kind of offers some guidance another
+thing that I kind of ran across during
+this is they you can usually align to
+what's in flight already you know that
+in the next six months you're gonna get
+like a new sim product in place I mean
+it's gonna offer these two or three
+features that you don't have already the
+Sam talks about using a sim in some of
+your issue management so you can kind of
+slot that in there you can make sure you
+implement the Sam or the sim tool it's
+very confusing the sim tool in a good
+way that aligns with how the Sam does
+and maybe it reminds you that you're
+forgot oh hey
+we've heard this other thing up here
+that's kind of a prereq that having a
+good issue management program would
+really help to build on so some examples
+of building a roadmap like a larger
+organization that still uses kind of
+like the waterfall development method is
+you've got long long dev cycles you
+write a piece of code and it's 60 days
+or 90 days before it ever gets prod
+those are the types of organizations
+that a much longer phase length which is
+one of the main things for building a
+roadmap
+that makes a lot more sense and those um
+really I don't see any good reason to
+use any phase like other than either
+three months or six months because those
+can align to your fiscal year which
+usually makes a difference so that you
+know you can kind of plan a little bit I
+know that these costs are coming out
+based on security insurance and they're
+aligned with fiscal year stuff the the
+phase length is really how often do you
+want to audit the activities that you've
+done and then the the content
+specifically within those phases is kind
+of how you manage it past that so say a
+monolithic resistant to change
+organization they might do six-month
+basis and they might do six of them
+because they know that it's going to be
+pretty slow and not throw a whole lot of
+content in each phase but a smaller
+organization and more agile organization
+one that everybody's really jazzed about
+security just so excited you might be
+three-month phases and you might only do
+four you might just be like by the end
+of this year you're going to be 100%
+secure so really you've got to like it
+set metrics that's how you measure that
+you go from one face to the next I'm in
+setting metrics is it's a bit more
+subtle than you'd like to think than
+you'd think
+so the Sam offers a lot of example
+metrics the Juju's so a great example so
+for strategy level three yuju or one of
+the metrics is like 80% of projects
+reporting security costs in the past
+three months well that means you have to
+know what a project is very clearly and
+sometimes that's a bit of a blurry line
+and you have to be able to
+all of them and then you also have to
+have some sort of infrastructure to be
+able to build back to the security
+department so these get pretty
+complicated when you set these metrics
+but they all really need to be
+measurable like the the issue that I run
+into is like who is a developer and
+who's not who is a developer who's not
+that's the type of thing that really
+it's kind of hard to define sometime
+because there's people that write code
+that don't have developer in their title
+there's there's architects there's
+there's managers sometimes that write
+code and so do all of the same things
+apply to them that might be security
+training these are complicated questions
+that you really do have to answer it's
+not just like oh there's an ad group for
+this put a little check mark check
+checkbox next to their name and they've
+performed their tests and then once you
+exit when you get into the point where
+you're executing your oh man
+yeah the face length is really one of
+the pieces that you've got a pick and
+then when you start of course aligning
+with with fiscal year is my my
+suggestion I'd also say once you start
+to build a roadmap to really only get a
+lot of detail out based on the phase
+that you're in so you start at phase one
+get a lot of detail on phase one you you
+know what your to accomplish six months
+from now at the end of the phase but
+don't really worry about phase two it's
+just not important right now because
+you're probably going to miss something
+in phase one it's probably gonna roll
+over you're gonna realize that your
+measurements were all just screwed up
+for that that account of vulnerabilities
+is not a number that that is the right
+way to measure things and you'll have to
+roll those over that's fine the the
+framework allows for that really well it
+certainly supports it okay so you
+completed your roadmap you are now
+totally secure you build this great
+great process what now so after you've
+completed that a lot of these maturity
+levels they actually kind of have these
+going on doing activities that you you
+audit your code review processes every
+six months and you make sure that people
+are code reviewing as they should in
+early tech changes to fast or really
+ever be done with this type of thing too
+so even if you have all these controls
+in place you're going to throw them out
+the window once AI starts writing your
+code anyways
+it'll be like well is this code gonna
+kill me that's the type of thing that
+you have to deal with them so in
+practice some of my observations um the
+output of this process has really been
+pretty polished everything that has come
+out of this I would be happy it's like
+pretty easy to make a PDF or a
+PowerPoint or whatever that you'd show
+to your execs um it's high-quality stuff
+the wording is right it's very
+comprehensive as well a minute certainly
+polished and that's it also seems like I
+mean more importantly it seems like a
+solid roadmap to get us from where we
+are to really where we aspire to be
+which is great so the call to action you
+guys want to get started
+really I might actually suggest starting
+with the BCM and just going to download
+that from the VM I think it's be CENTCOM
+or something like that download that
+check it out try and figure out based on
+those survey results based on those
+percentages where your organization
+would fit in and then you can kind of
+bring that up maybe get a little bit of
+traction around trying to improve some
+of those numbers because you realize
+you're you're two levels behind a lot of
+the other places and a lot of the other
+companies in your your silo then at that
+point you can start to pull down the Sam
+try and have a good idea of what you
+need to get to a maturity level maybe
+take that survey and start off with the
+assessment where you ask people a few
+questions you fill these things out you
+say huh
+we get we do security training for our
+devs but it's basically the same
+security training everybody else get
+it's like don't click on links and
+emails that sort of thing so I don't
+think that really qualifies blah blah
+blah you go through there you figure out
+that you've got a couple of them that
+are making maturity level one and most
+of them that are not and you can really
+start from there that's kind of building
+a roadmap so the tools are all free
+they're all totally available and
+they're really easy to get to and I
+would highly suggest adopting these if
+you're possibly in an organization that
+you can that you can do that that's
+pretty much it for my presentation but
+yep
+[Music]
+so let me see if I hurdle that so it was
+a you asked about oh yeah I mentioned
+the problems getting traction and you
+asked about maybe getting the champions
+to help leverage that as well so yeah
+that's a fantastic idea
+security champions are people that
+they're usually the higher level
+developers in the organization or it not
+necessarily developers but people that
+are very technically skilled it's a
+really the issue there is that honestly
+they're they're dance books already full
+their dance principle so you've gotta
+get the I mean the number one important
+thing for any security organization is
+like an executive support is management
+support I'm making the whole thing work
+and so if you get that and you can get a
+developer's time its marked at all the
+first time and you can have a little bit
+of stuff and he'll be like yeah I'll be
+a champion a hundred percent that's
+usually the case and that's certainly
+something that you can do in an
+organization that's really open to that
+so yeah that's a great idea
+I'm getting everybody to work for you
+started doing the work yourself totally

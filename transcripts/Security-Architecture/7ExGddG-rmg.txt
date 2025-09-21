@@ -1,0 +1,944 @@
+um
+the point of this talk is to share some
+things that i've found or that i've
+learned and shared with me that i
+thought were very useful um these are
+really common things that are they're
+and if you've been watching the news
+you've probably noticed it's not the
+news the internet
+cryptography is moving really fast like
+every i'm always getting links i always
+have tabs open there's too many things i
+can
+keep up with about uh
+different attacks nsa's backdooring this
+uh there's a bug in
+paypal's this and it's all crypto stuff
+it's moving really fast i think we're
+getting to the point where people are
+really discovering a lot of this it's
+been kind of late people have been
+sitting on it for years
+nobody's looked into it people are kind
+of uh
+learning all these things there's a
+newest attack on ssl all the time
+um
+there's just a lot of stuff that's
+moving really fast i think this is very
+very interesting and also timely
+uh
+so my goal for this talk
+is that when you see random numbers like
+this you're in an x like this that you
+actually
+can
+have an idea of what uh
+you know what possibly might be going on
+there uh well you know
+before you have knowledge for cardboard
+you might think
+that's just random stuff i can do
+nothing with it go on move on to the
+timing on something else i'm gonna go
+find crosstalk scripting or something
+but now uh hopefully after you've seen
+this talk if that means nothing to you
+hopefully
+and look for patterns and try to
+understand the mistakes that developers
+might have made
+um
+so
+i was a little challenged
+going back to that previous line to
+understand the audience and who we have
+here
+um
+hey alex
+looking at this slide we're all gonna
+need this shot all right
+so uh we do have a tradition here the
+first time that you get up and give a
+talk and get a shot even if you are the
+founding godfather so
+um
+so it's a little challenge to understand
+the audience
+i'm just kind of curious i didn't know
+what uh what really to target this talk
+so i'm just kind of curious
+i have you guys familiar with uh raise
+your hand if you're familiar with some
+of these
+uh terms up here some of these
+attacks okay besides ssl obviously
+um
+and uh
+how about do you get are there any
+developers in the audience to actually
+write code or i guess fantastic is the
+right code they actually implement
+one
+and how many of you in the audience
+raise your hand if you review systems
+that implement crypto if you're a
+independent
+application security or security manager
+or something like that that how many of
+you are responsible for photography i'm
+not responsible for photography but
+you're responsible for security
+of programs
+so
+one thing
+if you've never heard of these terms
+just kind of set the expectations i'm
+going to try to cover them at a kind of
+high level and keep everybody uh
+interested in these
+but
+you know if you haven't heard of these
+you
+will hopefully gain a cursory
+understanding of these but
+hopefully learn enough to go back and be
+able to learn more
+um
+and also hopefully if you know from all
+the easter eggs hopefully i don't know
+where you did that because i've tried to
+kind of break these into
+uh kind of easy medium and hard
+ecb
+being easiest and that's itself and
+being hardest i guess um
+and uh so as we go through them
+hopefully
+i don't lose you but the
+um it will kind of reset three times at
+also if you think you've been if you
+have any questions especially any
+questions that other people might be
+having feel free to ask at any time um
+and feel free to
+interrupt or
+all right so
+high level glossary stuff
+terms i'll be using a lot uh plain text
+is
+just the original data uh it's
+unencrypted unencrypted information
+ciphertext is the encrypted information
+it's you know it's usually
+represented by random hexadecimal that
+kind of means nothing at that point
+um no plain text if i say that that
+means we actually know what's going into
+the
+end of the data so
+um if you just inter-separated messages
+it's not no plain text if you're
+actually producing those messages like
+if you're using it's being encrypted
+that's no plain text so that actually
+kind of provides a lot of value and
+makes
+a lot more attacks possible maybe maybe
+five times in the attacks possible
+that's totally our investment
+xor is a kind of a binary operation if
+you aren't familiar with xor you can
+kind of think of it as a reversible
+edition
+that's a really basic definition but if
+you aren't i don't want to go into the
+details or if you
+aren't familiar with it you don't want
+uh so another thing is block start block
+ciphers of our stream ciphers
+first we'll be talking about block
+ciphers the second we'll be talking
+about string ciphers
+so block cipher is operated on chunks a
+data so
+if you have a value like set kc
+then you want to encrypt the block
+cipher
+it's actually going to be padded out to
+eight bytes
+uh or actually any number of bytes that
+the blocks that have so usually a lot of
+times is eight or sixteen sometimes
+thirty two and
+then we padded it out uh and encrypted b
+bytes at a time so you you have to
+basically input a certain number of
+bytes into a block center
+stream ciphers operate one byte at a
+time
+so if you're encrypting the value set ac
+you would just take kind of if you can
+it's kind of interesting the way they
+work they just generate a simple key
+streaming material and exorcism to
+produce the cyber text
+we'll kind of use this information later
+that's why i mentioned to see you now
+you can see on the uh sub kc there it's
+padded out that's
+also
+a
+something to know with a lot of
+cryptographic flaws
+we won't get into those
+laws
+so
+first thing uh as i said the agenda was
+ecb mode so
+uh comments there's
+these are from wikipedia the common
+block cycle modes there are
+six of them there
+ecb is the first one we're going to talk
+is very common also
+it's ecb's
+comp is very simple to implement but
+there's common mistakes when
+implementing it so you see it a lot
+because it's easy and you see it screwed
+up a lot because it's easy to make
+mistakes
+ecb is the default in many languages and
+you completely look at the language to
+see most people just you know google how
+to
+encrypt their data click on first link
+copy and paste and then they uh
+they don't have a good understanding of
+what uh what they're actually doing so
+you see you see doing ecb mode a lot
+so with ecb mode you're just operating
+one block this time and encrypting that
+then you move on the next block and
+completely forget about what you just
+did and encrypt that again so if you
+have the exact same input you're gonna
+get the exact same output out so
+uh
+and that's a
+presents a lot of vulnerability
+there's a lot of things you can do with
+that
+so hopefully you guys can see that
+if you encrypt a value i think i have
+like 100 days there i'm not sure how
+many
+then
+you get
+a bunch of blocks with the exact same
+output
+the
+as you can see all the blocks for the
+last one there's probably an end to file
+or a new line or something like that
+it's uh
+i'm going to stamp that last encrypted
+value once you encrypt all those you get
+uh
+a bunch of repeated blocks so
+all those a's encrypt and they become
+the same thing over and over and over so
+this is fine in some scenarios but but
+not in others
+and it's important to understand when
+it's when it's okay when it's not
+uh if you if you don't have a good
+understanding i guess it's probably not
+so going uh to the next slide we we
+threw in a couple bees in that uh
+plaintext there and it and it messed up
+one block with a ciphertext so you can
+see how
+one
+little difference will completely mess
+up a block with all the rest of the same
+so exact same input equals the exact
+with cbc mode
+the
+same input doesn't equal the same output
+each block is chained together so each
+block relies on the block before it
+and you encrypt uh
+an encrypted order so
+any changes
+if any
+everything you encrypt will affect
+everything every value after it
+so here we have encrypt all days we see
+no pattern that presents uh more of a
+and we throw in a couple bees here
+and we get uh
+a bunch of randomness as well it really
+doesn't present a pattern we don't see a
+pattern so it's
+just a grocery level it's it's it's not
+providing any value to us as
+attackers
+all right so
+here we're going to
+take this is a very common example of
+ecb mode i think it's kind of
+one of the most basic uh
+attacks and it's it's pretty cool
+um so if we encrypt each as as you guys
+probably know
+is not compressed they're just straight
+data saved in a file format
+if you encrypt each value
+individually uh with ecb mode you're
+going to see that same pattern so
+if you you're just as fast with uh
+with the with the plain text before if
+you do it with an image you know and
+prepared for might uh encrypt a
+developer might encrypt
+this and
+with ecb mode and they think it's okay
+they're encrypting everything is okay
+but once you actually encrypt it
+you see something like this
+obviously that's not providing any
+security you know if that's a secret
+message and you're using ecp you have
+been encrypted you see a bunch of jump
+ropes coming out out of it but you're
+not
+it's very easily recoverable you can see
+the pattern clearly
+the developer thinks they're secure you
+take
+a two-minute look at it and
+and you can break that drifting
+apparently it might cast that encryption
+because the griffin's still there it's
+just a matter of uh
+seeing the pattern you know
+kind of exploiting the awareness of what
+they did wrong
+so in this case they should be using
+cbc mode or something like that to uh so
+that each of each blog is kind of random
+all right so that's uh
+that's ecb mode
+that's pretty obvious that's pretty
+plain today that's a problem
+uh let's see um oh and uh you know
+there's other attacks with dc remote
+that wasn't all of them but you can also
+move blocks around
+you can
+kind of align the blocks to block
+boundaries there's a there's a good talk
+at black 2012 on that like thomas
+contract or something
+which is really interesting about how
+you can actually decrypt the data if you
+control the plain text
+and there's also once you have a good
+understanding how these things work you
+can just kind of stare at it and think
+about what the developers might have
+been doing wrong and then attack it from
+there so this isn't a conclusive list
+this is uh horizontal plus this is just
+kind of a starting list and
+you really just kind of think about
+what's going in what do i have control
+all right so for the second part is uh
+stream ciphers so we talked about block
+ciphers versus strings and personnel
+were on the stream ciphers
+as i was passing the menu we next or
+each fight with the key stream so at the
+top there
+is
+some you know the one encrypt in the
+middle it's the key stream that comes
+out of the cipher and then the bonds
+you're encrypted
+so it's really simple you have this
+magic part where the
+key stream is doing its thing
+and then generating the key stream and
+then
+you just have to export it's really
+simple and you get your encryption
+volume so the actual uh
+the actual part once you ignore the
+whole algorithm is really simple there
+uh one really key thing probably with
+all algorithms but especially especially
+stream ciphers they say every repeat
+your initialization vectors and you
+if you've cracked left or heard about
+cracking web or don't use what that's
+because they uh have the web pass that
+weakness that it sometimes represents
+the location went through so using rc4 i
+think uh so this is the exact contact
+you're doing this is exactly what
+happens you're you're you're uh you're
+exploiting the weaknesses that we're
+about to talk about
+um
+when you have repeated the
+naturalization vectors and control plain
+so with
+a here's the example showing that if you
+encrypt a set kcu with rc4
+you're just using that argument you get
+used
+there
+and if you encrypt it again you can set
+kc back out so this is an interesting
+property that's useful in a lot of
+attacks keystreams are really fast
+people use them a lot just because or
+because they're fast
+but they have a lot of weaknesses in
+they can be exploited so you have to
+know what you're doing you're using
+keystream
+so
+important is if you have a url like that
+and you have a
+account id you see some encrypted value
+you're trying to decide if you can break
+this thing you're looking at it and
+saying okay that's the account id i
+don't know what that means um okay let's
+uh let's modify it
+uh okay nothing's happening i'm not
+getting any other people's accounts i
+put
+so then you look back and say during
+login
+you have this account id
+your
+your your account account goes in the
+url
+and then you get this encrypted you get
+uh so you think okay well
+uh okay what what's what's going on
+there what are they doing how that's
+obviously being encrypted
+um you look at that it's it's a seven
+seven bytes of purpose values we found
+during login they give you uh two
+accounts if you're doing pinterest or
+you have two accounts and you're not
+going to contest
+and uh
+you
+log into this other account you get this
+other separate types there so you say
+okay well let's take a closer look at
+those and see what those uh
+those two values are are doing there and
+what they might mean
+so you have those two accounts they both
+log in oh look they have two two numbers
+in mind and they both give you the same
+account
+two of the bikes are the same so
+okay okay seven bytes that doesn't make
+sense to the block saver because they're
+always like eight or sixteen digits
+at accessible
+and uh
+yes and then the
+account id is also giving uh
+when the second
+digit is one and the fourth digit is
+four you get the same output so like
+okay well they're doing extreme cipher
+same initialization vector because same
+input same output
+okay
+so from there you can just based on kind
+of the properties of a stream cyber you
+can
+xor we can take our original one comedy
+and xor it
+and get the key string material so
+that's kind of the keys to the kingdom
+uh
+and so we have the key stream so now we
+can generate our own accommodates let's
+try to start a number one let's say
+let's put that in the decimal
+and
+uh
+it's all over the place people just
+think oh rc4 it's uh something i've
+heard of it's probably secure let's use
+that
+another thing we won't get into is you
+can decrypt
+other values by by exporting the
+ciphertext value and throwing your
+context value it's kind of a huge
+property of xor or transfer or something
+like that
+but basically you can
+get your uh get decrypt other values
+that you think
+you don't even have any access to so if
+you if you get the encrypted value you
+can actually pick up those ones once you
+know the information we just discussed
+um there's a reference there at the
+bottom which is really good there's
+that's the title of it on the perfect
+side at the end if you want to
+walk through that and walk through the
+actual operation
+all right so that was uh rc4 we've been
+through ecb and rc4 now we're moving on
+to ssl at times so i was originally just
+going to kind of focus on those two
+attacks
+but then
+i think after i signed up for this talk
+the yeah was that i was actually
+things about it
+so there's been a lot of attacks on ssl
+and tls
+which you've probably heard of similes
+do
+there's ssl renegotiation which uh
+these are different attacks on
+ssl beast is a
+chosen plain text attack across packages
+ecb it's kind of complex it was really
+something that somebody thought about 10
+years ago they went through some
+academic papers read about it and
+thought okay let's figure out how to
+implement that and they did and they got
+it in it and they wrote the ssl
+crime
+is another
+another attack on
+ssl
+prime time and breach of hawaii is all
+these professionalism
+crime time and preach are all
+compression attacks so we'll get into
+what that means here in a minute
+they
+are uh so
+crime is on http requests
+uh they use ssl time is a attack on
+responses that uses
+a time bridge
+very supportive of time
+uh using its eyes instead of timing
+itself
+we'll get into those a lot more
+especially for engineering
+lucky 13
+when you use rc4 the first 257 bytes are
+under the random so you have to use them
+right when they did
+so
+there's some a little bit of information
+the history of this is really
+interesting i didn't realize this when i
+got into it i was thinking okay new
+attack this is uh brand new i'm going to
+learn something
+that's kind of it's just cutting edge
+here
+and
+the interesting thing was as i dug into
+it learned more breach was actually
+discovered
+really
+by uh with with the release of the crime
+attack and for that whole compression
+type they mentioned it in their slides
+as kind of a thought
+and
+nobody really did anything with it
+nobody really
+talked about it or exploited it probably
+those guys that released it and a few
+other people kind of knew was sitting
+there and nobody really did anything so
+it's kind of lurking i feel like as a
+security committee we kind of missed
+this one but at the same time we uh
+you know it was good the breeze people
+brought us to our attention but it was
+kind of introduced as a brand new attack
+and really it was taking somebody else's
+you know scroll through the way through
+somebody else's slides and then make
+that into a presentation so with little
+contribution so i'm kind of confused
+about the history of it
+it was really they got their own website
+it was really good looking and
+everything so we got quite a bit of
+press
+but with just finishing
+time attack
+uh was actually before breach
+at blackhat eu it was it's really
+similar to breach but they didn't
+release the website they didn't release
+any proof of concept stuff i don't know
+why but didn't get much press it's
+really cool at times also
+it's uh
+applies more commonly but is not as
+effective
+so time's cool too it's really similar i
+heard about bridge all over but i didn't
+hear about time at all
+so it was kind of interesting i really
+didn't hear anything
+about uh
+the bridge was
+part of crime at the time so i was kind
+of surprised to learn that it was really
+kind of big it's work kind of scroll
+through the white paper and read some of
+the sentences to get find any
+attribution
+all right so we're getting this region
+type here it was uh released this year
+or i guess kind of publicizes here from
+through his life so with gzip
+compression if you if you
+as you can imagine with the compression
+if you've ever thought about how it
+might work or see how it works any
+repeated values are compressed
+so
+if you i went through and encrypted or i
+compressed all those values set kc
+and then
+different values there are some guesses
+right so i guess it's wrong we looked at
+the number of bytes that they presented
+so this is pretty clear if you repeat
+the same kind of string there you're
+going to get a smaller number because
+it's able to compress it so
+if you use set kc
+twice it's not going to take you it's
+going to be able to compress rather than
+if you use on against
+asdf or something like that
+uh
+it's part of that so that's i mean
+that's pretty obvious impression stuff
+uh which is which is kind of why i'm
+surprised this this worked in ssl for so
+long it's really not an ssl weaknesses
+http witness it's just kind of
+fundamental weakness on it's using ssl
+um
+in a situation that it really shouldn't
+commands
+uh
+so then so so ssl is obviously encrypted
+so
+if you
+compress
+then encrypt
+you get kind of the same result repeated
+values equal
+smaller smaller uh smaller outcomes so
+so you might think okay well
+why don't we encrypt and compress well
+the answer is
+you're not going to get any compression
+if you just have random data you're
+getting compression because you never
+repeated values you have lots of white
+space it's all packing it down you need
+to have 100 kilobyte responses packing
+it out of 20 kilobytes because you have
+any lines of white space and values that
+are commonly repeated and if you
+compress it down so
+http compression which is used in a lot
+of http responses
+compresses and increases basically
+pointless
+to encrypt and compress
+so you can still see
+those encrypted values if you can
+control
+what's being input there you can see if
+you can only control i guess you know
+once they're right there
+you know if your guess might have been
+right because because you don't know the
+secret you can only control the mind
+gets part
+and
+so the limitations on bridge itself are
+the knee
+http compression this is compression
+attack all these compression potential
+compressions so crime relied on tls
+compression i'm everybody disabled
+whoever is paying attention to
+tls compression uh breeze realizing http
+compression
+i i checked a few
+of the compost common websites and
+i went through about two in my head
+before i had one that hd compression
+enabled i didn't check uh
+i didn't exploit this on a rogue website
+i just kind of checked to see if
+compression was enabled and then i
+worked on the exploit uh and i haven't
+done anything yet of course that's what
+so
+it you can only recover since that's
+that's the compression you can only
+recover what's being compressed right so
+that's that's http compressions only on
+the responses i think it can be
+requested so that's uh it's the only way
+to apply it there
+so attack diagram for
+breach
+is is this so the black of course is the
+attacker
+so if you can get
+uh kind of man in the middle of ssl they
+they can just let it pass through don't
+don't don't take it and decrypt it
+ssl
+and then you can you can get them to
+visit your page so you're getting your
+fussing responses you you bet something
+uh that's basically how breach works so
+if you
+kind of
+further explain the kind of part of the
+tech
+so you uh you control any sort of
+webpage you get them to
+uh
+visit visit it and then you issue tons
+of requests
+your webpage tells
+uh
+their computer to issue tons of requests
+to the bank.com or whatever whatever
+that server is and by looking at your
+spot sizes you can tell what
+uh what the what the value is what the
+what what's what's encrypted there
+so right there you're
+you're basically
+it's a breaking ssl but you're really
+really
+this works
+so i spend a ton of time right at school
+to
+let me get this step on that screen as
+all right so
+we have a tcp relay that doesn't
+intercept that cell
+just counts the bytes
+we have a
+server that responds to the client
+saying go visit the site go request this
+go request hey
+looking at the tcp relay looking at the
+uh if you're not about to come back
+this uh this breach master that's also
+telling
+the client what i request next and
+tracking everything recording
+can you write that tool or is that hard
+yeah i don't think there's any uh
+i couldn't find any bridge exploits but
+i plan on releasing this
+so there so the bridge guys release
+proof of concept code for breach this
+sucks for a while
+it's uh
+it's asp.net it works it's like you have
+to run this client server it just
+communicates back with each other this
+is actual in the browser it's working
+i i mean i wrote the website of course
+because i'm you know it's not going to
+throw the post because you know i'm not
+just going to have to work on facebook
+or something to release it but uh so i
+wrote this and it's actually working in
+the browser which is just really the
+hard part
+um getting getting everything working
+communicating back and forth tracking
+which
+requests responses are going tracking
+the tcp uh bike count and then
+going back and forth so i plan on
+releasing this the code's nasty i'll
+admit i don't i'm not comfortable
+releasing it yeah just it's just
+i i just got working and i need to clean
+i don't know what the projector did but
+when the white background came on it
+kind of like just okay well
+all right so we got our i'm going to
+change windows here
+so we got our get our tcp relay running
+this counter bikes we got our breach
+master which is which is the web server
+it's the
+evil web server and also the bank.com
+because
+i'm not going to sit here and attack the
+live
+site
+all right so i'm going to request it
+let's see
+so if we go to bank.com we have trust
+asserts ssl this tab can see at prime
+pays
+the uh this is some secret value that
+only this i can see you know
+different tabs should be able to see
+other types of data this is a
+fundamental fundamental property same
+origin policy ssl you should not be if
+you're a different site you should not
+be able to read this
+all right so we're going to refresh this
+page here and you can see what happens
+uh you know it's going to run
+it's going to go quite a lot of
+that's the client side it's the server
+side
+yeah
+so if you look here hopefully it's still
+running it's just not scrolling
+um the
+byte counts
+i'm requesting every byte a b
+c
+this might be scrolled up either way it
+still
+so look works
+we know because of the tab the secret
+value is uh
+but c is 254 bytes every other
+request is 200 i'm sorry 294 bytes every
+other question 295 bytes so it's going
+to continue and go on through and uh
+and count the number of bytes for each
+request in response obviously this is
+going all going through ssl it's a real
+cert but we can see
+so the weakness is because it doesn't
+chain you'll be able to just through
+so
+the weakness is that the value doesn't
+change is that your question
+again
+a little bit maybe
+all right so i mean it's really not
+important as long as you can see that
+sydney encrypting the uh
+it's bypassing ssl and decrypting the
+value of the other tab
+we have
+prime so far solved here it could work
+faster i just put in a lot of
+timing breaks because
+of race conditions i was just lazy
+writing the files and opening up files
+and stuff
+that tcp really has two separate
+programs i should really do one of those
+thing code
+to just kind of everything so i just put
+pretty cool stuff not too often it's
+just completely
+you know bypass itself
+it's i mean i'd call it breaking ssl but
+it's uh
+ssl it's fine it's actually being fresh
+so now that you can't understand breach
+hopefully
+it's a compression attack the
+time was basically the same thing
+this block had a u
+where it was
+instead of man in the middle of
+ssl
+to
+count the bite size it was just entering
+the amount of time with the javascript
+so let's say we sent out the packet see
+how long you could just come back if it
+was 300 milliseconds it would say it was
+one
+of those
+30 milliseconds i would say or something
+like that and then uh and then
+eventually the same thing the cool thing
+is remotely you're gonna attack somebody
+in um
+olathe
+you know all around the world just using
+that by getting the timing right so they
+didn't implement the
+time attack but i plan on implementing
+that as an extension of reach i think
+breach getting pretty solid getting the
+cochlear it'll be good start and then
+and then working on time would be a good
+second step so
+um being able to i mean this is all over
+the place
+nobody's really
+fixing it i don't know i haven't seen
+that much so this would be cool too
+it's important this stuff gets fixed
+by disabling
+compression
+this will be fixed there's no other ways
+to check out
+the
+different slides here there's bridge
+attack.com that has uh different
+information about other videos and
+strategies
+they have some
+kind of bad ideas about randomizing the
+amount of response size and stuff which
+but uh it's it's worth checking out
+the
+all these links actually though i said
+firms they based on an excellent
+overview on all of these attacks on ssl
+the
+time attack which was completely
+unnoticed by everybody that i've talked
+questions

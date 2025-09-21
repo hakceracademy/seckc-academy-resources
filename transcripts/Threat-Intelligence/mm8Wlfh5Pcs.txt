@@ -1,0 +1,322 @@
+and good evening everybody house there
+we go
+my name is John stalker I am a principal
+security consultant at 33 their sponsor
+tonight but this talk has nothing to do
+about that or in any way so this is
+actually something that happened just
+recently in an intern response that we
+had and I thought was kind of
+interesting
+Tyla talk is did that just really happen
+look at that fan so first and foremost
+we are totally safe
+right right we trust everybody we do
+business with we trust everybody we do
+transactions with we weren't going to
+make the largest transaction transaction
+of our adult life we're gonna trust
+somebody with a gmail address or a
+live.com account right all right so they
+put together you know scenario we got an
+Aunt May over here she's old
+there were 70s she just cashed our
+retirement couldn't buy a nice big house
+she has Bob the realtor and Joe father
+Elmer's assistant right and
+unfortunately in the middle there is a
+nice little hacker Dave so what happens
+to set up Aunt May calls up her realtor
+says I want to buy this nice new house
+let's go make this happen so Bob sighs
+called Joe is system based artist and
+the emails back for in things ready to
+go all right
+she's ready to go she's got the money
+she found the house she wanted let's
+make this transaction happen to them Sir
+taco title company because that's what
+happens when you start these things
+going so they start arranging the loan
+they start talking to Todd copy all this
+is happening female all this is
+happening via free email accounts off
+Gmail live enter into your interloper
+who gets in between this communication
+it starts impersonating one style story
+in fact he does it so well he convinces
+one or both sides to wire money to him
+rather than the respective accounts how
+the con is pretty simple the attacker
+gets all the victims email account sits
+in it for days maybe weeks reading
+understanding trying to plot the process
+of all these transactions under
+understanding how that the flow of money
+is going to happen when it's going to
+happen at some point there's going to be
+something that happens that's going to
+trigger them to act maybe it's you know
+closing day in release or some mention
+of money changing hands and that's
+maestra that's when they strike so
+they're going to find a way to get
+themselves in the middle and convince
+either side that they've wanted
+something lie to him not the adverse
+effect of parties in a real estate
+transaction this could be the buyer it
+could also be the other side of it the
+seller so we're going to try and
+convince a tire company to release the
+funds to the interloper not the actual
+seller or we're gonna give this a buyer
+to send the interloper the funds and not
+the real person
+wait what huh
+let's go through this this is an actual
+thing that happened if you read through
+this this is an action title of an email
+I got this was given to me as part of a
+in' response if you look at that
+it seems pretty legitimate right I mean
+we've got our applied to an email that
+we sent that just says can you get any
+of you email me the buyers you know
+before they debated a religion request
+right except if you look up the top
+there something's funny about that email
+address it doesn't look right it took me
+about a day and a half to figure out
+that there's something wrong with this
+after staring at it what you'll notice
+there is at the end of job title guy
+there's a lot of email address what I
+found out is that PRC for email allows
+you to put those brackets are the pair's
+in a lesson inside the display name so
+you can craft what looks like a
+legitimate envelope address inside the
+display name of an email and send it off
+and most email clients will think of it
+as as that first email address coming
+from and not the reply to so that was
+one thing that kind of struck me as odd
+but then the request just cannot - why
+would the teller guy know the buyers
+email address what happened next was
+kind of funny the the assistant replies
+back with well the buyer doesn't have
+this is important in our chain of events
+because I don't think the person who is
+impersonating the Tyler guy at this
+point expected this response because as
+part of their con they're gonna reach
+out and try to contact the fire directly
+that's part of the game but now we've
+cut him off the knees saying hey she
+just have email she can't respond to you
+so this isn't in the script
+wait what are we doing tonight fires
+back notice the tone has changed now
+we're now demanding stuff we were
+requiring her wired the closing funds
+prior to closing well of course she
+would wire closing funds prior to
+closing that's why they're closing funds
+and if you noticed English is now broken
+up it sounds as if we're like speaking
+intelligible
+the attackers have broken character and
+now getting aggressive they've gone off
+script they don't know what's going on
+they're trying to assert control over
+the situation in a regain what they've
+lost
+[Music]
+and if you notice here - we now jump in
+time well let me go back a minute
+remember we're on the 25th of January
+here how do I go back to the 24th in our
+plot this took me another day and a half
+to figure out what I was looking at
+because how can we have a threaded
+conversation that now ping pongs back
+between two days but both outlook Gmail
+and alikom have threaded it correctly
+but has shown us that we're moving
+forward and backwards in a day and in
+the end we have our assistant being the
+dutiful person who is saying hey don't
+worry we got it just for us all the
+information we need and we'll make sure
+she takes care of it he's doing he's
+only needful right he's helping out he's
+person saying hey what just kids what we
+need
+and so our interloper now sends over no
+notes again email address village kind
+of funky and the dates can off but um
+say hey we sent the attached wire
+instructions just follow them and
+everything's okay so here's what you
+said and he knows he's got the awesome
+power company logo there if you notice
+he it killed him it looks kind of weird
+now I know I sanitized this for the
+group tonight but rest assured that the
+name in front of that account name was
+actually somebody's real name sad thing
+is as this went out to the buyer and she
+took this and she dutifully follow the
+directions she went down to Wells
+Fargo's she filled out a wire request
+wire four million dollars off to some
+foreign person because she thought she
+was doing the needful she thought she
+was doing exactly what she was asked to
+do by this person who appeared to be
+from the title company because if we go
+back that email address when it showed
+in her inbox or in a box of a realtor
+not legitimate so here's a sequence of
+events now I notice that we flip-flopped
+back and forth what happened and what I
+realized was that the attacker was
+actually in a different time zone and so
+when the two mailing systems were trying
+to reconcile what time that was
+they threaded the information they
+threaded the conversation in
+chronological order but they kept the
+time as it was displayed so while I was
+doing the right thing by keeping
+everything in chronological order it was
+displaying to me what time would be
+displayed on the attacker side so I was
+able to take a piece of information I
+knew which was the one the email that
+start the whole thread and everything
+else from that that it was forwarded to
+me and work backwards to figure out
+exactly where this attacker lived and
+what was actually going on and create
+this timeline of how these emails
+actually went through which which helped
+in our investigation in understanding
+what exactly was going on here because
+when I was brought to this incident we
+were given this idea that there was an
+email sent out and we'd never sent it
+but it claims to be from us so we need
+to make sure that were not involved
+by changing the display name of the
+email email envelope - some of them look
+like a legitimate address the attacker
+was able to fool most of the online
+web-based email succumbing to displaying
+the email address they wanted it to see
+so I wouldn't get too attached over the
+far side you see there's Gmail it
+actually won't let you do this through
+the web interface but if you connect it
+through mail on your Mac totally fine so
+the top on there is a test that I took
+where I just sent myself email with that
+aforementioned messed up this plain
+string and there's what looks like
+notice again we get that same weird
+artifact at the end of a work we're
+seeing the actually Miller's the
+internet but most people's eyes are only
+focused on what's involved they don't
+understand what's coming and for what
+name they ignore it so let's look at the
+next one this is a lucam
+notice that looked our competency will
+show you the real aim address they mask
+it if this email were to show an
+outlook.com you would look Jumman think
+it came from me but actually came from a
+spoof address so this is what the
+attacker used to to get the boobs on and
+to claim as if they are part of this
+conversation that they earned that part
+out so what happened further than this
+after the woman who wired her money and
+a man lost develop the attacker actually
+have about four or five Google's ready
+at different ATM locations around
+Houston to withdraw all the money and
+unfortunately they only got away with
+about 2,000 bucks before it'd be of a
+kind of caught them and shut them down
+but it wasn't because of this it was
+form that they violated the Superman
+principle look you can't be at four
+different ATMs at one time withdrawing a
+large amount of cash before the bank's
+paycheck that
+so it was interesting to note during
+this whole process said we had to
+backtrack through all these emails and
+figure out that it was just a simple
+display preference that was able to
+convince these people the conversation
+they're having was actually with a
+person that they were already having
+already having a trust relationship with
+rather than the interloper and really it
+comes down to in this case alikom and
+their choice to pull a mask to reply to
+address and give you what was in the
+nothing what's that oh sorry go for it
+Oh
+full of burnback well I'm sorry how do
+they know that it was closing and to
+send that email or do they just send it
+off randomly in hopes that there
+happened to be a title closely so in
+this case the attacker actually had
+control over the victims email so what
+we found out in the in most these cases
+with real terms in particular the
+attackers are choosing people who are
+using free email services not using 2fa
+so they're not using two-factor
+authentication these accounts get
+cracked easily they sit they watch and
+they're very adept at what our processes
+are in American financial system of
+these high-value transactions I mean it
+could be in this cases buying a home
+they can easily be buying or trading
+stocks whatever it may be if they are
+keyed in to wait and just be quiet until
+that situation arrives in this case what
+spurred it was a request from Tyler
+company to move up the closing date and
+in the real situation lady had some
+personal matters to attend to she had to
+bump up the closing date to a specific
+time once that email went out it
+triggered the actor to be an act within
+the day to escalate the situation and to
+get his con in order if it wasn't for
+the audible of the buyer not ever having
+an email it down we thought would never
+caught this because he would have gone
+straight to her and we would never heard
+anybody else did they have cyber
+insurance no they did not
+unfortunately although I don't think it
+does she live with me now no
+unfortunately I don't actually know the
+woman I never met her and we were
+brought in from an outside third party
+to investigate to see what actually
+happened and to make sense of all this
+because when I got probably in all I had
+it was a string of emails and an
+accusation on one side or the other that
+somebody had just stolen their quarter

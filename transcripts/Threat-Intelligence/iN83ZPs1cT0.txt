@@ -1,0 +1,309 @@
+yeah yeah all right now Wayne actually
+not not only didn't he bring computers
+he brought other props too it's
+great and does this guy need a a a
+magnetic break on his on his rod and
+real hell no he comes old school with a
+Abu Garcia little fishing joke huh fish
+you know no this guy gets it yeah all
+right red next in the crowd
+let's good for
+Wayne hey how's it
+going what a crowd this is awesome this
+is great I'm excited to present hold on
+I got over 100 slides it's going to go
+fast okay so Wi-Fi fishing there's going
+to be a lot of explicit kissing
+disclaimer educational use and uh don't
+get in trouble don't break the law what
+I'm going to show you don't go out and
+do against somebody you don't permiss
+for I'm not a lawyer some jurist you
+want to know my bio look me up later
+okay fishing
+Bill Dance all right I love it so many
+of you probably know fishing from Bill
+Dance some of you may know fishing from
+Sega bass fishing okay some of you may
+have fished with your grandpa or another
+family member some of you put the woman
+on a date or man on a date okay I know
+that's times I had with my wife hi babe
+wife in The Crow but some of you might
+not be able to go
+fishing always drop the bass I mean the
+Bas what so that's go back to fishing
+fishing has reached Major League people
+are going to stadiums like this to see
+guys Chase around and catch fish like
+this for money like this and like this
+and yes that's a million dollars right
+there so these guys are making a living
+doing it back in the day I used to try
+to pursue this dream this is me on a
+billboard uh off of I15 somewhere this
+is me hugging my evil twin let's call
+him
+Wade I used to I used to chase
+fish and fish for fish like this and
+like this and creatures like this in the
+Amazon but more importantly I kissed
+just like this okay so there's a lot of
+equipment some of you have the equipment
+we have uh you know fish here and this
+equipment is important to catch a fish
+but more importantly nowadays you need
+Electronics not stuff like this this is
+ancient still kind of ancient believe it
+or not that's paper gray scale of the
+paper eight bit that's here for eight
+bit no hey Bill Dance says kiss
+traditional Shar goodbye why because we
+have 10in 12 in3 to $5,000 screens and
+they're showing you images like this
+detail images like
+this where's my car there it is right
+there images like this it's a little
+tragic so I've censored it we can come
+back to it later at the end okay but
+with this technology you can also do
+screen sharing so here I've got one set
+up I've got a little device here I've
+got a system here if you can kind of see
+I can zoom in or out and it'll go
+through and I can control the system
+from a tablet or phone now it makes your
+boat look like a
+closet because you have a system like
+this the wifi one and this is what I'm
+going to focus on today notice there's
+something
+there okay so notice notice upper and
+number only characters so how are we
+going to get the Wi-Fi password I
+thought about social engineering but
+that's not what this talks
+about I thought about doing stuff like
+this maybe one of these but even better
+I could take something like this which
+my Gentleman here in the front is
+holding that will allow him to see the
+fish from a guy like this who makes
+millions of dollars a year catching fish
+guess what
+time all right see if this works so I
+put my Alpha in monitor mode and I've
+be smaller
+res there we go
+so we're going to do air dump we're
+going to start dumping I'm going to see
+there's a go free Wifi right there okay
+so go free set I'm going go to my next
+Tab and I'm going to take that and I've
+already scripted it the typed it out air
+dump NG the channels 11 put that in I'm
+going to write it out boom here we go so
+we're going to try to get uh the
+handshake here occasionally you have to
+give what's called a de
+off so let's give it a
+deom send packet amazing you'll see this
+this change up here that says handshake
+achieve we're going to fill it time
+going to go here for this one and here
+we're going
+to now crack it okay and cracking takes
+a little bit of time
+so let's go back and take a commercial
+break
+so the cheesy commercial I get the
+keys a lot of fun those a throwback from
+the days so with that time believe it or
+not I was able to get the pass phase
+right here for those who want to join in
+here's what we can
+know isn't it and I had it working just
+before it came up there we go there we
+go there we go there we go so here's the
+thing I thought the whole talk was going
+to be about how are we going to exploit
+you know take this over but this is how
+stupid this is is anybody once they have
+the Wi-Fi key for any of these devices
+if default and then go
+there's the IP address of the
+Box
+finder okay so on here Chris has it
+Chris follow the same
+thing there we go so now you can see I
+just connected there you go I can now
+see on my own phone what's going on on
+this device okay
+so not really that big a deal unless
+you're going to go around and follow
+these guys you
+can't
+so I cracked it joined it and I was able
+to see what's on the screen and so more
+importantly once you join the network
+what's the first thing you think about
+wire shark and figure out how it's
+working or I'm going to endm it okay so
+wire shark pull the data down oh look
+to let's go back
+I'm gonna try to join that
+no go
+sorry so threw off my rhythm
+okay
+so there it is this is streaming right
+now off that okay
+so aspect Rao boom we have the screen I
+can see what's going on I can control it
+from another one I can zoom in okay so
+now yeah there's more to it though
+so that's where thank you for the
+so exactly that's the whole point right
+where are they catching fish because I
+can look and dream all day long oh
+that's cool I have a fishing pole with a
+screen on there I can see what's going
+you port 80 why is there a port 80 on
+this box on this fish finder okay guess
+what you can download the USR file and
+in laurent's terms that's the Waypoint
+now what does that mean that means this
+right here is a major event where these
+guys are fishing for $100,000 or more
+and it lists every person on the lake
+because they have to carry some tracker
+with it okay so you can go out and see
+that you can go find boy Ducket go see
+where he is on the lake even from the
+shore go in see where he's fishing but
+you can pull
+his now that's kind of a okay that's
+like getting the repo from Moxy Marlin
+Spike that's like taking the recipe from
+this guy without even stepping in his
+restaurant okay if there taken it's the
+kiss of death better yet this kind of
+Kiss of Death because this model is not
+working anymore I can guarantee you that
+so you can
+it no no you want to get this stuff
+because right here you can see that I
+can download this
+USR
+shoot you can download the USR file
+mirroring
+so I'm going over time you guys are
+distracting me so you download it and
+what can you do with it well let's go
+see I can see everywhere the guy's been
+on the lake this is the USR file from
+this device in Google Earth you can see
+right here where I've been on Lake OA
+these are hot fishing spots well then I
+waypoints I'm overlaying my waypoints on
+Google
+Earth oh
+shoot boo I just deserve the boo I'm
+getting failure hold
+on why is this not mirror oh I lost
+mirror I hate it when you lose
+mirror all right there you go does that
+look
+right
+seriously I'm going to drag twerk twerk
+my neck and
+drag oh too soon too soon okay so
+there you go Leo Lea way points that's
+my way points overlaid in in Google
+Earth but what if you took those and
+mess with it what if you decided that
+every part of this lab is good or worth
+vising okay what if you decided you know
+what I've got some things that I want to
+put okay yeah I should right no but the
+bigger Point here is let's go back to
+the browser which for some reason
+doesn't like to show up and
+what we're going
+do stays in there stay stay okay so
+choose
+file fishing hotspot. USR so I've
+modified this USR file it's called
+fishing hotspot. USR we're going to
+submit that here's the problem what
+would you do if you were a fisherman and
+you saw hey would you like to load the
+fishing
+Hotpot heck yeah I'm going to load it
+seebe so what will happen I did have a
+default on this what will
+see they'll see all these way points I
+put in late okay but more
+importantly they'll
+see the try Trixie was
+here Trixie was on their graph Trixie's
+on there
+okay I added the Waypoint so I can add
+subliminal messages all throughout the
+fishing
+industry
+now I love fishing so I have no time and
+a couple more slides to go through so so
+let me go through really quick is it
+working it's working now is this really
+a vulnerability it is to the guy who's
+15 you're going to dump all his data
+you're going to get everything you have
+a small computer here that can do a lot
+of things some of the vulnerabilities
+can be man in the middle
+spoofing goer overflow anyone up right
+here we we know to attack possibly G
+streamer which is the rtsp server I know
+that this has dizy box on it
+let's see and more importantly this is
+the shadow file notice it's md5 salted
+some good stuff some of you might say
+this is stupid what does this have to do
+with hacking this is about fishing no
+this is not about fishing this is about
+getting rid of the girlfriend you have
+who doesn't like fishing no this is
+about the fact that right here down
+below just above me it says
+autopilot that means ships like this or
+like this could end up like this if
+they're using that kind of scenario you
+have military right
+here these are drones we already talked
+about this in the prior talk Iranians
+owned it you got Wi-Fi and cars this is
+one of those features there you've got a
+plane Garmin right here has the ability
+to control the plane Smart Meters nest
+remote control we saw already saw our
+talks about that so I want
+you besides helping this kitten to think
+about the internet of things and we need
+you to Tinker and
+hack and I said hack you need to hack
+it's not a bad word these guys are cyber
+criminals they're criminals they ID
+thieves they do bad stuff okay Karen uh
+elazar
+hackers are the internet's immune system
+okay this guy right here hacked his own
+insulin pump to prove a
+vulnerability that would basically save
+lives so I want you to use your brain to
+be a problem solver and hacking the
+internet of things for good okay so back
+to this which image do you want to see
+do you want to see the uh the censored
+one the bike you want to see the bike
+go all right that's my talk thank you
+I'm not going to show an image of that

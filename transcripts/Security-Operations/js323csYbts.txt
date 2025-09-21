@@ -1,0 +1,973 @@
+you guys ready to have some fun yeah all
+right we got the peanut gallery is ready
+so we're gonna talk about a topic that
+most of you probably and heard about and
+you might go what the [&nbsp;__&nbsp;] is that
+and actually four he gave us to talk
+about some of this a while ago and he
+gave us a basic intro to you know kind
+of looking at how an application runs on
+your computer and how to look at behind
+the scenes and kind of see what's
+happening well some of us professionally
+take a look at the applications that
+developers write and we want to extract
+sensitive information out of them find
+out what's going on make sure you're not
+doing anything weird I've given a couple
+of talks on this at a higher level but
+what we're talking about today is going
+into an assembly level reverse
+engineering and the goal here is not to
+teach you all to be reverse engineers
+what we're trying to do is get you to
+the next step right I'm pretty sure
+they're probably like how many of you
+have heard of reverse engineering not me
+how many of you have heard of a debugger
+how many of you know what a big debugger
+so we're gonna get to that so in the
+spirit of in getting the audience
+involved we had at rent over here Tran
+has Cory sack and if you can
+successfully answer a question that I
+posed to the crowd you get to reach into
+40 sec and take anything out of it that
+all right let's turn on this microphone
+and then Trent will give you another cup
+here and we'll check for the speaker's
+okay so we want to find out is there
+anybody in the crowd who can describe
+what it debugger does anybody anybody
+want to try when you're trying to look
+busy want you to look busy that's a good
+it causes the program and/or processor
+so you could take a look at it in a
+little bit alright give that man to
+see fiddling with Cory sack okay so that
+is a correct answer but not a complete
+answer so it does pause the application
+one of the things I can do and allows
+you to see what's happening one of the
+other things it can do is allow you to
+step through instructions one at a time
+right you're looking at what is doing as
+it's happening it allows you to see the
+memory the next last the probably the
+more fun thing that allows you to do is
+actually modify the execution of the
+application at it as it's running okay
+so that's really fun for when you're in
+the midst of it and you want to hear
+kind of looking at what's happening
+we're gonna take a look at excuse me if
+this in a little bit you can see what
+happens one oh that instruction gonna do
+that and it wants to go there but what
+do I do this and make it do something
+else right what can we make it do so
+let's get into it
+you guys want to see what is your burger
+[Applause]
+answer the question all right you have
+to put that shirt on right now all right
+so earlier you may have seen my Twitter
+post earlier announced I was going to do
+no slides but Aaron a friend of ours
+responded and sent me a picture that I
+couldn't resist so I'm going to have one
+slide tonight so this is it
+welcome to second Casey isn't that
+awesome I mean that's that's the best
+slide you could possibly put on there we
+go that jerk slide for tonight you can
+you can prove to your boss that you were
+here and you watched the talk and if you
+learn something you learn to secure it
+at sec Casey and I think this builds
+fingerprints so take a picture real
+quick before it goes away all right all
+right let's get going
+first thing is you may notice then this
+is a Windows machine running on a Mac
+because you can do debugging stuff at a
+Mac but for our purposes I wanted to use
+some open source tools
+well Freedoms they're not really open
+source but free tools so everybody can
+kind of get an idea of how this works
+and you know you can go and try it when
+you get home next thing I want to set
+the stage for is that the example that
+we're using in this talk is from the
+flareon competition it's an annual
+competition they do every year that they
+have a whole bunch of reverse
+engineering challenges and I just did it
+for fun you know
+couple of hours and one of these came
+out and I was like hey you know let's do
+a follow-up talk we've been talking
+about doing this ball talk for a while
+and this I thought this is a perfect
+example to walk us through kind of the
+techniques that we're going to use to
+learn to take that next step remember I
+mentioned earlier we are not here to
+learn the solution to this challenge
+we're here to learn the techniques that
+I would use as a professional what I'm
+taking a look at an application or given
+an application and said okay go right
+you need to know how to start and Cori
+showed you okay how do you load it up
+and debugger what are sort of the things
+you want to kind of look at but when you
+get into a more complex application one
+of the things we're going to start doing
+and that's what we're going into here
+and we're going to actually solve this
+challenge tonight all right so if you
+get bored shout at me if I see you
+dozing off I'm gonna shout at you or ask
+questions this is everybody sound happy
+with that yeah these VMs these VMs are
+free by the way
+if you go on to microsoft's website if
+you're a person who does what i do we
+need to set up clean VMS all the time
+and we don't want to pay for a license
+or every one of those machines or even
+keep you know all that crap around
+because we're gonna test all the
+different kinds so you want to make
+yourself some website on edge or
+something like that and you download the
+thing and you put it on there and it
+runs for 90 days no hop at all so I
+recommend you do that if you're doing
+this kind of stuff is what you got it's
+all right you doing okay so let's get
+started
+the ignite mean executable is one of the
+things that they the flare and challenge
+game so when I first get started looking
+at one of these applications trying to
+figure out what the heck to do with it I
+just like to run it and use it and get
+an idea for how it behaves the reason
+for that is because it will affect the
+way that you go about looking into what
+it's doing right and you run the
+application and it does nothing on the
+screen well then you've got some more
+interesting things to do are you going
+to take your processes or you have you
+know looking for network connections is
+it going to prompt you for information
+or is it going to wait or listen for a
+network connection all those things are
+things that you want to know when you're
+starting to reverse these applications
+so fortunately for us in this case you
+run the application and it prompts you
+personal information right and right
+away we can try just one two three four
+five six seven eight I like to use a ASI
+the hex code for that is and run it and
+see what happens I'll disappear right so
+all right we'll give me the flag we'll
+do it again one two three four one two
+three four don't fail okay so now we
+have some idea of what this thing does
+it's from super flag and it stops really
+simple right so now what do we do let's
+close it and open up our debugger and
+see what happens
+fortunately for me I've already done
+this so it's right here at my drop down
+all right we'll go to the desktop we're
+gonna hit the open button and we're
+gonna scroll down to it and open up this
+application okay so we ran the
+application okay okay some applications
+will crash at this point because they've
+detected that you have the debugger
+attached though that is a much much
+different talk or not there yet okay
+we're still getting started next month
+no okay so next thing is that I'm using
+the immunity debugger here it's free to
+download installing this is not my
+endorsement of this product there are
+other debuggers you might have heard of
+item pro you are part of hopper you've
+heard a bit ninja or whatever the ninja
+one the new ones are they have a lot of
+other various Lee costed or priced
+hospitals in the word is it that's right
+raises licenses okay we're gonna call
+the cost it from now on but this is just
+one of the tools that you can use on
+this talk is not a here's a tool you
+need to use this is this is any way to
+do it we're gonna for remember we're
+focusing more on the technique as far as
+understanding how the application works
+the places you need to go right so one
+of the cool features that immunity
+actually provides is that you I've
+loaded up the application in debug the
+first thing that I like to do is click
+this little button that says graph the
+application okay this is actually pretty
+cool because immediately I get to see
+all the instructions that this
+application runs from what's called the
+entry point that's a keyword that you
+want to remember any application has an
+entry point that's where it starts the
+execution and then as a reverse engineer
+you got to kind of figure out where
+that's at in a lot of cases and in some
+cases as I mentioned it might be you
+know a network connection that it's
+listening that's the point where it's
+always reestablishing what it's doing in
+this case we have a really basic
+application so it starts pretty much at
+the beginning when the first main
+function is called but if you scroll
+through here you can see immunity is
+actually really helpful it tells us hey
+here's this ASCII value give me the flag
+right and we saw that when we ran the
+application I remember that yes what
+happened who can answer this what
+happened when we entered our data what
+did it do not what didn't they do what
+did I do
+and we after we typed in the data what
+did it do Billy Frank okay give that man
+all right so if we scroll down a little
+bit we see okay
+give me the flag and then you have on
+one side here we have this ASCII value
+not too hot are we try again please
+this was the branch that we took right
+on the other side if you look right over
+to the Sun right up to the other side
+the other option is it can tell you good
+job right I think that's where we want
+to go right would you guys agree you
+want to go to the family or the kids
+outside do you think that's where it's
+going to get us to the end of this
+challenge as if we get it to pop good
+job all right all right
+so let's let's take a look all right
+we're gonna give you a first look at the
+debugger we're gonna read relaunch this
+application and actually let's go back
+real quick mr. Park when you're looking
+at these applications we're not going to
+focus too much on the assembly
+instructions themselves on every single
+one we'll talk about the important ones
+and we'll talk about some of the
+techniques later on but in this case I'm
+gonna jump to a technique for you is it
+when I am looking for a solution to
+doing one of these things I like to work
+from the end is where I can find out
+where it's trying to make a decision and
+work my way back right so in this case
+we have this jump short then either
+jumps you down to you fail or it passes
+on to this other one where you did a
+good job right so just before that
+though we see this test of instruction
+that happens so what this is doing is
+doing a bitwise and
+Pearson I'm learning to explain exactly
+what that is but it basically compares
+two values and determines its sense of
+point right and then the next value says
+okay jump if they matched essentially is
+what was happening je is jump in equal
+so what we care about in this case is
+well what happens to these values just
+before here that is causing it to either
+pass or fail right so that's where we
+want to start digging in so if we look
+at this zero zero four zero one zero
+five zero is a memory address inside of
+the application it's an opposite so
+we're gonna go take a look at that and
+see try to figure out what's happening
+so as we open up our CPU instruction
+screen here this is the entry point so
+you'll see all the same calls that were
+shown in there if we keep going down
+we'll see call call to that one that
+four zero one zero five zero and then we
+have the test and then we have that jump
+short right looks exactly the same as
+what we just saw right everybody agreed
+awesome okay so the first thing that I'm
+actually going to do is take a look and
+show you what that test function looks
+like so first thing we'll set a
+breakpoint right on that test call by
+the way as you know Razov acts or
+the anthrax in France there you go we
+get to pause the instruction so great
+point is a point you send in the code it
+runs down the application will run until
+it hits it and then stop right it allows
+you to see what's happening the beauty
+of that is that you don't have to get
+this little step end button on every
+single instruction and follow in you
+know and Cory showed how to do this in
+gdb I believe back in the day so we're
+gonna execute this program which just
+looks like that it's gonna prompt us for
+the flag you can see the next we're
+going to one two three four one two
+three four
+the reason I use a as I mentioned is
+it's x41 and I like to use eight input
+bytes because that generally perfectly
+aligns with the boundary and a byte
+bound record the memory lines here so
+you've got eight bytes when you see it
+show up in memory and align up perfectly
+so it's just a work thing and I'll
+change the values as we get further in
+but I said yeah sorry so you're using
+that eight eight as a flag inside the
+memory you go through and kind of see
+where the test is that's reaching a
+little bit farther but you'll get to a
+point where when we look at the memory
+that gets put in there we can see
+clearly wearing its story okay and we'll
+look at that so I'll just use it yes
+basically a locator right and there's
+some more public or sophisticated ones
+like the Metasploit has a pseudo-random
+generator and then we'll do it to a
+specific bite range and if you can copy
+the specific four bytes or eight lights
+out of the memory segment it'll actually
+tell you exactly the offset rather than
+you having to figure it out
+you know manipulating this stuff so
+again other tools for now where it has
+focus on this
+so we've typed in our input we have a
+hit every point that yet so when we hit
+go I got a hit enter after injury so
+we're gonna here you go and we're gonna
+have to do it again because I've been
+okay hey run I've been employed 1 2 3 4
+1 2 3 4
+enter we're at our test instruction here
+ok and we can see that in test EAX Dax
+and it jumps short and if we step in
+because this is where the exposures
+can't handie we can see that we get to
+the jump short and if we execute that
+next function will just run from here it
+fails right and just as if we had run
+the application outside of the debugger
+but we can see exactly what's happening
+in my face so we're gonna run it again
+but what we're gonna do is instead this
+time is we're going to do 1 2 3 4 1 2 3
+4 same input hit enter we're in test ext
+at test Dax now one of the things that
+the debugger allow us to do in the space
+is modify the memory as I mentioned so
+we can test our hypothesis about whether
+or not this is the function we're
+any suggestions do we want to put in
+zoos here again or one or two great
+babies they will read all right we'll
+put in a three let's see what happens
+and now we're gonna run it
+hey we won it's a good job but really if
+you're in a CTF or in a challenge in
+this case you got to the end of the
+execution but they're gonna ask you for
+a flex well what did you put in there to
+make that happen so what you need to
+know in this case is that yeah okay
+we've got this thing that excuse
+successfully begun to the end well we
+haven't gotten a sensitive data that we
+would put into the application so if you
+went and did this so in a case where you
+have an application it performs a
+licensed champ you're able to do this
+you just passed it you got to the end
+right excuse me sir we have a tradition
+here so Casey now if you do a reverse
+[Applause]
+thank you for that
+let's actually make this easier all
+right good job all right good job yeah
+all right so we gotten past that point
+so like I said it this is license check
+you just want you got to run your you
+know five thousand dollar software for
+free because you got past that time but
+as I mentioned that's not the end of
+this we need to figure out what the
+application is doing to hide the data
+that we want to put in there right so
+we're gonna go back and look at our
+graph or call graph actually let's
+restart the application so we can get
+back beginning our call graph here
+remember we said we just tested out e^x
+we verified that this is the point where
+it determines whether or not we pass or
+fail so what I like to do going back to
+let's go back start them and work our
+way back we're gonna take a look at this
+four zero one zero five zero function
+okay so we'll close that take a closer
+look and actually we're gonna maximize
+this to move along easier okay so we're
+gonna look down so we have this call
+here zero zero four zero one zero five
+zero thanks everybody agree that that's
+the same place okay so we're gonna set a
+breakpoint get now the if we wanted to
+we could you know run this application
+again we're gonna type in the stuff one
+two three four one two three four run it
+again
+okay it's back at our break point so
+yeah we could hit the stepping button
+and we could keep doing this we could
+keep going and going and say oh look
+there's a loop there it seems to be
+doing the same thing over and over again
+and if you look over here in the memory
+you can see things changing like it's
+taken our input values and that's doing
+something right now if you did this it
+would take you all day to figure out
+what the hell's going on
+right does anybody have a suggestion
+for what we might do it okay that's a
+good enough try give that hand and reach
+into the staff here in San Casey even
+all right answer I will buy you a sec
+Casey patch if you can answer one health
+and four dose he wins all right so say
+it louder
+Joe closes the window it's like arts no
+sugar
+all right I know you attached okay
+anybody else anybody have a guess and a
+better way to go about of this solution
+okay at Brinkley amber in this we
+already have a red coin right after it
+so the subroutines anybody else where
+okay so it's feeding that part of memory
+from somewhere figure out where it's
+pulling that information from and then
+read it close alright so I don't know if
+he wants me to say his name
+so as emoti and we'll give him a region
+to the sack of he wants it trying to
+give him a sack reach the answer that
+I'm going to use is that we will do
+what's called a run trace okay so will
+well if we have our very point let's
+start it back over to run the
+application type in our input 1 2 3 4 1
+2 3 4 and we can open up this little
+window and if we hit this button it's
+going to run over all the instructions
+until it's the next breakpoint and dump
+them all to the screen for you right
+it's really really useful but one of the
+even more useful things is that we can
+hit this little log file button thanks
+so we'll just open up a file the desktop
+tells along to the file we're going to
+hit trace over if you look down here
+you'll see that it's tracing and
+eventually
+paused right finished up so we can click
+back over to the run trace and we can
+see all the instructions that are
+executed on that sequence of events on
+the input that I put in right so we can
+figure out what's going to happen with
+those because remember one back to
+technique we're not really that
+concerned about what exactly is
+happening in this application what's
+more useful is for you to go away and
+say I want to do a different challenge
+and I can use these same steps to try to
+solve the problem right so that's what
+we're after here if we go to the desktop
+now we will see that there is this our
+trace file it's almost 9 K so we'll go
+back over here we will tell it to close
+the log file and we will open up Network
+to our share here that's not the button
+amended
+demo failed we're going to go to the
+desktop alright so that gets us back
+over to our host machine because now we
+run the application through the debugger
+we've gotten to take a look at what's
+happening we've dumped the assembly
+information that's there and now we want
+to dig into its analysis right what are
+we gonna say something you gotta say it
+out loud I said yes that's another
+machine alright so I'm gonna have to
+send this down to tighten up oh and I
+mentioned to Joel we've had a lot of
+people do this and you can turn a
+like you don't have to do this and like
+pop over your screen you can just how do
+you turn a Spears alright okay so we're
+going to go into projects flare ignite
+so we have our file here the our trace
+file and we're going to take a look at
+what the instruction I am going to show
+you the vast superiority the text editor
+during this presentation if you take
+anything away from this talk it is the
+fact that then yes is the single best
+all right now we're having fun okay so
+now that I've had a shot of alcohol see
+if I can figure out what the hell these
+things mean okay so so the next step
+when you're starting to take a look at
+your application and trying to figure
+out what the hell is going on you're
+going to you're gonna look through these
+and honestly what I do when I am dead
+serious about this when I have an
+application that I'm trying to tear
+apart I will literally go through these
+one by one and type what exactly it's
+doing over here on the line next to the
+instructions okay I'll say hey in this
+case it's allocating zero see the text
+by the way amount of memory and it's
+pushing some information these are
+arguments that are going to be called
+for that function all right
+we're not really here to talk about
+exactly what those are doing what we're
+worried about is the technique of going
+through you're gonna pull up your search
+engine you're gonna look at each of
+these and see oh there's an ad home what
+the hell does that pray you're a
+beginner you watch temporis talk you
+understood that
+something's happening but the computer
+doing something right it's making stuff
+happen it's putting stuff in membranes
+moving it around you're gonna literally
+look up each one of these calls and
+write down what it does next to the
+command there next to that command and
+that way as you're digging through you
+can see kind of what's happening Frank
+the next step is
+once I have kind of an idea of what's
+happening the prologue you'll get an
+idea for what that looks like but I'll
+start looking at these memory addresses
+over here the main thing that I'm
+looking for is repetition okay we saw as
+we were stepping through anybody can you
+tell me what was the thing that I
+mentioned as we were stepping through
+that was interesting yes give it a
+region this act all right so looming and
+essentially in that what that looks like
+in assembly is that you're gonna see the
+same memory addresses called over and
+over so as we come down here you'll see
+that we have gaps because they're gonna
+be calls and jumps and things like that
+that are gonna have so we have this from
+77 to 82 which looked normal it keeps
+going up then we go look down and oh
+look there's an 82 again right so what
+I'll do for my own sake is just hey
+let's break that up that looks like it
+was a repetition so we'll keep going
+down and look again oh there's another
+82 does it look the same as the last one
+right there's a seventh that happens
+just before it and then it jumps out to
+80 to 86 88 7n 80 to 86 88 okay so I
+think that's probably the loop that's
+happening we'll keep going through 82
+and you know after a while you see that
+they're happening and you just look for
+the last at 82 and then we have a 7f we
+look at the functions that for these
+halls that are made for the instructions
+rather let's be technical here right
+this is a technical accurate baby's
+technically accurate so then the guy is
+on YouTube that are gonna watch this
+later can't come back and tear it apart
+because I said Paul instead of
+instruction yeah they will okay so we
+got 7c seven half we've got over here
+keep bending down we don't c7 c7 F right
+so we have 8286
+I'm gonna kind of take a look at but it
+286 th is not existing down here so that
+looks like that's end of our loop so
+something happens and then something
+else happens so to make this less
+painful I'm gonna jump over to the
+marked up version that I've already gone
+through so let's say that all but we're
+going to go in here somewhere
+at arteries that's a red - okay so I
+don't try that okay so this is an
+equivalent trace but with some other
+input that I put in earlier but you can
+see that what I did was going here and
+just right in the instructions for each
+of the steps I like 812 bytes of memory
+it's gonna call that function with that
+those arguments what's happening with
+p-values
+okay so this is the interesting bit of
+Li for each of the values that is input
+we can see that there's going to be data
+written to a local value so here's some
+information for you d when you see a
+call into SS and then you have a base
+pointer - eight the minus B tells you
+that it's going to some local variable
+okay if you see a plus eight or a plus
+four or any offset really and a lot of
+cases for arguments that are going to be
+poured that means that it's an argument
+to the function and that's just a
+convention that's used it's not always
+the case but it is an assumption that
+you can make in a lot of cases so have
+you seen negative 8 or negative 4 or
+negative 1 like in this case we have
+another variable it's a one byte
+variable in this case so we have some
+data that's copied in let's take a look
+at our notes here actually we probably
+oh no I can't figure gonna do now hold
+that floor there's a zoom here somewhere
+zoom let's assume all all right we can
+game for screen all right okay so we'll
+see here that we have some data copied
+into a local variable if that variable
+is less than zero we're gonna jump then
+you see that there is a 15 here and
+that's based on the length of the
+argument that I put in okay so you'll
+see that it's doing some stuff copies
+one night from a specific offset in the
+data segment so in this case we have
+this EDX + 4 0 3 0 70 now that's
+interesting information because when you
+see these data offset that means that
+there's something in the data segment
+specifically there's something stored in
+the application that it's going at right
+or it's written into the data segment
+but in this case we haven't seen
+anything written but it's pulling
+something from the data segment and
+putting it into bas
+right so we might be interested in
+looking at that so this is 4 0 3 0 7 8
+we're gonna go back into our VM we're
+gonna take a look at the CPU and down
+here is our data that's dumped for 0 3 0
+that's our offset 0 7 8
+it's roll down 0:17
+Hey look anybody recognize these numbers
+what I mean yeah the native segments a
+little small there yeah so that's input
+so it's copying the input into a valley
+and trying to figure out it's doing
+something with it that's good to know
+so we can switch back take a look
+keep moving down copy one byte from our
+local variable this by the way the Oh X
+okay so okay so um that note is not
+there we're just going to assume that
+this value is set to the hex value 0 4
+okay it is a static value that's sent by
+the application when it runs it's
+literally in the source code it's going
+you'll see if you step through the code
+you'll see that it's set static so the
+first thing that happens is it uses that
+value and then it xor stat first byte
+that it copies from an input against
+that Oh more okay that value is then
+used copied into EDX and then we have
+zero seven four as the result so what we
+know in this case is that there's some
+data that it's using in the application
+against the input that we provided right
+so it's masking it somehow it's using an
+XOR now who here can answer what XOR
+does anybody okay yeah grant okay so
+what is an interesting property about
+excellent
+wait okay that's interesting yeah there
+you go it's reversible it's done
+immediately reversible okay if you can
+give them another region of the Sachs if
+you see that one value is X or it does
+apply to encryption because XOR is used
+a lot in encryption but it is not in
+itself encryption because it is direct
+errors if you take one value and XOR buy
+another value and then XOR it again by
+either one of the original values you
+get the same value back like that is how
+a lot of stream ciphers work okay so in
+this case we have data that's stored
+that's exhort against your input and
+then you get some other data so what do
+we do no idea is so the data has to be
+stored somewhere right if it is
+registering this against it it's either
+doing it from like this like this in
+this case it's a specific value or it's
+stored somewhere so what do we do we
+keep looking through the loop let's go
+to the next iteration and see what
+happens so we have this we're gonna look
+at the data segment elements so that's
+the next tip right if you're going
+through this and you see that
+something's happening you want to start
+looking at anything that's coming from
+your data set because that indicates
+that there's some hard-coded value
+stored in the data somewhere that it
+might be using to manipulate the data in
+this case we have this ds4 0 3 0 7 8
+we've already looked at what is that
+anybody anyone remember 7/8 was
+it would give them anagram in a sec this
+is Cory sack all right so we go down and
+we see four zero three one eight zero
+this is another opposite there anybody
+happened to notice what that wasn't we
+were looking at the screen before no so
+let's go look at four zero three one
+3:03 one okay so when we see mostly no
+values and then a 45 right there's not
+really much here so what that tells us
+something that tells us that it's using
+the values that are stored here for some
+reason okay so we'll keep a look at this
+keep it in our minds we're digging
+through the disassembly so we'll keep
+going through or zero three zero seven
+eight again is taking our input doing
+something with it
+keep going copy love the variables
+subtract one keep going local variable
+loop right it's gonna keep doing this
+over and over and over again it's doing
+something and exhorting some data with
+input we put it there do we need to stop
+them all right so next slide it's gonna
+do some stuff and it's gonna do some
+more stuff and it does it does a lot of
+stuff
+okay I'm gonna look at my little piece
+of paper here I have my own slides here
+are they available in them yes actually
+No
+okay so down here this is this is the
+interesting piece so we've done a bunch
+of stuff XOR their data with the input
+data framers we're speeding up now
+itself at the end of the loop we see
+some other function that's being that's
+happening right so we have David copied
+into a local variable copy one byte
+previously from the data segment copy
+from another data segment which is four
+zero three zero zero zero zero okay this
+is another data segment that we haven't
+looked at yet so we're going to go and
+do that and if we look at our data
+segment down here for three zero we
+gotta go way up to the top we have four
+three zero zero zero zero zero we see
+this random looking data okay
+the next thing that we're out of time
+with this so I'm going to kind of skip
+things a little bit but the next thing
+that you would do is start assembling
+that next piece we're gonna jump down to
+that next call what was the address here
+zero C seven let's go ahead and copy
+and we see our call here and the very
+first thing that you'll notice the
+immunity is helpful in this respect is
+that it falls right in the middle of a
+loop that's happening okay so it's doing
+its another loop that's modifying the
+data that is comparing before it moves
+off so we can look at this real quick it
+is copying some data into a local
+variable popping and checking to see
+these two check to see if the value is
+not longer than 27 and X which actually
+turns out to be 39 right so loops do
+there does some more comparisons checks
+the values a compare and then it does
+another excellent right so digging
+through all these you end up seeing that
+we had an original loop that happened to
+our input bits of X or e put the data
+into our data segment and then you have
+another loop at the end that goes
+through and loops again
+and it's actually comparing the data
+that was modified in the original loop
+against the data that's stored in our in
+the data segment here so if you count
+one two three four five six seven eight
+times five you end up with 40 right and
+you see that the last values that no so
+we actually have 39 values that are used
+exactly to do this comparison and that
+gives us a pretty good ping at what's
+happening here one time where we
+scheduled for 7:45 okay and we're at
+7:30 now okay 735 now so we got 10
+minutes
+five minutes all right fifty minutes
+fifty fifty minutes 50 minutes okay
+okay Joel's bored all right so okay so
+the next thing that we're going to do is
+we're going to write a solution to this
+okay I'm actually gonna write up the
+code so the thing that we learn from
+this is that it uses a fixed value at
+the beginning
+so Intel Explorer right and it XOR is
+that against the input data and stores
+that in a dataset and then it uses the
+does the loop again and compare that
+against the original data which sounds a
+lot like a strings because it takes the
+Internet intermediate values and
+compares those and then you can use
+those to recover the key that's put in
+so that's what's happening this case so
+[Music]
+oh it's my
+paid for that alright so here's the cool
+place them all right
+[Music]
+so this is meant to simulate our data
+sector right we have these values stored
+fires we know that we had this
+intermediate bite of a xo4 right and we
+and we need to know as we saw in the
+loop it started off with the end of the
+value right and worked his way back
+because it started off with 16 and went
+back back back all the way down to zero
+loop and then to the next person so
+we're going to set our X equal to the
+length yes but we also know that it
+started with a fixed value so we don't
+want to do the whole array we want to
+start it with a negative one okay right
+agree okay and then we're going to do
+while X is greater than zero in Python
+speak because we're going from the
+maximum value all the way down and so
+what we need to do with X to decrement
+the counter and then we are going to
+redo the instructions that we saw
+happening which is we're going to take
+the index 50s X we're in an XOR that by
+our intermediate value and we're going
+ok everybody following what's happening
+okay can you see what's happening now
+yeah bigger okay
+so we've set the we created the initial
+array of the data that's stored in the
+data segment right we found the initial
+value that it uses to X for the data we
+created an array to dump our
+intermediate values into and we've
+started at the end of the array minus
+one because we know that it starts with
+this fixed value not with the value in
+the array and then as we go through we
+are XOR in this data and actually we
+do this
+[Music]
+and then we saw that the next inner
+valley intermediate value was set to the
+current operation so if we try to run
+this it does nothing we have to print it
+[Music]
+and it gives us an empty array X greater
+than zero probably help
+[Music]
+so we end up with these valleys that
+it's not really sure with that right so
+man all right let's run the one that I
+wrote earlier and what do we think
+oh I need more alcohol I think I stopped
+playing your work all right so we just
+went through and iterated through a
+pendant value the intermediate value
+so it looked pretty damn close to
+whatever yeah yeah I just changed the
+vent the name of the Oh
+the argument it should work alright well
+we'll run this one it's the Python three
+and it runs your intermediate you're an
+ultra Elia there room early cancer
+wasn't really what we're going after
+here it was how do we get there right we
+went through take a look at Paul Graf
+try to figure what the [&nbsp;__&nbsp;] is going on
+go in commenter code take a look at
+what's happening finally loose trying to
+derive what's happening so after having
+done all that [&nbsp;__&nbsp;] work I'm going to
+show you that if you just by the hopper
+ignite okay we're gonna run it say yeah
+it's my newest code we have an entry
+point here and we hit this button it
+literally tells you what the [&nbsp;__&nbsp;]
+code
+[Applause]

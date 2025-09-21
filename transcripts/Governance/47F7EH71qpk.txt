@@ -1,0 +1,301 @@
+I know I'm the worst I already said that
+[&nbsp;__&nbsp;] alright ok I actually have to back
+off they're telling me this has never
+happened before I was told to eat this
+mic like a weiner and that is what I do
+alright so those of you that don't know
+me my name is Aaron Scanlon
+I do the news this is a bunch of the
+things that the news is here we're going
+to see if my timings are working well
+enough or not I'm pretty sure they work
+oh thank [&nbsp;__&nbsp;] all right so if you want
+these links they're going to be posted
+there in the slag I haven't done it yet
+I will when I get on stage it's gonna be
+fun
+also it's my 9 year wedding anniversary
+and I'm here because I love you alright
+you have yes we got 60 million records
+that were exposed USPS didn't do [&nbsp;__&nbsp;] to
+Brian Krebs talk to him about it was a
+budget made bi that allowed them to get
+bunch of [&nbsp;__&nbsp;] like your address and your
+phone number and all this other [&nbsp;__&nbsp;] we
+got another creation PO Box this is a
+bunch of text message database I was
+full of everything from like one-time
+pins to shipping notifications
+everything in between each record was
+meticulously tagged in detailed these
+[&nbsp;__&nbsp;] left it exposed
+wonder what else is new I mean we've
+seen this a lot each tree of health had
+quite possibly the worst health care
+breach of the year up to date so far if
+they find the findings are correct
+something like two point six five
+million bits of information there with
+all that [&nbsp;__&nbsp;] gone damn it was a
+third-party vendor that lost all that
+Marriott International toaster fire has
+gone on for a while it's only 383
+compromised records not 500 million
+there's also twenty five point five
+million passports 5.25 million of those
+being unencrypted [&nbsp;__&nbsp;] my life offends
+one of me
+we had a password manager get
+compromised so basically every one that
+was registered prior to January 6
+2018 yeah all the [&nbsp;__&nbsp;] that you get
+is gone now they encrypted the password
+so that's good but it's still not good
+Clinton gum actually does get big
+compromise they've come back and said
+you know we've tried to patch this we
+don't know why this [&nbsp;__&nbsp;] is still
+vulnerable interestingly enough Topeka
+Kansas is one of the affected cities so
+if you pay utility bills if you live in
+Topeka oops
+you might want to stop turn up Salem is
+some game that is the hot new rage all
+of their credentials were stolen
+recently the passwords are in the form
+of a PHP pass md5 md5 and yeah so
+they've already cracked like 27% of
+those I believe Cora which is like some
+budget ask Yahoo Answers 100 million
+records stolen
+thank God let's see the passwords were
+we're also Krypton with their [&nbsp;__&nbsp;]
+encrypted so that's good but still
+there's a federal shutdown going on
+right now you can go to pretty much any
+[&nbsp;__&nbsp;] website that's useful for his
+blue teamers from the feds and can't hit
+it right now I feel like it would have
+taken less resources you just keep that
+ship online but first major flaw Cooper
+Eddy's was found so again it's not that
+you know it's above the crease bed now
+no it's just look like this is the first
+big one so hey make note of it if you've
+got an environment [&nbsp;__&nbsp;] patch it
+basically it made it so that an
+authorised first [&nbsp;__&nbsp;] nevermind we've
+got some people that were snooping in on
+EU diplomatic cables so I guess someone
+fished some representatives from the
+country of Cyprus and then they listed
+in the other communications so then you
+know what what you gonna do Cyprus is
+going to site I can't even make that one
+up so it's like all right maybe you can
+understand the concepts of security and
+never [&nbsp;__&nbsp;] use a computer an envier
+okay it's probably as bad as it sounds
+though all right
+Amazon so we've seen misconfigured s3
+buckets be at the root of a lot of these
+data breaches and it's not even the
+Amazons [&nbsp;__&nbsp;] fault and they are doing
+more to make it so that you [&nbsp;__&nbsp;]
+can't do it it's awesome so they're
+making it even more difficult for you to
+bank your [&nbsp;__&nbsp;] public Microsoft had a
+couple of MFA outages over the course of
+November so two major ones actually the
+second moment right after they got done
+explaining the first one this it's
+alright then it happens it's good to
+know that you have a back-up plan god
+damn it
+let's see Oh bro Brazil got compromised
+by not one but two card skimmers the
+first part skimmer was just human cards
+second part skimmer was like ah [&nbsp;__&nbsp;]
+that first card skimmer and they started
+sending them bad cards man
+yes so this isn't bad actually this is
+probably one of the coolest pieces of
+research I've seen in the past couple of
+months
+I mean if awesome turned on on reversing
+these super easy Starling I'm pretty
+sure Julie has a car with one of these
+in it so I mean hey was [&nbsp;__&nbsp;] YouTube
+while we're driving around legit it's
+because Lauren has dammit
+3b 3b he got taken down huge and fraud
+rig basically like 1 billion plus IP
+addresses doing an ad fraud ring content
+of lots of money but your printers got
+compromised too this time SPRO bunch of
+Pro PewDiePie propaganda apparently he's
+not going to be like the most subscribe
+to YouTube channel soon alright you know
+hey better this is an anti-semitic stuff
+I guess but again what are we going to
+learn we see this year after year after
+year yeah that happened to the
+Australian government just doesn't give
+a [&nbsp;__&nbsp;] about your secure communications
+and that's fine I guess we'll see what
+happens it's probably gonna spell bad
+things for us thanks to the five eyes
+agreement that our government has with
+them as well let's see we've got a
+report here from I don't remember which
+company talking about this group called
+London blue they are ABEC scam ring so
+they've gone and you know profiled all
+these people think it's the weird thing
+about these guys is that they operate
+like a real business with like sales
+management the [&nbsp;__&nbsp;] here is yet another
+report it's time on a group that's
+called the bean called stolen pencil
+real cool they targeted academia so near
+and dear to my heart
+University yeah basically they were
+installing key loggers and going after
+credentials what else is deal
+Australia's from the early warning to
+work alert system attack this isn't
+government-run but they do they are like
+the upstream for a lot of government
+systems really early wanting so like
+brush fires and stuff they learn people
+to really bad faith there they you just
+attacked so my bad Crawford is actually
+going to tell you a little bit more
+about this later on there are a lot of
+issues with the digitizing of DNA so I'm
+definitely not going to talk a lot about
+that because the other aaron is going to
+do that but it's still really cool
+talking enough tonight
+ESET is giving us a teardown on OpenSSH
+back doors they actually started looking
+at these a few years ago and wound up
+discovering a bunch of them that don't
+need known to exist yet so this report
+contains about three years worth of
+research on all of that
+oh let's see we've got the Nomad a
+exploit kit as a story getting home in
+Soho routers not necessarily in the US
+just yet but basically it gets a
+foothold through one user making them
+download runs of dumb [&nbsp;__&nbsp;] then it
+tries to exploit your router and hijack
+your DNS settings and that's buckle for
+everyone else we have a nice round of
+fishing with a side of a bomb threat I
+know a couple of higher ed institutions
+have that happen this is a spin on the
+sextortion scam so at this time they
+said we're going to blow you up with I
+don't know blow up the compound II think
+thank Bob things turned up at the border
+agents are pretty bad need hygiene so
+they have searched a twenty five
+thousand people's phones coming in and
+out of the
+last year turns out they don't believe
+that data whenever they want to so net
+News Bears
+we had someone gets caught stealing from
+Langley Air Force Base over the course
+of like was it from 2001 to 2008 een
+some 17 years stealing a 1.7 million
+dollars but they didn't find it
+yeah how can you get that long so you
+can't get it right now because of the
+[&nbsp;__&nbsp;] federal shutdown the House
+Oversight Committee report on the
+epithets breach holy [&nbsp;__&nbsp;]
+get a hold of that whenever the girl
+comes back because it's an amazing read
+like should be mandatory for blue team
+trip Micro has released a report talking
+about how shitty Hall of EPN is
+essentially so they detailed numerous
+false claims that law bpn makes
+essentially whole of India that is an
+unencrypted web proxy not a VPN let's
+see Microsoft released and out of an
+patch for Internet Explorer so again you
+know shit's bad whatever Mike results
+like [&nbsp;__&nbsp;] alright here you guys go this
+happened right before you know Christmas
+so lots of fun for the enterprises out
+there we had a huge trove of data drop
+that implicates a lot of German
+politicians so it's kind of a lot of
+info from a lot of really we are what we
+suspect are a lot of different sources
+just because of all of the different
+data that's in there but there
+a lot of knowledge about where it came
+from this is a really cool tool that got
+dropped
+ipv6 66 the address of the beast
+basically that doesn't exist in ipv6
+there's some interesting things about
+ipv6 that I didn't know until I read
+about this tool check it out I highly
+encourage reversing apks is generally
+pretty easy to do you've got paid for
+tools but it's less easy if you're
+working in the free space this guy
+decided that sucks and made something
+that will turn an apk into an Android
+studio project very quickly we've got a
+google translator reverse shell tools so
+this does exactly what it sounds
+basically you've got a machine that has
+a talking out to Google Translate and
+you've got a list of method then
+receives that info doing something like
+voice processing component the Google
+Translate does so kind of cool let's see
+we got a new TCP / DNS mechanism called
+Thunder DNS so they compared this
+against DNS cat to iodine DNS to TCP
+heyoka and awesome and DNS it wasn't as
+fast as iodine but it was more fault
+tolerant than all of those solutions so
+kind of cool on CAPTCHA tube came out
+and Google was made aware of that but
+that's okay they said go ahead and
+release it so I imagine they're going to
+change how caption works in the very
+near future we'll see though I have no
+insider information there I think this
+is a boy
+they have my timer didn't work for this
+because it was again that's what I get
+faster [&nbsp;__&nbsp;] this
+I told that we would take ten minutes
+all right we've got to do reverse proxy
+we're back on schedule it's fine it's
+called a lot lishka it's designed for
+use with cell fishing exercises I was
+built to go it has built-in support for
+2fa fishing very nice stuff get it it's
+cool
+the NSA is going to lead release intra
+in March at the RSA conference here in
+2019 Ichiro was first heard about from
+the CIA vault 7 Elise it is a java-based
+reverse engineering toolkit we'll see
+what that is soon and then finally be
+European file at GDP are requested
+Amazon get that sweet personal data also
+get one point seven thousand voice files
+that aren't mine my reaction when that
+and then is the dudes
+[Applause]

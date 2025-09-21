@@ -1,0 +1,1158 @@
+going to walk us all the way through
+kind of identification all through
+exploitation and maybe even a little bit
+of extration maybe maybe we'll see what
+happens we'll see what happens so let's
+give Bill a hand he's put a lot of work
+into this and let's pop some
+boxes hey thanks everybody so I'll try
+my best to stay on this mic um and and
+by the way I I can't handle you guys
+being quiet this whole time so make sure
+they're shouting noises you can call me
+names call me fat there we go the whole
+time I want to hear some stuff whoa I
+just heard a train that that was not
+what I was expecting okay so tonight
+we're going to hack somebody else's box
+all right so we we always talk about
+hacking your box not tonight we're
+hacking someone else's all right so
+about me so I got my start in security
+by hacking a local Telephone Company
+when I was probably much younger than
+you all right so I was uh I back in my
+backyard I had one of those little green
+boxes you know and just my curiosity
+just killed me what is inside that thing
+so I took it apart um started listening
+on my neighbors phone calls figuring out
+H what can I do here anyway that that
+you know that Curiosity has kept me
+through I've continued to you know I
+kept working on that that local
+telephone company and now now I manage a
+team of badass [&nbsp;__&nbsp;] that
+protect a local telephone company and I
+am serious our job is to catch people
+just like us everybody in this room
+you're who we're trying to catch all
+right the difference is is that we have
+ethics and more importantly the fact
+that we're going to have permission okay
+that's that's really important ethics
+and permission now look I really love
+hanging out with you guys and I love
+learning for me you guys and I love
+having this microphone so if I happen to
+just go off and just chat and kind of
+move away from the presentation somebody
+say hey bring it back bring it back okay
+um and you know so we do catch people
+like this and we also catch stupid
+people too okay wait wait wait wait wait
+are you guys going to train hackers in H
+well hell yeah we're going to train
+hackers all right so I love hackers I
+love you guys but back up back up back
+back up
+back I got a little little crazy all
+right I love training hack oh my gosh
+stop oh I know this my friend all right
+I
+quit I'll just sit here and wait okay
+look I am here to teach you how to hack
+tonight but I'm not here to teach you
+how to be a criminal okay criminals suck
+criminals are terrible but what we're
+here to do is we're learn here to learn
+the tools and techniques that are
+utilized by those bad guys so that we
+know how to defend ourselves okay I
+swear to God if any of you go home and
+become a criminal I'm going to come over
+there and kick your ass all right
+hacking is not a crime all right but my
+lawyer told me that a cash bar at a
+Defcon party is where's my lawyer at oh
+there he
+is the funny thing is is that's the
+first time he's ever admitted that
+normally he's like
+you are not I am not your
+lawyer I am not I am my lawyer but I am
+not your lawyer all right so listen
+up G need some need to see some hands
+raise those hands
+I yes pledge to be good boys and girls
+ask
+I'm really disappointed in
+that I think uh I need some help from
+the FBI up
+front Okay anyway I pledge to be a good
+boy and girl and ask permission before
+we say hey guys watch what I can do LS
+LS LS okay listen I'm serious be boy be
+good okay this is a safe place all right
+this is what I was going to earlier this
+is a safe place if something isn't
+working now is the the time to ask all
+right no one's going to judge if
+something's not working raise your hand
+and ask okay ask someone and and if you
+see somebody that's raising their hand
+need some help and you feel like you can
+please assist that's how you show your
+leite
+tonight all right all right ladies and
+gentlemen tonight we hack come on let's
+see tonight we hack and tomorrow I'm
+thinking
+AR's
+all right so we've kind of already
+alluded to it a little bit but uh Thomas
+Gardner who where'd he go there he is
+put a lot of work into into our Network
+here tonight all right so you guys are
+connected um to the 10.1 1681 Network
+all right um in that range we have uh 10
+through 75 did we limit that we didn't
+even think
+did we limit that DHCP
+scope okay so 10 through 100 all right
+so those are off limits okay so anything
+anything below 100 is off limits because
+the the juicy targets are 100 through
+116
+okay
+what it's out of scope is that what you
+mean all right so so we already gave a
+pin test talk so I got to talk in
+scoping and everything like that I got
+it okay and you need to be documenting
+everything that you're doing
+right okay so I'm serious guys you know
+I and I already kind of alluded to it a
+little bit hacking someone in 10 through
+75 is not Elite okay I mean it's a
+little funny I'll give you that but it's
+not Elite like being Elite is helping
+somebody who needs some help tonight and
+let's let's Attack 100 through 116 so
+over here on these on these old boxes
+that we found being thrown away at work
+um Thomas somehow managed to get 16 VMS
+running here um and hopefully they stay
+up tonight so if they do go down just
+attack the next IP I guess I don't
+know
+okay all right so let me go back here
+real quick these boxes are my boxes
+they're Thomas's boxes and my boxes and
+I'm allowing you to uh to attack them so
+quite honestly I'm going to sit here and
+permission yes
+yes hey Bill stop we've got a little
+Tradition at SEC
+KC and he may not qualify for one of the
+other deathcon Traditions about this
+being his first talk at deathcon but
+this is his first time giving a live
+demo at sekc and what do they have to do
+you have to do shots so here's the live
+demos twist my arm here I guess all
+Corey
+a couple more of those and you won't
+me so actually I'm G to take a a quick
+quick pause and go one way so there
+there is this man that I know he looks
+exactly like a garden
+gnome he looks exactly like he's got
+this huge beard little tiny guy he's
+about yeah I don't know how tall is that
+guy like like that tall he's really buff
+strong
+you know what I'm talking about the guy
+looks like a Gardone he's like that tall
+really
+strong yeah he he wants told me there's
+only two rules to presenting and number
+one no live
+demos right so yeah The Lumberjack yeah
+he's like that tall um and so I've gone
+this long without doing any live demos
+um but his number two thing was no code
+on screen no no it was code and so like
+and and so this is i' I've already
+violated the first one and so now I'm
+going to try and violate the second one
+and we'll see how it goes okay so real
+quick I want to talk about Network
+addressing and so in order for our
+networks to work we really need to
+understand how IP works I assume that
+you guys already know some of this and
+this will be refresher for everybody but
+before we start attacking any IP
+addresses I really want to make sure
+that we know exactly what we're talking
+about so so I want you to think about if
+you're mailing a letter and you're and
+you're mailing a letter to your your
+bestest girlfriend or boyfriend or
+whatever it is you really need to know
+what their address address is and the
+name is in order to get that letter
+there well IP addressing works very
+similar okay so if you take a look at a
+house you can really kind of say all
+right first we talk about our state and
+our city and our street and then you
+know the house number and if you take a
+look at an IP address it really maps
+that way so if you take a look at the 10
+dot right that is that's a very big if
+you look at 10 dot 10 is the is is the
+the greatest bit right so it's it's the
+biggest Network that we have at least in
+in this scope right and then we start as
+we go to the right we start narrowing it
+down as we go from 10 think of that as a
+state we go to 168 we think of that as a
+city we go to one we see that as a
+street and the house number
+is5 okay so if I want to send a letter
+to this particular house if I send it to
+10.1
+16816 is it going to make it
+there no okay so think about that when
+we're sending
+exploits okay so if we're if we want to
+if we want to exploit number five let's
+make sure that we're exploiting number
+five
+okay so now let's let's get into this
+you know I I've got all my slides out we
+can actually start hacking okay so let's
+talk about Network mapping what if we
+don't know everything that's on the
+network how would do we go and discover
+some things that are on the network we
+need a tool that can tell us what are
+the IPS of the systems that are on that
+internal Network what are those systems
+running what ports are open and what
+services can we attack well luckily we
+have a tool called inmap so I do want to
+know does anybody is anybody here
+familiar with inmap
+anything okay somebody said Port scanner
+that completely failed all right so so
+inmap is not a port scanner inmap uses
+raw IP packets and novel ways to
+determine what services are available on
+our Network we can determine uh what
+what computers are on our Network we can
+determine uh what's Avail what services
+those n those computers are offering to
+our Network um and quite honestly we're
+going to see some pretty neat stuff that
+we can determine what versions are
+installed what o what OS is installed
+Etc um and it yes and it can
+and I shouldn't have had that last shot
+and it can be used as a port Skinner too
+so hackers I'm ready Raise Your Weapons
+okay I'm ready hackers everybody join
+set KC or set casc number number two and
+open a terminal window with me let me
+ready
+okay at this point is everybody ready is
+tonight all right well thanks we can go
+forward all right so everybody I want
+you okay so uh what versions in map are
+you guys
+running one
+no
+6.46 what did you update last night or
+something
+yeah all right has everybody got inmap
+installed everybody see it available to
+it okay so it doesn't really matter so
+whatever you have you know whatever you
+have is fine tonight um but if you do
+want to install the latest you can uh go
+is all the things that you can do with
+in map is is amazing that is really
+grown from a port scanner to a you know
+like a the defecto hacking tool
+okay all right so let's go on um now
+guys I want you to start hacking okay I
+want you to start lighten these boxes up
+so we're going to start off real fast
+and I want you guys to do a ping sweep
+and see how many devices on our Network
+okay and you know what let's kick it up
+a notch let's scan the whole thing so
+let's do an inmap Das s lowercase s
+uppercase p and then we're going to use
+the CER notation of a sl24 so the whole
+class C of 10.1
+16810 sl24 and hit enter and please tell
+tonight
+58 so we have two access points up here
+we had no idea how many people were
+going to show up and so so Thomas and I
+actually had a conversation how many
+computers do you think a
+WRT54G from 2008 can support so I'm
+pretty happy with with 50 whatever
+that's pretty badass is everybody else
+seeing how many hosts is everybody else
+there all right let's move on so what if
+we want to know
+about okay so so DSP what did DSP do
+what we s in map was a flag to say I
+just want you go out and ping all the
+hosts on the network okay we didn't do
+any any Port Port mapping anything like
+that we're just pinging so let's let's
+move on to the next step um what we're
+going to do this time is we're going to
+do an inmap D capital F and then the
+same cider cider mask now dash F says oh
+check this out so Fior the the uh the
+creator of inmap scanned the entire
+internet he scanned the entire internet
+and he he went out and said these are
+the top 1,000 ports these are the top
+500 ports you know like so he ranked all
+the ports of all of the systems on the
+internet and when we do a df- capital f
+we are going to scan the top 100 ports
+on those systems let's go ahead and do
+that in
+m-f and then our cider block there and
+go ahead and hit enter hopefully this
+pal okay so really I don't really need
+some many any output from here but an
+inmap dasf what that basically says just
+do a fast scan it's going to scan the
+the top 100 ports um that are available
+um for system so you you'll see some
+pretty interesting stuff and since
+you're skinning the entire cider block
+you're actually you're skinning your
+neighbor right now remember we're not
+attacking yet and when we attack we're
+only going to attack my systems because
+like four people ask
+permission FBI are you still
+here okay they're good good they're gone
+okay so another way so yeah Dash f is
+great but what if I want the top 50
+ports right or what if I want the top
+200 ports but we can actually send an
+inmap d d top Dash ports and then the
+specify the number of ports we want and
+then send it to our system you guys
+don't have to do that I just wanted to
+throw that out okay but I do want you
+guys to do this real quick so inmap is
+definitely a lot more than a port
+scanner it can do a lot of things okay
+so this scan is going to take a long
+time all right and you guys are going to
+think it's going to take too long but I
+and especially with all of these hosts
+on the network um hopefully it comes
+back but I want you to do an inmap D
+capital a
+but I don't want you guys to do the
+cider block okay I want you to choose a
+specific host so let's do a 10168 do1
+DOT and then something in the hundreds
+so 100 through 116 um and just just
+randomly don't use
+XXX that would
+that's
+that would be terrible okay so so after
+you issue that command your in map will
+sit for a while and one thing that's
+really interesting I think it was like
+two or three years ago they uh inmap
+went into the the the summer of coding
+and one of their interns someone uh
+someone from a college coded in if you
+hit iner while in map is going if you
+hit iner it'll tell you this where
+you're at in your scan it'll give you a
+percentage of complete okay and that's
+great on a Das a so let's talk about
+what Das a does so Das a says give me
+all the things okay Das a saysi want you
+to not only scan all the ports I want
+you to query every port and determine
+what service is running Dash a also runs
+some NSE scripts um to to kind of tickle
+on how's everybody doing everybody
+good
+all right just make sure I know it takes
+a long time hit enter it'll give you a
+percentage back it'll take way longer
+Expecting all right the first person
+return you guys need to split up wait is
+down yeah maybe we should have planned
+this better yeah okay let's do this it
+sounds like the wireless network
+saturated on this
+side doing set KC and on this side set
+two so I am going to hang out here a
+person does anybody have a resp resp yet
+all right check it
+fire
+all right I need some feedback how's the
+wireless
+going I got two thumbs down from two
+good
+worked
+for hey guys we're resetting the routers
+and if nothing else I've got it up here
+and you guys can watch me hack that's
+right no so inmap is going to be
+definitely the most intensive thing that
+we do tonight um but I kind of wanted
+everybody to see the output so what I'll
+do is how about this guys everybody stop
+in mapping and I'll the M my own self
+here um no and this is going to be the
+most Network intensive thing that we're
+way yeah so you're you're still going to
+that
+okay so I'm going to do an inmap Dash
+a
+19268 this is not on the network so it's
+network okay so so what you guys can see
+let's let's not do inmap and I I'll run
+it so what I'm going to do here is inmap
+Das a and I'm gonna and I'm going to
+scan my local um system that I have here
+on my box right here okay
+so so here we go I got in map 6.4
+enter
+us damn it bill this is why we can't
+have anything
+nice okay so I'm
+78.26%
+done how about this for a presentation
+how about let's watch the clown the
+clock
+demo
+so the best part about hitting enter is
+when it hits the NSE scripts it'll go
+backwards it'll go back to like
+70% so what my inmap right now is doing
+is not only is it scanning all
+65,000
+ports it's also quering every open port
+to determine what is the uh what's the
+application behind that Port what
+version um it's trying to and then it
+goes and runs some scripts and it tries
+to do a little bit more a little bit
+deeper I trust me guys this will work so
+can can I have one person that hey some
+one person raised their hand that's
+familiar with
+ping all right Randy can you ping 100
+101
+102 oh
+go well let's just see what's up don't
+in but let's ping them and see if
+they're
+there remember you guys remember before
+my talk started and I said please don't
+lot my
+[&nbsp;__&nbsp;] oh I'm so close service scan's done
+about
+100%
+oh my NC scripts back in 98 okay here we
+got okay so this is my output of of in
+map so I did a dash a and so what I see
+here is I see that we have Port 21 open
+okay identified that it was Port 21 TCP
+it was open FTP not only that it
+determined that it's running an vsftp
+server server version 2.3.4
+how amazing is that guys not only did it
+see the portal is open but it's able to
+identify the the
+service okay so I want let's just kind
+of cruise through here a little bit we
+see vsfp we see op SSH we see tnut D see
+bind all right we see that it's that
+server
+all right going on
+one okay the one that the one that makes
+one don't do it so so this one makes me
+curious here so we've got an IRC server
+an unreal ircd server so I just want you
+guys to remember um we're right now for
+for the sake of this for the sake of
+this demo we're going to Target this
+unreal IRC server just because I I like
+back okay so we took a look at inmap and
+we took a look at the NSE scripting
+engine um a little bit so we saw it as a
+as a result of our Das a I want you to
+see some of my favorite in inmap scripts
+so if you do if you were to do an inmap
+D lowercase s uppercase c and a host
+name that will do inm's basic basic list
+NSE scripts um I don't I don't have the
+number in front of me but it's basically
+uh Theodore's favorite scripts okay but
+what's great is you can specifically
+Target scripts um there was some scripts
+for listen who who remembers heart bed
+you know like Yay heart bed we all have
+jobs okay um there was inmap scripts
+that came out um for that specifically
+target heart bleed this is how you could
+say-- script equals heart you know like
+whatever it was NSE heart heart bleed
+whatever um but you can also one thing
+that you guys might not know is you
+maybe you can also call NSE scripts by
+category right so if you were to do a
+dash dash script and then the category
+such as off broadcast brute default
+exploit
+exploit inmap can be a vulnerability
+scanner too okay so inmap groups can do
+all kinds of things network discovery
+vulnerability detection back door
+detection Etc trust me if you guys spend
+a lot of time on this slide you have a
+lot of fun all right right so so I'm
+going to get out of in map and let's go
+have some fun but first before I move
+out so now that we've seen what hosts
+are online and what ports are open and
+what services are on them as good guys
+care yes put it in your report okay as
+bad guys do we
+care yeah why do we
+care okay so if I was a bad guy and I
+and I did an in map and I see that comes
+back as unreal IRC demon running what do
+yeah I Google right I say unreal IRC
+exploit I I I Google
+vsftp 2.3.4 exploit right so so inmap
+was able to give us some Intel that
+allows us to maybe get a foothold on
+that system don't worry about what
+common interesting UNC unencrypted
+protocols Etc common TCP ports but as a
+group I do kind of want to understand
+all right and for the seasoned people in
+up but how would we quickly and very
+quickly scan and show all the hosts that
+are running a web server so those that
+are new to to inmap don't worry about
+the command the command line arguments
+don't worry about that but what would we
+want to Target if we were looking for a
+web server what would we want to
+do right so we would tell we would tell
+inmap we want inmap dasp stands for Port
+80 and then our range and we would
+easily very quickly get a p get back all
+of the hosts that are running web server
+all right so here here's an output that
+I saw or you know this is basically the
+same output I did instead of A- a I did
+an SV which stands for uh just do Ser uh
+the the service versioning s SV stands
+for service version as you can see I
+still have the same output that I had
+before um I still see that
+ircd um server and and that's what we're
+going to go
+after Okay so let's talk a little bit
+so in order for an exploit to work we
+need three things right we need a
+vulnerability we need an exploit and we
+need a payload this is actually really
+important okay so a vulnerability is a
+condition where we can that we can say
+that a particular application can be
+compromised or it can be crashed or it
+can be overtaken by an attacker via some
+method okay this is this is a really
+good question and it's very important to
+me that you guys get this can any point
+other than changing source code can we
+insert a
+vulnerability the answer is no right so
+the vulnerability has to exist okay so
+if we're going to leverage something and
+if we exploit something and we leverage
+something and somebody says you can't do
+that you inserted that vulnerability the
+answer is no that vulnerability existed
+already and we took advantage of it okay
+other than changing source code you got
+me there okay okay but in order to
+leverage a vulnerability we need an
+exploit so an exploit is an inst
+instruction that leverages that
+vulnerability to deliver and execute our
+payload and that says without period but
+it says without authorization so the
+only thing an exploit is is it's a it's
+an instruction that leverages a
+vulnerability that gets us to the next
+step to deliver a payload and our
+payload is our code to be executed on
+that victim okay so in order for us to
+compromise a system we need three things
+we need a vulnerability did we insert
+that
+vulnerability no we need an exploit
+insert that
+exploit yes okay look over to the right
+we have the bad the poor computer with
+the sad face that you know that guy is
+vulnerable and we also need a payload
+did we insert that
+payload yeah right so in order for us to
+to exploit a box we need those three
+things and we can only control
+two okay so once we have those three and
+they have to match right so the
+vulnerability let's just say the
+vulnerability we're going to a login
+screen and in order to to leverage that
+vulnerability we have to type in like 85
+A's whatever okay so we have a
+vulnerability if we type in 85 a in the
+login field we can exploit this system
+right but our exploit only has 84
+A's that it doesn't match right so so
+our exploit and our vulnerability have
+to match in fact our payload even has to
+match as well because we're only going
+to be given a certain a very limited
+amount of memory space and so not only
+does our exploit had to fit in there but
+our payload has to fit in there too and
+it's and I'm going to tell you something
+it's very very uncommon for all three of
+these things to match it's very I don't
+care what where's Brian at I don't care
+what Brian says this is not easy okay
+all three of our all three of these
+components have to match we have to have
+the same Legos in order for us to do a
+happy dance all right but luckily we got
+metlo all right so metas is a whole
+bucket of Legos all right so I've got
+this whole bucket of Legos and and I can
+say okay I've got this
+vulnerability now what exploit can I
+find that that plugs right into that
+what payload can I find that plugs right
+into that okay so that's what we're
+going to do tonight guys we're gonna use
+met
+split everything is oh my God I should
+have used that I wish I would have done
+that that was pretty badass okay so on
+your on your computers I want you to
+type msf console and we're going to hang
+out until Ruby decides that you're that
+once you have myplay go ahead and raise
+like
+all right do we have some people at
+few okay is anybody having any issues
+getting metas going um so you may get a
+few errors you may get a getting a
+database error um and if you are it's no
+big deal it's no big deal we can move on
+um it's just going to your search is
+going to be a little bit slower don't
+worry about it but if you if you do get
+a database err um on the on the newest
+calier you can just do a service post
+SQL start and metas flit start you can
+see that down there on the screen but
+quite honestly it doesn't matter if you
+don't all right is anybody not ready for
+me to move on please it's okay to raise
+minute
+all right we good you still want me to
+wait we
+good okay I got a yeah I got a odd yes
+okay so you'll recall that IRC server
+that we found earlier you know what I
+got really lazy and I'm not even going
+to search Google I'm just going to go
+into medicine
+and search unreal so that's what I want
+you to type I just want you to type
+unreal using slow
+okay okay so some of you are going to
+going to come up with slow search that's
+okay but what you're going to find is
+once you do search you're going to find
+the screen that we have here and you're
+going to see several exploits that met
+exploit already has so we see um
+exploit linuxgames
+ut04 I don't think I don't if you look
+at the description that's Unreal
+Tournament I don't think that's our deal
+let's look at the next one all right so
+if we see Unix IRC unreal
+ircd and then I see over in description
+unreal ircd 3.2.8 do1 hey I on let's
+give that a shot so in the command line
+of of Metasploit we're going to type the
+command that I have down here at the
+bottom and and if anybody needs any help
+please please raise your hand use space
+exploit
+unicirc you and then just hit tab tab
+you
+all right so use exploit
+unicirc and then you in tab tab and
+you'll get
+unreal and then hit
+enter
+okay so so recall recall our Lego set
+real quick our Lego set needed a
+vulnerability and as an attacker do I
+have any leverage over that
+vulnerability as an attacker do I have
+any am I the one doing anything to
+create that vul vulnerability no no that
+vulnerability has to exist right okay so
+we've already set our exploit that one's
+up to us next was the last one was our
+payload okay so our payload remember in
+the Lego set in the Lego set had to
+match not only our vulnerability it also
+has to met meet our exploit that payload
+has to meet all three so the great thing
+about met exploit is this framework puts
+those Legos together so I could type set
+and then this has to be an all uppercase
+payload and just hit tap tap and this
+will show you all the payloads that
+match that vulnerability and that
+exploit okay so so once you've done that
+you'll see all of the all of the
+payloads that we can choose from and and
+there's going to be different payloads
+you know kind of depends on what you
+want but today we're going to do ah darn
+it I CH I changed my slide Donnie called
+me on this one where's Donnie at all
+right well anyway so we're going to
+choose set and then
+payload and then CMD Unix reverse and
+what this is it's going to be a reverse
+shell so when we compromise this system
+shell all right and I'm
+live you guys can wait on my Ruby to
+compile
+shots oh I should have done the
+well all right so is everybody with me
+so far does anybody have any issues that
+we need to resolve while we wait on mine
+good right
+there okay so at this point we have a we
+have identified our vulnerability our
+our vulnerability is there's an there's
+a back door in the unreal ircd
+Damon we've identified our exploit we've
+chosen Unix IRC unreal
+ircd we've set our payload to be a
+reverse
+go
+liit okay so I've used X can anybody see
+my screen is that okay all right and
+then I'm going to set payload I'm just
+going to T tab all right and I'm going
+to set it to Unix
+C
+reverse
+working you know when you guys are
+watching me type and you see that I'm
+not typing the night the same the right
+thing it'd be nice be like hey Bill
+you're typing it wrong okay so next I
+know this is amazing don't show code and
+don't do live demos so that's what we're
+doing I'm GNA do show options okay so
+what show options does this you guys
+need to remember before we launch our
+exploit we need to show options so what
+show options does is this this shows us
+our Lego pieces this says you need to
+know Bill you haven't specified your our
+host yet our host stands for remote host
+that's that's the that's the guy we're
+going to exploit okay and it also says
+bill you haven't set the the lhost lhost
+is my computer okay so let's go back and
+remember your comp the one that we're
+going to Target we're going to do set
+and then capital r host if I see my
+screen okay and that needs to be capital
+and that's going to be your 10 do what
+right
+yeah I think it'll be all right I think
+this one's pretty stable okay so we just
+set our host of whatever our Target IP
+address is everybody with me everybody
+with me what's our host remote host you
+need I'm on a different network yeah
+okay but you guys will be on 10.1
+1681 something right everybody with me
+okay we also need to set our lhost and
+and I know I haven't said this but why
+do we need to set an lhost in this
+particular particular in this
+example well that's a good that's a good
+answer it's required is a is a decent
+that is a correct answer and and the
+reason why is because we're going to be
+doing a reverse shell okay so when we
+pop this box the Shell Code that we're
+going to be sitting in this box is
+actually going to shovel a shell back to
+us and so it needs to know what IP
+address am I going to send this shell to
+okay so if you're popping a box um and
+you're going to be using a reverse shell
+the reason why you would use a reverse
+shell is because you're usually behind a
+firewall okay okay and so if the
+connection is being established from the
+inside going to the outside the firewall
+will generally permit it um we also have
+the option of doing a bind shell you'll
+see these these bind shells what a bind
+shell is is the host knows okay I'm
+going to listen on Port 444 waiting for
+connection and then we connect to that
+connect to that Port now if that host
+was behind a firewall would that work no
+right the firewall prevent us so when we
+do a reverse sh that host is calling
+back to us and we bypass that fire just
+like that okay so I'm going to do a set
+lhost and I'm just going to tab tab tab
+tab tab metlo so awesome it says you're
+probably mean you so set L host tab tab
+tab tab and it'll come back with your IP
+address and I'm G to hit
+far okay this is the
+part where we just breathe really heavy
+in the microphone
+okay because we're getting ready to type
+exploit this this is the point this is
+the point we're getting R type exploit
+what if it works I mean oh my God what
+if it works this is gonna be so amazing
+all right so I'm GNA go back over to my
+host and I'm going to type exploit and
+hit
+enter oh my God all right let's get some
+classs so so what we so what we got here
+is we got a command shell on Session One
+open and watch this ID
+oh I got
+root so when we got root we got to do
+the root Dance all right all right so
+when you guys get root I want to see
+some root dancing going on here I'll
+Ro
+all right guys if you don't have root
+yet it's time to raise your hand and ask
+for some
+help let these Elites show you how Elite
+they
+are all right let's see some hands who's
+got root oh I got some roots oh I got
+another root oh I got another
+guys all right is anybody still working
+on it want me to give it all right got a
+couple hey if you need some help we got
+some really smart people in the audience
+help
+but I know dud that thing's from
+2008
+all right set casc number two is going
+up
+all right I'm GNA hang out for a couple
+more minutes I want you guys to keep
+shells okay for those of you that do
+have a ro shell what's
+wrong
+shell there's something wrong with this
+thing I mean I can do an
+LS and I can move around but it's not
+very
+it
+all right so for those of you that do
+have
+root so
+now
+hey I got an idea I got an idea what we
+can
+do I mean let let's see if I do an
+ID and I'm
+Shadow okay so here's what I'm going to
+do I'm not going to do this on stage
+because I want you to do that but you
+guys are sitting on those that have
+backtrack or black Arch or all this [&nbsp;__&nbsp;]
+you guys are sitting on a powerful
+Shadow okay I want you to do this and I
+want you to somehow get that data back
+to your your local Cali Linux
+box
+and
+Jeff what did what tool did you uh
+present
+setc oh John what does that thing do
+passwords so there's lots of so we can
+do
+this
+right the first person that cracks one
+me Andy I like where your where your
+head is man what's the point because the
+the point is the first time you're on a
+box you always grab the passwords you're
+going to need them later that's rule
+number one you're going to need them
+later because what do people do with
+them
+oh do we have a winner were you the
+first one to crack a password
+oh I'm
+trying
+Tom you already W go
+away hey did did I see that you cracked
+some
+else I didn't say make an account you
+got
+command all
+right all right well if someone's gonna
+Bill what should I do
+here I could
+go I'm
+surely surely there's some sort of text
+editor or
+something
+do I don't know where I would
+that are you serious am I Really Gonna
+Have to crack these pad am I have oh we
+got one yes come on up
+thank God I thought for gonna have to do
+live anyone UNC do what so what what did
+microphone
+just
+ran John the
+Ripper with the shadow pile and then
+password okay so so I'm GNA try and
+reproduce what you said there okay so we
+can we can see it okay so what I did or
+what he did what was your name again
+Phillip okay so what Philip did was uh
+he he catted the Etsy Shadow file and
+why why did you go after Etsy
+Shadow because that's where the
+passwords are that's that's right okay
+so he catted the SC Shadow file somehow
+he saved it he saved it into a file I'm
+G call mine Shadow you can call yours
+whatever you want all right then I'm
+going to open up a terminal window here
+in uh in Cali Linux um and as you can
+see I'm on my I'm on my roote desktop
+and I'm just going to do John even
+though even though we were shown tons of
+options that we can do with John even
+though we were doing all that I'm just
+going to give it a shot right so John
+Shadow watch
+this really last
+left
+let's try this
+again okay look at that boom
+boom all right so at this point I got
+one two three four five six one's called
+Batman I got six accounts that I can log
+into that box but you know what that's
+great no that's great all you know you
+name I saw something that was a lot more
+interesting to
+me let's go back over
+here that's great all but when I was in
+mapping
+this I saw something that caught my eye
+VNC what's better than a root
+shell a remove a root VNC
+shell okay so if I've got VNC on the
+server and we we already know this
+server is called metasploitable we
+looked at its name and it's called
+metasploitable I have a pretty good idea
+I can probably get into that metas
+sploit or into that BNC what do you guys
+think I should do to get into get into
+VNC give me I want to hear it one what
+can we do I'm GNA control Z watch this
+so this is my root shell that I had
+earlier okay I'm gonna control Z I'm
+gonna I press control Z I'm going to
+send that to the background that's going
+to take me back into
+medlo maybe all right here we go I'm
+whoa database not connected using slow
+search darn
+search am I going to have to do this one
+all by myself or is somebody going to
+it okay remember we need three things in
+order for our exploit to work right we
+need a vulnerability we need a
+payload and I'm sorry we need a
+vulnerability and exploit and a payload
+right well today I'm going to do a
+something a little bit
+different I'm GNA see if I can break in
+to this
+VNC
+so metlo is more than just exploit plus
+payload it also has a lot of auxiliary
+modules you guys might want to check
+this out so so met exploit is more than
+just an exploit plus payload it also has
+a lot of auxiliary items one of the
+things that it can do is I'm going to
+use it for auxiliary scanner BNC and
+what it's going to try and do is it's
+going to try and break in to a a VNC
+client using a you know using some
+common passwords so if you look at my
+terminal I'm going to say
+use use
+ax what was it VNC scanner maybe
+VNC I didn't I missed it all right I'm
+gonna do
+login okay what do we do after you
+choose something we're gonna say show
+options
+whoa
+just I need an our host set our host and
+then we set it to our don't use mine use
+yours it can be yeah so so because this
+is a scanner we can send it like a cider
+yeah
+whoa okay so generally on the internet
+it doesn't happen as quickly but what I
+did is I set up an auxiliary scanner to
+go look at at any host that's running
+VNC and test out a few passwords against
+that V VNC server right away right away
+mety came back and said you know what
+you might want to try the word the
+password password okay so if I were an
+enterprising Young Buck I would come
+then my IP address
+192 don't don't use mine use
+yours all right I want to see who's get
+the first person that gets cons gets the
+boom just feels so good kind of kind of
+feel like I need to do a happy dance
+right
+now all right who's got a VNC Randy's
+got a
+VNC everybody give Randy
+space all right who's trying to get VNC
+who's working on it anybody got
+VNC I'll show
+you so what I did is I did a search
+VNC okay and then I found up here in
+auxiliary I used auxiliary scanner VNC
+VNC login um and if you see I'm sorry
+that my my screen is just kind of like
+go I don't know where it went
+but but when when you see it it says if
+you look at the description it says VNC
+authentication bypass scanner so it you
+got it
+okay oh there it
+is
+okay so I think I was seen two people
+that got B andc we have any more than
+two got three got four you got one Brett
+okay got one
+Jeff's got one
+Jeff nice how about in the back you guys
+hacking some [&nbsp;__&nbsp;] back there you just
+drinking because if you're just drinking
+there
+okay so that comes to the end of the
+talk I hope you guys enjoyed it I hope
+you popped some box I'm going to leave
+these systems up here they're vulnerable
+I've pointed out some other uh some
+other vulnerabilities along the way um
+maybe you picked them up maybe you
+didn't um what I would do is I would uh
+Wayne yeah so Wayne said if you'd like
+there are a lot of tutorials on how to
+not by the way not only set up
+metasploitable like what oh how about I
+talk about that um so the 16 systems
+running on this box are met exploitable
+to metable too it not only comes with a
+bunch of services that we attack tonight
+but there's a lot more um did anybody
+services everybody has a small soft spot
+in their heart for Tom Cat don't they
+right right
+so there's a lot of services on these
+boxes that are that are exploitable
+we'll go ahead and leave them up um by
+the way I'm one of the ones that are
+hiring if you get a talk um you actually
+get a microphone you can say hey I'm
+hiring if this was way too easy for you
+I'd like for you to come and talk to me
+tonight um the slides are available um I
+have them at bitly heavensent dhack uh
+they're available right now um you can
+pull them down they are in a PDF and I
+promise you it's a straight PDF there's
+no funny business in there I promise
+promise I promise I promise no funny
+cissp go ahead if you can find my home
+telephone number even better um I am
+Evon on Twitter and you can get to my
+about me on incident response so that's
+fun I didn't hear a word did you
+said am I going to put my hand on the
+sack
+pal hey
+hey get up here Phil put your hand in
+the
+sack what'd you get yeah Phil put your
+gum all right guys I hope you had a good
+time
+tonight
