@@ -1,0 +1,358 @@
+talk about your ski hid stop to hear
+that voice yeah that's really good on
+that those pipes cut out singing voice
+is going to be awesome now I'm not going
+to do that for you guys though alright
+so why am I talking about this so most
+you guys are not new to this but USB HD
+no hidden devices are a big thing in
+security they should be because they're
+close enough to the user that it becomes
+an issue so what Universal Serial bus
+human interface device so for people
+that have set in for a long time or hid
+that's really what it stands for so this
+is why it is an issue so you guys all
+know that um you know for a decade or so
+it's been pretty obvious that USB just
+the ports on those computers are a huge
+security problem and what do you do to
+get those lockdown while you can put
+policies around them but the reality is
+is that of all the configuration things
+to lock down this has been hard because
+the whole purpose for us p is to be
+universally easy to use you just want to
+use it right so you know for a while the
+big the easy thing in a pen test is if
+you had a USB device with an autorun
+anything on it and people just stick
+with their computers in the run right
+these days I hope that we've got a lot
+of those lockdown even even some
+configurations on the host can can keep
+those things from running but you know
+what most things do allow is a keyboard
+or a mouse and so a human interface
+device is anything that allows an
+interface to that hardware that a human
+will use it was pretty straightforward
+right so a keyboard uses a specification
+a mouse use the specification there are
+others as well touch pads and other type
+of things keep as you plug in there just
+forms of that device of that in there
+where do we where where do we use this
+type of specification everywhere if its
+computerized it probably talks USB HID
+in fact if you even have little i OT
+device will Internet of Things devices
+if they've got an actual regular OS on
+the thing chances are its built-in all
+ready and it will recognize it even if
+it doesn't have a USB port and that's
+something I've been playing with
+recently so they're all over the place
+clearly computer so you've got you know
+your laptops and stuff if you leave that
+sit around or if you're at a coffee shop
+and you have a guy like Mesa ounces oh
+my phones dying plug-in because
+they kind of know me we've been hanging
+around you're going to see what that
+will do please don't and phones tablets
+believe it or not I that this is I try
+to get a demo done for my phone it could
+get it done in a 15 minute day it's
+going to be too involved and try to do
+but they recognize hid device so you can
+plug in with like epidote EG cable or
+something a keyboard and a mouse work
+just fine at least a keyboard and so
+cars ATMs the IOT of things think
+anything smart it probably recognizes
+days and so oh by the way Jeff here was
+telling me was hanging out of his gym
+and the new fancy smart exercise
+machines they allow you that you got
+extra ports on and they say to charge
+your phone did you know that some of
+them are actually using the USB ports in
+the computer on the device there and the
+funny thing you can plug a keyboard and
+bang on you may not see anything come
+out of the display but if you fuzz that
+thing long enough and it responds that
+means it's listening and this is a good
+way to do that so I'm going to show you
+some stuff that would play that yeah
+obviously cars well I got that twice
+because matter i just saw charlie miller
+talk and I'm so anything with a computer
+and it's probably going to be willing to
+talk to so you get it connect to it how
+lots of fun timing devices will talk
+this way and my favorite one that i've
+been playing when just because i mean
+you can you can conceal these things
+anywhere i mean it's it's paul mobile
+you know it's like bukata it's this this
+is a this is called a i found this at
+microcenter I didn't even know what the
+heck it was what I bought it because it
+was small and it looked fun but it's
+called digits park and it's a little
+startup company that sort of making lots
+of cool things but this thing right here
+actually has an HID protocol
+specification built right into it it's
+essentially Arduino so you've done
+anything Arduino you load this up into
+an Arduino sketch in it just you know in
+I just right right key strokes for it
+but yeah there's a lot of documentation
+out there TC devices were the ones that
+really put this on the map those are
+really cool recommend picking one up
+there really cheap this is ten bucks
+bottom of nine bucks so you can do a lot
+of damage fun you have a lot of fun look
+I'm a good guy right so when I pen test
+and do it make a well that's good that's
+not damaged rank I mean remind myself
+there are some commercial ones the youth
+of the rubber ducky USB device out there
+is the one that hat five put together
+and a first I made fun of it because it
+was making it too easy and then I
+started playing with like dang you can
+do a lot of cool things with this
+particularly when you're making it make
+it making a computer think that it's
+both a drive and a keyboard at the same
+time so you can actually load software
+on it stick it in there make it run the
+software pull the thing out our even
+load stuff onto pretty cool Callie net
+hunter it supposed to be that hunter
+that's a typo and i'm going to be
+demonstrating that in just a moment many
+other things will speak this way so let
+me show you a demo and i'm just going to
+do this by in fact i'm not sure which
+screen this is going to show up on oh
+and be honest with you so what I'm going
+to do is I'm going to shove this in here
+and and I have pre-programmed this
+essentially imagine if I had a logitech
+keyboard with all those little micro
+Donald things and I slipped it into your
+computer and now without you knowing
+across the room i'm typing this
+dastardly commands right but it would be
+really hard for me to figure out whether
+or not i'm making errors and stuff like
+that so what we do is we preak program
+these things and we drive them into the
+ground until they can make no mistakes
+right they are a little finicky so let
+me give this a shot I want to make sure
+that the that the windows will come up
+on the right screen because these are
+not mirrored now an i just realize it's
+going to be a problem but i'm going to
+plug this in so imagine i'm talking to
+you i get your attention and i plugged
+this in I did this at an event by the
+way I was drinking a beer and I was
+talking to two to Brian and I'm keeping
+his attention well I did this and it's
+got about a five-second delay on it so I
+can get their attention it's unlocked
+here and it basically oh yeah you're not
+going to see it well it's popping up but
+please enter command over here
+here you go and it starts just doing any
+keystroke you can think of and I can
+program them in to do anything now this
+is just literally typing text somewhere
+but what if this were a command line and
+by the way we can also do mouse things
+so if we want to do something like close
+this click on some buttons maybe open
+some other things like a terminal and
+change the prof maybe put about you know
+listen for something there a little neck
+cat you're late on that right yeah baby
+so I mean it takes it's a little finicky
+but yeah once you get that figured out
+this is pen test heaven right here if
+you get physical access to something and
+it's unlocked so all I got to do is keep
+your attention for a moment or get the
+gal who serves the drinks to you know
+get your attention while i slide that in
+so anyway so that's while that's waiting
+I've got another demo i want to show you
+how do we switch this to the other
+machine so this is just a nexus 7 device
+and I've got cali nick hunter on here
+and honestly I had a I had a modified
+colonel on this that would here let me
+just unplug this we go I had a modified
+colonel on here before i'm just an
+android device that would allow me to do
+this but cali net hunter actually has a
+really cool front end and stuff to do
+all these hid attacks so here's what I'm
+going to do I'm going to run a script
+that I wrote I didn't actually use
+theirs because honestly it would take me
+longer to reverse engineer what the heck
+they're doing and just using my scripts
+but on here if I came over and plugged
+into someone's device or if I'm at the
+gym and I plug this in and while I'm
+working out I thought I'd worked out my
+hacking abilities and play with some
+things for a little while i would run
+these scripts that would start sending
+keystrokes to it it's easy to fuzz um I
+use it on my phone I've got a phone that
+i had a keep in your like a four-digit
+keep it on the front I let a brute force
+that thing overnight and it actually
+worked so you can plug it into about
+anything so let me run this and I'll
+show you what happens this is a script
+go and remember what my what my computer
+over here was there I slow this down by
+the way so you can see what's doing it
+goes blazingly fast
+and so you'll actually see a type now
+but if you'll notice that the user
+access control is turned on it actually
+to eat around and get rid of that this
+is Windows 10 is open up a PowerShell
+it's going to just do a quick script and
+what it's going to do is it's going to
+fire up a reverse TCP shell and it's
+going to connect back to this one over
+here that if you remember that demo it
+actually has a net cat sitting there
+waiting and waiting for it it's on the
+same network all right so it normally
+this would be a little bit quicker but
+as you can tell this is kind of fun
+stuff to figure out great alright he's
+had boom so let me go back to the other
+machine here so you can see what effect
+I'm not going to touch these things so
+you know it's automated here so that's
+Jeff's machine right here on the same
+wireless network as this one by the way
+is not cans a halt wireless network
+because I don't want you all hitting
+this thing when I doubt reverse porch
+stuff here but ha so yeah if you've got
+a lock down eight you know USB
+environment where it won't run those
+those pieces if I those takes a long
+time those tiny little network so i have
+to wait for it but if you've got it
+locked down and get a good physical
+access controls to these and if you've
+got USB port to expose you just realize
+this is this is there and honestly you
+could have a lot of configuration stuff
+lock down this there are some products
+will try to lock this down I've been
+able to bypass a couple of them honestly
+these things are really easy to change
+USB devices have an ID it's a little bit
+like a mac address on the network and in
+this case you just change it just like
+Matt changers right so it's not too hard
+to bypass that so really you're going
+down to physical security and good
+processes in your environment and
+certainly keep an eye out for people
+that are dropping strange devices around
+these are by the way also fun to pair
+with a wireless device there's these
+little things they've got just a minute
+these cute little things coming out of
+China now that actually have a looks a
+little wireless dongle like this except
+us with a white box that's got a Wi-Fi
+Bank connected to it an SD card
+connected to it and by the way the
+things got a kernel that will do hid on
+it so you put all those two
+together they can get pretty much remote
+access to anything with those because
+this will create the back tunnel it will
+install you can download the other proof
+of concept is I throw a nice fat little
+meterpreter shell or a backdoor
+executable on here i connect to that and
+basically allow it to download the big
+thing run it there and then hide itself
+right so pretty dangerous stuff very
+very fun to play with if you want to get
+into this I would definitely recommend
+trying on some cali net hunter i will
+tell you that it's not very script kitty
+I mean you can go push the button and go
+it doesn't even run on my right now but
+it gets fun you can get into the scripts
+you see what they're doing definitely
+would recommend you know grab it at a
+teensy Arduino if you're into Arduino or
+one of these digits Park things for ten
+bucks and you know there's sketches
+there's all kinds of information out
+here iron deke and these other guys who
+started the this thing about I don't
+know seven years ago kind of blaze the
+trail if you want to get a rubber ducky
+by the way those are cheap and you can
+like littering on a website click I want
+a reverse TCP shell and I want to
+exfiltrate this type of data generate
+that thing and stave it on nasty car
+plug it in and then BAM it just works
+you know so there's a lot a lot of fun
+stuff you can get involved in cool
+alright any questions I got two minutes
+I'm being told right now can I use those
+two minutes yeah excellent right I just
+want to be under tonight that's a bigger
+yeah yeah yeah so there are some
+products and started advertising it
+defends against the ducky is what they
+would say hak5 put out the rubber ducky
+and when they shift like I don't know a
+half a million other or something
+ridiculous everybody got scared and yeah
+you know and and but the problem is it's
+not just the ducky I mean this this has
+a different one they are doing those
+have a different one and so it's not a
+really great way to do that so if it's
+just checking for that ID that's not
+smart and there's actually a utility
+that comes with the ducky then changes
+its arbitrary things every time you use
+it so yeah you got to be a little bit
+smarter than that and most of products
+aren't so they claim that just look into
+what they say it's a little bit like
+they when they claim that they can
+protect all web apps from things and
+you're like whatever so but yeah be
+careful when they say to they protect ya
+yes to me is to move anyway let's figure
+out how to do the same with that right
+all right any other questions all right
+under 15 minutes unbelievable quick

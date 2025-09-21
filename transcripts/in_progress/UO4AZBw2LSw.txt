@@ -1,0 +1,677 @@
+[Applause]
+others so here is with automation your
+interview here is how to automate your
+security or how people have prly
+automated theiry and for every
+person that doesn't shut the up we
+t
+there we go yeah this is the whole this
+is you guys are really good at shut the
+up actually um not you practice uh
+anyway here we go thank you very much
+thank you
+Maddie hello everybody hello Kansas City
+what's
+up all right let's talk security
+automation uh everybody's favorite topic
+so who am I uh my name is John tuckner
+you might know me from around town at
+places like HR Block Optive cider areas
+so who knows you know I think that's
+those places inlo about half this town
+so um yeah that's where my mssp
+experience comes from uh I do other
+Consulting security engineering stuff
+and like everybody else here I'm a
+barbecue maker coffee addi and baseball
+fan so yeah that's a little bit about me
+but tonight's talk is about security
+Automation and what it means to me what
+my definition of security automation is
+uh but also you know I don't think a lot
+of people talk about security automation
+so I love using these platforms as a way
+to talk about how people are able to
+make security security automation how
+many people in here like use a sore or
+like have dabbled in security automation
+at all all right we got like three
+people I love it this is going to be a
+great
+talk all right so what security
+automation means to me uh how the market
+is kind of set it up it was that you
+have a SIM and you get alerts and you
+create a ticket from those alerts and
+maybe a little had some gry noise
+enrichment or whatever to those alerts
+um and then you kind of stop there you
+hand it off to a human and you say human
+go do the rest right I think it goes a
+little bit further than that so uh I
+work for a company called times this is
+as much as I'll shill I promise uh but
+it's a no code low code security
+automation platform which helps people
+uh link together it's kind of like the
+glue of a security stack right so taking
+a different approach to this uh let's
+say we have an alert for a new
+multiactor device being registered for
+user right it seems kind of bad been
+like a fire ey report um a lot of
+companies have had really bad incidents
+based on it what if you were able to
+look up that person in a directory reach
+out to them on slack and say hey did you
+actually add like did you get a new
+phone yesterday right maybe you did
+maybe you didn't but at least you're
+like lowering that Gap to being able to
+say hey like this two Factor
+authentication piece that allows access
+into my network is that was that
+actually you doing that right right and
+if it isn't you need to be on top of
+disabling that as fast as possible and
+clearing sessions and things of that
+nature
+right so that's what security automation
+means to me uh in my position I'm
+currently the manager of a organization
+called time for labs I get to just think
+about cool security automations day in
+and day out and I have a team that uh
+that's what all that we do right and
+that gives me a really nice insight and
+view into a lot of num and a lot of like
+strategies that companies are using that
+hopefully I can take and give to you all
+today all right one thing that we
+started off with uh a little bit last
+year it actually has kind of the
+foundations of a secc meeting is where
+this this idea really percolated it's
+called the automation capability Matrix
+so whoever's um knowledgeable in miter
+attack this is like the automation
+version version of that okay so it's a
+set of techniques designed to help
+security automation team understand what
+is toss uh it's not a specific if you
+have crowd strike you do this it's if
+you have an EDR you can probably do this
+capabilities each capability in The
+Matrix is uh Standalone and provides a
+lot of great info about like what it can
+do but when you join a couple of these
+capabilities together you get a much
+like broader workflow so think you get a
+fishing uh email submission you want to
+create a ticket to track that you want
+to look up and analyze the headers in
+that email you want to pull out all the
+domains and URLs and analyze those and
+maybe you want to add those to a block
+list right so each of those pieces is
+its own individual capability but all
+together you have a really verbose and
+workflow so from the from suc uh this is
+is what I ended up going back home
+basically drunkenly and wrri down into
+my iPad and saying okay this is a
+technique that somebody would do this is
+a technique and just like started
+jotting out this like Matrix right and
+this was honestly the first version of
+it posted to LinkedIn people really
+thought it was awesome so I was like
+okay I'm going to take this and do a
+more so from that uh I took to notion I
+don't know how many people use notion
+but it provided a really great interface
+to publicly list everything that I was
+working on internally in kind of this
+like uh swim Lan type fashion right so
+it reads left to right top to bottom a
+little bit uh alert handling issue
+tracking enrichment user interaction
+response continuity and procedural are
+the are the main topics and within each
+of those is like something that you
+could automate in your organization more
+specifically your sock but uh maybe
+there could be a matrix for like red
+this is what an individual box in that
+Matrix looks like so you'll have the
+name the description a couple techniques
+that are technology agnostic of like how
+you would carry this out and below this
+I cut it off but like I'm also showing
+my company uh a couple workflows that
+you can get going with like with a
+right a little history of this so um
+between that like
+November December sekc meeting and
+January 16th is when we officially
+released the Matrix March 13th I finally
+had my team members join uh join times
+and so they were able to really kind of
+like rally around creating examples for
+the Matrix we now have one example for
+every capability in The Matrix so we
+know it's possible um that happened on
+September 20m and then on December 10th
+we ended up releasing an interactive
+tool so the notion page and we we it was
+very much like we're throwing
+information at you you need to digest
+that now we have an interactive tool
+which allows you to assess your own
+security automation program right so you
+can say uh yeah I do similar it's this
+is my workflow for that uh this is my
+workflow for opening up J tickets and
+all whatnot there you can set the
+priority um I'll provide a link to this
+but it's also like open source privacy
+conscious you can use it I don't like
+see anything think it's just a nice tool
+for you to use and validate your
+security
+program so uh from The Matrix uh it was
+spotted in a couple spots this year
+which I was like thrilled with I
+honestly couldn't believe it uh we were
+included in a blackout Europe talk there
+were a couple people um on the Internet
+or yeah unlike LinkedIn that were
+sharing it it was seen in a couple red
+threads and there was one person that
+said thank you for sharing this I think
+it's an amazing framework initiative
+that could be a standard for
+classification of store automations a
+bit like the react framework but with
+more focused so uh react's a really cool
+uh initiative out there as well I took a
+lot of inspiration from it but it's very
+high level and uh I wanted to make
+something like a little bit more
+people all right so a lot of this is
+going to be based on the uh some of
+these stats are going to be based on and
+categorized based on the automation C
+Matrix but here's just the general
+things that maybe you can look at
+automated um from what we do at times we
+create these work flows for people and
+we distribute them out uh in a manner
+called our like library and uh in the
+past year we were able to give out
+almost 18,000 workflows half uh 5
+million executions and we found that uh
+about 35% of all of our like users so
+you can sign up for times and just throw
+it away 35% of everybody has utilized
+the library so I thought that's really
+like compelling and awesome that people
+are getting some value out of it in
+somewhere
+form this is a great uh overview of just
+kind of like the general tools that
+people start with with automation so
+slack and virus total uh I think we all
+knew that like virus total is going to
+be that one thing that everybody kind of
+starts with when
+they're insecurity and wanting to like
+work with an API for the first time but
+slacks actually like really uh surpass
+that I think that's just because
+everybody want wants to funnel their
+alerts into slack one way or
+another uh jira Crow strike Google URL
+scan AWS Microsoft abuse ipdv and pag
+Duty uh round up the list I think this
+is a little bit representative of our
+client base too um I think as we grow as
+a company we'll do a lot more with
+Microsoft and things that nature as well
+so I wouldn't be like too dismissive of
+what this says and why or if you can
+notate with that or
+not we've also like tagged a lot of our
+stories in the library so uh from that
+like jir had a lot of attention slack
+virus
+total people were looking up ioc's and
+wanting to know more like wanting to
+document their workflows automatically
+which I think is really compelling so uh
+not only are you like codifying your
+security response but then you can also
+use that automation to document like
+what's happening in your security
+organization which is really nice uh
+rounding this out is URL scan
+crowdstrike tle um alerts and enrich
+it's just kind of like catch all
+topics then we have like the number of
+workflow executions uh that we see our
+customers utilizing uh slack is just
+carrying the torch here but what I would
+really say here uh based on this is
+there's a capability in SL to receive an
+event every time that you have an emoji
+added a message posted like there's just
+so much functionality that um for for
+example here I'll get to it here in a
+second U of how you might like see the
+exponentially um a couple thing uh so in
+our library obviously we have like a
+search functionality to find the
+workflow that's actually meaningful to
+you and I just like I picked a couple
+topics that I thought were really
+interesting in the past year so
+artificial intelligence is one of them
+you can see that around March last year
+uh anything kind of artificial
+intelligence open AI Chad GT those
+searches just increased by so much um
+and you can really line it up with when
+the chat GT API was released so people
+were able to like introduce AI into
+their workflows a little bit easier and
+then what happened is everybody thought
+okay this is great but it doesn't
+actually give me the answers that I'm
+looking for AI like super overrated uh
+I'm just going to move along and then
+the gbd4 API was released and like
+interest started picking right back up
+again we realized that the like d Vinci
+models were like fine but gb4 is where
+it's at and now like interest is really
+picking back up again and a lot of
+people are using um AI of their like
+security
+response
+um always relevant fishing we haven't
+solved it uh fishing is still like a
+very valuable topic it's kind of a bread
+and butter for security automation but
+what we have seen is like kind of Trends
+in fishing and there was actually a
+really like new fishing novel fishing uh
+attack that people were leveraging this
+year by sending QR codes to people and
+say hey scan this we'll attack you to
+your phone we'll be able to um get yeah
+get get you to a website you can't be
+able to like pick out that URL from the
+uh email itself the domain and analyze
+it you have to actually scan the QR code
+right so that's like really dangerous a
+lot of companies came out with ways to
+you know uh protect themselves against
+that but it really caught people's
+attention and people started looking for
+answers for opportunities to like knock
+that
+down
+um I want to I want to go over a couple
+things so um this is going to be like a
+couple examples of the top workflows
+that we see or the top uh capabilities
+that we see in use and some example
+workflows of how you would go about
+implementing them so this uh the top one
+is like creating a tracking or like
+creating a tracking ticket so opening a
+ticket in J and service now that's going
+to be the top thing everybody knows that
+when you get in a Lear you need to open
+up an instant that's a great thing to
+automate followed by domain analysis so
+taking your URLs understanding if
+they're malicious or not file hatch
+analysis obviously looking up the hashes
+and virus total chat alerts so sending
+your chat uh sending your alerts to chat
+so in your SL chain just kind of
+flooding out with all the alerts you're
+heading and then email attribute
+analysis so looking up headers and
+understanding like who the Senter
+actually was was is that a known
+Center so this is what it looks like in
+our platform
+um you can see how you can kind of Link
+together a couple of the capabilities
+but what really matters here is the
+tracking location so we're getting a uh
+craft strike detection that's an
+endpoint alert capability at the top
+we're going to search for the ioc virus
+total that's hash analysis and then
+we're going to move on to uh tracking
+location creating a ticket to track that
+detection craft strike and adding all
+in and here's just kind of a graph of
+what that look looks like um as far as
+the most common workflows by the
+capability ID that I was mentioning
+earlier so we have the automation
+capability Matrix you have a workflow
+created and you're tagging that workflow
+with what capabilities are being
+performed in that and this is kind of
+the prevalence um of those
+tags so again tracking location user
+notification hash analysis chat alerts
+analysis
+then we get into the uh amount of
+um executions not just like the presence
+of a specific like capability but the
+number of times that capability was
+executed is another way to look at this
+chat alerts again you're sending like
+tons of alerts into slack and just
+hoping that somebody Picks Them Up or
+like responds to them I think what a lot
+of people see is like you're going to
+still dump all your alerts into a
+channel that's on mute but you're still
+going to open up a Jer ticket or maybe
+you'll open a Jer ticket for some of
+them and actually respond in that way
+that would be like the difference that I
+see across these
+two uh the next one is user notification
+this one's actually really uh
+fascinating really awesome so being able
+to like reach out to the user I know
+I've spent like countless hours trying
+to track down hey did you actually like
+log in from China yesterday uh that
+that's such a Time waster and like
+pretty bad but you sometimes you
+actually do want that person's like
+response back uh depending on where
+they're going I've seen a lot of really
+cool automations like looking up
+somebody's BTO too so one thing to think
+about uh the next one is chat events so
+um this is that example that I was
+thinking about earlier is uh we have
+some customers that every time that
+somebody sends a message and slap to a
+channel they're going to pull that out
+and they're going to say does this have
+like AWS CR credentials in it and is
+this a credit card number and be able to
+say okay I need to like actually respond
+somebody sharing information slack they
+should
+be uh IP analysis and IP list these kind
+of go hand in hand so look up the IPS uh
+the second you look up an IP it's kind
+of like already going to be a new
+reputation and a new IP that you need to
+deal with um so if you actually get a
+bad result you'll probably want to add
+that to a block list and be able to like
+whatever so this is what I was talking
+about with the uh suspicious logins so
+you get an I am alert from OCTA you
+probably want to validate that session
+if OCTA is giving you some signal that
+it's like a a bad login um and then you
+can reach out to that user saying hey
+was this actually you logging in from
+this location uh maybe they'll log in
+again and maybe it won't be suspicious
+this next time if they uh if you have
+that session cleared but then you can
+also reach out to the user and get some
+additional context you're probably going
+to do this anyways manually uh in your
+organization
+anyways uh here you can see how like
+chats can kind of just uh exponentially
+grow compared to all the other ones like
+user notification chat events um and IP
+Lo
+c um and then through all this what
+we've been able to do through the
+automation capability Matrix through uh
+labeling these things classifying them
+we've been able to do like a little case
+study with one of our customers so they
+had 25 capabilities Implement and tag
+out of about 70 um so I think that's
+good progress on them about 10 workflows
+they had are utilizing slack slash
+commands with about 2,000 executions
+which is really cool so they're able to
+create these commands in slack that a
+and their company can utilize say look
+up an IP address they don't have to give
+access like privileged access to a
+specific Tool uh and now those people in
+their organization can like get
+additional info without having to
+involve a security
+engineer the last note here
+they they think or this is a great idea
+but what they're able to do is send like
+a du or an OCTA two-factor prompt uh so
+instead of reaching out to the user and
+saying hey was this you they only will
+trust the response of a two-factor
+authentication push right and Duo and
+Octor are two great platforms that allow
+you to do that they execute that 721
+times to people which I think is pretty
+interesting um unfortunately for them
+they say that only saves them 6.5 hours
+per month so there's two ways of that I
+think you can like assess your security
+program time saved is an obvious one but
+then there's also like the uh
+reliability that your workflow can be
+executed and the time it will take to
+like say get a user response right um a
+couple different ways of thinking about
+it but time saved is where everybody
+kind of initially goes to but there's
+actually a lot there to be able to
+program um so I had a couple
+recommendations just based on uh this is
+what their automation capability Matrix
+look like in the uh in the assessment
+that we did um it's really small but you
+can see like time saved and number of
+execution listed on each of these
+configuration items um basically what I
+was saying to them is like they don't
+have anything blocking with an IP list a
+domain list or a hash list all these are
+usually you're able to upload these to
+something like a crow strike and say um
+there's a really cool functionality if
+you upload hashes to CRST stripe uh
+you'll stop them from even being
+executed uh you're able to like automate
+that really
+easily and then just like document and
+highlight the effort made uh when time
+saved a little bit more uh they didn't
+have anything listed for like uh
+tracking issues or anything like that
+and I think that was just uh they didn't
+have any of that tagged in the at the
+did um and then we kind of just get into
+future state so they gave me some some
+things that they were looking at based
+on the automation capability Matrix so
+they're going to reach out to users more
+often they're going to try and get their
+uh user responses more um and then
+they're going to like look at notifying
+emergency resources and better incident
+response handling so you can create a uh
+insert response Channel and slack the
+second that you get a critical severity
+alert um or pay UPS be a pager Duty when
+something happens so I think that would
+be really great um more slash commands
+for them and then time escalation so if
+somebody hasn't responded to an alert in
+a given amount of time uh up the sity of
+it um and then they're also going to add
+more response actions um with the
+slackbot so artifact Gathering disabling
+MFA devices and asset lookup um so
+artifact Gathering you know get this
+file from this host and be able to
+analyze it in sandbox or something like
+that um and to finish off I have a
+couple bold predictions just for the h
+bit for next year so uh I think identity
+is still growing exponentially uh if
+you're doing firewall stuff and data
+center I know it's very uh very typical
+here um I think even then everybody's
+having to deal more with identity and uh
+user identities being will knock down uh
+indication boundaries so definitely look
+at that uh resource attestation is an
+interesting one but um I'm getting a lot
+of feedback that uh we want the device
+we want to know that the device is
+healthy and be able to reference
+automations based on that um one really
+cool use case that I saw was mailing uh
+laptops out to new users at a company
+how do you know it's that user that's
+actually gotten that device right so I
+think there's a lot of cool things you
+can do there uh Sim less uh I think
+we've seen a lot of really cool
+implementations without a SIM so the
+alerts are always going to be out there
+in your environment uh you can use
+automation go out and grab then instead
+of having to go through the time and
+energy to set up a sim a log Source
+parsing all that only then to just kind
+of like let the other sit there so
+actually do something with them um all
+the clouds so no matter I think maybe up
+until like the past couple years
+everybody was like we're a aw shop we're
+a gcp shop I think the whole thing is
+kind of for our hands if you're going to
+acquire a company through m&amp;a or or
+anything like that you're going to have
+to be you're going to be forced to work
+with all clouds so it' be good to get
+some knowledge in all them and how to do
+authentication and
+identity um Ai and no code if you want
+to leverage AI definitely like look to
+the no code platforms like times like
+make legs happier you'll get a lot more
+out of them and then more contextual SAS
+data there's so many SAS platforms and
+they actually have like really cool info
+one was the last time that you looked at
+like the slack admin API to know some uh
+some activity and that's happening it's
+slack right and so it's that kind of
+thing that people are going to start
+digging into a little bit more as we
+go and that's it so uh scan the random
+QR code on the screen uh definitely not
+malware it'll get you to the automation
+capil Matrix um this is my info if you
+want to look me up add me talk more
+about automation um but really enjoyed
+it thank you for having me and any
+questions yeah appreciate
+it
+question I got a question well thank you
+very much oh sorry question yeah yeah d
+i I want to know for your Automation and
+specifically like malware analysis do
+you recommend right now our Dynamic Mal
+analysis that we use our tool not really
+good for automation especially since you
+have to you know for one it's not built
+out for Automation and then two you have
+to obviously wait for that sandbox to ex
+XYZ M where maybe it's browser based
+attack you recommend um a certain
+service for automation for uh Dynamic
+sxes yeah yeah I can go a couple
+different ways like hybri an is really
+good any any.run it's great I think to
+execute links um what and then one of my
+guys like yeah a bunch of different ways
+you can take this um one of my guys just
+went through like a quarter long project
+to set up
+a lab with terraform and flare VM and
+like give himself like the entire
+playground to be able to analyze piece
+of malware um and the the full Genesis
+of that it's like say you get a crow
+detection he's able to take that off the
+host and have that in its an hour lab in
+the second but that detection basically
+occurs so I think it's really neat um if
+you're if you don't have the
+capabilities like with your own
+lab that's kind of what we're limited to
+right now is is is it's a that's a
+government funded analysis labin and
+there's no API
+automation check with your isacs because
+some of those uh will provide a it's
+actually provided through an ISAC oh
+okay and it doesn't and it doesn't it
+won't support any type of automation to
+right now and that's why you know you
+got to look at spending the big bucks to
+get that feature but I get for free
+right now an
+ISAC that's all cool I have a question
+how do you get around the fact that any
+of the chat Services slack teams what
+have you that they're scanning anything
+that you put inside their
+service uh the question is how do you
+get around chat and uh services like
+slack team scanning what we have inside
+yeah you put an IP address in there
+they're going to scan it go check it out
+themselves and so on and so on yeah that
+I mean that's a really valid question um
+I would say is it like is that
+your maybe that would be beneficial to
+you right like it's more intelligence
+out there in the world I don't know if
+like IP addresses anywh else or
+necessarily like too sensitive or too
+prior proprietary to your own
+environment right uh more so around like
+a URL you put in there teams go scans it
+now a bad actor knows hey someone's
+looking at this now y
+soop I mean I think I think it's uh kind
+of on the path to stopping him right so
+yeah
+[Applause]

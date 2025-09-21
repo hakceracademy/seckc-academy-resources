@@ -1,0 +1,563 @@
+all right so this is talk about Empire
+or PowerShell Empire depending on how
+you want to call it and it's merely an
+introduction so this is a tool that I
+really have nothing to do with except
+I've been writing a class around
+PowerShell attacks and how to defend
+against them and I've been using
+PowerShell for the offensive portion of
+that there are probably people in this
+room that know more about Empire than I
+do you've ever used this to old raise a
+hand so why are you not up here giving
+this talk that's what I want to know
+so Empire was written it debuted at B
+side security besides Vegas two years
+ago so this is a relatively old tool at
+this point in terms of internet years
+what is it like a hundred now so a
+PowerShell employer was written by these
+three fine folks to give them a full
+credit
+I had really nothing to do with it I've
+only been a user only for a very short
+while so another way of saying that is
+let me manage expectations here I know
+almost nothing about what it is I'm
+presenting about so there you go
+so Empire according to its creators is a
+pure PowerShell post exploitation agent
+built on cryptographically secure
+communications without needing
+PowerShell vfc so if you haven't seen
+some excellent talks online go youtube
+PowerShell without a PowerShell and
+you'll see that really all you need is
+the system management automation DLL you
+can inject that into pretty much any
+process and now you can use any process
+to run powershell commandlets which is
+kind of a beautiful thing PowerShell
+Empire also play are also is according
+to the authors it contains rapidly
+deployable post exploitation modules
+there's 260 plus of them to date ranging
+from key loggers to me me cats
+it features adaptable communications to
+avoid Network detection all wrapped up
+in a usability focused framework and
+that's it
+for boring slides if you want to know
+more about PowerShell Empire well I'll
+come back to boring slides it a bit I
+guess go to this website I set this
+thing up on an art hell based box so Red
+Hat sent to us box that's what I'm gonna
+be using for demo most of the talk is
+going to be demo setup assumes you're
+running on some Debian Ubuntu based
+system that has F get you can still
+figure out how to get the thing
+installed if you just open up the setup
+script if you're running RL you can make
+it work
+but it will take some more manual labor
+on your part so with that let's jump
+into a demo so pray to the demo gods
+all right so I'm gonna be operating from
+this host here called client four and
+apologies if you're in the back and you
+can't read it come up front and you'll
+be able to see it better so client four
+is the machine that I've got Empire
+installed on and basically you you can
+download this thing from the
+previously-mentioned website it's on
+it's on github it's probably where
+you'll find the latest bits you'll find
+a link on that on the previous mentioned
+website but you fire it up
+you're running Empire and of course they
+give you a cool splash screen which is a
+stormtrooper mask there so you know
+you've got to have the cool factor and
+basically you're you're sitting at a
+problem so those of you have used
+Metasploit or you're familiar with
+Metasploit it's kind of similar in terms
+of the way things work so let me see if
+I can hold the mic here and type and
+talk at the same time there is a
+QuickStart guide on how to use this
+thing and a couple of my teammates have
+been using this too for the classes
+where we're working on and everyone has
+come to the same conclusion that the
+documentation kind of sucks so if you're
+using the QuickStart guide the one thing
+they did they don't tell you in the big
+surf guide is the first thing you need
+to do is create a listener so Empire is
+basically command and control so you're
+going to be running this back-end piece
+on some Linux system right that's all
+python-based so maybe you can get it to
+work on Windows I don't know I haven't
+tried but the first thing you want to do
+is set up a listener so with that you
+can go into a context menu for listeners
+and the way you do that is type the word
+tab completion is your friend when it
+comes to this tool so you can go into
+listeners I've got a listener already
+set up my listener in this case is
+called HTTP 1 it is an HTTP based
+listener in this case I'm actually using
+a self-signed cert so everything is
+communicating over TLS so that speaks to
+the secure communications protocol I can
+when you're if you don't have a listener
+already set up which I do in this case
+from here you could type use listeners
+and again tab-completion is your friends
+so after you type use listener hit space
+hit tab a couple of times they'll show
+you all the different types of listeners
+that you can use so to configure a
+listener if you want to configure the
+HTTP listener you type use listener HTTP
+and then you're taken to a new context
+menu typing the word info here will show
+you the settings for that specific
+listener and if I reduce the size here a
+bit maybe we can get it all to fit on
+one screen so there's a bunch of
+different options in here I won't go
+through them all the main thing you want
+is make sure you've got a name for your
+listener all the other things that are
+set here are basically default settings
+except that I created a self-signed cert
+so I could do everything over for 4 for
+3 but you could do it over port 80 if
+you wanted once you've set all your
+options in here and that's just simply
+typing set and whatever the option is
+and then some value so in this case I
+could say let's change the name to HTTP
+1 which obviously it already is but
+that's this is how you set the options
+just say name of the option and some
+value once you've done all that and
+you've got everything configured the way
+you want it for the listener typing the
+word execute here will fire up the
+listener in this case I've already got a
+listener running which is why it's
+complaining about 4 4 3 4 4 3 already
+being used because I already have a
+listener running so we can jump back a
+couple of context menus here
+and you can see there's 266 modules I
+have a listener that's currently active
+I have 0 agents currently active so if
+we jump over to a Windows box so I've
+got a Windows machine here that we want
+to compromise and we'll just go through
+a basic compromise scenario let's say
+it's a phishing scenario and I've stolen
+credentials that's not the right though
+it's still on a second I have a VM
+inception going on here I've got to
+maybe it's firepower shell prompt on
+this box Oh hot corners gotta love it
+alright so on this machine I'm logged in
+as norm no admin this is a user with no
+admin privileges which we can prove here
+by doing Who am I
+slash all and you can see based on my
+SID I'm not an admin user you can see
+I'm not in any admin groups here so a
+really common PowerShell attack that's
+one of the top three go to tools for red
+teamers that I've talked to and
+interviewed that use PowerShell is
+something called get GPB password
+anybody familiar with that attack
+anybody used it raise a hand if you
+heard of it alright so this is a fun one
+so Microsoft has this thing called group
+policy preferences and you can use group
+policy preferences to manage local admin
+passwords if you want to set local admin
+passwords across your entire enterprise
+go into group policy preferences and you
+say yeah what the local I haven't and
+password to beat this and it'll write it
+out to a configuration file that sits
+it's XML file sits on sysvol so any
+authenticated user any authenticated
+machine can read this file off of sysvol
+it contains the local admin password
+oh yes Microsoft published the private
+key a good job Microsoft former employer
+notwithstanding so yeah Microsoft
+published the private key for for this
+they can troll it because I don't know
+there's some big customers that probably
+need it
+they don't recommend using Group Policy
+preferences if you're on a fully patched
+Windows server domain controller you
+can't use Group Policy preferences for
+setting passwords anymore but if you
+ever used it in the past the passwords
+still going to be sitting out in your
+configuration file another thing I do
+red teamers like to do is just set the
+password in the configuration file so
+they'll just once they've compromised
+the environment they want to change the
+local admin password everywhere to make
+it easier for them they'll edit the file
+and just put the password in it and then
+in 15 minutes when every machine updates
+they'll all have the same local admin
+password so that's a good time
+so I'm logged in here as and though not
+have been user let's see how easy it is
+to become an admin I'm gonna jump back
+over here and reduce the screen size so
+I can see what the hell's going on I'm
+gonna steal a bit of command line
+through here so this is something that
+recently people have been talking about
+on Twitter red teamers that that I
+follow they're using the cert utila
+command to download files from the
+internet because they think it's sneaky
+I encourage all red teamers to use this
+by the way I'm a blue Timur if you
+didn't know let me see if I can copy
+that to my clip or since it didn't copy
+oh geez really don't want to type it out
+and I don't think I have it in my
+command line history but let's do this
+anyway so we run circuit ill - split -
+yeah I have no idea what these commands
+do I just see things on Twitter and I
+type them in HTTP and this is a Google
+shortcut to a what looks like a legit
+powershell repo fu w XB 7 at UW x e7 I
+[Music]
+let's try this again
+I left out a I left out a key word there
+all right so then downloaded this file
+what's in this file well if you're
+curious this is the gift GPP password
+attack so you can look at this file
+it's a PowerShell script it contains all
+the code in it including the AES private
+key needed to decrypt the password from
+sis Paul so how do I run this thing well
+if I'm in an environment where we've got
+PowerShell execution policy set to
+restricted and you can't execute
+arbitrary PowerShell Microsoft will tell
+you that's not a security boundary the
+easy way around this is to get the
+content of that file and pass it out as
+a string and then pass it to invoke
+expression which is actually going to
+instantiate that script in memory and
+then I can call the command get GPP pass
+word and if we run this it's gonna dump
+the local admin password to the screen
+there I'm gonna be really lazy and I'm
+gonna pass this out let's just select
+the password so we'll do a select and I
+just want the password property so I'm
+and I'm going to pass this thing out to
+the clipboard so I don't have to
+Fivefinger it so now I've got the local
+admin password in the clipboard on this
+and we'll run a PowerShell prompt here
+assuming I didn't fat-finger anything so
+we're doing a run as user plan one local
+administrator and we're gonna run a
+PowerShell prompt and it's prompting me
+for the password which is in my
+clipboard so let's just dump that and
+now you can see I've got a new prompt
+here or new window at the top of the
+screen this is my if we run Who am I
+here slash all you'll see oh let's let's
+so now you can see I am a local admin
+that I'm in the admin prove I've got all
+kinds of privileges assigned to me so
+there's my user Sid now ends in 500 so
+now I can do things with privileges on
+this box so one thing I might want to do
+is run in PowerShell agent and run it in
+in a privileged process I can run
+PowerShell agent and a non privilege
+process you can run the PowerShell
+Empire agent in a non privileged process
+and do this get GPP password attack from
+the non privileged process and get the
+password and then pivot into a some
+other process you want and gain your
+privileges if you'd like but I just like
+doing it this way because everybody can
+get finished
+and once the credentials are stolen if I
+can get access to your box I can go from
+your non admin account to an admin
+account using this attack in what I'm
+told according to red teamers is most
+customer environments maybe not true in
+your environment but true in this one
+all right so let's set up an agent so we
+jump back to Empire and what we have to
+do here is create a stager so from here
+type use stager and hit tab you'll be
+presented with a list of different
+stages that you can build and the one
+I've been using is obviously for Windows
+environments and I'm kind of a fan of
+the launcher VBS stager so that'll take
+me into that context menu and if I type
+info here it gives me hey here are all
+the options so as I said you can set the
+options here I'm gonna set my proxy to
+none this thing is proxy aware it can
+proxy through if you're running web
+proxies you can you can tell it to use
+your web proxies
+I don't need proxy creds so I'm gonna
+set that to none and I'm going to set my
+listener to this is the most critical
+piece set your listener to the listener
+you created earlier in my case it's
+called HTTP 1 you can change the user
+agent if you'd like for my case I'm just
+going to set the user agent to be none
+and once I've got all my options set I
+can
+type info again make sure everything's
+set the way I want it to be and then
+from here I can type execute and as it
+says it writes out a file temp launcher
+VBS so in another window here it's still
+open we can cap the contents of this
+launcher and what we have here is VBS
+script so power sorry a BB script that
+will invoke a powershell command and run
+this base64 you put it string so this
+big long command here and we can simply
+and from over here if we fire up notepad
+and of course I'm doing this in a way
+that's leaving all kinds of evidence on
+this so you may want to do this
+differently
+I've already staged this file so I'm
+just calling it L VBS so this file
+already exists on the machine if it
+didn't I could just drop it in this
+a little anxious on my tab completion
+there a lot of EVs and that opens up a
+new power show prompt and if we hop back
+to the PowerShell Empire screen you can
+see now at the bottom of the screen I've
+got an agent reporting so I have my
+first agent so if we go into the agents
+menu any agents that you have calling
+home are gonna show up here you can
+interact with these agents so tab
+completion again is your friend
+so from here there's a bunch of
+different commands you can do you can
+type help pretty much anywhere
+hard-shell empire it's going to give you
+context sensitive help menus so I could
+do a sis info command here and it's
+gonna the default settings for
+PowerShell empire are pretty chatty
+every five seconds this thing is calling
+back to see - I recommend as a blue
+Timur go ahead and leave it at the
+default setting or make it every second
+I mean why wait unfortunately I mean
+this is an open-source thing so you can
+you can edit it you could change the the
+periodization but for the callbacks to
+be some random value but don't do that
+that's that makes it too hard to find
+you so yeah there's there's some details
+about the agent and if we if we jump
+back and we list the agents know the
+context for the process here it's
+running as administrator in a powershell
+process that powershell process could
+die and this agent would die so one of
+the things you're going to want to do as
+an attacker is pivot this agent into
+some other long-running process so to do
+that super simple
+go into the agent and interact mode and
+do PS inject and you
+know what listener you want this agent
+to call home to in this case let's call
+back to http1 and let's pivot into L SAS
+everybody's favorite so within five
+seconds this thing is going to the
+ancients gonna pick up the job and it's
+gonna pivot this agent into the L SAS
+process and we'll see a new agent report
+and there it is so now I've got two
+agents running on this box one is
+running in the PowerShell process one is
+running in the Alsace process so if we
+jump back here and we list our agents we
+can go ahead and kill this one
+that's the powershell process we don't
+need that anymore we're now running as
+else ass on this machine so let's
+interact with that else s process a bit
+so from here I can do things like I
+maybe
+so things oh well there we go I guess I
+can't count to five
+everything's faster when you're standing
+up here behind the bike so the Mimi Katz
+job is started and pretty soon we'll see
+the output of the Mimi pads command
+dumped my screen here and there we go
+there's the output of Mimi Katz
+you can run arbitrary shell commands so
+we could do hey let's see what are the
+so there's your net stat output dunno
+so next I'm doing a Q user let's just
+see who's logged into the box do note as
+a red teamer I love it when you do stuff
+like this if you're running an else ass
+and you're spawning processes from
+Alsace that's my favorite there's a
+bunch of built-in commands that like me
+me cats have no visibility into without
+doing something like memory analysis of
+the Alsace process but anytime you've
+run an arbitrary shell command that's
+something that's relatively easy for me
+to find so that's kind of PowerShell
+Empire in a nutshell so awesome if he's
+here or she honestly no sorry was
+hitting me up on slack and saying you
+know I'm glad you're presenting on
+PowerShell Empire or Empire we need more
+offensive talks and this is apparently a
+tool that he is used before so hopefully
+you're gonna do other presentations on
+this and more depth but I would be
+remiss there's a lot more stuff this can
+do obviously so if you want to get a
+flavor for the kinds of things you can
+do with it
+just type use module and there's over
+two hundred and sixty-six modules I
+think it is now this thing can do all
+kinds of crazy stuff can dump certs you
+can dump the curve TGT so you can have
+your golden ticket attack you can every
+red teamers favorite here at the bottom
+you can troll people with it on the blue
+team but I would be remiss if I didn't
+as a blue team err talk about defenses
+so let me jump back to the slides real
+quick and we'll talk about some defenses
+so detection zin defenses how do you
+figure out that this thing is running in
+your environment and what do you do to
+keep it from running first of all if
+you're running PowerShell v2 and your
+environment you deserve to get hacked so
+upgrade to the latest Windows management
+framework 5.1 I think is the latest it
+comes with script block logging so every
+PowerShell script that gets run gets
+logged to the Windows Event log and you
+can mine those things for interesting
+things so you'll be able to see the user
+agent when it spins up in your
+environment you'll see that in the
+script block log furthermore uninstall
+PowerShell v2 if you install power
+shell51 via the windows management
+framework it will not uninstall
+PowerShell v2 and you can bypass all the
+script block logging just by doing
+PowerShell - B - then you'll be running
+PowerShell in version 2 mode without all
+the cool logging that they've
+implemented if you want to go further
+implement constrain language mode I've
+worked in environments where this has
+been done I've never set it on myself
+it's I think somewhat complex to set up
+and get running
+but we're doing monitor for odd
+parent/child processes so for those of
+you in the back that can't see this let
+me see if I can make it bigger
+[Music]
+that's not right
+so you can find things like Elsa
+spawning netstat or else as spawning a
+few user if you're silly enough to do
+obviously you you've got to know to go
+look for those things but there are ways
+to monitor all the parent-child
+relationships in your environment and
+have those things bubble out if you'd
+like it presented graphically you can
+have it presented graphically maybe a
+little easier in your environment
+monitor for odd networked activity as I
+said PowerShell Empire is fairly chatty
+so in this case I've pulled out all of
+the network activity for else ass in
+this environment over several days and
+the only hope the only thing that's
+communicating out from Alsace over four
+four four three is communicating to a
+different IP address than everything
+else and it's only on the machine I
+compromised so there are ways of finding
+this I mentioned the system management
+automation DLL that's the PowerShell vol
+that thing is going to be loaded into
+the LSS process when you pivot into the
+LSS process so if you run this dll's
+across your entire environment you'll
+see this thing that particular DLL will
+be loaded into L SAS which is what's
+showing on the screen here you'll also
+see this DLL loaded is and legitimate
+processes so if you see it in system
+manager I think it I think is what it is
+or if you see it loaded into PowerShell
+dot exe that's all normal stuff but if
+you see it loaded elsewhere you might
+want to dig a little deeper recall can
+find this so recall has some anomaly
+plugins that you can run and they will
+find the thread loaded with anonymous
+kernel address other thing is that you
+can do the standard defensive stuff so
+egress filtering leases privilege you
+saw how well that worked
+expensive depth I mean if
+deriving defense-in-depth supposedly
+works and security is hard so that's it
+for PowerShell empire go check this

@@ -1,0 +1,283 @@
+hey everybody my name is RSA exbc and
+I'm gonna give a short presentation this
+is a tool talk on a particular Bluetooth
+Low Energy
+toolbox available for Android and iOS
+title the talk is called hacking Jules
+Keys one time I got bored in a meeting
+this might happen
+slightly more than you might think and
+so I pulled out my phone and I started
+scanning for Bluetooth devices I'm like
+let's see what we can talk to them like
+huh what's this that's a new thing
+yeah I used to draw dinosaurs instead I
+got in trouble for that once at work so
+this is our target device for today it's
+it's not super complicated it's a little
+Bluetooth low-energy beacon it it
+connects to your phone they're like what
+20 bucks for three or something if you
+connect your phone you can hit a button
+on your phone and this beeps and or you
+can hit the button on here and then your
+phone beeps and that way you can not
+lose your keys or your backpack and it
+has some other functionality like if you
+walk away from your backpack your phone
+can beep and tell you that you did that
+so it's handy for stuff so Jules tees
+run Bluetooth it turns out Joel didn't
+want to lose his keys so he attached one
+of these little beacons test test
+[Music]
+in particular it's Bluetooth Low Energy
+which is basically way different than
+standard Bluetooth so if you know
+anything about that don't don't think
+about it too hard the key thing that we
+need to talk about real quick is this
+table so a Bluetooth Low Energy device
+has this concept of services and
+characteristics so a service is not like
+it's actually really well done but it's
+not like a service like Apache a service
+in Bluetooth might be like the generic
+device service and it might have a
+characteristic the characteristics
+mulling a very more and constant so it
+might have a characteristic like the
+device name or you might have a battery
+service a lot of a lot of stuff has
+batteries and it would have the
+character is a characteristic like say
+the battery value in a percent so these
+are the common ways that you have
+services and characteristics you have
+multiple characteristics in a service
+like the battery service we talked about
+is actually in a Bluetooth standard the
+only required thing is that you have a
+battery level but there's other stuff
+like if you want to tell people what the
+chemistry of your battery is you can you
+can add a read-only characteristic to
+say that so now you know how Bluetooth
+Low Energy works this this is that was
+basically like the backend of how every
+one of the apps on your phone talks to
+every one of your Bluetooth IOT devices
+but that's not particularly helpful to
+someone like us who wants to play with
+stuff directly somebody wrote this tool
+which I use all the time at work for
+actually like legitimate Bluetooth
+development but also like I don't work
+in security and this talk has nothing to
+do with with what I do for work which I
+should have prefaced this talk with but
+basically the only scanner is this handy
+little tool and it lets us connect to a
+device and start up just reading and
+writing stuff directly to its
+characteristics and services so if we
+want to write our own client for
+something we can prototype that really
+easily and the only scanner does not
+attack the Bluetooth stack itself it
+talks it basically implements the
+standard just really generically so it
+doesn't do any sort of security stuff
+all by itself the only thing you're
+going to use it for is application layer
+this is a screenshot that you can
+basically see where they said oh we're
+gonna take the one thing of security
+that Bluetooth gives us and not do it
+and so I read that and it was like does
+that mean they'll just talk to anyone
+like without pairing these devices
+without any sort of pre-arranged
+handshake and the answer is yes so this
+talk isn't supposed to be like highly
+technical it's gonna be these guys
+totally this usability trade-off and
+arbitrarily we can fill with stuff oh
+one other thing about Bluetooth services
+and characteristics they're all
+identified by UUID so when you connect
+to a Bluetooth device you're usually
+presented with this part of hex values
+that doesn't really mean anything until
+you like disassemble the app that your
+device comes with and you will usually
+find a table like this this is a small e
+which is this like halfway Java bytecode
+disassembly thing from Android but
+there's a UUID and it gets put in a
+string and then it gets called stored
+some about variable called the anchor
+service and anchors the ones who made
+our little Bluetooth beacon so that's
+neat and then there's another string and
+and it gets stored in the firmware
+version characteristic so if you have
+this table which you can just basically
+grabbed out of the disassembly you can
+tell exactly how you're going to talk to
+this thing
+[Music]
+did you say you can just basically crap
+that out just assembly yeah basically
+well I mean you have to disassemble it
+and then you have to grab it and then
+you have to ignore 90% of the words UUID
+because they go to other stuff but it's
+pretty simple can you guys see this neat
+there's only one button so it's hard for
+me to get wrong oh it's bent sideways
+okay so this is a you can see like
+there's a Phoenix 3 watch a gear I think
+that's a Samsung a tile a tile is
+actually device very similar to these
+anchor c1 and then some hex theta and
+now it's doing a bluetooth 3 scan and as
+soon as this completes we're gonna hook
+up to one of these and talk to it
+[Music]
+connecting this this is the end of all
+all demo talks that involve wireless
+[Music]
+okay here we go
+discovering services so here's a service
+Oh connection failure Bluetooth Low
+Energy especially at the lowest level
+like has no real retry logic or anything
+so the fact that there's a ton of the
+2.4 gigahertz stuff in here really
+doesn't help and I think we'll try it
+one more time and then call it a day
+[Music]
+okay device information service it's got
+like a manufacturer name neat custom
+service that's interesting it turns out
+that's the same UUID from that one that
+we found in the source code and of note
+it has two characteristics that are
+writable this first one which is the
+second one little list that has a W
+meaning writable if you click that you
+can write to it the problem or that one
+will actually kill the device and
+restart it into the bootloader so we can
+break it we're not going to do that and
+then this other one if you hit R you can
+see like what's the value on this and it
+reads 0 X 0 a and that's just 10 so like
+we can write stuff back to it and what's
+neat about that is that usually when you
+can write stuff you can sometimes make
+it do things so we'll just send back 0 a
+and then I'll just pull all these up to
+the microphone
+[Music]
+did you guys hear that so that's the
+same few facials
+he's would have made if they were
+complaining about Joel leaving his keys
+in the bar but basically anybody can
+hook up to do that also anyone can hook
+up and flash the firmware of a node I'm
+gonna leave these around for the rest of
+the meeting but feel free to connect to
+one of them again the name is a nkr c1
+and like you can change the model name
+because for some reason that's writable
+and it's writable by anybody with no
+bluetooth permission so like if if I
+were feeling like trolling people with
+Bluetooth I think what would be a neat
+little project it would be to take an
+ESP 32 microcontroller which has speaks
+Bluetooth like a phone a little and
+basically scan for devices that have
+writable device names and just change
+annoy act by sec kc and there's other
+silly things you could do with that but
+i wanted to say thank you
+mobile t for letting me borrow this
+fancy tablet with android and hdmi and
+thank you for joel for being my friend
+who puts up with me hacking things when
+i'm not a hundred percent sure that
+there is it's going to thank you guys
+that's kind of the end of my talk do you
+guys have any questions I can't see
+anything so you do you're just gonna
+have to yell them out long enough that
+it's annoying so when I was trying to
+track these down I was actually like
+walking to the different roof different
+corners of the room and I like trying to
+triangulate of direction-finding so you
+like you'll take your phone and like
+shielded from art up with your body and
+then turn 180 degrees and see if the
+signal strength is any better but it was
+super unreliable unless I was like in
+the right half of the room so I say like
+room scale it's if they're not very loud
+radios the Bluetooth radio in your phone
+[Music]
+all right so you oh hello hello
+so you mentioned on the first one that
+had a W that was writable that if you
+did send something to it you would brick
+the device
+I'm Gary as how you how you came to that
+conclusion so if you if you find the
+firmware image for this and spoiler all
+or they basically took the demo kid for
+the CPU that's on here and they added
+this one custom service and that's like
+this is the minimum amount of work to
+make a viable product because the chip
+supplier for this is actually really
+good at what they do
+and they make it really hard to screw up
+is like they have demos of how to
+implement security properly for
+everything but if you basically if you
+take the firmware and you would change
+some words around and you change the CRC
+you can upload it using the same
+firmware uploader pieces of the app on
+your phone and it'll totally work and
+change what the device does but if you
+were to do that wrong and say change
+anything other than an ASCII string
+that's really easy to identify it's
+really easy to break devices like this
+like if you change anything in the path
+from the device turning on booting up
+turning on the radio and getting back to
+the firmware uploader
+[Music]
+you guys wanna see weather plus let's
+try this
+we still connected that's amazing oh no
+because X and at this point like if this
+works the app is definitely not gonna
+like this because the device just died
+you didn't tear down the connection or
+anything anchor dude so that's the
+bootloader string that you want to see
+if you're talking to the bootloader and
+not the actual firmware image and that's
+where you go to upload a new firmware
+images does that answer your question in
+a Zen pedal
+I think that's bill I really can't see
+anything justjust spotlights anybody
+else
+[Music]

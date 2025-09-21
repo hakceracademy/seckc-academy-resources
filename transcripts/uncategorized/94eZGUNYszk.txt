@@ -1,0 +1,407 @@
+I'm gonna hijack your meeting here a
+second and make a massive announcement
+so you see how suppose this a lot on
+social media you wonder what this is a
+skeleton crew this is a group of
+individuals I work with and what we're
+doing is a new info SEC initiative we
+will make the official public
+announcement and the sign up and
+everything in late second quarter what
+skeleton crew is a hand up instead of a
+handout and it's an opportunity we have
+created it a series of tears of
+scholarships to make sure people can get
+to Vegas to get a defcon to get to be
+sides to get the black hat will fulfill
+it we're doing as some people can get
+involved and get started so if you're a
+college student or a high school student
+we have the ability to send you out
+there we had some legal issues will have
+to go through with your parents but we
+can get you out there cover everything
+so you get started actually see what
+things are and learn if you're trying to
+bring it into the industry and you just
+can't get into the industry you can get
+a foothold we're going to help you out
+with this we're going to get you out
+there we're going to get you in a
+conference we're going to get you
+introduced to people and so on if you're
+currently in the employ sign industry
+you just can't get out there you don't
+kind of the money don't have the time or
+whatnot and you just can't justify the
+cost we're going to help you with that
+this is very clear I'll make sure
+everyone understands it this is not a
+charity this is not a tax write-off this
+is not cause based marketing we are
+doing this because we believe very
+strongly in the industry and we're here
+to help take the industry to a whole
+nother level we are also very blessed
+because of this industry and rather than
+going around showing off our wealth and
+wet not fancy cars big booths and
+whatnot displays of wealth in Vegas we
+would rather give the opportunity for
+people to get to Vegas so we will be
+announcing a late second quarter the
+different tiers and how to apply and how
+to conduct yourself through the process
+of what the process will be and then
+we'll carry it out we will need help
+from the community we're not talking
+about a financial will need help with
+people if you're interested what will
+you have to make
+helping people get around so we have the
+younger kids when we have people who are
+trying to break into the industry we
+need and when your help to show them
+around give them introduce to your
+friends go out and talk to the halibut
+fling that into our community and help
+build something so in the following
+months we're going to be releasing more
+more details about this but this is
+something we believe in it once again
+it's not a tax write-off this is not a
+scam this is not a stunt we believe so
+heavily in this industry and everything
+we're going to make sure that when
+people have opportunities and we're
+going to challenge everyone else out
+there as well to help rather than
+showing off what you have reinvest in
+the community help people out if this
+doesn't make sense to anyone please see
+me afterwards I'll explain so while
+that's done we'll get back to why you
+came here for this whoa except is open
+source of cousins have what that means
+for everyone is we don't have even find
+all sorts of information free light on
+Google we can look up all sorts of crazy
+stuff but there's a whole bunch of other
+resources and other things to do that
+why this is important as you start
+getting to understand the footprint of
+your target so if your pen testing or
+doing assessment even though where they
+start stop you also need to understand
+what people are posting out there and
+what people are releasing or you may
+need to understand what the actual
+perimeter of an external network is
+because sometimes the external internal
+perimeter network are the same thing oh
+that's important because you start going
+out the whole process by searching for
+items when you're doing this it's been
+out you're not touching anything no one
+knows you're doing it is no one sees
+your google searches no one sees if
+you're running all to go with other
+tools it should be the first step of
+your engagement eighty percent of my
+engagements and audits have footholds
+that end the whole game just biosens
+because o says is the most powerful step
+and pen testing and we're trying to make
+it much easier and easier to execute and
+just all around not the pain the
+accident that is so awesome is just
+everywhere all these crazy resources
+I was very careful not to use anyone
+here or do anything that might major
+someone but the speaker from a couple
+meetings back on strand you can see who
+he's related to who interacts with
+online he started to understand that
+there's all sorts of other uses and
+contacts for your ascent rather than hey
+I got your ID address where hey I saw
+your stuff on Twitter there's
+geolocation of all sorts of fun stuff
+the problem is there is just tons and
+tons of tools Kali alone has over fifty
+six tools that ships with inside then
+frozen heaven that I can guarantee you
+don't even use a touch or probably not
+aware but they're very powerful and even
+batteries when they come out with at the
+output context is extremely powerful
+when you put it into a different view
+however it's really hard when you're
+doing testing say about 800 IP address
+assessment I mean you don't really have
+time to sit down and go through sent on
+a lot of things you got to make fast
+that is overwhelming path stuff that's
+out there it's pretty amazing I think
+some of the statistic that 20 resources
+that they come out different resources
+of 12 things for no sense so it's just
+overwhelming so a lot of the times of
+all these tools we don't understand the
+impact devotion and what can be done
+with it how many of you have a lead the
+details thank you for providing me with
+a user ID list and in address list for
+fishing so here your social media sites
+especially the career based ones such as
+LinkedIn datacom Salesforce chips off
+cetera you can look at my company by
+name see their employees and sometimes
+you get information on like that most
+people really stop and go oh my kind of
+stalker creepy man I go through and see
+what's on linkedin and that's it that's
+a user list father that's also a list of
+emails because it doesn't take much to
+do out search and find out hate what is
+the email format of that target company
+is it first name dot last name is the
+first initial last name if so you've all
+the names out there from LinkedIn jigsaw
+all those others
+you can quickly flip into email
+addresses for fishing camping and then
+you can show you validate you can also
+use it to create user IDs and brute
+force things such as what your elf
+portals or VPN or other things like that
+you start to understand what the actual
+impact the positives and what you can do
+with it but it's always hard with all
+these tools out there they use they just
+all have all sorts of odds and run from
+the command prompt you have to do this
+or that or changement in file and it's
+just crazy it wastes time so we decided
+to do is create meiosis it it is labeled
+as Community Edition because we don't
+want anyone selling it we don't want
+anyone profit from we want it to be free
+we want people to join in and start
+developing with us because this is a
+development framework 40 sins there's a
+couple of key things that differ from a
+lot of what's out there and I'll go with
+that really quick this date said Casey
+we always have to drop the first stuff
+the best stuff here tonight is no
+different this is a preview this is not
+get it going out to everyone you guys
+are getting the links in the information
+before everyone else and tomorrow
+evening it goes live so please don't
+download it have fun but please be safe
+and legal with it because you can get
+into a lot of trouble so this is the
+interface that's it we wanted to make it
+very simple we do all the hard work on
+the backend how this works is this sit
+on top of the default colleague to point
+out instance right out of the bat right
+out the unsub if any dependencies are
+needed it'll help you with that the
+documentation on the github will help do
+that as well but we wanted this to sit
+on top of something that everyone uses
+everyone has access to and everyone can
+mess around the way we didn't want to be
+the framework we didn't want anything
+that's for Pfeifer we wanted it easy for
+you to use right at the box go home slap
+it in and start adding some no-good
+fades no no we didn't want to mess
+around side so we made it simple you
+simply put in the domain name of what
+your target it goes through and manages
+all the underlying
+programs that are within calling and the
+command line programs and services are
+in there such as hose that day and
+everything else what we do is we go
+through a massage everything for you
+with spin up results which I'll show you
+here shortly in that nice easy-to-use
+format step one we output a directory
+with the domain name so it's easy to
+find when we put all the artifacts and
+findings there so that way you can find
+out all sorts of stuff such as metadata
+files you can find out user lets user
+information user emails email formats of
+a company you'll basically owned a
+company before you even kick up a pen
+test that's our objective leave this on
+the flip side we didn't leave the blue
+team out the defense of sight out you
+can use this to a defensively to help
+protect your brand and your company and
+your exposure so how many of you have
+gone out for your companies to
+registered all the possible combinations
+of social media and domain thickness now
+not all about a lot of people come that
+but wouldn't you like to know what all
+the combinations are what's out there
+what's your exposure do you have a
+Google+ page for your company why is
+that important I haven't picked that up
+and start damaging your brand and then
+attack your brand I can also use it to
+serve up bow where do all sorts of other
+stuff i can redirect to your competition
+all sorts of other things so we did not
+leave the blue team out the blue team
+and the defensive side you can use this
+to start figuring out what your
+footprint is and your tag vectors the
+best thing is since it is oh sit you
+don't have to touch anything you don't
+have to risk anything this is all the
+nine a passive collection of information
+you get the full picture of what
+exposure is what the world sees mats on
+the defensive side you can also see what
+your users are doing and if they're
+following your policies if they're
+releasing information that they should
+are they exposing things there are tons
+of code repositories out there that
+companies have or their users have and
+there's hard-coded credentials of those
+there's also great things such and its
+email archive list
+where people thrown out okay and I don't
+know how to set up this dms or buying
+configuration can someone help me here's
+my configuration and they disclose all
+the stuff they might be a hundred
+percent aware of your information
+disclosure policy and your own
+information training program but they
+may not know the context of
+repercussions as the blue team one of
+this tool in your domain and see what
+comes out you can start ordering easily
+through it here's they cater for
+everyone like I said we wanted it easy
+interface even more so we wanted an
+impactful output to help everyone not a
+bunch of gibberish a bunch of cool
+screens of stuff something that can
+actually give you metrics and help you
+because one as a red team member your
+brain in and doing assessments don't
+have time simply put in the domain of
+your name of your targets let this thing
+run come back in a few minutes ago hey
+let's go the output will be an ATF or
+poorer for better for everyone that way
+we can actually demonstrate show the
+whole impact of what happened losing you
+can take this the management go tears
+with tears our exposure here's are
+probably a lot of people refer to the
+out of the face of this message for no
+sense we're trying we're not in close
+but this is a community toolsfree we're
+doing Campbell we really want people to
+take this and run with it and start
+using it so that way you can find all
+sorts of fun stuff it's also fun
+drinking it like that so another name
+College uses this for a fun drinking
+game of finding information out every
+time there is critical hole to
+drink the state it is pretty funny but
+we want people to run with us use it a
+whole nother way we really want people
+understand what the impact of ocean is a
+net information that it's publicly
+available it is astounding this has a
+lot of other uses and possibilities as
+well please please understand use this
+broom to it or what up
+with confines of the ball we understand
+people will do things so there is no
+cheat and hack we just don't want you to
+go to jail now the program was
+originally created by myself and then I
+reached out to a CEO and William covilhã
+you may recognize name did a lot of the
+curriculum the lab design and the lab
+monitoring and maintenance of the
+offensive security blacks and pretty
+late so he went crazy with his we've
+been going nuts with it and when we had
+valence tomorrow for the world we want
+you guys to run with it if you have
+requests kmf to us and we'll go through
+everything there are a lot of features
+that aren't out yet but there's a lot of
+fun tools or try to click through the
+lawyers first because they're pretty
+impactful there's lot of things we're
+doing with selenium and a few other
+plugins so we didn't leave out the web
+app stuff for people once again its
+ascent so it is the nine it does not
+touch stuff it will be either get up
+later tomorrow evening free download
+everything is pretty on this and we want
+that to stay we don't want people
+running with this we never want them to
+say one foot or intend for this is so
+that people will take Oh synth and the
+process to the next level share it and
+run with it do with what you want just
+don't profit off so if you have any
+questions on this you can reach out to
+the twitter feed inside our agency or
+you can contact will directly at some I
+forget what he calls it they can have
+fun with that message twitter name or
+you just give us a shout the address is
+there so later far we've launched at and
+start the process we are shooting for a
+timetable of near monthly updates and
+adding features the more people get
+involved with us help us out the more
+things we can do faster and more again
+this is pretty in coppell encompass a
+and it's pretty crazy moving-out cope
+with this but all it requires is you
+putting in a domain name getting entered
+and that's it to install it it will be a
+process of downloading the script and
+python from the hub repository I just
+run with it we want to thank simple and
+easy to use with this then that way it
+makes it easier to mitigate use or
+implement to your workflow and it makes
+it easy easier for you have fun with it
+as well so if you have any questions I
+feel free to find me or reach around
+around here finding or reach out to us
+here at Lillian's addresses I am be
+reached all saliva that squirrels a
+barrel addressed on Twitter forbid but
+we have a bunch of big stuff on the
+announcement soon but once again the
+skeleton crew initiative we strictly
+want this to help the community every
+community up to another buffer by
+getting that again it's not a handout
+incident that same again when it's very
+proper I'm around to tonight just come
+back I've got stuff if anyone's
+interested i have in log defensive

@@ -1,0 +1,250 @@
+so guys i'm going to try real hard to
+make sure that this all works i was uh
+spent a lot of time making sure that
+that locked that laptop work
+i'm not really sure how it's going to go
+over here but uh so we're going to go
+from here um first of all
+not even presenting okay let's try that
+again
+someone should have told me hey bill
+thank you my goodness that take that
+long
+i am doing a pdf
+presentation
+yes
+what could possibly go wrong with doing
+the comment there was that i must be
+okay
+oh crap my timer's already gone jesus
+hello i'm bill
+um i've been spending a lot of time in
+airplanes lately i'm not kidding you
+that was like last week okay um so
+some flights
+oh
+before i get started
+so did alex leave yet where did alex go
+there he is so alex just gave a
+presentation about how he can hack all
+these wireless signals or outside of his
+house
+um you know and he bought a bunch of
+equipment look at this thing look how
+cool that thing is i don't have one of
+those
+um but i bet if i did i could hack some
+stuff um but anyway so some flights are
+yeah
+this slide was a lot better on that
+computer
+but when i walk on a plane
+i can't wait
+i'm gonna
+read it
+i'm gonna hack people's facebooks i'm
+going to be driftnesting
+right i'm going to be sniffing packets
+i'm going to be [&nbsp;__&nbsp;] playing cookie
+clicker right i can't wait i can't wait
+when i'm out getting on a night airplane
+boo
+seriously
+okay so obviously i'm not gonna pay for
+free wi-fi right
+free wi-fi i'm not paying for that
+this isn't fair judges i should get 10
+all right
+well [&nbsp;__&nbsp;]
+obviously i'm not gonna pay free wi-fi
+so i join the wi-fi signal i browse to
+the i go to reddit it redirects me that
+i need to pay eight dollars and i see
+that there's a live help button
+hell yeah
+let's see if you can help
+so
+really all i really want you to see out
+of this slide is it took me one sentence
+literally
+won
+no number two was saying thank you you
+all right that's cool and all that's not
+my trick
+um
+so
+that won't work for very long right so
+in fact by me even showing
+this crowd that trick that trick's done
+right that's not gonna work
+all right cool
+so i need something a little more
+reliable
+so i'm on this flight
+all right start thinking i got an idea i
+got an idea i know how i can make this
+more reliable
+so captive portals rely on mac address
+filtering right i mean we all know this
+we've seen this attack hundreds of times
+right so
+um
+you know this guy
+pays
+and i say hey that's cool your wi-fi
+works let me check that out hey now my
+wi-fi works right so step one let's find
+some sucker who paid for wi-fi on this
+airplane
+that's that guy
+you can tell just getting on the flight
+that
+what
+i'm sorry there was so many racist and
+un
+like
+whatever remarks i'm just gonna skip
+okay so number two i'm gonna detect that
+that guy paid record that he paid and
+clone his mac address
+so that number three i can have free
+wi-fi and then number and then i'm gonna
+tell trent and corey boom you guys
+all right guys i have nine minutes left
+okay
+so step one
+i needed a tool to detect wireless
+clients and you say but bill we already
+got wireless wireshark man
+ain't nobody got time for that
+all right so hook hackers hoodies up
+right here you are i literally was going
+to show you five minutes of me writing
+code
+so instead we're gonna stand here and
+watch for five minutes
+black screen
+hey
+hey lady
+yes
+okay so introducing
+so client sniff is the first hacker tool
+that targets wireless clients
+instead of wireless access points if you
+were to take a look at all of the hacker
+tools out now that are wi-fi related
+they're all targeting the wireless
+access points
+not the clients that are associated with
+them
+my tool client sniff automatically
+detects
+and targets captive portal participating
+clients if they're participating in a
+paid wireless i'm gonna detect it and
+i'm gonna target it then i'm gonna d off
+that guy i'm gonna clone his mac and i'm
+so
+i know that we may have some people that
+don't know how it works so here's a
+slide we'll skip it this is not a new
+attack
+i get it it's not a new attack
+but now
+oh
+thing come on
+if i have free wi-fi
+so my tool
+is built on the mark v platform
+this is it right here
+okay
+as soon as it detects a wireless client
+it will join now we'll d off that guy
+join to connect make sure it's got
+internet and then spin up karma and
+provide internet for the entire plane
+you pull up your iphone
+and you think you're joining your home
+wi-fi
+so
+hey alex
+my source code's available right now
+oh
+you can download that [&nbsp;__&nbsp;] at right
+there
+by the way i didn't pay for that photo
+either
+so
+i've got five minutes and i'm gonna try
+and see if i can show you a live demo
+guys
+it's not fair judges if there is a live
+demo clause because that [&nbsp;__&nbsp;] works
+oh ouch
+all right
+well i'm gonna go ahead and disconnect
+by the way i would suggest not
+connecting
+i can't complain it's working mine's not
+okay
+let's
+judges this is not my computer i know
+okay so right now um what my program is
+okay so this part is me replacing that
+one part where i was gonna show me code
+so this is all the [&nbsp;__&nbsp;] that i was
+supposed to be doing in that 15 minutes
+okay well that should work i should get
+it
+um so what it's doing right now is it's
+spinning up all the interfaces um it's
+searching um for all the wireless
+signals that are available i went ahead
+and did verbose mode um so you
+right yeah okay good um so so right now
+what it's looking for is all the
+different bss ids which are
+our
+aps
+okay and it's looking for any clients
+participating in that uh in that network
+so so as you'll see right now um i
+didn't really have a chance to
+to do the demo and i just scrolled off
+screen sorry um
+but what what it's doing right now is um
+so it doesn't target any wpa wpa2
+participating clients so it made to
+detect
+some clients participating in wpa wpa2
+but it's not really going to target them
+um right now unfortunately it's not
+seeing a uh open wireless network damn
+it please work
+um so if there were anybody want to turn
+on turn one on i don't know um if there
+were an open wi-fi it will detect it i'm
+so right now i've spun up another thread
+i'm hopping channels um you can see that
+i've got a lot of channel one for some
+all right trent to the rescue
+um but i'm i'm i'm hopping through there
+oh i d off somebody that means i got one
+okay
+all right that was good stuff so i'm not
+done yet i still got one minute
+um i do what i'm gonna take take
+advantage of this one minute i do really
+want to thank everybody that came um
+this is a really big deal for set kc um
+i appreciate you guys hanging out with
+us while we were working through some of
+the issues sponsors you guys made it
+happen i let's hear it for the sponsors
+okay
+amazing so we had symantec we had core
+fishnet defcon all supporting uh and
+rapid seven all supporting this event
+this couldn't happen without you guys um
+i i really do sincerely appreciate
+everything that you've done for us and

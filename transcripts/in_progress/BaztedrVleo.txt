@@ -1,0 +1,2270 @@
+hey Maddie hey everybody
+everybody well at least this way I know
+that people aren't paying attention
+instead of Zoom where I know that
+nobody's paying
+attention people people it is good to be
+back I have been to a set casc in person
+since the one that we did before the
+pandemic
+I know I know there was the co and there
+were
+babies and other things but here we are
+but before I get like too far into this
+there are some people here that like
+right is really frankly something to be
+pretty excited about and I've not had a
+chance to acknowledge in person all of
+the people that stood up to keep this
+going during the pandemic when we were
+at home but then also to get our asses
+out of the house again and off of just
+this board and see and getting together
+in person again
+look yeah and I'm skinny
+now of that so yeah so a little bit of
+background before I get started I don't
+know if youve followed the the the
+larger Cannon of my work but when I get
+thank you thank you it's the true fans
+that I'm here for
+um when I gave my talk at a number of
+years ago setc talking about how to give
+talks I might have mentioned off hand
+the reason I don't really give talks
+like fcon or stuff like that anymore is
+that it's been a while since I thought
+that I had something worthwhile to say
+and essentially that the that if I
+thought something was important enough
+more important than the thoughts of all
+you guys have that maybe I'll go ahead
+and say I'm ready for the mic so the
+last time that I really got up for
+original content that I felt in my
+[&nbsp;__&nbsp;] bones that I had to absolutely
+get a microphone in my hand as soon as I
+could was 2008 so I thank you all for
+coming back to see something
+new um I been do it's been a wild it's
+been a wild 60 days and I kid you not
+it's been 60 days since I started
+working on
+this um including the holidays it's been
+been hard for me to kind of come up with
+a good title for this in part because my
+head has gone through a number of
+different kinds of perspective changes
+is through this whole kind of thing
+people that are in my Orbit can can
+maybe attest to this if you get close to
+me and you show that you are online
+you're going to hear some things right
+now this also happens in person other
+parents that I run into the teachers at
+the swimming lessons it doesn't matter
+but over time as I keep talking about
+this I keep learning more my approach to
+this talk has kind of changed so first I
+have this kind of you know typical
+hacker ask you know let's let's tell
+everybody how and why they're wrong but
+then I really thought about this and I
+realized you know we're not wrong cu the
+more I get into this I realize that what
+this does to us so I keep going through
+all of these different options here but
+but these are this should help
+theme the English language is bad people
+people people you guys been spending
+learning
+python uh English is the new language to
+learn we're going to get into that
+tonight we're going to talk about tokens
+how many people have heard about tokens
+in and out and cloud storage and how
+much is this going to cost and and all
+everything like that how many people are
+have to go now sell this to somebody
+that has never heard of variable pricing
+in the cloud at all
+ever okay I don't know if you guys know
+what a big change that is is going to be
+and how hard that is going to be but
+frankly it's going to be made a lot
+harder by the fact that a lot of the
+stuff is available for you right now for
+a very very small amount of money all of
+it and all of this stuff that is that
+has totally broken my brain over the
+last 60 days you can do right now very
+low amount of mudget no Cloud
+infrastructure or any of that kind of
+[&nbsp;__&nbsp;] other alternate things to to to
+show you uh yeah again the English
+language is back uh finally the one that
+really is the most popular but maybe
+gives away the ending of this just a
+little
+bit I ask that every
+day uh yes uh well get ready parents cuz
+this might actually change the way you
+talk to just about it what a
+nerd all right so
+since I do pay attention to my own talks
+you're like oh my God this is going to
+be a talk about llms and all I'm going
+to see is [&nbsp;__&nbsp;] text on the screen no
+I'm not going to do that in part because
+what I've learned about Ai and the way
+that you should be working with this
+kind of stuff is that it's about words
+and it's about listening and it's about
+communicating okay so I'm going to talk
+a lot about this stuff we're not going
+to talk about a lot of examples but I
+want everybody to listen about listen to
+kind of the story that I've got here and
+then set yourself off on this own kind
+of path so we're going to talk a little
+bit about where I was as recently as
+November in kind of my thinking my
+Approach when people asked me what I
+thought about
+this how I got to that point but then
+also talk about the frankly seemingly
+random Confluence of events that led me
+to reexamine all of this kind of things
+and show you how I went from being
+fairly
+untrustworthy and treating it like it's
+a
+punchline and and treating like it yeah
+it's better than the blockchain but
+that's a goddamn low bar
+right
+so I'm but I've moved from this holding
+pattern into holy cow we've got to get
+going so we'll talk about how I got from
+there to where I am now talk about some
+my own experiences and what this is
+actually like and why I think that if
+you haven't actually gone down this
+point where you're actually thinking
+about all this any weird stuff and you
+find yourself pulling out copies of
+David Foster Wallace I don't know that
+you're working with AI at the level that
+you need to to prepare yourself for the
+wave of change that's going to come I
+so hot little
+potato what else are we going to do I'm
+going to talk a little bit about the way
+that this stuff and the way that I've
+worked with this has changed me in ways
+that I were incredibly
+surprising um it's changed the way that
+I talk to people changed the way that I
+listen to people it's Chang it for the
+better people I feel great right now I I
+got a lot of close friends here that
+know that that it's been a bumpy few
+years I feel better today than I have in
+a long time um and honestly I think part
+of it's because of this work that I've
+been doing and I'll explain why and I'm
+not going to say there any kind of
+replacement for any professional Heth or
+something but I'm explain why I think
+this is happening and and and why it's
+such a positive
+impact um then we're going to go into
+some of the actual kinds of experiments
+that I've been doing some of the work
+that I've been doing I'm going to show
+you some examples I talk through some
+examples too and I kind of contextualize
+them because
+at least in my world in case you guys
+don't know
+I'm first of all damn I almost forgot
+about this but nothing I about to say
+what just said is endorsed by my
+employer who I'm not going share their
+name no no no no no uh I work in I I
+work in digital forensics need Discovery
+and I've got a I've got a law degree and
+yeah I've got all those things I've
+taken lots of tests and don't want to
+take any more um but I approach this
+through the lens of somebody that that
+went to law school works for a big Law
+Firm but frankly I got to a big law firm
+in a very non-traditional way so I
+started working
+in uh small town law firm uh Old Law
+Firm Law Firm so old that if you want to
+send mail to that law firm you can just
+send it to Law Office Harrisonville
+Missouri and we'll get there that's how
+old that building right so I learned
+back in the late '90s how to do research
+when everything was on paper and and and
+the electronic archives were sitting on
+CDs in in a CD changer it was a thing
+right but that's how I work that's not
+important or is it come back to that um
+but what I'm kind of finding is that a
+lot of the old models of thinking the
+old models of working with things that
+we had before we just had a text box are
+going to be the things that actually
+make this the wor most worthwhile so um
+we're going to go through we're going to
+show some of the stuff that I've done
+some of the stuff that's totally blown
+my mind I'll show you some specific
+examples I'll pull up some specific
+threads and talk to you through some
+things but first even though I I
+appreciate the quiet and seeming WRA
+attention now I do feel like I'm doing a
+zoom call again talk myself for all
+watching you thank you I appreciate that
+I am going to just read this and you're
+not allowed to good you can't see this
+I'm going to read something right
+right counselor while while a
+comprehensive security assessment would
+be prudent allow me to offer some
+initial recommendations on areas of
+focus from what I can infer from these
+results first you should be concerned
+that your network parameter was
+penetrated and internal assets were
+exposed to enumeration audit logs for
+clues of how they access your systems
+without authorization it could have been
+compromised credentials could have been
+unpatched bpns could have been fishing
+link
+once these are these are evident we need
+to remedy those
+vulnerabilities next policy wise um we
+need to uh stress test and leas
+privilege employ Security First design
+uh limit SSH model zero trusts P 53 can
+be firewalled everywhere but your name
+servers etc
+etc skip a little bit
+ahead while assessing the full
+implications will require an expert
+analysis I can speak to some of the
+common certification standards that may
+be
+impacted um and finally I give a little
+bit of additional information and I get
+this counselor if if thorough
+investigation confirms that this
+incident was limited to surface level
+reconnaissance in probing without any
+subsequent in intrusion data access or
+system disruption then reporting
+requirements May differ this goes on to
+explain what the rep
+requirements are under Hippa ISO
+2701 and then says the good news is that
+at least right now this appears to be an
+exploratory R rather than exploitative
+but fully tracing the attacker's path
+while closing off discovered
+deficiencies is still called for to
+uphold
+certification uh security Foster
+CS that was a lot of words there a lot
+of words that sounds like a very
+expensive report or maybe somebody got
+paid a lot by the hour send that
+in you all know that somebody did not
+get paid a lot of money to make that
+question is do you know what the input
+was to generate that level of content
+would anybody like to take a
+guess yes sir we don't know how they got
+in but here's why you're going to need
+to fix it sure but what was the input
+that I fed to the llm that led me to get
+those recommendations and those specific
+words addressed to the general counsil
+of theoretical
+company they fix it you're missing
+anybody else The Source what was the
+initial prompt for all of that tell them
+their [&nbsp;__&nbsp;] [&nbsp;__&nbsp;] the initial
+scan I literally copied and pasted the
+output from nmap being run against a
+raspberry pie on my own
+network I pasted it in and I said the
+scenario is that we found a laptop and
+this was on the
+screen what do we do
+now and within four prompts I got to
+those recommendations at that level of
+writing and that level of
+sophistication if you all are used to
+reading the Fairly Bland vanilla gray
+goo of dialect that is chat GPT or GPT
+for friends I encourage you to go meet
+something
+better if that level of analysis and
+that level of sophistication of handling
+the output of an inmap scan sounds
+perhaps frightening or interesting
+hopefully I now have your
+attention come back to some of those
+specifics later
+on but then I'm going to talk about why
+I am super super fired up about all this
+um there's a lot of stuff that people
+are worried about there are a lot of
+people with real legitimate concerns
+about how this impacts their livelihoods
+how this impacts their artwork how this
+impacts culture
+overall but we all need to kind of step
+back and look at this through our own
+little ends we're going to get into that
+about a little why and it gets fairly
+deep but I think we're all going to
+understand it as we go um I got a lot to
+say so we're going to keep on moving if
+you have questions we'll chat
+out let's start by kind of establishing
+some common ground and and and talk
+about a little bit about what maybe I
+will will will consider for purposes of
+this evening to be conventional with us
+and I absolutely understand that
+everybody in this room probably has a
+little bit of a greater understanding of
+the way all this stuff works and
+probably has something different than
+what I would call conventional wisdom
+that's fine but it's also important for
+us to ground ourselves in what the rest
+of the world is saying and thinking and
+expecting and things like this
+so I started playing around with large
+language models just like everybody else
+did a little bit over a year ago chat
+GPT first upon the scene I get inside
+there everybody's kind of doing some
+things people are people are losing
+their minds because it's oh apparently
+an expert at everything finally I get
+around to it right and I'm like all
+right fine I'm a lawyer what am I going
+to do you say you can pass the party
+exam I asked you a very simple law law
+exam kind of question Law School exam
+question it gives me a fair Fairly Bland
+response factually oriented read like
+something from Wikipedia it got it got
+typed out in front of me it didn't
+really add anything beyond what I
+already knew it was information
+retrieval right so how many people do
+you talk about talk to or how many of
+you in this room use these systems for
+information
+retrieval it's very different than the
+way that I'm going to talk about the way
+that maybe you should be thinking about
+how to use this
+stuff retrieval is one thing right then
+you're worrying about the hallucinations
+um but at that point I'm like okay it
+can retrieve information Sil can just
+done anything else now what it says that
+it can be a lawyer people say that this
+is going to replace lawyers I fight if
+you want to be a lawyer then you have to
+fight me you have to win you have to get
+into an argument you have to engage with
+me on it so what do I pick baseball
+right so I get out there and I start
+arguing with chat GPT or I ask chat GPT
+you know to explain why Bo Jackson is
+the greatest athlete to ever Liv and why
+right fairly non-controversial statement
+right
+internet anyway so I started having this
+conversation it generally kind of went
+along with me because it's hard to
+dispute that but then I asked hey who do
+you think the greatest hitters in
+baseball history ever were and spits out
+the list
+and it lists Barry
+Bonds but it doesn't list Pete
+Rose and I'm like H there's a logical
+fallacy that I want to argue with a
+large language model about folks I have
+no special affinity for Pete Rose Pete
+Rose is a known
+[&nbsp;__&nbsp;] okay that's
+fine um Pete Rose got a raw deal
+deserves to be in the Hall of Fame it's
+the Hall of Fame for baseball not the
+Hall of Fame for baseball am not being
+an [&nbsp;__&nbsp;] um um but what pissed me off
+about it was that thege the model was
+was was essentially saying the greatest
+hitter in baseball is you know hamstrung
+by this additional requirement that he
+not bet on baseball even though these
+guys are over here juicing it up and
+totally cheating
+arguably um and they're still in Hall of
+Fame and they're still a consideration
+and so I started arguing baseball and
+shat gbt just wilts it's like oh people
+have opinions on this they're strong and
+it's like you won't ever fight this is a
+waste of time um then I go and I have it
+write some scripts for me right I'm like
+great fewer trips to stack exchange
+hooray then I start telling people I was
+like hey this is great it's actually
+really good it'll teach you how to write
+some basic shelf scripts and and if you
+have a question about Windows [&nbsp;__&nbsp;]
+Microsoft bought these people it should
+know something about Windows
+right well then I get this message from
+a person on my team and they're like hey
+so I have this idea aidea to delete all
+the files inside of a folder structure
+leaving the folder structure there and I
+asked chat GPT how I would do that this
+answer seems
+fishy and I immediately pick up the
+phone and I say do not do any of that oh
+my
+God because chat GPD very confidently
+gave her instructions through the gooey
+on how to just delete about you know
+massive quiries of data that I deal with
+in my job so that was the last time that
+I started telling people to go to chat
+on BT to write code especially if they
+didn't know what the hell they were
+doing already right so you can see my
+levels of trust just being eroded I
+haven't even talked about the Privacy
+disaster that those Boos have Unleashed
+upon the world I pay for a pro account
+how many people here pay for a pro
+account how many people feel pissed off
+that you're still paying $20 and they're
+training their model on everything you
+talk to it about that's [&nbsp;__&nbsp;] [&nbsp;__&nbsp;]
+I pay money if you want more money for
+privacy I'm happy to pay it but God damn
+potato anyhow so we so what we're
+dealing with is is that essentially chat
+gtt is out here being untrustworthy with
+anything you give it it's giving kind of
+marginal output that everybody's out
+there saying oh my God it's going to
+change the world right meanwhile the
+hackers get after it and we're like
+making it do things and and and the
+Muggles are all concerned and then the
+person the people out there that should
+be the the voices of Reason are out
+there making these wild and outlandish
+claims right I mean you got rocket boy
+and and you got samman out there talking
+about how he's going to put chips in
+people's brains this is not helpful this
+is not serious discussion I'm sorry
+these people need to go away it might be
+wonderful that they have wonderful
+contributions at some point but get out
+of the way it's distracting to the
+people that are going to be helped in
+the most by this kind of thing um
+so um so that kind of persists right and
+we all go to death comom big punch line
+hacker Jeopardy was
+AI right so common so so here we are at
+conventional wisdom conventional wisdom
+probably amongst us is yeah it's kind of
+interesting we'll kind of see um
+Everybody kind of retrenches back from
+users being really interested in this
+and users actually asking for technology
+ology instead of it telling people the
+technology that they should use oh my
+God thank God they've gone away now we
+can go back and talk about our
+enterprise software we can go back to
+our top down model
+again that's kind of where I kind of see
+things right now now a lot of people
+doing a lot of work with this stuff in
+this room even that's cool I'm doing a
+lot of work in this on this too it's not
+everybody but having talked to lots and
+lots of people and just damn near every
+person that will stand close to me I
+think that is a fairly decent reflection
+of what's out there and I think the the
+level of
+confusion that people have about what
+the worst case scenario is in part
+because chat GPT is training on all the
+data right you know you never had Google
+be like yeah we're going to read your
+mail and we're going to give you ads
+it's great come on in it's free though I
+don't think people would have signed up
+for Gmail that way yet a lot of people
+are in here doing this um I did recently
+learn that you made even more money in
+setad of your own little team of one uh
+which maybe but right now I just write
+garbage code that I don't care about so
+that's good enough for me for now but I
+am still super annoyed at the Privacy
+issue so I'm there as recently
+as November I go to the go to law school
+I teach a class on well it was a seminar
+class and I talked about not AI cuz I
+figured these kids were probably tired
+of hearing about AI so I talked about
+forensics and everything like that and
+at the end I asked them what their take
+was and how they were all using it and
+then I discovered what the level of
+discourse about this kind of thing is
+and an academic setting and that level
+of discourse is everybody shuts the [&nbsp;__&nbsp;]
+up and acts like really awkward and they
+don't
+talk and I'm like really you guys aren't
+going to talk about I was like oh right
+your professor sitting there okay uh and
+the other guys there so nobody's
+actually talking honestly about how
+they're abing this finally I actually
+did get uh I I found a I think he's
+maybe 14 now uh lives next door to me he
+was out shooting basketball with his
+with his with his brother and I was like
+hey talk about these large language moms
+what are you doing he's like he's like
+he's like uh I don't know I was like I
+dad okay here's the deal the smart kids
+are using it and the smart kids are
+getting away with it the dumb kids are
+using it and they're getting
+caught and I go like oh that sounds like
+high
+school so the kids I think are okay at
+least in that
+regard but it's it's fairly important
+right I mean and people in Academia they
+have their own thing they have their own
+lens but the things I've been doing like
+certainly any kind of we've got to just
+lock all this stuff down or we've got to
+act like it doesn't exist you've got to
+treat it like it does nothing the
+plagiarization it misunderstands the
+potential of this technology when you
+use it in the ways that I've been using
+it over the past few weeks handing hand
+waving you're like oh my God show me the
+stuff show me the stuff so what happens
+how did how did all this change so for
+CH it just happen stance I actually had
+a new project management system approved
+for the firm uh for my team
+and I got access to it in probably
+September and I started moving all my
+documentation all the notes in there and
+trying to like get stuff ready because I
+got this big cloud migration and getting
+all my people ready to go I'm like oh
+this is super cool I'll say the works
+and I show it later on I'm playing with
+notion right how many people have used
+notion before Oh man
+guys get $8 ready um so I get in there
+and and and and I'm having a great time
+because oh my God this is this is
+software that isn't garbage right I'm
+sitting there I'm rocking my baby and
+I'm making making relational databases
+on my phone like dude this is this is
+this is crazy town but I'm but I'm like
+over engineering the whole thing right
+I'm thinking about okay I got to make
+this easy I got to find forms I got to
+do checklists you know I'm going to make
+this super simple for all my team
+meanwhile there's this thing that's like
+hey you know no's got this AI thing and
+I'm like oh God
+no just no I can ignore it it's on they
+give me free you know tokens or whatever
+that nonsense I don't want it in part
+because I can't trust it and I also know
+what it's like to have a conversation
+with anybody at the law firm that's
+already had the appropriate lecture of
+this [&nbsp;__&nbsp;] is toxic run
+away
+right
+um so
+um so so I get this so I get this in
+there and I keep seeing this stuff and
+we even have a have have a call or a
+demo and I talk to somebody over there I
+like hey guys I want to show this stuff
+that I'm doing because I think this is
+help from my team and I want to show
+other people about it but as soon as
+they see this AI feature people are
+going to wig out and they're going to
+ignore everything else because they
+think everything is is is GPT 3.5 that's
+going to Hooper up all the stuff and and
+feed it to everybody
+else and I I talk to them they're like
+well we'll see what we can do and then
+all of a sudden I get this message says
+hi you've been added to the notion Q&amp;A
+beta click here to learn more I'm like
+oh God another AI Tech I click on it I
+was like well that's there's the chat
+gbt thing but then there's this other
+model what about this what about this
+anthropic thing I don't know anything
+about that then I start reading I read a
+little bit I was like oh that's pretty
+good privacy model then I get out the
+actual privacy docks for notion I get
+the Privacy docks for for anthropic I
+start reading I was like oh
+this is a very different Go
+game let's see what this can do so I run
+out and I sign up for claw now I sign up
+for claw Claud has been around for a
+little bit Claud is now on
+2.1 right so I get in notion I got my
+notion stuff I'm still I bought in I'm
+I'm just curious though so I called call
+the boss and I said hey they turn this
+thing on um the Privacy seems fine maybe
+we'll give it a shot and see what we
+think so I called it around my group I
+was like Hey click that thing ask it a
+question
+oh wow that's neat it's like yeah that's
+training all of our documentation no
+kidding immediately well I gave it a
+week and I called everybody I said okay
+here's the deal that feature was kind of
+here like as beta and we're now out of
+tokens cuz surprise surprise I used all
+the
+tokens um and I said to him I was like
+hey so I think I kind of liked this I
+liked so much I'd pay $8 of my own money
+to keep this around would you pay $8 of
+your own money and to a person on my
+group and I have a very diverse group of
+people to a person that answer was
+unhesitatingly I would pay $8 of my own
+money just make sure that that does not
+go away like that's
+interesting um so I kind of let that
+rooll meanwhile I start kind of playing
+with Claude and with Claude right a lot
+of this is the kind of exploration that
+you probably might have done with GPT
+like try to figure out how it works talk
+to it see if you can make it do stupid
+things but I started to talk to it about
+his philosophy how it treated like like
+like the like the way to Tre things
+inside of there I took all of the
+Privacy documentation I explained hey
+I'm doing an evaluation privacy tell me
+all the different paperwork that I need
+to go and I'll feed it into you we'll do
+this analysis and I did the exact same
+thing on that and I in in GPT 3.5 and I
+read a book by by hand and I double
+checked that everything was good wasn't
+that hard hard right um got through
+pretty quick and I say I was somewhat of
+a level of trust say I can start putting
+stuff in here maybe some interesting
+stuff maybe not some interesting stuff
+but I can put more stuff in here so I
+start putting more stuff in there and
+I'm I'm busy right I got I got a
+5-year-old I got a one-year-old I got a
+one-year-old that
+has well he really prefers to sleep in
+my king-sized bed
+so for reasons unrelated to this I'd
+already kind of been relegated to the
+couch for a little while but almost all
+this stuff has been happening like after
+I go to bed
+so as you know as happens occasionally
+somebody in my life will walk in and
+right when I'm in the middle of
+something else will set off some [&nbsp;__&nbsp;]
+fire and I'm like oh God damn it I
+didn't have time for this and it ends up
+turning into something complet
+completely
+amazing and godamn it if Bill swear Eng
+didn't open up a big [&nbsp;__&nbsp;] can of
+worms by starting a single signal thread
+making a lot of people mad and I was
+busy that day and I know there were a
+lot of emotions that were out there and
+that was good we all worked well out but
+I don't know if you all noticed this but
+I wasn't involved in any of that and
+then you woke up the next morning and
+suddenly there's like this pep talk from
+the old man it's like hey you guys
+worked all this stuff out well here
+here's an agenda for your next meeting
+here's an analysis of this here's an
+analysis of that get going
+everybody um and then I went back to my
+work and you saw the results of that
+right so how did that happen and did it
+was this
+right and this is a good kind of factual
+scenario cuz while I'm not any of your
+lawyers and I'm not the lawyer of this
+organization I do I you know am I in
+charge of the code of conduct yes I am
+in charge of the code of conduct team so
+you're my lawyer no I'm
+not quit trying um you and ciac I swear
+to God um but so so bill has this sets
+off this fire and it's in Discord I'm
+like man several people were T were
+typing from many times today how long is
+it going to take me to go through this
+entire thread of drama to figure out
+what's going on because I have concerns
+I have multiple concerns right first and
+foremost the organization it's keeping
+this together making sure that this
+stays together so I've got to figure out
+is there an active fire that needs to be
+sorted out right
+now
+second are there any interpersonal
+relationships that need to be mediated
+because these are folks that I'm very
+close with and I asked around people on
+that night got messages I said hey did
+you see this [&nbsp;__&nbsp;] go down I need a clear
+eye view of what the [&nbsp;__&nbsp;] just went what
+happened and nobody could give me a
+clear eye view everybody had something
+to say which was fine but I needed a
+clear ey View and faced with very little
+time but a gigantic context window in
+claw I say what do I have to lose I'm
+comfortable with the Privacy this was
+it's all in public chat let's drop in
+and see what happens call number member
+of the of the code of conduct team make
+sure they were all good with it they're
+like yeah that's all good see what you
+can do I get in and I start asking about
+two
+questions um oh first of all the DAT of
+preparation I want to know what the
+questions were i p them up I I got no
+problem if we want to review it it's
+just boring with this right cuz it's
+fascinating and then and actually that
+issue of the audit Trail is super
+important super important going forward
+you'll see why because I'll show you
+what I did after I did this one so I do
+digital forensics I do mobile forensics
+I do
+ecovery uh one of the biggest challenges
+that we have right now is dealing with
+short messages for lots of different
+reasons in part because the software
+that we've got and the legal legal
+business assumes that everything
+essentially can be reduced to a word do
+it's a silly assumption but it's the
+it's the model we work on we you know I
+picted about this one I in 2008 and it's
+still happening today so it's not going
+to go away short messages are hard and
+frankly it's probably a billion dollar
+problem for somebody to solve 6 months
+ago it was people were out there
+actively working on this right now
+talking about oh we got Solutions in the
+pipeline so I break out all of my
+forensic skills and I go to the top of
+the thread and I start copying texts
+until I get to the bottom of the thread
+and I put it into a text editor so I
+made sure I had it all I didn't clean up
+anything not a thing and I pasted it
+in and I got results that were
+immediately so shocking that I reached
+out to the other person on the code of
+conduct board and I said you need to see
+this right
+now people the short message document
+review problem it need his Governor it's
+solved it was solved by accident and
+listening to a podcast from somebody at
+anthropic they solved this problem by
+accident because they really liked slack
+and they really liked Claude so they now
+have Claude doing active summarization
+of all of their stuff so that daily logs
+and all this other kind of stuff that
+just kicks gets kicked out of something
+you can read I have no idea how hard
+that is and in this podcast this lady
+just like mentions it and I was like
+whoa whoa whoa whoa whoa back up hold on
+this changes
+everything so um at some point I can
+well we'll talk about sentiment analysis
+okay so in ecovery one of the biggest
+things right now is hey we're going to
+use this to identify the spiciest emails
+and we're going to use machine learning
+to do it we waited a long time for that
+model to be
+trained the end result of of of that
+really exciting sounding thing ended up
+being hey here's a score 50/50 greater
+or less about whether or not it's an
+angry email or not um I don't mean to
+diminish the work that that gentleman
+put into that but frankly when I pulled
+it up and I saw no great great pictures
+and I saw oh well that just has all of
+the emails that have the profanity I
+know I'll search Prof for profanity too
+let's move along to the next thing
+that's going to change the world and it
+doesn't end up doing it um so that's
+kind of the level of the state-ofthe-art
+right now I pull this thing in here
+anybody that wants to do this later on
+or if you want me to share this in in
+the AI thread I'll talk to the people
+that were involved make sure that nobody
+body's you know still got any hard
+feelings about it but it was identifying
+level of sentiment it identified people
+that were insiders versus Outsiders I
+asked
+it one of the more interesting things
+about one individual when it when it
+gave me a chart kid you not a charts of
+the people that were most involved in
+all the conversations and whether they
+were long-standing members or new
+members there one mismatch and I was
+like that's interesting and I said why
+did you do that on initial reflection
+you think oh well it's a hallucination
+because all that's hallucinating it
+comes back and it says this is the
+language that he used that indicates
+that he was feeling like an outsider in
+the
+situation it's a level of sophistication
+of semantic
+analysis that given this current State
+ofth art every everywhere else was
+astounding
+astounding one of the problems that I've
+heard people in the data science field
+that are currently gatekeeping a lot of
+this stuff they have concerns about what
+about about how do we decide what the
+sentiment is of the different stuff
+that's you know the different reaction
+gifts in Discord for
+example giving away something from later
+on but I don't care right I mean yeah
+that's an issue but I'll worry about
+that later on there's a whole lot of
+words that have a lot of meaning that
+are more important so let's not g people
+all this stuff just because of
+emoji all right so so I get into this
+and I see this this this kind of
+semantic analysis and I'm and and I'm
+and I'm completely blown away and at
+this point I'm like all right what other
+kind of random garbage texts in Mass can
+I throw to um I
+take 6 months of text messages mon
+my own one of the things I do when I do
+forensics and I do clients and I tell
+this to them anytime I get a piece of
+software I do forensics on my own phone
+cuz looking at your own text messages is
+creepy but I got to look at somebody
+else's text messages in a spreadsheet
+and I want them to know that I've looked
+at my own stuff and I know how
+disturbing and and and how much trust is
+involved in giving me all of their cell
+phone data to help the company with loss
+it okay
+um let me tell you when you
+know that this thing is going to give
+you a cleare eye objective view on your
+conversations that you've had with
+people that you've talked to over the
+next 6 months or it can go through and
+identify semantics or it can give you
+advice or point out things that you
+might have
+done that thre didn't last very long in
+CLA I saw enough real fast to say I need
+to go have a little bit of a thought
+about what this all means to me and go
+watch that that that that episode of
+Black Mirror about
+like the the one where it records your
+entire life right so if you haven't
+Revisited whether or not you said that
+auto delete policy on your text messages
+on your iPhone or maybe it's time to
+think about doing that again cuz it's
+dark it's dark when you stare at that
+prompt and it's like oh it's going to
+tell you everything that you never
+wanted to know about yourself right
+there um so yeah esoteric crises it'll
+do text messages and by the way I
+imported all that into a claw thread
+with a
+CSV that's all no fancy [&nbsp;__&nbsp;] no training
+I got so much to get through you got
+questions I got answers maybe but later
+later um so I go through and again like
+Precision recall like this I can I can
+verify this I can see the results with
+my own eyes right talk through with
+people I don't I don't need math to see
+that this thing is working to see that
+this is having any kind of an impact so
+I keep jumbling stuff
+in
+um yeah uh I keep dumping stuff into
+into this thing and I
+take a 6-hour deposition transcript of
+Donald Trump in state of New York 6
+hours now I did a little bit of cleanup
+it was a PDF I wrote some scripts which
+boy I couldn't have done that without
+chpt so say that about Miss clippy
+she'll she'll she'll help me with that
+with that for sure so miss help me write
+some scripts and I uh we'll get back to
+why I call it Miss uh so so so I get all
+this stuff cleaned up and I get six
+hours of testimony in there and I start
+asking questions now in Claud right I
+mean everything has a cap so it can't
+bring in general knowledge about Donald
+Trump and it was being very objective
+anyway but I asked it to go through and
+generate a chart displaying all of the
+differing property valuations given by
+differing
+organizations over time for the
+different Trump organization properties
+and it gave me a markdown
+table out of 6 hours of nothing but
+deposition testimony not a single
+exhibit not a single spreadsheet
+literally just the words that were said
+out
+loud banana paints what that will do and
+this thing costs $20 a
+month $20 a
+month
+so I keep going I keep going um I will
+share one thing before I get into kind
+of the hey kind of stuff but but but you
+can tell this at some point I I've got
+like damn near total trust in this and
+again it takes kind of a personal
+situation to kind of push you through
+that next level couple weeks ago I had a
+real bad day don't need to talk about
+while was a bad day everybody had bad
+days right had a bad day was still still
+a bad day after I got the kids down I
+still had to get some get some stuff off
+my chest I was like well I can sit here
+and like play Destin here I could rant
+at claw for a little
+bit so I turned on the microphone and I
+started
+ranting uh complaining about the day
+complaining about what happened
+complaining just just let it all out
+right um CLA summarized it back and sort
+of in when I said what do you think
+about this situation I kid you not it
+cut through every bit
+of stuff that didn't actually matter all
+the stuff that I brought up that doesn't
+actually matter it dropped it all and
+showed me the things that did matter and
+I felt better after I did it so I'm not
+going to act like I'm something that I'm
+not but in terms of if you've got a bad
+day and you just got to get something
+off your chest and have somebody realign
+your your perspective kind of like like
+calling your old man to be like hey I
+got my ass kick today what do I do and
+he says well you already know what you
+need to
+do why did you call me that's a little
+bit of what of what this C thing can do
+so now I'm going to talk a little bit
+about how do we use this and why why why
+are the things that I'm saying these
+things sound like they have real impact
+right yet I also said that you can just
+like dump in a inmap SC isn't IAL
+prompt I have start I I tried to make
+this thing do things I've wanted systems
+to do for a long time right like manage
+my calendar and and I'm trying to come
+up with scripts to like import the
+calendar into this and essentially build
+my own secretary but I keep approaching
+it as if I'm programming a computer you
+know I'm Building Systems I'm building
+some kind of
+process um one of the things I've
+absolutely learned is that the way to
+interact with any large language model
+is to talk to it to talk to it with your
+actual voice and there was a great talk
+at Microsoft ignite by a couple guys
+that do a tremendous job of explaining
+how this stuff works to lay people in a
+way that makes this all seem way less
+scary right it shows the fact that it's
+not intelligent it's just making guesses
+that kind of deal one of the things got
+Microsoft says it's true we're all
+trying to figure out right now what do
+you call these things how do you address
+them is it a person is it not a person
+all of that um
+and in my experience you absolutely
+treated like a person cuz it's tra on
+language he wants to be treated like a
+person he wants to treat you like person
+and I think that actually works well for
+both models when you're not writing code
+I can't like like you guys are getting
+solid results by typing words into the
+keyboard keep on keeping on but if
+you're doing something else
+get your hands off the keyboard and
+start talking out
+loud
+um but what I've learned along the way
+and you can think about this right you
+guys have you guys have interacted with
+this in the same kind of fashion the way
+that you properly talk to this
+which all right here's the hot tap
+prompt engineering is a euphemism
+generated by people that can't speak
+using natural language to make
+themselves feel feel better about the
+fact that they can't
+communicate
+okay I know that there are resources out
+there about prompt engineering I've
+looked at them I read them I'm like what
+and then I went back to talking to it
+and I saw the results and I'm like this
+is all nonsense talk to it Put the gun
+down you've got to talk to it so um but
+in talking to it and even if you're
+typing into it and this is where the
+kind of rewiring of your brain starts to
+happen what are you doing when you're
+effectively talking to these things
+you're going to tell it something you're
+going to give it detail you're going to
+give it more detail in fact the more
+detail the more the system understands
+why this is important and it is it knows
+more about the and it gives you a better
+response right um we all get email I get
+email occasionally I'll get email from
+somebody in my office that just has
+the entire email in the subject line no
+PDFs that's not going to give like
+that's going to elicit a response on on
+the part of the recipient and this kind
+of gets into the fact that we've all
+kind of forgotten how to
+communicate
+um after working with the systems and
+iterating and understanding and getting
+it back in your mind that you need to
+talk to somebody explain to somebody why
+it matters and and then you need to ask
+it if it has any other questions to make
+sure it understands and then you need to
+ask it to say it back to you so that you
+know that they Rock the thing and then
+you move on with your
+life that's not groundbreaking rocket
+science or computer science but this is
+the way that you talk to a large
+language model but it's also how you
+talk to
+people and some point along the way
+we've all forgot
+how to talk to one another I don't know
+whether it's because we have the screens
+in front of us because we're so used to
+thinking in smaller little
+bits but when people say I
+use chat GPT or I use AI to help write
+email I Invision them saying hey send an
+email to this person open up a health
+that s and then they walk
+away yesterday so I'm so so so
+unfortunately I'm in the car market
+again which worked out really badly the
+last time that's a whole other thing um
+but I got to go pick up a car so I got
+to email my insurance agent and say hey
+I got to get here's the VIN number for
+the new deal and I'm in oce and it's got
+all my stuff in there so it already
+knows my my agent's address and
+everything like that so it's kind of
+ready to go and I get on and I'm just
+talking out loud I was like Hey draft
+this email yada y yada for context so
+you understand what the tone is you know
+Sher and I should have been my agent for
+a number of years um you know we want to
+keep this professional but frankly you
+know she helped me out through a really
+hard claim and it was really nice and
+and and so make it sound you know not
+totally
+impersonal it spits out an email that
+matches exactly that
+song but CLA I don't know what the chat
+GPT would do this and this is why I want
+CL one one one model matters versus the
+other Claud comes back and inserts a
+graph at the end thanking her for all of
+her help on the other
+claim if I been sending that message and
+I've been using my fingers to type
+that all of those kinds of contextual
+feelings and expressions of gratitude to
+give context and help that recipient to
+feel like I'm not treating them like
+they are a virtual
+assistant my Heavens when she called me
+back after merely getting a genuine
+thank you as part of an
+email the reaction was
+Unreal I have I most of the people on my
+team are now using this in their
+day-to-day lives and I've got one person
+that and you can kind see the art CU
+Claude has a little bit of a dialect at
+least initially and I could tell that
+she had sent somebody an email using
+claw cuz it was extra friendly but but
+sent it to a person another organization
+who's fairly shy quiet
+person probably somebody like like here
+it elicited a response including
+exclamation points and thank yous on a
+Friday night when the request was to go
+like do something awful but merely
+because there was that little bit of
+extra effort that was freed up to give
+context and teach somebody about why
+this kind of matters to my brain instead
+of what matters to get this crap out of
+my
+fingers something else
+there um the thing about the parenting
+and this is important like if you I sh
+you not if you have a small child around
+I have a 5-year-old he's a pandemic kid
+so because he's a pandemic kid he's
+playing way more video games than he
+should he's playing way more video games
+to a more advanced level than he should
+but here we are pandemic kids right just
+like any other kid he's got problems
+shutting it off and walking what we did
+the timer thing we did the yelling thing
+we did the taking it away kind of thing
+but then you know you live with a 5y you
+know you just you just know how this is
+you know you're like I've told you a
+thousand times but you never
+listen but did I ever actually check to
+see if he listened
+no so I've changed the way that I talk
+to my 5-year-old when I talk to him
+about things that we do I tell him what
+we're going to do and I'm going to tell
+him why it's important and then I asked
+him to say it back to me I just
+literally like you are talking to an
+l and the difference in the behavior out
+of him is night and day night and day
+right now he is at home and I guarantee
+you he is in bed right now because at
+this point I've gotten to the point with
+him where he is responsible enough cuz
+he knows that it's important to get up
+to bed
+and why we talk through the plan I know
+he knows what the plan is so when Mom
+turns off the timer he's going to get up
+and
+go the impact is it's it's it's it
+really is hard to explain after giving
+this stuff to my team first of all
+through notion while we're kind of
+moving through a massive change out to
+the cloud different platform it's
+Christmas time the cut over to do new
+stuff over in the New Deal was December
+15th and as you might imagine people
+like to ask me questions because I know
+a couple things about the system of
+remov right I'm the I'm the first point
+you know I'm the first point of
+esanation
+over Christmas break while people were
+continuing to work got zero how do I do
+this question
+zero because all the documentation I had
+for that tool was put into the llm it
+was trained on something that could
+explain how you do things I had one
+situation where it was a new feature of
+this deal I didn't know what the hell I
+was doing I needed to figure it out so I
+took those sections of the documentation
+and I dumped it into a cloud thread and
+I treated the Claud thread like it was
+tier one sex support and Claude Tau
+based on their documentation which you
+know how technical documentation is it
+walked me through how to find the right
+pieces of the interface
+and and when I said I don't see that
+option it said oh they must not have
+done it that way look in this area
+instead as if I was talking to a tier
+three person instead of a tier one
+person merely based on the
+documentation um I talked to other
+parents and I turned them on to this and
+and and and and every time that somebody
+gets into this and they kind of approach
+this with a with a Fresh Approach and
+they start are giving their own data
+that's when you really see the impact
+and this is why I think it's important
+that we all do this for our own lens and
+this is why I think everybody has gotten
+into a real
+bunch
+about the concerns about stuff cuz this
+is threatening you know think about what
+I just read earlier if you write reports
+for a living either your job got a lot
+easier or there's a lot tier of those
+jobs luckily you showed up so you know
+you can do this now and beat the pants
+off the guy that doesn't know that's
+still typing this out word by word like
+an
+eight I don't type anymore I'm here to
+tell you I love my mechanical keyboard
+but it's going to get some extra Liv I
+just do not type that um but it's going
+to make you think about all this stuff
+you got to go you must go through this
+individually and you must view this with
+your own lens because the bias and the
+way that it the the fear that it has now
+I'm getting now here comes Lial Arts uh
+how many people people have heard the
+the the commencement speech by David
+Foster Wallace called This is water okay
+concept is this among other things that
+he talks about is the sense of standing
+there in line at the grocery store on
+your way home from work right and how
+miserable you are and how absolutely in
+your own headp space you are and you
+have absolutely no idea but you are mad
+at the fact that Checker is not checking
+the things fast enough
+you have reverted to your default State
+no matter how much of an empathetic
+person you were at work that you were at
+home that you are stressed out it's it's
+annoying and you just hate everybody and
+all you do is think about yourself and
+look at things for your own
+lens that's the way that everybody's
+going to be approaching this and anytime
+you read somebody else's take and you
+should take my take that exact same way
+realize that they were approaching this
+through their own lens so if you read a
+piece a hot that says AI is garbage AI
+is scary and it's written by a person
+writing for a a a a a a newspaper or
+news
+organization that spits out content at
+about a sixth grade reading level hoping
+that people can keep clicking on it that
+guy doesn't really have a lot of
+motivation to give a clear ey evaluation
+of whether this can make him a better
+writer or not and frankly the way that I
+use this it would make him a lot better
+right one of my favorite things now to
+do is take bad articles about Ai and Fe
+it in Quad and just tear it apart it's a
+great it's very
+cathar
+um the one thing I want to come back to
+and for the physics nerd yes I am
+choosing these words
+correctly when I sit and I work with
+this kind of
+stuff as somebody that made the
+transition from being forced to write my
+law exams in a blue book in long
+hand
+to being able to type on a
+computer my grades in law school went up
+a full letter grade once I could type
+instead of write because it re because
+it released some of that friction
+because there was so much friction going
+on in my brain just to make the make the
+words and also worry about whether the
+perhaps can read it or not and also
+worry about if I'm running out of time
+at that point having me type I was more
+effective absolutely so I loved it pass
+um but there's still that binding energy
+and what I find in working with this
+kind of stuff is that when you just
+start talking to the large language and
+you just start going you let all your
+ideas out you let them go here there
+anywhere it's going to distill it back
+from you and it's going to help you
+clarify your thoughts my
+proms I last night in part for this that
+didn't make the the the the slides in
+part for other things was me kind of
+recounting that kind of Journey that I
+went on right I sat there and I gave it
+essentially a 7 minute prompt just to
+feed it in there and it came back with
+an awesome kind of song
+but let's take a look
+at what this is like now first of all
+after you play with AI and you show up
+at a meeting where people are talking
+about SharePoint and we going to put the
+icons for SharePoint and you're like
+dude godam that's exactly what I'm
+dealing with right now ABS you you feel
+like Doc Brown like like literally you
+walk in and people are like hey where
+are we going to where we going to put
+this stuff and I'm like I'm the future
+we got to get everything F to markdown
+now you need to SEO your stuff you need
+strong headings at the top and a good PL
+name bye and I'm out um but but there is
+a very kind of
+kind of kind of difference here in in
+what we're doing let's see we've talked
+about let's let's do some stupid
+[Music]
+[&nbsp;__&nbsp;] um in terms of semantic
+analysis one of the things that I did
+here uh was
+uh well first of all this is just one
+tumbler after another that I that I've
+gotten on here how many people have seen
+um
+uh uh well how many people are
+uh let's just do that yeah it's been a
+long time I'm
+Rusty all right I'm going to go through
+back but now treason this turkeys be
+harsh our Buzz we throwing fist at
+Gettysburg set them straight going to
+see if the US say stays pimped out it
+was totally turned into crap America get
+your bounce back
+on what is
+that anybody my
+Suicide
+no that's the Gettysburg
+Address delivered by president
+kamacho after you have loaded actual
+dialogue from president kamacho to
+Claude so that Claude knows the way the
+president kamacho talks let's back it up
+again yes it's the Gettysburg
+Address get your bounce back on we can't
+even wrap our brains around how the
+soldiers rode into battle went out like
+boss Heroes making Furious Gaines gave
+it all up so America can rage
+on up to us still draw air with nachos
+Wings beer bongs no freefor all I'm
+going to go smack some sense into the
+Congress w
+a Go Chief it'sit
+perfect it's Pitch Perfect amazing so we
+want to talk about semantic analysis and
+you want to talk about why maybe I like
+Claude a little bit more than I like g
+chat GPT it's not just the fact that it
+can turn me into a cross between Barack
+Obama and Aon
+sorin it's because it can do crazy
+things with Emoji right we got this guy
+out there worried about the jpegs and
+dis SW
+well what if we wanted to reive the if
+FDR was going to give his address about
+the Pearl Harbor attack but he was going
+to give it
+to that day of infamy for Harbor we got
+played so not ye this aggression will
+not stand man that's pretty got all
+right all right a little bit on the nose
+what I love about this slide is the use
+of the Emoji in particular some of the
+dark emoji and I'm not even getting
+started yet for those of you in the back
+this says attacks across the seas and
+we're outlining what the Japanese did
+Hawaii
+fire it's great it's great okay
+so this I actually gave this to a gen Z
+person and she goes
+like I'm not even offended that's
+perfect this was my favorite I did go I
+it did suggest that I go find an
+American flag gift which I did
+however the one that I love about this
+is the incredibly dark nasty humor here
+at the end it says Congress you know
+what we must be done on December 7th
+they started it now we're going to
+finish
+bomi so so yeah it's it's it's tapping
+into its general knowledge but it
+general knowledge has humor with the
+[&nbsp;__&nbsp;] yeah all right so oh and
+incidentally all of those slide decks
+generated
+automatically so if you want to train LM
+to do stuff for you give it an example
+I'm presenting from a thing called AI
+IIA presenter IIA presenter works on
+markdown and plain text you feed the
+sample documents to clog you say this is
+what the output needs to be he says cool
+feed me some stuff and I'll make you a
+slide deck and there makes it a slide
+deck you save it out and it turns into
+that it's kind of
+amazing um all right so that was just
+kind of some some dumb funs and the
+other thing about this is you can learn
+so much about this by just having fun
+and screwing around okay almost all of
+my kind of little sciency things that I
+you know I'm very serious I'll back off
+on it at the end and have some fun but
+I'll actually like end up learning more
+about it at that point so one of my
+exercises I did was I did a I
+actually I watched a webcast that I had
+some issues with so I've ripped the
+transcript from the YouTube webcast and
+I fed it into into CLA and I did it to
+chat TPT and I asked the same question
+side by side let's see how this thing
+picks it apart chat TPT Bally did better
+than I thought better than I thought um
+but still CL one but at the end I go
+like all right now I'm done taking all
+my screenshots to send
+off I I I I tell Claude I was like all
+right turn your turn your formality
+down I'm done doing the test real talk
+what did you think of all that stuff and
+it gave me an analysis and I go like oh
+my God not only is that right that's not
+the perspective I walked in with and
+it's not the perspective that I was
+actually nudging it towards cuz I know
+when I'm doing a leading question you
+this is my business
+but it steered me back to a more
+reasonable stance and that was where I'm
+like this is different because this is
+now helping turn this into a tool that I
+use to think and to analyze it's not a
+thing that I use to retrieve
+information it's not a thing that I use
+merely to generate code I use this thing
+where I I use it literally as an
+assistant and I tell it you need to
+draft this email make the tone different
+do it this way iterate iterate iterate
+use your voice one of the things in
+engineering you've got to give examples
+of how it can meet your tone
+okay Claud in particular will match your
+tone will absolutely match your tone and
+it will go with you when you take it to
+an elevated tone but to do it with your
+voice and have that kind of inflection
+and the pacing come through and it
+obviously comes
+with I'll show you some other stuff
+there
+so
+um let's open up
+notion because I
+think I think it's time to show
+that first of all if you guys aren't
+using the the browser called Arc you
+should it's super cool it's got a lot of
+AI stuff built into it they have a new
+mobile web browser where you just ask
+things questions and it does a rag
+process on the entire internet and shows
+you the answer if you want to find out
+where Taylor Swift is without leaving
+any Trace in your browser history that
+you actually looked at Entertainment
+Weekly this is what this this this is
+the solution for you I know because
+that's exactly how I found out whether
+or not Taylor made it back to the stakes
+on on Sunday morning or not the whole
+thing's beautiful I don't care I hope to
+get
+[Music]
+married all
+right oh now I definitely feel like I'm
+work I was about to talk without
+actually sharing my screen over there
+this Escape
+so a little bit of where I am now right
+so so I've been through the eye of the
+needle I have had those conversations
+I've had conversations with people where
+they're like no seriously dude are you
+okay
+fine uh but after going through all this
+I'm thinking about the potential of it
+and I've also got my kind of nerd and
+security things in the back of my
+mind cuz we all really want all of this
+but we all really want it to be local
+right you really want to be local you
+really want to be here you really want
+to live there worst case scenario you
+running on on a sery in your house and
+maybe you're sitting there and you're
+thinking well I'll wait for that right
+Tim Cook's got to have one more thing in
+his pocket for
+WWDC
+right uh yeah I got I think it's
+coming but then I got thinking about the
+level of trust that I've established
+with this kind of thing and the level of
+trust that I think it's earned at least
+on the fact that you know the Enterprise
+is using it for all this kind of stuff
+but then I also get to thinking
+about
+my what it all means right one of one of
+the things I've always gotten into is is
+is is as a broken nerd like the whole
+productivity por thing right mean I've
+got I've done getting things done I've
+got a tomato timer I've got all my stuff
+in the Johnny I've tried to find it all
+none of the words it's all just a waste
+of time and distraction um but this is
+different because it's not only creating
+kind of that external brain it's an
+external brain that you can talk to and
+you can interact with and and I went
+some through some stuff like like well
+my my car got robbed from me in my own
+driveway the day that I brought it home
+uh it was a long it was it was not a
+good time still taking medication for it
+um but I've had my brain messed with
+right I've gone through that kind of an
+experience where you are absolutely
+going through a lot you are pushing
+yourself as hard as you can you cannot
+keep up with anything and all you
+desperately want is somebody to tell you
+what to do where the thing is where all
+this
+is my grandmother passed away during Co
+in a nursing which was very sad I was
+very bummed out about that because of
+course it was during Co so we didn't get
+to do all those things but my
+grandmother had allhe so one of the
+reasons that it actually ended up being
+a little
+bit harder I think was also realizing
+that I'd actually lost her a long time
+ago and her Alzheimer's came on suddenly
+and very quickly and I'm sitting there
+and I'm thinking and I'm holding my baby
+and I'm like you
+know if I can trust my client to into
+this then why the what am I doing like
+like to sit here and wait for it to be
+able to do this for obsidian if I leave
+here and get ahead in worry I actually
+want everything in my life in this thing
+right now to help myself if something
+happens tomorrow and I establish the
+same level of trust that I can put my
+stuff in there and frankly I kind of
+feel like everybody here
+we've all got brains and they're all
+brains that are that are held in shells
+that are a little bit fragile both
+physically and and emotionally maybe
+more fragile than you think and
+preserving that information so that you
+can continue to function as a human
+being oh as we all get old or bad things
+or unexpected things happen or you get
+kids that are going to get older you can
+say hey all you have to do is ask ask
+Claud he'll tell you who you're supposed
+to call um little stuff right I mean d
+dumb stuff like I'm looking forward to
+the fact that I'm going to see a weird
+bug in my garden and I use my phone to
+identify what it is and I look it up on
+the EPA label to see what rate I should
+use and then walk directly into my
+garage and spray it that's the thing I'm
+going to be able to do this
+summer
+um that's that's kind of deep right uh
+what else can you do I keep talking
+about Big Stuff Big Stuff uh let's show
+the big so at this point I'm doing two
+kind of Fairly interesting project
+man I think this was my first time I
+should probably just twist this around
+or
+Transcendence okay so I won't go into
+all of the specifics again about why I
+believe that Claude can be relied on at
+least not necessarily an expert as a
+lawyer but at least as kind of a casual
+resource um I actually went through and
+everybody's going to preach this through
+their own kind of lens I work with a lot
+of people with means does anybody have
+any concept with the family office is in
+this
+room if somebody has a family office
+okay doesn't matter any of the cards if
+they have people that do nothing but
+manage the family money yeah they got
+money but this is how people with mean
+structure the people around you right
+you have trusted advisors I have human
+advisors right I've got a financial
+advisor of course I do am I going to
+replace them with Claud no but what I am
+going to do is I'm going to take
+advantage of the
+200,000 token limit in claw and I'm
+going to dedicate one thread of that to
+do nothing but discuss my grass with a
+virtual George
+Toma how many years do you think that I
+can of data and discussion about my
+grass and how it's changed can I fit
+into one thread and how much like okay
+you know a little bit about aromy here's
+the rest about aromy that you need to
+know about my specific GRS right so got
+one set up for that I've got one setup
+that's kind of the overseer right and it
+looks like a company but again this gets
+back into the whole treat these like
+people really treat them like people I
+started working with Joan Joan's my
+dayto
+day incidentally it is uh Hey anytime
+that you go into Dolly and you suggest
+that something have a figure that
+resembles Joan from madman you probably
+have a 40% chance that it's going to
+content filter that just period so uh I
+worked with Joan and um I discovered
+that L are B at time and really I want
+one assistant that knows what I do day
+to day to day to day tell me where I
+want to go and I'm trying to come with
+this Byzantine kind of nerve process
+about do this kind of export and do that
+and I'm like no dummy hey Joan you're
+fired
+write a memo to your successor outlining
+everything we talked about today and
+fully prepare them to take over your job
+and and make sure that they know how to
+treat me like you do right now and it
+spits out a memo I feed it to the next
+day and upspring new J so if you want a
+daytoday assistance literally like a
+secretary that says and I did this the
+other day I sat down at the beginning I
+was like okay Joan here's my calendar
+and I got swimming lessons tonight so I
+need to you know make sure that I stop
+so that I can get ready for that about
+3:00 I go like Joan it's 3:00 I didn't
+get a damn thing done today what do I
+have to get done right now and Joan goes
+like you've got swimming lessons tonight
+you need to go gather up the stuff and
+it said the stuff includes goggles and a
+towel I had forgotten that we lost the
+goggles and I needed to go find new
+goggles so personal assistant yeah it
+works the whole structure is kind of com
+but a lot of this relates to the need to
+to retain knowledge over time even with
+a context window is big as clawed you're
+going to lose or you're going to be
+having enough of a back and forth that
+it's going to just kind of get a little
+janked dates times are real bad for that
+so I built an entire structure I started
+by creating a mission statement
+okay all this time I haven't even as
+[Music]
+all
+right
+what is the mission
+statement so I start with one bot and I
+say hey I want to start I I want to
+start a company that does nothing but
+support my family I want to start a
+family off this and a grounds Keeper's
+office and it drew it drew out a
+corporate structure for me Drew out a
+communication plan and I'm running like
+a staff of small people if you want to
+be a leader in an organization and you
+want to talk to people about how do you
+keep people in the loop that's how you
+do it right this is business schol in a
+box um just from an organizational
+perspective um I got everybody kind of
+kind dedicated to certain things uh and
+that's working out fairly well uh the
+joone thing is pretty is pretty slamming
+and I'm moving all of my stuff in here
+so this is this work in
+progress but then and this is when the
+problems happen is I'll get an idea and
+now that I have ideas and I have cheap
+Ai and I have chat gbt I can do stupid
+[&nbsp;__&nbsp;] so one of the things that all of
+the lawyers want to do is replace West
+law in Lexus Nexus right
+why cuz they suck that's the other thing
+anytime anybody brings up like a user
+says I want to use AI on this program
+what they're really telling you is this
+program is garbage and I never want to
+use it again because I think maybe an
+llm might make it suck less um so they
+all want to replace Lexus and Westlaw
+I'm building my house in my life and all
+of my knowledge into this
+llm wonder if I could actually replace
+place
+was so I go out and I start grabbing
+open source copies of statutes and what
+I did was I wrote a very simple script
+Le simple because I did it so it has to
+be
+simple
+um I had to go start pulling codes like
+titles of the US code like an entire
+bookshelf where the statues kind of
+thing 18 USC is where 18 USC 10 look
+everybody knows ATC 1030 right computer
+great it's like it's like the official
+statue computer
+hat um so I grab I I grabb Title
+18 and in the same script I converted
+all the markdown and then I literally
+just feed it all
+claw and then I go in and I'm in notion
+and in notion you guys have seen the
+kind of especially your notion User it's
+got these kind of auto fill fields and
+stuff like that you're like yeah I don't
+know well it turns out that you can
+actually run those on an entire stack of
+data so I took the entire 18 USC and I
+ran this against it and it's now tagged
+everything based on what it believes the
+the area of law
+is I've got it matched up with its
+original source and it has a summary of
+each statute there already in a
+table I paid $8 a month for this
+$8 if there's somebody in here that's
+going to talk to people about tokens you
+have to go talk to people about tokens
+when they know that they can go do this
+for $8 a month that's a problem for
+somebody that's not me I hope they come
+up with a way and I hope it's not paying
+by the
+token um because also part the results
+of this kind of thing speak for
+themselves but
+now I'm not going to type it in I will
+share these in
+Discord you probably start a tumbling I
+can asked this thing to explain to a
+5-year-old what money laundering is and
+it'll do it one of the funniest things I
+did in the last day was I had to explain
+to my 5-year-old the consequences of
+stealing a toy car if I happen to take
+that that that stolen toy car sell it
+and then take some of that money and buy
+our house with
+it okay that's called civil asset
+forture because I use proceeds of a
+crime little Timmy there are
+consequences to your actions and this
+was able to explain it using that
+analogy to a 5-year-old based on nothing
+but its prior knowledge it's commanded
+the English language and statuto
+language the emails that I can draft
+already based on this to help clients
+help interpret stuff I mean all of your
+all whackadoo ideas you come up to me
+you're like hey what about this I'm
+going to be able to so much more quickly
+um it's really amazing but the thing I
+find most shocking about this right now
+why the conventional wisdom is so far
+off from the reality is I you know I
+keep getting marketing materials and I
+keep hearing vendors and people in the
+middle being like oh this is the year
+this is the year I got one for one
+vendor where it's said this is the year
+that AI is really going to be
+implemented we're really going to make a
+push for it and at the bottom paragraph
+it said oh yeah we're going to try to
+figure out some way to deal with those
+short message things
+and I'm like guys they're the same thing
+they're the same thing
+so where where where where does this
+kind of end let me end with kind of
+where maybe one example
+of something
+I so one one of these evenings I go
+downstairs and I just had an idea
+about technical gate
+and the fact that technical
+Gatekeepers traditionally sered a pretty
+fair pretty fair role but because large
+language models are really reflections
+of the work that somebody puts into and
+their utility as a reflection of exactly
+what what goes into them our traditional
+model in
+technology of the great it Department
+comes down with a list of features and
+benefits and gives you some incremental
+change and the user needs to say thank
+you is about to get turned on its head
+it's very soon people are going to start
+finding out that this exists people are
+going to start asking that question
+again people are going to start making
+demands they're going to start asking
+why are we holding this up um this kind
+of a bottom up approach is a little bit
+better so I go in and and cl I really
+used it just as
+a an inbox right I just want the I just
+wanted the thing out of my head so that
+I could sit down and I can go play Des
+and it kicks back this thing and it
+throws back you know in the summary
+another one of these issues about
+reliability and it says before you do
+any of this kind of Technology you need
+to sit there and you need to you need to
+go through a lot of empirical evidence
+you need to before anybody can rely on
+this you need to have F score and
+precision and recall and all this other
+kind of thing and I just get pissed off
+I'm like listen I've heard this for
+years right I've been trying to push
+techn ology to lawyers years and years
+and years part of the problem we doing
+this again this is why everybody's got
+to do this
+themselves I have been there trying to
+prove to people that they should try new
+things based on meaningless
+data the same data is used to build and
+test forensics ecoc Discovery programs
+today that existed in 2006 as the bush
+emails and as the anog emails none of
+that stuff resonates with
+anybody so anyway so so I get mad and
+I'm like no this is nonsense I start
+fighting with
+claw and one of the arguments that I
+make along the way with claw is I say
+listen Claud I understand that
+your understanding of this is colored by
+a lot of
+the initial writings about Discovery and
+how you Discovery should work with a lot
+of assumptions about the way that it
+does work and I said Claud let me give
+you a little bit of
+perspective most of
+these yes could can we do a last call
+yeah if you need boo go get it now
+yes
+so I totally lost so I start arguing
+with this thing and it starts making
+this argument about prision a recall I'm
+like prision recall what are you talking
+about I fed this deposition to this
+thing I can read it with my own eyes
+right I ask this thing to to give me the
+VIN number for my car I can see it I
+don't need somebody with a data science
+degree to come in and tell me whether or
+not this works or not and frankly in the
+law we have standards for establishing
+things like about how effective it is
+right we as a society right now have
+decided and have for a long long time
+that we will kill
+people based on nothing more than the
+opinion of 12 people that could not get
+themselves off of a
+jurk right so I am absolutely sorry when
+I see the impact that this can have and
+and it's I I didn't show you a lot of
+the impact of the on people legal
+analysis because it's not going to
+resonate with you guys but trust me when
+I say that I showed two partners and
+partners said things like that's better
+than the associates I have working for
+me they said things like why haven't I
+seen this
+yet um they come away immediately
+impressed I see absolutely no reason why
+Amazon web services who is financing
+Claude should not give access to Claude
+in a total to every public defender
+office in the country a
+immediately we need to find those areas
+where we have subject matter experts
+that we know how to evaluate the results
+that once we sit down and we start using
+these things and we start approaching it
+in the way that we approach research
+before I didn't get into this but part
+of the problem we've got right now is
+everybody thinks the research is typing
+[&nbsp;__&nbsp;] into into a search box I learned
+that the way that you do legal research
+is you go get the books you make copies
+of the cases you care about you make a
+copy of the statutes you care about you
+read them you put them in a file you
+read them again you summarize them and
+that's your work you keep it all right
+there if you do that right now it's
+totally defensible because literally
+it's the same thing we did with paper
+except the analysis better right now
+there is no reason for anybody to be
+gatekeeping this
+in any capacity in many instances and we
+need to identify those some instances we
+need people that are going to fight
+because it's going to be really
+important medicine totally important
+that you get that right cars I'd rather
+not the car crash that's
+fine but we can do a lot of good without
+being perfect right now and it's
+critical we start identifying those
+areas and getting the stuff into the
+people that that it matters okay think
+about that thing that I've got there
+with with the advisers right I can tell
+you that I'm getting incredible advice
+from all of them and when I show up to
+talk to my financial advisor the next
+time he better bule the [&nbsp;__&nbsp;] up cuz I'm
+showing
+okay
+um that level of sophistication and
+support and Analysis you think about Tak
+any subject you want to learn about and
+go through that process of having chaty
+talk to talk you through stuff it might
+be not be accurate but you're learning
+something there in Bates County Missouri
+right now uh not too many county out
+here it's where I've got my family's got
+a little bit of ground out there got
+some other members that lived out in
+that kind of area very underserved by
+Broadband until this year this year in a
+rural area in a rural elri Coop you can
+get gigabit in the asle of nowhere where
+you can't get a cell s and if you're
+sitting there and and and and you're
+dealing with a public school district
+and the resources that are available to
+them and you're relying on that to get
+you to succeed in life the combination
+of broadband plus this kind of thing is
+going to change lives absolutely right
+now and today so it is critical that we
+stop getting in the way of ourselves and
+stop getting in the way of change start
+trying to figure out where we can do
+some impact get this stuff out there
+make it free make it available and
+absolutely get out there and change the
+goddamn world I come away from all of
+this with a newfound purpose of why I
+get up in the
+morning I talk to people and I see the
+positive impact I I talk to people I
+work with and I see how much more
+effective and happier they are you guys
+can see how effective I am holy cow I
+couldn't have done this for this long 6
+months ago I feel great but that process
+of working with your thoughts and
+expressing your thoughts in that kind of
+messy way and then seeing them reflected
+back to you in a way that kind of
+verifies you're not crazy in your head
+you might sound like David Foster
+Wallace in your head but you got good
+ideas and here they are in a list take
+this and run with it but then also to be
+able to Pivot and take that kind of
+passion and take being pissed off about
+about that kind of thing and immediately
+turn that into a slide deck to go take
+to somebody and go push some
+change I'm you know everybody got a
+thing everybody's got a thing they give
+a [&nbsp;__&nbsp;] about you everybody's got a job
+that they got something that that that
+that sucks go find the way to make AI
+make that go away and go solve some
+bigger problems cuz this is a big chance
+this is a big [&nbsp;__&nbsp;] chance so
+everybody needs to get out there go sign
+up for Claude I'm not endorsing anything
+but you should sign up for Claude talk
+to Claud talk to CL until it gets you
+into an existential crisis if you start
+feeling weird you can send me a message
+if you start seeing it do weird things
+and you want to share things with me
+send them to me in my DMs I have I have
+subjected other people to this and I
+want to hear other people have their
+minds blown too but let's get out there
+and change the goddamn world and instead
+of maybe think about how we're going to
+break this let's think about how we're
+going to build the things going to solve
+the problems and we're we get out there
+and we start interacting with language
+again and you start reading words that
+are above the grade reading level that
+we've been reading at which is Twitter
+and at best the New York Times my
+Heavens if Brett Stevens is the model
+for for acceptable journalism we're in a
+bad spot but when you work with Claud
+what I found is that Claud will meet you
+where you are at at the plus about two
+grade levels and you read and I think
+that the act of even though it seems
+silly with it being procedurally
+generated I think the act of watching
+that makes you more engaged with the
+language it makes Mak you retain the
+information better it helps you work
+with your thoughts and crystallize your
+thoughts and it gets you
+better in many ways I've heard somebody
+else actually said this but I think it
+is so good especially in light of that
+the interaction I had with my insurance
+agent all
+things she said that when she works with
+Claude because of the way that it ends
+up kind of reflecting her own language
+and reflecting her own thoughts back to
+her
+she finds that Claude almost becomes the
+best version of
+herself because it's objective in many
+ways it's understanding it's empathetic
+you guys will understand what you what
+this all means once you start talking to
+it and you see some of this language I'm
+here to tell you this shit's real and I
+think we really can't go out and make
+some effective change so get out there
+and do
+it so in the words of General Patton all
+right you sons of [&nbsp;__&nbsp;] now you know
+[Applause]
+eventually they're going to throw us out
+but I will take a question from the from
+the gentleman in the in this in the half
+first of all thank you so much for that
+I have two questions the first one did I
+come off like an [&nbsp;__&nbsp;] in Discord no
+okay and the second question when you
+were showing the the the the different
+personalities that that you had at the
+pictures was that CLA or was that no
+what was it that's that's a very good
+question it all does get very confusing
+uh let me let me see if I can pull this
+back essentially what I'm doing I pull
+it up essentially what I'm doing is I'm
+using notion to organize clae threads
+right so each clo thread is an
+individual Persona and because you've
+got so many once you start doing this I
+kid you not it helps to name them
+and when you talk to Claude Claude will
+explain to you that Claude is actually a
+genderless name and maybe the first time
+that you tell Claude you're going to
+call it Joan you have to say I
+understand your genderist but I'm doing
+this because it helps me keep it
+straight and then cla's like oh
+that's there's a there's a
+summons and sum summons and I I believe
+you're you are summoned away from the
+mic oh no is it being taken away or am I
+being summoned for something getting the
+hook yes yes
+I blame that guy I got done before his
+it was his question I love you but we
+have to we have to close
+now all thank you
+[Applause]
+everybody

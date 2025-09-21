@@ -1,0 +1,154 @@
+who here has used the John The River by
+chance
+from the bathroom tracker uh it will
+crack a multitude of different uh
+passwords anywhere from the Unix tobacco
+um Cisco you know iOS large zip there's
+over a hundred different uh passwords
+that are moved back for os's and also
+applications down here uh VNC
+uh one I thought was pretty interesting
+it cracks by both brute force or
+dictionary attacks and um so there's
+it's it's pretty simple just to um
+using its basic form
+me I'm an example and so I either dump a
+ldap directory or niss or local files
+unshadow it and I'll drag it and send
+out emails saying hey guys what what are
+we doing here and uh so anyway the basic
+syntax there would just be executing
+John and a either unchannel or your
+Shadow file
+ideally you would do a a unshadowed file
+the reason being is John will use the
+gcos data to mangle and produce
+additional guesses I'll show in my
+screenshot a good example of where that
+came in handy
+uh so on here what I had done is uh
+send my UMass to a reasonable uh point I
+shot up my password file to file from
+password field click the defaults
+there's a multitude of different ways
+and rules Etc that can be manipulated
+for how this thing cracks passwords
+me I generally need some defaults or a
+little bit of drinking if you know that
+the password has a particular format for
+example does not require special
+characters stuff like that you can take
+that out of the language so it doesn't
+even try those
+um so anyway here's one of everybody's
+favorite root passwords it's easily
+cracked it doesn't even take a second
+and it dumped out this
+a shift of the username here
+user for the three instead of an e
+um I should have printed out the
+password file at least the entry for
+this user the reason being is user two
+for the comment I have crappy app admin
+was you know the comment field and uh
+it's very quickly cranked its password
+which is cranky crappy at 2014 so it's
+able to figure out a lot of those little
+shifts that people think they're sneaky
+about relatively quickly
+um you can see here if if you press the
+space key it'll it'll print out exactly
+what it's guessing at that point in time
+how long it's been guessing
+Etc cyber two per second uh so here
+within 20 seconds It crack those four
+passwords this one right here
+is an example of a password it's
+actually a checksum that I use for a
+password it's a very long password
+obviously but is it work that I added to
+the dictionary that I used in this
+particular example
+if you know that your company or whoever
+your environment uses a particular
+format for example if you work at Sprint
+you're on Sprint 2014 stuff like that
+that's a popular thing to do add that to
+your dictionary and it just makes things
+go much quicker there's also if you're
+unaware rock you but back in 2010 or
+nine there's a breach there they'd reach
+there there was a what 35 million uh
+passwords actual passwords leaked in
+that particular case so that creates a
+dictionary file that's extremely
+powerful it Compares them to just simply
+using the English language
+uh so anyway
+uh continuing on you know just
+additional words
+um that people often find mistake are
+are strong they just simply aren't so
+anyway after execution uh this thing
+completed after you're done if you want
+you can see your summary for the
+particular password file that you're
+trying to crack and uh that's what the
+show flags and it will give you a little
+report here of a username password
+Etc
+yes
+one recommendation I would have is uh
+is going out there getting word lists if
+you're into this kind of stuff uh let's
+rock you uh password file is very easy
+to find there's a number of them out
+there with you know millions and
+millions of passwords and and other
+things some of them charge uh want to
+charge you for it and
+you can you can find it easy enough
+um let's see
+um there is a configuration model Etsy
+John
+by default it'll only use
+um
+idle Cycles so if if it's on a machine
+that you really want to have do some
+work change that flag having use uh
+a full CPU
+um
+what else a better password file oh the
+updated version
+so Kelly comes with a 179 the Community
+Edition which has you know zip raw and
+all this other stuff in it
+the official version which is 180 it has
+added the ability to use uh to do
+parallel processing and distributed so
+if you got a box of you know 6 12 you
+know however many cores there's a flag
+for that particular version that you
+cannot use multiple cores and obviously
+things go much faster much better I did
+not try the distributed version with it
+um I've run Cali on a virtual box
+machine ideally I guess if you're into
+this thing you'll be running it on bare
+metal you know every little bit of you
+know extra cycle you can get would be
+useful
+but uh it's a pretty nifty little
+utility uh there has been a number of
+times where it's saved my ass
+um also in and flexing around with this
+a little bit I didn't see that there's a
+gooby for it that is maintained separate
+of John it's called Johnny so if you're
+into a GUI yeah just you know put an
+extra n and a y on there execute Johnny
+it'll give you a nice little uh give me
+Financial
+that's about it
+foreign
+um

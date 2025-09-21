@@ -1,0 +1,440 @@
+welcome to ELQ how many people what it
+was fun I promise you mr. projector mr.
+projector
+hello mr. projector well apparently the
+demo gods are really going to be
+laughing and laughing
+so we should really just have a laugh
+track for me go back there Aaron oh all
+right okay starting over
+no no just continuing so how many people
+here have have used out like actively
+use out this is really cool because I
+was actually hoping that there'd be a
+subtle majority or a minority anyway so
+I want to try and hopefully grow that in
+this crowd and to where you're like oh
+man
+I got this data log of all these GPS
+information all this stuff I've tracked
+throughout the u.s. or in my city or my
+neighborhood and I want to go ahead and
+create statistics about this I want to
+be able to write a report I want to have
+CSVs I want to one have data and use it
+that's where 101 starts is we're getting
+the introductions on I plan on doing
+more of these and it'll be better I get
+better at this if you like me alright so
+next slide agenda we're going to
+introduce our environment we're going to
+go over Python a lot of this uses Python
+we're gonna go over what the data looks
+like once you actually imported would be
+a Python we're going to use a CSV file
+to do that I found a giant huge CSV file
+over 6 million records it took
+approximately line it did one by one I
+didn't try and do any crazy threading
+bulkinsert stuff one by one it took
+roughly 36 hours to complete all right
+so then we're going to use file beads
+and technically not file beads I haven't
+updated this yet we're taking this stuff
+straight from syslog syslog is directly
+touching logstash long stacks just
+throwing it in till it's priority into
+elasticsearch as it work alright so
+we're gonna go over some of the grok
+stuff that happens which is really where
+many of these you end up having to parse
+the data you end up having to take
+elements assign it to text assign it to
+int long so on and so on
+so you're we're gonna go ahead and get
+pretty a little detailed i havent github
+also the control i did make this
+that's what and I'm gonna finish that so
+yeah I have a github as well I saw
+trolls very genius method of sharing
+that went ahead and did it so if you
+guys want to go ahead and capture it
+otherwise I'll be happy to share it
+later all right
+I had this I mean I do music stuff so
+this reads maven music passing through
+this device somehow helped to bring it
+just a little more peace to this
+troubled world and I really think that's
+a very core philosophy that I try and
+live by and I wanted to go ahead and
+just kind of share that and hopefully
+this helps you I try
+alright so introduction environment
+uneasily Windows 10
+Python both versions 2.7 and 3.0
+whatever
+fragrant 2.03 VirtualBox and held five
+point six point eight all right Python
+is a beast if you use Python you'll
+realize that all it takes is a module
+include you can you have anti-gravity
+include anti-gravity or you are actually
+import import anti-gravity done you're
+floating alright so it helps to have
+made a few of these so that way you
+start working through a troubleshooting
+methodology that has been he and getting
+this going the only reason why I'm even
+able to make this talk is because I've
+made about four different health
+environments so far in each time it was
+a learning exercise looking into logs
+finding out where what instead of we're
+just trying I wanted it to go and I'm
+like you will fail your first time
+trying to get data into ELQ you will
+just pick yourself back up look at your
+logs look do your Google searches you'll
+figure it out hopefully this talk helps
+you through most of that time date
+formatting
+what is that never an issue but it is
+an issue here so you're going to have to
+import a couple modules who have worked
+with it so you got to identify the
+useful fields in your CSV format each of
+those elements accordingly otherwise
+your mind can build search correctly
+it's gonna think everything is a string
+because that's how it is in a CSV it's
+all quoted all strings so you actually
+have to do some manipulation to go ahead
+and bump that down to say and and or a
+long or whatever data set if you're
+wanting a geo point which is a really
+difficult data field to make and then
+the other one is a an IP address and
+actually typed IP address so so then you
+you have to set your index your mapping
+which I sort of just talked about and
+your settings which covers like how many
+shards you're actually supporting within
+that data set are you having a cluster
+and you only want it on the charts on
+one edge of that cluster you can assign
+all of that right here while you do it
+all right so what is behind door number
+three we're gonna find out let's go
+ahead and actually go to our data set
+and this is the wrong data set so one
+second here will I pull this up all
+right so I have a data folder that is
+not synced so I don't have to upload
+space whatever billion lines out to the
+Internet so this is a pretty hefty file
+right here let's maybe try and oops
+let's appropriately get out of that and
+we're going to actually want to set down
+the microphone because I don't tie it
+does this work it works alright so if
+you're familiar with Windows or passion
+windows this is how you go ahead and get
+to your directories so I'm gonna browse
+to the skin just I want to show you the
+the first elements that way you can
+actually see the first lines so we're
+gonna head that file so there's an
+example of your data fun enough I'll see
+csps are probably the easiest easiest
+data to go ahead and import because you
+actually have headers you know what all
+your fields are labeled this is
+incredible
+there's other types that have this as
+well with CSVs it's just primally easy
+to go ahead and get that information
+alright so what I did was I wrote an
+importing inch and make sure I liked it
+really does give you a difficult time
+about seeing what direction okay I'm on
+the right one already so what we did in
+this CSV is I I basically load in data
+sets so I loaded a username and password
+for connecting to L because if you've
+installed L correctly drive a question
+already or no okay so when you use L and
+specifically this L I should probably
+take one step back further and let's
+let's get into our vagrant so I have
+vagrant right here that I'm running
+now this vagrant installation allowed me
+to and let's open on that in its own
+and I need to access you and there we
+got it alright so what we have here is a
+vagrant file that sets up several four
+forwards 90 to 100 for your access to
+elastic 9300 for SSL based 5601 for
+connecting to Cabana that's how you your
+your UI basically your graphical UI I
+have set 5,000 TCP and UDP so I can get
+syslog data you can set that to another
+four five 14 whatever it's important
+that you go ahead and forward it into
+your VM otherwise you'll never see it
+alright so then I go ahead and configure
+this guy with eight gigs of RAM four
+cores and then I went ahead and started
+him up so he was running right there
+sitting on a pretty hefty amount of data
+so what I did was switch back to him all
+right so you got using a password for
+connecting to ELQ and I've actually got
+a safe in the config file I go ahead and
+use an index name from the import and so
+this actually will allow you to import
+groups of CSVs if you have a folder with
+CSVs and all you have to do is listen
+folder name it'll get a rate through the
+CSV is on it so they do all have to have
+the same structured data set outside of
+that you're good to go so and you
+obviously have to set up the structured
+data set so I finally learned how to map
+and see the map from the Python so
+here's our body mapping we have
+properties we have each field name and
+the actual data type or the field name
+and then we have body settings where we
+have to set the number of shards and the
+number of replicas so then I trying to
+create this data set I catch the
+exception if anything happens and then I
+start the low process so the low process
+is this function right here it'll
+actually show you what number is on as
+it does the import it's pretty proud of
+all this so once it gets done importing
+all the data you actually have let me
+switch to the correct index hear us
+coming
+this is a it's us partner for Chicago 20
+years ago to today roughly almost about
+last week is the last data point so we
+have 6 million 500 records the neat part
+about this is we can go to visualize and
+we can actually see that data set and
+yes my phone is hosting a wireless
+network so that way I can pull on the
+map otherwise it it would just look
+really plain so you can go ahead and
+zoom in on about any field area here it
+automatically resizes the dots points
+you can see which point is actually
+causing or where the most most activity
+is and it's incredibly basic as far as
+as activity description goes for that
+view so I did go ahead and make some
+other any views out of this day that
+just because I mean how often do you
+have almost 7 million records of crime
+in a city here we have the locations
+with crime literally sprayed out you can
+go ahead and see that they started
+sorting crime differently versus a
+street versus a sidewalk sidewalk became
+something at some point and then they
+started filtering accordingly
+I'm learning interesting a lot of times
+I find you what do you see in the data
+is how they changed how they're getting
+the data in the first place
+you also made one four primary type so
+these these are really pretty easy to
+make these views once you have the data
+in here you can go ahead and actually go
+to visualize you can say that you want a
+let's just all start trying to make one
+for example so I want to make a heat map
+inevitably is what I've been making here
+and so in the heat map you go ahead and
+say under x-axis you want that to be a
+histogram Auto and then you go ahead and
+basically say what term do I want to for
+sort on and I want to go ahead and sort
+on primary and tight and then it just
+does all the rest of the work for you
+brilliantly easy you can actually go
+ahead and pop down a menu here and you
+can download a formatted version of this
+data and so that way you have a
+brand-new CSV Excel file and you can
+just go ahead and add it and work with
+it right there
+I just realized I've been talking pretty
+quiet alright so so that's in a nutshell
+how you go ahead and work with a known
+data set something you're not trying to
+make yourself now we're gonna go ahead
+and move into trying to work with with
+Joel's data this was to say the least
+challenge and all right let me see if I
+can put this up just for a second while
+[Applause]
+all right so I'm watching the actual log
+stash
+plain log file what happens in this file
+is that anything that should be anything
+that happens in log stash is out of
+filtering to here and all your error
+messages any of its stuff that actually
+happens to me since I'm gonna go ahead
+and try and show this in a very very
+useful way let's go ahead and do a
+restart on an actual log stash so we're
+gonna stop log stash and I'm gonna go
+ahead and restart it start following the
+log so that way you can see it actually
+started and once you see it start we'll
+try and put some data in there so let's
+get back on our view all right that
+error message is just a shutdown error
+message I did the end 30 that way I like
+having a running view so I see what
+happened and then what Bill from it
+alright so what happens here is it it
+runs all right let me see if I can get
+back to the very beginning okay so
+here's the first initialization module
+this elk installation is is basically
+weaponized he's already put a metric
+system NetFlow system and a a what was
+it a cpu v's account feeds or something
+for taking statistics and runtime
+statistics from Windows Linux and so on
+so CPU memory hard drive all the fields
+and actual data sorting is already built
+into this I didn't even try and use any
+of it for this talk but I'm going to be
+exploring it this elegance to this elk
+vagrant box is really nice I've already
+send an email to the author I was like
+well done great I love your product
+Thank You history all right so the elk
+is initializing what it actually ends up
+doing is it does several different
+health checks it restores this
+connection it starts a pipe
+and what I want to see here is it
+installs the template for set kcy pi yes
+I named my template set kcy pi because
+it is the best name on the face of this
+earth I think Joel is ignoring me right
+now so I named my template after your
+products that KC viola why PI right
+there so I actually found out how to
+finally get this template to register
+because every time you should put
+anything in elastic you have to map it
+if you don't have it
+elastic doesn't mean you own take the
+data at all or it will take the data
+Aramis Li so being able to do that I had
+to play around several different things
+I built a tool to manually map for
+syslog I also built a may find the
+actual file here here we go
+so this is the pipeline for logstash
+what I did is I have two inputs 5000 for
+TCP and UDP then I have a micron filter
+where I actually go ahead and and I'm
+sorry I didn't write this in front of
+all of you my plan initially for this
+talk was to make the scrub filter live
+you don't want me to do that will never
+leave here for a week okay so we you end
+up writing out all of your your
+different fields and you actually have
+to basically account for changes in the
+data a not strongly typed log type and
+you really have to either will try and
+do that all in one line
+have multiple lines that were you
+basically separate the object via comma
+and your line via comma and so that way
+you can match multiple different types
+of messages that are fundamentally from
+the same system so I he has a JSON
+message and this is inevitably is where
+everything really got tough I couldn't I
+couldn't interpret the JSON message you
+have to actually not just map the JSON
+message but you have to map a handler
+for the JSON message so that way it
+takes all the fields and I found that
+out today approximately an hour before I
+got here so yeah that was a long haul by
+the way learning her before though there
+really is kind of like this and I'm
+trying to make it a little bit more
+lateral for everybody I'll do another
+one of these I promise and they'll run a
+lot more smoothly anywho so I do several
+different checks of latitude longitude
+is in there and I go ahead and try and
+see that in two location and then I have
+the output where I go ahead and say if
+there's no failure if there's no failure
+in the parsing send it on to elastic and
+if there is a failure it goes to errors
+you can look at the errors Bay to figure
+out what you broke and go ahead and fix
+it so I also go ahead and set the in
+dice the document type and the template
+the template name I force overwrite and
+enforce manage template yes you actually
+have to do all of this for a log stash
+to even be able to control elastic are
+they made by the same company actually
+they are so so further I'm gonna go in
+more thing in this I think I'm getting a
+signal that I'm liking Derrick Mike oh I
+got a talk louder okay so so it'd be in
+the template for logstash
+which by the way doesn't even follow
+some of the same syntax as the rest of
+the mapping that you use in other parts
+of this project you go ahead and set the
+template to set KC Wi-Fi you have to set
+order for one I don't know why but the
+mappings end up going in and you set
+each of the fundamental types here's
+where I tried to do some nifty sauce
+with the JSON just before we arrived
+here it failed miserably I'm sorry Joel
+so the so then the source and so on so
+anyway so that is how you basically dual
+prom try and send from a very custom log
+stash syslog basically type that it
+doesn't exist yet into elastic so what I
+will do though is I will go ahead and
+show you the different pieces of the
+data set I was able to actually lunch so
+here is here's a structured element from
+from sick art for ya from site kcy pi
+where the it recognizes his cell phone
+so it's actually using a tertiary log
+stash to go ahead and forward in this is
+kind of neat because I've got my first
+all right and so you can actually see
+the elements here the only thing I
+wasn't able to get I've
+latitude/longitude I wasn't able to
+quite see that location yet so I will
+revisit this and continue updating the
+project feel free to check it out
+there's a CSB reporter a MySQL importer
+a prototype API importer the only one I
+didn't write is an XML at Porter my
+apologies
+[Applause]

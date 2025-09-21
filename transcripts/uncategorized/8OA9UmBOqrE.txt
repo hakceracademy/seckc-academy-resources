@@ -1,0 +1,362 @@
+this is the name of my awesome talk one
+of the last times I came out of here all
+of you [&nbsp;__&nbsp;] got me drunk confirm
+counselor tells a lot of fun so six
+month later look right now the one
+second season for me yay [&nbsp;__&nbsp;] yeah 50
+those of you who do not know mean I am
+or do the stuff you see on this slide in
+my free time I like to go out and talk
+about this stuff that I do worry so
+today I want to tell you about a very
+interesting incident response event that
+occurred while I was involved that I was
+involved in weather on the University
+back in May of this year so stay friends
+so right here
+on the University of Missouri system
+tray now there in the left the various
+organizational units involved in the
+story on the right until their kind
+interesting thing to note on this is
+that the IT pros another part of the
+vision of my team is not yet ok now we
+used to be centralized back in the 90s
+implies that well decided those bed now
+yes until I see everything and everyone
+under the condition of my team dinner
+for the reason why we are doing this is
+because there have been communication
+problems what certain situations come
+about for shadow now we're right here we
+have a different organizational units
+involved and show you this video a
+better engine is how many fingers were
+in the pies that we will be talking
+about tonight so I'll me to leave it
+I have my very first real problem to
+solve the division of my team all right
+I was going to investigating an incident
+progress introduction to visit allege
+joses very long email chain like 25 the
+30 messages ok so for myself have a
+coffee answer me 10 notes the hospital
+side of things at the time was trying
+out a new next-gen firewall Francisco
+and now this firewall detected you won't
+get considered to be a sweet orange
+exploit kit activity short hands I'm is
+from the Sweetwater checks play pitch to
+you guys well you only added but damn
+close you are to exploit it was under
+one excellent gets worried but never
+revert of these orange line but
+specifically it detected there was a
+hospital DC asking for a compressed
+jovial the get request report a 63,000
+okay the best thing to being on the city
+what's happening so not being familiar
+with what they were getting from the
+next-gen firewall hospital networking
+teams ideas you can contact their system
+ready for advice not a security team now
+sister rep response was deeply in his
+opinion because we were on amaizing all
+of this the false positive range was
+rare and and since the traffic was
+flagged as a threat and not an indicator
+of compromise he or she funded his
+server was 0 as a brief aside I love it
+when the suits try to use haggling go in
+order to get their point across now
+pretty sure but this is what he or she
+met but we knew what they were saying so
+I can address so based on that system
+reg response okay Hospital organdy
+decided to take polidelta take a deeper
+look into a library server sorry that's
+my beard rub it across the my carrots
+that which that impressed java file was
+being requested ok might be able get her
+to see for you guys in the back but
+never seen Ryan there is a ten times
+increase and outbound traffic right
+around nine to three a.m. on think that
+was made 22nd so kind of nasty or as we
+would say
+it's pretty attention so this is the
+rebels right so this won't be much and
+got more people appearing to get out do
+people showing people be included into
+this now among them is the administrator
+of this library server because nobody
+apparently thought about who this guy in
+the conversation in the beginning so
+this guy or gal is doing the exact same
+thing value and catching up on the
+previous conversations to this long ass
+email chain and very understandably
+that's individual is freaking the [&nbsp;__&nbsp;]
+out because they have got various heads
+of various organizational units talking
+about now their servers compromised and
+it's possibly offending hospital in
+theatres ok so the administrator of our
+library super in question here is sort
+of effort to try and give the scituate
+result as soon as possible while still
+looking into things on interbred since
+all the firewall rules for this library
+server that's all the open ports at this
+library is your hand okay
+if you can't see the magnet so those are
+ranges ok so we're easily talking about
+2,000 points here yet more evidence that
+our system really is right so that
+brings us into the presence or these
+poses than the present as a passive
+fighting the stores trulia close to my
+team come into the story ok so we see
+this then to this fire was modified ASAP
+to not be nearly as exposed to the world
+again I don't know what is this advanced
+to say that it doesn't need all of those
+ports open but we very much didn't think
+that was the case so totally clean up
+those pools and decided to arrange a
+meeting in person again there's a lot of
+communication issues going on already so
+in person let's talk this out and
+sometimes they do so while we're waiting
+for me because it was going to be a
+couple hours due to another unique wash
+all that [&nbsp;__&nbsp;] it obvious i do some
+homework on our end ok so again already
+told you we really didn't know well the
+summary sir was supposed to be doing
+which is unfortunate that would give us
+an insight on possible attack vectors or
+at least him why someone might have
+common my vet server
+go on I definitely loved us better
+understand the impact of any compromise
+there was one attendant and then from
+the words of this issue aside from
+communicating some library server was
+restricted to the hospital but why okay
+were they getting for patient data
+trying to poison themselves around
+network people and ransomware hospital
+infrastructure and then no idea but
+based on what we've been shot so far
+he's a little bit preciate so we find
+out turns out the sweet orange exploit
+kid they fix Windows machines okay in
+this library start earlier question is a
+linux box so well that have to do with
+anything alright for a brief brief
+moment rashes on the perhaps this
+library circles being used as some
+internal control command control server
+but very quickly dismiss as we thought
+that any internal committee control sir
+go to the covert operations on 10 times
+that work outbound traffic increase
+probably on so on so we did a little bit
+more digging on that compressed Java
+flat can found out that the name of the
+file
+I'm launcher dodge are anyone else in
+here in higher education experience no
+oh sweet so III washer is in fact
+something depends in higher education
+we'll get to that a little bit but we
+could not find a [&nbsp;__&nbsp;] about his father
+on not a damned thing ok so this
+forward-thinking Wow can be dealing with
+some next-level stuff here this is
+pretty crazy ok so another thing that
+was bothersome was that we identified
+multiple hospital computers that were
+calling out to his library server for
+this earth java file there were two IDs
+that they excited to see what we did it
+too ok now let's section in blue here
+and the section bring em here is your
+two different IP addresses ok this is
+part of the email chain that I had to
+read through both hold on this situation
+we didn't see either one of these IDs
+it'll also we're looking at so again for
+a strange we're really sure to think
+about that so eventually the owner of
+this resource arrives and sit down a
+little chat ok if we learn a bit about
+this library server we find out that it
+is some sort of database server that is
+all of the universe is very canvases for
+the libraries anyway we thought of that
+baggage worth include restore from
+backup if TV but it was going to tell me
+university libraries down for 34 days so
+we're trying to above that okay that
+makes sense we start asking some more
+questions about was a really goes on
+here's the kicker okay we get told and
+from one of the applications that runs
+on the survey that we're going to apply
+it connects to them one suppose it
+happen a client asks for an oppressed
+java file over for 63,000 engine that
+would look great too before we're so
+we're also totally server and equally
+does some heavy lifting okay so this is
+some sort of again database server
+apparently some pretty complex queries
+can be run against the server and
+apparently those can be pretty resource
+intensive another increasing force
+Armada brace weather's not students
+around have to worry about
+live with all those other things seem a
+lot less grim okay so further analysis
+of those Hospital computers that we saw
+pulling out that library server show
+that they were all indeed hospital
+sciences library computers library
+library library library day so despite
+our sour sisal reps opinion it looks
+like we inferred one hell of a false
+positive did way those two ideas that we
+can find earlier okay the one that email
+Suffolk line that was at the top there
+had nothing to do with this event it
+turns out that the discussion for all
+your allyson van hoesen piggybacked on a
+completely separate email conversation I
+don't know why I don't think another
+final one the other one that we didn't
+see it was three now there for one
+reason or another
+is not innocent in North London since
+hospital networking compared to them is
+now shipping these logs quite happily
+worse for instance so now we can see
+that one too and I never traffic totally
+and resource-intensive Quarrymen run
+buying library administrator did not
+tell anyone that they were running a
+query so what's interesting though at
+least my thing is that this is just
+named for the tribal story okay as a
+great result of this whole situation we
+did discover that those library service
+firewall rules hopefully an atom or they
+had way too many ports ok so the
+administrator inherited this resource
+and assume that every source was safe
+course we all know that is a fairy
+before something today but everyone
+knows that so in addition we went and
+ran a policy is this lie on a server for
+good measure found numerous little for
+deliveries to be matching well what
+would have one on our side so what could
+we learn from this burn exciting tale
+first off know your environment ok
+hospital that working really sure to get
+set it back
+this issue and realize that this was one
+white American deeper talking to around
+multiple library computers talking to
+another library sir okay that shouldn't
+have completely dismissed well that
+extra firewall is related it definitely
+should produce the amount of alarm that
+was felt by hospital staff okay now this
+leads to lesson 2 okay don't sound the
+alarm bells until you know the situation
+where is alarm again those automated
+ants were coming from this is an extra
+jinafire long and we testing ok again
+hospital and working should realize the
+potential for false positives really
+high not only when you're testing
+something but again we're higher
+education we do a lot of your [&nbsp;__&nbsp;] on
+the network then most people don't do so
+so do you think on there and while the
+next lesson wasn't really learn here is
+highlighted in this imagine all of the
+critical resources in your environment
+should be positive on regular basis ok
+that turns out that this server was
+enrolled in koalas but and simply not
+gonna be top 10 and resources and falls
+at time so fortunately things way worse
+it with this than this you know that's
+something that you guys have been doing
+and for supporting position and I know
+German Americans no hassle for us your
+claws are our pricing increases with a
+chai tea the camera will call us so
+there's some rest isolated from each
+other markets in de cuales the next I
+believe that more efficient
+communication with us always problem a
+lot faster okay if the administrator is
+library server and had been included
+what was going on from the very
+inning it's all possible that they would
+pay to digest all this information and
+much more all manner and determined that
+the traffic obscene was not all that
+being said this event proves that even
+if the initial thing you go to
+investigate turns out to be benign there
+may be other issues that you discovered
+the course of your investigation and we
+have been suitably losing our skills our
+team did disorders much information
+about this particular incident as
+possible and other resources involved
+and as a result of that we were able to
+take care of those photowalk we were
+able to catch those olive oil italy's
+and then finally trust our instincts
+plus your experience okay at the end of
+the day I really do think this
+particular Cisco rest comments are was
+for people into action too quickly okay
+again I can't say it in bed well they
+were just doing what they thought
+but your sales rep is not your security
+team okay hollering security team say
+so on someone get into my head as [&nbsp;__&nbsp;]
+absolutely nothing exciting the fact
+that the next-gen firewall is a mistaken
+playing classified that traffic as
+associated this we want exploitative and
+it was suing that has to do with the
+fact that I were requesting a compressed
+java file over a non-standard board
+using HTTP but again that's the whole
+thing's on one hand were testing this
+far so I think if anyone out here is
+testing some product he should be a
+little bit more worried about the
+the end anyone who is also higher
+only two minutes get higher education
+sphere people out of your [&nbsp;__&nbsp;] you want
+ain't [&nbsp;__&nbsp;] for Jason but I it was simply
+a matter based on the traffic is that
+really a rocket advice except really a 1
+i'm a rocky good life Milwaukee I
+couldn't tell you unfortunate that's how
+I guess split the orders of joining
+never seen the ocean
+on the one hand it does about my
+responsibilities about on the other hand
+it's curious as everyone else nice room
+so there are a lot of days where I wish
+I do a lot for Roman xscape holding

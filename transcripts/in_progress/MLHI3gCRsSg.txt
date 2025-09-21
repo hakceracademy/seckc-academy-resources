@@ -1,0 +1,235 @@
+all right I know so here's a quick
+overview of multi go hopefully so on
+this screen stuff is working on your
+all right there we go there's more than
+one way to skin a cat so multi go for
+those who don't know it's part of the
+kali linux distribution it's hidden
+under the information gathering portion
+event there's two editions free version
+of the paid version I didn't spend any
+money for this sucks oh we're going to
+talk about free version now you can get
+it on linux mac or even windows which is
+what i'm going to be demonstrating it on
+so what multi go does is it tries to
+make some connections for you based on
+information you have or information that
+it gathers for you and the main thing
+you need to know about multi go is it
+lets you know that the internet is a bad
+doorman you know we all like to think
+that we're nice and hope people out but
+one time years ago I walked over
+somebody's house because they had come
+over to my house and asked for something
+so I went over to drop it off and they
+weren't there somebody completely
+different answers the door I said oh
+yeah it was a this random girl that
+lives here that plays rugby I was
+supposed to get her this thing that's
+all I knew about her and the guy the
+doors like oh you mean Sarah yeah she's
+gone from another two hours she's going
+to be at this exact location she looked
+like two friends here are their names
+they're driving this type of car
+anything else you know in you got phone
+number anything else email address
+what's facebook profile this guy was the
+worst doorman ever just gave me all the
+information I possibly need it and while
+that guy is synonymous with the Internet
+thanks to multi go so set up it's pretty
+easy once you download it and solve it
+or you already get it on colleague you
+open it up there's a setup wizard part
+of that setup wizard you got to create a
+free account if you're using a free
+account a quarter you paid account if
+you use your free account it's going to
+ask you to renew every
+with is your API license key because
+it's free and they like to annoy you you
+can choose a machine or you can roll
+your own machine for the purpose of this
+short top we're going to talk about how
+to find a person and how to find
+something off of their twitter handle
+another key part of the Free Edition is
+the results are limited so if you pay
+for the full price you get more
+connections and it will constantly
+remind you that you have the Free
+Edition and how you're not getting as
+many results as you possibly could so
+we're going to the person to email
+address and since i'm here at set casey
+i decided to go on the website and find
+one of our founding members and if you
+go to that page right now at the bottom
+there's the founding members and then
+like the very ones like the three prime
+members and i think the first one and so
+since Casey is near and dear to me much
+like the Justice League we're going to
+pick the prime person and as we all know
+the prime person is right in the middle
+there so we're going to find one or
+woman who if you go to website you can
+verify its Alex and then to each side so
+then to each side we've got Superman of
+Batman and that's a Quarian bill they
+can fight over who gets to be new and
+then the rest of you founding members
+you can fight over the flash and all
+those green liners and cells and you can
+whoever loses gets to be Aquaman but
+it's really very easy your chef input
+their name and then click finish and
+wait so this is not going to be a live
+demo because that would mean I have to
+be on Wi-Fi with the rest of you so once
+you get results you get to select the
+interesting things and when I search for
+Alex I found these three right here Alex
+at side Casey bill and Cory and then
+they were linked to the site que sea org
+also PQ org and played at google com and
+then for the next one we did Twitter so
+again off the set Casey website just
+grab that it's going to give me all the
+associated hashtags users I do have to
+log on to Twitter to do this so you can
+use your personal Twitter thing or it
+may be perhaps you engaged in some legal
+mischief beforehand and happen to have a
+dozen or so random Twitter accounts
+because your student loan servicer
+changed your student loan payments
+without notifying you then maybe you
+just happen to have some lying around
+that are a little bit more anonymous and
+I may or may not have a script to create
+those on hand if anybody needs it
+so now we hate twitterpated we search
+for site Casey there on the Twitter for
+the hashtags I found Kansas City big
+surprise and can ask city which is
+really close to Kansas City it's like a
+look at Don's kind of like Edwards
+though you don't even notice you
+switched over to it other interesting
+ones hacking Casey Casey Trixie go
+Royals and pone to win all the ones that
+were found with the free version in like
+a couple of minutes on my network at
+home so then from those hashtags I can
+go deeper and just too easy click on the
+thing I can search further I can find
+users who have tweeted at that person
+users who are following their friends or
+affiliations see if they've been league
+in anything on pastebin with their name
+on it find out anything about their
+facebook account that might be paired
+with that and then this one I thought
+was interesting any other dynamic dns
+locations so now you can find out where
+they were not just on twitter but
+afterward if they're not good with their
+facebook all right so quick summary
+before I switch over to the other screen
+because this is a nice full computer and
+it barely is handling PowerPoint multi
+go is a good starting point if you're
+doing some recon you can find links
+between people and different companies I
+said it's free limited to a few results
+but it gives you a decent start and for
+those who don't know is my last set
+I love you too but there's no set Casey
+my group in Albuquerque so so site Casey
+beats NE albuquerque group and sound the
+only thing that God is a monthly
+luncheon that cost you seventy five
+dollars a year and you still have to pay
+for lunch are you intrigued witness
+protection true no I believe this all
+right so here we go sorry Wonder Woman
+got all of his first and last name right
+there off the set Casey now I didn't
+know if he was also alex government at
+hotmail 80 lower men at hunton Alice
+edel at hotmail randomly he could be
+sensor at amazon or i don't know why i
+came up with our commie gamma at
+bloomberg dotnet is there something Alex
+needs to tilt yes sorry Wonder Woman for
+the rest of the night alright so now
+we've got it oh it's over here bill
+Corey and corey just happens to be the
+one that's connected to all of these PQ
+I haven't heard of that but perhaps
+that's not safe for work and maybe you
+and then we switch over to the twist
+there's a lot of stuff there so each of
+those means something different we
+started up here with just the alias of
+set Casey and then obviously the first
+thing i found was the second Casey
+person and then it gives a different
+affiliations people that are affiliated
+said Casey all the pink ones or twits
+the yellow ones or url's got another
+alias here and that we've got the
+hashtags that we talked about so as I
+can zoom in on each of those it shows me
+different things that they've linked to
+like the wiki that set Casey that order
+set Casey jobs we got the poem to win
+hashtag another set Casey fav let's say
+go back this way so you can see so got
+Trixie which I heard was awesome if you
+guys did go you should go again this
+year I
+and then just the what they talking
+about hacking and as I scroll up i can
+start to see the different hello there
+there were tickets still remaining for
+Trixie but over half of them were
+already gone there's a ton of stuff
+about Trixie a family their twitter is
+very busy and that's out of here a
+hacker showing support for the royals
+was another interesting one there the
+audience voting more talk about Trixie
+and then we also get to see all the
+little icons of people that are
+associated with set Casey the plantain
+district is a solid supporters said
+Casey and Rob Lynch there we go a cert
+kilobyte a lot but again this is all
+just quitting information that you got
+right from the set Casey website don't
+have to do much and this tool will go
+out and I'll find all the different
+connections so if you're trying to find
+people so to see it with a certain
+company a lot of them will make
+different people follow them on Twitter
+or the things like that or even if
+you're just looking to figure out what a
+potential target has in their interests
+that you could find a way into leverage
+them to get more information this is a
+quick easy tool because it's already
+part of the toolkit and the free version
+does enough for a short talk the paid
+version apparently make some of our
+other speakers a little bit so thank you
+guys I'm not going to take any questions
+my faulty go nicely go I some of us are
+in management we don't have to know how
+to use tools where's the GUI alright

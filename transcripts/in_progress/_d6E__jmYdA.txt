@@ -1,0 +1,647 @@
+front of us 635 I don't know if anybody
+saw any of this on the news today it was
+pretty amazing we're stuck right in the
+middle of it unfortunately they got off
+and headed back to Kansas City and we
+were heading somewhere else so we did
+with the fall a little thing besides
+that we also got have visit gates BBQ
+today in my favorite places again my
+name is Justin Whiteman I'm a security
+and forensic analyst at one world lance
+and dipper Colorado I really dig my job
+I could spend a lot of time with my
+specialties is actually social
+engineering and physical break-ins god
+bless the army for teaching me how to do
+such things yes thank you are many
+people back there I my name is Antonia I
+worked with Justin back in Denver as a
+security consultant my background is in
+writing and building applications and I
+spent six years in that I took me that
+much that long six years to realize that
+they joy is noting building of writing
+applications but even breaking them so
+that's what I'm doing now so we actually
+sat down to write this talk we get a lot
+of flak from people that are like oh I'm
+the super pen tester we wrote this more
+with junior pen testers in mind a lot of
+the guys who are stuck at what I refer
+to as the pin test puppy mills where
+all's are allowed to do is run anessa
+script and then make reports off of that
+some of the older pen testers out there
+some you very haired guys who may have
+lost your way along the way started
+relying solely on the tools and then
+mainly because we wanted to break the
+tools a lot of this came from we went to
+Der Beek on last year
+other conferences convey sides here's my
+shameless plug for V sighs Las Vegas if
+you can't afford to get out there or you
+don't think you can sign up to be a
+volunteer that's all i ever do and it's
+pretty rad you don't have to worry about
+a single called spoiler out there um but
+what we found was we went to the talk
+given by John strand if any of you know
+who he is amazing speaker like so much
+fun to see him speak one of the things
+he said you can be replaced by a tool
+you will be everybody's looking to cut
+costs especially in the world is
+security oddly enough so this is a stock
+photo from our company that's actually
+in the front RC CTO on the back there's
+antoniou right there and our other
+senior pen tester we got it set there
+dumbfounded like we kept hearing
+everybody talking about it everybody's
+using the tools everybody's using the
+tools everybody's using the tools but
+nobody really was showing any way how
+not to use the tools and then we've
+gotta have like the little light bulb
+moment of holy that's a great time
+so we actually started coming up with
+why we're here we understand a lot of us
+how many pictures do i actually have out
+here all right we all know that lovely a
+sidebar that lovely engagement where we
+have a class b and three days no you
+can't do that manually we're also going
+to go over wives are the reasons to test
+manually a lot of the things that we did
+like i said we went in and broke the
+tools to see why they didn't work we're
+going to focus on web application
+testing it's a lot of what we need pet
+tester gets stuck doing it's pretty much
+needed data hello to me but it is
+something that we have to do while you
+are here we think we're hoping we teach
+you to be how some of the ways to be a
+little bit more stealthy attacker to
+mystify the idea that the standards are
+the only way to go and make you as a pen
+tester or valuable asset that won't be
+replaced by a tool and also to make you
+a rich monkey the problem tools are
+constrained by a set of rules any of the
+pen testers out here will tell you rules
+are meant to be broken and that's the
+first thing I try to do when I go on
+site those are in addition to testing
+they shouldn't be your be all end all
+the testing we don't want you to turn
+out to be a scanner monkey junkie again
+I kind of make the joke pen test
+t Mills I feel bad for the guys to get
+stuck there we're also hiring for a
+senior-level pen tester you really have
+to know your ship but we're hiring in
+which you'd end up like this poor little
+fella stealing hubcaps um solution we're
+going to manually test them created a
+website and intentionally added boner
+abilities to it that should totally be
+picked up by most mostest scanners we're
+going to go over XSS sequel injection
+command ejection everybody's like oh
+well that's easy well why why why
+do you miss it on if it does class
+princess Antonia and I just did we were
+able to get sequel injection and
+actually upload a script to it and then
+turn around to get command injection and
+kept moving from there and they're poor
+site is being taken down right now we
+refer to the OWASP top 10 I keep getting
+cross-site scripting you can read the
+review for yourself what I always want
+try to get people to take away from it
+it's always in the olas top ten it has
+been for 15 years now the key component
+testing against cross-site scripting is
+the context sequel injection again if
+you don't know what it is take a look at
+the review always in the hola stopped
+any games and the key for finding a
+sequel injection is testing input but
+it's not correctly sanitized coming an
+injection you read the top I'm just
+going to go to my favorite side here and
+thank you metasploit especially Egypt I
+love I love going through your stuff
+originally I started in forensics here
+and over the park for a small offer
+there's things but I've seen that I
+can't unsee now I don't know what it is
+with rich white guys richer and whiter
+and smaller you are a fatter your
+mistress alright so what we did we took
+Nessus straight out of the box didn't
+change anything and I want to make this
+really clear we are not bashing on a
+single one of these tools because we use
+all of them that's why we were able to
+do this but we took messes straight out
+of the box once you get all the updates
+and went to the web application says now
+that they have we build all of our own
+plug-in setup studies we don't mess with
+what they have it good if you don't know
+what you're doing but they always need
+to be altered so we ran ran 11 thousand
+requests
+our page we know had command injection
+sequel injection and cross site
+scripting it didn't find except for
+information next we turned the sequel
+map we do love the open source software
+as much as anybody else out here because
+it's awesome and it's free and those
+guys in my opinion are pretty much the
+rock stars of our community I don't have
+that much time to spend I actually spent
+way too much time making my room but
+chase the cat we did actually do a
+little bit of setup on it we change the
+level 25 risk to 3 as high as humanly
+possible went through it didn't to find
+a single thing but it took a twenty
+thousand requests what ids is not going
+to see this / i become the biggest fan
+of her and i will plug them shamelessly
+we went ahead and ranbir got it to go
+ahead and index page force love 100
+requests again and first time it
+actually found something perhaps we
+found one of our experts which was
+pretty awesome we had mess and mess with
+this thing but it did miss two very very
+basic and uh very basic things the
+cross-site scripting and the sequel
+injection and anybody that knows that
+has ever used for knows it will find
+those things in RP tools this comber my
+little conclusion part here settings are
+always important you can't just pull
+these things out of the box it's also
+like anything else i can be really tired
+to sea level people say we need the
+newest blinky thing and not wasting are
+not spending
+money on buying the hiring the person
+the connection beat the blinky thing
+tweaking is important we change our
+scripts every time we go on site we have
+a awesome mohsen analyst team but it's
+big rocks and will tell us pretty much
+everything we need to know tools you saw
+between those requests are how many
+requested that actually took to find
+anything again any IES is going to find
+that we're going to reference or kind of
+for the rest of our demonstration the
+triumph is our baseline mainly because
+it was the only thing that found
+something alright so from here on I'll
+be taking over i'm doing a bit of demo
+let's hope the demo gods are with us
+today and we were practicing in our demo
+gods dance but I don't think it's ready
+okay so we're gonna focus on reflected
+cross I scripting for this demo usually
+when we are looking for Gossage Krypton
+using a problem like the one on the
+signal line is usually enough and the
+reason is because with a single quarter
+output and the closing a closing tag and
+the whole time he should be usually
+generally enough to get out of any
+context where for such critical mental
+not the thing is that we as humans do
+not need to just get more context we are
+we can look at the source HTML of the
+side and figure it out where we have
+landed
+for gas the contacts are just discovered
+upon face so let's go with the demo for
+cross-site scripting this is our
+fabulous fabulous site html5 CSS three
+or four I don't know I hope they are not
+any front developer in the room to
+criticize inside it has a homepage we'd
+same interesting link here as a member
+section where you can see was on the
+side with profiles and he has a login
+form so when you free gonna find girls
+are scripting we want to find the sites
+the place is on the side that takes some
+input and give us something back based
+on that input hopefully reflect that you
+study to the spot of the artists so you
+take the input and then the resulting
+page will have died so we're gonna go
+and look at these we see a file name in
+the URL it doesn't quite yell exercise
+so because the name of the file is not
+present on the output at all rather ins
+contents so I'm going to skip that the
+members section it might be an
+interesting place I see honey put here
+42 and an output here 42 so maybe
+there's a relationship there so I can so
+I'm going to add something to that value
+submit it and see if it affect the
+output doesn't look like but i'm just
+going to 35 i'm looking at the HTML and
+i can see nothing actually affected the
+app lets hang a move on i have a login
+form login forms are widely known for
+their for people level two
+scripting of sequel injection so let's
+try your luck and see what happens first
+of all i'm just going to submit it with
+nothing and i get a error message that
+reads nobody here with ease name
+something it's kind of it's suggesting
+that there's something else that is
+missing after the usernames i'm going to
+go back put some input and see what
+happens it's a few letters a completely
+benign input that it's now in a heart is
+going to be to be detected and now get
+something back so i can see that my
+input directly influence they resolve
+the body of the pet of this page so now
+it's time that I had to look where these
+1337 landed in the HTML code and i can
+say that a 1337 is between two these
+tights so that tells me that right now i
+am in a HTML context if i was to inject
+anything in here you have to start with
+a new HTML tag that is something that I
+can do as I as a human but it's not so
+trivial 42 so the next thing I'm going
+to try is to actually eject something so
+I'm gonna inject a new HTML tag some
+payload send it and it worked that
+allowed that on its own is enough proof
+that close x 50 is present on the page I
+was able to inject an HTML tag for all
+and some content that was affected by it
+and I can see present here and the HTML
+the detail within a deep tax that we
+looked at previously obviously this is
+not very useful we want what we want is
+to
+run some client side JavaScript so let's
+inject the script HTML tag I'm going
+with a classic I let box you see what
+happens and it works so we found
+cross-site scripting on this side and we
+can understand to some extent wine this
+is a sequel map you can find it out
+after all those tools are not
+specialized on these type of wealth
+vacation testing that's okay a good
+question is why didn't burp catch it
+Burke is really good at finding
+reflected exercise especially reflecting
+so the reason why perp didn't catch it
+because tools use markers they place
+these markers are on the payload on the
+request and then they look at the
+response find those markers final boss
+in between the markets and judge whether
+there was closest creepy or not this is
+an example payload of what work does the
+arrows point to the markets at either
+side of the payload and after bird sends
+the request since this but you will look
+at the response find the same markers
+look at what's in the middle and decide
+when the Oscars are skipping now so the
+reason why perp didn't plan is because
+we tricked there we did some something
+on the back end of the application on
+purpose you don't have to trick her and
+just delete anything that was a marker
+we did that with these couple of lines
+that will find the less than sign on the
+input and replace it 1337 that's why
+we're getting 1337 on the body of the
+page so this is only to prove the point
+that a couple of lines can confuse a
+tool and that sometimes that's why human
+manual testing may be required so that's
+it for process scripting sequel
+injection we're going to find it and
+exploit it in the previous train the
+Justin shelled and Sikkim at use these
+payload up their eyes it's basic
+heuristics and but we cannot use you're
+going to use something similar but
+smaller the reason is is because we can
+now judge the context a little better we
+know it's a PHP application we were
+looking at the web request we knew we
+would know it's a apache server so we
+can assume this am I sequel behind it
+that's just an assumption i could kiss
+so that's what we're going to use so
+work could there be sequel injection on
+this side well this looks like a file
+name up what if it's a file med in a
+table it could be so let's use a payload
+send it as he hovers i get a blank page
+that could be an indication of blind
+sequel injection but you know what we
+going to move on leave that aside as a
+potential but move on we have a lower
+form of course we have to try the same
+thing on the login form does it look
+like i am not seeing any evidence of
+sequel injection yet so let's move
+the members section it looks like an the
+obvious place was database interaction I
+see repeated records displayed on the
+page that tells me interaction with the
+database that tells me there might be
+something going on I see the URL is now
+42 / name when i click on the other one
+I see the same so that value changes for
+the profile so it is definitely pulling
+later than a renovation this is just a
+nice-looking friendly printed whatever
+it's called rest style URL that is using
+these I these parameters gears and
+values and that's the point they are
+bodies so if they are values I can
+modify them to see what happens and test
+for fuel injection so I'm just going to
+Taylor and I get on a sequel ever this
+is enough to prove that my sequel
+injection is present on the side now the
+next step is to exploit and to do that
+I'm going to figure out which one of the
+three characters is causing the sequel
+injection most people is going to assume
+that the single quote but you never know
+so in this case I'm going to delete this
+to try it out and it turns out there is
+a backslash it's probably scaping
+something I'm breaking the query sewed
+up Vlad that parameter is potable I'm
+going to tell me the other one I also
+get an error message so now I'm getting
+to error messages with this as soon as I
+are the backslash and it's breaking the
+query so next step I'm going to do is
+look at it at the HTML I could use the
+computer I produce
+favorite tool I could write a little
+script and this is a nice girl just to
+see the HTML creatures inspect the HTML
+on the page but it's good it's a good
+that moment to look at the contents of
+the page and curl gives me the same
+error that was looking at and it also
+gives me something interesting in the
+HTML comments the actual sequel query my
+single querida with that has filled that
+was one and back end this is obviously
+not a very realistic scenario but the
+truth is that we have come across
+multiple instances where we found
+interesting bits of information in HTML
+comments so it's something that should
+never be able to so it's time to analyze
+aquaria little bit harder we see our
+backslash here escape the single quote
+and make all of these become the value
+of the ID parameter leaving the rest to
+be the rest of the query and this last
+single quote here break the aquarium
+cause the my sea culero so the next
+thing i want to do is to fix this query
+and for that i want to do that because
+if I know how to fix it I can then make
+use of all the functions and to do that
+I'm going to replace the last parameter
+here with a always true query which is
+normal one so I don't get any arrows but
+it doesn't worry I see it's giving me
+back all of these without spaces so I
+makes me think there's something going
+on us and kind of field three maybe the
+space the space is look like they're be
+filtered so I'm going to replace its
+paces with something else by the way
+sequel map has a great volume tougher
+script to bypass this kind of thing so
+it's always good to know
+which sequel my sample scripts to use so
+I'm replacing the spaces with tabs email
+encoding for tabs is 09 and now it works
+so now I fix the query so let's take a
+look at what this happened on the top we
+have the query that was run on the back
+end we see in yellow what has become now
+the value for the ID parameter and at
+the bottom we see the query we just run
+where we fixed the execution in the back
+end we are also underlined in red are
+important bits of information we have
+gathered such as the table name users
+and two column names ID and user name so
+based on this information and the fact
+that we have a login form night target
+now is to get the password to find the
+password because i have a user's table
+with thalia username i can assume that
+this possibly a passport column on the
+same table so when i get the number of
+columns on that table I when I get the
+names of the columns I want to get the
+data of the plasma column if this one
+now to do that I'm going to use some
+queries that are gonna have used some of
+the my secret functionality to extract
+data since i have this my sequel errors
+that i'm getting on the bus on the side
+and it's going to be you some existing
+functionality to extract data and this
+is all available are multiple sequel
+injection cheat sheets available on the
+internet I just went to one of them and
+use a few functions are usually it's
+just a matter of trying different once
+until you get the ones that can extract
+the data successfully so
+at this point and copy and pasting
+because I can't risk you so much so I'm
+just going to rule this one run this one
+is a union query that helps me figure
+out the number of problems and it tells
+me the error that I proved the wrong
+Hamid of columns i'm going to add one
+here at three and run i'm going to add a
+fourth one that means that's basically
+saying does this hey we'll have 4 colors
+and i get no error that means the table
+indeed has four columns next step
+extract the name of the cuddles and for
+this thing i'm going back to the command
+line this was using a technique that
+just joins one query with the same one
+table with the same table and it's it's
+basically saying if I need the same
+number of columns on each side you only
+provided two or one sides i'm going to
+complain about the missing columns
+twitter was one of the one of the two
+missing columns i have ID i have user
+name and i have twitter now but i need a
+fourth one because i know there are four
+poems so i tweeted to the query and I
+get the fourth one which is called hard
+work and now the next step is then to
+retrieve the data that is my password
+code for that I'm going to use another
+functional in my single function that is
+going to help me in just achieve that
+purpose in this case this is the polygon
+time my sequel function all Polly does
+is to calculate some area
+for some polygons depending on the input
+but the good thing about it is a little
+complain about the specific Bell values
+that stopped it from performing that
+calculation so if I feeling the value of
+the password field it will complain and
+spit it out as one of the values that is
+annoying the function this is also a
+good example of how to avoid writing
+spaces and as on sequel injection by
+using parentheses so I'm just going to
+launch this and that's a passport that's
+the value that the polygon faction is
+complaining about effectively just
+allowing me to extract data from the
+database by abusing the error message is
+that he produces so now that I have the
+password it's time to test it look at
+let's try it hey works so this is just a
+bit of two lines of code that were in
+the back end avoiding the escape in the
+single quote that's why the single focus
+and happening wasn't working and
+removing the spaces so Burt actually
+didn't find it in behind our initial
+assessment but that was because we said
+barefoot the default settings once we
+turn her to use a thorough mode and we
+checked the rest I'll Europe or a mateur
+option it actually found a sequel
+injection that's why setting up the
+truth correctly is very important on the
+other hand tickle mud was getting a bit
+confused even though we pointed it we
+said it holiday but we pointed it to the
+exact place where the sequel injection
+was happening and he was not finding it
+but you know what the great thing about
+sickle knob is that it's a great tool
+it's open source so this whole thing
+just means a little side interesting
+project to figured out why sequel mouth
+was in finding it so last but not least
+let's do some command injection bar that
+is sorry perf founding with the default
+settings so let's just go ahead and get
+y'all what's the only place left on the
+side that we haven't looked into yet or
+found anything yet the interesting link
+on the front page we have a file name
+that yells filesystem interaction so
+let's see what we can do with it
+obviously well the first thing we want
+to do is instead of reading the ass dot
+txt file is to read an interesting
+filesystem suit the file that doesn't
+work well maybe doesn't accept full pads
+so why not why don't we try going up to
+the root filesystem
+down and it doesn't work now results so
+really excuse me review files may not be
+working let's try something else let's
+try a pending commands to it yeah I know
+this is a little system already I mean
+have by at this point I should have I
+should have a pretty good idea of the
+vacuum layout so let's try to offense
+commands to it three ways I know if
+anybody knows any other ways please let
+me know single sorry semicolon to run a
+different coming up it doesn't work I
+type next come next option it doesn't
+work either the response let's actually
+do something beautiful such as running a
+dying seal on it that will allow us to
+connect to it what we're going to do
+we're gonna do hand and run netcat
+hopefully they'll have met callie
+installed why wouldn't they and as soon
+as it get some hit some connection he
+will run a shell on it and he will
+listen on port 3333 and it'll be running
+the background so let's just run that
+leave it running go back to our show I'm
+connect to the remote buying shelf we
+alright so in conclusion one of the
+coolest things that we actually get to
+do it our job is when anybody comes in
+for an interview you get interview from
+the lowest guy and including what we
+were referred to as the happy fairy she
+works up front us she's a little crazy
+to the highest person there which is our
+founder chris Roberts if any of you have
+ever seen him speak you won't forget it
+crazy Scottish guy like it's super crazy
+but one of the cool things is we ask a
+lot of questions and for me and tell me
+a lot of the stuff we ask is do you know
+how to do something besides for on the
+tool that's kind of what actually really
+we wanted to have towards the end of
+this ones that you would feel
+comfortable enough to walk into an
+interview and if they said hey how would
+you find cross-site scripting and not
+have to look at somebody go well I've
+run misses with this plugin okay we're
+not going to work okay I would sit down
+and use this ok we're going to seriously
+look at you again we hope you feel like
+a super movie at the end of this you can
+go home and do whatever you want to your
+monkey this poor bastard that signals
+getting thrown off a cliff again with
+Lord if you guys followed us especially
+we love having out-of-town friends
+Twitter handles right there I feel
+second go ahead and send us requests if
+not you were okay with that too how's if
+alright well I'll sit here awkwardly is
+all right ladies gentle well that
+concludes I April set Casey on reminder
+may set Casey will be canes a whole
+which is in 43 or I'm sorry I don't eat
+the metcalf so be watching that okay

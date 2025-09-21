@@ -1,0 +1,113 @@
+I I kind of walked into this talk last
+last
+night my slid
+mine anyway what we're going to talk
+about today is is a tool called T socks
+isway t-x is a is a unit utility utility
+that um
+I've been using for a lot of years um
+what it does is it's a basically a proxy
+proxy library that will wrap up outbound
+network connections and send them over a
+proxy proxy C that could be an SS shell
+it could be Ser that stood up that did
+whatever um it allows you to apply
+stocks proxy to applications that
+normally wouldn't be able to would a do
+that with stock like tet
+FTP things like that they don't have
+proess say so if you're at a client site
+you can't get out to internet you need a
+way to get get connection you can these
+other things out that connection and use
+it nobody know doing anything Works
+servers firewalls I I've Ed it in
+several different networks so if you
+don't know what socks is it's you know
+it's basically a protocol routes packets
+over a processor not a big deal
+um t-x is it can be loaded at as a
+system or you can have it call an
+application so if you have if you're on
+the if you're on a un system system and
+you want tockify everything every
+connection that you have you can just
+type ke and every connection originates
+from machine will go over your proxy
+server connection doesn't matter what it
+is there are some bugs and things like
+that it hasn't been active development
+quite a while so there are some
+limitations but it will send everything
+out browser
+connections tet
+FTP whatever you want to do um that's an
+explanation I'm not going to read that
+basically what it does is whenever you
+activate it it senses the network
+connection wraps it up it just sends it
+over the the processor that you have
+so installing it let's see how we get
+this to work installing on Deviant
+system it's app install t- socks on a
+red hat
+system I'm not sure if it runs on OSX I
+would assume it can you can download the
+source for it compile it and probably do
+the same thing uh doesn't work on
+Windows sorry guys that might work I
+know um after you install it you need to
+edit there's a file called tx. config
+you need to add some other options in it
+but the two things you really need to
+worry about are the server which is home
+and the server Port that you're going to
+use you can use any port that you want
+to you can make that 1,000 50,000
+whatever your proxy connection your
+actual proxy server is using send uh
+connections out um I I tend to use this
+with Bas you know basic SSH tunnel um to
+an outside BPS or po T um this this
+Command right here will set up a a tel
+and you just that command and you can
+send traffic over any proxy connection
+over that and it's it's wrapped up in
+SSL SSH there's no way the only thing
+that they can see from firewall
+perspective is maybe a number of packets
+that you s through that when the
+firewall sees it it doesn't see any of
+the connections that you're laying over
+that proxy that SS sh so um you know you
+can use it to sneak around networks I've
+used it to move data between networks
+that I didn't have access to should have
+had access to you know you canat
+firewalls pretty easily with this
+um
+like so basically after it's installed
+you can just go to command line and type
+key and the application name so if you
+type
+conne try to
+connect um and it will if tell that's
+block the firewall processor it will out
+and bring it back just like it was you
+know there same thing works with things
+like um say you have a web browser you
+don't want to mess up the proxy proxy
+settings in the web browser you can just
+say ke Sox space Firefox or Chrome or
+whatever browser you're using and it
+will stop you know wrap all that
+connectivity in that in that socks
+tunnel that send it out and you don't
+have to mess with your brows browser
+settings or anything
+I've used it for SSH tell
+that brows said like I said just about
+anything a lot of times I'll run into
+problems where I can't get app get to do
+like an update so I'll wrap app get
+updates up in t- sock and it will go

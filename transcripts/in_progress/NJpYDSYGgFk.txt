@@ -1,0 +1,469 @@
+probably they're trying to make this
+happen so Joel came to warm our very
+first meetings of CCC KC Joel took over
+as president for a while
+Joel serves on our audio team here
+Joel's
+DEF CON good on the worst team ever
+because you missed the entire con you
+sit in the lost-and-found room the
+entire time so joel has put in countless
+hours with very little fanfare so
+tonight when he's going to give us an
+excellent talk on some open source
+security tools
+let's give Joel a fantastic round of
+applause for everything that he does so
+I'm going to talk about the open source
+security information manager this is
+original it's started as an open source
+project and then a for-profit company
+kind of grew out of it but the original
+open source tool is still out there and
+you can get it and it's currently
+maintained but I have a love-hate
+relationship with it so we'll go over
+some of the details here and then I'll
+go over and do kind of a demonstration
+and then we'll have a Q&amp;A session my
+name is Joel Kirchner a little bit of
+everything deep security engineer by day
+and then help out various nonprofits and
+all that stuff at night so and my
+interest in this is that I always want
+to what I work in a school district and
+so we're always cash-strapped
+so I'm always looking for that next
+thing that will help us be more secure
+but at the same time not break the
+budget and what awesome is its reason
+beer and it's a means of collecting all
+the information that your your network
+generates just on its own so you have
+NetFlow you have intrusion detection
+systems intrusion prevention all that
+kind of stuff each and every one of
+those devices kind of comes up with a
+little record on its own but it's
+usually not very useful by itself the
+new ones are pretty good but it's trying
+to pull that all together in one place
+and try to make sense of them that's the
+point of a security information engine
+now there are many things that it does
+so potentially you got asset tracking
+log management that kind of stuff
+sim is not really log management because
+of all the filtration that has to go
+through it it's not really a place where
+you need to go back in time and kind of
+figure out what went on you need a
+different solution to pull that one off
+but sim is very good for situational
+awareness and really the intended
+audience for all this is not necessarily
+your fortune 500 companies because they
+can afford to throw serious resources at
+this type of solution this is for the
+small guys if you want to set up your
+home lab if you want to set up a small
+company or something like that say a
+small company has to be PCI compliant
+and they need some type of awareness
+tool to kind of help them with that this
+now one of the things that we're doing
+here is we're trying to collect
+different types of information from
+different sources
+and so in this case intrusion detection
+and so essentially what true detection
+is is that it's something that listens
+to your network and then is looking for
+signatures of things that could be bad
+stuff normally it gives you a whole
+bunch of logs and you have to kind of be
+trained to read them so the source
+address the destination addresses the
+ports and all that kind of stuff and
+then what does that little signature
+actually mean
+and so what most of does is that it has
+its own built-in security sensor tools
+and it's pulling that information into
+this user interface and so one of the
+things here this is a screen grab from
+their event interface and so searching
+for stuff here it's pretty much you put
+in a piece of text and it goes through
+and it just kind of does a plain text
+search through all the stuff that you
+get but you can also search for IP
+addresses attackers the value of this is
+that it wraps in all kinds of extra
+information in with this so your IDs may
+hit something but it doesn't make any
+sense however there's a threat feat
+that's built into oh so it's called the
+open threat exchange so it'll mix in
+that information with that signature so
+you'll see okay you get a signature well
+I don't really care about Java may be a
+1.8 but then the IP address that that
+host was talking to is in Russia Wow
+okay that's a little bit more
+interesting and then on top of that
+you'd have something coming in from otx
+saying hey this is a really bad host
+been doing that stuff to London people
+need to watch out for that and so all of
+this is mixed into this interface and
+then say for instance you want to dig
+down deeper well what is this traffic it
+takes packet captures for you and you
+just once you click on the event you get
+it under the packet capture you can
+either see it right into the right in
+the user interface or you can download
+it and pull it into Wireshark and so
+that's a neat feature
+[Music]
+and so here's a little bit more about
+[Music]
+so at this point I've talked about
+individual alarms individual pieces of
+information that come in and show up as
+an event but that doesn't really tell
+you a story a story has a beginning a
+start what the alarm the alarm setup is
+all about is that it's looking for that
+beginning that middle and that end of a
+potential event it's looking for a
+suspicious file down because the IDS
+will tell you hey this person's just
+downloaded a binary off of a website
+that I don't know about that by itself
+isn't necessarily bad but then in
+combination with fifteen minutes later
+it starts beating beginning out to the
+Internet to known malware websites okay
+that's a problem and then you start
+seeing a scan traffic coming from that
+house so that's what the alarms are all
+about you're looking you're looking for
+a specific story and then it's looking
+for those components and it says you
+know what I found all these components
+for this host I'll throw up a horn that
+says hey this is an infected host this
+is what happened so that's kind of what
+the the essence of the sim does is that
+it's taking all these different pieces
+of information from different sources
+and then applying a trying to figure out
+a situation just by looking on all that
+and context I think in certain circles
+it's called the kill chain
+certain events happen in a certain
+sequence in order to affect a host so
+so most of us have managers if not we
+are managers and I don't like bring this
+type of reporting you know the top 10
+lists aren't particularly effective they
+are effective if you're trying to wow
+people so I can show you over the past
+say 24 hours or past month what nations
+have been attacking us that's always a
+fun top 10 list
+most common exploits it doesn't get into
+the Nitty Gritty that security engineers
+are interested in is that you're not
+looking for the most common of stuff
+you're looking for the rare stuff the
+little blips on your radar and not
+always really effective these top 10
+list but it's very effective when you're
+trying to communicate to management
+trying to communicate to your
+stakeholders hey this is what's kind of
+going on and here's kind of something
+out of the data that we've been
+collecting
+[Music]
+so the things that I'm not really
+particularly happy about is that Oh sim
+isn't really windows friendly the plugin
+support is meant so what it does do
+right out-of-the-box is probably what it
+does best which is it listens to open
+source security sensors and then pulls
+in that information and tells you the
+story trying to pull in third-party
+sensors and starts getting more
+difficult then there's the things that
+burn you that the frustrations when
+assembly I think five years ago maybe
+more we got there professional product
+and plugged it in started routing all of
+our syslog to it and it died that I had
+to reinstall it midnight I think we went
+through about three or four reinstalls
+and eventually got up the database and
+all the settings wearing it stopped
+dying but that was my you know that was
+my hate relationship with it and that
+just over the years has burned me over
+and over again and one of the some of
+the things you might run into is some of
+the plugins are out of date and so you
+need to work kind of the background to
+get those up to date and then
+fix it which it's open source so you can
+do that driver support for server class
+hardware's a little bit limited so it's
+kind of a frustration where you install
+it on you know big honkin server that
+you're hoping that won't become
+overloaded and then it doesn't support
+the neck and so you have to go hunting
+around for a third party kernel modular
+documentation is well at one point it
+was really crappy they've forgotten
+better and some of the asset control
+scans and that kind of stuff
+it'd be nice to be able to schedule
+those no it just fires everything all at
+once and I got promo so scanning a class
+a network all at once and by default it
+doesn't really have log management I
+mentioned earlier sim is not really log
+management bug management is you're
+trying to create a faithful recreation
+of what happened based off of the log
+events that you've collected from the
+past so I have all my servers sending
+logs to a central point and then if
+something bad happens I need to be able
+to use that information to recreate a
+retelling of what went on during that
+time period when Asim just takes bits
+and pieces out of those logs to give you
+situational awareness so you may be
+missing information that you need
+so you might want to add an additional
+product in addition to to accomplish
+that
+[Music]
+okay
+so you move past the broken dreams all
+the things that you'd hoped it would do
+but doesn't and come to terms with what
+it does do and that does a lot of stuff
+and it does it pretty well then you just
+kind of plan ahead for your hardware you
+know what it really helps is that if you
+personalize it so everyone's totally get
+a bad update and so this kind of keeps
+this problem at bay because virtual
+machines you can use snapshot it and
+then if she goes bad you just go back to
+the snapshot to them and schedule some
+regular reboots because this is held
+together by zip ties and duct tape and
+one of the problems is that some of
+those aspects some of those sensors have
+memory leaks and for a long time I had
+to sit there and baby those servers
+through and have reboot every 24 hours
+and that kind of stuff just to get them
+through the day I just pulled out my one
+of my sensors out of our other data
+center today that had been on faithfully
+just ran out of memory and useless
+useless so any case it's something to
+watch for is that because you're trying
+to cram so much into one installed Linux
+and nowadays we have something called
+containers which prevents a lot of these
+problems and so there's some solutions
+out there that I'm looking into
+hopefully I'll make a top for that
+use containers and said those should be
+an interesting that should be an
+[Music]
+I follow up on this is at most log event
+managers need a heavy forwarder
+like syslog and so I think this is part
+of your complete breakfast so what this
+does is that it goes through you throw
+all your logs at it and that picks out
+the bits and pieces and then turns out
+into a situational awareness so you
+throw something like a Splunk heavy
+forwarder into it and then all of a
+sudden you get all your logs faithfully
+recreated and squonk
+meanwhile you're getting you're still
+getting your situational awareness
+atomism
+and the beauty of this is that because
+it's open source there's no limitations
+on it so if you scale out your machine
+then you can easily handle a corporate
+level load of this it takes a little bit
+of effort to get it set up that way and
+does certainly need some baby
+but the beauty of this is that you don't
+have to sit there and worry about oh
+we're going to go over a lot of daily
+storage for instance Flint has that
+where you buy your license at 50 gigs
+per day and then get to sit there and
+sweat it every day to make sure that hey
+I don't want to go for my license or
+they lock me out or something like that
+so that's the nice part about this is
+that if you take the effort take the
+time you can easily scale this up and
+have a good solution
+and sericata
+is everybody familiar with sericata and
+snort their intrusion detection systems
+yes okay so snort is an intrusion
+detection system so is sericata both of
+the MER open-source project
+I think sericata was started with a
+federal grant of some sort and both of
+them are specialized in different things
+and I think they've been kind of vying
+for who's fastest for quite a while
+I think at this point they they're about
+as fast as each other
+but each of them do slightly different
+things
+snort is really good they've enabled
+some application level functionality
+into it so you can look at not only
+signatures in traffic but you can also
+dig into individual application all the
+protocols and figure out what's going on
+there and then cert odda is has really
+implemented a whole lot of protocol
+level stuff so you can potentially pull
+in and do net flow from it you can do
+dns HTTP and just pull out all that
+information from that traffic easily and
+turn that into actual information so for
+instance if you're trying to research
+dns traffic on your network trying to
+see if you have some command control
+nodes going on or some of your DNS stuff
+sir Claude is really good
+and that it can just dissect your DNS
+traffic and then give you a long look at
+that but the nice thing about this is
+that om is integrated in with sericata
+so you're pulling in net flow
+information you're pulling in packet
+captures file signatures and that kind
+of stuff and then it integrates it into
+its user interface which is something
+that not a lot of open source sentence
+will do it'll just show you one type of
+sensor input and not necessarily mix any
+and I think my closing note on that is
+scale changes everything so if you're a
+small shop you can easily set up a
+single machine with no sim and have a go
+solution but as your needs increase
+everything changes because you can't
+just scale up a single server you can
+only scale the signal server so high at
+a certain point you need to scale
+outward inside we're using clustering
+for instance using no sequel database
+it's not going to stuff in order to deal
+with the deluge of information that
+corporate environment generates so when
+you're planning for your corporation
+even though you may be small you may
+want to look at the future saying hey
+even though this is free I don't know if
+this is going to scale as big as we're
+going to get so perhaps we should build
+that into a plan
+and then on that note I'm gonna do a
+little bit of walkthrough in the
+interface here and then we'll have some
+Q&amp;A
+[Music]
+okay demagogues are not with me
+all right I'm gonna skip on to the
+question answers
+I noticed you mentioned like spunk with
+the heavy quarters and this is an open
+source solution I didn't know if it had
+integrations there ties in to help like
+log stash and Cabana and stuff Osen by
+itself I don't believe has direct
+tie-ins to ELQ
+but you could easily make it part of
+your health solution so because it's a
+Linux distribution you can get right at
+the RSS lock settings and then you can
+potentially set that up to either write
+directly to elasticsearch or you can set
+on you can set up a log capturing tool
+leave an X log it's an open source
+project for law capturing and you can
+send you can set it up so that it will
+look at multiple different files and
+then it'll send that on to your your log
+stash that's as far as a heavy forwarder
+you just install the heavy forward or
+right on top of it and then tell it to
+look at the log directories and so I
+think it's like bar log alienvault
+devices and then it has everything every
+device that it gets it creates a
+subfolder and so you just have
+heavy forward or worn out of that in
+addition to that you can have it monitor
+the log files that most of its and then
+there's a application for that inside of
+spunk and so you can actually look at a
+lot of situational awareness information
+this is x86 only so you can do 64 bit or
+32 but unfortunately doesn't supporting
+in other platforms the other part of
+this is that with what amount of
+hardware at least I'd say you can get
+away with two and at least four
+gigs of RAM but I think if you're going
+to put it into a production environment
+I think you should probably look at at
+least four cores or maybe eight and then
+eight gigs at the minimum preferably 16
+any other questions what's twice sold
+thank you for thank you very much for
+is there enough painting but you would
+so you can if you virtualize it and just
+so if you fertilize it it's very easy to
+set up on your home network most I think
+we've done a few talks about how crazy
+the virtual networking is inside of
+VMware and so I think if you just have
+your network hooked in there or any DMS
+and it's sitting there monitoring on
+that virtual switch then it will pick up
+that traffic and that's what I'm doing
+at home right now you can also
+potentially through VMware or whatever
+virtual solution of choice you can look
+in a USB Ethernet adapter and then hook
+that into monitoring port of the smart
+switch or if you just have a 10100
+network you can use those land tap
+throwing stars
+I want to hear that way but you need a
+couple of extra network adapters to pull
+that on

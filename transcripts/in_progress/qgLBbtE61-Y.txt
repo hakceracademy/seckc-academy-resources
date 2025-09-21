@@ -1,0 +1,1298 @@
+all right my name is Ryan and you guys I
+haven't posted the slides yet but I will
+afterwards so if we're gonna grab these
+I have a lot of slack not a lot of
+slides this time with like the actual
+commands in them but I'll try to keep it
+high level for the talk part and you
+guys can go look up the commands later
+if you want but yeah this is a part 4 of
+attacking Active Directory the kind of
+rounding up at the owning of the domain
+we're going to start off with a quick
+review of level 1 2 &amp; 3 then we're going
+to jump into some lateral movement
+techniques and then finally pounding the
+domain and actually some stuff on some
+defenses you can go home right out for
+this talk cuz I know you guys want to go
+right back to work and start with fixing
+up your Active Directory environments so
+the review first in the first talk we're
+talking about the basic theory of like
+what I do as an attacker once I am going
+after your Active Directory or just your
+company as a whole we start out by
+trying to obtain some credentials we
+looked at different ways of harvesting
+emails and then trying a brute force
+attacks like on email servers or centric
+servers or VPNs on the outside once we
+get inside we've got Fred's we look like
+a normal user then we're gonna start
+branching out and see where that user
+can go we're gonna look and identify
+where our access is and then we're going
+to try to migrate where that user can go
+and obtain more credentials and we kind
+of keep looping through that and so
+we find our high privilege domain admin
+credentials or something close to and
+that was the basic theory Tom and we
+talked about initial footholds there
+with the default credentials on
+applications and the password sprang and
+then some of the points we like to pick
+on that don't require any exploits but
+just guessing some passwords and jumping
+in the next talk we talked about the
+command and control setup that an
+attacker is going to use or need to use
+we kind of have like a good better best
+setup for that where you can get real
+crazy with chained redirect errs set up
+stuff in the cloud and do domain
+fronting and have separate payloads
+stagers crazy stuff like that and then
+last time we talked about the post
+enumeration doing it like locally on
+every box you get to a bunch of stuff
+you want to look for like passwords on
+that machine you can profile the
+company's software they use look for
+other users on those boxes and then you
+know grabbing through a bunch of
+sensitive files looking for more mostly
+credentials then we moved on to the
+network enumeration side and we're
+trying to identify those privileged
+users and who they are where they're at
+like where they're logged in and then
+once we found our current users access
+we tried to identify those attack paths
+to get us to domain admin we reviewed
+the club lady where and tried to explain
+skills dactyl cycles and aces and then
+bloodhound the tool that kind of
+automates a lot of looking through all
+that and that was kind of a bloodhound
+grab and this was kind of like the whole
+attack path theory in more of a
+graphical view where bob up there as a
+session and on a machine that john also
+as a session on and then Mary's a member
+of the sequel admins group and she can
+access a box that there's a da logged
+into and so we can follow that chain
+through without really using any
+exploits but just taking credentials and
+use abusing our current users rights and
+access to get there so for this one
+we're going to start off with the actual
+movement the lateral movement part of
+this in lateral move it's important for
+both defenders and attackers
+it's where the attackers are going to
+spend a lot of their time because it's
+once they get inside the network they
+don't necessarily want to be triggering
+AV and firing off exploits or anything
+they're just going to be trying to move
+around the network as quite as they can
+but they spend a lot of time there
+smokescreen put out some review that
+said they spend eighty percent of the
+time during lateral movement Microsoft
+has also agreed that most of the time
+gets spin they say months I don't know
+why it would take months do a lot
+it's a lot faster than that but you do
+have some time here to try to identify
+when you have malicious users at your
+network and the problem the problem that
+makes it hard is a lot of times now
+everyone's just using built-in tools and
+so they look like normal users on the
+network there just may be doing things
+that that user wouldn't normally do and
+that's the kind of stuff you can key off
+of and I'll talk about that a little bit
+and the defense is towards the end but
+when you have a normal domain user that
+all of a sudden has PS exact into like
+20 machines that day and they've never
+used PS exec before that you can kind of
+think maybe something's going on with
+that guy and again yeah there's just no
+really exfoliants being used here we're
+just abusing the privileges and access
+we have inside Active Directory cuz it's
+such a complex environment so for the
+tools there's a lot of options for
+attackers and you probably use these
+every day accessing like you know
+there's just a lot of different ways you
+log in and access resources from telnet
+to maybe you probably use be this exact
+but like PowerShell and PS remoting and
+if four attackers we get some of the
+stuff you would have used but like pass
+the hash and pass the tickets and relay
+attacks I've just go through a couple of
+them that kind of matter RDP is still
+used definitely by attackers and that's
+going to look like normal traffic to a
+lot of people the nice thing about rdap
+is you don't it doesn't require local
+admin access to do you just need to be
+part of the remote desktop users group
+and so when you don't have local admin
+access you can't do some of those PS
+exact type things and you have to
+actually get out of the command line it
+slows down the attackers quite a bit but
+there's also me and C D and C is kind of
+just the legacy Mac side of a remote
+desktop I find inside networks a lot
+you'll find that they have B and C set
+up with no authentication and then you
+can just fire our VNC viewer and pop in
+and you've got instant access to
+someone's desktop and you could just sit
+there and play with their mouse and
+watch them work and mess with them a
+little bit but a lot of people think
+that their internal network is just safe
+because their perimeters secure but
+they're not looking at when one of their
+users has been compromised and there's
+just people walking around the network
+using default creds de login to
+everything sysinternals I'm just
+bringing up because of the next view
+Tools system eternals from Microsoft has
+just a whole suite of different kind of
+admin and access tools there's
+sysinternals live at HTTP live dot
+sysinternals that you can actually just
+access in file explorer and essentially
+have PS exec or a lot of different tools
+that you might need as an attacker
+instantly on a system and that's like
+trusted by Microsoft so it's an easy way
+to get some of these things on there PS
+exec I talked about first
+like the old-school way of moving around
+the networks it's pretty loud and gets
+detected very easily it leaves a lot of
+log events there's a PS xxxx service
+that gets created while you're pious
+exact into something and the fingers
+have known about that for a long time
+and so there's a lot of logging and
+everything built around that but it's
+still useful
+the thing about logging stuff is if no
+one's looking at those logs and it
+doesn't really matter from an attackers
+perspective if they're logging you or
+not
+in Metasploit it is built-in which makes
+things nice abuse meterpreter shells and
+such there's also a powershell version
+that will essentially just do the same
+thing but you can launch PowerShell
+commands directly instead of getting a
+command shell and then also when Empire
+you can invoke of Chios exec PowerShell
+remoting is another tool attackers can
+use but it's actually the Microsoft's
+recommended way for doing remote
+administration with like a whole bunch
+of caveats that you're using it
+correctly because there's a lot of ways
+that you can mess it up and there's
+something called the two half problem I
+don't know you guys are rid of that but
+it's like where if you want to admin
+you're on box a and there's box B and C
+and you want to admin box B so you
+entered power show remote session and to
+be if using it correctly you're not
+bringing any delegation creds with you
+which means that you're only able to
+access stuff on that machine
+well administrators want to be able to
+make a hop through B and work on C but
+what they end up doing is bringing
+credentials with them to box B and
+basically exposing it and not using the
+remoting on supposed to and
+kinda cancels out of the whole thing but
+it uses win RM which is like Microsoft's
+implementation of the web services for
+management our WS management it's not
+the same as just using computer name
+after any just normal PowerShell command
+lid that uses R we see most of the time
+which will still bring like credentials
+with you when you do use it correctly
+and it will run as a service under the
+network service account of that box and
+it spawns in an isolated process
+anything you've run and so if an
+attacker hijacks that user they're kind
+of stuck in that little box you can and
+should use just enough administration
+really so you have like hoursa profiles
+set up so that basically whenever you
+PowerShell into something you can
+actually only run certain commands that
+you've set up that were allowed and that
+that's the whole just enough
+administration it just gives you just
+enough commands I do whatever you want
+to do without giving out just all the
+keys
+the attackers don't I don't try to use
+this very much because it's very
+laudable it's very verbose logging with
+easy to get tracks for people trying to
+tie it back to you but I'll bring it up
+anyways you can like invoke command or
+enter PS session interview session kind
+of it's like probably the better way it
+gives you an interactive shell like
+right away you basically are just
+running power Sheldon on the remote box
+but on your own screen
+WMI is the preferred way for the
+attackers like currently that's what we
+tend to use the most it's got the least
+like logging built in it is log of all
+but it comes pre-installed on all
+Windows systems all the way back to 98
+so you know what's going to be there it
+doesn't leave any files written to disk
+there's no registry changes it stores
+everything in these WMI repository
+objects it uses decom as the protocol
+becomes kind of like the new hotness for
+a lot of attacks you'll see these just
+you'll see decom mentioned and a lot of
+these newer attacks and it's heavily
+used in the Windows OS which is why
+attackers like it because it's it's not
+something you're going to go disable
+because it breaks things like even
+Windows Update uses W mine to do its
+updating so it's not something they can
+just disable and it looks like a lot of
+other traffic this kind of became
+popular as an attacker thing or at least
+recognized by the defensive community in
+2010 and with the discovery of Stuxnet I
+think it was like the first major like
+exploit tool that was found to be using
+WMI and it might be a reason that it
+maybe hasn't gone detected for so long
+and they think it was maybe or used as
+early as 2005 it's because no one's
+really looking at W mine it works with a
+lot of life if this then that type like
+up triggers it bases like a lot of stuff
+all the events that occur and then it
+will if this event occurs it will fire
+something there's a whole like
+architecture that I'm not even fully
+sure how all that works underneath I
+just know the tools and if you use WMI
+no one's really looking at that stuff it
+is actually easy to detect if you're
+looking at it though nearly all the
+operating system actions can fire and
+will
+WMI indents that you can set up a
+learning on you set up events
+subscriptions on these things Kansa
+console by dave poll actually does have
+all this kind of a stuff built into it
+to work and attack w mais things
+it leaves logs all over the place the
+only problem with the setting up the
+event subscriptions for different things
+is that an attacker with the right
+access can also just remove those event
+subscriptions but luckily not a lot of
+people are looking at that right now and
+it's sort of hard to do but that's what
+powershell 6.0 is coming out with and
+some recent talks from the blue hat
+tel-aviv Microsoft conference over there
+they're like 80 18 came out and talked a
+lot about PowerShell 6 and how they're
+gonna start tracking a lot more than W
+my stuff W my exec is the tool kind of
+to use for I'll talk about crack map in
+a second but W my exact it's a built in
+in Cali it's a part of in packet which
+impact it does like every protocol you
+can come up with and windows you can do
+with the tool and impact it it's pretty
+intense
+it's a huge library but it's really
+useful there's Empire modules for it
+it's the default way crack map they SEC
+tries to do any of its commands it's
+pretty simple to use it works just like
+a gives exec or something where you just
+you feed it a user and password and then
+the command you kind of want to run
+remote
+box it also accepts hashes you can do
+SMB exec uses like name pipes to do the
+same kind of thing it's almost exactly
+the same everywhere else except for it
+just talks differently
+another Cali built-in part of in packet
+Empire modules its CME's like last-ditch
+effort of trying something the nice
+thing about it using like SRB pipes to
+talk on the network is that a lot of
+Windows services also use those and so
+you can kind of blend in the rest of the
+traffic it also supports pass the hash
+simple to run and you just run these on
+any machine basically if you have some
+credentials and it'll fire off before
+you crack map exec I'd really like to
+see someone do like a whole like you
+could probably do a series on crack map
+because it does so much stuff but it
+attempts three different command
+execution methods and I use this a lot
+like as it from an attackers perspective
+because like I really don't need to be
+on Windows machines I can just do
+everything from my colleague box and
+just pivot through stuff but anytime it
+tries to send a command like Who am I
+it's gonna first try it using WMI and
+then it'll try a t exec which I just
+learned today actually that it eighty
+exact actually does use SMB but it sets
+it just uses it to set up a scheduled
+task so it doesn't have to keep as much
+traffic going
+so it'll schedule tasks kind of wait for
+that callback to happen and then get the
+results and then lastly it will try just
+to set
+you pipe over that box the crack Maps
+awesome you can like spray passwords all
+over you can if you like run if you have
+credentials with local admin access you
+could basically run nimma cats like on
+the whole network and just receive just
+everyone's passwords and hashes back so
+that's a really useful tool for
+attackers it's got a lot of other
+modules too but that's not talked about
+today as far as passing hashes so
+there's Microsoft's like half said that
+they fix passing past the hash and relay
+attacks but if they didn't really you
+can perform pass the hash attacks with
+ntlm hashes still you can't perform pass
+the hash attacks with a net in Tila
+matches which is something you'll get if
+you run something like responder but you
+can relay net ntlm hashes and it was
+since MSOE oh six a you couldn't relay
+those hashes back to the same machine
+but if you've got local admins somewhere
+else with that user you can relay relay
+them to some other box
+so a stash isn't totally fixed I guess
+and a little bit into that without
+getting too deep but like a normal life
+is like if you want to access a resource
+on a different box say hey I'd like to
+log in to that box and it for dents or
+it presents you it says like hey encrypt
+this challenge with your password hash
+and then you return it here's the
+cryptic challenge and that's like if I
+can decrypt that you use the right
+password you can login and what the
+relay attack is
+kind of like man in the middling that
+same thing where you see them try to log
+in somewhere but you capture that and
+send it to somebody and then you wait
+for them to respond to you with their
+encrypted like hey we encrypted this is
+that correct you for that back to the
+originating server they give you that
+challenge you forward that on that will
+work because you don't even know what
+that he is but it was used it gives you
+access but you just don't return that
+back to the originating server hey Ryan
+yeah hey I just want to have a real
+quick second to help Ryan thank you very
+much it's not often we have a four part
+series talking about a single topic so
+Ryan favorite tradition here instead
+Casey when you give a four-part series
+you get the shot we Jam poor shot
+anyway I want to hear super loud from
+Ryan who's here
+[Applause]
+I continue all right I get through the
+boring stuff okay like all right so we
+got through some explaining responder
+their responder there's also in vague
+that's kind of like you can run all of
+like well not all but some of responders
+stuff in PowerShell though and as far as
+like responder is really useful inside
+networks if you don't have any users
+credentials but you've got access inside
+so like maybe you've got like you
+plugged in a box inside their Network
+physically and like it remote it back
+out to you but you don't many creds well
+you can use different exploits real
+exploits and force victims to give you
+their crits basically anytime you set up
+like a UNC path it's going to use
+authentication and present a hash back
+to like so you set up responder use some
+sort of exploit so you tell that machine
+to use a UNC path to access a resource a
+really neat one with sequel is to do a
+in two out file and then you point that
+out file on your remote box that's
+listening and it'll send you credits so
+responder is really useful if you don't
+have cribs you can also run it in like
+analyze mode and basically just sits
+there and listens on the network and
+looks for because there's a lot of
+things that require authentication and
+you can just sit there and listen on the
+network and just watch creds go by and
+you can crack that into LM hashes it's a
+lot harder but it is doable and so like
+that it's kind of a way you can just
+harvest credentials or move around if
+you relay it but yeah they send the
+attack off request relay to the victim
+and you win but the fun stuff is finally
+just like owning that whole domain so
+you've moved around the network we saw
+the talked last time about mimicked adds
+and how easy it is just to get
+credentials from all over the place and
+they're always in memory so basically
+what you're what you're doing is just
+moving box to box with any of those
+techniques I used crack map and will
+basically just check for local admin
+access if I've got it I can just run
+Democrats and get more users and then
+feed that into my bloodhound instance
+that's running and just looking for
+where all those users are direct but
+what's it really mean to own the domain
+is that just getting all the passwords a
+lot of times you maybe you're looking
+for some kind of glue or access to
+everything not everything is in Active
+Directory right there's like all those
+Linux and systems and such but the nice
+thing about usually once you own the
+Active Directory is that you've got
+access to all their workstations you can
+log into those and take their SSH keys
+or whatever they're using to monitor the
+Linux systems you want to look at what's
+important to that company and what did
+they value a lot of times you don't even
+need to own the whole domain to get to
+what you want basic users have access
+they'll have stuff on public shares that
+shouldn't be there
+maybe you want to get it becoming
+enterprise admin because domain admin
+isn't really the top-tier guy you might
+just be owning this domain but there
+might be five other domains in the force
+that you want to get ahold of and the
+enterprise admins where you want to be
+and then yeah the UNIX environments so
+for me I like to first get in there and
+own all the users you don't get that in
+TD this is file and then identify the
+VIPs the fun thing about identifying
+VIPs is like that's where you go after
+the president of the company and go look
+him up and then add whatever accounts
+you have to his like CEO like the CEOs
+inbox and then you can pop open his
+outlook and look at his emails and those
+always make for great with presentations
+when you've got the CEOs most recent
+email you might depending on the type of
+engagement you're doing instead of
+long-term persistence like you'll set up
+some shells that only call back once
+every week or so and then you'll just
+really start gathering all the loot and
+start a taxable trading and trying to
+get stuff out of the network that you're
+looking for because once you kind of
+have the whole domain owned then it
+makes it a lot easier to do all the
+recon and stuff you need to know where
+everything's at and you have access to
+everything you need how do you wear our
+domain admin credentials that there are
+a few different ways domain admins I see
+a lot like why they leave their
+credentials somewhere and maybe they
+don't always know that they're doing
+that really they shouldn't be using the
+domain admin account for most of the
+work they're doing
+but logging into a computer with the
+domain admin account is going to put the
+credentials there we know that one
+logging on to a computer with a user
+account and then entering domain admin
+credentials to do something like a run
+as well that's going to catch those
+domain admin credentials on that box -
+and there's trickier ones like if you
+log on to a computer or the user account
+and you want to already pee somewhere
+with a domain admin account it'll
+actually catch those domain admin
+credentials on the box that you use to
+initiate the RDP connection because
+it'll use that before that RDP
+connection and then services deploy to
+workstations that run under the context
+of a domain admin account I've seen like
+one of the guys I work with owned it
+network once by taking over the McAfee
+service because the McAfee service was
+in the domain admins group and was on
+every single box in the whole domain so
+basically you're leaving domain admin
+creds on your entire network it's very
+rare that a service account should mean
+domain admin credentials the people
+selling it to you or whatever probably
+tell you that but it's probably just
+some write that they need that you can
+give a user and they don't know they
+don't really don't need to be a domain
+admin getting all the users password
+requires the NTDs did file it's on every
+domain controller it's a database file
+that's hosted see Windows and TBS is
+basically without going like really into
+it it just has everything about Active
+Directory in it at every time and all
+the DC's need this so that they can do
+authentication requests and they can
+service they know where all the sessions
+it stores just everything and so if I
+can get to that file that's what I
+really want and there's ways you can get
+to that file without being a domain
+admin there's users that you can
+compromise that can login to domain
+controllers like backup operators
+account operators and print operators
+they can all login to domain controllers
+and then I can just hash dump the DC and
+all the passwords backup locations we've
+seen backups of the NTDs file stored on
+file shares and on different backup
+servers and that's why a lot of that
+enumeration part is important because
+you're looking for these sensitive files
+that maybe are being stored somewhere
+they should not be and in some of the
+like really specific scenarios like if
+you have admin rights on a
+virtualization post virtualization O's
+and it give a virtual DC you can just
+clone that DC and then take that image
+with you and then another one with the
+the NTDs files staged on a member server
+that's going to be promoted to a DC
+that's probably a rare occurrence but it
+is out there I think I took that one
+from like Shawn that gas blog getting
+that file itself there's a few different
+techniques you can do obviously on the
+Box you can run things like nimac ads
+hash dump there's a tool buddy into es
+grab windows credential editor and
+secret dumps which is part of that
+impact it till we talked about the
+volume snapshot service is a slightly
+popular one that can be useful and ninja
+copy is basically the powershell version
+of doing a volume snapshot which
+basically tells the DC that i need to
+take a backup of
+TBS file take it back up of it but give
+it to me afterwards and then DC sync is
+kind of like the one I prefer to run now
+because it doesn't require me to ever
+even log into a DC DC state school it is
+fairly simple to really understand like
+it it's kind of confusing how it really
+works but basically it's gonna look for
+the nearest domain controller and then
+request that domain controller to
+replicate the user credentials to me
+because I look like a domain controller
+you don't have to have a domain admin
+account is actually a part of a domain
+controller account that actually has
+these privileges which is the DES
+replication get changes in D s
+replication get changes all I won't get
+too much into that more but when we
+talked about bloodhound in the ACL
+collection method one big part of that
+was that they started looking for those
+privileges on every object in the whole
+domain to see if any other computers had
+it for users because sometimes people
+think that they can just set up groups
+that aren't called the domain admins but
+they have all those rights and think
+they're safe because they call them like
+non domain admins or something more
+clever than that clearly but that's why
+the bloodhound started collecting all
+those aces those entries because looking
+for those different rights to get us
+there
+DC seek I really like this because it
+enables a user with tier 0 privileges to
+imitate the domain controller and so how
+this kind of works is like you're an
+attacker and you've got a shell on a box
+and then that domain have been Steve guy
+either left creds on that machine or
+he's logged into the box currently so we
+can impersonate his user or we just got
+his cred
+wait earlier and we're just logging into
+the system because we want to go get an
+updated snapshot of everyone's passwords
+the attackers going to basically make
+that host look like a domain controller
+first they're gonna try to imitate it
+with deep domain having credentials is
+what you need because that's what can
+create new domain controllers on the
+network so first you're going to
+impersonate the DA then you're gonna
+turn that box into appear like it's a
+new DC on the network then you're going
+to tell the closest DC hey I'm a DC and
+I'm how to sync with everybody I need a
+copy of the NTDs file and it's basically
+going to say like okay you're a new DC
+you got it - right right here you go
+and now I never have to actually get on
+a domain controller but I stole the
+whole active directory basically profile
+for everybody and then the attacker can
+laugh and run off with all their goods
+it's really simple to run once you have
+the right rights you can call the
+PowerShell directly
+there's Empire models for it Mimi Katz
+has modules for it I think he ran one
+last time when it comes back through
+this is kind of just a picture of if
+you're in PowerShell and you're running
+as one of those domain admin accounts
+like you stole the token or something we
+talked about earlier you run it and you
+just wait and then it'll start firing
+back all the domain users and all their
+passwords and what it's really doing is
+getting a copy of the NTDs file and the
+system file and that DC the system file
+is used to decrypt the NTDs did file but
+the only decrypts the file access itself
+and then inside the file is still hashes
+but we take those off
+to a password cracking rig and just
+started running on through because ntlm
+is fairly simple to crack we have a
+pretty weak
+honestly password cracking rig but we
+can run the entire eight character
+namespace or like every eight character
+password you can possibly have which is
+active directory's default we can do
+that in like six hours and that's like
+one of the weaker ones some of the guys
+that have like tin nvidia cards set up I
+think last year at blackhat someone said
+they could do 13 every 13 character
+password in like two days and so the
+whole like password thing kind of goes
+out the window once you're just using
+defaults and we can crack them just
+really quickly kind of the old-school
+way which we don't use anymore
+it's too noisy it would be to log into
+the DC itself and then just run a hash
+dump
+DC's work a little differently where
+their Sam database is going to control
+all the domain users passwords most
+computers don't have that they've only
+got whoever logged in recently and in
+the local accounts but I just thought
+point that out and so to kind of bring
+this full circle like just to remember
+everything we talked about like this is
+an attack we used just I mean like
+fairly like in the last year I just kind
+of was looking through like what's a
+good one how to view steps a lot of
+times it's a lot less steps than this
+unfortunately because domain admins are
+logged in all over the place in this
+case they weren't which made it take a
+little longer but it's still doable but
+we started with harvester search the
+internet for emails basically and then
+use sub lister to brute force domains
+found the citrix server on their site we
+used burp suite to basically do a
+password attack using all the emails we
+had with like all 2017
+summer 2017 you just picked some really
+basic passwords there in the top 10 list
+and if you have like 500 users it's
+pretty sure one of them is going to have
+one of those weak passwords we're able
+to get into the Citrix environment
+launched word of Citrix is really hard
+to protect cover that a little bit
+earlier but we use like where you your
+inside word and Citrix they don't have a
+desktop or anything right they click
+open file you just navigate to the
+command exe hit go and it launches the
+command shell now we generate our
+PowerShell entire payload paste that in
+shoot it through and then back on our
+listening cally box out there in the
+cloud it catches the shell running as a
+host and then from there we start our
+whole enumeration phase which is clear
+the domain admins look for the domain
+controllers find where that user has
+local admin access run bloodhound to see
+if you've got any attack fast currently
+after you run bloodhound didn't have any
+attack pass okay so we're going to see
+where we have local admin access a big
+problem is that the users all complain
+like hey I want local admin on my box
+and the easy way is just to add all the
+main users to local admin groups and
+then they've got local admin all over
+the place so now I can take that account
+and just mimic ads all the other boxes
+so you run them accounts on a few other
+boxes you
+and on get new credentials check it in
+bloodhounds if you don't have anything
+keep going with their credentials where
+they have a local admin ran it a couple
+times actually they actually get to the
+environment we needed to be where we had
+a half-two domain admin and from there
+it's just jump into that box don't even
+take that domain admins password but
+just impersonate their user and then
+just run DC sync and it's game over and
+like you can say that all and it looks
+like it would go really quick and it
+would if you've known that whole path
+from the beginning but that it doesn't
+know taking a little while and that's
+kind of where that whole enumeration
+phase is like where we spend the most
+time that's trying to find those attack
+pass that's why if you have domain
+admins logged in all over the place it
+really reduces that time down to hardly
+anything where we only have to go one
+hop and we've got da creds so for
+detection of attackers some of the stuff
+you can kind of set up a learning on
+it's not too difficult that shouldn't be
+happening a lot like I'm trying not to
+make you guys have like tons of events
+coming in but you can look at the
+sensitive security group modifications
+the lateral movement day is like a TAS
+detecting that really well now after
+it's been running for like three or four
+weeks but like that's the whole like it
+Bob's he is exacting all over the place
+why is that happening like something's
+suspicious here domain controller
+promotions that shouldn't happen that
+often so it's something we're putting in
+event log on group policy modifications
+might have been more on
+but so you can check out a privileged
+account authentications ideally you're
+not using privileged accounts like for
+most of your work so they shouldn't be
+authenticating that much account
+lockouts in mass a lot of people just
+look at the account blackouts at mass
+but they forget to look at it fail to
+account logins and mass that's something
+like you can kind of key all those where
+as a smart guru tacker i don't want to
+lock out accounts so I'm only going to
+try one password on all the users I have
+once every like two hours or so it's
+actually pretty quick and most people
+throttle their account lockouts pretty
+well because they just don't want to
+deal with service tickets that people
+locking themselves out but that's
+something you can look for especially if
+it's like to one particular box no box
+should be having fifty even of your
+users trying to authenticate to it at
+one time some of the easy wins for going
+home and working on your Active
+Directory that really they're not going
+to like solve all the problems but they
+really make our job a lot harder which
+is the the DA's being everywhere is
+clear
+SMB signing a lot of people don't have
+SMB signing enabled and there's not
+really a reason you shouldn't it does
+break some older printers I think is the
+only thing I've heard from anyone that
+said that up because like they don't
+support that but SMB signing over many
+of those really attacks so they can't
+just beat a rogue device on your network
+using responder to all the things local
+admin password reuse this one's pretty
+bad and a lot of places especially if
+they have a lot of devices they
+basically set up one
+like golden image to flash all any
+laptops that come in for any new
+employee but the local admin user has
+the same password so if I dump that on
+one box I can locally admin into all the
+machines on the network and then just
+run mimic ATS and I'll get those domain
+users that are logged in and so like
+something like laughs like Microsoft has
+you can implement and it's fairly easy
+to use and really makes things a lot
+harder and the same thing with you can
+disable local admin account remote
+access just a setting and that basically
+prevents any the PS exact type attacks
+from happening or I would have to RDP
+into every one of those machines over
+privileged domain user accounts there's
+really not a reason that your domain
+users need local a demand everywhere I
+get it if they get it like on one
+machine like their hosts
+maybe another but there's no reason just
+to kind of be lazy and just give it to
+everyone all over the place and then the
+service accounts in the DNA group we
+talked about a little bit but there's
+backup accounts that think they need da
+everywhere or they need to be part of
+the da group but you can set up a
+specific group so they only have rights
+to do what they need to do you know
+default fritz on internal host we see
+this one a lot too and I usually like
+hate finding these because you have to
+write up just so many of these things
+because everyone thinks like oh the
+internal network
+I can leave tomcat Tomcat and
+like every device but if I don't have a
+direct path to domain admin when I get
+in I'm going to first check those things
+because I don't want to use exploits
+because they're going to trigger alerts
+and antivirus things like that I'm gonna
+try the easy stuff stuff that wouldn't
+trigger anything and just because it's
+your internal network you might have
+malicious users inside and these kind of
+go and then escalating of these to
+implement and think the next one is a
+there's a setting where you can prevent
+the storing or caching of credentials
+which you may or may not want to do the
+only problem is that it will prevent
+domain accounts from being able to login
+and they don't have access to a domain
+controller and then reducing privilege
+burp numbers far too often I find domain
+admin groups where my career the domain
+admins group and it's like a whole page
+like something's wrong there like not
+that many people should be doing admins
+they might need the permissions for
+certain things there's better ways to do
+that than just giving them full domain
+admin rights and then kind of getting
+into the harder to implement everywhere
+like tomorrow things would be like
+multi-factor on the outside on
+everything you can possibly implement it
+on because the one thing you don't
+implement implement it on it is where
+I'm gonna log into and that really stops
+the easy stuff so then I have to come up
+with like a real exploit to break in
+right because a password guessing
+getting into the network's is like just
+one of the easiest ways to get in but
+multi-factor really shuts that out quick
+and it can help also your users know
+like hey someone keeps authenticating
+and I keep on getting two-factor
+requests on my phone
+I'm not authenticating anywhere and then
+network segmentation where you can
+prevent different like set of VLANs so
+that users can't even get somewhere else
+that way I can't just be spraying PS
+exact across the network with some
+passwords and then a little bit of clean
+up stale user accounts where there's no
+activity no password changes and they
+never logged on they were maybe set up
+with the default password at the
+beginning that person never joined the
+company or whatever but like we do like
+Active Directory audits and we'll find a
+lot of these stale user accounts around
+and there's just no reason you can just
+delete them they don't need to be there
+the over publish service accounts is
+another big one and then non-expiring
+passwords a lot of domain admins don't
+like that but on service accounts
+especially like someone set up a
+password on a service account set it to
+never expire because it does great
+things sometimes if the customer changes
+but like say that domain admin left now
+no one really knows that password it's
+going to stay the same forever and that
+just opens you up for these really long
+term brute force password guessing kind
+of that stuff I wanted to talk a second
+about like using paid products and
+commercial products to do this like I'm
+a big fan actually of all Microsoft
+stuff like if you're on their latest
+greatest enterprise everything it's
+really tough to be most of the
+commercial products just make things
+take a lot longer order not really that
+much
+just kind of make Michele's act a little
+funny sometimes they do usually have a
+better alerting system set up which is
+good it'll help you identify users at
+least but it's that same like if you've
+got these great tools set up and you
+bought these things but it's too hard to
+fully implement them they're not going
+to really work how they were sold to us
+we see a lot of times people have a
+product that would have stopped things
+but it like they got along the line
+somewhere and just never fully
+implemented it and then it's just like
+why spend all the money on that product
+if you're not going to use it the way it
+was intended and then just to remember
+there's always a bypass for all these
+things I mean that's been proven years
+and years and years and so you just
+always need to be aware that's why I
+think Microsoft's move to the whole
+assumed breach like they even they get
+it like it's too hard to protect against
+everything with any protection and just
+always be aware that any of your users
+could be malicious at any time and it
+kind of just kind of changes the whole
+mindset of how you're approaching your
+security I didn't really go through I
+thought about maybe for next time some
+of these so we talked about those attack
+paths and discovering them well people
+are starving like well I've gotten
+pretty used to jumping into a network
+running bloodhound following that attack
+path and getting da why don't I just
+automate that and so there's a lot of
+these tools coming out that basically as
+soon as I have Prudential's I can just
+like one click and just wait 10 minutes
+for da to come back there's like Death
+Star which basically starts with
+responder to try to get some creds it's
+all python-based it runs
+using Empire shells back and forth in
+crack map it doesn't run bloodhound but
+it just try the same thing bloodhound
+does and just quickly just navigates to
+your network
+go fetch basically takes a bloodhound
+attack path and tells a cobalt strike to
+just execute it and so like once they
+get in they run bloodhound they eat it
+to go fetch and then they've got the
+Main Avenue angry puppy is kind of the
+same thing and there's a Empire dog won
+but there's just more these tools coming
+out like I don't recommend using them as
+an attacker because they can be kind of
+I mean they're not like really smart
+because they're just going to shell like
+every box that user have access to and
+mimic cats all of them so they can just
+really quickly like warm through their
+network but they are out there and
+they're making these things a lot
+quicker then I've got lots and lots of
+references for a lot of this research
+from all these talks that people can go
+through and look at if they want that
+was kind of the road map I thought about
+a 45 I'm not sure if I'm going to do
+that with like post Dex and like going
+over some of those automation tools and
+maybe talking about ways of exfiltrating
+data out the network and then avoiding
+detection and some of the really
+stealthy persistence methods but I'm not
+sure maybe I don't know anyways any
+yeah okay but can you briefly talk about
+some strategies to protect your backups
+we talked about being able to that's
+usually when we just find that like the
+file shares that are publicly readable
+or publicly writable and then use them
+for a lateral movement actually but it's
+just storing those insecure chairs that
+only certain users have access to and
+then running something even like
+bloodhound to make sure where you can
+put in the resource afterwards and it'll
+tell you to make sure you don't have any
+inherited rights a lot of times they're
+stored just in shares that they don't
+think anyone can access but along the
+roads sometime there was a group nested
+inside another group that the dis da
+main users in and then they've got this
+path to get there and those are really
+hard to find yourself and that's why
+bloodhound and the ACL collection method
+is kind of helped that a lot but it's
+those like really the one I'm talking
+about is like when they're just publicly
+accessible like I've even found like
+where they were keeping their like
+credit card like all the transaction
+databases were being written to a
+publicly accessible share so you could
+just jump in anyone could read it they
+just were like well we needed all these
+servers to write to the share but it's
+like only give the servers that access
+yeah yeah they really only need that
+other account and then it's a little
+more painstaking to set up like just
+enough administration profiles for
+everything you do but if if you can use
+those or just PowerShell remoting from I
+think I talked about the news even the
+privileged access workstations that
+pause or hams if you could just limit
+where your da takes this crits
+with them that's kind of the goal and
+that's where microsoft recommends the
+powershell remoting and then even
+tighter with using like the constrained
+modes so they can only do so much when
+they get there but it'll just prevent
+you from bringing delegated tickets with
+you so that if I take them if it's only
+impersonation tickets that I can steal
+then I can only do things on that local
+box as a DA but if you're taking all
+your credentials with you by like
+logging in or any kind of thing that
+requires actual you to centric
+financials I can steal that hash or
+ticket and basically be able to access
+anything
+in the domain and so it's really just
+about only logging into your workstation
+and then securely remoting into anything
+else
+that
+yeah I mean I like that mish me a lot of
+accounts for you to juggle that kind of
+thing and that's where like yeah it's
+like painstaking is setup I guess
+because you'd be doing almost the same
+amount of setup to just set up those
+remote sessions actually if you're doing
+maybe less because you can just give
+that user if you just copy that session
+profile and whenever you power so remote
+you'd use that session profile for those
+servers yeah I know yeah I'm like I I
+totally get why domain admins do like
+login to a lot of places just because
+it's so hard to have what you need there
+and like know what you're going to need
+they're set up in profiles with brand
+but I guess everyone who's seen do it is
+just so much more secure like we're just
+is like we can't find domain admin creds
+anywhere you know and the problem with
+that too is like if you securely remote
+in even if you have every other user has
+domain admin rights or local admin
+rights on that box even if I can steal
+the hash and Kretz there you won't have
+an actual password there and the hash
+you have I can't pass it but yeah I mean
+like I don't do domain admin work so I
+also don't know like exactly how tough
+it is that's mostly just from everything
+Microsoft's been telling in all their
+kind of documentation and they really
+recommend just enough administration but
+that again that just like even more
+limits what your user can do once he
+gets there you have to really
+painstakingly set up all those little
+profiles
+[Music]
+what it's a good like detective and hand
+tools
+well like without going into like I
+guess like products I really like what
+ATP is becoming that's kind of like the
+next iteration they've had ATP like
+three different times they've like
+Microsoft's announced its advanced
+threat protection this latest one for
+the enterprise users kind of combines
+all their stuff together
+it's got like credential guard network
+II met and it's got the firewall built
+in and it's all like on a control panel
+and it basically is running like a TA on
+every single device individually and
+then they all feed a TA also and then a
+TA is kind of something you can put in
+that will detect a lot of different of
+these attacks like at least would pass
+the hash any time a golden ticket gets
+created or after it's been running for
+like three or four weeks it has done
+enough of learning on the network to see
+like what users typically do in their
+work and then it'll notify you for a
+suspicious activity like hey this user
+has never jumped in this box before ATS
+pretty good it in the fact that also
+like if I even do like DNS enumeration
+inside the network a TA will pick that
+up or by query for all the users a CA
+just assumes that like no one should be
+asking for every user account like at
+any time and so you can look into that
+it does require like you to be on
+Microsoft's enterprise everything which
+is expensive for a lot of people I don't
+know why they offer like all their
+protections as like the most expensive
+thing but that's Microsoft for you I
+yeah I think I've got a sign of it
+actually
+yeah a TTA attack so I guess everything
+on that page but it's a it's a whole lot
+of stuff the only problem with a take
+currently and the team recognizes their
+their talk they just gave that blue hat
+il was really good about all the new
+stuff coming they recognize that a TTA
+is only as good as someone else looking
+at it it detects most of the malicious
+activities but someone has to be there
+like looking at it to know and they're
+gonna work and it doesn't actually do
+anything about them it just tells you
+like hey this was suspicious they're
+working on making me and actually be
+able to contain things and events so I
+went in and event triggers you can click
+and like remove that users access just
+for until you can investigate the
+yeah and that's yeah that's kind of like
+what they were intended if you like put
+any of that like they don't want to
+automatically do anything they think it
+orders rec networks but they're
+definitely mind working on that and like
+getting there so at least it will
+empower you to quickly prevent what's
+going on because I think yeah I think
+they're a big complaint now is just like
+okay well I know this user is bad what
+do I do about it
+like how do I act fast enough to get him
+any other questions maybe you can just
+get on the side after here I think

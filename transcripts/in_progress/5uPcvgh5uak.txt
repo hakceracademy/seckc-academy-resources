@@ -1,0 +1,216 @@
+thanks DJ hey before I get a good before
+i get started i got some things are you
+talking about first of all i am
+currently getting over pneumonia and so
+I'm not feeling very well ah and so
+first of all no alcohol please I am on
+medication and and it's a no and so
+that's actually what I want to say is
+that I don't have any alcohol in me and
+so then you know a funny slide might not
+be so funny if I'm not drunk when I'm
+giving the presentation so I apologize
+secondly I do want it I do want to say
+ask some real quick questions first
+there's any how many people here have a
+fingerprint sensor on their on their
+cell phone Oh awesome okay got a couple
+more questions for you how many people
+in the audience are law enforcement okay
+so so I got I got two liars again that's
+that's great okay second question how
+many people in the audience are
+criminals raise your hand the same one
+there
+okay we got hey on other law enforcement
+guy over here there's criminals over
+there okay third question how many
+people in the audience are law
+enforcement but prefer not to say it
+raise your hand okay God got lots more
+of those okay so thanks and what I want
+to talk to you about today is really the
+laws about your your fingerprint sensor
+on your cell phone right and before I
+get started I do want you to know that
+the first of all I am NOT a lawyer okay
+so I want you to understand that that
+going through this conversation make
+sure you realize where you're getting
+this information from additionally i am
+not a cop okay so you know if I do make
+statements about a police officer were
+to you all say this on the end your
+rights are there once again I'm not a
+police officer either so please please
+please make sure you consider where
+you're getting this information my name
+is Bill I'm American okay I am an
+American I'm an informed American and
+occasionally I have one I've watched a
+few videos on am I being detained and so
+what I did to what I've determined from
+that is that I am the world's most
+leading expert in the laws as they
+pertain the United States and that i
+only have to roll my window down that
+far when I'm speaking to a police
+officer so once again really i just i
+went through those slides just because I
+do want you to consider where you're
+getting this information from I did do a
+lot of research I have done a lot of the
+you know well sorry I already said that
+I've already done a lot of research
+around this but I do want you to
+consider where you're getting this
+information from and you know if you do
+have any questions I would suggest that
+you talk either with one of the people
+that raised their hands as being a law
+enforcement I would not suggest doing
+that because I know who they are they're
+not law enforcement or i would suggest
+speaking to your attorney who's jurist
+so really what I wanted what you know
+the crux of this whole presentation
+really stems around our 5th amendment
+and I know that you guys know it by
+heart and this is the 5th amendment but
+quite honestly the most important part
+I've bolded is that no nor shall you be
+compelled in any criminal case to be
+witness against himself okay and it's
+really important and you know and
+there's been a lot of funny jokes that
+you know 1 2 3 4 5th you know about
+whether or not you can what you should
+do in and make sure that you don't
+testify against yourself I want to tell
+you a tale of two safes so while the
+Fifth Amendment does prevent us from
+testifying against your safe yourself
+I'm sorry a defendant can be compelled
+to produce material evidence that is
+incriminating okay that's really
+important it's really important that you
+understand there's a big difference
+there that you can be compelled to
+reduce material that is incriminating so
+a really good example is this tale of
+two safes ok for example you know so you
+know you guys have all watch cop shows
+or whatever um fingerprints blood
+samples voice samples handwriting
+samples or other physical evidence can
+be extracted from a defendant against
+their will if it pertains to a case okay
+Justice John Paul Stevens why was
+talking about a safe when he said he may
+in some cases be forced to surrender a
+key to a strongbox containing
+incriminating documents but I do not
+believe that he can be compelled to
+reveal the combination to his wall safe
+and if that isn't important to you that
+they need to step back and think about
+what that means right so if I have two
+safes and one of them is protected with
+a key and one of them is protected with
+combination I need to understand what
+are the threats against that against
+that same right you can consider how
+we're protecting our data and who were
+protecting that too against the Supreme
+Court then strength in that position and
+they stated while the key is a physical
+thing and not protected by the Fifth
+Amendment a combination as the
+expression of the contents of an
+individual's mind is okay so I want you
+to stop and think about that the Supreme
+important that excuse me I'm sorry the
+Supreme Court has also solidified that
+statement so as it pertains to our saves
+in our houses criminals so we are very
+lucky that no criminals came tonight but
+criminals it's really time to switch out
+your safes right so if you have a safe
+that's protected by a key and you need
+to keep law enforcement out you need to
+have a have a combination safe but if
+that being stated if you do have a
+combination station be careful about
+where you keep the combination if that
+combination is stored on a piece of
+paper or it has any other physical you
+know manifestation of itself that could
+also be compelled sir I'm not a lawyer
+I'm just a informed American it's a
+vulnerability right it's something that
+you have that you cannot change you know
+I've asserted a look for many times that
+I don't I I really don't care for
+biometrics as an authentication
+mechanism in fact I've only turned over
+my fingerprints once you know
+rest you know for my whole life I've
+been very protective of my fingerprints
+it's seen as something that is proof
+positive it's me if right so I've only
+turned over my fingerprints once and
+unfortunately you know that that
+database has been lost right so so if
+now there is a distinct puffs
+possibility that my fingerprints could
+be used in a crime that I that I didn't
+commit and I have no way to prove that
+it wasn't me because quite honestly you
+know a fingerprint is almost positive
+that it was me so I'm asserting that
+your fingerprint is a vulnerability and
+not a security measure just treated as
+such as I was sourcing this this slide I
+realized that down there this is not my
+finger it really didn't matter which
+which word I emphasized there it would
+really change the meaning all right so I
+could either say this is not my finger
+or this is not my finger that really
+changes that no but ok last slide yes so
+I do want to add some other some other
+implications that if your cell phone is
+compromised you know through the use of
+your of your fingerprint or otherwise
+what could be led to do you know what
+can be used otherwise from there you
+know if my cell phone were to be
+unlocked and to be accessed people might
+have access to you know my password
+saves my VPNs made my home network right
+maybe my files that I've stored on
+dropbox you know they may be able to log
+into my computers you know so if you
+were to access my password vault you
+could have access to my different
+computers you could have access to my
+truecrypt or my very good as
+earlier to decrypt my football
+description drive right so so really
+that's the end of my talk I do watch
+really the purpose of day stock was just
+to get you to consider some of the
+security implications of using a
+fingerprint reader on your cell phone
+quite honestly for most people it's
+perfectly okay right and quite honestly
+for me it might be okay you really do
+need to consider the threat is the
+threat someone's stealing your phone
+right or are you housing you know world
+secrets on your phone that you need to
+protect you know as much as you can and
+consider the strength of that about
+authentication mechanisms okay let's see
+it my name is Bill surgeon and thanks
+everybody

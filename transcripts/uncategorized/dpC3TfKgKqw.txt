@@ -1,0 +1,1300 @@
+so that's kind of what got me into this
+um radio scanning is more kind of about
+what's out there uh you can hear
+airplanes talking to the control tower
+you can hear Engineers talking to the
+railroad base police fire
+dispatch but uh signals intelligence is
+more about targeting somebody specific
+you see somebody you know is
+communicating uh and trying to get into
+whatever it is that they're talking
+about uh so really infiltrating radio is
+targeting your search to Transmissions
+from a very specific person group or
+organization so this is kind of a really
+newbie entry entry level intro to
+signals
+intelligence signant is gathering
+intelligence by intercepting signals
+from the
+Target and we're going to focus on the
+actual signal detection there's a whole
+bunch of various concepts with signals
+intelligence protction is kind of
+finding uh the actual frequencies that
+are being in use the protocols being
+talked on and that kind of
+stuff I kind of talked about uh I guess
+I would file it under trolling but uh
+the various reasons you might want to do
+this are situational awareness um you're
+at the mall or you're at a shopping
+center or you're in the entertainment
+amusement park listening to radio
+traffic can kind of tell you what's
+going on
+um gives you a little bit of a clue as
+to uh you know your situational
+awareness there wasn't a time not very
+long ago we were at the zoo and we
+actually knew that there was somebody
+with a gun in the park before uh
+security knew or as security found out
+we actually heard about it on the radio
+um you guys may remember that not very
+long
+ago um also so sometimes it's fun just
+to look around you see somebody with a
+radio and have fun with the challenge of
+finding the
+frequencies and then of course
+rolling sometimes you can hear uh
+there's a Wendy's across the street and
+they use a little radio frequency
+headset um I can't actually hear it from
+here because it's very low power but uh
+sometimes you can have some fun with
+that
+let they're they're bidirectional
+communication you and uh you can hear
+what the person is saying into the
+intercom as they're in the drive-through
+Lane and you can also hear on the
+different frequency what the cashier is
+saying to them and you may or may not be
+conversation since I'm FCC licensed I
+don't do
+that also there are a few other legal
+issues here that I'm will to cover um
+there are certain radio frequencies that
+you really ought not to uh intercept um
+FCC makes it illegal to receive uh or to
+intentionally listen in on telephone
+conversations pager Communications
+encrypted signals um it's also an
+illegal to use uh radio monitoring if
+you're in the middle of trying to commit
+a crime
+so they this is one of those things
+where they don't just bust you because
+you have a radio but if you're trying to
+rob a or you're trying to shoplift from
+a store and you've got a radio tuned to
+Mall security and you're trying to
+figure out where they're looking for you
+to help of Aid um they can also add an
+additional charge on to you for
+that and also some cities like the one I
+live in in Lanexa they have this stupid
+codified rubbish in their in their city
+code that basically says you can't scan
+for police officers from your car they
+do that
+implementing this kind of thing which is
+just
+rubbish technically the ham radio I have
+in my car that I use for storm spotting
+is illegal in Lanexa o sh and Overland
+Park because it can also receive
+frequencies that they
+use now they're all digital and I can't
+make sense of any of those without using
+some tricks that shogo will hopefully
+help us with when he gets here but those
+are some of the legal issues with kind
+of
+stuff and yes there uh I'm going to
+cover I'm going to cover trunking here
+in just a second um there's basically
+three common signaling types in use that
+I'm going to cover uh one is simplex
+where um how many of you have used uh FR
+FRS radios cheap uh department store
+walkie-talkies that kind of stuff that
+is uh that's technically half duplex we
+call it Simplex but that's radio talks
+to the radio once you get
+you know two blocks apart in the city a
+mile or two apart in the in the woods
+you can no longer hear the other
+person duplex is
+where you have typically each radio
+transmits on a different frequency than
+it listens and we use that for repeater
+Communications so uh when I take my ham
+radio here that I've got and I'm out in
+field storm
+spotting I I listen on one frequency and
+when I press the it switches frequencies
+and talks to a tower way up in the sky
+on a different
+frequency and then that gets
+retransmitted out on the frequency
+everybody listens to and it happens in
+real time and so that's that's how a lot
+of business repeater systems work that's
+how a lot of ham radio systems work and
+how some gmrs systems
+work so if you find yourself listening
+to uh this is popular with security
+widespread places like Parks uh you'll
+hear just a one piece of a conversation
+it sounds like somebody's talking TOS
+every two three
+minutes you're probably on the input
+frequency of that repeater
+system there's a couple of ways to
+figure out what the output frequency
+usually is um I'm not really going to
+cover that but you basically want to
+just keep scanning around it's usually
+within five Megs of that trunk systems
+try to share a very small number of
+frequencies say eight or 16 among a vast
+number of talk groups um this is what uh
+KCK Police Department is using for
+example they've got about 12 frequencies
+uh they with that cover ambulance
+dispatch fire police and they've also
+got tactical channels so if there's
+something like a police chase that
+requires um three or four officers plus
+dispatch to be
+involved they can take care of that kind
+of on a Channel and when a domestic
+violence call comes in they can still
+dispatch somebody in the field and it's
+Channel this mess here is a just a real
+quick look at some of the frequency
+Bands That Make for interesting
+listening um I don't have them here on
+my screen but uh typically you'll find
+businesses between 151 155 mehz and then
+up um actually close to the same
+frequencies that are used for gmrs FRS
+radios us hams you can hear talking in
+all sorts of frequencies but those are
+two popular ones for voice
+Communications and your average handheld
+scanner from Radio Shack can pick these
+up and uh Aviation has its own set of
+frequencies and these are interesting
+Aviation uses amplitude modulation which
+is typ it's different from FM it's am
+like your AM radio but if you've ever
+been driving cross country uh you'll
+hear your FM station sometimes just fade
+out and it'll seem like you get a slice
+of this Channel and a slice of this
+Channel and it kind of goes back and
+forth until the other channel really is
+strong enough to hold
+it am doesn't cut in and out like that
+am two people three people can talk
+right over one another and you can
+actually hear all of them at the same
+time that's important for airplanes you
+don't want one airplane guy talking over
+everybody else and
+overriding uh a couple other frequency
+bands uh I'll have these slides up and
+you guys can use these to kind of play
+with uh this bottom graphic is just a
+map of frequencies I found on the FCC
+website only covers a very small part of
+the frequency range but uh that's where
+most of this stuff is
+happening so how do you listen to and
+find these stuff
+um the the cheating way is to find a
+smartphone app like radio scanner uh if
+you fire up radio scanner I've got a
+screenshot here
+um you can just see a list of uh known
+systems and you can actually just click
+on one and listen to it yes it's coming
+to you via Wireless because it's going
+over Wi-Fi but that's not really the
+point um you can use a frequency counter
+or a bug detector you can find these on
+eBay for 40 or 50 bucks um They Don't
+Really Work good to find bugs most
+modern bugs are in the 2.4 gz 5 gz range
+these days but um they are actually
+pretty good at finding baby monitors U
+the uh video cameras that were popular
+10 years ago they can actually kind of
+tell you where those frequencies are and
+then you can tune in with a with a
+receiver dedicated receiver um
+inexpensive radio scanners from Radio
+Shack Ham radios this will receive from
+about 500 khz up to a gigahertz um and a
+lot of ham radios will do that kind of
+stuff and then uh
+uh Joel is next he's going to go ahead
+and talk about the uh USB dongles and
+and stuff like that um another way you
+can find frequencies uh is by uh just
+doing some research um companies that
+register with the FCC have coordinated
+frequencies uh their licenses are online
+for everybody to see on the FCC website
+a lot of people republish this data it's
+very searchable uh you can search Oak
+Park Mall security
+frequencies um you'll find radio
+reference right there and you'll have a
+list of frequencies that have been
+coordinated and allocated for them also
+a lot of the people that use scanners
+have mailing lists yaho groups uset
+Google Groups they discuss things that
+they find um so you know the internet is
+a good place to start searching for
+this um
+observation here in the crowd I saw
+somebody with a with a radio um just one
+of the waitresses it took me just a few
+minutes to find out what frequency that
+and I don't know but uh I do know if I
+it
+anyway motor us a handful of frequencies
+most of their radios are just
+again a okay anyway a little light lit
+up on my on my radio here so I think he
+actually did
+it uh I've got a I've got a bank of
+memory channels here that has a whole
+bunch of just typical Motorola
+frequencies in it um so I flipped to
+that bank because I saw a Motorola radio
+on somebody and said let scan a couple
+minutes later I heard somebody this is
+really boring stuff you can hear what
+table ordered what
+awareness
+yeah
+if somebody has a part 90 certified
+see you have to get it certified by the
+FCC it's a real pain in the butd
+um of course I I skipped over to this
+slide scanning uh one one thing is uh if
+you see a short stubby antenna like on
+your F FRS radios typically it's UHF
+it's usually in the 400 megaherz fan you
+start scanning around 450 460 megahertz
+and you just Loop that 450 to 470 space
+for long enough you'll hear whatever it
+is they're talking about more than
+likely I did run into one place uh
+hospitals are starting to go with
+digital they're not trunked they're not
+duplex they're just digital spread
+Spectrum
+radios you'll have to use some SDR
+hackery to find those uh they usually
+spread their stuff out around 40
+channels and they only spend about 200
+milliseconds on each Channel and they
+just hop around in a pre-programmed way
+very very hard to listen to you can sit
+just all the other radios follow each
+well it's probably super random um and I
+think I have reason to believe that some
+of the systems have not a repeat but
+controller something that's kind of a a
+Time sync for them that tells them what
+frequency to use in what order um
+because I found a um I found a digital
+thing in the range there while I was at
+the hospital that was just sitting there
+turning out stuff that sounded like
+modem noise and it was on one of the
+frequencies that the radios are designed
+to receive
+so I haven't quite dug into those I'd
+actually need to get a few of those
+radios and actually play with them and
+they're really expensive $400 aie
+uh so uh scanning is one way to find
+them you know and hopefully you know
+bigger antennas like this that you see
+on a radio like a business radio you
+might think those are more than 150
+megahertz and shorter antennas probably
+more than the 400 some
+mehz
+um last thing is a frequency counter I
+don't have a live demo for this but a
+frequency counters a real lab great
+frequency counter you hook it up to the
+antenna output and measures the actual
+frequency being used um cheap frequency
+counters like the old ones you find from
+Radio Shack they work a lot like the bug
+detectors and that uh they do a really
+fast scan and can kind of narrow in on
+frequencies that are being transmitted
+very very close by so I would need to be
+from here to Joel from somebody while
+they're talking and I've done this um at
+my local H housee actually I was just
+standing there at the customer service
+desk waiting for somebody to 15 lottery
+tickets and stuff and I'm just trying to
+get a refund on something and the lady's
+sitting here talking on the radio and I
+pull out my radio and hit the frequency
+counter mode and sure enough I found a
+frequency right there so um that's kind
+of the very basics of trying to narrow
+in on where the frequencies are that are
+being used using Analog Devices and and
+things like this um Joel's going to
+cover uh the SDR the basics ofdr stuff
+and uh you can also use these cheap SDR
+dongles um now you know it's a little
+easier to carry one of these than it is
+to carry a full laptop with a big
+antenna thing hanging off of it but uh
+you know if you start to get serious and
+you want to sit in a parking lot and
+play around laptop's not a bad way to go
+I'll hand it off to
+Joel
+yo
+I remember my VGA D this
+time all right SDR sharp is a program
+that was made to interface with very
+very cheapes
+uh USB TV
+adapters so I'm GNA go over just the
+basics I'm G do it real quick just to
+save more time for the guys coming after
+me uh I'm gonna go after we're gonna
+install SDR sharp and do driver setup
+and then I'm gonna tell you
+about a it's it's a virtual sound driver
+so you can actually pipe uh sound from
+one application to another inside
+windows I mean there's real operating
+systems that do that well natively but I
+don't have one of those
+with okay SDR sharp.com so if you're
+interested spend 10 bucks at eBay and
+get the SDR sharp software and you're in
+business uh so essentially just to
+install it UNC uncompress the zip uh go
+to the install folder and then there's
+the runme the install. so it goes
+through downloads the newest version of
+the software and then at that point it
+creates a folder called SDR sharp and
+you can run it from
+that um one problem about drivers is
+that uh the driver here it's the
+dbb uh essentially it's just anything
+with an RTL uh chip
+you can use with this but in order to
+get the drivers to work you have to use
+the
+Zod zadig utility that comes with SDR
+sharp essentially what that does is that
+it substitutes in the correct driver for
+device and when I was going around and
+looking on the internet for how to set
+up a cheap uh p25 scanner uh they
+recommended you pay 25 bucks or
+something like that for some virtual
+sound card app and so I found one that's
+for cheap or free depending on how nice
+you are to the
+fellow and so that's right there and
+done okay so usually on eBay these
+things cost about you know 10 bucks so
+if you're spending more than1 on one of
+these you spent too much okay so if you
+spent 25 bucks at a conference you
+got you got screwed um so what can you
+do to accessorize your $10 investment uh
+by the time you're done accessorizing
+with this you probably doubled or
+tripled or qu the cost so usually the
+little default antenna that comes with
+it it's only that y big and it's cheap
+wire that's gred badly soldered to the
+actual antenna itself so usually it's
+not that great so getting a proper
+antenna really helps out a lot otherwise
+unless you're standing right next to it
+it better be pumping out you know
+watts and then I'm gonna do
+a uh first off I'm just going to kind of
+point out the features here um at the
+top here is going to be a tuner and then
+we're going to be using at something
+called the waterfall and then we'll see
+beinged
+instr
+D okay so doesn't show up any devices so
+in order to see everything I have
+I'll
+2838
+USB okay so it's now it probably wants
+to
+your
+a
+little
+the
+top
+we
+and then you see sign water so this here
+will allow you to tune it find the
+channel
+it should play audio
+although
+demo you can see all the frequencies
+swap anyway okay uh and without further
+have
+all right so I'm gonna be talking about
+uh software using tapw to find radio
+for um basically analyzing various radio
+frequencies so the real cool thing about
+software Define radio is it let you
+things that you might not otherwise be
+able to look at with um with FM radio or
+something like that you can obviously
+tune in to something there's radios all
+over the place that are uh that you can
+use as they were designed but with uh
+with software defined radio you can look
+at almost anything across the Spectrum
+as long as you can tune into it so um
+it's it's really cool I think it's like
+uh buffer overflows were in 1990 like
+everybody knew they existed kind of but
+people weren't really doing them
+anything with them but now that these
+software defined radios are are U
+becoming popular people are going to
+start um finding vulnerabilities and
+systems that people just thought hey
+nobody can exploit this it's on 800
+megahertz nobody has an 800 MHz
+transmitter um so I think this is going
+to be a really big thing over the next
+10 years or so um kind of along with the
+Internet of Things um that's kind of big
+now people are going to um you know be
+standing up things that sit on 800 HS
+that listen to you know um different
+commands over over over a radio
+frequency so I think this is really cool
+what we have here
+um there's uh so there's many known and
+unknown protocols I guess I mirrored
+here so I can I can actually uh get out
+of presenter mode um click on my link
+uh if it slowly loads um that you know
+you obviously think about walk radio
+like uh Wi-Fi and and and
+um just the just the standard radio
+protocols like walkie-talkies and maybe
+maybe cell phones uh but there's a lot
+of weird stuff that's going over the
+waves um if you if you if you look down
+here I mean
+there's uh there's pager traffic that
+you can look at there's all sorts of
+different stuff that you can just
+read um where sorry I I uh a
+little there's train signaling so you
+like trains communicate with each other
+like the the middle engine on the train
+communicates with like the front engine
+and it does things with the train tells
+it that it's running at full speed or
+tells it it should break that's that's
+kind of I mean it makes sense but it's
+kind of weird that that all goes over
+RFS you can um I mean the the different
+engines will broadcast to each other to
+tell them when they should break and
+everything that's that's it's pretty
+crazy stuff um let me see if I can get
+out of this uh I have no idea how I
+got f11 all right yeah worked um but now
+computers all right so the there's
+there's the
+proprietary um so what really interested
+me about software defined radio is
+attacking proprietary stuff stuff that
+people thought that nobody could no
+nobody could listen to or nobody could
+uh transmit to yeah nobody no one cared
+um so there's things like weather
+sensors I have one sitting up there
+almost exact same thing there's things
+like the microphone that I'm speaking on
+right now um they probably weren't
+designed with security in mind um and I
+didn't probably didn't purchase them
+with security in mind but there are um
+things that an attacker could uh
+potentially EES drop on or maliciously
+transmit to um so those are pretty like
+household items you know just talking
+temperature sensing uh but there's a lot
+of other stuff that's uh impactful um
+there's your there's your key fob uh
+someone
+can basically read and retransmit your
+signal if there's weaknesses they can
+brute force and it uh unlock your car
+there's a talk a black hat that did that
+um it was on a basically an older model
+car but uh you can I mean that's I'm
+guessing somebody's screwing something
+up somewhere and and we're going to find
+out about it in a few years once it's
+everywhere and they're going to have a
+huge issue to fix once there's 12
+million cars that have this thing that
+device and by obviously by identifying
+this stuff earlier rather than later we
+can uh help them uh secure those things
+there's things like uh wireless
+keyboards um those those transmit the
+sensitive data obviously that you're
+typing tying in over uh some sort of
+radio
+frequency there's things like baby
+monitors those were in the news a little
+while ago for being being hacked those
+transmit fairly sensitive things over
+Wireless
+frequencies there's things like alarm
+systems um those also transmit sensitive
+things over Wireless frequencies there
+was a uh a guy that was jamming like ADP
+or you some various Wireless alarm
+systems I think what they do now is
+they'll put Wireless transmitters at at
+some various locations that are either
+battery powered or something um but
+either way they transmit over a
+frequency and someone was able to jam
+them and evade the jamming detection so
+someone could just break into your house
+and not the system wouldn't go off so um
+and they could also of course triggle
+the alarm if they wanted to uh for no
+reason I think one of the systems they
+could get the code back to unlock the
+system um all sorts of bad stuff in in
+those going over those Airwaves so so
+the so there what I'm getting at here is
+there's so many you kind of endless
+amount of devices you look as you look
+around your house and around your office
+that are uh transmitting over
+proprietary radio
+frequencies um so to do all this there's
+a program called G radio and it's very
+powerful and and and quite painful to
+use it's uh has pretty bad
+documentation um it's getting better uh
+but it's kind of the de facto standard
+and it's it's a free open source program
+um so it's good but it's uh it's lacking
+um
+sometimes so what you do is you build
+flow graphs you can you can write code
+to do it but you can also just build
+kind of drag and drop flow graphs to do
+what you want to do with a radio signal
+um here's one that listens to FM radio
+uh it's kind of the hello world of uh
+radio of of G radio is just building an
+FM radio flow graph because it's really
+easy to listen
+to you can listen in on wir spikes with
+G radio um I'll uh I'll show you that
+here uh I think let's see what I'm I'll
+similar probably have
+to this I looked up one of these mics
+earlier and
+actually you can in that screenshot it
+showed on from from
+uh from Amazon The Frequency is
+highlighted there you probably can't see
+it with the resolution we have but uh
+you can see what frequency it is and
+then this is a similar program uh to
+what jelia showed called gqrx it's
+similar to
+Sharp whoa we're getting weird stuff
+late
+I'll go ahead and kill that before it
+yeah before it starts with the feedback
+sorry it was talking late enough that I
+didn't didn't recognize and it kind of a
+little bit distorted but you can tune in
+things like that very easily uh than um
+and
+uh so that's that's kind of one cool
+thing it's pretty basic um to do that
+but and I have no idea why do you guys
+know why the there's like a bunch of
+frequencies across the Spectrum instead
+of just
+one
+all right I
+um so that's uh that's one way to listen
+to Just raw audio uh if someone's
+transmitting that um there's you know
+kind of endless possibilities for why
+and then if you wna what I what I did
+was I focused on this uh wireless
+temperature sensor that I had in my
+house it's kind of uh I just wanted to
+pick one thing that I didn't know how to
+read um so that's that's what I focused
+on and you know it could be because I
+didn't have a train to hack into I I I
+went with my weather sensor um the uh so
+but but that's I mean it could be some
+similar protocol or you know it's if if
+you can do um there's probably no
+security in the training protocol that's
+telling trains to put on their brakes
+and there's probably no security in the
+in the weather protocol um so you can
+take raw signals using uh G radio and
+actually I can show you the block
+diagram uh for that let's
+see oh we we're at a really bad
+resolution here this is not going to be
+good uh but you can you can uh record um
+you can tune into a frequency and
+demodulate it um it it probably looks
+kind of complicated some of these are
+grayed out and disabled uh but you
+can um demodulate the frequency and and
+write it to a file using uh the block
+diagrams or you can just write straight
+python to do it uh but but once you do
+that um if
+you at first you'll have just a uh um
+that signal that was up there a second
+ago I guess it's uh loading live over
+Wi-Fi
+um uh but that's what you
+uh you you'll have this raw signal uh
+and then once you Pro process it through
+that flow graph you can have a um you
+once you actually see the data every 39
+seconds that thing transmits um and
+that's what that that's what a
+transmission looks like and when you
+zoom in on a little bit you can see the
+actual data being transmitted over the
+wire and then when you zoom in some more
+you can actually see uh still this isn't
+enough uh
+um resolution here it's not I guess I
+guess I lost internet access sorry but
+uh when you zoom in more you can
+actually see I don't know if you can see
+that there but there's a number of dots
+um it's not doing anything uh that's
+made up of a ton of dots you probably uh
+and that's actually your sample rate so
+when uh software defined radios or
+radios when you hear about like your
+downloaded MP3 or wave file that's 48 uh
+Kilz or something like that um each one
+of the those
+is one of those dots so that's the
+number of samples per second it's taking
+um and that's just basically how it
+reads it over the wire so that's uh
+zoomed in just the signal and you can
+actually uh I don't have a screenshot of
+it here but you can actually or at least
+on the slide deck but you can then from
+there you can just take that signal
+using python or or G radio and take it
+to actual code and just and just read
+what it is and then with the software
+with these cheap software defined radios
+you can only listen but the hacker
+there's some uh cheap option better and
+better options like hack RF and blade RF
+that you can actually transmit on so um
+these are just coming out uh they're
+they're getting cheaper and cheaper and
+they're really going to make a lot more
+things a lot of things more more capable
+um as we uh you know as they come out
+over the next few
+months um that's that's all I had
+Kevin's next I guess show goes here I
+see
+thanks
+okay I'm Kevin Bennett and I'm going to
+Dem demonstrate for you one of the um he
+was talking about some frequencies that
+you can look at that have pretty neat
+information on it I'm going to show you
+one of those um what I'm going to be
+demoing here is ADS andb which is
+automatic dependent surveillance
+broadcast
+so um back in about 2010 2011 the FAA
+came out came out with a requirement
+that all commercial aircraft or all
+General and Commercial aircraft will use
+a new
+protocol that will use their GPS to
+report their position their ident uh
+over a frequency that frequency is 10 90
+megahertz so very convenient um these
+aircraft will have a box in them that
+that they can use in conjunction with
+their GPS to broadcast where they're at
+this is a uh a
+uh a policy that they are going to make
+mandatory by 2020 in the US it's
+actually mandatory in Australia and in
+some places in the in the uh European
+Union right now what this will do is
+replace some of the older transponder
+and secondary Radars so that base
+stations so the air traffic controller
+can tune in have this equipment tune
+into a frequency and see where all the
+aircraft are at they don't have to use
+any of this older equipment it's cheaper
+and it allows for additional
+features um their
+whole premise on this was for safety so
+um again it will help aircraft who could
+put this cheap equipment in their
+aircraft and actually see where other
+aircraft are at and avoid other aircraft
+uh without having to contact the the
+tower and have the tower tell them where
+other aircraft are um they can use this
+VFR which is a visual flight reference
+so if they're just flying and they're
+looking out the window or in IFR
+instruments only if it's really bad
+outside they can also use this equipment
+to see where other aircraft that they
+can't see are that may be close to them
+um some of the other things that it it
+may eventually do is also provide in
+weather in the aircraft so instead of
+having radar on their aircraft they can
+use a frequency to get their weather
+information um some of the stuff that
+currently adsb provides is the altitude
+the aircraft number so its
+identity um it's heading it's velocity
+so it's speed and it's uh it's a cent or
+decent rate plus also using the GPS it
+location so a couple things you need if
+you are a just a hobbyist that want to
+gather this information is a cheap um
+software defined radio um an antenna a
+decoder software and then the software
+to graph out the display pretty
+simple I use the real Tech RTL which is
+what um he was talking about it's about
+10 bucks and I also even use the cheap
+default antenna on there um and it
+actually works um it's recommended that
+you build a little bit better antenna
+I'm not that far yet um eventually I
+will for better
+information and then the decoder which
+I'll show you the software for and then
+the actual
+software so I've learned not to do live
+demos so I'm going to attempt to show
+you a video video of me doing a
+demo
+hopefully okay so on your computer
+you've installed a decoder basically you
+start that decoder up it comes into the
+sorry
+so this actually starts Gathering the
+packets you see they're starting to
+scroll down on 10 90 megahertz very
+simple to do start up your software that
+does the
+mapping um I'm using adsb scope it's
+free software you can get it there are
+there's probably eight nine
+different software Suites out there that
+you can get um this is the basic
+cheapest one free
+I'm going through and I'm setting up
+some of the pre- requirements for it
+just making sure that it's going to read
+my
+decoder I'm going to set it to my
+location I think it's somewhere in
+Europe right now um I'm going to set it
+to uh Missouri and I'm going to tell it
+to start receiving data from the
+aircraft now I was in Lee Summit
+actually in the
+basement and um as you can see with the
+default
+antenna I'm typing in my
+location I've already started to receive
+some aircraft there's an outbound
+aircraft right there about 25 kilometers
+out from Kansas City from where I'm at
+I'm able to receive data from aircraft
+about 150 miles 150 kilometers
+out now some stuff to show you with this
+it's hard to see but if you start
+playing around with it you've got the
+aircraft you got the aircraft
+identification number that's being
+broadcast you can go online put in that
+aircraft identification number and pull
+up what aircraft it is you can also pull
+up usually what um what airline it's
+flying for what its destination is where
+it's from um all from that information
+right there you've got the um the
+longitude the latitude the
+altitude um that aircraft right there is
+what is it 12,000 fet
+it's 18,000
+ft um and it's
+aund 180 miles an hour it is flying
+outbound from probably from KCI going
+someplace uh as you can see I've picked
+up two aircraft that are that are
+actually broadcasting their GPS location
+again because this is not mandatory at
+this time I'm going to pause it it's not
+mandatory at time you can see I'm
+actually picking up eight aircraft but
+some of the aircraft is not broadcasting
+its GPS they're not required to at this
+time by 2020 they will be but I am
+getting their altitude a lot of times
+I'm getting their air speed um I'm
+definitely getting their identification
+so I don't know exactly where they're at
+I know they're within 150 miles of us so
+you know right now or at this time it
+was about 8 o'clock last night there
+were eight eight aircraft within 150
+miles of Kansas
+City um it's a really neat program
+really easy to work with um again
+there's some software out there that is
+really really good this is basic fun to
+start playing around
+with um let's see one other thing I want
+to show
+you part of um the FAA requirement they
+about about this software about this
+requirement and basically what it says
+it's actually number 31 on their list
+because it's not that important
+important will the information broadcast
+by adsb out be encrypted for security
+purposes no is their answer so just
+leaving it there you could broadcast
+these packets at that frequency and put
+an aircraft anywhere in the world if you
+wanted
+to or a fleet of aircraft or a formation
+cool looking formation or something of
+course it would be illegal don't do it
+but someone
+there
+all right so I guess I'm am I last all
+right so um to continue on with the
+theme of you know hacking RF and
+software defining radio one of the
+things that I wanted to talk about was
+that um through the use of these really
+cheap um SDR dongles that cost about
+nine 10 bucks each you can
+monitor digital trunk Radio Systems and
+so anybody give an example of who might
+use a digital trunk radio
+system like the the police department
+maybe
+yeah threel agencies they still back
+there maybe they're gone good so let's
+Po and you guys got some of the basics
+ear and I apologize I came in late I was
+um coming in from flying in from DC
+today and um had random bad weather in
+Detroit and so I think you guys covered
+some of this right is that right so syix
+communication it's easy it's me you
+walkie-talkies going back and forth um
+pretty pretty good you use useful for
+most the most extent except there are
+some challenges and some of them are
+that as if you got a walkie-talkie the
+into that frequency you can jump in the
+conversation right so to solve that they
+came up with some access control methods
+they pretty simple we really use some
+simple tone phones and those types of
+things to help make sure that you're
+talking or can only talk to or hear the
+people you want to hear so maybe you
+know if I'm talking to Noah for example
+and we're using ctcss right so we'll set
+a frequency in the back end non-audible
+that will basically filter out if if
+Wayne Crowder jumped on our frequency
+and he started talking and yammering we
+probably wouldn't hear him because he
+wouldn't have our code so that worked
+for a little while but then they went to
+trunking or and we'll talk about duplex
+and repeaters next so they went to
+duplex and repeaters the cool thing
+about a repeater is that a repeater can
+usually have a lot more power strength
+than a handheld radio so stick it up on
+a mountain it can see for a longer
+distance and and the thing here with a
+repeater system or duplex is using two
+frequencies and um so you're talking up
+on one frequency the repeater sends out
+on another so you're listening on one
+frequency and you're transmitting on a
+different one you get more uh like I
+said longer distance better range out of
+it um helps to with some Access Control
+problems because a lot of repeaters are
+restricted you got to know the input and
+the output frequency for example and if
+for example if you're going to monitor
+repeater systems you got to know the
+output frequency primarily so you can
+listen in on that those conversation
+discussions so but that led to trunk
+Radio Systems and the reason they kind
+of went the trunk Radio Systems is oh
+well there we go actually I saw this
+really cool anybody here like cars
+because I like cars and um this was a an
+Sr T8 you know Dodge that was up at the
+speedway and I heard that thing like a
+mile away I mean it had headers it
+sounds really cool and so I had take a
+picture anyway that I guess KCK has that
+car so you see that on this I actually I
+doubt that they use that to patrol with
+um anyway so trunk Radio Systems so we
+know that um law enforcement public
+agencies like to use trunk Radio Systems
+and the reason that trunk Radio Systems
+are pretty popular is that allows us a
+pretty efficient use of our bandwidth so
+if we're talking Simplex for the
+majority of the time that frequency is
+unused so what uh a trunk system all
+allows you do is pull frequencies
+together and utilize them in a more
+efficient way so that way 20 30 people
+can be talking at one time but you know
+conversations can be relatively quick
+transmission and so how does it work so
+how it generally works is that you have
+some control frequencies or a control
+frequency depends on the type of system
+and the control frequency basically is
+on all the time it's a managed by
+computer and it tells the recipients or
+the users in the system what frequency
+to go to when you want to hear
+transmission and so there's this concept
+instead of frequencies that you use
+called trunk groups so in the Kansas
+City area actually the whole metro area
+most of the law enforcement has on a
+single trunk system so they've pulled
+together all the frequencies that all
+these agency owns of LA Police
+Department the Lenexa Police Department
+Kansas City Missouri Police Department
+Kansas Highway Patrol so they've taken
+all the frequencies they used to have
+individually put them together in this
+um trunk system so they can all utilize
+that they can even talk to one if they
+want but if the Leal police department
+has their own specific trunk groups that
+they listen to so when a when a patrol
+car wants a guy someone wants to get on
+the radio and talk he Keys up his
+handset and what actually happens in the
+back end is that he actually goes out
+and talks to the control system that
+says Hey I want to chat the control
+system says okay you're on talk Group 1
+2 3 4 go to frequency X and then all of
+a sudden it blasts that out to everybody
+in the OA Police Department who's on
+trunk Group 1 2 3 4 says hey if you want
+to listen to a conversation on trunk
+Group 1 1234 everybody tuned to
+frequency X right now and it happens
+instantaneously they go to frequency X
+the guy says what he used to say gets
+off the radio and then everybody goes
+back to monitoring the control Channel
+again make sense all right cool so
+there's quite a few popular uh trunk
+systems out there that are digital in
+the area here they use project 25 uh
+APCO project 25 and um it's one that you
+can easily listen to so how do you
+listen to Digital radio communication so
+um one you can go out and buy a digital
+radio at a couple thousand
+bucks you can buy a digital trunk
+scanner I've got a scanner here this is
+an analog trunk scanner so this as of a
+couple years ago became obsolete for
+listening to um local law enforcement
+for
+example that works for KCK I thought
+they're on uh project 25 they're not
+okay cool so if I was in wine. County I
+can listen to to them all right um or
+you can go out and buy software defined
+radio for about 50 bucks probably
+probably less than that maybe 10 20
+depends all right well I I paid 15 for
+mine but that includes shipping so I
+don't know so that was for one you need
+two dongles to do it and the reason you
+need two is you need one to monitor the
+control Channel and the other one gets
+told told where what frequency to change
+to to listen to whatever communication
+trunk group Etc frequency you want to
+listen to so that's why that how why you
+need two of those and so in order to do
+that if you want to use SDR if you want
+to spend $3,000 to go buy a used police
+radio um if you're in the cheaper range
+like you know I'm kind of interested in
+is so you need two SDR receivers um they
+look like this and you guys have seen
+those he's got one as well um some so
+and software so SDR sharp which was
+already we've already seen a demo of
+before that really you don't necessarily
+need that to do the digital Comm but I
+like to use it because it's an easy to
+use interface because you got to find
+the control channel that works best for
+you and you can go out on the web to
+like radi reference.com oops that's
+you okay I know that's probably kind of
+smart and hard small and hard to see but
+this is the the page on radi
+reference.com that shows for the Kansas
+City um digital trunk group that most
+law enforcement agencies on what their
+trunk group numbers are as well as the
+control frequency so you know if you
+want to get all crazy you can plug all
+these control frequencies in that's good
+or you can use something like sdrsharp
+and find the control frequency for your
+signal all right and then uh so that's
+good and all and if you're using it's a
+digital voice if a digital trunk system
+that's using analog voice signals you'll
+be able to uh decode it right off the
+bat using unit trunker um which is a
+software that you'll need to to manage
+the trunking right so controls your two
+SDR radios listens a control frequency
+and manages the receive um SDR Radio you
+can also if if if that's not the case
+for example here they use primarily
+digital you'll need something to decode
+the digital Communications and that's
+where another piece of software comes
+into play called DSD so it's um I think
+is digital something decryption I don't
+know decoding um so DSD will decode the
+digital signal so you can actually
+understand it so it doesn't sound like
+you know like a modem basically is what
+they sound like and then in order to
+connect um in order for DSD to decode
+that you need a virtual audio cable and
+well yeah donation
+we all right I and I use the donation
+one so um and it seem it's it works the
+other one one is freeware but every 10
+seconds it gives this voice saying hey
+you know you're using freeware please
+software all right and I was going to
+give a demo but unfortunately um I just
+am not prepared I was on an airplane all
+day long and um not ready for that I
+couldn't get I couldn't get a I was
+trying back there to get a frequency a
+control frequency that could pick up
+here I know what I could pick up my
+house and OA but I couldn't pick up
+anything I don't know if it's well
+obviously this is the this is obviously
+a really awesome antenna not
+so so yeah this this is not a great
+antenna so if you actually want to do
+something really good with it the
+recommendation is like you said buy one
+or build one um I've gotten it to work
+but I can't even inside this building
+right even now I can't even pick up like
+a radio station FM radio so um I don't
+think I don't think it's my setup I
+think it's it's the antenna because with
+try
+so interesting use cases I know we
+talked a little bit about that earlier
+and and Alex had some great examples um
+modering utility usage so who in here
+has kcpnl for your provider almost every
+right for electricity who this summer or
+over the summer had their uh meter
+replaced I know mine was do you know
+that those meters are now RF enabled go
+look on the side it says FCC so guess
+what you can
+do well well well for one thing you can
+do is you can monitor your electricity
+usage right so instead of going out and
+buying stuff no you can't do that um so
+you can monitor electricity usage so it
+actually puts it puts out pushes out on
+a 9900 mehz frequency um your usage
+report so it actually has a couple bits
+of information of it one of is a kind of
+a basically serial number of the meter
+and the other one is you know what your
+meter reading is and you the reason why
+they have that is so a truck can come
+down your street once a month get your
+meeting reading meter reading figure out
+how much electricity use andil you so if
+you had a an SDR Radio like hack RF did
+you talk about hack RF a little bit
+because hack RF just got released it's
+really cool it's like 299 it's a
+transmission and receive SDR um I think
+it's half duplex but um still phenomenal
+price for what it can do I mean
+basically zero to six gigahertz um
+yeah
+so so use cases I thought in my head was
+you could put something in your front
+yard that had a stronger signal than
+your meter and you could say hey guess
+what Sugo used 10 kilowatt hours of
+electricity last month instead of
+500 right it it's not encrypted there's
+no authentication on it luckily you
+can't do anything you know crazy like
+you know turn off somebody else's
+electricity or anything but you can
+certainly spoof it right um You can
+analy analyze and decode RF data
+drop tape oh to the truck as it comes
+through you know I didn't even think yes
+so you can send a whole bunch of data to
+it and then see what happens yeah you
+could do that too be really interesting
+to
+off from what I've read now I I haven't
+tried it it's it's primarily said to
+just transmit information out and our
+water meters are the same way right
+they're they're radio enabled so they
+don't have to come up and read you know
+the actual meter itself you can decode a
+lot of RF Transmissions so pager systems
+um and so another use case that comes to
+mind I was talking to a friend a few
+weeks ago um and at some point in the
+past he got caught speeding in the
+middle of nowhere in Nebraska the police
+officer went back to his his vehicle
+came back with just a few minutes and
+said I'm going to have to give you a
+warning
+because right now I'm in an area where I
+have no radio Communication System
+signal for my laptop to get to issue a
+ticket so he the only way he can issue a
+ticket was electronically so of course
+that's got Gears running my through my
+head is okay you've got a patrol cart
+here if you got a patrol car behind you
+and somehow you're able to you know get
+a frequency out that's stronger than you
+know what he's trying to you know
+communicate on his laptop can he give
+knows there are a lot of great resources
+online go if you're interested in buying
+these like these dongles are cheap
+they're 10 bucks um 15 bucks if you're
+getting ripped off like me I guess um
+rtl-sdr.com has got great tutorials
+everything to walk through through how
+to do digital trunking setup um how to
+just listen to analog signals listen to
+the radio if you want um listen to you
+know this cool wireless mic um which we
+were doing I think last month right um
+with our SDR uh dongles so some pretty
+cool stuff there's a lot of things that
+are off enabled and you'd be really
+really surprised everything from weather
+stations in fact um I know that my
+weather station I used to have one in my
+back porch and the weather thing uh the
+the uh the temperature thing died a long
+time ago but you know I basically I
+found someone else and they had one as
+well so I hooked it up to my to my
+scanner and then scanner into my laptop
+decoded it and then I didn't have to
+worry about buying another you know $30
+so or you could just walk outside say
+dang it's
+hot all right no all right cool that's
+that's all I had um sorry that I don't
+have the demo but um it really actually
+isn't that hard DSD is pretty easy to
+use it is command line so if you guys
+like command line stuff that's kind of
+questions Trent's going to have a really
+really big electricity bill next
+month uh shogo all right big round of

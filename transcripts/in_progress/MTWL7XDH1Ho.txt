@@ -1,0 +1,1122 @@
+this is the third in a series is this
+the last or do you have more one more
+there are four parts so if you missed
+the first two you're gonna have to catch
+up and you'll be confused until next
+so yeah this one I kind of a warning
+there's a lot of smaller text because I
+put a lot of more commands and
+everything in this one so if you want to
+follow along you can go download this I
+put like a PDF up there too
+or download it later and just believe
+what I'm saying if you can't read it so
+we're on level three now with the the
+attack of attacking Active Directory
+series this time we're kind of post
+getting our first shell when we're
+inside the network and now we're going
+to start doing some recon and
+identifying those attack paths this
+whole thing kind of started with this
+like kind of a I got my Yoda's in a
+comment here the in order to effectively
+defend ourselves we need to understand
+how these attacks occur we talked a lot
+of domain admins after pin tests and
+such and we see them buying a lot of
+products and worrying about things that
+are like very specific in their networks
+when they're just missing like major
+things and they don't know what their
+own users are doing you know so I'm
+trying to show that like there's not
+like a zero days we're flinging around
+here we're just kind of guessing some
+easy passwords and then just taking a
+quick and easy path right up to domain
+admin so today we'll do a quick little
+review and then we'll do host recon look
+at Network recon and then talk a little
+bit about some stealthy considerations
+and some protections and then a couple
+different tools to kind of do all this
+stuff
+so the first talk was kind of explaining
+this whole process the
+per tab once they get some credentials
+they're looking for high privileged
+users and they're looking for if they
+don't have a high privilege users access
+already I'm gonna find out where I can
+go with my current user migrate there
+and then run things like mini cats and
+steal other users passwords and kind of
+keep this process going until we get
+some domain admin creds it's kind of
+like this attack path where you have Bob
+the attacker got on Bob's machine and
+then we find that John has a session on
+a machine Bob does and so kind of
+falling like what those thing was just
+talking about mini cats that's kind of
+what we're doing for stealing those
+passwords off those machines but we're
+also going to be looking at where their
+sessions at so we know which ones to go
+steal passwords from and then work our
+way through the domain until we get a
+domain admin next we talk about initial
+footholds which a lot of times is a lot
+easier than finding some exploit we do
+just guessing some easy like summer 17
+passwords which meet most default a deep
+red password policies and then kind of
+from there you can do VPN access citrix
+access or you know use exchange and use
+that tool like ruler and get a shell
+that way then we talked about the
+command and control what kind of setups
+where the attackers machine we typed I
+really good better best setup and now
+we're on to today so host enumeration
+start with hosts where you go to network
+next post enumeration what are the goals
+so you get on a host obviously you want
+to steal passwords but not just in
+memory we're also looking for passwords
+and files password managers stealing
+them out of the browser's then we're
+going to try to do some profiling
+because
+single house we can kind of get a some
+idea of what software is in the network
+what antivirus is they're running and
+any other maybe like potential targets
+like if we see they're running JBoss or
+other like out-of-date software we can
+kind of profile will look at firewalls
+firewall rules for you know our shells
+that we're talking around the network or
+if we want to get outside the network we
+can kind of fingerprint the firewall
+we'll be looking for other users we want
+to really get their session keys and
+what type of session key they have and
+their passwords also sitting in memory
+and then we're also going to look at the
+sensitive files on these machines like
+the doc configs or dot properties or any
+a lot of people we find that have theirs
+the password CSV and a folder called
+passwords or something on their desktop
+and then maybe SSH keys because we're
+not just looking at another series is
+focused on Active Directory but
+sometimes what we want is an in Active
+Directory it's in the Linux databases or
+something and we might want SSH keys or
+something like that so from here we're
+kind of assuming that we've already
+owned a machine or owned a person we've
+got credentials either spun up a VM and
+join it to the network or found like
+they had a pixie boot or something
+enabled or we just got a shell right off
+the bat I didn't really cover caching
+the show originally but right when you
+get the shell initially an empire I
+don't know if you can see that at all or
+not but you kind of get into some of
+that post info right away so it gives
+you an ancient name that you
+with it tells you the internal IP you're
+on the machine name the user you're
+running ass and then when you first
+interact with these hosts the first
+thing I typically do is run sis info I
+kind of runs this under Foley while I'm
+using Empire because empires a it kind
+of beacons back and asks for like what
+the next command is it's not like
+interactive like meterpreter and so I'm
+always constantly thinking something
+killed my shell or whatever so sis info
+is a good one just to run that'll just
+pop this info out to make sure your
+shells still kind of valid but this will
+give you the IP the domain and the user
+or if you're running local like you kind
+of identify that the Windows version you
+can usually assume if you're on a
+workstation that a lot of the other
+workstations are gonna be running that
+same Windows version for any kind of
+privilege escalation you might have to
+pull off later it tells you if your high
+integrity or not that kind of comes into
+play later and the powershell version
+this will tell you kind of the lowest
+level powershell version that it will
+support ideally you want to be as low as
+possible because they've been adding
+more and more logging to powershell as
+it's gone up in versions we'll talk a
+little bit about 6.0 which kind of just
+recently got pushed
+but version 2 is ideal for what we're
+gonna do so after that we're gonna look
+at the network connections what we're
+looking for here on a host it's like
+looking at the routing tables looking
+for open ports that you can possibly use
+for other exploits that there services
+running somewhere RDP or SSH connections
+may indicate that this box is gonna have
+some keys on it or sessions that are
+saved a lot of people just save all
+their RDP sessions with the credits
+already typed in and we can just steal
+those and use them things like net stat
+are going
+to get this info and you can also kind
+of help identify the IPS and ranges
+inside the network before even doing any
+kind of scanning you know so in Empire
+you can run any command like you would
+at a normal command prompt by typing
+shell and then the command you want to
+run it's like this is just running
+netstat on a box this gives you that
+internal IP information you can look at
+the local services running internal
+connections to other box with like
+NetBIOS names or IDs and this is all
+kind of like before you're sending any
+traffic to the network you know you're
+still trying to stay a little bit quiet
+here same thing with our identifying RTP
+sessions and open ports next we're
+looking at sensitive files on the host
+ideally I know I tend to look at configs
+dot properties anything with passwords
+in it SSH AWS RDP keys any kind of loot
+we can get off of one host and then like
+scripts or PowerShell scripts especially
+like with admins they have a lot of
+migration scripts or something built in
+that have a hard-coded passwords in them
+anything we can do to find more access
+through the network later on Empire
+makes this part nice they've got to find
+interesting file command or module you
+can run that by default like kind of
+does regex searching on the whole host
+for you we're going to searches for
+paths and sensitive and admin XML files
+virtual machines anything with creds in
+it
+login secret credential config that's
+kind of the defaults you can add your
+own as you kind of built that list but
+this will just kind of output all those
+files right away and you can on a hose
+enumeration you can run lots of these
+commands manually yourself like you can
+either enter a shell or just use
+different modules but Empire makes this
+nice with a few
+different modules that will do kind of
+the whole sweep in one shot
+when enum is one of those it's in this
+situational awareness / post / way Nena
+module this grabs the ad groups the last
+five files open interesting files one
+that's kind of cool is clipboard
+contents like if anyone's ever copy and
+pasted that password out of a password
+manager or whatever into a form like we
+can pull those out of memory
+it'll also find like services available
+shares more stuff like a V fingerprint
+it all outputs just in a nice little
+text file for you
+the last Windows 8 update that occurred
+and when the different if there's
+different network adapters any
+established connections any mapped
+drives and the firewall rules on a host
+and it's nice because all this stuff is
+we're gonna kind of just keep building
+our kind of arsenal of like what we can
+go after and what this network has in it
+and I mention firewall rules just
+because you can run these things
+individually to like this firewall rules
+one they kind of just create a firewall
+comm object that points to the actual
+firewall and then they enumerate all
+through that firewall and grab walls
+configs computer details is another just
+module built in the Empire that pulls
+the logon events and these are great for
+servers if you're not sure if like das
+have been there before or it'll kind of
+give you the history of all the login
+events from the Windows Event log it'll
+tell you about any RDP connections and
+it also pull all the powershell scripts
+that are custom made on the machine and
+a lot of times people save their
+powershell scripts that may be login to
+other devices or you can pull a lot of
+information out of these things that
+will help you look at the network later
+and then it also just I don't know why
+it kind of has that
+but it pull processes protected with a
+blocker a kind of a funny one but I kind
+of get it depending on who you're up
+against is the paranoia mode you can run
+Empire in this kind of sets up with a
+scheduled task that will continually
+check for any users you define they like
+if you know someone's going to be
+hunting you it will alert you and you
+can either like kill off her shell or
+give it at some command to run by
+default it'll check if any das log in
+while you're on a host and then it has a
+giant list of processes that they've
+built over time that are different like
+IR tools so you'll know if you're
+getting investigated or someone's
+looking at you and another one is that
+it checks if any processes or running
+off USB drives so that's like another
+way like forensics teams will come in
+and plug in their tool and start kind of
+investigating without touching a file
+system but we can look at the USB drive
+and see if there's any bad processes
+looking at it so there there's lots of
+these host modules and Empire tab
+completions kind of your friend here
+look at situational awareness slash host
+there's a couple different modules there
+there's also these collection modules
+these are more for like they got like
+chrome dump and Fox dump and those are
+things that will kind of like mini cats
+but they'll pull the passwords out of
+like if you have passwords saved in
+Chrome's kind of built-in password
+manager or Firefox you can set up key
+loggers you can set up webcam recorders
+you know I'm kind of a weird creepy kind
+of stuff really you can do packet
+captures which can also kind of help
+with enumerated the network but you're
+still just on a host here and then any
+kind of file bolts they've got some four
+key pass I don't think they've got like
+LastPass or anything yet but I know
+someone's probably working on it then
+we're going to get into processes so
+when
+talk a little bit more around processes
+here processes are going to be important
+to look at because it'll well first
+thought you'll be able to tell if
+there's other users running on this box
+and then the architecture type which
+sometimes like mini cats or things like
+incognito to steal tokens like you need
+to be in a 64-bit process or a 32-bit
+process depending also from the
+processes you can grab the software and
+the antivirus there and when we talk
+about defenses you can also find out if
+like ata or ATP is running on these
+devices and those are things that will
+catch you doing certain stuff so a
+process listing you can do it the simple
+way like an empire or the PS that works
+in Metasploit 2 or send a shell command
+like W my C which is the kind of
+preferred way currently four attackers W
+my is not yet able to be logged that's
+part of the powershell 6.0 push stuff
+but you'll see here when you type in PS
+you get users then you get the
+architecture and then like what
+processes are running where you can
+identify software or antivirus now these
+processes are important because they're
+all gonna have to ins tied to them and
+tokens come into play when we want to
+start maybe we can't get the passwords
+from someone but we can imitate being
+somebody and these get a little wordy
+here but I'll try to explain it like you
+can kind of think of it as like a
+lock-and-key where this the ACL which
+we'll cover in a second is the lock and
+then like you present your process token
+as the key and then you can either
+access a resource or you can and like
+every object in Active Directory it's
+going to have one of these ACLs or locks
+on it and then all the process is going
+to have to have the right key they'll
+access that stuff when a new process
+gets created it gets the security token
+associated with it and that contains the
+information like is it running an
+elevated user context and it'll also
+contain what privileges that user has
+like the SE debug privilege I use an
+example if it's enabled on a token then
+that token can debug a service running
+as a local system so with the process
+tokens and the security tokens we'll be
+looking at it kind of matters on the
+network logon type and I know that use a
+non network logon and it kind of gets
+confusing because you're like you're on
+the network and you did a logon so why
+is it a non-network logon but really the
+the main key thing to take away is that
+non network logons are used like when
+you've liked RDP into a machine and it
+prompts you for creds you're not already
+have the rights to get that access so
+you have to type in credentials that'll
+be able to give you a ticket you can
+access the thing network logons are like
+if you have shares mapped and you can
+just go access those resources well your
+users already got a token that will
+access that so I don't need my creds to
+go get a new token to do that why that's
+important is because there's
+impersonation tokens and there's
+delegation tokens and also gets a little
+deeper but like when you're gonna look
+at a machine in processes you want to
+look at what type of tokens you have
+available to you because when we start
+moving around the network it's going to
+matter because if you have an
+impersonation token that token means
+they came in with a network logon and
+that token is only good for whatever it
+are it asked when they came in to this
+machine
+how are they logged on like they need to
+access the files that took it might only
+be good access like that file as that
+user delegation tokens means they typed
+in credentials so we have those
+credentials with us and we can then
+basically act like them on the network
+as a whole and if that user generally
+has local admin access
+on a bunch of boxes I can use that
+delegation token then to get that local
+admin access on those other boxes and
+you remember we get system on Metasploit
+it's kind of like the easy way like once
+you hop on a system you type in get
+system kind of one of the ways it does
+to get system is that you're not
+actually becoming system user you're
+actually just grabbing one of those
+impersonation tokens from a process
+that's running a system and tying it to
+your own security context it doesn't
+other ways to but that's just kind of
+one of them that's part of it
+in Empire it's a little bit more
+difficult you can't have to know a
+little bit more what you're looking for
+but they do have the like credentials
+tokens module that you can look at it'll
+output when you first run it all the
+users and tokens that are on a machine
+so this is still like just on the host
+if you see a process running by some guy
+and you want to see if you can become
+him or act like him on the network and
+what we're really getting to is like if
+we find a da we can just drop in using
+the DA's token and do something like a
+DC sync and never leave our host to grab
+all the passwords off the whole domain
+so empire's gives you a pretty detailed
+output where it gives you like the
+privileges that token has if you want to
+do different things it's a little bit
+easier in Metasploit to kind of see and
+understand there's a module if you have
+a mitre Pater's show up called incognito
+and it's fairly simple from Empire to
+create a meterpreter Handler and kind of
+pass off to meterpreter or Metasploit
+your your shell so you blow it up
+incognito and you can just list tokens
+and they just
+I tell you like here's the delegation
+tokens we have available here's the
+impersonation tokens what we want to do
+is impersonate one of those delegation
+tokens and then we're essentially
+running on the domain as that user and
+then really just ties back to how they
+originally logged on Microsoft's current
+I think recommendation is to use
+PowerShell remoting with like just
+enough administration or like you've run
+in my constrained language modes that
+way you don't take your delegation token
+with you
+you only take impersonation tokens and
+so if they steal that or it doesn't take
+any actual credentials with you so mimic
+ads won't find anything they won't be
+able to go anywhere with your user when
+they steal it
+it's kind of a pain to set up just
+enough administration because neat
+profiles for every box and then you need
+to limit what PowerShell commands can be
+run once you get onto a host but that's
+kind of how you can do admitting with a
+domain admin but not it your credit
+stolen now I'm gonna try to cover a CL
+apples apples apples and aces and SOS
+and SDS
+here which gets a little bit deeper but
+I'll try to make it easy so SSDs are
+secure objects and security descriptors
+every securable object has at least one
+security descriptor and everything like
+in Active Directory basically is a
+securable objects because they're all
+going to have permissions to access
+anything some common ones are like
+processes or threads Network shares
+Windows stations desktops and with these
+acronyms so an apple an access control
+list is just an ordered list of bases
+aces are an access control entry so any
+entry on the ACL is going to be
+considered an
+the dapple is a discretionary access
+control list this identifies the users
+and groups and what permissions they
+have the sample a little bit less looked
+at but that sense of different logging
+events on particular items and so it's
+kind of a you can trick your way into
+creating something like a canary token
+canary tokens are kind of a way I've
+seen for like blue teams to kind of
+identify like they can set up system
+access control lists on a file and then
+get an event log whenever that probably
+it's accessed so you drop something like
+passwords txt on someone's desktop
+instead of logging on that file so that
+if anyone accesses that it'll throw an
+event log and you can track like hey
+someone shouldn't have grabbed that that
+was a fake file that we could use to
+catch them an SD can contain two ACLs
+the DAC ball in the Sackville basically
+are those two ACL as it gets but you've
+probably seen these before and maybe
+just didn't know what you're looking at
+so if you right click on a folder and
+pop it open and go to the Security tab
+you're actually gonna be looking at
+these ACLs so the dapple is kind of the
+top half and that's listing those users
+in groups for that folder and whenever
+you like click on one of those names
+below it'll show you like what
+permissions that user has whether they
+have readwrite if they can list this
+folders contents if they can have full
+control and like those individual
+entries are part of the ace which is the
+access control entry if you click with a
+little advance button at the bottom
+it'll take you into the ACE inheritance
+and this is later we're look at
+bloodhound like you can run bloodhound
+started looking like oh wait there's all
+these inheritances we weren't really
+looking at originally we're just getting
+the network's and so they started
+collecting all the ACLS for like
+everything in the entire network and
+then look for even more attack paths for
+us so we don't really have to know why
+and how this works but I just thought it
+was kind of cool that you've probably
+seen this before you should really know
+the sappal is on that auditing tab and
+that's where you can kind of see you can
+set up your security like event logging
+on any particular device and so it might
+be a little bit confusing but that's
+okay because we don't really have to
+know I tried to come up I was talking
+with some guys at work like how can I
+explain this like in the easiest
+possible way and someone told me it's
+kind of like when you're trying to get
+into a club so we've got Club ad okay
+and the ACL is the bouncer right he's
+gonna say who can get into the club the
+dapple is the clipboard he's holding
+because it's kind of the list of names
+of people that can get into the club and
+then we've got the sample which is the
+VIPs list because those guys get like
+paparazzi with them and they're kind of
+the Aces are just the names on that list
+and then the impersonation tokens you
+can think of like a stamp that gets you
+into the one club and the delegation
+token is like a wristband that gives you
+like every club in the strip
+so hopefully that kind of brought apples
+dapple the samples and all that together
+somewhat in like the worst way now we're
+on a network enumeration and you know
+what we're really trying to do is just
+identify these attack paths throughout
+the network we you know kind of figured
+out the profiling that's used a lot when
+on the host for all the antivirus cuz
+like a lot of the commands here they
+work in certain environments but you
+might have to do tricky ways like
+someone like compiling them with a
+dotnet to jeaious stuff or a lot of that
+is where like the actually pin does work
+comes in where like things should work
+we have to find like the 50 work arounds
+to make your one mimic cats actually
+drop and run and we're really just
+trying to identify these attack pass
+through everything so that we can easily
+get our domain admin so the goals are to
+find those privileged users where they
+are who they are then we want to find
+our current users or the current user we
+have or the users if we've been
+gathering them because we're going to
+kind of continually gather more and more
+credentials as we get through or in
+tests and then we want to find the
+identify that
+to the to those privileged users like
+how can those groups and nested groups
+how can we get our way to that domain
+admin by default there's a bunch of
+privileged or they call my kind of tier
+0 accounts basically even though all
+these aren't necessarily a domain admin
+there's like a route to domain admin
+this way something like a legate a well
+if you're an account operator you can
+like add yourself to every possible
+group in the whole network and then from
+there you might not need domain admin
+all the time to get whatever you're
+after you know like if you're just
+trying to get the loop or something from
+like a financial company you maybe just
+need to become part of the financial
+group and you don't even need domain Ave
+and actually to get there you can get
+this manually with stuff like a Power
+View is a good one it's part of like the
+PowerShell mafia power sploit package
+those commands you can run straight on
+those hosts you can find your local
+admin access the local admin access
+kinda has talked about before it's
+important so you can actually like run
+mimic ads and pull those passwords you
+can invoke like a share finder to see
+where all the different shares are you
+can access there's a check admin option
+for that one which is kind of a trick
+way of finding if you've got local admin
+by requesting the admin shares on all
+the boxes and you can get like your
+local groups and enumerate local admin
+power you can also change the schematic
+he kind of mentioned these downloaded
+cradles which I'll explain a little bit
+more the download cradles were like I
+said invoke expression is basically what
+the IE X is at the beginning you know I
+think I tracked down that it stems from
+a Raffaele much talk on continuously
+staging external powershell scripts he
+was using it mostly like in COBOL strike
+but when you're on a host and you want
+to import these modules like Howard
+doing that but basically you're creating
+this dotnet run space instance that
+provides an execution context for your
+PowerShell pipeline this is there's a
+link at the bottom if you want to go
+launch that original talk it's called
+flying a Cylon Raider for some reason
+I'm not exactly sure what he was getting
+down there but that's where kind of like
+maybe the first instance of download
+cradles came up and a normal download
+cradle is kind of just the default one
+these are the ones that are getting
+caught a lot more by 8e where you just
+invoke that expression create your
+dotnet instance and then you know you
+download whatever that string is you can
+either host that on github or PowerShell
+Empire or hosted all locally it reaches
+back and grabs it off itself basically
+harm joy has a whole like gist of
+different and like upgrading getting
+harder and harder to detect ways of
+doing these download cradles Daniel okay
+and in this guy who wrote cradle crafter
+and opera skater and that will generate
+these downloaded cradles for you and
+already pre obfuscated ways that you can
+then run just right away and pull in
+scripts into memory and never touch disk
+and in bypass any antivirus signatures
+or anything looking for them so back to
+the chaining the commands together you
+basically use this cradle to pull in the
+Power View script and then in the second
+half just you know kind of separated by
+colons or your get net domain get net
+forest get a net force trust and get
+domain trust that would be kind of
+mapping out your current domain any
+other domains in the forest and then
+which way the trust directions are going
+I won't really cover cross domain trust
+exploitation that gets a little too deep
+but I also wanted to mention that you
+can also just write these PowerShell
+functions right into PowerShell like you
+can compile them yourselves build the
+and then run it like this is an example
+just get local admin and we'll query all
+the computers and try to find the
+administrators for those computers see
+if you're in that group for the network
+enumeration really what you're just
+gonna do is you're going to list all the
+groups in the domain you're gonna list
+all the privileged groups specifically
+and kind of write these down and these
+are the things you know you like tape up
+next to your face so you're always
+looking like if you're on any machine
+you notice one of these guys like that's
+whose credentials you want and then
+you're gonna want to ID the DC's just
+for later DC syncs kind of the latest
+way of getting creds cuz you don't
+actually have to log into a DC but you
+might have to for some reason you can do
+that with simple things like net group
+domain controller slash domain or net
+group domain admins those are getting
+caught with the latest latest Microsoft
+stuff but only those Windows 10
+enterprise users are going to have that
+so it's usually not an issue for me
+user hunter is another PowerShell script
+that we can call in and this will just
+basically only go look for all the
+sessions of all the domain admins it'll
+wear for the domain admins and then try
+to find where they're logged in at and
+like I said we're looking for all the
+users and we're looking at local and
+domain users because we can't forget
+that a lot of people use like a golden
+image to create their first domain box
+and that local admin password is then
+going to be the same on all of our
+domain boxes so we can maybe just use
+his local admin password or hash to log
+into all the boxes on the network and
+pull all the domain users off we're
+gonna look at all the groups local and
+domain because again we might not need
+an actual da to get whatever the
+attackers after that maybe they're not
+always after your all your passwords and
+then we can also list that all the
+domain computers and there's lots of
+different modules
+and manual ways of doing this or we can
+run the kind of new fun tool bloodhound
+which I have talked about a little bit
+before and some of these slides are
+repeat if you've seen us before but it's
+developed by Waldo
+captain Jesus and harm joy and then
+there's a lot more contributors now it
+was like something like a hundred
+contributors they have a pretty active
+slack too if you guys are on slack that
+has a lot more like red teaming and some
+of the Empire channels in there and
+chromatic Zak which we'll talk about a
+little bit it's a really good tool for
+the red teams and the blue teams it
+helps us quickly identify all those
+paths that we're kind of trying to find
+and it outputs these nice little graphs
+for us that show us like the hops that
+we need to take to domain admin that's
+kind of the overall goal what we're
+going for here and like kind of in this
+picture those little green dots that you
+can't really see our users and then the
+yellow dots are groups that they're in
+and any little red dot is a computer but
+sometimes you'll see that like you don't
+even need to login to like one computer
+if you have one user because he's nested
+in a group that's nested at another
+group that a member is a part of that's
+on one box that's got a DA on it so we
+might only need like one user and one
+hop to jump to da and it's gonna look at
+all those ACLs at the Apple's diagonal
+samples all that for a lot of these more
+really complex and inherited classes
+that aren't as obvious to most domain
+admins and you can find these really
+high come highly complex ones in big
+environments and I showed this one
+before that this was run
+unlike one of the domains at Walmart and
+it just showed like so many paths the
+domain admin it I don't know
+Tim Malcolm better or whatever's gonna
+do over there but they got a lot of work
+I think said of them so to run
+bloodhound and quite cover that in the
+first one it is a built into Callie now
+so you kind of have to install it which
+takes care of the neo4j setup for you
+Raphael Mudge the cobalt strike guy also
+has a blog post on setting all the stuff
+that works pretty well but essentially
+the one thing it kind of catches me or I
+see people doing it's like when you
+first launch it you have to go to the
+local host for neo4j and change the
+password the initial time it doesn't
+like it's like when you first log in and
+give you would you like a change your
+password screen once you do that then
+you can launch bloodhound and bloodhound
+to work now bloodhound works kind of in
+two ways where it's got the one
+interface on your host attacker machine
+and then on the domain join the machine
+is where you're gonna run that
+PowerShell script that runs bloodhound
+and does the get computers get local
+admins and gathers all that data for us
+by default this thing is going to happen
+put three CSV files it'll just drop them
+to wherever you run it you can set up
+bloodhounds so that the Kali instance is
+listening and then this will actually
+just pipe all the data straight to your
+bloodhound instance but it's just as
+easy just to drop those three CSV files
+to that users desktop or whatever and
+then just download them in Empire you
+can just type in download it in the file
+and sing with Metasploit and then in the
+bloodhound interface you're going to
+import all these files and then it'll
+build your Maps for you so you can query
+for the domain admin so on that victim
+machine you can use like a the cradle
+same idea where you pull
+short round is kind of the latest they
+kind of like rewrote it in c-sharp to
+make it like faster or something but it
+does work like a whole lot faster than
+it used to like large domains you just
+take like 30 minutes to gather all that
+data and now it takes like five with
+you're when you're talking like ten
+thousand different posts and users or
+just use an empire module and where you
+can just navigate to pull it out say
+execute it'll tell you where the file is
+or you can download them right after
+then back on your Kali instance this is
+where bloodhounds actually like the
+interface is running the neo4j instance
+they'll import these things and then you
+can just start searching like I went
+domain admin and it'll show you like all
+the paths available you can also type in
+like the users credentials you currently
+have and then see if that user already
+has a direct path of domain admin this
+can be useful because you can also look
+at computers that you've owned and go
+pick on those and see like who's got
+sessions of where they're at really like
+everything about the domain is now going
+to be in here there is like it so what
+if you don't have a domain join machine
+can you still do any of this so like one
+of the ways we got in was we guess creds
+but we used a VPN to access the network
+so maybe we've got our counting machine
+but we don't have actually a domain join
+box that we've hacked that's what I want
+to talk about crowd Mac thanks - it's
+kind of a Swiss Army knife for pin
+testing they make heavy use of in packet
+and power sploit and this thing is
+pretty sweet it does like everything you
+can imagine off your Kali host it does
+contain bloodhound there's they can
+generate Empire launchers for you and if
+you have cred that will login and shoot
+an empire launcher back for you it's got
+a host and network enumeration modules
+it can run mimic ads for
+I can do the token stealing and token
+usage it talks over WMI by default which
+is the ideal one to be talking over
+lately but it can also use PS exact or
+just PowerShell remoting kind of to show
+you this like this is running it to
+retrieve the password policy of a domain
+where it'll just kind of jump in with
+like SMB get the password policy for you
+and pull it back this one is like
+spraying your logins a lot of times when
+we are on gathering all those domain
+users it's not just to find the domain
+admins we want to grab those domain
+users too because maybe we don't have a
+path to demand right away but the same
+password attack we tried on the outside
+we kind of had a small list of emails or
+users we could find now we've got the
+full list of domain users and we can try
+that same password attack and probably
+pop a few more people with summer 17 and
+full or I guess we're in the 2018 now
+but surprising how many of those work
+and one cool one dealing with mimic ads
+is you can also spray mimic cats if
+you've got local admin on a bunch of
+machines you can just use this to like
+it's very satisfying it's kind of a
+little bit overkill but to run mimic ads
+on a slash 24 and just see like 255 like
+credentials all come raining back in for
+you and crab apple just kind of lets you
+do that so the defense is for some of
+these things that we need to watch out
+for Microsoft has been definitely taking
+that assumed breach like we're not gonna
+stop these guys there's too much let's
+start looking at what our current users
+are doing because now they're just
+guessing passwords and logging into our
+networks ATP this kind of comes from a
+blue hat in Tel Aviv was just recently
+Microsoft's like big conference over
+there and they talked about some of the
+new stuff coming ATP is Microsoft's
+advanced threat protection like version
+3.0 or something I think they released
+it a few times with a different skin but
+this new one basically is compiling all
+of their stuff together into one
+dashboard on a host so your machine now
+when Nike wanted to look at firewall
+you're gonna launch ATP and you probably
+can't see it but in that bottom corner
+it's got little boxes for device guard
+windows firewall credential guard
+application guard exploit guard kind of
+all their latest and greatest defenses
+are now on this one little single
+dashboard this idea kind of stems from
+ata which has been out for a little
+while now ata detects all kinds of stuff
+in the network wide ATP is kind of like
+ata running on every individual host now
+so it's going to make it a real pain for
+attackers to get around that ata kind of
+looks that it sits on all the DC's in
+the network and then any type of thing
+that interacts with the DC like
+authentication requests or tickets
+getting granted or like PS exec ata is
+gonna pick up it does have like a
+learning curve I guess well itself does
+like it has to run for three weeks to
+kind of fingerprint your network to see
+what users are doing you might get lucky
+and steal a user that PS xxxx all the
+time and then it won't detect it but
+generally it detects like a lot of the
+attacks we talked about here like Golden
+Tickets it'll it'll detect like DNS
+recon it'll pick up if I query for all
+the users in the domain it kind of says
+like while a user just asked for every
+user and every group in the domain and
+throws alerts up and that's somewhat it
+was downfall is that it's only like
+alerts like it's a web page you kind of
+visit that just if no one's looking
+and it you won't know anything and
+that's part of their future plans are to
+implement ways you can like isolate
+events which there's a lot of like
+commercial tools I think out now that
+kind of let you do this but Microsoft's
+taking cues from people and implementing
+it themselves again though it's you know
+one of those things where a lot of that
+credential garden stuff is only offered
+to those Windows 10 enterprise users and
+so the rest of us kind of get screwed
+out of there you know
+detection that then quite makes sense
+but I guess they got to make money but
+yeah a TA and then ATP is going to be
+tough for attackers there was a talk at
+blackhat Europe recently that talked
+about getting around ATP and ata
+as an attacker he kind of figured out
+that most of our normal stuff like net
+local groups and stuff is going to get
+detected and this the scary thing about
+ATP right now is that ATP is going to
+start it uses a Windows it's like I
+think it's called a DC diag but it's the
+same telemetry data that like all the
+other windows stuff uses it uses that
+process to feed it up to a TA and that's
+so 88 now has like monitoring on every
+little host so we used to be able to do
+a bunch of host stuff in a TA would
+never noticed until you actually made a
+query to a DC and a lot of those tools
+have stealth mode where they'll run but
+it'll make sure that it never hits a DC
+with any of its requests and that'll
+kind of keep us under the radar but ATP
+is gonna be a pain but luckily WMI is
+not able to be logged currently and
+that's where 80 A's team that talked at
+blue had was talking about PowerShell
+6.0 and the cores out now I think with
+like 6.0 like the full-fledged
+is coming and they're looking at like
+why can't we look at WI and they're
+gonna start being able to audit that
+stuff but I'm sure some smart people out
+there will come up with new
+I passes for us to use but for now yeah
+I mean use W mine if you're doing
+attacks and you want to stay quiet
+because you don't really have to worry
+about that some kind of interesting part
+about ATP is some of the defenses we've
+been looking at for an attacker to not
+get caught is the same stuff that when
+Windows 10 first came out everyone's
+freaking out because they're sending all
+this telemetry data to Microsoft well
+the same like workarounds for ending of
+that work the same for ADP we're like
+you can redirect simple things like
+where it's sending it to localhost and
+so you never actually send anything to
+the DC it all just alerts locally and it
+runs back to localhost but so it's
+definitely got flaws but it's something
+to make things a lot harder for
+attackers so that's kind of part three I
+know there's kind of a lot of
+information there but really like you
+can just jump on a box and run
+bloodhound and then the whole path there
+that's kind of usually how easy it is we
+don't do a lot of the hard stuff it's
+good to know the manual stuff because
+bloodhound like when you grab the
+sessions it's only like a snapshot of
+the network it's a lot of times you have
+to keep on running it like over and over
+and over until you find your da logging
+in or or whatever you're looking for so
+the hosting of networking them and
+identify past the da and then next time
+the final we're gonna kind of hopefully
+slide into the DC's and pull all the
+users passwords kind of look at DC sync
+and I haven't had a chance yet to figure
+out DC Shadow that's the new one you
+kind of mentioned on it's something like
+a DC sync but you can like edit any
+object in the whole domain but we'll
+look at pulling all the passwords from
+all the users once we get those domain
+name and credits I started to kind of
+try to gather all the references are
+using these slides there's kind of a
+general commands one up here sure you
+can see that but if you download these
+you can kind of go look at least
+references there's some PowerShell and
+Active Directory blogs I bring up maybe
+security dork - that one's really good
+these ones were used for like the tokens
+and ACL stuff and then tools and github
+that are mentioned in this talk and then
+I'm Rotem out yeah next time we'll also
+kind of probably look at lateral
+movement and how we're actually going to
+move which W - kind of the name of the
+game now and that's all for me a little
+self shameless self promo as I'm
+teaching an XSS workshop at besides on
+4/20 coming up but we're at double
+security we do pin tests so if you want
+to kind of have this reveal to you we
+can show you how but otherwise down with
+the stuff and hit me up on slack or

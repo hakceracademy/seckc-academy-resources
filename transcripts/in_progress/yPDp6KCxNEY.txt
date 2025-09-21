@@ -1,0 +1,607 @@
+laptop on my home network instead of
+going to the laptop it goes to a router
+and then the laptops close to the router
+as well so they did a subpoena to start
+them tonight I fart code of the
+addresses of Master Don local node 102
+nub three on this little example because
+I don't have internet access here so
+keep in mind you will need a DSP sir but
+the the names that I used to flash those
+are master node 1 node to node 3 if you
+have a hundred just keep using node and
+it will work with my magic that I'm
+about to show you so you like neck
+alright so ansible is Magic I know if
+anybody you see is blowing you know yeah
+bruin so let's go you should do that
+immediately if you have a map it is
+awesome it'll do everything for you to
+automate all the things it can manage
+your lineage your windows for network
+everything cloud stuff it's awesome so I
+wrote this application called the doc
+father and the reason I wrote this is so
+that everyone can have the staples easy
+button and you can bootstrap your pies
+using the flash tool install them run
+the Godfather and you'll have a running
+swarm cluster with docker on your
+raspberry PI's so hopefully this video
+works so this is what it what it looks
+like when i run the ants more basically
+i can't do that right now because I
+don't
+internet access and danceable will do
+all kinds of things but the doc father
+it will go out and collect some things
+that s what means to run it will take
+and ping on your notes and build the
+inventory file for you so then when you
+have your inventory file you can execute
+against those but this will only runs
+two commands the first of which is an
+ansible raw command and the reason it
+has to run raw is because python is it
+installed by default in the insulin eeks
+might on the run so you see this cash
+flow it cluster is what it's targeting
+my desired inventory is the file at the
+widest M is the monitor you're using
+minus a it does the pseudo FF game
+update against Python and then the minus
+K if you have ssh pass installed it uses
+the one without what is K if you don't
+have ssh passing so it will prompt you
+to type in raspberry now after it gets
+installed with Python and smokin
+actually run in the run against will
+play book with site that gamble and it
+does the same thing again if you have
+ssh pass now the second time through its
+going to install two roles and what
+we'll see here is that you have a couple
+variable files and then in here it
+installs a common role and then roll
+called aust underscore swarm now what
+that does is a common roll it will
+install a bunch of base packages it will
+copy up the doctor can fit to make it
+listen on the TCP port it will do a
+bunch of fancy stuff and then the next
+role will come in it'll create the swarm
+for dr. to run and here's what you see
+what you've read so follow us at kc
+right
+and then going to run see all this the
+ansible danceable playbook down there
+and validates that you have don't have
+those it's going to spit out a different
+message it scans for ssh keys because
+mom gets pissed off if you don't have
+the right ssh keys and it adds them to
+your known hosts now it builds the
+inventory file for the Python first run
+now it's going to take a while for all
+this to run so let's put it up so
+continuing on the first time instant
+wants to talk back in JSON and this is
+what you'll see when it does the wrong
+one you'll see that host names are the
+IP addresses of your notes and you'll
+see what it did like basically caught
+that to the command line you'll see them
+in the update and install Python a
+couple other a couple other dependency
+for Python and it across the hall for
+hooks which is pretty cool I mean it
+makes it easy right after it installs
+the Python it has all the dependencies
+it needs to run the actual is for
+playbook committee so once this all goes
+down then it's going to bid strategies
+in the National playbook especially the
+same thing over and over again so now it
+gathers you see it says executing
+bootstrap playbook and then it gathers
+fax it will tell you you know IP address
+hostname stuff like that the common
+Royal you see common pipe and I think
+request for helping me with the common
+roll the common role runs and installed
+all these packages Python
+fifth page top if top a bunch of other
+stuff openssl and math and then it runs
+through and it stops docker and then it
+pulls down the upper one point eight
+point one from hybrid it installs it it
+keeps going removes the old install file
+the package that are pulled down the
+dead file and then it will restart
+doctorate it does a couple other things
+that adds a fancy mo TV it'll also add
+in your public key to the ssh authorized
+users or authorized keys file assuming
+that you copy it into the common roles
+file public desh ki text if you get
+cloned this will get up it'll update dr.
+config like i said earlier so it listens
+on a pork it also does that sets
+publicly it also creates a command
+called master docking now master back is
+a command that i made for swarm if
+you're on the master you could say
+master got it will automatically tag in
+the money's HTTP and then the hostname
+with the port so that you don't have to
+type out a link row you can just say
+master doc instead of dr. now this it's
+going to be common the first time you
+run this to see this fail because what
+it's doing is it's going to remove the
+container if it if it exists it's going
+to remove swarm manager it ignores the
+heirs and continues on and does the same
+thing for swarm agents so that if you
+run this more more than one time it will
+continue to work now we're going to
+enter the swarm it's going to make this
+this ginger template it's going to
+me up as a script to launch master if
+your host name is master on the other
+one it's going to copy up the launch
+slim if you're not if your host name is
+know what else so once all that's done
+you'll see the play recap and I'll show
+all the things that are changed
+everything is done Godfather has ran and
+now your resume paya tubes will have a
+running dog or swarm cluster than you
+can use so what just happened you can
+get you can hit this code for a tether
+github basically is what just did all
+the work that I struggle to get through
+to make this dance so you went from this
+where it was prompting for the password
+it's asking you all this stuff and you
+see the client version is one set of one
+i'vei've got version is 119 and now you
+got this so it logs you writing
+automatically it's got a kick-ass motd
+it's got a couple other things that's
+updated 181 and your API version is 120
+so we want to ssh into these things
+right so if you're not familiar with dr.
+the first things you do just run in and
+look at what the processes are that are
+running if you see here I run docker PS
+and you can see container f 6 11 and 4c
+whatever is running high grade swarm and
+it's been out for a couple minutes and
+that's the only thing we have running
+perfect so to do hello world hello set
+Casey basically you do something like
+this dr. run and the new- IT interactive
+with a cheeky wide hi priate RBI alpine
+scratches the image
+run and then bid messages the command so
+that it pulls down that image and it
+lets me in to a porn show and then i can
+run hello set casey and look at the host
+and you see the container so when you're
+on the outside looking in what happens
+is you still see the swarm running but
+you also see now the Alpine scratch
+that's running in dr. PS and not dr. ps-
+day because that's a different view so
+some useful stuff dr. PS will show you
+what's running right now dr. PS one is
+able to show you everything that's
+running in everything that's excellent
+dr. stop well dr. stuff and then piping
+into dr. PS minus AQ it'll get all the
+container IDs and stuff and then you can
+remove them as well dr. images if you
+pull down images you'll see them in VAR
+lib talker and overlay or wherever
+whatever your faucets and drivers that
+will store them there you can remove the
+images using remove are on my image ID
+couple of the things one of the cool
+things is the doctor logs the container
+ID or the container man some useful flex
+you can use minus P so if I say port
+9999 colon 80 I want to expose the host
+port 9999 and bind it to the container
+port 80 and then the same goes for fee
+its host volumes you can mount files
+into containers or whatnot so in this
+example right here dr. run I'm Ryan
+minus D which is very nice I'm passing
+it for 80 287 870 and I'm also Manning
+the volume room h a proxy comp 2 h a
+proxy override and I'm running the
+here we're going to clone down a
+composed example bugger compose and I CD
+in there and you say doctor compose up
+and it should just launched and build
+these containers on the fly because if
+you look at the composed file the doctor
+can close file it calls the bill dot
+which builds us on the fly so you see
+these containers getting billed with
+engine X and copying things in once or
+successfully built everything comes up
+it will say that it wings all these
+containers together and I'll stop I'll
+flip over and show you we were so
+basically this once you get to see
+wondering the sexy doctor doctor show it
+will have the host and grease container
+with a fun picture there now behind the
+scenes port 17 exposes the hf proxy
+interface which you can see down here on
+what a probably can see this in the back
+but there's only one hit did you see it
+in and out bites and whatnot so
+everybody else in soccer has all the
+things here is an example of docker
+izing the apache bench program so these
+lines of code up in the top left you say
+from hi priya rpi alpine scratch it's
+going to inherit from that and then it's
+going to run apk added patch details the
+entry point is going to be a V which is
+Patrick venture so on the right you can
+see him getting built and just say dr.
+build minus T your tag go to dr. hug
+give an account make a whole bunch of
+containers hit that and then it builds
+this container then after that
+you'll have to run at minus D it'll
+generate another container idea that you
+can then commit to your doctor every
+book so here it is in action hopefully
+if i run a patchy bench against that
+same cluster that i just brought up with
+dr. compose you'll see there's one
+hundred percent it did all the requests
+it's doing however many but that one
+window where i only had one hit by
+refresh that now you're going to see
+that that now has balanced across the
+containers and they have about 29 to 30
+hits in each so I seems legit oh right
+like pretty cold season seems good but
+you made a website right but that's cool
+but where's your hat sir so what I would
+say is you should dock are a lot of
+security tools that you can my doctor
+hub is getting to the third page now I'm
+just like cranking crap out all the time
+so i started with pig and then apache
+badge and then I try to do in
+mathematica file and set in a few other
+things but yeah it has in that now so I
+can just run n map as a container I say
+doctor 1 minus D at a minus RP i am at
+minus p 22 and a scam under things that
+friends of his a daemon I I do dr. PS
+and you don't see it in the list because
+it's already scanned it's already
+completed announced in the laws so I
+read dr. Wahby 162 and it shows me the
+result pretty cool so I have a spawn
+cluster set right and what that
+basically means is what doc father did
+earlier was built a master with all
+these nodes attached now you see here
+note 1 no 2 no 3 and you can see how
+many containers
+running and all that and to access those
+you run this master dog command on the
+master and it will talk to for three
+four five six on the host and it will
+then talk out to all the nodes on your
+behalf so what if I did something like
+this I said environment variable called
+engagement and I cause sec Casey and in
+do for I in sequence 2 42 43 because
+that's the idea dress ranging from my
+pies here and I do export I p equals
+whatever to dollar I and I can master
+back Ron and then I name the container
+set Casey underscore IP address and i
+run the end map against it and STI p
+they said scanning we're pretty cool
+right so when you look at it dr. PS
+minus AI crepes set Casey you can see
+that grand for things and the first one
+ran on another three then no to that
+node one that I started back over on
+note 3 so it forms it out across all of
+them now you run master doc logs and you
+can see the result of your MX camping so
+what about constraints one thing that
+doc father did when it copied up the
+files is that it made this etsy default
+docker file and it populates this label
+disk equals master with the host name so
+having that information you can then
+call constrained containers you can run
+things and say only run on this so for
+example oh my beer from master got local
+i'm going to i'm going to have no to
+scan note one so i ran master clock run
+wanna see constraint
+equals note 2 and then it map and then
+that's the idea note 1 so you do a
+master doc and read that map then he did
+the logs and it shows the result kind of
+cool things that suck I can't do my
+whole dumb because I found out today
+that when you're running a swarm it
+beacons out to here when you have your
+token set it tries to talk to discovery
+stage Joker calm and it puts in all this
+stuff which that's bad because that's
+just wrong so there's probably some
+investigating do I wouldn't doubt in the
+future you'll see people trying to
+attack microservices and in the docs
+folder of thought father I believe I put
+in all the commands to run to generate
+your own CA and build up all the
+certificates you need to run TLS so that
+wouldn't happen to so when I had the
+internets I run swarm only which is also
+the photo right off mother and it'll run
+and you know basically all it does is
+just run the swarm roll it will log into
+each of the pies and it will start up my
+daughter swarm because you don't need to
+run the doc brother every turn on when
+you do it the first time because I don't
+care about the common role except for
+when I'm good strapping a push-up so
+after all that that just set up your
+doctor's one done SSH into the master
+become real crecido PS should see you
+if you do an info doctor info on the
+show you loco but if you do master
+info to show you all the containers that
+are contained in this form so yeah so
+really round containers for fun and
+profit it's pretty cool and you go to
+dr. hub and get a free account just
+start cranking out contenders it's
+pretty easy building dr. files so i
+started with this like it's like yeah i
+put a few things but if you really want
+to be balling you need to be running
+mediswipe right so i pull down Davion or
+whatever was on arm and i did all the
+stuff and i did the rooming battled gyms
+and I fought and I fought my god mmm
+metasploit to run and it was to get down
+here you see the container sizes ticket
+that's ridiculous nobody wants it to do
+contain Turnpike so this was brandon to
+me i had no idea this is even going on
+after I caught that fight for a few days
+I found this and I was just blown away
+because they provide a bootstrap script
+which if you get the bootstrap script
+out their site what it ends up doing is
+building you a cali version 1 docker
+container which is pretty cool but it
+with a little bit of manipulation you
+can change that to a cali version 2 and
+so out of that cave this the rpi cali to
+metasploit dr. Ludwig though if you see
+it up in the top right it's only 500
+megs I get the latest spider to it so
+it's pretty cool it looks like this when
+you started yeah looks like this where
+you start it up I'll show you that here
+in just a minute
+so the first time you run this if you
+haven't downloaded the image it's going
+to pull the image written from docker
+hub and you'll see a bunch of stuff
+about blowing filesystem layers and all
+this stuff but I wrote the entry point
+for this I was having problems
+connecting the database the best way so
+what I did was I put some weights in
+here and so you see this nice database
+is starting up message and the little
+bit but basically what's going on behind
+the scenes is it's loading the container
+and it's starting out clothes dress it's
+attaching everything and it's going to
+drop you into a shell inside a container
+that is actually a cali to point out so
+and this is just a troll hair preparing
+shell access that's just because I'm
+making it wait so long so sorry about
+that
+so here we go it's now dropped you into
+County to point out and just trust me
+know if I look at the davie inversion
+you can see it's Callie to one another
+and we run out an SF console and wait
+for some more because it takes forever
+to load let's put on these things but
+so basically this is one-fourth the size
+of the original container and started
+with which is based on on Damien I want
+to say Jessie possibly I inherited it
+from think from from daily repose but
+building on that stuff sucked it's a lot
+easier to build a container and just say
+install it asteroid and thank you to the
+guys out there that built the bootstrap
+things I was able to tweak it just
+enough to run on Raspberry Pi so now you
+if you get a ducker or if you get darker
+running on your stuff you can just say
+in run rpi cali to metasploit and you'll
+have this at your fingertips now one
+thing to keep in mind with the port
+exposing if you're going to have
+handlers and stuff so you want to expose
+the ports on the container to the
+external host and you can move these
+around right so if you have multiple
+culpa love things in your swarm in
+essence you could run metasploit on a
+variety of different places and I think
+so there we go when it loads this is
+what you're going to see the banner was
+hacked a little bit dr. image from cali
+to point o revered by two armed follow
+set casey impressive trixie BBM map 10
+to 16 168 not wall mount seven up to 43
+searching takes a while I has to do the
+induction might have to reinvest your
+stuff typical issues should have living
+well that's right i want to show you
+something else i'll come back to that so
+i've done all this on the pie so there's
+some stuff I couldn't get two ports 2 pi
+I tried and tried and tried to get visas
+to compile but just never could so I had
+this example that I saw the comment
+customized a bit but I want to try to do
+your live I don't know if it's going to
+work or not sore about to find out
+together
+there we go so this is a marathon
+interface you see a whole bunch of crap
+going on your bedroom what I'm going to
+do is launch an application on there and
+it's going to run this marathon and it's
+going to post it to the host it's going
+to create an app called oz web it's
+basically just a JSON so you here you
+see here I starting to spin up we're
+going to have ten instances of this it's
+going to take a minute to deploy but
+basically it's going to keep rolling out
+containers however many we tell it to so
+you can scale this on the fly it's
+pretty slick there we go Sabine here my
+friend listen host let's connect to the
+database that works so have fun with
+that enjoy that so go back to the web
+interface the GUI as everyone loves it's
+on five to ten as soon as that's done to
+point what I'm going to do is I'm going
+to do it in place update right after I
+show you that this is what it looks like
+all right thanks for coming out sign up
+for talks pretty cool so after the SAPS
+done is running
+this is running local on my BM right now
+but in theory if you haven't seen the D
+cos which is the new hotness basically
+they're trying to extract the host and
+the application and all this
+microservices stuff is pretty slick it's
+pretty awesome ashley so right now you
+see the gray bar it's doing the
+installation on the green is completed
+and we're on 8 of 10 right now so as
+soon as it gets up to 10 what I'm going
+to do is I'm going to do an in-place
+upgrade of this service and it will just
+roll across all of them it will over
+subscribe by ten percent and it will do
+it in place just roll through and update
+all of them diversion to stage but I
+have to wait for this to finish
+otherwise gets upset with me I had a
+problem with patients at times when
+working on this stuff in it doesn't like
+to have more than one command issue to
+it once so it's still status running so
+now you see where we're 10 of 10 were
+good I'm going to run this marathon too
+and what it's going to do is it says hit
+the host at update hasta version 2 and
+we watch here it's in state deploying
+it's going to roll through and do a live
+update on the fly of all the containers
+that are for us webs and the blue is the
+oversubscription is currently an update
+face so if i go here and I open this in
+a tab hey hey seriously you should sign
+any questions let up let this doc review
+it runs applications in a contained
+format so basically I can run a bunch of
+stuff on it's supposedly going to
+abstract the post right like if you
+compile it on centos you should be able
+to run on a boot to or different formats
+now Microsoft's come out with their own
+version of docker supposedly with their
+next release it's going to be inherent
+that but really it's just works with the
+doctor API they have their own container
+format there's a lot of violence in
+container format even emerged who has
+their own thing called charms and so
+they have an open container format
+initiative like a to try to get some
+kind of governance around that and that
+is a question to what yeah basically i
+can run virtualized instances of
+applications on on whatever if it's
+raspberry PI's or my laptop or whatever
+yes so if i had you see doc earth being
+a tool for like teeny
+possibly because back people I haven't
+really seen anybody looking at the
+security side of the staging would you
+so I was doing the history of the
+so I don't know that there's there's
+history but there'd be logs as our log
+dr. dr. PS minus a now sure everything
+is there but the problem is like I read
+in that he wondered all see the thing is
+it's going to spin up a new container I
+me so like I don't know if they could
+share that thinking like them yeah it's
+not right Randy I would think so so on
+this I'm login as root and if you're all
+are good is that and you have access to
+the dr. Damon you should be able to just
+do dr. logs and pass it the name or the
+container ID 64 and i'll show you the
+output so dr. Logue seven so far so you
+should be able to get that information
+deploying to
+let something
+I haven't seen that yet but I think
+we're going to start to see more people
+using this for security tools because
+it's portable you don't have to have all
+the installations everything and if you
+look at this like I do docker images
+here's where you see everything is
+installed I like and it pulls it live so
+then it blows it away docker images so
+basically just like that on the history
+of that so now you're going to get into
+the forensics aspects of the different
+file system drivers which is a little
+beyond what I'm doing here like the
+overlay and fess and all but best of all
+the different things again I totally see
+this being like popping your swamp token
+and take it over your cluster you might
+get in the console or reduce or
+everything like I all these people with
+micro services in the new highness and I
+don't need outfit just see people start

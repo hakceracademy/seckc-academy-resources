@@ -1,0 +1,94 @@
+literally saves me tons of time during
+the assessment especially when it comes
+to info gathering
+i mean you got a lot of tools that you
+want to run on you know a list of
+domains or a list
+and you can even host it can also help
+you like in post exploitation where you
+get a shell and you can't get a full
+payload or anything like that so
+here we go zoexars
+i already asked that question
+uh how many people use it in their daily
+life linux admins hands again all righty
+fantastic
+all righty so you can do something with
+so you have way more functionality i'm
+going to cover today i mean you could
+have literally a whole day talking about
+xrs or you could just use it to automate
+something and go do something else with
+again so this this all originated
+because my initials are in k so they
+started calling me north korea
+so one day between assessments while
+x-arms was turning on some stuff that i
+was doing i took it upon myself to draw
+a giant fat kim jong-un
+white marker was pretty good yeah so
+what is xr it's multiplied on
+multipliers you can read it from
+standard type stuff into it or you can
+use the dash a flag and feed it a file
+the eye character which is kind of how i
+use it uh you can decide to like the
+percent symbol and then anywhere in your
+command where that percent symbol
+appears it'll be substituted with what
+was passed in
+so the above command you can see it will
+run command on whatever's passed in
+so for intel gathering uh we make
+elusive stuff in this case hostings
+and
+here is pulling who has records for all
+of you know domain names anything else
+so uh you can also use it to do
+nslookups
+uh and you can use what jake just
+displayed earlier fierce which is how we
+use it most often uh
+we defeated a whole list of stuff
+so you show the linux box
+but sometimes
+you don't have interpreter
+oh but if you have a shell
+you will almost always have xrx in an
+editor
+and usually that editor is an emacs
+what
+so once you pop the box
+you can paint a list of votes so this is
+a poor man's pink suite
+wow nice pretty handy
+and then it spits you out back for all
+the hosts that we're listing uh you can
+even use it if you have bash which is
+really cool because there's a built-in
+function in back where you can do
+something like that
+so you can call a hostname and a port
+right from the dev tree
+and create a file that looks like that
+wait what is that last edge run that bad
+boy only if batch was compiled with
+definitely support exactly
+sometimes
+so
+if you have those preconditions which on
+a lot of discos you will
+um
+fight this bad way in there and here you
+go
+and by the way the reason you want to
+use this instead of just piping is
+saying stupid too many arguments yes
+can you repeat that actually yeah if you
+just pipe into a batch it'll give you
+too many arguments
+yeah there's a max parameter that you
+no i think it's 256. okay
+so handy yes handy handy saves you tons
+of time we use it a lot
+i use a lot save me a ton of time so

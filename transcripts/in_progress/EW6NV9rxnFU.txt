@@ -1,0 +1,491 @@
+the often forgotten about high-profile
+my name is dusty evanoff I'm a security
+analyst at a software company and lenexa
+and my talks call taking it dump to find
+a leak so enjoy your sausage hamburger
+pizza toppings and all the things that
+remind your bathroom humor that I won't
+mention again before I start I'm
+speaking for myself not my employer
+anybody else I'm associated with and as
+with any offensive talk you know that's
+how often oriented carrying out some of
+these things like a few have permission
+to carry all right can you hear me yeah
+all right so carrying out any of these
+these types of tags on a machine you
+don't have permission to do them on can
+land you in jail so don't be a dick all
+right so just to con the same page about
+kind of what we're doing here talking
+about memory we're talking about ram in
+case you're confused about memory means
+and what we're talking about is how to
+kind of start mining memory on a machine
+and looking for sensitive information
+things you don't want other people to
+find out about RC we're talking about
+windows kind of specifically but all
+this should be pretty applicable and
+other machines so if you have you know
+unix or linux or mac or whatever and go
+home play around with it a lot of this
+pretty accessible pretty easy to get
+started with it's not a super technical
+thing they were talking about today
+computers in general how they work
+internally it's it's kind of hard but
+we're going to keep it simple all you
+really need to know them all the talk is
+like when you open an application when
+you started a process when you read a
+file whatever is contained in that file
+gets read into memory and it gets
+allocated time its own
+space and that's that's where it resides
+and when you interact with it more data
+may be other instructions also get right
+into memory and that stuff ends up in a
+lot of weird places on your computer and
+it doesn't really disappear when you're
+done with it right so so yeah why got
+worm interested in this where we talking
+about this you know you probably have an
+idea right now but in case you're not if
+memory is kind of like the underwear
+drawer in your computer it's where you
+keep the things you don't want your
+friends or people come over to your
+house to look through you keep your
+personal information they're not
+knowingly a lot of times passwords
+banking information private keys when
+decrypt things it's where you keep
+things that attackers really like to get
+and where you you you really like them
+not to get so how do we get these things
+how do we get the ram there's a couple
+of ways to access ram on your machine
+one of the ways to do it is directly and
+one of the ways is to find it on your
+disk so starting with talking about how
+to get to ram directly you're going to
+be using something a ram scraper you can
+find code Alex by googling the Python
+example I found in like 30 seconds on
+github and it's really similar to what
+was using the target breach this is a
+PowerShell stuff that PowerShell arsenal
+which is kind of a spin-off of the power
+point project their codes available to
+look at and kind of play with basically
+what's happening is with a random
+scraper you're looking into process
+memory and you're just searching it for
+a certain pattern so if you're looking
+for credit credit card data then you're
+looking for about 15 or 16 numerals that
+are that are together and string maybe
+the limiter at the end and running a
+quick balloon check on it you know
+have valid data you've got to match for
+what you're looking for if you're
+looking for you know if you if you see
+the string RSA private key and memory
+then you might have another issue of you
+see certain up Hecht patterns or
+whatever you can find the stuff you want
+pretty directly pretty easily with it so
+ranch creepers are pretty little more
+technical in terms of programming and
+messing with them but stuffs out there
+if you want to play with it it's pretty
+pretty simple we'll talk about accessing
+memory on a disk there's a few more
+options it's not just kind of one this
+one way of interacting with it you may
+be surprised oh I'm sorry I look back up
+these guys got owned by round trippers
+so we're talking about a memory of this
+you a few options and one of the easiest
+options one of the easiest things to
+play with and look at applications you
+maybe develop applications that you use
+is just to dump the process memory in
+Windows you can open task manager and
+right click on a process and go to
+create memory dump and you'll have a
+road memory dump for whatever was in
+that process memory at that time and
+there's some pretty easy ways to deal
+with that and we'll talk about those in
+a little bit but there's also other
+tools if you don't want to just use
+windows and you want to script something
+you and do it Michelle you have the
+option to use some sysinternals tools
+you can do with powershell which point
+it doesn't learn tools that I have no
+idea what they are because these things
+are easy to use and really available
+outside of just doing that or both of
+those of these last few things Ram
+scrapers and process the stomping
+process memory we're talking about just
+interacting with was actually on on
+brand at the time right what's on your
+RAM cards be there are places that Ram
+copies of what's in RAM exists on your
+disk so what I'm saying is volatile
+memory sometimes isn't all that volatile
+right so if you have a Windows machine
+where would you find copies of the
+yes your page file and your hibernation
+alright so you're keeping stuff in swab
+so whenever your memory is not big
+enough for the things you want to put
+their it's got an awful of things you
+don't use very much to your page file so
+make space for things that you use a lot
+more frequently that's why when you
+minimize a nap and later on in the day
+you you maximize it again see your
+little mouse better go your computer
+starts thinking and slows down because
+it's reading something back ends in the
+disk and it can't read as quickly from
+disk as it reads from memory your
+hibernation file is more or less given x
+a copy of what's in it in your ramp
+right when you suspend your computer you
+put it asleep and need to know what's in
+ran because it wants to cut power to
+that and you keep a lot of good and
+juicy things there some things some
+people don't know is when you when you
+actually just fold this encryption a lot
+of solutions don't encrypt one or both
+of these files so since a wig is a list
+of different products that do full disk
+encryption or advertise it and at least
+half of them don't encrypt the
+hibernation valley so how does that work
+if it's going on a does it put on a
+different different partition on the
+drive or is it how does it appear if you
+walk up to that machine then I'm not
+sure that's a good question it's bearing
+its homework for everybody so if you
+mess with Windows very much you point on
+a live system key try to copy the
+hibernation of swap file windows is
+going to poop its pants and say no you
+can't be that access denied right it
+keeps a read handle on files and
+operating systems using and while it's
+got that lock on the handle it doesn't
+let any other process read from it but
+it's not a big deal because you can read
+directly from the file system and
+there's there couple tools that let you
+do it powers point has a tool called
+expect our project you can find on
+github has a tool called ninja copy that
+uses a C++
+library that reads directly from an NTFS
+file system and I'll show you later in
+slide you can actually read that that
+powershell script directly into memory
+and executed so you don't have to even
+write a file to disk outside of the
+hibernation file you copy off somewhere
+there are other tools like ntfs copies
+Shadow Copy a big area has a tool called
+F get you can carve stuff out you know
+teeny so you have options if if you if
+you really really want to get it it's
+really not that hard it took me about
+like 10 minutes to figure it out and
+yeah it's pretty simple to play around
+with if you if you don't know and you
+haven't played with the power supply and
+stuff give it a try if you if you just
+want to mess around one day and see
+what's in your hybrid file another place
+you'll find memory on disk if you use
+VMware does anybody have vmware running
+what they work does anybody create
+snapshots of VMware's machines are
+running p.m. machines that are running
+the work is it would improve those
+snapshots because they can be turned
+into raw memory images with a tool like
+VMS s2 core or even balan sylheti now it
+supports it within within volatility
+framework which is another tool that's
+pretty awesome for looking at memory so
+you can actually go through those things
+just let me go through any other memory
+dumps so if you have for example domain
+logins on those machines someone's
+logged in then you can use a tool like
+Mimi cats to look at those domain logins
+in plain text this is pretty much what
+you have there is completely searchable
+just like any of the file on disk which
+by the way if anybody hasn't messed with
+me macaque that's pretty cool if anybody
+is looking for a tool talk it'd be a
+pretty sweet too we'll talk in cats up
+just a note so the kind of the idea
+behind talk and kind of where I started
+and wanted introduced was I was
+at an password manager called one
+password and it's Canadian company that
+runs it called agile it does anybody use
+one password is a password manager and
+that they do they do good things are
+good company they're pretty smart people
+I've spent the last couple weeks kind of
+emailing back and forth them about this
+they do well with encryption I'm not
+really that smart with encryption but is
+there anybody that thinks this is that a
+good way to encrypt your password vault
+I didn't think so so I was looking at it
+and I was looking for this kind of an
+easy win I just kind of want to see how
+secure was and kind of what it looked
+like and I wasn't going to throw through
+decompiler than crazy with it I just
+want to find you know 30 or 40 minutes
+of poking around if I could find an
+issue and while i was looking at a note
+memory on the process and i found that
+the master password was sort of play
+text and memory the way i found was i
+right clicked on the process and dumped
+memory and then i used this eternal
+strings to search through it look for
+any a ski or income streams and those
+out to a text file and what I got was
+probably six or seven hundred thousand
+strings which is kind of like but when I
+dreamt that i found my master password
+was there it doesn't seem like that big
+a deal because it was just by itself I
+didn't say password equals and didn't
+have anything that indicated that was my
+password it was one string and a seal
+like 700,000 right so the first thought
+I had was two years of this is
+stupid who cares not a vulnerability no
+one's impressed but I spent a little bit
+i'm thinking about it and I realized
+that those not this if anyone follows us
+it's not it's not quite as stupid I
+realize that I can take the memory dump
+that I made but I pulled strings from
+and I can turn into a dictionary file to
+crack up my one password vault and I
+realized that if somebody else has this
+on their machine that can't public pool
+memory from it but I can carve their
+hard radiation file out of the hard disk
+and if I finally also have a one
+password vault I can crack it I can
+create a dictionary file it's guaranteed
+to have the password in there has anyone
+ever tried to crack something with a
+dictionary file and the password hasn't
+been in the dictionary file this is one
+way to know with this application up
+until the most recent release that the
+password is going to be that you're
+going to have success so I copied off
+the higher violence as an exercise and I
+used a ninja copy where I'd reflectively
+read that powershell script and to
+memory on the machine side of the right
+file and executed it and then I took
+strings and branded on that file and
+what I did was I look for any stream
+that was longer than eight characters so
+that's what the dash n is and I output
+that to a dump file and then I cleaned
+it up some if I was going to just look
+at process remembering one thing I can
+do to my file a little better is I can
+also run strings on the binaries and
+then take those strings out of my dump
+file and if you wanted to do something
+like that that's often description
+should get that for you then I just sort
+me unique to get rid of anything that
+didn't need to be there and waiting
+duplicates and then I looked for I'm
+looking for passwords so I wanted to
+make a password list then met what I
+thought a reasonable password strength
+requirements were so I grabbed without
+anything that didn't have a lowercase
+letter up case letter numeral and had
+spaces I want to go on and blue friend
+it was only within 8 to 20 characters
+because we're talking about a ball
+password right something someone's gonna
+remember not something crazy that
+do in the John the river someone had
+already written scripts to crack one
+password one password vault if you have
+in dictionary lists with a good password
+so i use that and i'm like crappy pc
+which is like dual core i3 five or six
+years ago took me twenty seven minutes
+to find my 15 character on the password
+the head of the lowercase and numerals
+so it was really simple compared to how
+long it published should have taken me
+if i just look at what the entropy on
+this is look at the you know the pure
+math behind homage to take to crack
+something like this with this encryption
+scheme so also looking at it i found
+that whenever i created something in my
+password vault and i opened it like
+fight and the credit card to the vault
+or if i added a password like an email
+account or whatever if i opened it
+viewed it that data was sort of looking
+at json string in memory also and kind
+of stuff around so i can go in and if i
+wanted to create a little regex that
+would find json strings in the memory
+dump i could also look for that i think
+it look for strings that are you know
+100 characters long or longer whatever
+incredible regex look for JSON and so
+it's also kind of interesting so I start
+thinking about where else you can do
+something like this because i haven't
+seen people use memory dumps or strings
+from memory dumps as password files i
+hadn't been able to find out what I
+googled around and maybe it's because
+it's just really simple it takes very
+little time and very little technical
+skill but I just kind of looked around a
+couple applications and I found there's
+some other things that bring your
+passwords in plain text in memory like
+being where d square client does remote
+desktop connection manager from windows
+does so if you had an Intel and hash you
+wanted to actually turn that into a
+password if you can dump memory from one
+of these things you have a lot better
+chances of using that as your password
+list than any kind of random dump out
+there also single n does anyone use a
+single in on their windows machine so
+they can make it look like a UNIX
+machine it also does the same thing like
+55 FTP and something
+or SFTP or whatever I find the password
+that i use ends up in memory as well so
+i think there's some other voices where
+this can be useful if you have programs
+that include files or do some sort of
+encryption on your disk if you have
+password managers I know he pass
+shouldn't have this issue they store
+things and like in the data protection
+API and windows so it all kinda ends up
+in an encrypted portion of memory but
+it's something that's how we're taking a
+look at if you find something feel free
+to you know me I'm kind of interested in
+seeing what else was out there if you
+think of more ways to use something like
+this besides just pulling like a plane
+data out of a file if you find different
+ways to use memory dumps to the mess
+with people on things actually a line
+takeaways for everyone I think memories
+kind of a you there's not a good
+way to handle it very well and prevent
+something like this and I don't think a
+lot of companies and then developers
+want to go to the effort doing it so
+understand the risks of what you got and
+what you know what your programs are
+doing it's really easy to take a look at
+wellpoint take you 15 30 minutes if it's
+something you think could affect you for
+developers people are writing software
+you think about managing memory the way
+that you would manage a file that was
+getting rid the disk so because because
+we're find that sometimes it is right
+you're hyper file your vmware stuff page
+file if you have sensitive data you're
+storing just like any other application
+if you don't have to sort don't do it if
+you do have to sort know what you're
+doing with it know how the language
+you're running in effects that so java
+you're going to really hard time over
+writing a string write it because i
+can't really do that in java you can't
+override it in memory just creates a new
+string of that value and look at using
+things like windows DPI in the data
+protection api is that's applicable to
+your application or something else where
+you can actually write strings that are
+sensitive
+cryptic portion of memory before they
+ever hit memory in plain text it's
+something that's not foolproof it's been
+reversed like the data protection API
+something that think since two thousand
+twelve people know how to reverse it and
+forensic kind of way but we something as
+simple as like dumping your process
+memory and making a password Lissa's is
+not going to affect you that's that's
+what I got any questions so other than
+since they're Canadian other than
+apologizing one did the fine folks agile
+that's had to say this this was
+something that I think I'd seen their
+forums that they have a form that's
+pretty active and exit a lot of members
+of their form they kind of talk about
+not this is was not part of the security
+model they intended to do was to
+overwrite sensitive information in
+memory when we finish with it there's
+supposed to be a private keys when you
+close your your vault or lock it there's
+with other information so they were
+concerned about it they they got to fig
+sound they wanted to make sure that
+wasn't going to break anything they
+wouldn't go through proper QA but we're
+really quick to respond and really
+responsive so he's a badge now yeah it's
+patch um it was like 80 beta and 82 now
+is the best version its out if you have
+one password they'll actually prompt you
+to pack to update though you update the
+new version you should be gonna go on
+Windows and OS 10 well it's I haven't
+looked at him and back so I think they
+use a little different setup and matt
+from the dealer windows and then they're
+kind of more of a max specialty shop I
+think in general that's kind of a niche
+but yeah when does the bench it's great
+who else has questions that's really
+all right now one of the things we do

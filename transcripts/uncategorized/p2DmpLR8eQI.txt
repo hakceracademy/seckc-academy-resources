@@ -1,0 +1,506 @@
+but he's gonna tell us some cool stuff
+so right applause and I know you can
+call me axon I've been in the Kansas
+City hacker community since about 1993
+and you could like eat the mic with the
+help of some local hackers I found it a
+text file ezine that turned into a blog
+it's called HR information report thanks
+Joel
+thanks frogman couple others for working
+for play I mess with stuff that really
+blurs the line between red team and blue
+team but I'm mostly attendee Wrangler at
+the office these days contact
+information is up here in the nerdiest
+format I didn't mustard today I might be
+talking about any Mets
+these are centrally organized controlled
+networks of honey pots and honey pots of
+decoy systems today you can deploy these
+to a virtual machine environment to your
+DMZ play with them in a lab and that's
+kind of how I got started these are
+designed to look like tasty targets for
+any attackers and you know the like I
+said they're pretty much just decoys and
+sorry I need the cheap use my notes
+alright
+usually no legitimate services are
+offered on honey pots so pretty much any
+network traffic to are from these
+systems is it's considered suspicious
+now honey nests and honey pots have a
+couple of different purposes the first
+one is to distract attackers with some
+kind of soft target you guys are all
+trying to hire this type of seeing this
+thing but here we are you know this is
+just a sidetrack than before they attack
+something important can also alert the
+SOG staff you'll call me mister the
+plague automated for walking and for
+research well let's make one thing clear
+attack data is not threat intelligence
+you know a feat of hunting that data
+will help you pinpoint bad actors on the
+internet but BOTS and scanners are kind
+of the Internet's equivalent of
+background radiation and you're looking
+through at McDonald straw at the if the
+whole universe here with each one of
+your honey Mets so you're gonna have to
+try harder if you want like a full-blown
+threat Intel feed from something like
+this it seems like the moment kind of
+stalled out a couple of years ago with
+the various honey net projects behold a
+wasteland of projects that used to be
+active they really aren't maintained
+anymore these are some popular ones but
+a lot of these are code complete still
+they work fine it's just nobody's touch
+them in ages so sometimes they don't
+work well with new flavors of Linux
+system D or what happened I'll come back
+to some of these in just a bit so there
+are a few that are still in active
+development or are newly developed
+calories kind of an interesting case the
+developers stopped working on it and it
+was a SSH honeypot it gives you a shell
+with almost any username and password
+development stopped a guy Ford - he
+called equipo that guy stopped in the
+original author decided to take it back
+wrapped up all the changes and kept
+adding and together they cut a telnet
+honeypot to it as well so now you've got
+a faith server that responds fine on
+telnet and ssh looks like a real live
+yeah looks like a real buy the system
+running a bun - or what have you and
+sorry here was my friend of i if there's
+a lot of logging it's got a I've got all
+get into that in just a second
+Tom loggers a new one by Robert Graham
+it's it was released about a year ago
+decided to kind of trap them arrived at
+and that's that one's that one's pretty
+new but it's it's fairly featuring
+complete honey bits and honey lambda are
+kind of new ways to use Amazon ec2 and
+lambda to provide honey tokens so that
+you can see if some of your data is
+leaking you put these things on your
+network and if you see these tokens show
+up someplace else you know that somebody
+has been in your network last there's
+port lurker which kind of took over
+where port port I can't remember which
+one it's kind of yeah port century took
+off part century hasn't been touched in
+like seventeen years and so port lurker
+for this talk I'm going to focus on the
+honey pots they can really be used
+centrally and managed centrally because
+that's really the point of honey that's
+right you want everything to communicate
+back to a central hub and that brings us
+to HP feeds which is a lightweight
+authenticated data feed protocol
+designed specifically for honey pots and
+it came to prominence in the days of
+Honey pilot and HP friends sometime
+around 2012-2013 and it was the core of
+that HP friends data sharing Network I
+really missed that you could just get a
+live feed of attack data from HP friends
+around the clock and it was really cool
+to see all that happen
+HD feeds integration is found in almost
+any of the honey pots that got really
+popular about five years ago and so you
+know a lot of these honey pots that
+stopped being developed still have HD
+feed support but if you're looking to
+collect data from a honey net HP feeds
+us a pretty good way to go and so I
+focused on modern honey net which is a
+project from threats cream they got
+bought by anomaly recently so its
+development stalled again on this but
+it's still a neat tool there's only been
+a few commits and fixes here and there
+have submitted three or four whole
+requests nothing has gotten merged but
+it's mostly complete even if it's not
+just moderate as it once was it ties
+that honeying that concept together
+really welcoming so it's got a built in
+HP feeds broker it's got a data
+normalization and Web API for you to get
+reports from gives you the stab the
+attack statistics which you saw kind of
+on the other side over here and it's got
+automated deploy scripts and they're
+written in shell and Python so they're
+really easy to manage to act a tweak or
+to fix because nothing's been touched in
+a couple of years and
+it speak it supported about it doesn't
+have any packages in reality right now
+it's got like five or six that are
+really well supported the back in this
+all MongoDB seeking around some former
+for us on the mhm server itself but with
+some of these tools like HP feeds output
+and with the Web API you can get some
+pretty cool reports out of it just
+remotely just from pulling the feeds off
+of it so a lot of folks have five -
+Avast
+is it safe to put this honey net or a
+honeypot on my own network or can I run
+one of these at the office and so here's
+just a couple of a little bit of
+guidance you want it in the DMZ you
+won't want it you know sitting on the
+same VM server as some of the your
+sensitive production assets if you put
+it in the file have some isolated V pcs
+where a can zip is the integrity yes
+root access or something on it it's not
+going to expose any of your private data
+use egress filtering the kind of limit
+or spread that somebody can do if they
+do end up compromising it and things you
+don't want to do is install it without
+information or again you know put it on
+your home network and just work for it
+everything through you know people could
+probably get into the rest of your stuff
+at home if you're not very careful but
+we're gonna get it home in a DMZ like if
+you've got something that's not just a
+consumer grade router and you've got a
+row DMZ you could put one of these on a
+so whether the actual honeypot I kind of
+discussed powering akimbo
+their high interaction honeypot you've
+really can't tell that you're not on an
+SSH or telnet server it looks like
+you've got a full interactive shell it
+looks like your group it will troll you
+if you try and do things like add users
+like what's your favorite movie like
+really but it overall it really does
+look realistic it's realistic enough
+think it's a bottom the script kiddies
+are able to they're able to interact
+with it and they think it might be a
+role so the cool thing is is that it
+really does women that the image you can
+do they can't believe files even though
+they're rude you know they can't really
+add users and when they log off
+everything gets back to them the next
+person that log scene gets a pristine
+environment it does keep detailed replay
+blog so you can actually go back and
+look at exactly what the attacker typed
+in real time and it keeps a log for
+every single connection that's made so
+so while the attackers didn't do a lot
+of damage or persistent changes to the
+show environment they can use it as a
+jump point to do other attacks and
+occasionally they do you know it does
+have COI it does do curl with does TW
+get it downloads the files that the
+attacker tries to download it stores
+them in a directory it doesn't let them
+execute those scripts that they download
+but it still makes that connection and
+download something and so I actually had
+one of my raspberry PI's somebody put a
+tell me entity and random expects script
+and started downloading tons of ads and
+I was basically participating in an ad
+ad fraud click Network which was super
+frustrating also carrying HIPAA both
+allow you to do SSH tunneling and
+forwarding I think the way mhn deploys
+it is disabled by default so Dionaea and
+Eamonn are both medium interaction
+honeypots inspired by a really old one
+called net pennies that was one of the
+earliest penny pots designed they can't
+capture malware samples and worms those
+tiny those honeypot simulate just enough
+have some popular protocols to encourage
+a worm or about to try and spread so you
+know they'll try a lot of these pots are
+trying internally like I've got 1 1 bar
+1 honeypot in South Korea it's just
+getting blown up by eternal blue all day
+long and some of these will try to
+accept file so for SMB and STP and
+those files unless you once you analyze
+the malware as it tries to spread some
+of these have codes for integrating with
+kuku or with virustotal
+so you can actually have a lot of fun
+with it so work cut shock body con cod
+are all HTTP honey pots they emulate for
+neural web services obviously WordPad
+there's a wordpress honey pie it really
+only reports attacks that look like
+WordPress attacks so Tim's or XML login
+attempts brute-force attacks Chocolat
+looks like an e fault Apache web server
+and it really only reports when it sees
+a shell-shocked style attack but when
+you look at the logs for these you're
+seeing all the scanners you're seeing a
+lot of ColdFusion you're seeing a lot of
+other things they don't report a lot of
+that
+the exception is con 5 which reports
+every single HTTP connection that has an
+attack which is a way to get a whole lot
+of noise in your honey net
+don't really recommend the compilot
+though also emulates the siemens s7 and
+blah blah so variety protocols and so
+that's kind of an interesting one to
+deploy in sk that type environment or
+defined scale Oh stammers I was going to
+say that since a lot of these except
+normal HTTP traffic if you install them
+alongside sericata
+or snort you can actually see a lot of
+the other stuff you'll see if the
+ColdFusion scanners you'll see the
+cross-site scripting of the PHP you'll
+see a lot of that stuff happened
+and as it turns out storm Cercado both
+have deployed scripts in modern
+mignonette so you can deploy store it to
+a honeypot that you're already using and
+then storable and digitally report and
+those alerts that it sees it doesn't
+look like I was testing Sirimavo earlier
+this week it doesn't really look like
+the surakameth stuff works just yet but
+I'm kind of working like so each
+honeypot the dem hn supports has a
+corresponding deploy script and this is
+just one deploy script and you can see
+the script itself is down here the
+actual syntax the deploy command looks
+an awful lot like her own pipes to do
+batch and each one of those scripts has
+basically five phases registration
+creates a brand new entry in modern
+honeynet
+offenses e2b feeds credentials so they
+can publish that they live it prepares
+the environment you know installs the
+tendencies anything else that needs to
+prep download some honeypot software
+usually from good or from a PDA
+repository or RPM does some
+configuration and some of these things
+require a whole lot of expenses patching
+I can't remember which one that one of
+them you actually had to patch HP feed
+support into the honeypot and so
+sometimes there's some fairly elaborate
+stuff going on on the configuration side
+and then finally installs it usually the
+side shot and then persistence usually
+uses all the image shown stuff use a
+supervisor for job control and so you
+know
+almost sounds like a botnet I totally
+agree with you you're basically running
+up by the head of raspberry PI's and
+five of those so I won't walk through
+the whole install but I stood up of
+inovative server instance on Google
+compute engine just to kind of play
+around and I ran that a Cowrie deploy
+script and you can kind of see down here
+the command that I ran and again it does
+look a lot like pseudo pipe Perl mash or
+curl likes to do bash whatever but once
+everything is done installing mistakes
+just a few minutes you can log off and
+like in this case the the SSH on youhad
+takes over for 22
+so it actually moves your SSH port to 22
+22 and you can kind of see some offline
+stuff there over there it redirects 22
+and 23 allowing them to be used by a
+known group user but if we look at the
+log file we can see that our e was
+started and the first attacker hit it
+like a minute and a half later when we
+was at the log here so from 248 to 250
+we had a connection attempt and somebody
+was already trying to beat this thing up
+so the HD feeds subscription we talked
+about how the honey pots can push a tag
+data to HD feeds
+it's a subscribe publish model so from
+the subscription side of things it
+allows you to attach to the HP feed
+service and just consume a constant
+firehose of honey binding so this gives
+you a near real-time view of attacks you
+can stream them to this for analysis
+it's in kind of an almost JSON type
+format or you can parse it on the fly or
+even load it into a database the way
+it's formatted I think you might be able
+to replicated into another HD feeds
+instance which would be interesting that
+I haven't played with that yet so this
+is a quick animation know what it's
+cycle through
+reasons this is a quick animation using
+the installing and using the HP feets
+Python clients this is the reference
+client that's provided and I've got a
+link to the github repository here later
+in the slides I think so this is where
+you start so I just do the git clone
+build it this is my attempt at live demo
+okay with typos and once you build that
+you install it soon and really then all
+you have to do is run it with the right
+credentials so here you can see the list
+of fees that we're going to consume and
+you can see the community string and you
+can sense and see via a list of those
+and within a matter of seconds we've got
+Kaori reporting in and this is all
+so having direct access to MongoDB
+unless you gives you a lot of
+flexibility for reports but to kind of
+give you guys a general feel for what
+all you can do I decided to use just the
+HP fees output I streamed it to disk and
+even in the CSV files I've got a thing
+tailing it into MySQL so I can run some
+slick reports
+and so you know one of them is just a
+stream parser that exports a minimalist
+timestamp CSV and so I'm just going to
+see it at the timestamps in my sample so
+I can go back and just grab the last 24
+hours
+you know from there I mean the summary
+of the tack right he addresses how many
+different honey pots they get and how
+many total connections they made we've
+taken to calling the heavy hitter up
+here of whatever is number one 120 I'm
+sorry 12900 hits we call that one the
+queen bee and so anyway I asked for a
+bunch of volunteers a couple of weeks
+ago to you have to stand up some honey
+pots and point them at by mhn server and
+they turned out in force so you know
+what they props to all of these folks
+you know they really test this I was
+just playing around before I decided you
+know what maybe the SEC PC community
+would like to to see how this works
+and I also worked a lot with Brandon aka
+window and I don't know where he said if
+he can there he is
+cool you know when he was you know we
+took a kind of sexy date of this project
+that I found on github and he was just a
+father and he built some middleware and
+made a whole bunch of changes to it and
+here's an animated gif of when he built
+this thing is flying feed of all of that
+and so at the very top and down towards
+the bottom in those satellite looking
+things those are the honey pots
+those are Delocated honey pots that were
+running the push ends that are coming
+out of the globe those are where the
+attackers are the live feed of usernames
+and passwords that are being tried this
+turned on the bottom is that the last 24
+hours as they attacked and you can see
+where my MongoDB died for a couple hours
+because I didn't have enough RAM on the
+ec2 instance and then you've got the top
+attackers over here and if you click on
+one of those you can see it show up from
+the map and put some more details like
+which ports it comes up with although
+this is really cool it looks really
+sleek a whole bunch of no the whole
+bunch of a little bit of Python
+Brandon thanks for all your help on that
+that's been awesome so if you want to
+help if you want to get involved I plan
+on leaving this thing running it's it's
+gonna cost me a little bit of money of
+ec2 because I had the bump up of the RAM
+spec but I'd love to I'd love to just
+leave this thing running for everybody
+and so if you want to get involved
+amazon has a free tier VC 2 for one year
+you can basically run a t2 tiny for a
+whole year for free on ec2 and that's
+more than enough to run a couple of a
+couple of different cutting pape
+software's Google compute engine has a
+three hundred dollar and one year free
+credit so I just find a whole bunch of
+stuff $300 goes a very long way on
+Google compute cloud you can run
+raspberry pies at home just be mindful
+of your DMZ situation and I also need
+some help kind of testing and fixing
+some more of these deploy scripts
+I can I can kind of pull this up
+afterwards and show you guys but I could
+still use a little bit of help I think
+there's some other honeypot software
+that we could get working with this so
+if you and then also there's like telnet
+logger from David Graham I'd really like
+to see if we could get HD feed support
+added to it it's fairly simple but I'm
+not a developer I'm a like I said I'm a
+tabby Wrangler and breaker and fixer of
+settings but yeah go ahead and contact
+me if you want to give us a hand or need
+some help setting up the honey pots and
+you know what use for everybody these
+are the these are the credentials to get
+logged given to the to the live data
+feed we we kind of took the ISC license
+which looks a little bit like the
+tu license which looks a little bit like
+the BSD license and basically said do
+what you want with the HP feeds output
+just don't hold us accountable you know
+if you if you end up blocking something
+with it or what not but this is a
+read-only feeds that anyone here can use
+and you can just watch that feed of data
+come through but of course you know you
+might just want the real deal here so
+I'll close out was just that on the
+screen and you guys can watch it as it
+goes live thanks guys
+[Applause]

@@ -1,0 +1,973 @@
+that'll make you think that will be a
+little bit of a ride but more
+importantly it's a reflection of what
+it's like to be in infos set the last 3
+to 5 years so there's going to be a lot
+of words thrown around a lot of booze
+and boo about things like
+a so we're going to make a drinking game
+about that if you hear the phrase
+a yes you will have to take a drink
+new think so
+cyber you're going to see a lot of cyber
+now this is a beta talk I have never
+given this talk so there may be some who
+here is a grar
+Nati oh great Julie not here yeah
+Julie's not here sound good Okay so
+we've all been drafted in the Cyber
+militia right who is this guy I am
+literally some Joker from Alaska who
+works for a small company actually
+pretty mediumsized company Fortune 11
+just got ranked up to 11 uh that
+monitors threats and does intelligence
+and ir and all sorts of fun stuff for a
+lot of the state websites I a geek I've
+been a geek ever since I was back home
+and um you know I love fishing I used to
+do a lot of fishing I used to be a
+professional
+fisherman I have had a mohawk before for
+those of you who got to see that I found
+one here that was me it was sweet I've
+never been so scorned on a plane ride
+before the people next to me would even
+take my
+photograph you're really freaked out I
+am married to a very beautiful wife who
+supports me in everything I do and this
+is my life right now four kids before I
+here six eyes what's that six eyes I
+know isn't that
+crazy so this is a personal talk has
+nothing to do with my
+employers okay don't tell them I'm
+talking to you so as you're reading this
+I want everyone to put on their tin foil
+hats this is part of the swag so if
+someone can help me hand out lots of tin
+foil I want you guys to make tin foil
+hats if someone would please make me one
+it would be great I'd like to wear it
+anything but I love this because I work
+with somebody who
+literally yeah this is this is what
+inspired me some of the stuff in this
+top okay so if you ever see this I don't
+know what you're supposed to take to the
+grocery store but you're going to get %
+discount
+that's do we get the boxes out okay make
+sure you hand them out so I am not a
+historian I'm not your lawyer I'm
+definitely not a conspiracy theorist I'm
+not your legal counsel the lawyer for
+set cas's over here
+right I not your financial planner I am
+not a fud Monger okay now believe it or
+not this is fud right here this little
+thing that's for the ladies that want to
+stand up and feed that's a female
+urinary guys I I kind of laughed at that
+that I I scrubed them out hoping I
+thought Julie be here so I kind of just
+threw that in for her but I do I did
+like this because that dog wanted some
+bud bacon who here loves
+bacon yeah we got some hands up guess
+what I have oh thank thank you thank
+I have fud
+bacon so that's the only mongering I
+will do with with fud is for the bacon
+so we may end up giving this out tonight
+who somebody raise your hand in the back
+go some f
+bacon sitting it's it's ice cold cuz I
+got some cold packs I plan ah head okay
+so let get repacked up
+here all right but no seriously we need
+to make sure that we fight the F and any
+of you who've been to a conference
+fud is out there okay so this talk will
+make fun with Bud oh sweet tell me it
+works does it
+work all right take a picture
+so and I'm definitely not your hero okay
+not your hero so many of us have grown
+up in the digital world some of us way
+prior okay worked in analog a long time
+but the funny thing was cyber the word
+cyber was born during many of our
+lifetimes and the word cyber was first a
+big deal from uh some books it was cyber
+Punk okay but it really took notice in
+1991 because of AOL and sex okay AOL
+leave it to sex to drive everything got
+any picks of that back in the day as
+back in the day you would get on some
+Forum or chat box and you'd say would
+you like to
+cyber and that was a turn
+for okay so cyber the funny thing is
+it's kind of coined off from there and
+gone crazy so around 2000 this sweet
+article came out and my favorite is this
+guy right here Arnold
+yinson and he consulted on this uh
+wonderful article about how you could
+send a specially crafted email that
+would turn your computer into a bomb I
+put this in
+because s somebody's got to get a
+picture of Cory with all the stim toil I
+trying to get another
+Bo
+so um it's articles like this that
+people actually
+believe I mean I found a whole Forum
+where people were debating this and
+arguing with each other about how this
+would happen and they seen it and I just
+started laughing so I kind of uh you
+know to train on that one but the bigger
+problem we have is people believe that
+because the internet was created
+as arpa right and then DARPA and it was
+for trusted people much same problem
+with the event right that they're
+trusting so it's all bult on security
+you're supposed to trust who you're
+sharing information with this thing
+happened where Windows NT came out
+everybody starts putting commercial
+websites out there and voila we all have
+jobs okay think about it we all have
+jobs because of window those NT correct
+okay
+so General Hayden said
+it's like putting a padlock from your
+kitchen to your dining room okay you're
+trying to basically lock something up
+that wasn't meant to be locked up
+so the current cyber
+threats by the way AP AP
+AB okay current cyber threats activists
+they are the scariest we may not think
+that but over time they're getting more
+crafty they're causing more crap most of
+us are dealing with Happ this on a daily
+basis okay the problem is they're not
+just the kids anymore who want to sit in
+the thing there are people in other
+nations and I'll get into that okay so
+as I as I as you can read smarter more
+extreme you got Anonymous jihadist some
+of you in here okay but the best part
+about this
+is what if I told you you could Monitor
+and correlate cyber threats and that
+should be another talk
+okay I don't know I can give it somebody
+can give it I'm going to plug talks on
+this as well all right so the other ones
+are nation state sponsor we know that oh
+shoot AP everybody makes a joke about
+there we
+go
+Asia stands for Asia okay Asian
+persistent it is okay so unit 63198 we
+all probably read that report dro the
+bomb really tick some people off in the
+Beltway because they were tracking them
+exposed them all right the Syrian
+electronic Army they've been in the news
+lately people speculate you know are the
+Iranians using them is that a
+retaliation for Stu snack trying to go
+after financials are they Russian are
+they mercenaries are they Syrian there's
+some people in the room that probably
+know who they are okay the al-Qaeda
+electronic
+Army Turkish ojan we're going more but
+what about our own NSA because seriously
+we don't have anything
+right there's nothing to worry about
+with our country I mean I'm wearing this
+shirt because I'm proud that one day my
+profile will be leaked and you will all
+know the kind of fishing porn I love
+okay
+so all right can we compete with the a
+PT can we mathetes mathletes I have a
+slide later that talks about can we
+really compete with this I mean they got
+their own dedicated you talking about
+apartments they were basically an
+apartment that Mak sick okay but how
+many of these buildings are spread
+across Trina seriously something to
+think
+about Cally there's a billion people
+there's got to be more of these right I
+mean if you go back to the
+uh
+63198 you think they did that
+chronologically like in order is there
+that many I how many apartments are
+there okay so can we compete with the
+nation states well the other problem we
+have is cyber criminals so literally I
+was making that slide and this one and I
+was start to put in some names of some
+cyber criminals that I track through and
+different things were going on and
+that's what di I was like go back in and
+it d d oh God literally my hair stand
+now freaking out it was like midnight I
+was already tired so I mean really the
+whole point is I'm like okay fine I put
+in Russians Russians ukrainians Russians
+and wait did I tell you about the
+Russian mafia do you know what happens
+to R CBS and the thing he has okay so
+you can Google anyone else you want and
+you can be as paranoid as I am and I'm
+not even really exposing these people
+okay
+ab
+okay of of a bought her and his b to a
+24-hour life cycle I just thought it was
+pretty was a good time to put in for a
+dream okay so we are in a frontier and
+I'm going to kick this into a little bit
+of History here pretty soon you think
+about it it's a free flow of information
+okay people can hack outside of the
+United States without repercussion in
+fact some of them are heroes they think
+they've done this great thing because
+they defaced a website or uploaded at
+xtxt which really says something and
+they oh look we face it didn't you just
+have a
+URL we all know that we see it we have
+to deal with it yeah Tren
+right the elephant is in the room and
+he's sitting right there don't look at
+terrible so it's relatively easy to be a
+scrip Kitty it is relatively easy to be
+a hero in a country that hates the
+United States think about it they're
+never going to prosecute
+you all right the internet is also wide
+open but the problem is that there was a
+wcit summit in Dubai and this is a
+serious deal this is not the joking part
+of it this happened last December the UN
+tried to make a coup on the internet
+basically come in and say we want to
+control what's going on we want
+to basically turn it into China turn it
+into the UK Australia everything's
+monitored proxy let's go taxes all these
+things luckily we were able to stand up
+and say
+no no but here's the key the US is the
+digital Empire okay so remember these
+words Frontier and Empire okay and does
+anybody play the video game with John
+Mar yeah he's
+riding he's riding Applejack so there
+you go all right so cyber War cyber
+drinking G from back cuz there's a lot
+of cyber all right the problem we have
+is infc professionals is preparing our
+people for the inevitable cyber War
+right okay is it hype do we really need
+to
+worry this quote may have some relevance
+not reacting to the threat of cyber
+warfare as 10 amount to rais in the
+white
+flag I know we're sick of hearing about
+it but is it something we should really
+worry about we think war and we think
+certain terms but a lot of us know it's
+kind of different in the cyber
+world sex sex world thank you I about to
+say that se of
+that okay so this is another serious
+part of my job the wake up white paper
+came I got grab my notes from General
+haager somebody know his name how do you
+pronounce it any scholars in this anyway
+he's a retired US Air Force and he
+basically talked about some of these
+points uh some of the key ones are
+failure to prot proactively address
+these threats risk a digital Pearl Har
+or 911 okay uh they've crossed the
+critical line we have seen tons of Ip
+disappear from our country that's a huge
+thing that really we don't do something
+about it's scary the intellectual
+property that leaves is going to cost us
+cuz really that's the only thing we have
+around the world we have more technology
+usually the smarter people but right now
+you have nation states that are taking
+that and building upon it so all the R&amp;D
+we spend in it all the stuff we do boom
+it's G okay uh another Point here the
+private sector must look beyond the
+balance sheet and F focus on our
+national interest and if need be the
+government must Force this change now I
+don't know if I agree with little last
+part but that's the problem we have okay
+and then of course we all deal with this
+on a daily basis educating the American
+people/ users about the importance of
+cyber security and drive vehical change
+so
+AP all right I have to have the
+obligatory Su of War right what security
+talk does not have that especially at a
+major
+conference and everybody says it'll
+happen there's a book by O'Reilly so it
+means it's valid I mean if's right about
+it you know it's the real thing so the
+event that will change everything let's
+just think about what event is going to
+change everything okay why hasn't that
+happened we've been told about it for 3
+to 5 years maybe it has maybe there was
+something but it wasn't what we knew
+maybe it's Yet to Come okay that's what
+activist can be scary the bigger thing
+for me is there scisms are wide open we
+all know that we've heard about okay and
+our financial Market where do you hit us
+where do you kick us in the balls stock
+market right where we going to take the
+biggest hit
+so our current government cyber status
+is literally the ostrich
+okay 3 years ago that report came out
+they've been begging and pleading and
+talking about how we need more people
+they've been recruiting when I went to
+schmon a couple years ago they had so
+many people there handing out tests
+trying to recruit people trying to get
+in the last 2 years of any major
+conference you've seen people recruiting
+two years ago at deathcon it was an open
+hey I'm a fed you want to come work for
+us I me this year wasn't really quite as
+opening but you guys sold their soul
+right okay but we're not trained we're
+we're literally we don't have that
+apartment complex and that's you know
+they're not cracking the wi okay
+the the bigger problem we have is we
+don't attack back so many lawyers so
+many things going on we don't have I
+think this year they finally came out
+with the yeah they finally came out with
+the executive order talking about
+possibly doing stuff like that we're
+slow to act on this stuff our government
+always overreacts to hacks and
+threats that nuclear little bomb thing
+that explains the big event it's
+probably going to take something like
+that and there will be no FEMA there's a
+major scatter event in February on the
+East Coast knocks out the third of the
+power grid a long time you blow up a few
+generators it's not like you can go pick
+up another generator from Depot for
+those okay what's going to happen so
+something to think about all right a
+moment these are the at guards guarding
+against the Asian persistent threat or
+apartment so like I was saying there is
+no digital cavalry
+okay there are several high ranking
+officers officials that have talk about
+our lack of response in the Cyber realm
+this is called for
+shadow the way back machine okay the
+frontier at one point the Americas we
+all know about the colonies everybody
+has graduated from high school so let me
+remind you what you were supposed to
+have learn the French and Indian War not
+our Revolution the French and Indian War
+there's a gentleman very famous I think
+he invented electricity
+right it was Benjamin Franklin think so
+I think his initials were
+a okay he came up with this cartoon
+called Join or Die was in he was in his
+newspaper and the whole point was he
+said we need to join up against the
+French and
+Indians because the threat we have a
+common threat we need to unite with the
+crown okay so they wanted to protect the
+way of life well here's the funny thing
+about it clearly we know that Benjamin
+Franklin was drinking the
+Kool-Aid because the French and the
+Indians were not the real problem
+okay so what happened what what what do
+we know about that
+17 he's so thirsty right hot and thirsty
+he's hot he wants to meet
+yeah the Koolaid came name
+was so a very intelligent inventor of
+the
+day led a
+unification against the Common
+Thread that gave
+us this some other things they actually
+took his original post made it into that
+he gave us this gentleman any you know
+who this
+is
+uh George Washington no it is Sean SL I
+couldn't see his so we had our Great
+American leader from that Yankee
+Doodle okay Yankee Doodle Dandy who can
+sing it I have swag for if you
+can give us this anyone
+anyone come and take it which now says
+come back of the war okay so the French
+and Indian War a Frontier battle against
+a common enemy led to the American
+Revolution a unification against the
+empire at the time gave us the leaders
+we have so where all this circle about
+is cyber guards okay article one of the
+US Constitution Section 8 armies and
+militias the government can call out
+private people businesses to
+help there is also a Senate bill that
+has been brought up once or twice saying
+state yeah well that's at the end right
+but a lot of guards okay we those of us
+in this room maybe even this group could
+be a militia we're the Cyber Warriors of
+the next battle okay welcome to the
+drift we've all been drafted we're
+actually in the middle of this battle
+the official part of it may come later
+with one of those congressional
+laws but we are basically on the front
+lines or we'll be part of the front
+lines for some of the bigger battles
+that happen the cool thing with that is
+we'll be
+privateers anyone know what Privateer is
+from the old days okay now here's the
+funny thing what tools will we use well
+it's another talk another talk another
+idea for a talk okay so militias five
+minutes long yeah five minutes
+long um uh militia G first IND army or
+fighting force that is composed of
+nonprofessional Fighters are we
+nonprofessionals yes kind of right it's
+not our day job maybe it is okay uh
+citizens of a Nation or subjects of a
+state or government that can be called
+upon to enter a combat situation right
+we're not full-time soldiers so a
+privateer we didn't have a Navy back in
+the day and if we did it sucked so what
+did they
+do the New England area had some of the
+best ships in the world whing was kind
+of our oil at the time phenomenal ships
+we said hey guess what you guys get to
+be
+Pirates Camaros
+privateers the cool part was I don't
+think we'll get to do this now they got
+to share in the Bounty so when they took
+over a ship they got to split up the
+whatever they got can you imagine
+that okay so
+privateers
+so current cyber milias and
+privateers we know that nation states
+are are basically drafting their
+brightest they're growing these guys up
+they're filling full of Mountain Dew
+shipping it in from America
+right military they're doing they're
+basically getting mercenaries anybody
+can hack the Russians are notorious for
+this hey you guys can hack all you want
+as long as it goes out come in right saw
+the Georgia conflict back then they
+didn't have that in their military they
+just taxed these guys to do okay
+criminal elements hackers for hire
+script kitties very bored intelligent
+hack okay so state sponsored militias
+that we know of that I quickly want to
+give here also could be a talk dealing
+with
+a it's more Json so Russia has a group
+called
+Nai look it up get into it that's a
+serious group that is going to be a
+threat for years to come a lot of the
+Eastern block countries I could probably
+do 50 slides just on them Iran has the
+B that pretty much is
+the what's the word for the spring of
+where a lot of the latest hats are
+coming from for the jihadists okay China
+has an estimated 4 million in their
+cyber militia so how many buildings
+would that be okay props to my course on
+that North Korea Palestine all those
+Jokers okay is anonymous a
+militia yes are they a militia sure they
+could be considered a militia but here's
+the funny thing about that okay you have
+these other groups rising up based upon
+Anonymous they kind of took that monitor
+from a few years back and said look at
+us we the Turkish Anonymous Turkish a oh
+yeah look at call same format how cool
+is that we're rock stars in our country
+okay the Indonesian hacking team man
+those guys really gave me a lot of
+last the Syrian electronic
+Army okay another one that is a real
+problem this year
+Al-Qaeda asically ask the syrians do
+most of it but they like to put their
+name out
+there the T cyber
+army they all use cyber jih in the name
+of anonymous to go do what they did but
+here's the funny
+thing you have an OP Islam from other
+anonymous groups that are now making
+this complete circle of no oh no you
+don't oh no you don't so is that part of
+the group are some of those cyber
+militias that I've been talking about
+part of the S
+Islam something to think about something
+to think about all right so let's get
+into
+armed cyber militias we all remember C
+of the dead cow are they the original
+militia that's good I mean think about
+it I was trying to figure out who I
+would call the original militia okay
+chaos Computer
+Club
+uh remember that remember those days
+website I missed that logo
+really uh another talk right we can talk
+about all these guys what they
+do all
+right Talk
+AP okay so in a cyber War let's just say
+we win we're going to kind of fast
+forward because hey we are Americans
+America we win everything
+America
+America America I should have put that
+one up there so to make it make sense we
+win but really what if we
+won so let's replay with what happened
+back when we
+won the original Revolutionary War they
+had to put in a second
+amendment okay why did they put in the
+Second Amendment because the militias
+war K me so the well regulated militia
+state do I really get a slide about this
+yes come control whether you're against
+it or for
+it think of it as an infos
+professional years I love this this is
+my favorite years down the road when we
+win this when other things happen and
+all the crap hits the fan what are they
+going to start to control we already
+seeing
+this there is Hardware control across
+the board
+okay video game they want to make to
+your advice that was kind of knocked
+down a little bit okay somebody Happ
+what's the cloud yeah yeah okay we're
+stopped at the borders they can't
+confiscate your device just
+because within 100 miles of the US
+Border in the name of Terror and
+security I mean I'm not trying to be a
+conspiracy theorist here I'm not trying
+to say We rise up against our government
+but these are the things that I want to
+end with another slide that we'll talk
+about though okay we all know that
+private encryption I mean that almost
+got people totally in jail there's a
+huge problem okay so modern militias is
+it going to be camera or caffeine okay
+guns or computers bullets or sophomore
+let's hope it's not all of that both of
+those things I did I did find pretty
+exciting that there was a camo caffeine
+sh covers it right so I am now on a
+watch list for sure because I research
+Moes I'm pretty sure if I wasn't one on
+already I'm on now because of this St
+well hold on you have your hat on oh I
+was I was wearing a t hat at the time so
+okay so historical comparisons to back
+in those frontier days to
+now pretty
+self-explanatory what are the equal
+things with this
+okay people
+comparisons I really wanted to go more
+with this but I
+tried Bruce Sneider is he not our
+Franklin right is he not the intelligent
+guy
+oh
+T
+So Bruce we all know great great talk I
+that's a oneish that's
+why so the jester how many her follow
+the jester EXC
+pu%
+puberty so I'm
+chok the jester if you don't follow him
+hilarious I personally think the guy
+part of our nation state it's actually a
+group of people but that's my theory I
+can't what he does I don't think he an
+individual and the way he gets away with
+it I think that's kind of our
+retaliation with but don't quote me on
+that I got 10
+okay Moxy is our Boon I mean seriously
+watch this oh
+yeah he Moxy Marlin's F he is our
+Frontiersman he runs from the law he's
+going to end up with the Alamo our
+digital Alamo you know it right and then
+Trent I don't know who the heck that's
+going to be I honestly ran out of time
+for t l who's the Kim Kardashian the Kim
+Kardashian thatou I had a Bradley
+Manning up there I wasn't quite sure
+anyway so when that
+in will all non-compliant hackers be
+rounded up much like what happened to
+some people moral aror okay is there
+going to be a McCarthyism against
+intelligent infos people are you going
+to have to swear in Allegiance we
+already know that the internet is going
+to be controlled at some
+point are we going to develop the one
+that allow us to have the
+freedom because hacking is a way of life
+okay our Hardware is going to be
+neutered I'll talk about that further
+and there's already talk that you're
+going to need a digital Visa or passport
+or some of kind of biometric access to
+do what you want to
+do
+so here's the forecast partial
+Freedom we already have seen it with the
+UK Australia Japan all these places
+still have gun control the same way very
+strict very strong okay they don't want
+the people to rise up we're going to see
+this happen even in the United States
+unless we do something about it okay we
+do not want to turn into China
+SOA sisa you've seen those things now
+these two right here because of the
+Snowden leaks may never see the light of
+day but they're going to try through
+other means today just the day
+TPP was discussed it was leak to weaky
+leaks and you should go to tppp INF
+nwork to see what they're trying to do
+through the back door okay through some
+of the Nations that are agreeing upon
+trade it's kind of like a napit for our
+internet right and of course
+we're going to have to have some kind of
+proxy
+system and if we violate it is it going
+to be a problem you're going to know
+about it if people like sent link going
+to turn Us in
+probably
+so another talk here I think this should
+be a good Talk AP AP and
+me it's good crowd tonight I seriously
+have shirts I shouldn't be throwing
+these out
+that deserve the shirt yeah who who said
+that you know me there go I doubt it
+thing you but enjoy so um who is the
+Cyber weapon this is the same with a gun
+control argument right is it your tools
+like set is it your poor is it Menlo is
+it the Dos tools okay and how are they
+going to regulate or neuter everything
+that we're doing here are we going to
+have some guy sitting in on our meetings
+is going to come say can't talk about
+that are we going to allowed to me okay
+and what are the hacking tools can we
+equate them to things like ammo a rifle
+and a
+pistol so this is a true story from
+another source I don't know if you guys
+saw this that guy was basic lost his
+fourth amendment rights this was in
+October this year because on his website
+he CL it was a hacker right let me my
+notes on this um the court found it
+significant that the defendants are
+self-described hackers who say we like
+like happing things and we don't want to
+stop so basically this was the guy that
+tacked that he wrote he wrote some
+software he wrote some software then
+open sourced it yeah and then they think
+he open sourced it but basically they
+went ahead and just seized It Anyway
+didn't even tell him about it because
+they said his capability equals intent
+because he's capable of it that means
+intent just because on his website he
+claimed to be a hacker and he likes to
+hack and we know the real definition of
+that but the idiots we deal with on a
+day basis and our government do not they
+see it as a bad word okay
+so basically it's a it's going to be a
+hacker witch H and this is kind of a
+precursor to things like that because if
+you look at the next slide this is the
+actual court stuff the court finds it
+significant that defendants are
+self-described hackers who say we like
+hacking things and we don't want to stop
+now the underling portion here the
+Tipping Point for the court comes from
+evidence that the defendants in their
+own words are hackers by labeling
+themselves this way they have
+essentially announced that they have the
+Neary computer skills and intent to
+simultaneously release the code publicly
+and conceal their role in the app just
+because that was on a website no other
+proof or evidence that they're they're
+basically saying we're going to go get
+this because we think it happened and
+there he has no for right and further in
+the document which I didn't put up they
+basically
+said you know what he has the ability to
+scrub it so we couldn't do that if we
+told him we're going to do that he would
+delete hard so it was a preemptive hit
+by the
+Idaho uh in Idaho the judge ID control
+sofware it was some SC Control software
+so that the it was all done in the name
+of terrorism basically they came in said
+you know that he could release this and
+terrorists could get a hold of it run
+our system so instead of really looking
+at the real problem or asking the guy
+they're doing it this way now there may
+be more of the story but I think it's a
+legitimate concern it's something to
+think about it's futuristic talk right
+by the way I don't believe anything I
+said was total tra t on okay so is there
+going to be much like the Second
+Amendment Elite Amendment
+saying will it be illegal to have
+hacking tools are we going to be allowed
+to use those things to help in the Cyber
+war that may be pure science fiction
+cyberpump stuff theoretics but it's
+something to think about will a hacker
+sticker be seen as the same as an NRA
+sticker right
+you drive around you see the crazy
+AK-47s or M16 stickers you know that say
+stuff in the NRA are we going to have we
+going to have to hide that we don't want
+to be known as that or are we going to
+be proud to show that I'm kind of mad
+cuz my laptop has all those stickers on
+it it's not here tonight that's one of
+the things okay will you be classified
+as a
+weapon seriously think about it
+okay how highly regulated will it be
+okay is this
+avoidable are you already on a watch
+list is there a way to find
+out okay do you care if you're on a
+watch list we go back to the Crazy
+Girlfriend you got nothing to hide right
+you're not doing anything wrong do you
+have the
+ability clearly I
+mean clearly you're you're evil because
+of that are your ideas of threat to
+National Security and when is it
+tyranny okay when is it tyranny future
+topic Poss maybe not for here maybe for
+another
+place so we deserve future we shap okay
+is an association the answer yeah this
+is well I
+quickly isn't Association the answer
+okay many of us have our search we
+belong to some organization things like
+that okay is there another one we need
+do we need the Nisa National information
+security professional association
+something that stands more for our
+rights for protecting things I don't
+know these are the ideas that I was
+trying to come up with my talk okay but
+seriously this whole talk is B about
+electricity real war there going to WIP
+electricity we're going to be worthless
+anyway do run some generators but I want
+to end with a quote
+um the exact level of tyranny you're
+going to live under is the Lial tyy you
+put over okay so thank you that's my
+along so the key here that I liked about
+this is what are
+arms I was trying to get into a pH
+philosophical talk when I first created
+this is could we be considered or our
+tools be considered modern arms
+information there already are
+information in Germany there's a lot of
+places right there's those who say the
+the network connections themselves the
+networks are part of the weapons and the
+arms so could we end around and say we
+have the protection of the Second
+Amendment based on that but I doubt it I
+don't know if a lawyer would argue but
+really that was kind of what spurred my
+initial thought about I'd like to talk
+about this and
+see any question there again I got more
+of a comment any questions here so I
+know there's a lot of empis on say
+foreign countries we'll just say China
+out but exactly so I know that there's a
+lot of concern around there's always
+possibility apocalypse to shut down our
+electrical and our financial and all
+that but maybe something to ponder
+something to think about is that because
+we're becoming a global economy anymore
+if they do that isn't that also killing
+themselves to a degree excellent point
+and those are the things why many
+theorize that it hasn't happened yet
+think about it cyber criminals don't
+want to shut it down don't want to go
+nuclear on us
+because they're a parasite they live off
+of it China's not going to do anything
+to us till they completely own us
+because they need us to buy their
+stuff but the real point of the talk
+here is what are all these little tiny
+things right you don't eat an elephant
+with one big bite you nibble at it we
+see this nibbling The Last 5 Years of
+all these little things that happen Okay
+the RSA hack took all the IP what are
+they doing about it all the intellectual
+hacks that are happening the activist
+stuff they're trying to put in laws and
+trying to put in things to restrict
+stuff in such a way is the internet
+going to be the
+same is it inevitable that it'll never
+be the same or we going to have to just
+live with that but your point is very
+valid yeah we're talking about these
+foreign sources and what's going to
+happen really the bigger concern we have
+is they're stealing what we have America
+doesn't produce anything anymore we
+don't have factories really we have
+intellect we have amazing Engineers we
+have a work ethic that's like none other
+I mean the Germans they're just so rigid
+they do make great stuff but you know
+their flexibility isn't there so
+sometimes that hinders them but for us
+I'm very proud to be American but it's
+tough to see what I see working in
+sometimes the attitude of those people
+who are in charge of these government
+websites towards us trying to secure
+them you know cuz that's our data
+personally my family's personal data was
+brief because of lack of security in one
+of the states that we live in so I mean
+I wanted to really give a talk that
+would get you guys thinking about you
+know some of the fun some of the things
+the AP the sales I think one of the
+quotes I I passed was cyber war and AP
+are the code words for a blank check
+right shiny new objects buy shiny new
+objects byy shiny new objects that's all
+you it's like it's like the it's like
+the penut right it's
+it's War at give me your check okay i'
+I've been to so many conferences the
+last few years it's just crazy some of
+comments I go
+home yeah if I have shirts for those who
+went if seriously if somebody wants some
+f bacon it's all yours I couldn't
+believe I tracked it
+down I said holy crap they put
+bacon
+all right well that's you guys have any
+questions I'm Wayne Crowder wack bass at
+you

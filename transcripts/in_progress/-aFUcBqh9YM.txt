@@ -1,0 +1,1737 @@
+and they're like talking loudly about
+all these things that they're doing
+they're giving out their passwords over
+the phone and it's annoying I used to
+have business cards printed up that
+would be basically said kindly shut the
+f up and you would hand it to these
+people and they they would shut up but I
+found another way to get them to shut up
+I started taking this picture and I had
+to do it like five six times cuz it
+wasn't like put right I kept on off
+killed her so I had to take it like six
+times and I noticed that people kept
+leaving around me they were was like oh
+[&nbsp;__&nbsp;] this I'm out and um and finally
+this very nice lady from the United Red
+Carpet club came up and she's like
+excuse me sir are you okay I'm like I'm
+fine and she she ran away and that was
+that made me sad at that point but
+that's my picture um the other thing I
+wanted to talk about before we get
+started is badlock I had uh my brother
+called me up and he's like dude could
+you explain this badlock vulnerability
+apparently it's like on the news and
+it's a really big deal
+like okay here here's badlock in a
+nutshell do you remember Christmas he's
+like yeah I remember Christmas Christmas
+was awesome remember we go down and and
+there would be like a Christmas present
+there he's like yeah Christmas presents
+were great well imagine opening up that
+Christmas present finding a turd in
+it and then Dad would get drunk and beat
+us he like it's a lot like that he's
+like oh okay so it it isn't what you
+expected it to be no not in the
+slightest um so let's go through how I
+do this now this whole entire
+presentation is morphed over the years
+to incorporate what I'm interested in
+right now um what are the things that
+we're actually spending a lot of time
+and effort on as far as breaking stuff
+at uh Black Hills information security a
+couple of quick things uh this is
+brought to you by Sans 504 hacker
+techniques exploits and incident
+response and if you really love
+incoherent ramblings of me talking like
+this for an hour you're like I'd like to
+listen to that guy for six days you're a
+horrible human being uh you need new
+hobbies you shouldn't listen to me uh
+but Sans 504 is a great class check it
+out and it's also Black Hills
+information security we do this stuff
+and that is my vender pitch all right so
+first up if I'm going to Target an
+organization and I want to be successful
+without question I am going to Target
+your users but this shouldn't be a
+surprise to any of you at all I mean
+whenever we do fishing campaigns we
+actually have to try to get the
+percentage of the people that click the
+freaking link less than 20 % we've sent
+in fishing campaigns to organizations
+that say in the subject this is a
+fishing campaign once you get into the
+text it reads do not click the link if
+you click the link you
+fail they still click the link at a rate
+of about 20% and you know what people in
+the organization click the link more
+than
+anybody security people who bring
+MacBook errs to
+presentations that's who
+it's 100% of that user population they
+click the link so in that population who
+else do we actually have we have people
+like granny
+Max granny Max loves to gamble she loves
+polka dot she likes anything with Po in
+it she thinks CD trays a coaster she
+collects gnomes what the hell does that
+have to do with anything it's building a
+profile it's a pneumonic device okay
+you'll never forget this and she's
+bypassing your outbound we fil just by
+using a third party anonymizing
+proxy
+M which of these things is not like the
+other which of these things doesn't
+belong okay so how the hell is Granny
+Max doing this we're going to come back
+to this here in just a couple of seconds
+but granny Max's accounts doing some
+really amazing thing for for a lady that
+thinks the CD tray is is a coaster we
+also have Phil from accounting he works
+porn he has a slight problem he actually
+doesn't get along with Granny Max now a
+little bit of background information as
+far as why Phil and Granny Max don't get
+along with each other granny Max loves
+cats like a lot she has a whole bunch of
+them they crap in her corners and the
+crap gets hard over time and kids come
+over and they try to eat it it's not
+good but granny Max really likes cats
+all right Phil hates cats a lot he
+actually started up a Facebook group um
+called I hate cats and they should all
+die and and in the group they sold a
+disposable cat it was a cat that came
+with its own plastic bag and and Granny
+Max didn't think that that was funny at
+all so they they argued over this
+incessantly once again what the hell
+does this have to do with this
+presentation I'm filling time that's
+what I'm doing I'm just filling time and
+he's bypassing your filtering using an
+SSH tunnel through his home computer
+system once again Phil doesn't know what
+the hell that is Granny Max doesn't know
+what a wet proxy is she doesn't have any
+freaking clue but somehow these people
+are doing these amazing things and your
+average users the other people that I'm
+going to attack they don't gamble at
+work they don't serf porn at work they
+like Facebook YouTube politics eBay
+Googling fantasy football far Drudge
+Report hington post CNN Amazon and they
+dislike web filters now how many of you
+at work have people that bypass web
+filters they get caught and then
+whenever you confront them you're like
+you were bypassing our web filters like
+well I was able to do it so must be
+okay and how many of you in security a
+little bit in the back of your head
+you're like that guy's got a good point
+actually that's not bad actually you
+know what we should probably think about
+hiring this guy cuz the pentest pool is
+horrible right now it's just awful I ask
+a three-way handshake question to people
+I say I sent you a sin how do you
+respond they're like uh
+open and then they argue with you when
+you tell them you're wrong you're like
+that's not right I'm pretty sure that
+that's right it's like no you're
+freaking wrong and by the way if you're
+good at what you do just just so you
+know in the in the world of information
+security if you're good at what you do
+from a job perspective and you're
+miserable at work it's your own damn
+fault and I want to explain why if
+you're at work and you're insecurity
+you're like I hate my job my commute is
+an hour and a half long oh my God I hate
+it here move get another job you can
+it's that type of Market we were talking
+about this earlier you can get another
+job easily if you're like I know I know
+regular Expressions you're a God in this
+industory you know you just like oh my
+God he walks on water he bypassed AV oh
+my God you know his assembly and his and
+his VGA cable worked and then it stopped
+working my computer seems to be just
+fine there we go I shook the cable so if
+you see me like shaking my crotch
+it's not awkward I'm just shaking like
+I'm shaking this cable and you're not
+helping okay you're not helping
+whatsoever all right all right so
+whenever we're talking about like
+security and we're talking about
+bypassing all these security controls
+and if I was going to be evil we have to
+understand what the hell the cloud is
+now I got this um I got this yeah the
+cloud it's this Cloud thing um it's
+funny whenever people are talking about
+the cloud it's a series of distributed
+computer systems working to
+collect to collectively achieve a common
+goal I'm like oh so it's like a bot net
+then no it's not it's not a botn net
+it's a bunch of computers that do things
+like a botet you know not a potnet um
+but it's funny I have these vendors they
+send me these things from time to time I
+I've got to find this one and and I
+shouldn't be uh I shouldn't be trying to
+find it on my phone while I'm doing this
+so I'm trying to find words that go out
+of my mouth oh here we go so this came
+from Nate vac um he's the central USA
+senior man account manager for um
+ovc you know with ovc yeah you know
+me.com and uh he sends me this email he
+goes hello there by way of introduction
+I'm Nate vac with
+MV we're one of we're onetop shop for
+integrators what the hell does that mean
+we integrate things okay I would love to
+set up time to talk about a stack how we
+stack up against the competition of
+random integrators yeah Bill are you
+reading your email too I'm reading my
+email to you but it gets better wait sit
+just for a second all right get that man
+some more of that horrible crap that's
+melted licorice in Satan's ass
+sweat our product's artificial
+intelligence is unlike anything you've
+seen it has gotten us mentioned in the
+Wall Street Journal Tech Crunch and DOW
+Jones when does the Dow Jones talk about
+these things too it's like oh look at
+the ticker it's talking to me right and
+he says this weekend received something
+in a Blow and I said hey that's a lot of
+buzzword son um you might want to talk
+to me some more about some of those
+things and he goes no no no no no thanks
+for the typically whenever you hear AI
+it's something we have to laugh at right
+however here it comes our Cloud First
+Learning camera is attached to a neuro
+Network and uses deep learning to learn
+every second so it's a pretty freaking
+slow computer
+actually I'd love to go into more depth
+change your mind so this cloud-based
+learning Nanos like second learning
+machine language thing you know the
+cloud is freaking huge right I I you
+know people talk about the cloud and
+like well it's out on the internet and
+the internet is freaking evil let's be
+honest it is and and if you look at the
+total percentage of what's good on the
+internet versus what's bad I think it's
+roughly 98% evil maybe 2% good and
+people like well I think there's good
+things out there like I could buy
+Handbags and is anybody here do Network
+IDs or network flow analysis on their
+Network we got some people that do that
+how much traffic in your network is
+dedicated to handbags seriously look at
+it look at the traffic it's gigabytes a
+day of freaking handbags right for me
+that's evil right but the cloud is huge
+and whenever people are trying to set up
+their solutions to stop evil people they
+basically do blacklisting of the
+internet they're like well that note
+right there is evil that one's evil
+I don't know what those are so we're
+going to allow those in and those are
+evil over there it's huge it's really
+really really massive and alls I need to
+do to get onto your network is have a
+command and control that's not listed as
+evil and then I can bypass a lot of
+security Technologies so the point is
+the users will always click things we've
+got to find a way to get around that
+right we got to be prepared for that
+eventuality that's going to occur at
+some point so let's move on and I'm
+realizing that I'm missing slides here
+it's like where the hell are my slides
+bu slides I need bypass here we go my
+slides are completely and utterly out of
+order so I'm going to jump around we're
+going to jump over this and then we're
+going to move to Cluster bam uh what the
+hell we'll just stick toil was that it's
+not not that big of a deal as you can
+tell I got prepared for this
+presentation it's not like Bill and and
+and Cory haven't been asking me to come
+here for like months I really wish he
+would have written his slides like at
+least sometime earlier than 15 minutes
+before the presentation so moving on
+Beyond users okay so we know that users
+going to click things I'm going to talk
+a little bit about antivirus bypass I'm
+going to talk about um out attacking
+Outlook web access portals if if your
+organization uses Outlook web access
+portals and you don't use two Factor
+authentication you're going to get
+popped I'm sorry um it's very very easy
+to take over those accounts and those
+people like well challeng you accept it
+you're going to lose okay Outlook web
+access without two factor is very easy
+to break into I'm going to talk about
+software defined Radio currently working
+with a friend of mine on his book he's
+putting a lot of time into it in the
+whole entire book series it's actually
+four books on learning software to find
+radio basically gets to the point where
+you can hack the key fobs for cars and
+you can hack garage door openers so you
+can go to somebody's house they push the
+button you intercept that and then you
+can replay it actually after they leave
+um and you can save it down to a file so
+I'll talk about that and then I'll also
+talk about a VP zero day and I'm totally
+not reusing these slides at
+[Laughter]
+all no no no no no
+no there see I did these slides custom
+for you guys all right there we go so
+it's not a huge VPN zero day but I want
+to talk through how a VPN zero day looks
+if it doesn't involve a buffer overflow
+or heat spraying overflow or those types
+of things so let's jump into attacking
+Outlook weap access every freaking
+pentest we do organizations have Outlook
+web access they use it absolutely
+everywhere and if we can gain access to
+organizations's emails directly we can
+then send emails do password resets and
+then the systems administrators be click
+this link to reset your password like
+okay we'll do that for you and we can
+take over that um so this is awesome so
+one of the problems with trying to break
+into Outlook web access portals is tools
+like Hydra are horrible at this the
+reason why they're horrible is because
+they don't handle redirects really well
+so if you go to a page and then it
+redirects you to another page or another
+page Hydra kind of pukes all over itself
+and it's like well they all failed you
+could literally give it a valid user ID
+and a valid password and let it run for
+hours with just that valid user ID and
+password and still wouldn't get in
+because it's not going to properly
+handle the redirects whenever you're
+trying to do a password spraying attack
+so we're going to talk about a solution
+to that what can you do once you have
+access well there's tons of cool things
+once I get access to email in
+organization
+so we're going to talk about burp
+Intruder and we're going to talk about
+cluster bomb um here in just a little
+bit so what we do um with this let me
+jump up on stage here because this will
+be easier so whenever you're using burp
+you can find an entry point that you
+want to fuzz all right so with burp
+Intruder I say this point right here is
+of interest to me that's where we're
+looking at the user ID all right so we
+can Harvest a bunch of valid user IDs we
+can Harvest those user IDs using
+something like Pon list we can go to
+pastebin we can search for the domain
+and see if there's any passwords that
+are out there we want to harvest a whole
+bunch of user IDs you we got LinkedIn
+modules and Recon NG that's a whole
+another conversation but I harvest the
+valid user accounts for an organization
+and then I can specify a specific point
+that I want to put those user IDs into
+and here it's just a simple putting in a
+password testing one 2 3 and then we can
+feed in our list of all the valid user
+IDs that we were able to Harvest many
+times we can pull this down by looking
+at the emails we get from this
+organization like let say it's just
+strand JS all right well we know that
+it's last name first initial last
+initial we have an idea of how the user
+IDs are actually specified so here we
+can specify the target org that would be
+the domain slash we say this point right
+here this is the one we want to fuzz and
+the one that we wish to attack all right
+then on Burp we select a little button
+that says we want you to follow the
+redirects on site only so we wanted to
+follow those redirects so whenever we're
+tacking Outlook web access whenever you
+give a successful login it's going to
+move you to a 302 redirect that's going
+to move you to another part of the
+website we wanted to follow those
+redirects and we want to collect the
+information associated with the page
+that it eventually lands on as well so
+this is what it looks like when we're
+we're harvesting valid user IDs all
+right so we got a whole bunch of user
+ities here okay we got the status is
+always 200 which is part of the reason
+why Hydra has issues whenever you're
+trying to make a request to a web page
+and you get a 200 it's like well that
+was fine it wasn't like a 404 not found
+or a 500 eror anything like that it
+comes back and it says yes the request
+is okay we've got that but notice the
+length is different you can see here
+that we have a whole bunch of 4370 we
+got 4371 4371 all of these are
+successful logins all right all of these
+that are $
+12994 are failed logins now how does
+this work though cuz I'm using a valid
+user ID how can I actually get access to
+that by only knowing user IDs how the
+hell does that work well what happens is
+we do something called password spray
+see whenever most people think of
+password attacks what they do is they'll
+try thousands millions of passwords
+against a valid user ID in most of your
+organizations whenever this is done it's
+going to lock out accounts we bypass
+that by only using one password at a
+time for the user accounts so what are
+some passwords you think that would be
+heavily used in organizations password
+passwords two3 company name two3 the
+best one by far in almost every
+assessment we do season year why does
+that
+work
+it's easy to remember and how often do
+you have to change your passwords about
+thatten about that often right it's like
+well what was my password it's winter so
+it's winter 2016 um and you know what
+that password is so you use a password
+of winter 2016 and then you password
+spray or user spray against all of the
+different accounts and then you harvest
+all of the accounts that you gained
+access to usually whenever we're testing
+and we're doing this the hardest part of
+the test is sifting through the freaking
+email of all the people that you gain
+access to with this so it's a very very
+easy approach to try to gain access to
+systems remotely now what you can do cuz
+some organizations will disable account
+lockout
+remotely excuse me and that makes sense
+if it's on a web server you don't
+necessarily want to have account lock
+out going so they can lock out your
+entire domain um but even at that we try
+to restrict the number of passwords we
+use you know winter 15 winter 16 fall
+2015 January 2016 January 16 December
+2015 password 123 winter 1 2 3 and we've
+got like 10 different passwords there
+now whenever we use cluster bomb we can
+specify multiple points that we're
+fuzzing so we can say here's a bunch of
+user IDs and then I want you to fuzz
+this parameter which says password I
+want you to fuzz password with a
+separate list so now we have two
+separate lists that we're spraying
+against the organization and we get even
+more user IDs and passwords whenever
+we're trying to break into an
+account all right so let's say that I
+get a bunch of valid user IDs and
+passwords many times we will then get
+access to um Citrix environments you
+have Citrix desktops then we can log
+into systems or we'll find remote
+desktop or we can use a spear fishing
+campaign you'd be surprised how good a
+spear fishing campaign it says Bill your
+password is winter 2016 you need to
+change that crap immediately click this
+link right now and change it like I'm
+going to change my password they click
+it once again that's not usually
+something that Apple guys fall for cuz
+they they're like I'm immune to those
+attacks so I want to talk a little bit
+about AB bypass I I was going to do an
+entire presentation on this but it gets
+old after a while and you really piss
+off antivirus vendors after a while and
+it's not that that's a problem it just
+growes tiresome um derbycon last year
+they made the mistake I actually I don't
+think Dave Kennedy set this up as a
+mistake I'm pretty sure he did this
+intentionally he put our booth directly
+across the the the little open space
+from semanex booth and the sanch guys
+were're talking it's like our next
+threat Next Generation AP threat
+detection tool version 15 artificial
+intelligence machine learning is one of
+the most cuttingedge products on the
+market today so we just put a continuous
+loop of us bypassing that product um
+they got really pissed off about that
+for no good reason I'm like they just
+don't seem to be good Sports
+about and I'm going to talk more about
+stunt hacking here in just a little bit
+I'm going to pick on McAfee for a little
+bit and we'll talk about other AV
+engines as well and kind of what's
+actually going on under the hood with a
+lot of these things so if you try to
+drop in a straight
+maturer and you drop it onto a system
+with MCA they'll they'll they'll detect
+it and the reason why they detect it is
+because they got to do something to stop
+the 99.9% of pen testing firms that are
+out there today you know the big five
+consulting firms like well I know how to
+use Metasploit I watch some videos
+online we're going to try to get this
+crap to run on that system and it
+doesn't work because they honestly don't
+know what the hell they're doing ever in
+any circumstance um and that's not
+entirely true I need to back up there
+are some really fantastic Security
+Professionals in Big Five consulting
+firms the problem is that you find out
+whenever you're dealing with the pentest
+puppy mill industrial complex is that
+these organizations may have brilliant
+people working for them but those
+pentesters are working four or five pen
+tests at the exact same freaking time so
+even if they want to do something
+awesome they're like well I've got like
+six other nessus reports I got to
+convert over to word DOC format I got to
+get that that crap in as quickly as
+possible so they don't get to spend as
+much time as they should trying to make
+stuff work so this doesn't work and
+they're like you're secure because mcafe
+caught maturer so if it works it looks
+like this so we have this little warning
+that pops up and it's like bad thing on
+your computer system do you want me to
+restart now or would you like me to
+restart later I love that question so
+let's say we want to bypass it so what
+we're going to do is we're going to do
+something called ghost writing and
+whenever we talk about ghost writing a
+lot of times people dive underneath
+table start sucking their thumbs and
+like the dark place the dark place
+because we're going to take an
+executable and we're going to
+disassemble that executable okay and
+that sounds like really leak crap like
+you're like oh my God this guy's like
+really freaking good if he's
+disassembling things and he's messing
+with assembly no don't don't get
+impressed you can do this it's very very
+easy the first thing that we use is we
+use msf Venom to specify a payload we
+say windows metp reverse TCP we put in
+the lhost that we want it to connect
+back to the port we want it to connect
+back to the outport format is going to
+be raw and we're going to kick it into a
+file called definitely malware and we do
+that just to make it easy right like is
+that the Mal yeah that's definitely the
+M it's right
+there and then we're going to
+disassemble it we do Ruby user share
+metlo framework live medm samples
+disassemble RB definitely malore into
+definitely. ASM it just kicks out the
+assembly and then we're good now
+whenever you open that file in the text
+edit of your choice which is always VI
+all right if you're ever if you're
+here and you're ever
+interviewing do we have any new people
+that are students that want to get into
+the infos security career field okay we
+got some new people here fantastic all
+right so a little bit a heads up if
+somebody asks you what your favorite
+text editor is there's only two answers
+that are respectable the first answer is
+VI because that's the sane answer and if
+you like VI are you a pirate or a
+ninja ninja cuz a ninja only brings what
+they need and VI does what it does and
+it does it fantastically well you can
+also say emac and all the people in the
+room will start moving slowly back from
+you to the door but that's the pirate
+tool right more ass how do you close
+wait wait you shoot your computer so we
+have a tradition here at set KC if this
+is the first time that you've talked you
+got to take a shot so John strand is
+here for
+[Applause]
+him thank God I can stumble back to the
+hotel
+cord sa one three times then I'm just
+playing with it no no sir just stand
+right there it's about this point it
+starts working all
+right so what you do with the assembly
+is you go down to this function right
+here okay we got load SB comp and we got
+[&nbsp;__&nbsp;] I don't even know what that means
+but it doesn't matter okay you find that
+function that function and only that
+function you scroll down it's like right
+in the top and you put a single
+noop right there now a noop is is hex 90
+in Intel and it basically tells your CPU
+no operation which is a lie it actually
+does something it copies a register from
+itself to itself that's a long story but
+just know that it does nothing all right
+one single freaking noop right there so
+we got lad ASB comp 61h Noah JL Lo 25h
+one little Noah and then you recompile
+the executable so we're going to do Ruby
+user share metas framework lid meta same
+sample P code. RB definitely m
+we're going to Output it as might be
+malware
+ex we save that out and it
+works a gives no shits about it it's
+like well you look good you got that
+smile we're going to let you in
+everything is fine um and and it's just
+going to work and M is going to allow it
+um but it's not just McAfee it's a whole
+crap load
+more yeah one no up and what's
+funny is a lot of Av vendors are like oh
+oh oh we got your number we're going to
+catch that if they catch it two no put
+two no Ops in there if they're still
+catching it put in three and eventually
+they're just going to lose it um now why
+does this matter this matters a lot to
+everybody in this room because we're it
+Security Professionals all the crap that
+I'm talking about is a little bit of St
+and hacking and I want to explain later
+why that's important
+we need to be able to do this and we
+need to be able to do this effectively
+all the damn time because when your
+vendors show up they're like the cost
+for our antivirus Suite is going to be 1
+billion T and like I bypassed it in 2
+seconds the cost for our AB Suite is now
+$100,000 now we're talking um now we're
+talking it doesn't matter what the
+vendor is if it's fireye there's ways to
+bypass fire wi and there's ways to
+bypass fire ey that have been documented
+for 5 years and firey is like I'm I'm
+too busy rolling in money to give a [&nbsp;__&nbsp;]
+so I'm not going to do anything to try
+to remedy that situation Hollow Alto as
+well you know there's ways to bypass and
+I love the guys at Palo Alto the guys at
+Pao Alto are awesome whenever we bypass
+their product they listen to us like
+we've got to fix that and then they try
+to fix it and they're actually working
+towards it but there's ways to bypass
+those product uh carbon black um bit n
+if you exploit a system with that and
+you migrate into the process with a
+interpreter migrate the process ID of
+black or bit9 it goes completely blind
+cuz it can't watch itself it's just like
+well I don't know what's going on you're
+on its head it's like where's the
+malware and it can't watch itself
+watching itself watch itself so it
+doesn't we send in bug reports to these
+vendors and they're like their response
+is literally yeah that makes
+sense no hey let's fix that they're like
+yeah that makes a lot of sense to
+us feel like it's broken yep
+yep so we need to con L be pushing the
+bounds to get these people to fix these
+things and they may have fixed it in the
+past couple of weeks hell what do I know
+um another way that you can bypass AV
+engines um I I love this um this is one
+of my favorite examples of all freaking
+time most antivirus engines are not
+detecting the malware itself whenever
+you create malware from metas and you
+drop it out into aong um you can encode
+it with things like shicai which is
+Japanese for there's nothing that can be
+done about it you got a bunch of
+different encoders that can exist that
+wasn't a joke that's literally what it
+means these guys need shots as well um
+what most AV engines are detecting
+they're actually detecting the template
+now let me explain that whenever you
+create hour with metas sploit it takes a
+template file template. exe and it
+inserts its power inside of template.
+exe AV vendors look at that problem and
+they're like well we really need to do
+is just write a signature for template.
+exe and then they high five each other
+right so alls we really need to do is
+Alter template. exe and conveniently
+enough metas comes with template. C so
+you can get the C code now you can open
+this up in like visual studio and this
+gets a little weird because a lot of
+people compile their code with metas
+using things like GDB and if you comp
+move it to a different compiler it
+completely changes the entire signature
+so what we did and this is Brian that
+actually did this one the other one was
+done by B bolock and was also done by
+Steve Sims we can do initialize X to0 we
+right here just right where we're
+starting the function inside the C code
+we had an initialize X to0 initialize y
+to 10 initialize Z to X+ y this blows
+through almost every AV engine that's
+right math blows through antivirus in
+it's just like a screw that no one told
+us there would be math
+involved and you compile it in different
+compiler and way it goes um is anybody
+here here into go L using go as a
+language actually starting to write
+things as in go come on there's got to
+be somebody I know there's like one dude
+this guy right here you're using go
+awesome that's awesome go is an awesome
+language you have a radio that makes me
+hella
+uncomfortable Bill and Trent taught me
+just how bad that can actually be do you
+know where this fits I'm like I don't
+know an hour later I
+knew so so so when the cool thing about
+Goan there's a couple there's a bunch of
+things awesome about go like Google got
+a whole bunch of C developers and I mean
+like the people that develop c not
+people that develop in C the people that
+wrote the freaking language not C++ cuz
+those people should be shot but the
+people that developed C got them in a
+room they're like if you started from
+scratch what would you do and they white
+boarded everything they would do for a
+new language to make it a lot easier to
+use and you know threading
+multi-threading was built in you could
+do load balance all kinds of fun stuff
+all of it was built in and then Google
+said here's a blank check go write your
+new language and they did and it's
+awesome and it's beautiful and and it's
+it's just great if you write your
+malware in go most AV engines have no
+idea how to approach go L executables
+they look at they're like oh screw that
+out done they no idea whatsoever so
+learning how to change your C code
+learning how to modify things even
+slightly is enough to bypass many AV
+engines as well so the lesson on this is
+once again the attackers will constantly
+be attacking your entry points your
+users going to click on links you're
+going to get command and control
+basically you're going to get
+compromised if your entire security
+architecture is based around the
+principle of stopping the bad guy from
+getting in in the first place your
+security architecture sucks if your
+entire security architecture is built in
+such a way that you cannot detect an
+Insider a standard Insider user that's
+doing something malicious your security
+architecture sucks because an Insider
+threat somebody that's maliciously
+causing you harm intentionally inside of
+your organization is
+indistinguishable from an attacker that
+has taken over that account so that is
+one of the big things that we're trying
+to get across here your security
+components that you rely on your
+firewall and AV are going to fail
+knowing that what do you do next what do
+you do next so that's the lesson to
+learn from this one so let's talk a
+little bit about a really kind of just
+goofy like zero day um so this is a VPN
+it's called fatpipe all right and we had
+a number of customers that were using
+this VPN and uh they you know a lot of
+people it's like you can't break into
+our Network why we use SSL and it's like
+you know God is
+like or VPN stand back from the VPN boys
+and girls cuz there's encryption it's
+virtual it's private and it's a network
+stand back right now so we had a
+customer that was using this for a whole
+bunch of different things and they asked
+us to take a look at it and it's always
+a kind of a a crapshoot whenever
+somebody asks you they're like hey could
+you write like an exploit for one of our
+products and it's kind of weird to do
+that because it takes a lot of time and
+there's no it's it's a non-deterministic
+kind of kind of tactic and approach if
+you're pentesting it's almost 100% if
+the scope is set up correctly that a
+good pen testing firm or a targeted
+attacker is going to get in they can
+absolutely do that effectively okay but
+if somebody's like can you write an
+exploit for something you're like I
+think so it might take 3 weeks it might
+take a month but it's always time bound
+and and somewhat difficult but sometimes
+whenever you're looking at products it
+makes it very easy now I want to make it
+very clear we've been contacting these
+people for months and they're not
+responding in fact we're pretty sure the
+company's out of business um so we feel
+pretty good about talking about this
+publicly now is using it as a case study
+we're going to have a long 1H hour uh
+webcast we're going to talk through
+stepbystep our approach how we attack
+these types of things so that people can
+start doing this type of attack and
+these types of approaches in their
+networks as well so this originally
+found by Joff a member of security
+weekly and also a member of bhis so
+let's go through and let's talk about
+the attack methodology all right can
+anybody find the problem in this code
+the key the key it took like two seconds
+mainly because I highlighted it but it's
+there right so
+you have two fish algorithm and two fish
+was written by
+who Bruce Bruce right now Bruce has a
+great quote somebody asked him at a con
+is there ever any crypto that you
+haven't been able to crack and Bruce's
+response was priceless because it was
+one of the Bruce s quotes that wasn't
+completely dickish um but he responded
+back and he said you never attack crypto
+directly you always attack the
+implementation of the crypto always
+attack the implementation not the crypto
+itself so in the source code that we
+were able to get access to um we have
+the key it's two fish algorithm make key
+and then we have this key it's a static
+key it's in every single installation so
+a good implementation of crypto is every
+time you instantiate a new client and a
+new server use certificate based
+encryption use public key cryptography
+um you Generate random keys for every
+single user and that Randomness is very
+very important where's the guy come on
+up up up up up shake shake shake shake
+shake here we
+go there we go that's awesome he shook
+it for
+me it's not weird at all all
+right just once therefore it's okay um
+so we have we have the key now let's
+talk a little bit about cracking crypto
+now whenever we're talking to companies
+many times whenever we do crypto
+assessments crypto analysis is once
+again the engineers will get us in a
+room and they're going to say things
+like you're not going to break our
+crypto because we're using AES and like
+we're supposed to wilt and like fall
+back into the corner um so if we're
+looking at something like AES once again
+you never attack AES directly but rather
+what you're going to do is you're going
+to attack the implementation of AES now
+a little bit of background on what AES
+is AES is a block mode Cipher it's
+different than a stream mode Cipher
+stream mode Cipher every single bit is
+going to be encrypt encrypted in as a
+stream right so if you're looking at The
+Cypher text and the plain text it's
+going to be the exact same size whenever
+you're looking at a block Cipher like
+AES it's going to use 16 16 by blocks
+okay so we have these blocks that it's
+going to encrypt all right now how it
+encrypts those blocks is very very
+important all right there's a number of
+different modes for AES to work one of
+the modes it entails taking one block
+and then using that as a key to encrypt
+the next block and then using that block
+as key to encrypt the next block and so
+on that's pretty good the wrong thing is
+to use electronic codebook mode all
+right so electronic codebook mode is
+where you use AES but you use the exact
+same key for every block of Cypher text
+that's created it's the exact same key
+so if you were to encrypt an image and
+you were try to view that image you
+could actually see the image it kind of
+looks like really Jared black and white
+you can actually see images you can do
+this in some situations like illegal
+porn cases where if it's encrypted with
+electronic codebook mode you can
+actually see like kind of an outline of
+what the image actually is you can
+determine what that actually would be
+now when you're dealing with something
+like a VPN where all blocks are equal
+and if you want to be super cool in
+information security get this shirt the
+other shirt that you can get is this one
+uh the grace shirt from the NSA that's
+out awesome shirt by the way if you want
+really Advanced Crypt nerds to like be
+like I want to party with that guy this
+is one of those shirts because it says
+electronic codebook mode all blocks are
+equal all right so every block is equal
+so if we have the key we can feed in our
+blocks here we have block one block two
+block three block four block five block
+six block seven we can feed in the
+blocks of the encrypted text and then we
+can decode it with the key we establish
+up here now once we feed that program
+through we get the clear text so we have
+the client has nothing the server
+responds back with a version 522 r10
+once again if we're able to crypt the
+server coming back with its version
+that's a bad VPN the client sends AA
+server responds back with number four
+client sends back a Zer we're seeing the
+clear text of what's being sent back and
+forth in the kind of the initialization
+handshake of the VPN working so so
+what's the lesson to learn from this if
+we're trying to figure out what the hell
+this actually means if we're looking at
+buffers buffer overflows and Heap
+spraying attacks you're really only
+seeing a very small percentage of what
+the overall surface of like the
+attackable surface of a network looks
+like okay security is Shifting okay it's
+not just an issue of trying to fuzz a
+whole bunch of parameters finding a
+vulnerability whenever you crash looking
+at EIP and then trying to set the return
+pointer and taking over the system those
+types of vulnerability
+are very hard to
+find they should qualify that some
+software developers shut off all
+security protections they don't use the
+GS flag whenever they compile their code
+and that makes things a lot easier but
+if you look at the protections that
+Microsoft Windows offers you whenever
+you're looking at data execution
+prevention prevention you're looking at
+canaries protecting the return pointer
+you're looking at structured exception
+handling and registering safe SE threads
+and processes that actually say these
+are the memory addresses we can go to
+actually Microsoft Windows has a very
+good security model so does Linux so
+trying to attack modern operating
+systems with and trying to attack
+applications that take advantage of
+those protections is actually very very
+hard but if we can get to the source
+code and we can start looking at the
+functionality of how something actually
+works where the calculation changes
+rather dramatically see we've got to
+start looking beyond what everybody else
+was looking for all the time and that's
+the only way that we're going to start
+improving and yes this is something is
+many times referred to as stunt hacking
+you go to presentations and people that
+I absolutely respect and people like
+Chris Nickerson no I love Chris sorry
+CHR I love Chris Nickerson there's a lot
+of people that say that stunt hacking is
+an absolute joke and it should not
+happen I believe that that's wrong I
+believe that things light stunk hacking
+and doing things like this are opening a
+portal and they're showing the rest of
+us the way that we can start assessing
+our applications our protocols it's not
+about the specific vulnerability but
+it's about how it was discovered and
+what that vulnerability entails and
+trying to find those same mistakes in
+our applications so that's kind of
+setting that up a little bit so let's
+talk about moving on a little bit
+further lately we've been spending a lot
+of time doing software defined radio has
+anybody here been playing with gunu
+radio and software Define radio isn't it
+ridiculous the whole Community do you
+remember back in the late ' 90s early
+2000s whenever you first started writing
+exploits there was all these shadowy
+websites and you know if you tried to
+get knowledge all the people were closed
+off you'd be like well I'd like to get
+some Shell Code that opens up a listener
+on Port 4444 and be like screw you Noob
+and you're
+like or you'd have somebody that would
+give you Shell Code it would be like
+hacks it be slack AF slack CF slack
+slack FF slack ff/ C2 it'd be this long
+string of hex it would be like four mags
+and like well this opens up a shell for
+4444 you're like does it really need to
+be four mags long just run
+it it's totally legit and you're like
+what the hell how do I trust this guy um
+whenever you're dealing with software
+defined radio it's a lot like that so
+you have people that come out and when
+working in gnu radio you have these flow
+graphs and trying to get the flow graphs
+is like pulling teeth from people you
+can get flow graphs for an AM radio and
+FM radio but that's pretty much it right
+once you start trying to do other things
+it's an absolute freaking nightmare so
+as I mentioned earlier somebody likes
+pulling up a cappuccino in the back or
+something
+I wheeled in my tire and I'm flattening
+it
+why okay um so trying to get involved in
+software to find radios a pain in the
+ass so a friend of mine is releasing a
+book here shortly that's walking through
+step by step how to attack software
+attack like radio signals right and I
+want to walk through some of the things
+that's coming out in that book and some
+of the things that are going to be
+releas because we've been doing Tech
+editing of it so this particular example
+is a garage door open all right so
+whenever you're looking at software to
+find radio think of everything as a
+spectrum I want you to think of your
+radio dial or I want you to think of
+your piano right you have lower values
+on the left you have higher values on
+the right you're moving up and down the
+FM dial you're moving up and down the am
+dial and so on so what you can do is you
+can do a full capture of a specific
+slice of spectrum here we're going from
+303 mahz to 37 MHz and you can see right
+here that whenever I push a button on a
+garage door opener just just a garage
+door opener you push a button on the
+garage door opener we see a spike at 315
+MHz right now a lot of people whenever
+they're doing software defined radio
+attacks they can see this and they can
+capture it they're like that's pretty um
+but then you get into a lot of problems
+about what type of keying is being used
+is it using phase shifting key is it
+using o okay how is it actually being
+approached and I want to walk through
+kind of some things on what this
+actually looks like and you guys will be
+able to do this here shortly because
+these books are being released released
+and there's going to be all the flow
+graphs and all the things associated
+with it to get people started to do this
+type of hacking on their own we do a lot
+of this whenever we're doing embedded
+device security assessments we do it
+with a power grid assessments um you
+know you have somebody that's like well
+don't worry this particular product has
+its own proprietary protocol and no
+one's been able to hack it you can
+attack it then um so in this example
+it's a garage door opener most garage
+door openers run at 300 315 or 319 MHz
+there's no encryption being used at all
+you can basically intercept you set up
+the right key and then you're able to
+Output to a wave file yes it comes back
+as an audio file convert that into a
+binary file and then play it back so can
+this be frustrating oh hell yeah um this
+is a nightmare right like whenever
+you're trying to set these things up if
+you don't know what you're doing you
+just you're just like there's some kind
+of Dark Magician in a room that sets
+these things up so whenever you're
+working with gnu radio you specify a
+series of different variables up here
+all right you specify the variables like
+what is the frequency you're going to
+look at what is the uh like if you're
+going to put it in a high pass low pass
+filter what are going to be the
+frequencies that you're going to filter
+out you also have guey entries that last
+slide I showed you is actually a goey it
+pops up you can take the default
+variable and you can change the variable
+and you can move things around so we
+have a gooey entry then you start
+chaining this craft together so we put
+in the input source this is actually a
+file input source we put in threshold we
+put in frequency algorithms in the in
+the different types of filters that are
+going to be used you send it through a
+bunch of different things like goys and
+then you can do things where you
+actually kick it out to like binary
+slicer to try to slice out the binary
+data on that specific 315 mahz Spectrum
+so this is what it looks like when you
+push your garage door opener so you push
+your garage door opener one two one two
+and you're able to see what is actually
+being sent in the frequencies now
+anytime you're trying to do software
+defined radio attacks you're picking up
+junk everywhere so you can see that we
+have some some like data here believe it
+or not that was the hbac in my office
+building what if we shut off the fans
+that went away because you have radio
+frequencies all over the place all the
+time so you're looking for these little
+spikes you can basically create the
+stimulus in the response and you can see
+these little spikes that exist so then
+you create a filter around 315 mahz and
+then you grab that specific section of
+those bites as they come through and you
+look for ones and zeros now I skipped a
+lot of steps to get to this point I want
+to make that very very very clear the
+book that actually does this is 350
+pages long because if you're looking at
+the button spikes it isn't nice little
+like like Square wave it doesn't it's
+like spikes and it sucks okay but you
+can actually go through a bunch of
+things to clean that up and this book
+goes through everything that's going to
+be coming out so we have a 0111 0 1 01
+all right and this is the actual code
+that is being sent in the garage door
+opener to open up your garage door now
+there's some things on the front of this
+that I cut off one of the things you'll
+see a lot whenever you're working with
+software to find radio is you'll see 16
+ones in a row and then you'll see a
+whole bunch of zeros and then you'll see
+16 ones in a row and then you may see a
+one Z One 0 one 0 one 0er that's
+basically so it can say the bandwidth of
+how much bandwidth denotes a bit for one
+or a bit for zero so here you can
+actually see that being sent now another
+problem with a lot of software defined
+radio hacking is how do you convert that
+wave file into a binary file that you
+can play back so one of the things that
+we're going to release and one of the
+things that David is going to release is
+this wonderful little script that's
+called wave to bin so it'll take that
+waveform file convert it into a binary
+file then you can read that file back
+and you can play it you can open up
+somebody's garage door um the same thing
+for garage door also applies for the key
+fobs on your car to unlock your car or
+or remotely start your car as well so
+what's going to happen here very shortly
+is you're all of a sudden going to see a
+whole bunch of gnu radio enthusiasts
+that are going to be equipped with the
+tools to break into any garage St in
+America or in Europe or any car in
+America as well what do you think that's
+going to do and what do you think that's
+going to change as far as security is
+concerned across the board I think it's
+going to change things back to Keys
+people are going to go back to Keys you
+know what I'm okay with that I've never
+once gotten in a car and be like you
+know what I hate about cars people like
+yeah Keys freaking keys I hate Keys If I
+had a key fob that I could like have in
+my pocket and my car knows that I have
+it that would be awesome and then I
+could leave it in my car and then lock
+it in the car whenever I go away and
+then I'd still have to use a key that
+would be awesome no and I'd love to go
+back to keys but what I do think it's
+huh how do rolling codes work how do
+rolling codes whenever you're looking at
+the rolling codes you have to look at
+the key shifting like I said phase key
+shifting or o okay you can actually
+identify what type of Shifting algorithm
+is being used or phase shifting key
+algorithm is being used and then you can
+attack it as well and that's going to be
+covered in this book The Rolling codes
+are very very very easy to attack as
+well because many times whenever they're
+dealing with rolling codes they say
+random but it's actually sequential
+they're actually moving it up because
+they go the easiest possible Vector so
+all you need is a book a couple of flow
+graphs if you guys want some of these
+graphs bring me up a USB stick you can
+totally trust me and I'll give you some
+graphs Fair Deal all right so these are
+the things that I'm talking about
+because of one specific reason security
+is moving
+on um if you look at information
+security is strictly an exercise and
+operating system security you're 5 to 10
+years behind the curve if you're looking
+at information security is strictly a
+game of web application security you're
+okay so that's still pretty damn correct
+um you find SQL injection everywhere
+cross site scripting cross request fory
+business logic errors all of these
+different things you're still very very
+current but unfortunately a lot of the
+vendors and the people that are selling
+you products are trying to sell you
+products for operating system level
+security issues right because it's easy
+if you're a vendor and I'm entering into
+this pool so please have mercy on my
+soul um if you're moving into the into
+the market and you're trying to sell a
+product and you're trying to sell a
+product that impacts Windows operating
+systems there's millions of billions of
+systems that are available for you to
+sell through
+if you're moving into web application
+security products that's a tough market
+right anybody here try to implement a
+web application
+firewall great I see no hands going up
+we failed right most people that try to
+do that run screaming from The
+Experience because it's very hard
+because our web applications are highly
+customized so we have these problems
+that exist right but if you're if you're
+new and you're just getting started and
+you're one of these new people in
+information security today and you want
+to differentiate get into these new
+things embedded device security um you
+know Cory's walking around with a with a
+flashing thing I haven't seen it flash
+very much lately um know how to use a
+Raspberry Pi do some basic Pro bring
+them up we should bring them up bring
+them up Cory come
+up dance Cory dance no just stay where
+you're at I'll come back and drink with
+you here in just a little bit but
+information security is moving on and
+you need to find these areas where it's
+actually moving on the internet of
+things is something that makes my
+stomach turn
+but it is something that it's
+information security is moving on to and
+these are the things you need to start
+looking at you stand here and we just
+shout out as people typ how does that
+work that's a
+raspberry what do we have to do to make
+that talk well you need to tweet the uh
+wait how do you who was here earlier for
+work well I think there's a little
+social engineering involved
+actually it's [&nbsp;__&nbsp;] you Cory yeah well
+guess what back at you friend magnets
+magnets and dirt how do those
+work I don't need scientists and doctors
+# setc # setc so if you tweet and then #
+setk you will show up on this badge okay
+there we go so what is it saying now has
+anyone I'd love watching people read
+this look at all to the
+cyber
+police wa what that was a horrible
+hashtag mention yeah whoever did that
+take your beard we denied your
+beard that's it you've had enough okay
+we're cutting you off strand said cyber
+I said Str said cyber we need a shot St
+shot for everybody wait a minute hey if
+you that's not say cyber we say cyber sh
+shots waiting okay maybe later all right
+so the core thing is on this entire
+presentation is I want you to stop me
+and one of the things that we're pushing
+so very hard and information security
+today and security weekly and what I'm
+teaching at Sans and what I'm doing at
+black fills information security is
+we're trying to get people to go off of
+the uh standard information security
+stuff that exists AV IDs IPS firewall
+and it's one of the things that bothers
+me I give presentations like this and
+somebody will come up to me and be like
+so great presentation that's awesome so
+what firewall do you recommend it's like
+you completely missed the um it it's not
+about the specific tools that you're
+being that you're using so look get
+things like app locker and software
+restriction policies long passwords two-
+Factor authentication firewall
+everything down to the workstation turn
+on your workstations firewalls macave
+sanch SOS these guys have firewalls turn
+them on now you're going to stop me from
+laterally moving around inside your
+network internet wh listing many people
+are like we can't Implement internet wh
+listing um one of the favorite things
+that I've seen in a long time is the
+concept of a splash screen so every
+month it reset somebody goes to a
+website like Google and it gives them a
+splash screen and it says this website
+is currently blocked you are the first
+person this mon month to go to this
+website if you wish to allow this
+website for you and everyone else
+click
+allow otherwise click
+deny you do that in your environment you
+put that in control of your users
+believe it or not it's going to be very
+very hard to get out of your network not
+impossible but it's going to be very
+very very hard your overall security
+posture if you implement something like
+that where you let the inmates run the
+Asylum versus your blacklisting approach
+that you have today what do you think is
+more
+secure Splash scen by an infinite amount
+the number of websites that you allow
+will be far will be far far far reduced
+compared to The Blacklist approach that
+you have so that's a whole another
+presentation but it works really really
+well regularly test things and then the
+big thing is assume you will be
+compromised and then plan accordingly
+for that compromise this is a weird
+thing to tell people but I'm often times
+telling people today be okay with the
+fact that you're going to be compromised
+I know that that's a horrible thing to
+admit people are like well I don't think
+I should be okay with that at all you're
+all okay with dying you aren you're okay
+with taxes there's all kinds of horrible
+things in your life that are going to
+occur you're okay with those things
+you're able to go out in society you're
+able to function you're able to come to
+SEC casc and drink you're okay with it
+at some base level at some base level
+you have to be okay with the fact that
+you're going to be compromised you
+accept it as an eventuality something
+that is going to occur and you're going
+to architect your environment in such a
+way that whenever it does occur it
+doesn't create a catastrophic compromise
+of your entire environment so some
+things to practice that I think some
+basic basic basic skills should be based
+upon this is a little executable that
+Mark BAC created and we've implemented
+it in Sands and I give it away for free
+at presentations like this because I
+like pissing off sanss um people are
+like exactly how many Bitcoins is a Sans
+training class I'm like a lot not sure
+but it's a lot so here's a little lab
+we've created it basically runs and it
+says a TP back door has been started on
+your host without connecting you to it
+at identify it and answer the following
+questions what port is it listening on
+so if you think you have something
+malicious listening on a port on your
+computer system what would be the
+command that you would run to find that
+particular process that's listening on a
+port net stat
+what netstat
+Na and a o b what does B get you that's
+so very important it get you the process
+ID very good so you're going to run net
+St minus naob um what is the process ID
+number of the back door so that's where
+the NOAB comes from what is the parent
+process
+what would be the wonderful command
+family that you would use that would
+allow you to get the parent process IDE
+huh you could run something like PS3 or
+you could use wmic or you can actually
+pull the parent process ID as well um
+whenever you use netcat connect to the
+port what is it print and it says this
+is the flag the Powershell back door is
+easy to find because the port now
+there's another process that does not
+run what is the name of that process ID
+it asks you a whole bunch of questions
+and then when you stop it and restart it
+randomizes all the questions again
+so you get this practice where you can
+do this again and again and again get
+very good at detecting this type of
+malware in your organization more
+practice um I'm going to give you guys a
+link here at the uh end of the
+presentation but one of the things that
+we do when we test organizations and we
+give this away for free so people can do
+it before we even get there is the
+spreadsheet that kind of breaks down a
+whole bunch of different things that
+worked and things that didn't work
+rather than trying to do a pentest and
+assessment to say yay we successfully
+hacked you or oh wow that sucked we
+weren't able to get anywhere we can do a
+scientific approach for example from a
+standard workstation can I get command
+line access can I use tools like DNS cat
+custom malware like vs agent asy Shell
+Code injection 32bit encoded malware
+plain text credit card C2 data
+exfiltration reverse TCP Port over https
+non-standard TCP ports and it goes on
+and it goes on and it goes on and you
+can run through these things just simple
+simply Google these things you're going
+to find stepbystep in instructions on
+how to do that and I'll give that to you
+guys here in just two shakes of a lamb's
+tail so all of this is on at uh tiny URL
+because you can trust random links that
+I give you um tiny url.com 504 extra so
+anytime I teach Sans 504 these are the
+extra things that I give in addition to
+the class once again I like giving this
+crap out for free um I don't like to
+just make it well come take the sand
+class and you'll get it no you guys can
+pull the stuff down um that's perfectly
+fine pull it all down and you'll see
+that we have the command and control
+worksheet here and if you go up we have
+AV bypass script um things on active
+defense and finding attackers finding
+workers with command and control um
+bypassing um lad's uh capability to
+detect uh alternate data streams with Dr
+space SLR using reserved file names and
+so on so I have all this crap out here
+and you guys can pull it down but the
+main one you want to look at is C2 work.
+XLS you want to pull that down and and
+actually start going through that
+spreadsheet
+at work and you want to try to get as
+much of that green as you possibly can
+so all of this boils down to a simple
+note on architecture all right um as I
+said a lot of this is kind of rooted in
+the idea of stunt hacking and I'm going
+to do a little bit of Defense of stunt
+hacking you know you have people that
+hack toasters right somebody hacks a a
+toaster or a fridge they're like we
+found this zero day in this Barbie doll
+and people are like oh that's awesome
+um exploting Barbie I don't know there's
+so many bad bad dark things that we can
+do and we're just going to leave that
+there we're not going to go there um
+I'll let you guys do that on your own
+but the whole point of everything that
+we're doing today whenever we have
+something like stunt hacking when we
+have people that go through zero days
+and even things like badlock right which
+is really SNP relay like whenever I read
+it I'm like well crap that's just that's
+S&amp;P relay um like you said
+08068 which is the same patch release as
+08067
+08069 with Dina doovi and k2's release
+of uh Karma style attacks so that was a
+good patch release for Windows but when
+we're looking at these types of attacks
+that exist as Security Professionals we
+shouldn't look at it as a point in time
+vulnerability we need to look at these
+types of things as architecturally what
+can we learn from this vulner so a
+special note on on architecture if you
+go back a thousand years a room like
+this room would have been an
+architectural marel right the idea of
+having a room that would be this big
+without having columns all over the
+place would be ridiculous it would be
+completely unheard of my wife is a
+structural engineer and I learned
+whenever I'm looking at ashto I'm
+looking at load Factor resistance design
+I'm looking at all of these different
+types of architectural and Structural
+Engineering books that my wife has
+laying around is I realized that
+Structural Engineering is a complete art
+form based on failure all right so
+Structural Engineers know the failure
+point of that door I'm not joking that
+that door right there a structural
+engineer will tell be able to tell you
+exactly how much weight that door can
+take before it deflects which is another
+way of saying failure they'll say
+exactly how much weight can that column
+with the deer head the buck on the back
+how much weight can that column take
+before it fails how much weight can
+these trusses take before they fail and
+more importantly whenever a structural
+engineer designs a building much like
+this one they design it in such a way
+that one of these beams if one of these
+trusses sorry one of these trusses fails
+it doesn't result in a total
+catastrophic failure of the entire
+building where everyone dies everything
+in Structural Engineering is about
+failure everything and they design their
+architectures with that failure in mind
+so that they have compensating
+components so a failure doesn't lead to
+death okay so when we're looking at it
+security and then where we're at is
+basically going back thousands of years
+and somebody's building a mud hut and
+then some jackass name ug comes and
+kicks it down and is like ug rules and
+they're like well crap we're not going
+to build our Huts out of mud anymore
+crap we're going to build it out of
+stone right then ug's like well now I
+need a freaking elephant and then he
+gets an elephant and he runs it over
+that's where we're at computer security
+today whenever we're doing stunt hacking
+and you guys talk about pentest jobs you
+are the structural engineers today
+you're finding failure points in things
+and for the rest of us that may not be
+doing penetration testing you need to
+look at these lessons that are learned
+and say you know what this attack worked
+for this VPN I want to do research and
+try to identify will that same type of
+approach work for my VPN uh buffer
+overflow or bypassing data execution
+prevention in Windows whatever it is
+that you're doing learn from these
+lessons of these stunt hacks and then
+try to do that type of testing in your
+own organization so that we can develop
+architectures that don't fail
+catastrophically with one user clicking
+a link CU one user clicking a link is
+much like a trust failing in a in a
+building it shouldn't destroy your
+organization
+so if you really want to stop somebody
+that goes Road somebody that's very good
+at what they do and they're trying to
+attack your organization you have to
+start thinking structurally you have to
+start being okay with the fact that the
+initial compromise and trying
+desperately to identify ways to detect
+that compromise and quer quarantine that
+compromise as quickly as
+possible so I want to say thank you very
+much for attending um I I feel bad um
+bill has been Bill and Cory have been
+inviting me out here for a long time and
+um and I'm glad that I finally made it
+uh this is kind of a crazy period for me
+I was talking to some of the guys a
+little bit before um my mom was St was
+was was diagnosed with stage four
+pancreatic cancer um so I'm jumping down
+to Phoenix Arizona to be with her um in
+the process so it's really kind of cool
+to get away from a lot of that and come
+up and be like hey do you guys want to
+you just want to come up and drink and
+eat pizza I'm like that would be perfect
+um that sounds like an absolutely
+fantastic good time so thank you so much
+once again um I appreciate it and I will
+see you guys again so hopefully some
+point in the future
+[Applause]

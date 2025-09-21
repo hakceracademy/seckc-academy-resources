@@ -1,0 +1,365 @@
+thanks everybody so this is not my first
+time speaking in sec AC nor is it my
+first time speaking at Kansa but this is
+definitely the largest crowd I've ever
+spoke at it hits X 82nd KC so let's hear
+for you if I could be with everybody but
+everybody Minds name nothing just coming
+up with a full coming forward and let's
+take a selfie together if you don't want
+your picture taken that's fine but if
+you wouldn't mind come on everybody now
+come forward let's take a picture
+alright is everybody in there who wants
+to be in there Oh feel free you can put
+this off it's good and one let's see
+what finger gestures you got 1 2 3
+alright thank you very much that's
+awesome I appreciate it alright well
+while you guys go back so if you guys
+are here waiting for a good talk you've
+already seen it they call a sec Casey
+called me yesterday and asked if I would
+talk and I told them that I could put
+some crap together I mean so this is
+what happened ok well anyway so my name
+is bill Swearengen I'm one of the
+founders here at SEC AC for those of you
+that are new and you stayed I really
+appreciate it for those of you that
+brought someone new I appreciate even
+more I just really want to tell you a
+story about guerrilla marketing and I
+kind of give a call out to the to the
+audience for some help well first I
+would tell story
+I went tell a story about how this began
+so in the beginning I found out about
+this conference called compute Midwest
+does anybody intended to compute miss
+and Midwest anybody did well from what I
+understand it was a fantastic conference
+and it was held at the Kauffman Center
+of Performing Arts and I got really
+super jealous that it said compute
+Midwest up there and
+Casey and so literally the the night
+before I I thought this is a solvable
+problem
+okay so so I can go to compute Midwest
+and take over right so my job it was I'm
+going to see what I can do to advertise
+that Casey I have one of the more larger
+computer conferences here in Kansas City
+so I came up with an idea so I was going
+to attack the Wi-Fi signal and compute
+Midwest I mean my idea was that I would
+set up a karma box and for those of you
+that are not aware of what karma is
+karma is a Wi-Fi hacking utility that
+when your computer says hey I'm looking
+for my home Wi-Fi I am looking for my
+home Wi-Fi it says I'm my home Wi-Fi and
+unless you join and so that was my idea
+was okay I'll set up a karma box and
+when anybody who's phone or computer or
+whatever was looking they would join my
+access point and then I would control
+the internet and I would advertise set
+KC so that night I I started working and
+I said okay I can do this
+I got a Raspberry Pi I got a a Wi-Fi
+adapter and you know t cheap cable a SD
+card put it together it will you know it
+worked okay but as I started adding
+others 45 bucks yeah it's kind of
+expensive but whatever I'm gonna be able
+to take over the Wi-Fi at compute
+Midwest and easily Wow all my friends
+you know be able to tell stories said
+Casey so so let's go and then the
+morning when I was getting to go I did
+and I'm a ticket okay well yeah so ready
+as I got this instead I went inside and
+I grabbed one of the table tents and I
+ripped it in half and put it around my
+neck I mean hope for the best and
+hopefully that would work as ticket it
+did I mean so as as I was as I was there
+there joined some coffee
+broadcasting to to compute Midwest about
+how you should go to set Casey and if
+you oh and I kind of forgot to mention
+what happens is if you were to join the
+access point and then trying to go to
+anywhere on the internet I would
+intercept your DNS and redirect you to
+my web page there for advertising hey
+instead of joining you know your Wi-Fi
+here you should go to set Casey you know
+I had a little ASCII text there that
+that said you know a little bit about
+set Casey advertised a day the location
+canceled hold then who was going to be
+promises I forgot to write it in there I
+mean you know any kind of code to detect
+how many connects so I'm not sure how
+many connections there was going to be
+but I decided or how many people I
+actually got to join I have no idea but
+I decided hey this is a great idea
+here's what I'm gonna do I'm gonna build
+all of these for people who join said
+Casey and give them out but so as I
+started doing the map here I kind of
+came up with it's gonna cost us about
+$450,000 to be able to do that for those
+of you math majors in here should really
+probably recheck that math but but I
+decided hey this is an idea worth
+exploring we should we should look at
+something else so I found this board has
+anybody played with the esp8266 at all
+I got a couple yeah all right well the
+so the interesting thing I don't know is
+Mike Lindsey in the hospital so
+I am Eric Michael ends they came up to
+me in 2015 and said you should check out
+the esp8266 and I was like yeah ok
+thanks I guess
+and now in 2017 I was like oh my god he
+has pee 82:6 is the best thing out there
+so he's a little 2 years ahead of me but
+at some point the esp8266 is it's a very
+inexpensive device that was created to
+add Wi-Fi to other inexpensive devices
+ok I'm so so its sole purpose when it
+was created was to add Wi-Fi to a device
+however people being very creative some
+hackers found out hey this this device
+has an SOC on it or a system on a chip
+already maybe we can afford we know to
+it and maybe we can get it to Reinhard
+we don't and sure enough as of right now
+the esp8266 is very mature and as a full
+stack development stack if you can write
+Arduino you can write to the esp8266 and
+even better it cost $2 so shout out to
+our deaf Colin batch team where are you
+guys at let's see your death combat
+scenes here they are so
+so the DEF CON badges if you guys
+haven't seen it I think I saw you guys
+were showing them off here a little bit
+earlier um the great thing about the
+badge is that they use this year is they
+used open-source hackable electronics
+right so they use the esp8266 Big
+Brother the DSP 32 I mean that's what
+you know it was the bench to have this
+year because told hackable if you
+haven't seen it seen to what people have
+come up with I'd say you check it out
+over here okay so so now I figured out
+ok well I know what to do
+I'm gonna write new code but instead of
+using karma I'm going to use captive
+portal this has some some unique
+advantages and I'll explain here in a
+second um so I called up the greatest
+programmer that I know the world's
+greatest programmer Brian Geraghty over
+there yeah Greg Anderson whatever your
+name is Alex whatever and he wrote up
+some code on so that when when I deploy
+this device is $2 device and someone
+connects to it they get a hacker pop-up
+which one I know but which one line I
+got three of them okay so so right now
+what I've got is I've got a $2 device
+and that is running a cab but broadcasts
+and SSD as you can see in this example
+right here I'm broadcasting the the SSID
+conference Wi-Fi which happens to be
+very popular
+and if you join it you'll get a pop-up
+then you know kind of advertise sec kc
+so I took a little bit further and if
+there we go so I took a little bit
+further okay so I just need to stay far
+away from this if you stay connected um
+I feel a little embedded hacking
+challenge into them and right now
+they're they're right here so this is
+one I'm and I'll rebooted it so because
+the DSM guys are in it this one's the
+other if you haven't seen this when this
+one's sight to behold I literally tried
+to make it as scary-looking as possible
+there's wires coming out of it just a
+little bit of dark you know like black
+tape just to make it look nasty and then
+and then here is one just all by itself
+and it just it really just looks like
+what I would I showed up there above all
+rebooted so right now I'm calling them
+conscious yeah so I was trying to like I
+literally was like okay I got to come up
+with something creative so how many of
+you guys remember throw ease from the
+past eighteen years ago you'd make a
+little led thing and you throw it and
+have a magnitude stick and you know that
+was pretty awesome
+really I think that those were popular
+mainly because the name was throw ease
+so if anybody has something more
+creative I'd sure be interested to hear
+so but the interesting thing is I
+deployed three of them in interphase how
+many people went to interphase
+all right look at that did anybody see
+the the oh I got one yeah is that why
+you came sir you
+and by that I made a drink for saying
+yes so the best story ever so you know I
+tried to go to interface early that
+didn't happen so I'm there with you know
+that the two hundred people meanwhile I
+am literally taping these things to the
+bottom of the tables around interface
+and someone sits down so those of you
+you know she caught me though that one
+Tommy yeah
+taping those to the underneath of the
+tables I've work here is you know what I
+miss my child
+so I deployed two of those underneath
+the table one at the SEC Casey at the
+SEC a seafood I mean the SSIDs I tried
+were first I tried all three interface
+so that was that was the Wi-Fi SSID
+there and at the at the conference and
+it worked very well and what I found was
+that the SS IDs that they had it at at
+the conference were much more powerful
+than my than my esps and so the the
+interface Wi-Fi is nobody was connecting
+to emphasize how solve this I teach one
+to interface secure one to conference
+Wi-Fi and one to interface Wi-Fi and I
+got 37 connections yeah I know well so
+and I put them on my backpack and as I
+walked around so the two SS ideas that I
+think that I took that I've put them on
+and a black hat Def Con where Def Con
+secured and joined for hacking challenge
+and I added little beepers to them so if
+anybody connected I would get a beep
+because they're right right here in my
+backpack and a hundred and fourteen
+people hoops no one taught me taking
+them to this table sorrier than me
+headed no not gonna touch it 114
+connections at blackhat DEF CON
+connected to my to my to my esps so
+here's what I want to do I want a
+blanket America with these Saints right
+right so so to me I think the best thing
+that we as a hacking community could do
+would be to deploy as many of these as
+possible around the Kansas City
+community all having the the the set KC
+here's some sort of SSID broadcast at
+advertised set KC perhaps you know the
+next sex a sec KC is you know August 8th
+or whatever I'm and deploy them so I
+started looking what would it take to do
+that it's actually pretty pretty cheap
+right so right now I'm using the the we
+most d1 mini as I showed up here earlier
+that says it's $2 76 cents the reason
+why I like this one so any of those of
+you that have done you know any kind of
+programming with Arduino or even the
+esp8266 just connecting to it can be a
+real pain in the ass that the d1 mini
+really really solves that you literally
+just connect to it while with
+to be cable and you get a serial
+connection it's really easy program
+there's a lipo charger and a battery
+cost us about 474 so I bought 100 of
+them look under your seat so I didn't
+have I didn't have enough wood put them
+underneath every seat so if you don't
+have 100 years just keep looking so this
+is actually why I went second because
+[Applause]
+so so it's true DEFCON style this being
+the second see after DEFCON I don't know
+they do have 100 of the we most but I
+didn't get the lipo chargers or the
+batteries in time literally today I work
+from home like saying please please come
+today
+please come today and they didn't come
+so I blame China hold on I gotta believe
+China here okay
+I've lived I have what I need okay so so
+I have 100 of these that I that I will
+be that are for you okay so they are for
+the second sea audience you know I only
+have a hundred and so what I'm really
+asking is anybody that wasn't do
+something awesome either for this
+project or set Casey part of you know
+just our community do something awesome
+right now and you'll get one at the next
+set Casey there's a lot of work that I
+need on these things so so while I do
+have I have developed the base framework
+of them it needs a lot of work then the
+captive portal I've got three of them
+running right now I'm if you do want to
+check them out I promise I promise I
+made them okay I wrote them they're this
+I promise if you connect to them it we
+won't do anything malicious I will make
+you this promise I mean if anybody was
+to hold anybody accountable I'll be
+accountable okay so I'm standing in
+front of you telling you that if you
+want to check them out there they're
+completely benign they literally they
+won't connect they will show you a
+display what whether you saw there I
+mean there is a hacking challenge
+embedded in them for those of you that
+you'll see that there's some problems
+with the captive portal I need a little
+bit of assistance with that for those of
+you that complete the hacking challenge
+you'll see that it is pretty trivial
+right so there was it was a big step to
+get into it and there's some you know
+there's some neat things that you can do
+in the I've embedded a little bit of
+some toys in there but it could do a lot
+more so if anybody is interested in
+helping writing code for them the codes
+on my github
+once again I promise if you want that QR
+code is legit is online it'll take you
+to it'll take you to that github page if
+anybody wants to help but it's on my
+github the heaven-sent github or you
+just search for it and find it there
+except pull requests or whatever you got
+I'm and that's the end of my talk so I'm
+gonna leave it up I'm feel free to do
+come and look at them
+you know test them play with them
+whatever you want I really would
+encourage any pull request and my github
+page and thank you very much hope you

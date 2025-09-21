@@ -1,0 +1,257 @@
+so uh this is a
+office mouse scanner is a tool that i
+came across when we needed to analyze
+some
+malicious rich text files actually that
+got emailed in some of our users
+it's a windows-based tool i believe you
+can run it flying i think a lot of
+people do
+uh but
+you know unfortunately i think most of
+us find out about
+malicious attachments because our user
+emailed us this word document so i
+didn't get this to open it acted really
+weird
+it's okay
+right
+so uh optimal scanner will let you do
+that it will let you pull apart doc
+files doc and docx um powerpoint excel
+etc
+so what this talk is this is a quick
+overview
+this talk and this tool the way i use
+this tool is like if you had a really
+hardcore sports car
+and you only ever used it to drive to
+the grocery store back so i want you to
+know up front i'm not going to be doing
+a real deep dive here
+it's it's going to we're going to talk a
+little bit about what it can do a little
+bit about what you'll see when you use
+it um but what i'm not going to be doing
+is a lot of shell code analysis or
+get out cory
+so if you're if you have a ton of time
+if you just really get your jollies
+doing childhood analysis you are going
+to have a lot of fun with this tool if
+you don't do shell code analysis if that
+doesn't tickle your nerve funny bone
+you'll still get a lot of use out of
+so um for those of you who are a little
+bit new to analyzing malicious documents
+you're probably going to want to do this
+in a virtual machine
+because even if you are the most
+security-minded person you are at some
+point in your career going to
+accidentally click shift
+unfortunately
+if you're doing that on your live
+workstation
+you're going to have a bad time it'll
+never happen no it never happens second
+of all if your tinfoil hat doesn't fit
+so tightly that you don't believe that
+your organization is being targeted
+specifically you need to get refitted
+for a tinfoil hack
+so
+you know if you open up one of these
+documents even if it's in a virtual
+machine and it phones home and says hey
+one of your victims just opened up the
+document that's all so bad
+the other thing is if you've got virtual
+machines and you've got the ability to
+analyze documents offline it also keeps
+you from uploading to places like
+virustotal
+sorry i'm losing my voice there's going
+to be a lot of rope there
+it's pretty hard to not empty five some
+files that get sent to you so do that
+search on the md5 some value the
+checksum value rather than uploading the
+document dividers total or malware.com
+or anubis or any of those other places
+try always try to search on that md5 or
+whatever checksum you prefer first
+so a little bit about smell scanner um
+it's available at reconstructor.org the
+guy that wrote it is a genius he also
+speaks german as a first language so
+there's a little bit of awkwardness
+there with the syntax and dictionary um
+it does run in windows uh something to
+be aware of for some reason he hasn't
+updated his site in a while he hasn't
+updated the tool in about a year
+uh the version that's available from the
+code page has a link called code that's
+a little bit out of date you want to go
+to the uh excuse me the one on the about
+page is out of date about pages newer
+code pages update can't read my notes
+so inside the tool itself
+there's a couple of dll files allowing
+you to do some things but the four main
+tools are this view which is a really
+lightweight disassembler if you have a
+value where you know that the
+show code starts you can pipe that into
+this view and it will mark out shellcode
+for you volvo setup will actually carve
+the shell code out of the document
+itself and put it in an executable
+if you don't get the starting location
+correct there's a really good chance
+that shell pump
+chocolate won't execute properly but
+you can still get some analysis value
+out of that even if it even if it dies
+off small scanner that's what we're
+primarily going to be using today an rtf
+scan so optimize scanner can't scan rtf
+files on its own
+and i'll show you in a minute how it
+will tell you oh this is an rtf file i
+can't scan it kicks you over to rtfscan
+so the options um you can feed it
+powerpoint word docs uh excel files
+uh scan will just
+do heuristics tell you i think this file
+might be malicious and it gives you a
+score and i'll show you how that works
+in a minute um info will dump oily
+structures
+inflate is really handy when you're
+dealing with newer office docks which
+you're going to see a lot
+of smell scanner by itself can't analyze
+uh docx
+pptx etc so you've got to inflate them
+and then the cool part is you can just
+dig through the files they're actually a
+little bit easier to pull apart
+uh brute if you think there's encrypted
+excuse me stuff in there and debug is
+just a noisier version of what you were
+so i'm going to jump out and do a couple
+lovely
+okay this is going to be a little
+difficult to do one-handed but i'll do
+my best
+so first of all i'll show you what it
+what it does if you don't give it an
+option
+it just says hey dummy you didn't tell
+me what to do
+but the cool part is
+the scoring if you if you don't do use
+anything else for this the scoring is
+really handy so if it every time it
+finds an executable that's 20 points
+code excuse me shellcode general is 10
+points
+strings and all the optics you know
+they're
+sketchy but maybe not as sketchy as the
+other two so they don't score quite as
+highly
+all right so here we go
+and it says
+rtf file format detected please use the
+should those types of things exist in an
+rtf file
+probably not this file also contains
+overlay data which is unusual for
+legitimate rtf files also it makes it
+exceedingly difficult to pull anything
+useful out of the dock
+for me at least but you'll also see that
+it said hey i found some interesting
+stuff i'm going to dump it out into this
+binary file
+um
+if we take a look at that file and i
+apologize
+i can have a
+it's i mean this doesn't do anything
+helpful for me but i'm going to show you
+one in a minute where you are going to
+look and go oh i've maybe gleaned some
+helpful information out of that so let's
+so example two dot dot seems to be
+malicious it only got 10 points
+i would still call this malicious though
+i wouldn't just send it back to your
+user and go
+it was a low score i i downloaded a
+whole zip file of samples added from
+contagion down to develop these like
+these examples and there were quite a
+few in that holder that
+this this tool didn't score is the right
+thing at all but if it came from
+contagion jump i'm not opening it
+so um you know i wouldn't call this the
+so check it out um
+it
+went through the file it found an
+embedded you guys can you see it yeah
+but it found an embedded flash file
+which it dumped to
+a flash document there
+and if we look at it
+i don't have nearly enough room on the
+screen
+anyway
+if i brought it up in a hex editor you
+would see in the header information but
+it is actually a shockwave flash file
+that if you don't have a way to analyze
+it in-house hey assume it's malicious b
+you can probably upload it to beef with
+and get a little bit better of an idea
+of what's going on with it
+so okay this time it was a powerpoint
+file
+obviously it's found all sorts of bad
+stuff this that's one of the higher
+scores that i saw when i was looking at
+these documents so
+that would that would give me a few next
+steps to have a look at and say you know
+this is something we need to be blocking
+a lot of people's mailboxes etcetera
+etcetera
+so that's just kind of how it works it's
+pretty easy to use
+even if you never get into the shell
+code analysis side of it you're still
+going to get a lot of use out of this
+tool
+so some useful links um there's a lenny
+zeltzer does a cheat sheet that mentions
+this tool specifically
+and i can post these links out to this
+at kc wiki later
+there's another
+how-to on
+extracting visual basic macros and then
+um
+if you want documents to try out a
+contagion is the place you go
+you will have to email her to get the
+password schema because it changes
+uh but it's worth a while and she
+actually responds really quickly so i
+would go ahead and email her and do that
+but keep in mind every single thing you
+download from that site is evil so don't
+click shift

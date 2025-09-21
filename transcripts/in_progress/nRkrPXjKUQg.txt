@@ -1,0 +1,1109 @@
+[Applause]
+alright you seem I can eat them like
+enough so this is a talk that I gave the
+sans digital forensics and send response
+summit at this summer it's all about
+ready TV and blu TV out of curiosity
+anybody in here do you Red Team Blue
+Team engagements your organization I
+have played four or five hands good
+anybody doing within tests and your
+organization
+okay so in a few places i give this
+talking wisconsin and jesse and in a few
+places people don't understand there's a
+difference between a ping test and a red
+t engagement hopefully by the end of the
+talk
+that would be someone clear there's
+really not a good set of definitions for
+this stuff in the industry but hopefully
+you know i'm going to talk from my
+perspective in my experience and
+hopefully by the end of the night will
+come around to understand what the
+differences between an intestine
+so this is a slide show here last summer
+nice you're talking about Konza which is
+a open source framework i wrote purdue
+security incident response work what the
+slide shows is a persistence mechanism
+that we caught in an office 365 when i
+was working at microsoft and so for
+those we have the note microsoft is
+roping on Red Team Blue Team engagements
+they were doing it the four years that I
+worked for Microsoft we were
+continuously red teaming the service
+there was a team of dedicated people
+trying to break into office 365 and
+basically do what nation-state
+adversaries would do so we got word that
+they were in one of the environments and
+we did what any incident response team
+would do we try and figure out where are
+they they must be trying to maintain
+persistence they've got to have
+cooperating somewhere so how do we find
+it this one we're in a system turtles to
+about this DLLs across in this case it
+was about five thousand machines and
+pull all that data back you're not
+familiar balloon see allows it tube
+running processes and all the dll's that
+are loaded in those processes right so
+we're items to lacrosse five thousand or
+so machines we took that data back and
+started analyzing it and we found on one
+machine there was a spoon feed process
+so what you're looking at is all of the
+schools feed data from five thousand
+machines shown here these are all the
+DLLs that are loaded into each of those
+processes this is a tool permitted
+called highlighter it's pretty nice for
+looking in at bottles in the large so
+this is this black stuff off to the
+right side that is like a 10,000 foot
+view of this file and you can see
+there's one line in there that's much
+longer than all the others that was a
+delicious dll only the red team
+implement inches this school to be
+process on one machine that was how they
+were maintaining persistence in this
+particular environment so as per the
+most important process we sat down with
+red team sat down with the stakeholders
+and we presented all our evidence here's
+what we found here's how we found it and
+Joe lilac who some of you may know from
+online circles use my dental climber he
+was one of the 19 person I result he saw
+this and placed Holland and
+they took a bug and the wig back and
+changed their tooling and it never made
+it as easy for us to find again so
+that's Red Team Blue team that's how you
+improve both teams and get better by
+sharing what you find and how do you
+find it on so that's a little bit of a
+teaser so who lie i've been doing if
+basic security for i think it's over ten
+years now most of that time I've been
+doing security incident response were
+made in a couple of years where I was
+doing application security work but for
+most part of the nutrients in response
+work of the last ten years plus a little
+yea Timo during this terrible time above
+all the marble nastiest that was
+effective Microsoft operating systems I
+was working in a research university
+down the road here 20 to 25,000 on the
+network
+everybody's sitting on ipv4 routable
+addresses no Matt the firewalls WV
+requirements no patching requirements it
+was awesome
+so we gotta learn incident handling
+fairly quickly after that I was an
+instructor with sands for a few years
+I've managed their home again was one of
+the leading contributors I've written
+another golden swords tools as a mission
+that I word for office 365 for about
+four years it was the technical lead for
+security instant response there while I
+was there about the school Cuonzo which
+I talked about your last year today I
+work 14 and we're in the incident
+response eer space systems management a
+whole bunch of other things
+so this is the agenda right now you have
+a moment of the teaser there's been a
+speaker intro the talk is primarily
+about renting right so this is Morgan
+State you why is you to be doing grantee
+you should be doing when TV because it
+delivers the security incident okay and
+this is a fundamental thing with my team
+is it gives you an opportunity to
+practice Piru to handle security is now
+I don't wonder with finland in testers
+in the room but contrast this with pen
+testing who's made of Liberty nice
+report ready I worked for about a big
+organization here in town a big bank
+that many of you have heard of and we
+with once a year we would bring in one
+of the big consulting firms stupid test
+engagement and they would come in and
+then we need with us at the end of it we
+would get this China better you're done
+with all of their findings so that was a
+nice report so you should be coming red
+teaming the big issue an opportunity to
+play my department are going to practice
+like you want to plan so as an example
+of this play ball sports ball club I can
+find my house so this is a dildo in
+North Carolina natural championship game
+last year to those few familiar with
+basketball if I can get the video to
+play what you're going to see here is
+Chris hints on the baselines going to
+inbound the ball to this guy Ryan a
+martini llamado
+Archie I'm who's gonna dribble down to
+the top of the tea is going to turn
+around and ditch the ball back to Chris
+jackets jeans takes the last second shot
+at the buzzer and they went again it's
+beautiful thing I'm not just showing you
+this because I want to see what Caroline
+lose this game over and over again yeah
+it's gonna be great pleasure to watch
+this video probably 50 times now I'm
+going to show you that i'm showing that
+reason I'm showing you this because the
+next thing I was reading about the game
+of the paper and so booth one of the
+players on buildings team said we're
+under playing at the end of every
+practice so when you think about that
+you know you've been in the college
+basketball practice I've never played
+college ball but have to imagine this
+has probably practiced for an hour be
+two hours a day it's going to be
+physically and mentally exhausting and
+it'll be good practice they've got to
+run through the stupid play that they
+run through the end of every single
+practice well thank you some an
+opportunity to develop muscle memory and
+by doing writing engagements and keeping
+your internet response team engaged and
+having to do with security incidents it
+gives you an opportunity to don't know
+someone reading as an instant response
+key if that's not a compelling enough
+reason maybe this is you should be doing
+right team because it gives you
+quantifiable results red teaming unlike
+real security instance is quantifiable
+you can actually determine over a period
+of time how long does it take
+approximately for our organization to
+get compromised if you know the date the
+red team starts the engagement and when
+they actually bring it to the service
+then over time doing this will report
+your period and we were able to get to a
+pretty reasonable degree of confidence
+about what the meantime to compromise
+was for the series you can also figure
+out the meantime to detection in a lot
+of organizations read the various park
+rd hub
+right the present report I was get this
+to mix up for you know the price and
+report
+these organizations be compromised for
+months or years I think we're down two
+months now but for a while it was years
+before they have recognized that they
+were clubless how do you develop a
+meaningful metric about around the
+meantime to detection if the commbuys
+has been going on for months or years
+it's hard to do but if you're doing a
+reading exercise you know they started
+you know when they got in you know how
+long it took to detect you can build out
+being fellated for this you can also
+accurately figure out where you're being
+time to recover grants so those are the
+top two reasons and my money for doing
+right teaming as a regular part of your
+security program
+all right so then covers the wide ready
+so what is red teaming exactly I think
+for me it's easiest to divide red tinted
+by what it is so talk about some of the
+things it isn't it's not alone remoting
+session i'm sorry i'm reading the slide
+ahead it's not a grandma so for modeling
+is an important part of any security
+program you should have it this is you
+know Microsoft is big on this when
+they're developing new service or big
+program they sit down and they try to
+figure out what are always this thing
+could rain what are all the places we
+could be attacked and how do we build in
+the deviations into the design of this
+thing from the get-go that's threat
+modeling your red taters can help me do
+try modeling but that's not what red
+teaming is about it's not a
+vulnerability assessment there's lots of
+great things you can do with probability
+assessment your scan your network figure
+out what your vulnerabilities are
+identify and prioritize those things and
+get them cleaned up your red team and
+cover with that that is not what I'm
+green tuning is it's not a penetration
+testing I mentioned you know we would
+hire this before consulting firm to come
+in and do an animal pen test I was
+working for a bank here in town and then
+we come in and sit down with us they
+talk to us about what goes what do you
+want to have this pin test Ellen if
+these are the hours of operation we're
+gonna work nine to five reworking these
+IP ranges please set exceptions in the
+firewall for us if you've got a web
+application firewall we're going to use
+this as our browser user agent string
+please set exceptions in the way of a
+kitchen fire well if we trigger alarm
+sir you know we do something bad music
+all this now don't mess with us that is
+for the most part how penetration tests
+work you know some testers to hear it
+and shake their heads and say that's not
+how we do it and I actually met with a
+couple of teams that do rio rented
+engagements I
+just distinguish between what's up in
+test and what's already engagement by if
+you're at the tester and you're telling
+your customers hey if you want to try
+and stop us trance palace that you've
+crossed the line into a red team
+engagement at that point that's how I
+define and that's just there's no great
+industry definition of the terms here
+that's how I like to look at so the red
+team is different than the pin test
+so people in the industry are calling an
+adversary emulation some people call it
+for some force engagement typically the
+people that are ex-military and like to
+refer to as force on force engagement um
+Brid teens have mission objectives some
+people look at red teams and they think
+well memorize our domain admin that's
+kind of shoe ejected that is actually
+kind of a means to an end not be at the
+end in itself ultimately they want to do
+something like a customer pivot so for
+online service if you have a customer
+portal your customers anxiety with their
+credentials if they can get from their
+stuff to some other customers stuff
+that's a customer pick this is the kind
+of thing we look to our own time to 365
+I
+defendant is another red team objective
+it's fairly common fairly
+self-explanatory so I won't belabor it
+burn it all down this is my favorite
+scenario than I think it's just the fun
+one word about Nancy areas like Saudi
+Aramco or Sony Pictures if you're ready
+team can get on authorized code running
+on every endpoint in your network
+innocuous unauthorized code code they
+just show your brand they don't
+necessarily have to quite hard drives
+that will be bad but weird about them
+soup relatively fun scenarios should try
+the organization
+ultimately red teams have a mission
+objective and the objective ultimately
+should be to test the incident response
+capabilities and procedure of the entire
+organization not just how the blue team
+today this is where this is another
+thing about right to me it gives you an
+opportunity to let the entire
+organization everybody needs to be
+involved in an incident should be
+involved so before I mean by that old
+engine you're like a lot of companies
+and Brian Krebs is your I guess you come
+in and you're reading the security ball
+and you see your company's name on Ryan
+parks website you've got a security
+incident
+if Brian Krebs is your IDs who do you
+think responds to the security is it
+just the security team here in have
+legal they're going to communications
+you're gonna have a ton of managers
+involved here you have the subject
+matter experts from around the company
+involved it won't just be a handful of
+people in the incident response team so
+we're renting engagement should give you
+an opportunity to see how those
+different teams play together and how
+those pieces all fit together what the-
+communications are so the take advantage
+of that when you're running a red team
+engagement
+so some highlights a lesson to learn
+from my own experience in this
+fun-filled
+so one is outliers maybe leads i think
+was prior 2009 before i ever heard like
+formal language about these frequency of
+occurrence being bandied about terms of
+incident response and its usefulness for
+ir but we were in pursuing looking
+outliers for a long time before i ever
+heard this formal i said it was pure
+silverman of mandiant who wrote a blog
+post cub these frequency analysis and
+using it for security incident response
+so that Liars navy leads very useful
+tool here's the example the now I are
+busily here's another slide a show then
+I was here talking about Hans in last
+year this is w my event consumer that we
+collected in office 365 in response to
+another red team engagement the top line
+here you'll notice so these are hosts
+where we collect data from the names
+have been changed to protect the
+innocent
+obviously the top one here is different
+it's the dates are different the size of
+the file is different so another case
+where outliers maybe weeds so what I
+don't have a little outliers is a useful
+technique but I think it's been oversold
+a little bit
+anybody know who this guy is get your
+damn gear first first audience for
+somebody's actually shattered out the
+name most people have no idea in this
+case you should know who this guy is one
+of the luminaries former industry is one
+of my favorite people in the industry he
+believes that we have probably the most
+intellectually challenging job of our
+time I happen to think he's right um
+you know for sellers reasons but digging
+here is a really really smart guy
+wrote this paper in early 2000 time for
+nothing cause he works for a company
+called at state which is a big
+consulting firm if you think they got an
+acquired and it's okay by somebody else
+but they did a lot of consulting from
+Microsoft specifically an application of
+security so they were working on making
+the next version of Windows more secure
+and windows azure microsoft related
+products and deanna gear was in the
+company and he recognized in the early
+2000s that microsoft was pushing out by
+DNA we're pushing out no doubt they were
+pushing out all of these other
+competitors in the information service
+to space and rightly so that was
+becoming a lull in culture and modern
+cultures are typically bad you think
+about the idea of mana culture in
+agriculture which is where it comes from
+if every farmer everywhere to Roo is
+exactly the same process and some fungus
+comes along and we're the only hole or
+whatever it may be and the taxes cross
+it leads to a bad situation right you
+can have
+food shortages famine what having so
+many cultures I agree with Dan appear
+are bad
+however as an incident responder I would
+have loved to go into an environment
+that was actually a monoculture because
+when you actually end up with typically
+are loathsome long tails so this is
+actually I was going to live do with
+this but I'll instead I'll just talk to
+it this is a slide from our demo
+Department 14 you wherever we've got
+about 1300 sheets very small don't
+require 1,300 machines unless if you
+probably work in environments that are
+much larger than that what is it like oh
+here is a list of all running processes
+to cross those thirteen hundred machines
+and their 85 hashes and on the far
+right-hand side there's a count column
+the aggregates you know how many of the
+cheese is this process running on and
+I'm sorted in in in payson order right
+now and you can see the little scroll
+bar here this little great honor it's
+almost down to the bottom and just now
+getting to the tubes so there are
+hundreds and hundreds of one-off
+processes across these thirteen hundred
+machines so when you're an incident
+responder if you're chasing outliers
+that's what you're looking at you have a
+very long tail unfortunately to have to
+go and pursue some of your working
+environments with you know tens of
+thousands of machines office 365 a
+couple hundred thousand machines the
+tail was very very long you didn't hide
+the manicured and very well managed
+environment you still have lots of
+one-offs for whatever reason and
+incidence pond schemes have compatible
+on all of those things so love you damn
+here but i'm still looking to do I are
+real monoculture because then I could go
+into a department and there are two
+things that are not liars would actually
+malicious so I have some issues with the
+outlier thing information about how the
+outlier thing is anybody recognize these
+two brand logos
+so this is actually Saudi Aramco and
+Sony Pictures
+here you have the opposite problem of
+the long tail you have malware it is
+present everywhere so they dropped to a
+little and every machine and then
+started a code white hard drives if
+you're only looking at the long tail if
+you're only looking at the outliers for
+things very interesting you're missing
+those things that are common in the
+environment and malicious to how
+everyone else is useful oversold in my
+when you're having to deal with things
+like this when you have to work at both
+the long tail and the big head and
+review all that data it's critical that
+you have automation so you got a hell of
+a shin per game collection you've got a
+lot of asian for analysis and you want
+to have some motivation for mediation
+another slide I showed you last year
+this is us
+remediating in office 365 the o365 red
+team did a lot of work out front to
+build out a nice gooey that they use to
+control of their BOTS that they would
+have writing it in 365 the details on
+the slide outwardly the top half of the
+screen there shows each one of those
+lines is a moose that's calling 020 365
+red team's command control and aser when
+those lines are gray everything is
+helping when those lines start turning
+this ugly Texas burnt orange like that
+it means the Louvre hosts are no longer
+calling home to their
+command-and-control nazzer and this tile
+accommodate that we were trying to
+mediate and one of the UM 365 19 guys
+took a screenshot of this because
+everything was going offline he taught
+me to be in trash the service he had no
+idea that we were actually doing
+radiation and I'll oh there's one line
+here that's great line that's gray is
+actually one host to be unable to
+remediate we ran a remediation using
+casa so it's powershell over windows
+remote management because that's how
+everything that Microsoft is
+orchestrated and if the winner group sat
+on the host is corrupt and you can't
+connect to the wintering stack then you
+can for me so even though we had written
+this google strip that we could run on
+every endpoint and it could detect you
+know if the endpoint was compromised and
+clean it up if it couldn't get on the
+box then we were have a buck which leads
+to the other part of my art that's
+common that you should all knows it's a
+process like security itself it's not a
+product to process you've got to do the
+lack of repentance and repeat business
+when you're doing security instant
+response even if we have been a hundred
+percent successful where my friends just
+in pain who works for Microsoft she said
+this quota black few weeks ago about
+valuable targets always staying valuable
+and I mostly agree with her i heard in
+some cases where companies have gotten
+home and the adversary got exactly what
+they wanted and they never bothered to
+come back but for the most part I think
+she's writing valuable targets always
+say bye so just because you kick out
+what adversary doesn't mean they're
+going to try and come back next week or
+different adversary is going to come out
+to you so my hair is definitely a repeat
+process a never-ending painful process
+sometimes
+alright so moving on of who should be
+doing red team it might like any
+organization with the kind of security
+instead it should be doing ready any
+organization that has something with
+protecting should be doing retina but
+you gotta have some monitoring some
+defensive capabilities some of my our
+capabilities if you don't have these
+three things you don't have any business
+doing red team engagements without these
+things you're going to have a very very
+bad time with these things you're
+probably gonna have a very bad time so
+you've got to have these things in
+playing at least to some extent don't
+boil it be good or perfect they're never
+going to be good probably we're never
+going to be perfect certainly and great
+evening can really help you identify
+areas of investment for something like
+this
+so who should be doing renting I
+originally got probably an internal team
+as I through this talk in few different
+states in the last few months I actually
+sat down with people afterwards and I
+met some pretty fantastic and testers
+who are doing Red Team Blue Team
+engagements as a service so on a little
+softer on the probably an internal team
+although I still think there's some
+advantages of having an internal team do
+this a biggie is that it Elvis 365 you
+have deep subject matter expertise in
+exchange you know deep subject matter
+expertise in sharepoint and OneNote and
+skype really what have you yeah guys
+that know that service better than
+anybody they've been there for years
+they've seen it grow up they know how
+their specific aspect works none of
+those guys understand the service
+intended as well as the red team so
+having an internal team
+you can break into your services and do
+nasty things that real average studies
+may try and do can be a team that you
+can turn to when you have a real
+security incident so I think there's
+some value in having an internal team do
+your venting engagements now I get a lot
+of teams in one companies don't have a
+deep pockets they can't afford to have
+teams doing this kind of thing start
+small and start with one person start
+with two people bringing somebody who is
+not able to rip the security team so in
+the early days for doing this Microsoft
+we brought in experts from exchange to
+help the Red Team figure out how to
+change warts so bring those people in
+and recruit them is to subsidize the
+team basically
+just linked to another when you're
+dealing with Sesame's leads to another
+lesson learned off of my time Microsoft
+you're going to find your documentation
+is wrong your code comments are wrong
+assumptions were wrong people are going
+to look you in the eye and tell you you
+know there's no way that segment of
+network is successful that cycle in the
+network it's not configure that way and
+they're going to Ebola you know somebody
+make a one-point heads in my great a
+bunch of data one datacenter to another
+and as a result they owned the ports
+aware that they bought would be open for
+eight hours ended up taking a week and
+over the week they forgot about it and
+things like that felt really practice so
+you're you will find through red teaming
+all of these things that you think you
+know or the document in a certain way
+turn out to be incorrect so the Redskins
+also very useful for that also went
+YouTube you ready I think probably two
+to three times a year is sufficient for
+most organizations again Microsoft
+needed this continuously over four year
+period we were constantly right teaming
+some of the engagements went on for
+months which again most organizations
+can probably not afford to do when you
+have
+when you're trying to test every aspect
+of the service on a regular basis and
+you have engagements that are going on
+because it's really hard from the red
+team to get in and they refuse to give
+up and then once they do it in now you
+make a pointy NASA convoluted
+investigation and definitely routine
+work takes about four times as long as
+the red team work in my experience so
+you can have these engagements that span
+for months and by yourself we had at one
+point in time because of this we have
+four concurrent red team engagements
+going on we had a team of like six
+people on the luteum trying to do
+instant response against red teamers for
+dinner engagements and real security
+incidents that were affecting our
+customers so don't do don't do that
+don't pile up your engagements 23 times
+here is probably funding
+so some practicalities of red team you
+then you want to have holes in paper in
+your rules of engagement make them
+subject to annual view or buy anymore
+through every six months the team's sit
+down and hash out what's not working
+what is her name you want to have
+something in there about how you can get
+a pimple for management llevo for things
+that your red team is going to want to
+do eventually if security improves in
+organization as a result of red teaming
+the red team's going to have harder and
+harder time getting into whatever it is
+they're trying to get into and they're
+going to want to do nasty things like
+this we're stretching the no Teresa
+condiments we did basically what this is
+is they're sitting on rocks server and
+they're saying give you a list of all
+the mailboxes and search every one of
+those mailboxes for password username or
+credential now in most organizations
+kind of red team Erie employee email is
+probably not going to go over so well so
+you got a process where they can get
+this time so lame stuff what they did
+was they sat down with HR legal and they
+hash this out and in the room HR and
+legal they were on the search and if
+anything matches came back HR legal to
+do that email and say ok this looks like
+it's germane and then give it to the red
+team real adversaries going to do this
+so you probably want your man to be able
+to do the other thing the recommended
+thinkin this after years of doing
+fantastic just got to be really
+difficult to get in and so they were
+sort of do things like this even they
+resorted to the end was digital key
+markers which is also something i
+probably flying organizations email it a
+point to get approval from we go for
+that
+also in your goals engagement nope
+accessing for example really customer
+data at least no access it more
+tampering with real customer data I'm
+365 majeure you can sign up a trial
+tenants you might be able to do this new
+organizations gummy tenants and go back
+up all day long so you can get from one
+dummy antenna to another no manages no
+denial of service attacks if you're
+running it really together around my
+business the last thing you want to do
+is start eating too much gravity groups
+and don't let your red team cause
+outages and don't let it a red team we
+in security controls you don't want a
+real incident to happen because the red
+team dropped a firewall we will do
+something down like that if they can
+prove that they could do it you know it
+like here I'll show you a screenshot I'm
+turning off the firewall if we were to
+take a screenshot of themselves in the
+firewall management interface showing
+that him you could have done whatever I
+wanted that's fine but don't actually
+plan weekend existing security controls
+do give their 18 access don't make the
+red team proved the year organization is
+like all organizations because you are
+you can be finished you have been
+finished you will be pitching in if you
+want to run a fishing exercise once or
+twice a year to prove that you're still
+vulnerable to fishing that's fine so the
+red team's start out with access to the
+corporate network that's what we did
+although Microsoft employees that are on
+the red team and access to the carpet
+Network if they can get from the
+corporate network into the data center
+that was a problem so let them start
+with access
+give them access to source code give the
+red team assets to the regard migrants
+primarily mrs. have slowed down because
+these things are always involved so let
+them have that big been studying that
+keep the blue team in the dark don't let
+the blue team note but there's a red
+team going on okay you're testing your
+company's defenses are testing the
+monetary of your testing their instant
+response capabilities
+also as rules of engagement don't let
+the blue team do this if your red team's
+of the over 65 red team they have this
+great kid they wrote it was a nice clock
+ticking thrown into memory of running
+process and you know we would tell
+process memory we could have extracted
+that kid so that occupiers closer submit
+to the Microsoft AV team and they could
+have written signatures for it now the
+red team has to go back and retool
+they've got to send another six months
+financials that's not what you want the
+red team do it i want the coming here
+business so don't let your glue tape
+submit the red team hits two fires home
+or any other AV it should be against the
+rules of engagement
+in the rules of engagement real
+incidents have to triple-a team
+instincts right
+red team incidents should be carro is
+really know some of you were saying well
+just a couple of slides ago you said and
+shoot the blue team that are how do they
+know they're dealing with a real
+incident or event even today
+red tears are lazy the testers are lazy
+people by nature right they want to
+write their kid once and they want to
+use it again again again in every case
+that's fine have them do that when they
+go to compile their kid hopefully
+they're compiling their kid hopefully
+they leave in towards maybe is the
+manager of the Red Team you tell them to
+vote tool marks end that identify it as
+red team kick your blue team we go to
+the point under 65 or something nasty
+was running on machine we need to have
+an achievement in 15 minutes we did say
+it was the right time or we had people
+in China skinny writing tools trying to
+environment I don't know so yeah let
+these toolbars be there your blue team
+will get to the
+and identify the tactics techniques and
+procedures and the kid belongs to the
+red team hopefully your mileage may vary
+so you know by that you can do Red Team
+four hours plus a little so friday night
+something happens in 5 p.m. by
+five-thirty you've got attribution back
+to the red team and you pick it back up
+monday morning the other thing you
+wanted something on the blue team's
+management chain has to be in the loop
+they have to know there's a red team
+engagement going on so for me this was
+my boss he knew that the engagement was
+happening he merely want about it to
+know that we was talking to it instead
+we were responding to a bent een
+engagement for something else and so he
+could divert us from you know say okay
+let's something wrong no they they were
+able to talk credentials from the domain
+controller but now I've got a small
+customer 200 pleased that you wanted me
+to go and assist this thing you know
+this domain admin compromise seems much
+worse that you're telling me to go work
+with this small company that's a
+customer on the security incident
+polluting figures out okay this is a red
+team vacation so somebody has to be in
+the loop but play these things in this
+best you can right use this for costs
+across team collaboration I talked about
+that a little bit you're going to let
+your communications people involved
+you're gonna let a subject matter expert
+is from a prospect will be involved I
+hoping the lutein up because the blue
+team's not going to know hey aspx file
+sitting on this web server normal you're
+probably neither knew that assembly team
+getting convened other people establish
+a situation room to greatly sub umbrage
+and then run it like you would a normal
+security and sent right designate leads
+Delhi Anchiano run your investigation
+document your findings report your
+findings nobody likes for more fighting
+investigating for show or part of our
+demo all the one that you're running
+your investigation should be planning
+for remediation you want to carry this
+thing into n right blue team exercise
+remediation
+I'll talk about some things optimizing
+about my mediation
+but do a lot a plan for how you were
+mediating the same an executor mediation
+you got this host wrinkle thing that
+lutenist hired one you want these people
+exercising radiation then you go into
+the pulse radiation monitoring which is
+where you go back and look again and oh
+goodness what do we know about we didn't
+clean up what fell through the cracks
+was the routine that word when are able
+still responding and we can clean up so
+that's the post remediation monitoring
+and then use those critical aspect of
+the entire exercise which is the most
+also the most fun the most interesting
+aspect of the whole thing who goes it
+goes word is safe holder so in the case
+of office 365 these chains team or the
+sharepoint team what have you the blue
+team goes and printing goats it's not
+about leggings United other in for your
+fingers and say never teens stupidly
+about this configuration in place they
+shouldn't have it's not bubbling games
+but do hold yourself accountable like I
+so unsure slide earlier of doing my head
+in consumer data to be planted we like
+to that data I collected that data and
+loose out there for me i SAT for a week
+we didn't need to look at so there was
+an assumer sitting out there for a week
+that we had to data for you to have
+known if we looked at it so when you go
+into the post work these are things you
+talk about hey we like to this data we
+didn't look at it for a week here's what
+we're going to do in the future we're
+going to add functionality to automate
+analysis if we find out about these
+things right away so do hold yourself
+accountable I like for the blue team to
+go first in the post-mortem because
+everybody loves a good story and the
+blue team is going to tell a nice story
+it's going to be no starting time with a
+blue team they're going to tell what
+they think happened in the environment
+all cards on the table is really to
+thing as a blue Teeter and you share
+your secret sauce with the red team they
+go we're going to screw you next time
+we're not going to register the tlm
+process for do cityjet you'll never see
+it again it's really tempting that's
+next post partum to not put all the
+cards on the table because you got hard
+by them last time but put all the parts
+on the table because it will approach
+you to get better the brain is going to
+do a second the way to me to tell the
+factual account of what actually
+happened you've had the story titled the
+blue team now the writtens really didn't
+lay into you and tell you what happened
+on things you missed there's going to be
+a nice gap between the blue team story
+and the red team story the goal for the
+blue team this is the next engagement
+let's close that app as much as we can
+hopefully after doing this exercise you
+can come in the blue team story is just
+as good as the red team story the red
+team obviously wants to widen that gap
+during the next instant the kid or at
+least keep it from going at all all
+teams stakeholders Red Team Blue team
+they're all going to get buds to take
+away from this process red team's going
+to get bugs how we inject DLLs without
+registering into the process blue team's
+gonna get bugs how do we find things
+that we've missed this time and the
+stakeholders in a box to get nasty
+sequel injection you're going to go fix
+that so that's the books of working and
+finally that last muscles learned some
+of these going to be pretty obvious one
+of the things that we learned it would
+be your move all of us for a long time
+nobody roses admin in 365 nobody running
+is adamant men together develop
+something college in we're just in time
+admin my career in this is going to
+in 2016 7 2016 I haven't booked I think
+Server 2016 is available for download or
+purchase that you might look and see if
+it's in there basically into something
+of an operator it would 365 one to get
+into the datacenter and do something on
+king of the datacenter daddy for a
+portable require two factor
+authentication and see what access level
+they needed we have
+matrix of like
+15 different administrative account
+polls that you can do different things
+with so very very regular administration
+level they would live on the level
+access their manager we have to approve
+it getting minutes clause in two factors
+the user gets an email back saying pay
+your request to spend croute here's your
+temporary credential dynamically
+generated it's going 24 hours at the end
+of four hours it's gone eight hours of
+it was the max before ours was pretty
+simple another thing we did was
+dedicated at in workstations you don't
+want your users that are managing a
+million-dollar service to be managing it
+from a machine that they check email or
+browse the web from so we had dedicated
+out in workstations a separate physical
+work station that they had to use to get
+into the datacenter they hated it
+because it's painful you want to go with
+download tools for the internet and go
+brother to the day Center right so it
+was physical separation there was a lot
+of pushback on this but it was important
+so we didn't happen
+gateways and human generated passwords
+humans are a terrible source intensity
+everybody had to run the password safe
+everybody had to use passwords they
+generated passwords I recommend you
+don't use password tapes that store your
+be in the cloud that's just being a
+two-factor authentication everywhere and
+don't trust but verify things are going
+to fall through the cracks over time
+people here the Miss configure things
+and we're going to sit there for months
+I think probably wonder why we didn't do
+this but i think is probably we're doing
+take a week or two every six months as
+blue team and just say hey let's go
+review all router configurations let's
+go to review all firewall configurations
+let's go review all the service accounts
+in the domain controllers and make sure
+your readings won't be expected it so
+that's probably when practice not
+something that we did but probably
+something that should have done and
+finally in conclusion red teaming is
+hard wheeled incidents are going to be
+[Applause]
+they're around so what's 90 time ever
+for ya so the old bugger oh yeah posted
+to the most times first round yeah
+that's always pretty always wins period
+I would be the bush so the question was
+is there something you do the warm-up
+the blue team so they don't pucker with
+a real security are going to red team
+security incident itself and we're
+reading your new team made their
+inexperience how you going into panic
+mode oh
+yeah
+yeah it's not supposed to be I'm sorry
+so that's that's one thing when i was
+talking to people in the industry about
+this so you're talking about a pisser
+your adversary with the red team yeah I
+professionally adversary like me amongst
+with the red team every day which also
+made fun because you get socially into
+here than at lunch we can try to you
+know so those guys happen to a poker
+face so you can ask them questions when
+they turn man whenever you get given
+some Intel that you couldn't otherwise
+get yeah how do you a lot of transition
+start out with maybe a tabletop exercise
+if you're not ready for a full money Red
+Team Blue Team engagement maybe started
+with a tabletop exercise for use
+throughout hypotheticals maybe we have
+evidence that many cats was growing on a
+debate controller what are we doing
+what's the incident response plan how we
+attacked so we do start with Tim top
+[Music]
+I've questioned on up your answer it was
+attacking a developer's computer and
+hoping and waiting for the code of your
+old introduction and scope so analysis
+question is was attacking a developer's
+computer and waiting for the come to
+rolling across your hands go
+vertical down stereo so in 365
+the service has been rebuilt telling
+skin you know your epidermis every 22
+days or whatever it is completely
+replaced I don't know if that's factual
+so no 365 basically every 30 days the
+entire services wrong every machine
+every 30 days to pre image so there's
+obviously a nice building process that's
+constantly churning the build servers
+Ritz go if the red team cuckoos code via
+developers machine to the middle server
+and get it into the environment and 30
+days later it was on routine that was
+certainly in scope they never actually
+did that at that scale they did it as
+color scale because of a sick spot is
+broken up into mobile services maybe
+they attacked one service and pull that
+off yeah developer routines for
+certainly it's going ok six effective
+that's pretty much anything a real
+attacker will do with a red team on the

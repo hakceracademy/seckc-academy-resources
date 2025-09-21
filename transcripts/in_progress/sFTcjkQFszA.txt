@@ -1,0 +1,389 @@
+the name look it up he has a great
+history on the internet dos King
+prevention King you ever been called
+that before first for set KC right
+there all right I'm gonna turn it over
+to Barrett and uh this should be a good
+time
+hello I'm I'm a little tired I think
+I've been speaking for almost five hours
+today about the same [&nbsp;__&nbsp;] so um instead
+of talking about dos for a few minutes
+I'll show you what I was doing last week
+um there's this thing called Burning Man
+kind
+hello all right it's working cool so
+yeah we built this art car and uh it has
+a 70,000 watt sound
+system uh it's driven Mexico
+City Mexico to the Nevada
+desert and uh
+logistically it's an incredible
+challenge just to make this whole stupid
+thing work um so it's pretty much the
+most geekiest machine you could build
+except for when you finished building it
+you have like half naked women dancing
+around it the whole time
+so um so anyway the thing's called Mayan
+Warrior and called that because a bunch
+of my friends from Mexico wanted to do
+something that was kind of like
+culturally connected to their history we
+built the art card and it's it's a
+pretty intense thing so it's computer
+controlled the whole Dam thing including
+the steering system which is all through
+playst
+on
+massive so anyway that's what I've been
+doing last couple
+weeks so I'll I'll go ahead and kind of
+stuff you want to play I play one
+so and also like all the DJs that play
+on it we like hand select from all over
+the world and we built a camp that
+supports so the camp is built out of
+like shipping containers that we
+converted to trailers one's like a
+commercial
+kitchen it's kind of like a pretty
+ridiculous
+thing there might be there might be a
+pict of
+somewhere yeah so that's like the
+camp
+so oh the flamethrowers are also
+controlled through uh the computer so
+it's all done through like this midi
+interface like there one big just hack
+job of of a toy so it's kind of a nice
+way to like take technology and have fun
+with it which kind of all about the
+hacking experience
+so
+anyway we have a Facebook page too so if
+you go follow it we post like all the
+music and stuff for
+free
+so
+anyway kill this for a second so um so
+what my career I started uh doing bad
+things when I was a kid so a couple of
+you guys have heard this story twice
+to I started as a kid uh getting on the
+Internet when just switch
+um so I played around a lot and one day
+home FBI was kind of
+took nwork soltions can basically delete
+Nam
+and I didn't really think it would work
+until I went to school and
+sawn and then I went home and about a
+week
+later that's how I
+felt so I decided I didn't like that so
+young system bu
+which came fromall
+guus
+these are some slides I used
+so this is kind of the old one so this
+this picture
+here in the corner was um done in
+2004 and the colors kind of represent
+I
+think
+okay
+SC so anyway I kind of became obsessed
+with this little project of
+mine and so often time a writing code
+and then I
+do
+I'll about a month ago so it's changed
+quite a bit since 2004 and what's really
+ones4 every hour from 2004 to now so I
+was thinking about likeing the like an
+anim each hour a
+second working on software to every time
+it renders it kind ofes to figure out
+F
+place so what's interesting to me
+internet 2004
+mostly
+America and Europe just ofely
+grown is kind of yellowy green color and
+Asia too is just taken off but what's
+interesting about like you see the Asian
+Network in redus
+the US Europe you can see that there's
+only a few networks that control
+ISS we've
+build
+waries it be if you guys can ask
+questions oh sorry can't hear me now all
+right sorry so I'm a little burnt out
+today so I would love it if you guys ask
+me some questions I have a bunch of War
+Stories so if you just kind of throw
+them um yeah well legally I've actually
+done oh oh the question is have you ever
+been approached to to perform a denial
+service and the answer is yes but it was
+by companies that were trying to test
+stuff out so I think it's
+probably probably say who it is royal
+called shared infrastructure with the
+rsed so they just got
+paranoid they wer really service who
+Tock
+so aof they
+HED
+compies and that was pretty except for
+the fact that I had to do it in their
+time zone I live in California and
+they're in Scotland so I woke up at one
+in the morning to start work um but yeah
+it was pretty fun and somebody else
+asked me today if i' ever
+attacked anybody that was attacking us
+and so that was similar
+question yes
+once so it was like Christmas
+in or something like that we had this
+control
+Alles was violent horrible thing I think
+it was like some 25 gab which you know
+whatever eight years ago or something
+was quite a bit but the packet rate was
+really
+high really miserable and everybody
+wanted to have a nice Christmas so what
+we did is we Den service the command and
+control server it wasn't take aot just
+interon I've always felt kind of bad
+about it it kind of goes against we've
+been trying to
+need
+question so the most difficult problem
+that I've been faced with with Internet
+C so I mean it's not necessarily a
+Burns me out a little
+bit one of the other had an
+attack that was just really and couldn't
+figure it out was taking down absolutely
+everything couldn't explain
+it everyone was wor out tired so one day
+our office was in Fort Lauderdale
+Hollywood Florida near for Lauderdale I
+just decided after being awake all night
+to drive home and on the way home
+there's a kayak store in and bought a
+kayak and then I parked my car on the
+side of the road got in the ocean and
+just went out there and fell asleep and
+luckily I didn't get caught by any crazy
+current or anything I woke up and kind
+of had a more of a clear mind and we fig
+figed it
+problem we had so we used Ultra DNS
+which is kind of
+provider that's a lot of companies use
+and I I didn't really want to deal with
+tax we just weren't set up for it
+likea way
+deal and then one day one of our attacks
+took down
+allra for about three hours so I was
+pissed I'm like Hey where's my SLA p and
+really think that was
+funny
+um I didn't think it was funny either
+I'm like hey you have an
+SLA you owe us money and they were like
+well no it's your attack that you had to
+deal with this is your problem not not
+ours So eventually CTO gu
+Rodney's pretty
+also so so anyway Rodney meets me at the
+uh at this office and he sits down and I
+was kind of excited to meet him and he
+writes a
+check like pulls his checkbook out and
+writes a check for a million doll with
+my name on slides it across the table
+and he's like this check you can have
+this check you it if you could tell me
+how to stop service and I'm like oh
+great cool that's what we do this is
+like thank
+you yeah I'm like sweet uh then he took
+the check back ripped it up um and said
+no one could stop service attack you
+only against them your ATT took
+SLA so then I kind of had a chip on my
+shoulder for those guys and one day we
+had another pry big attack to one of our
+customers and we found out that if we
+made this really huge long host
+crash the
+button we kept looking up this host and
+did we had all this crap in there the
+response would hit like a a buffer
+overlow in so like cool just push this
+into our
+DNS goes the problem so we push it into
+and
+because they also were dealing with the
+buffer
+overflow so I called my sales rep and
+I'm like hey um you guys are down like
+he's like no that's impossible I'm like
+no I think you're down I think we did
+it so he's like okay haha you know I'll
+go talk to like 10 minutes later calls
+me frantically freaked out um so
+whatever you guys did can you do the
+opposite
+so so we did we pulled it out and slowly
+their Network started like Crawling Back
+To Life over the next five hours I went
+home went to sleep like two in the
+morning by the
+wayns so when they go down.or goes them
+also
+andar gtld and so anyway he gives me a
+call in the middle of the night like you
+know
+defitely understand what happened we get
+aop of Z upload to us and I said sure
+only if you give me a t-shirt that says
+and and he said uh sure no
+problem we'll do that for you so I gave
+t-shirt yeah anyway so that was a rough
+time
+question oh I
+don't yeah telephone dos is kind of like
+interesting but I mean who uses the
+phone I guess it's really entertaining
+to
+see doesn't [&nbsp;__&nbsp;] the company the way
+infrastructure yeah that's pretty
+horrible
+ipoc although 911 has
+yeah I would definitely I just want to
+of so there's a story I've been telling
+today kind of BW mind I don't know if
+any of you guys have heard of hacker
+gok
+attack
+conne
+so that doesn't really sound like a big
+deal but it actually shut their office
+so it's kind of an
+about inter connection
+office
+all of
+them no the the clients that we've taken
+on so yeah we've taken on some pretty
+horrible clients one client I kind of
+wish we didn't take on
+was my rbook.com it's like a prostitute
+website where literally people
+and yeah they were getting attacked
+pretty badly it was interesting
+like it's hosted Amer and so I kind of
+had like a little moral dilemma with
+that
+one but the
+same also gamblings others so I kind of
+thought about it in this way it's like
+hey
+look you know the internet's a place
+else's service
+provider we are just creating buity for
+these people and it's not our decision
+to
+De like
+actually
+sound ripped
+off
+lat
+owner
+ex say okay well you know there's
+horrible thing
+about Grand we could clean it up so that
+but yeah there's a few like really
+shady
+Shady
+notc you know question am I worried
+about my personal
+safety not really I
+mean no I mean I thought about it for a
+little bit and I'm just like you know
+you could live paranoid and of direct
+way and I'm still alive so I've never
+there's you know it was also TI for
+life so you know it was kind of like
+a kind of like a s
+but
+fed 18 truck so doesn't look
+weird agents this is going a festival
+that's coming don't really it sits there
+yes so early on so the question we ever
+c so we kind of did yeah there
+thats all that went away it was pretty
+was and there's not much you could do
+there in Costa Rica no one gives a [&nbsp;__&nbsp;]
+so
+there that would have been
+awesome I have actually no
+idea my guest everybody talked to is
+IR they have a little bit of some
+smart but didn't have any M at that time
+so I
+would that was an because you have it
+was a very well veryan powerful and at
+that time the relationship between
+United States and hor then all of a
+sudden soon as all this diplomacy
+started
+sobody see it do
+just so it's kind
+really
+not anyone
+else
+five
+andp old school styp except for instead
+of modem using F in
+getting
+G that Bey awesome in about 90 days we
+launch it have
+maybe Al the the other like a two piece
+thing so we have a head we're bringing
+into each Town not large cities
+get exist so running f is actually less
+expensive so by running this massive
+head anding off it's really Noto
+expensive and so once we figured it out
+like we should
+and everybody should do it it changes
+house
+model mind
+that you can host full serious weit from
+your
+living is pretty so the other piece we'
+got some really cool customer service
+ideas more
+can
+support
+yeah to be serious you know it's not
+supposed to be likein where everybody's
+in
+for research kids that want to learn
+interos gers of course this isct a lot
+service
+problems thanks everybody sorry the
+all right uh Barrett real quick before
+you leave we have a tradition here at
+set
+KC

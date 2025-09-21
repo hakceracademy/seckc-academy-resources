@@ -1,0 +1,1480 @@
+but just like any great speaker in this
+area the concept they use about the
+present is gonna speak for itself
+I'm really excited to see this I'm
+always really excited to see one of
+these talks so let's give him a great
+big hand thank you very much and I want
+to give a big round of applause for
+everybody came out here for a second
+sight Casey it's amazing that I you have
+such an awesome crowd you're right we
+don't get something like this in
+Cleveland so it's really cool to see so
+rock walls first all so this talk today
+it would be a little bit of about seven
+or so kind of how the industry is at and
+how you can leverage things like set or
+other attacks to get into organizations
+and what's interesting is when I started
+doing the social engineer told kids one
+of my good friends
+Chris Sadeghi who started social
+engineering org
+you know him an hour talking in an IRC
+chatroom and I was really big into the
+offset guys that guys had created back
+track and I think before that was kua
+picks and iox and we're all sitting
+there like hey you know we should start
+doing like social engineering as part of
+Penn test
+I think that'd be cool and Chris is like
+yeah I think that'd be awesome we should
+start a whole like framework around
+social engineering because we think it's
+gonna be like the next big thing in this
+industry I'm like hey I kind of know how
+to program a little bit sure at this
+tool called set and Chris is like yeah
+that'd be awesome so the first iteration
+of set was literally like a mass mailer
+that would you know send emails out and
+you click the link in to do something
+Adobe Jack you know stuff that that
+would you know compromised your machine
+which I think it's though it works today
+but anyways that's kind of how stimulus
+was started and you know today it's kind
+of come full turn to where you know it's
+an exploitation framework that can
+really help you in social engineering so
+I'll talk a little about that and
+especially with the new version
+of Senna's up so the new version was an
+interesting story I actually stopped
+working on set for about four months or
+so well I worked on a few other tools
+and I decided to take the tab the
+daunting task of converting from Python
+to to Python 3 and keep it backwards
+compatible which is the most miserable
+experience that I've ever had in my
+entire life if anyone has never gone
+from 2 to 3 it's the most miserable
+thing like literally aired my wife here
+I'm going hey what I want to know we're
+converting from Python tunable I thought
+I can't talk right now
+oh sorry so it's the worst thing ever I
+don't recommend going for - petabyte
+mentoring just a brief introduction
+myself I kind of started off you know
+coding buts it's kind of where I started
+doing a lot of my basics I guess -
+security so there was a Evelyn /dq
+hybrid where he could you know dial into
+a BBS and some of you were probably too
+young to know what any of that stuff is
+it just really weird from either talking
+about that but you thought - BBs and
+BBBS you have these massive you know
+online MMORPGs that had no graphics so
+like you'd actually kill somebody it's
+like to kill somebody you know or like
+kick someone here to like kick something
+and so I got really fast at typing that
+way and then I ended up taking over a
+lot and I started doing the programming
+for it and so like the first time I
+think I started taking on the program
+and crashed a little one for like six
+days and I'd not a fix it in every
+single moment even the most terrible
+experiences I've ever had
+oh did I end up joining the military and
+so I started working for the
+intelligence side doing signals
+intelligence and crypto braking and all
+the other stuff and like oh hey you kind
+of know how to code I'm like not really
+I broke my month like six days and
+that's like the only experience that are
+we handling okay well we're starting
+this new like cyber thing where you like
+hack into countries and stuff like oh
+that's kind of cool I like to figure
+that out
+so I ended up doing
+that and spent two years in Iraq so when
+you saw the shock and all happening on
+TV I was already into Iraq and all those
+other good things in cracking
+cryptography and all that other stuff
+and I've spent about two and a half
+years there and then I got out and I did
+a lot of other things and so testified
+in front of Congress you know a social
+tool get with the book with a couple
+other folks from the offensive security
+team mess with the penetration testers
+guy well it's funny about going on TV is
+I have no idea what I'm talking about
+and then we would just work everybody on
+TV is that by the way just so you know I
+mean so when you go on TV like hey we
+want you to talk about this subject and
+so you're like you're like googling like
+what am I talking about
+oh the NSA is doing this okay old dude
+earnest and form an opinion you're like
+okay well and I gotta be out in five
+minutes okay well there's some new
+breaking news and oh I don't know
+that is so I can figure that out the
+best sore I have I'm not going to need
+the news Ian's just seems some are funny
+because you know you like you got like a
+certain news station like hey how are
+you gonna explain to us how Hillary and
+Obama are the dough like I'm talking
+about computer security I don't really
+know how to do that figure out how to
+turn that into and why Hillary's email
+servers why she should go to prison for
+that I'm like oh oh no we should go to
+prison Rob is ago I wouldn't expose an
+email server around the internet I'm
+security that seems pretty up you
+know
+so you know you get different things
+with different news organizations but
+the best one I've ever done
+and when you go on the news
+organizations you know like I feel
+pretty comfortable now going on it like
+when I go out like whatever like
+literally I have like a little room that
+they keep there for me and I had like a
+suit and tie and I have no pants
+like I'm like shorts sometimes wonder
+why they don't care and it's like you
+know whatever so when you see me on TV
+I'm never ever wearing a suit I am NOT
+yeah that's amazing
+third it's Thursdays but the best one is
+I get comfortable going on TV and I want
+a major news organization that's
+primetime and all this other stuff right
+I'm supposed to be talking about I don't
+remember the top it was it was like some
+new crazy hack that compromised an
+organization all these metal O's I was
+OPM so service for the OPM hack right
+and so all these you know military
+personnel I was infected by it and also
+very good stuff and so I get a news
+organization there mica see which one it
+was but I'm sitting there and I'm
+perfectly comfortable I know exactly
+what I'm talking about and they're like
+all right we're gonna bring in David
+Kennedy he's an Iranian nuclear expert
+so David if I had one chamber he was
+gone
+I've never shoot myself like I have
+you're on national news and you have a
+split second to figure out what you're
+gonna do you're like either I'm gonna
+my way out of this somehow and
+I'm gonna be an Iranian nuclear expert
+are you needed to tell that listen do
+you got the wrong person I'm an Iranian
+nuclear expert okay
+and so so I sit there and I'm laying our
+way to literally your body is the most
+amazing thing that has ever been
+developed because you start sweating in
+places that you've never swept before in
+your entire life I mean I also have my
+ears say water coming out of here and I
+mean so anyways I get on there and
+you're like oh so David you know tell us
+what you think about the Iranian nuclear
+policy what to do and blow them all I've
+no idea of anything so it's interesting
+I'm on the news I never watch the news I
+don't know what's going on Iran I don't
+know who's running for president I gave
+up politics can pollute the air for that
+show of Congress so I didn't
+completely with with all politics right
+and suddenly yes so and so I'm like
+alright I'm gonna try to my way
+out of this okay like well you know the
+Iranian stuff is pretty interesting but
+you know what they're two of the cyber
+stuff is crazy right the cyber stuff
+she's like yeah it's not me stuff's
+pretty cool let's just talk about that
+Iranian my treaty policy of 1932 you
+know subsection a I'm like and like
+I will exact I know nothing about this
+and I'm just going to talk about the
+cyber stuff and like okay this is David
+Kennedy an Iranian nuclear expert so
+we're gonna go back to you Jim okay all
+right
+thank God that clip is nowhere to be
+found I made sure I didn't tweet it
+no one knew I was on TV luckily no one
+watches the station apparently Gaston
+saw me so needless to say be careful
+what you do on certain news
+organizations but I will
+a lot of them are fun you know some of
+the ones they get some of the bad reps
+like MSNBC for being like super liberal
+they're one of the ones that never tried
+to tell or change what I'm saying in any
+way shape or form you're like hey you
+see what you're gonna say and that's
+what it is what your opinion is the same
+thing for Fox and CNN they're all pretty
+much the same thing so you know I have
+an interesting history and I currently
+run two companies trust the second
+binary defense are the two companies
+wants a consulting company and ones like
+an MSSP or whatever but whatever so on
+the talk so it's interesting about the
+social engineering aspect is that you
+know if you look at kind of the old
+traditional ways of hacking versus the
+new traditional ways of hacking right
+you look at before and it's always like
+you know your perimeter is the like most
+likelihood way of of compromising a
+system for getting access into a
+computer system and so we look for
+things like sequel objection and blah
+blah blah blah blah those are still
+definitely out there there's no question
+about it but really you know what was
+interesting is that you know you have
+these different phases of the security
+industry so you had okay we have to
+secure a perimeter if there's secure
+this we have to do this you can lock
+reports on all our stuff hey we have no
+idea where I need his n so we have to
+put a deal P right and we have to do
+this or the move of the cloud do this
+there's new phases of everything that
+happens in our environments the DLP one
+was was really interesting with me
+because it was one of these things where
+you get to spend millions and millions
+of dollars trying to get like this
+software and this hardware and
+everything else in and no one knew what
+the hell no one knows where any of this
+date is at so you're like hey we're
+trying to put someone to some you know
+restrictions are around unstructured
+data and so really all into becoming
+those reg exes for Social Security
+numbers of credit cards right because we
+have no idea what the hell I name is
+that and so we invested all this money
+into all this stuff and now we have all
+this you know people here all stuff here
+and then like oh hey will our end users
+now are the problem and so you know we
+need to start to protect these these
+pieces and so I'll talk a little
+mechanisms and what's interesting is
+that when I'm running said and I'm going
+into an organization in such as the tool
+and you can use it for whatever you
+wants you if you do your homework most
+of the time
+notice anything as far as protection
+mechanisms that the company is
+implemented like you might have
+application loyalists you like hate it
+but not stop you're like oh you guys
+have been nine oh yeah it was really
+really hard to get around right groups
+you know or you know you have some sort
+of sandbox technology yeah it's really
+difficult to get on
+most of this stuff doesn't stop the
+types of attacks that sin is designed to
+attack with and it's really interesting
+to see it but I love about the hacking
+stuff is that it's it's all over the
+place then you have NBC mr. robot I
+think it's pretty good sure you know
+whatever I really like it is it number
+certified they use the social engineer
+toolkit to break into steel box and
+which was really cool but you see the
+popularity happening everywhere in
+targeting than users and it's it's one
+of those things it's more of a global
+problem and so when I talk about social
+engineering I want to explain something
+is that the tool that I'm going to show
+you is just a tool you can use the tool
+to do whatever you want to I mean I use
+it for for breaking in the systems that
+are on the outside via power saw
+injection if you do your homework on a
+specific organization you actually go
+and attack them there's a lot of ways of
+compromising an organization that don't
+necessarily get picked up by traditional
+things out there and the thing that that
+just gets me is that today for me
+it's never been easier to hack into a
+common today I look at like you know six
+years ago when I was getting into like
+the zero do research and trying to
+create you know lower flows and Rob
+gadgets and also our stuff memory cards
+from flaws that's a lot of time I mean
+it would take me a month to read us your
+name and where it takes me you know a
+day of research to go after a company
+and an actual date to compromise them if
+I'm you know spending my time in Gmail
+over everything else I really am in a
+cross you know maybe four or five hours
+or something that I can get into
+company but it's never been easier than
+enhancement today that has been any
+other time that I've ever done it's not
+a negative against the security industry
+I think we're doing a much better job
+it's just end-users are really up
+and it's not because they're stupid it's
+just how we design technology like Java
+hey I'm gonna pop up an admin that says
+hey it's me it's me by Microsoft should
+I run this of course they're gonna
+run it it's how it's designed to
+work so we have a user interface issue
+on a lot of things that we do and what
+would really dress me up a wall about
+the security industry today is that
+there's a focus now on technology over
+talent and to me people are really
+what's going to change this industry not
+the technology you can have a piece of
+technology that does X Y &amp; Z but to be
+honest with you for me to get a run X Y
+&amp; Z usually it takes me about five
+minutes where as an engineer it's
+actually seen them looking at what's
+actually happening people that are
+actually dedicated to doing things those
+are the ones I usually spot in the
+technical so why do I have an issue with
+technology is that in most cases
+technology is seen in most organizations
+as a stopgap because they've done things
+horribly for the past 10 years so we've
+done a horrible technology in the past
+ten years we buy this one product it's
+going to actually fix our issues that we
+see today and that's BS give them a
+program you should have a program that
+you've done from the ground up and
+actually builds something that works and
+then you can put technology on top of it
+where people are actually staff to be
+able to do it a good example of this is
+next generation firewalls great
+together these Cisco fixes that have
+been seen there now I have to upgrade
+those to Palo Alto's I guess their next
+generation right because that's what
+everybody's going to and so you use the
+custom importer tool that converts Cisco
+picks and ASE rules to Palo Alto's and
+so you've had 15 years of portable
+egress filtering and ingress filtering
+and exceptions you had to do import it
+in your Palo Alto's and all of a sudden
+they're supposed to do magic that's
+fantastic right no we're not doing
+number segmentation which you know was
+told from us from like 1987 or 1988 you
+know Marcus reading with the first
+firewalls I came with the reason why I'm
+designing this firewalls for network
+segmentation no no no no no no we're
+going to build an external perimeter
+a DMZ and then the internal network
+right that works and so you imported in
+your power wealth as a knight of next
+generation protection it's the same
+thing for sandbox technology I love
+sandbox technologies so these are
+technologies and I'm not going to name
+any vendors or anything like that but
+what they do is that you know let's just
+say someone sends an email or you're
+going to a website or whatnot and what
+they do is they take that information
+let's just say it's an executable or a
+PDF or a document or something that has
+malicious code in it it goes into these
+personalized environments and then they
+sandbox it and then they look at
+registry hooks and network
+communications and things like that for
+suspicious behavior right and if it hits
+a certain category rating it will then
+say hey this is malicious or you should
+investigate this in a sense it off well
+it's funny about these technologies is
+that they're all predictable they're
+very very predictable if you're a hacker
+that knows what you're doing it's two
+seconds that get around now like it's an
+example if you want to bump your
+reputation of like a ten that's awesome
+you just cosign it with whatever code
+signing certain you have a buzzer
+diamond doesn't LIGO bike tuner box e2
+Mayakoba sensor for whatever company you
+want to make up it's an item a
+reputation tend to get through my
+favorite for that works for all of them
+which is free and ridiculous it's two
+lines of code you can compact that suit
+on it's got 63 but what I usually do in
+all my code as I say hey if I'm running
+an environment has less than two
+processing cores it just exited don't do
+anything right so you send a malware an
+executable that is horrible in it
+that executes shellcode and does
+everything right it's like I'm gonna
+home you and I'm gonna destroy your
+entire network and delete all the files
+whatever running in an environment has
+less than two processors don't do
+anything in that sandbox that goes like
+I'm gonna suspend myself up in my one
+prompt me of my one CPU core environment
+for loading node for a low efficiency
+spin up oh it doesn't do me think it's
+good there you go all set
+and so the best part about this is that
+you know we really came to the castle
+mentality which is you know hey build
+these walls with archers and Knights and
+also that was stuff to protect everybody
+from the outside when you leave the
+drawbridge is right over and fortune
+that's kind of where we're at today and
+security I'll talk a little about them
+showing kind of some of the
+demonstrations but at worst time and
+time again the whole new breach that
+occurred with leaking the FBI and DHS
+individuals you know it's all through
+social engineering they called about the
+help desk is they have balls and said
+hey and I'm a user I don't know my my
+token pastor oh just use ours hmm all
+right now you now you have all you know
+22,000 FBI poison however many more DHS
+employees social engineering 101 easy to
+do same thing for uh was the director
+for the CIA or NSA FBI are one of the
+ones that came over though the
+three-letter acronyms it was the dude
+handy it will all account which I that's
+amazing yeah just still do that well
+well I'm glad we have some histories
+Trent what was interesting with that is
+they you know the the dividual call it
+Verizon claim to be a Verizon employee
+and requested a specific challenge
+question they used it that's a reset
+someone's past or an AOL mean if you
+have a little bit of all just a little
+bit you can social engineering good
+right and women women are the best when
+it comes to social engineering
+statistically women have a much higher
+probability social engineering men
+essentially they approve of the case
+that like if you're a female and you can
+call pick up a phone you're talking to
+male you probably have a 90 percent
+chance of success with Sochi and then
+so you know social engineering is one of
+those things to me which is it's it's
+like finding a zero day every time I
+like doing a new pretext or a new attack
+because it's one of those things that
+you can literally do that is creating a
+complete fantasy that no one knows
+what's going on or anything but you make
+it somewhat believable and people do
+what you want to and so I'm gonna show
+you a video clip here really fast and
+this one I don't like ever looking at
+myself for like it's really great thing
+but so ignore the whole film or she says
+like you know someone has to hire Ikey I
+don't have a high IQ I just feel like
+right horrible code and it works somehow
+and so in this case this is how easy
+social engineering is and when I did
+this it was it was for CNN and Laurie
+Segall was the the news anchor for CNN
+and what she said was you know hey I
+want you to be able to hack into a
+company I'm like whoa I can't look like
+really hack into a company with you
+watch them it's kind of like illegal you
+know I have to get approval from like
+you know my customers or whatnot or else
+I go to jail and especially in that life
+anyways so in this case I got permission
+for my customer and as long as we didn't
+have there it had to be pre-recorded and
+I couldn't have any of the customers
+names in it so what my pretext was going
+into it was I was calling the home test
+pretending to be user and there's
+certain things that trigger helpdesk
+security questions right so if I'm
+asking for resetting a password I'm
+gonna have to have some proof of an
+individual user right I mean I need to
+know something about that person but as
+a birthday or social security number or
+something that that's gonna require me
+to get that password that's gonna
+trigger a response however if I'm asking
+just basic troubleshooting questions and
+a lot of cases never will trigger it or
+if they ask for you're an employee ID or
+something like that you may listen I
+don't know what that is right now I'm
+just really you know I'm really
+flustered I can't get this website can
+you just check this website real quick
+that make sure it works they will go on
+the old do it and so this case I did a
+live social engineer for Christina
+what's that really long so see this
+works
+hang on hang on a second I was funny
+when I did the credit card number one
+she's like okay and when she hacked my
+boss and I'm like okay well he's in
+Europe I'm like okay so I spoofed my
+phone number and pretend to be one of
+his credit card companies and so I
+called them like hey this is so-and-so
+from this company's you know progress
+service you know Department we're seeing
+some weird travels are you currently in
+Europe right now is aka I'm traveling
+Europe everything is fine but okay well
+as you you know spend thirty seven
+dollars and 22 cents on like you know
+sex car plus calm or something that you
+know needs like no no what about this
+and I certainly have some horrible
+things right and he's embarrassed which
+is great because it Barisan puts people
+in a very defensive though okay and so
+it makes them vulnerable in a lot of
+cases and so one of the cool things that
+I do is a technique is that can pretty
+much pull anybody's social security
+number or subscribe the bat I'm just by
+knowing their first name last name the
+general location of threatens it a
+culture if you think I'm magic trick
+that you can do in a lot of
+demonstrations but so like he's so I see
+confirm a couple pieces of information
+here's your address here's the last
+forever social
+Zen Zen correct take yeah that's correct
+okay okay all right I need sugar you
+mean a full credit card number and the
+bubble bubble on this business in the
+CVE also our good stuff these thing oh
+yeah yeah so it's Bobo little Hawaii
+spits on this full credit card man okay
+there you go now I don't know why they
+didn't play that has ever been cool
+actually admissible Social Security
+number but I guess they're a little
+embarrassed that I was able to get a
+social security number but in that case
+you know the guy had no idea I was
+pawned off but I had certain things that
+removed the barriers right when I put
+them in a vulnerable position for like
+trying to order like a bunch of horrible
+things from the internet right I think I
+got a big gift suits and a bunch of
+other stuff how am i glisten I
+understand this is really weird and I
+started crackling up on the phone like I
+was laughing it makes me even more
+horrible and then I started asking for
+you know like his his credit card
+everything else and so it removed the
+barriers and boom he was able to give me
+information
+take a look at a bus I'm trying it's you
+so we'll school about that one is you
+know you're doing these things you have
+no idea if it's gonna work or not and I
+did a little bit over like literally
+like three minutes is to find the IT
+Help this nobody else that deaf kind of
+saw sorry I was hungover it was like you
+know in a terrible time I mean I really
+don't want to do this interview so
+they're gonna in like Captain America
+outfit or anything a little the night
+before it's like beer all over and
+everything and and so I didn't you know
+about three minutes of research to find
+the IT Help Desk number and so I just
+changed a couple of the digits on it to
+make sure to make it look like I was
+coming from inside the companies and
+like spoof app and then little owe me
+whole I call the helpdesk and I have
+access to their computers in a
+compromised health s person what was
+interesting about that one is that's
+great about Windows I love Windows like
+sandy every time but a funny story about
+windows is that a few years ago seven
+years ago I think I'm getting older but
+California Francis is kevin Mitnick and
+Mitnick calls me up and it's like it's
+like two days before New Year's Eve okay
+he's like hey Dave I want you to give a
+rented to a company before that has UHD
+enabled user access control and I'm like
+no I think the Windows Vista day so that
+you as you as well something new you
+know like now I can run into UAC before
+but I'll take a look and see if I can
+figure something out
+Alain two weeks later had a zero and so
+like well here's the zero date you can
+go and use to get around UAC or whatever
+music oh that's awesome that's sweet
+both of us we published this here at
+8:00 we didn't talk on a lot of good
+stuff right and it's still worth today
+this Windows 10 it still works today
+it's perfect right it has never been
+fixed you easy you wanna buy a su a see
+it's no problem also in this one you
+know they were running is admin and
+patio ACA at USC boom that's running as
+an admin then it moves back into the
+rest the environment is super easy but
+so my favorite part about this is
+fishing because fishing is to me the
+easiest way to get it so you know one of
+the one of the favorite things I like
+doing is creating a new pretext every
+time I start off with with messing with
+people with health benefits because
+health benefits are one of those things
+that that is intangible you have to have
+an accompany so around q4 you're like
+hey Otto we need to read you know do
+your health benefits or else you're not
+going to get medical benefits for the
+next year what do people do oh wait you
+need to log into my health benefits
+right google the room you can't let me
+get access there's a lot of other ways
+of coaxing people into doing what they
+want to disruptions and packages from
+United States Postal Service is always a
+funny one because everybody uses that as
+far as now or if it still works for some
+reason it's really weird my favorite one
+that I like welcoming people with is
+I'll send them an annoying email from
+like a person that they want nothing to
+do with and I'll have an unsubscribe
+link on them and I'll send like three a
+day and I'll be persistent as it
+also makes three then I'll order for on
+the over five and the Upstate bucks is
+probably compromises them that's the
+best way when their offices properly
+just owns them like there's no link in
+and that's malicious so you can click on
+the link and it's perfectly fine that
+makes great Suzie don't subscribe your
+own it's amazing
+those are the best ones to mess with
+people but there's a whole bunch of
+other ones you can do too and so with
+phishing it's all about your pretext of
+what you do and how you do it now I'm
+gonna show you a lot of you probably
+never seen this before and I've lost a
+lot of weeks intent by the way
+I'm little day that's big days so I've
+got to drop about 115 pounds or 120
+pounds or so since then what was
+interesting about this and this is the
+Katie Couric show and I'm sure a lot of
+you seen it all whole flash but it's
+kind of quick what was interesting about
+the Katie Couric show is you know she
+you know I'm literally doing a physical
+pen test in downtown New York City you
+know in in the HVAC systems I'm climbing
+through the HVAC system it's a little
+bit bent in the ELSA so i'm climbing
+through trying to get inside this
+building and I can't figure out a way to
+get in and I get a call from Katie
+Couric showing it's in New York never
+gonna answer except thinking it's the
+customer is saying the Kate you're
+busted you need to get out of there I'm
+like I'm in the HVAC simple probably
+heard me like like you know I was a big
+dude like my fat ass Cartman you're on
+an HVAC system it's a lot you know
+there's a lot of swear words happening
+there - he's like I think I got cut I
+was like my hand was bleeding I'm like
+trying to grab the mic that's terrible
+we got in there
+but Katie King into her producers common
+like hey we would like to do a segment
+on the Katie Couric show is that
+possible like yeah do that what's up Jen
+what should i hack into somebody live in
+the audience like well that's cool but I
+kind of need permission I'm going to
+jail again you know like I just took a
+kitchen i hack into somebody and like
+steal our and then think
+everything's cool right I need I need
+permission and so we got a permission to
+go and do it and so here's what happened
+here and then so what's interesting
+about this one is it took me about 10
+minutes of time to hack into this latest
+computer and you know you'll hear a
+little bit of storage he literally
+picked like one of the most secure
+people that ever dealt with my entire
+life like better the corporation she has
+a computer consultant comes in her house
+they like secure her home systems
+anybody know anybody
+they even ourselves that are in the
+security and she has a computer himself
+it comes in to check our security
+systems on resistant
+no one right we're only computer
+security guys for our family right we're
+like hey you just downloaded warm again
+and you got infected so I'm gonna fix
+your computer get rid of krypton wall
+son of a
+then you're back on for that family
+right knocked it all the time my
+stepfather got this completely 610 like
+now it's funny your hacker right and
+someone call us you had to say hey you
+have to hack and it was somebody live in
+the audience you know it's an ego thing
+at that point right like you're like I'm
+gonna hack her I'm gonna steal all her
+stuff that's what we do so when I did
+this and think about the consequences
+for us dinner I literally baited this
+person's life right and what's funny is
+like you know she doesn't like why did
+you do dude I'm like yeah I hope no
+hard
+well there there let's your security is
+actually what it tell us what happened
+how did you do when we gave you the
+challenge
+so you know Stephanie I would say what's
+actually one of the top 5% oh but I
+would say it's being most secure you
+know everything of the day it really
+locked down all those good things and so
+I literally had put them on my computer
+up and less than 10 minutes or so a
+fully designed website that looked real
+every way to perform over website you
+would visit every single day as since an
+email out and as soon as I sent the
+email looks very believable in every way
+she clicked the link and then from there
+again less than 10 minutes of self time
+in hacking lots of ample access to her
+computer her webcam got around all
+overhead of IRS everything completely
+all I guess works so oh my god thank you
+very much the first thing we did is
+we've been able to if you're walking to
+the house itself
+I've actually named in the audio as well
+so we could actually hear everything
+else going on at the same time
+once you Lehman recently actually she
+was uh she was super awesome
+like you know after after the whole
+thing she wanted a hundred best secure
+environments and things that she can do
+and it's one of those things as she was
+just super super cool about the whole
+situation but it was a shocking think is
+that the whole premise for the Katie
+Couric show was was Miss Teen USA and
+her computer got hacked and someone was
+doing was called sextortion and
+basically so taking pictures of her in
+the dinner stuff like that and saying
+well you know do certain things you know
+I'm gonna release all these photos to
+the Internet and so she got her mom
+involved and FBI came then they they
+busted the kid and turned out there was
+a kid in her high school class and so he
+googled how to hack into you know
+computer accounts and so they literally
+walked them through how to do every
+single thing that he was doing and
+hacked into her account was using your
+webcam to basically do everything so I
+was in there showing how easy it was to
+kind of get into it that's the thing I
+mean these types of attacks are very
+very easy to do and a lot of times they
+there you go test okay very good
+anyways
+so a lot of these next I'm gonna show
+you are things that don't require like
+an awesome zero day to accomplish and
+when I designed set that was the whole
+purpose these are structural flaws and
+how things are built in designed like
+the job applicant the Java applet sack
+has been good for like ten years
+like sure you don't like compromise
+anybody who wants you for ten years
+thank God they just released lacquers
+and two weeks ago did the Java plugin is
+finally burning in hell they're going
+flashes next yeah so the funny part is
+it's given in my desk area that was
+funny like edges like not better anyways
+so what's interesting about a lot of
+these these flaws is that they're
+conceptually how things are built inside
+of the operating system or into certain
+applications and so I'm gonna show you
+here is what my favorite so the kind of
+the history behind Java right a long
+time ago you can do is called self
+signed code signing certificates right
+so self signed Java applets and what
+would happen is that you can name the
+publisher the name anything you wanted
+to and so what happened is you get a
+pop-up saying this this certificate is
+inside but it's it's made by Microsoft
+do you want to run this its Microsoft I
+mean
+and turning update somewhere write me
+and run in the new comic master machine
+right
+and so after like three years of me
+doing talks around how horrible that was
+they finally change it so that you
+couldn't do self censor TIFF against
+anymore you need to go to co-sign a
+service and so cool tank starts a little
+bit difficult to get paid a hundred
+bucks but you can literally rest or any
+domain name you want to get a code
+sending search sign it and then maybe
+whatever you want to so I don't like
+verified publisher so let's say like
+publisher verify publisher or published
+early this is legit like you give
+me anybody who wants to make a
+difference right beside whatever you
+want to and so that was great for like
+another five years and then recently
+they're getting ready job but now a lot
+of Kobe's got smart and they remove the
+plug-in from Java so you couldn't
+necessarily execute apples now the funny
+part was is I'm like okay oh I started
+to panic a little bit right because now
+I don't have a reliable exploitation
+method well goodness is like the 1990s
+called and you can still use like all
+the old stuff that was built in the
+1990s and no one uses anymore you can
+still use today and so you can use were
+called each da files in each team fouls
+are phenomenal I clearly there's a book
+from like 1997 that talks about how you
+could use malicious HTA files the
+compromised machine and that's not worse
+like thirty times better today in my
+automation I think it was see there's
+some super hacker exactly was missing a
+rainbow color book this is like secrets
+of a super hacker and so you can use HD
+the apples to compromised machines that
+worked great today
+so I mean get that rainbow color looks
+it's like the elite stuff today that's
+amazing so I'm gonna show you a person
+I'm upset this is actually where some
+set seven not votes you and what
+happened what happens with versions is I
+released a major version and then I
+realize all the bugs that I've
+introduced and then they go and I fix
+them home really quick so this is seven
+out of two which I really seven like
+four or five days ago and I'm already
+- I'm ready fix that watching stuff oh
+my bro click a whole bunch of stuff fix
+the ball but I did a big conversion for
+Python c-23
+but I also improved a lot of the attack
+vector so I'll show you a couple of
+these like the harvester attacks the
+blood jacking attacks and a few others
+but these team attacks were my favorites
+because it's the new one that I use the
+most funny is that remember my one of my
+good friends at worse at trusted said
+about Martin boss goes by up here hate
+and awesome dude he was going to a
+customer and his customers like there's
+no way that this is gonna work like I
+mean you have to hit the Run button and
+you do bunch of stuff that there's no is
+gonna work in the monthly route it was
+all time for me
+and we go only losses attacked and we
+had a 99.9 percent success rate like 10
+percent don't we one personally minced
+right and then a one person was on
+vacation it was awesome
+right so this works very well I use a
+long time now so much journeys are
+quicker and by the way you can get set
+obviously it's in Cali there's also a
+framework that I use called the pen
+testers framework PDF it's great for
+building on your tools and keeping
+Muncie it the problem with key Holly
+that you have it's not a proper camera
+itself counts awesome is that typically
+they're about three six months becoming
+them all the tools unless you're using
+something like like bleeding edge which
+will update them continuously so thus
+reducing bleeding edge Akali are usually
+about three to six months behind on the
+tools so I recommend using something
+like bleeding edge are to do it recently
+make the pentesters framework that
+automatic builds your pen testers for
+you then we're going to launch the tool
+and so here we go ah this is the latest
+version and this version was actually
+attributed to a good friend of mine
+David Jonas France who lost his mouth
+with cancer last month so he passed away
+and so I made this version dedicated it
+was actually Easter egg codes within all
+of all of set so if you type in like
+rants here I'll show you some stuff
+about grants there's Easter eggs all
+over like you type of dirty counts I see
+the latest dates at home there stuff too
+so I'm good Easter eggs dr. Koh there's
+some really weird ones like to drop the
+code will code later but somehow it
+works whatever I'll go back and touch it
+- it's like magic voodoo would say I
+don't know what I was thinking but it
+works amazing I don't know what that's
+doing but it's me and that's cool so
+what I'm gonna do is I'm using social
+engineering attacks there's a lot of
+different actors do you have that set
+but my favorite ones the web attack
+vectors and so you have a few different
+ones rate you have spear phishing
+attacks website attacks infection media
+PowerShell injections most funny is so
+there's a big industry now around
+PowerShell right security right so I
+have the Clinton to fame of being the
+first person to ever do in PowerShell
+offensive security talk which is the
+coolest part I didn't DEFCON I think 12
+is called PowerShell oMFG and I released
+a tool on how to dump the Sam database
+through power saw I call it powered up
+that's pretty good tonight but we also
+reason too much of ourselves you like
+how to get around execution restriction
+policies that stuff like that
+early on so kind of spur global industry
+are on security which is leading and
+there's a lot better people and smart
+people like Matthew graver is like the
+best powerful person ever there's a
+whole bunch of PowerShell folks
+Carlos bent and almost got this awesome
+so we're we love outside tech vectors
+Mississippi a few different ones here
+right you have the the Java applet
+attack bacteria medicine credential
+harvesting tab nabbing web Jackie multi
+tag full screen attack and HT attacks I
+don't ever really use exploit city I
+just don't do it there's no reason to
+right so a new exploit comes out and in
+most cases you're horrible antivirus
+than the Texas agreed to maybe five
+percent and the viruses uh they're
+usually picks up those signatures for
+the stuff that's both in the Metasploit
+it's a lot of times those those methods
+you either have to do some sort of
+obfuscation or encoding or cutting in
+order to get around a lot of those
+stupid signatures so a lot of times I
+don't have to bother with a lot of the
+exploits up there's no reason to unless
+do you have a no date so what I usually
+like to do is attack things that I get
+are more conceptual so I'm going to go
+use the HT a tech method which is number
+eight okay so we've been hitting the
+raids now what that does is it will
+automatically website rewrite and put
+all the bad stuff in there and then lost
+the website for you it's all the cool
+in it right and so what I usually
+do is is uh profile an organization
+let's just say it's a company of an
+external quarrel I'll close that portal
+a little uh paths have been in a
+register of the main name it's very
+similar nature to theirs
+maybe it's something mean or something
+like that it looks very believable and
+then I'll go on I'll actually do that oh
+good websites for this by the way are
+like survey sites
+service sites are great but hey you know
+do you think you're getting paid enough
+come fill out this anonymous survey to
+see if you can get more money cool I
+need more money
+a lot more money all right obviously not
+that that obvious but you know you go
+through like hey are you happy with
+the quality of the lunches the people
+care about the children whatever so you
+do things like that right and so people
+go to this site oh my god you did all
+this great it was great it's like when
+you actually integrate with a survey
+company so like the first part is like
+owning them and the rest of the next
+year they can legitimate server that you
+don't care about but it's like a real
+survey company and so they thought
+filling out a cool certain way it's
+great so I'm gonna just clone trust the
+second example now it's asking for my IP
+address and this is gonna be the idea
+just yet expose the Internet's could be
+a host name the UM register in this case
+we're just gonna do a local host here
+which is my local IP address but this is
+exposed to Internet you just give it
+your extra my IP address or hostname 24
+and we're gonna use interpreter and
+reverse HTTPS so we're gonna use RFC
+compliant protocols now interesting
+enough what this attack is gonna do and
+I'll explain a little bit about this
+because it's important to understand
+first and foremost most second-stage
+Metasploit payloads are gonna get picked
+up by next-gen firewalls it's the only
+good thing that they actually do but yes
+this is your start but the reverse HTTPS
+one what happens is what's called a
+first stage and second stage the first
+stage is really hard in the technics
+literally it's just a a call out whether
+it's a socket or an HTTP request it's
+very very difficult that it's hang with
+that piece right there okay the second
+stage in the other hand is much more
+easier to detect the reason for that is
+because including downloading all of
+Metasploit right now if you didn't know
+this or not if you're using the HTTP or
+https payload you actually downloading a
+direct binary does any web content
+filtering allow a binary to work is it
+actually like down low from internet no
+right so what you can actually do is you
+can change this around a little bit and
+what happens is is that back in the day
+like there
+what we call coders right one thing
+Kurtis love Chicana guy name which was
+he'll never stop looks now that was one
+of the coolest ones back in like 2005
+2006 dish because no no antivirus picked
+it up then they figured out ways to
+rounded there was specific read/write as
+releasing the PE file that that caused
+it to be static and so they wrote
+signatures and Chicana guy named ID
+however what you could do is if you
+actually set this it's called an
+advanced variable you can set a Naval
+Station coding to true but that does is
+it actually mangles that PE file on your
+Chicago guy name and so when it's
+downloading the second stage of the wire
+it's a random block and it's all over
+HTTP so in most cases you don't detect
+it and there's a couple other options
+that I recommend if using HTTP like
+changing the certificate path length few
+other things that'll make it much more
+difficult for the second-stage extra
+fine but does that for you automatically
+and so that'll set the second stage in a
+you know encoded format vs you kind of
+guy named now the execution path for
+this we should way I talk about bit nine
+right most application whitelisting
+tools what they do is they do they seek
+okay well here's allowable executables
+that we allow it's for normal operations
+right so if I drop a new binary and all
+say 90% of most malware infections are
+slow binaries today you know they're the
+they're the horrible BBS downloaders or
+whatever your end up downloading and it
+downloads an executable then it runs
+right so if you have those types of
+pieces of malware still in place that's
+going to be on something a bit nines
+going to stop 90% of that stuff just
+great Barbara there's so there's so many
+more different methods to give up good
+to actually compromise the victim and
+let's just say use an Adobe Flash
+exploit it's not going to find them
+since a trusted processor and they're
+running under the context of that
+process
+same thing goes for PowerShell now this
+bet that we use here is what we call the
+x86 downgrade attack and what it does is
+it actually looks at the operating
+system running in if we're running in an
+x86 version you know automatic code the
+Power Cell um commands inject shell code
+directly into member
+PowerShell you compromised the Machine
+all without touching debts it's very
+difficult to find very hard to actually
+go and execute unless you're actually
+looking at PowerShell commands
+throughout the environment and so this
+one right here spinning I'm sorry here
+what compromise machine automatically
+eject show into the Power Cell process
+which is an application whitelisting
+process and comprehensive machine
+antivirus is going to pick up just on a
+file heuristics is gonna pick it up
+most of stuff once if it they see this
+so I'm gonna do over here my Windows 10
+machine I went to see mommy we're gonna
+use a Windows 10 fully grasp machine is
+again we're going to be using something
+that's more conceptually a big design
+thing than anything else they're all I
+I don't want imma go use edge is edges
+the most secure operating system or
+platform ever right now we go here now
+we're going to show you something
+interesting notice what this website
+what's going to happen if you look up
+here it's notice about the under the
+very top I'm at the trusted second
+website right this the certificate it's
+a very science or Tim the kid with you
+know that extra security everything yes
+it's a little run button here now sort
+of like well you know I can get one know
+that it's your protect like hey refers
+to verify your computer you need a the
+run button but make sure you're actually
+going to trusted CENTCOM because that is
+a legitimate domain name and so you get
+so like this now you can actually change
+the publisher name which is great but
+you can go and run this I'm on trust
+it's a calm right organ something good
+hit run that makes fine over here give a
+the F Alexis roulette computer now
+what's great about this one right here
+specifically this is what's been
+approved in verse seven is that
+originally what happened is if you went
+to the mostess website I wouldn't read
+directly till the legitimate traffic
+that common law state or cloning the new
+version once it detects that the FEC s
+actually been executed or at least been
+loaded into memory every shoots the
+browser back to the gym site so they
+never knew that there at the malicious
+in the first place they're like oh well
+hey I'm at you know you know a bank calm
+web sites you know I need to hit one
+more to verify my computer you go ahead
+and run on a compromised machine and the
+I have access to it you never touch disk
+cast of cargo next we're going to show
+you some other personal parrots and to
+be honest with you I haven't tested this
+one so migrate so we'll see we're going
+to do web jacking now what techniques
+are my favorite ones because the way
+that web jacking works is that it takes
+advantage of forwards hottest users okay
+so for example in your education
+awareness program you say hey you need
+to hover over this link and make sure
+that legitimate right if you come over
+to Lincoln it's a legitimate domain
+I'll do you like actually there's a good
+so I'm going to call this website okay
+so now we got one Jack enabled okay now
+this is actually do I coded this on the
+airplane as I was coming here actually
+you know I swear to God like I still got
+the code let's look at Adam open on the
+other side us let's come some and
+I'm gonna get the airplane so but what's
+nice about the old Java applet I don't
+and therefore never played live demo
+okay there we go
+so what would originally happen in the
+older version upset is that they would
+say hey longer stuff has been copied for
+our www or part of a today be HTML and
+go there and look at the harvester log
+the Overton's that what you can do is
+you can actually see and why as they're
+coming in so I renamed on that site I
+basically just wrote a tail routine for
+set that just tales that log and you can
+see it happening real time inside of
+sets you have to get on the set or
+whatever offsets knew when they
+literally didn't committed it as I'm
+drinking bourbon next door like 30
+minutes ago
+so Network them all really one might
+work I'm just this it so go back to here
+and then you get my appearance again
+Roker
+all right so what I usually do in this
+type of situation right
+is I say I'll create a good-looking
+website saying that Katy to take an
+employee benefits where I want you to
+take a survey but I watched you in the
+actual website here I say listen I need
+you to you know from security purposes
+make sure you hover over the link and
+verify that it's you know serve a
+trusted set comp right that's got to be
+a legitimate domain right
+is it your oh you're right it was like
+you know you know serving trusting that
+I'm you're going to trust the committee
+should own that domain right it's a
+legitimate domain so the highlight over
+this was that see the bottom left you
+can't read that
+www.sba.gov it's legit I can't hear
+right you click the link notice here you
+actually go to legitimate if it's a cop
+site but then it redirects really quick
+to a malicious site you don't even
+and my password then redirects back to
+these legitimate Fitbit site and over
+here I did my coding right we get our
+creds so way that that attack works is
+it's called an iframe replacement attack
+and he uses a time basically using
+javascript so what happens is is that
+you click a link and it sets the timer
+and it says okay in five seconds you
+know I want you to open up this the
+fitbit.com website and then after that
+replace that website on this website and
+so since you control the browser and
+then initial introduction you have the
+ability than a compromised machine for
+self variable this is an example of many
+of the different types of attack vectors
+that you have inside of seconds now one
+last thing I want to show before I get
+off the stage here I think I've been on
+for too long is that the PowerShell
+attack vector that I have here is one of
+the most powerful attack magnets that I
+see out there today the reason for that
+is because there's nothing out there
+that I know of that that really detects
+another in Windows 10 there's actually
+an API that you can hook into you ought
+to call all power flow master command
+it's a phenomenal API heavily recommend
+getting introduced and so all newer
+versions of Windows coming out should
+have that but things like Hemet for
+example it enhanced mitigation
+experience so it doesn't block things
+like this right a lot of newer
+protection mechanisms don't block things
+like this because it is relatively new
+did never use the the PS exact model
+right now the p6 amok exec Maas was
+interesting because it actually creates
+a service on the remote machine right
+and that's a big deal because you're
+actually creating an executable that
+executables typically
+my universe especially like the reverse
+TCP or reverse HTTPS for those known
+ones
+now this is actually an advanced
+variable inside of Metasploit called the
+esc to custom so you can set space exe :
+: - you see - custom and you can specify
+a path to a binary that that is
+different however we can also do is you
+can use set you keys number 6 let's just
+say as an example you had a whole class
+see that you want to scan write the
+exact only supports one IP address at a
+time
+you want to do an entire class T C like
+10 10 10 1 24 then our username and a
+password hash password work out your
+hash password question how much the
+domain how many threads he wants the IP
+address do you want them some tokens of
+what this will do is it will use the
+power tional injection technique
+automatically create the code for you
+and then use the piece exact commands
+module and spray shells across the whole
+number for you so you can use piece exec
+without creating a service that gets
+around a VDS shell screen which is
+really cool right tap over even better
+most people to detect PS exec nowadays
+ssible
+so then that's called anything but most
+people don't pick up my W mind and it W
+my is one of those those cool protocols
+that no one really looks for obscurely
+and so I really need some tool about six
+months ago or so called spray to be mind
+which allows you to do the powerful
+technique all through W my which is
+completely different from the PS exact
+maybe use password hashes whatever you
+want to allow spring at all some men do
+- Oh hilarious so there's there's a lot
+of tools you can use another one that I
+actively do a lot of work on is called
+mansion unit more and you can you can
+also join a lot of these attack vectors
+through unicorn as well one of my
+favorite ones is author Matthew graver
+which one of the old techniques that I
+used to use was basically taking the
+binary to convert it to hexadecimal and
+then using the Windows debug conversion
+method to convert it back to a binary
+which is really difficult back in the
+old school days like 2004 prior to 2003
+and so there's a new method now which
+allows you to basically take a binary
+convert the whole binary to base64 and
+then put begin certificate and an
+certificate and you can call cert still
+and it converts it to a binder for you
+it's the most amazing thing ever just
+like certain details you know space
+people follow - oh and then the file
+name that converts it back to a binary
+it's amazing but those are a lot of
+things you can do that's all built into
+magic unicorn but those are a lot of the
+tools that you can use from up from a
+technique perspective but those are the
+types of attacks that I find very
+effective that I use all the time I
+still don't see a lot of companies
+really detecting out there that really
+help you out I want to thank everybody
+here Seki see coming out hearing me talk
+that was really it hopefully you learned

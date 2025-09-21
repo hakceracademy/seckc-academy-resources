@@ -1,0 +1,309 @@
+yeah i know my turntables are a lot
+it's a lively night this news segment is
+going to suck ass
+so i got
+it's really really funny that uh
+that codex gave a shout out to everyone
+that volunteers their time
+i did not dedicate enough time to this
+this week and i apologize for that in
+advance
+all right so let's see
+joel the clicky thingy doesn't work but
+would you uh there we go
+cool all right so without much more to
+do
+uh what is this this is the first time
+holla okay
+i thought i could hear voices for a
+second maybe that's the alcohol
+anyway this is the news uh it goes by
+really quickly it's gonna go by even
+more quickly this evening
+and i feel really bad about that
+oh come on [&nbsp;__&nbsp;] this xlr cable sucks all
+right that's fine that's fine
+i've spent time under bridges before i
+know how to do this
+all right so uh do you want the links uh
+that's how you get the links uh
+we're gonna keep moving here and let's
+does that one work better there we go
+hey
+uh yeah that was a [&nbsp;__&nbsp;] botnet that's
+the uh no don't [&nbsp;__&nbsp;] cheat it no no
+no no that's part of the charm that's
+part of the [&nbsp;__&nbsp;] charm
+uh oh yeah this was about vizio tvs
+making money off of targeted ads turn
+that [&nbsp;__&nbsp;] off if you own a vizio tv
+that shit's creepy did you know that
+they make more money off of ads than
+they do actually selling those [&nbsp;__&nbsp;]
+tvs
+this is the problem with doing the the
+slideshow manually is now it [&nbsp;__&nbsp;] with
+my automation
+that's my my automation the moving
+forward there we go
+uh the the verizon dbir came out that's
+a big old document where you can read
+about all the [&nbsp;__&nbsp;] up [&nbsp;__&nbsp;] that
+happened throughout the year
+uh caleb christopher is over by the swag
+booth hey ben
+caleb wanted to talk to you go talk to
+caleb caleb was gonna throw a cool party
+about the dvi or maybe check that [&nbsp;__&nbsp;]
+out
+uh let's see we've got oh [&nbsp;__&nbsp;] man you
+know
+i'm not gonna lie this looks pretty
+impressive
+that's a chart that's a chart of some
+kind and you know what i've got notes on
+what this means
+but my laptop isn't here i didn't think
+about that [&nbsp;__&nbsp;] oh well
+uh let's see there's a breach from some
+company oh yeah this company made a
+ransomware payment 40 million dollars
+i drew some little devil horns and [&nbsp;__&nbsp;]
+and a mustache on the [&nbsp;__&nbsp;]
+because he's a [&nbsp;__&nbsp;] and that's what
+people are to pay uh ransom
+uh let's see we had air india had a
+breach this was something about actually
+remember this like 22 million [&nbsp;__&nbsp;]
+passports got compromised
+like indian passports you can see i uh
+poorly photoshopped in these passports
+falling out
+and the hacker anonymous is out there
+flying away uh
+there was a sophisticated fish that
+microsoft reported on all right now i
+want you to take a look at this
+sophisticated fish
+what the [&nbsp;__&nbsp;] about this is
+sophisticated it's all
+common denominator people the apts out
+there they're all using the same
+[&nbsp;__&nbsp;]
+um let's see oh we had a situation where
+contractors military contractors they
+were uploading [&nbsp;__&nbsp;] on flash card
+websites to learn
+about nuclear secrets but then we can
+all learn about nuclear secrets there's
+still a bunch of flash card sets up if
+you want to go take a look at those they
+got the links
+uh let's see our evil was responsible
+for hacking these jbs
+meat [&nbsp;__&nbsp;] uh actually they
+actually didn't even mean to hack the
+meat [&nbsp;__&nbsp;] they were hacking
+someone in brazil and then our evil was
+like yo
+we don't know why the u.s is even
+getting [&nbsp;__&nbsp;] involved but [&nbsp;__&nbsp;] it
+your weapons free so now they can target
+us
+tavis ormindy is a really smart
+[&nbsp;__&nbsp;] that works for google
+project zero
+he's got a really good blog post about
+password managers it's probably gonna
+rustle your [&nbsp;__&nbsp;] jimmies but i think
+you should read it because there's some
+really good considerations to look into
+uh let's see we got like a new
+vulnerable cluster kubernetes
+i'm pretty sure that's what all the cool
+kids are doing to [&nbsp;__&nbsp;] mine bitcoin
+now right anyway you can get a
+vulnerable version of kubernetes and you
+can [&nbsp;__&nbsp;] hack it
+to learn stuff or to not learn stuff
+whatever i i really don't care
+um see the
+the memes really help when i have the
+notes
+in front of me again i'm not gonna lie
+i've had a couple of drinks now
+i don't remember what this is about but
+it's about computers
+uh oh this one i remember this one so uh
+github is
+gonna be allowed to go ahead and pull
+[&nbsp;__&nbsp;] if it's uh being used in an active
+attack
+i think that makes sense i think i get
+it you know what let them do their thing
+um but yeah it does
+present a kind of interesting slippery
+slope fallacy uh
+this is one oh yeah okay that's right
+the feds were running some [&nbsp;__&nbsp;]
+encrypted chat platform and they were
+selling it to drug dealers and uh just
+like tapping all their [&nbsp;__&nbsp;]
+which i think is interesting i always
+thought they called that [&nbsp;__&nbsp;]
+entrapment um
+but i mean what the [&nbsp;__&nbsp;] do i know i
+guess uh a really interesting blog post
+on uh [&nbsp;__&nbsp;] how how it's how hard it
+is to impersonate a device now all right
+i know your first thought is user agent
+strings
+those are [&nbsp;__&nbsp;] [&nbsp;__&nbsp;] and that blog
+post will tell you why it's [&nbsp;__&nbsp;]
+it's a really interesting blog post you
+should check it out
+uh this is another blog post some guy on
+mediums putting a [&nbsp;__&nbsp;] wireless
+router inside of a wall charger it's
+kind of like an omg cable or kind of
+like any of the other weaponized pieces
+of hardware that we see but
+this guy's just making it himself it's a
+pretty cool journey he's got part zero
+and part one posted more parts to come
+soon
+cvs had a breach uh [&nbsp;__&nbsp;] you know it
+was
+some [&nbsp;__&nbsp;] that that came out uh again
+this would be a helpful place where my
+notes would tell you some of the deets
+but you know what
+uh i seem to recall it being like i'm
+gonna say a seven out of ten
+uh this is my attempt at a creative joke
+uh what is it uh
+vulnerabilities in 2g communications so
+these are two g's method man and red man
+uh yeah but um yeah i thought it was
+pretty funny too
+uh okay and bam all right [&nbsp;__&nbsp;]
+so this i i hate to say it guys that
+that was the end of the news as you know
+it all right
+now okay let me let me rephrase that so
+some of you that aren't in the discord
+first off you [&nbsp;__&nbsp;] suck
+uh but let me fill you in on what's been
+happening in my life so i recently
+became a homeowner
+um which is oh yeah it's really [&nbsp;__&nbsp;]
+cool
+except the water main broke across the
+street it's just this meme for the last
+like 22 [&nbsp;__&nbsp;] slides so don't worry
+i'm just gonna keep walking in front of
+this
+a water main broke across the street
+from my house and my [&nbsp;__&nbsp;] basement
+flooded and
+holy [&nbsp;__&nbsp;] [&nbsp;__&nbsp;] like the first week
+that i stopped renting
+what kind of [&nbsp;__&nbsp;] [&nbsp;__&nbsp;] is that i
+want to go back to renting this [&nbsp;__&nbsp;]
+sucks anyway um so i've had a really
+stressful week
+all right i'm not gonna lie i didn't
+come [&nbsp;__&nbsp;] prepared
+all right you know like i said codex
+mafia out here saying some [&nbsp;__&nbsp;] about
+everyone yo we put in so much time and
+effort and everything
+i i did not this month i intended to i
+did intend to
+but i mean what is you know intent is is
+great and everything but
+[&nbsp;__&nbsp;] so you know i decided you ever you
+ever have that moment where you come to
+grips you're like
+welp i [&nbsp;__&nbsp;] up
+gotta figure out how to eat this dick
+well here i am i'm eating the dick
+um and i'm here to tell you guys that
+it's okay you know what this is a
+volunteer effort this is the best effort
+i'm pretty i'm pretty sure this is i
+guess me choking on the dick
+um anyway i i will echo the fact that
+this is all volunteer stuff
+we love people contributing uh i hope
+this is your first night up here i hope
+your first night at set kc
+is seeing me [&nbsp;__&nbsp;] up because if i can do
+this
+anyone can do this it's so easy to [&nbsp;__&nbsp;]
+up
+it's awesomely easy to [&nbsp;__&nbsp;] up all you
+gotta do is stand up here and swear for
+a while
+i really hope the autoplay is still
+going
+i don't actually know it's a very very
+meticulously
+timed thing right so i i was gonna just
+stretch out the whole time it was like
+my self-punishment
+like i'm pretty sure maybe i'm
+masochistic or something i don't know
+maybe we're discovering something about
+myself tonight
+um but but you know it's like you made
+your bed now sleep in it right so
+joel can i get confirmation that this is
+playing and that i'm not just like
+making a [&nbsp;__&nbsp;] jackass of myself
+it's it's playing huh yeah okay it's
+it's still playing well
+there's there's an end to this in sight
+somewhere everyone
+um man i'm so glad to be back though
+see doing this over zoom it's not the
+same
+you can't see me sweating you can't see
+the individual
+beads of sweat the anxiety that's piling
+up here at the bottom and crippling
+oh it's just not the same over zoom
+the nervous glance is back this is a new
+i like this
+what do you think of this venue
+come on [&nbsp;__&nbsp;] this piece of [&nbsp;__&nbsp;] out
+of kansa does it not look at that bar
+look at these bartenders we have our own
+[&nbsp;__&nbsp;] sound person tonight do you know
+how little we had to work
+i i had one job i guess well okay i had
+two jobs tonight but
+i didn't prepare for either of them
+five he's he says five it can't possibly
+be five more minutes in this
+time time doesn't work like that okay
+maybe he was saying five more slides
+maybe he's turning down the lights
+easing down into things
+i can't tell it felt like it was it was
+just a cool
+cool breeze maybe that's me having a
+stroke i'm not sure folks
+but you know what i was very happy to uh
+to follow up skye i'm happy to set up
+our first speaker of the evening i'm
+happy to set up the rest of the music
+i'm happy to be
+out in the world and i'm happy to be
+with my homies my home girls and every
+everyone else so um i give up
+i'm i'm [&nbsp;__&nbsp;] throwing in the towel
+and uh oh yeah yeah it said finn it said
+finn
+i did it we did it hooray
+[Applause]

@@ -1,0 +1,2274 @@
+all right everybody it's Kasey
+one-on-one time yeah let's hear it all
+right
+this is this is the intro for those of
+you who haven't been before or those of
+you who just like to watch somebody
+fumble through the slides because they
+haven't done this before so all right
+SEC Casey the biggest investor is
+monthly info SEC event in the world
+second Tuesday of each month Kansas all
+over the park first thing you should
+know
+meetings are unrated you have been
+warned if you are not an adult or don't
+exactly number two SEC Kasey code of
+conduct if you have any issues
+whatsoever look for someone with the
+yellow badge yeah especially look for
+someone with the yellow badge find
+rules of sec kc destroy the data
+maintain no persistence above all do no
+harm
+shenanigans are yeah state and federal
+law enforcement officers are encouraged
+and to attend sec kc meetings we do not
+keep remember less nor any list of
+meeting attendees therefore we cannot
+everyone is approachable we encourage
+you to walk up to someone introduce
+yourself
+ask well that depends on if you have any
+outstanding warrants or not especially
+don't talk to the cops if you have
+we encourage you to walk up to people
+talk to them teach and learn from each
+other challenge ideas not people we are
+all adults here sometimes treat each
+other like such all right
+during the talks be quiet
+unless you're at the back behind the
+STFU wall no you can yell all you want
+during this it can't do any worse for
+those of you don't know what the STFU
+woe is it's that big thing back there
+that says Boulevard on it it means
+exactly SEC KC happens because of
+volunteers and sponsors make sure to
+check back in the back with XM iam who
+is our sponsor crying tell them hi this
+way I got sure they feel awesome stuff
+back there thank them for buying you
+pizza and save some of that pizza for me
+damn it be the change you want to see a
+keck sec kc is there something we can do
+better is there something that you want
+to see sec kc do get involved volunteer
+at set kc we're all volunteers if you
+want to get involved right there set
+kc.org slash connect that's how we use
+Eventbrite to order pizza
+that's the only thing Eventbrite is for
+is so we know how much pizza to order so
+we really appreciate it if you do RSVP
+on Eventbrite
+you don't have to use your own name we
+can all RSVP is bill probably well they
+could they can look at the Eventbrite
+site but they can't see the list SEC
+casey on twitter follow us at SEC SEC
+underscore Casey we're also there as
+without the underscore that's not the
+one we use so follow the other one with
+the underscore otherwise tag your tweets
+with SEC Casey log on to slack join the
+channels news slide we're doing
+donations tonight in the swag booth
+we've got some awesome stickers here and
+we're collecting money if you want some
+of these stickers you need to make a
+donation at the SEC Casey booth or at
+the swag booth back in the back once I
+get it set up and you can get these
+stickers for a donation we're collecting
+money for the Kansas City Center for
+one sticker a donation of five dollars
+gets you one sticker ten dollars gets
+also back in the swag mood if I've got
+extra pint glasses left over from the
+InfoSec showcase any donation will get
+you a fine glass it can be a dollar
+it can be 12 cents whatever you got this
+is our agenda four o'clock make excuses
+time hopefully you already did that
+otherwise you're probably in deep [&nbsp;__&nbsp;]
+six o'clock said KC 101 you are here
+6:15 set case the open source in telling
+6:30 our twist brings the beats 645 bad
+pirates and Def Con update seven o'clock
+post-mortem a new tool release Aaron
+Crocker in the cybersecurity at 7:45 try
+wolf and geo to run a sword
+[Music]
+it's been a long week I wish you were
+Friday but actually I'd like to say I
+like this Tuesday those of you that
+don't know what this is this is our open
+source news brief which is really fancy
+way of saying that I stand up here and I
+try to fill you in on what happened over
+the past month
+they usually swear a lot I usually
+stumble over my words it's really funny
+we do this in the Ignite format there's
+about 15 seconds per slide and it's
+pretty good so if you want the links I
+will post them whenever I get back into
+town all right without further ado so it
+turns out back in 2016 then we had a
+press release published back then teeth
+viewer said it was your fault users
+false it was in fact a few words but
+[&nbsp;__&nbsp;] you I knew it [&nbsp;__&nbsp;] you boss I told
+you god damn it anyway read more about
+Uniqlo breach happens so this was a
+Uniqlo Japan 460 one thousand consumers
+accounts breached I included your
+address your phone number who your name
+is your credit card information just the
+first for the last four though
+ironically we had the web seal of trust
+injected with not one key logger but two
+key loggers what if it was installed
+April 24th the other one was installed a
+week before this was published which was
+like sometime in May or some [&nbsp;__&nbsp;] like
+that we have an exposed databases it's
+nothing [&nbsp;__&nbsp;] new unfortunately look
+at all that information you get from
+there eight million people who
+participated in online surveys
+sweepstakes and all that [&nbsp;__&nbsp;] that you
+see coming to your mailbox that's those
+this one involving golf game golf I'm
+sorry it's something that people who
+play golf use to track how good or bad
+they are go let's see we had usernames
+hash passwords emails your gender
+Facebook key tokens oh come on [&nbsp;__&nbsp;] not
+another one this one is actually eighty
+five point four gigabytes of [&nbsp;__&nbsp;]
+information gonna last a search database
+this was actually for Pyramid Hotel
+group this is very internal [&nbsp;__&nbsp;] this is
+security alert system errors policy
+violations [&nbsp;__&nbsp;] like that
+oh gee users calm got breach this is a
+four where hackers go to sell [&nbsp;__&nbsp;] other
+hackers breached this forum and it's
+just like this one giant pissing match
+between one another I think it's pretty
+[&nbsp;__&nbsp;] funny one hundred thirteen
+thousand of therefore abusers
+essentially got doxxed
+we had a large health information breach
+actually one of the largest in quite
+some time here we've got a timeline of
+ones that happened over the past few
+years this is another big one this one
+included patient names addresses dates
+of birth gender and medical claim
+information so yeah we had digitized
+records a big title insurance company a
+hundred [&nbsp;__&nbsp;] million plus we're
+available this included your bank
+account number your bank statement your
+mortgage your tax records your social
+security numbers your wire transaction
+receipts how [&nbsp;__&nbsp;] long does just have
+to go on point-of-sale malware so I'm
+pretty sure they're still about 100 to
+900 locations were breached with
+point-of-sale malware one of them in
+California had been a breach starting as
+far back as December 2015 so [&nbsp;__&nbsp;] this
+is like my nightmare I work for a view
+those of you that don't know [&nbsp;__&nbsp;]
+Australian National University had 19
+years of records stolen over like a
+two-month time frame like holy [&nbsp;__&nbsp;]
+[&nbsp;__&nbsp;] like you might as well just close
+the [&nbsp;__&nbsp;] doors at that point
+quest Diagnostics was breached these
+guys are like another medical type
+agency basically this is one of those oh
+yeah we don't actually do that but this
+person that we hired to do that does
+that so my friend of a friend of a
+friend got breach which means I got
+[&nbsp;__&nbsp;] breach get bad stuff so
+stackoverflow got breach but I'm
+actually not gonna [&nbsp;__&nbsp;]
+Bastet because they've responded to this
+quite well they were they said hey we
+got [&nbsp;__&nbsp;] breach we're gonna let you
+know what happened a little bit later
+they said hey here's what the [&nbsp;__&nbsp;]
+happened and here's what we're doing to
+fix it and they didn't say you know oh
+we're increasing or Baltimore has been
+under ransomware attack for going on
+like three [&nbsp;__&nbsp;] weeks now I believe
+the most recent estimated cost is 18
+million dollars so damn that sucks they
+were actually trying to get it
+designated as an emergency - again
+federal funding Precepts is some company
+that let's see I can't even remember
+what the [&nbsp;__&nbsp;] they do look them up but
+their personal data including on
+Microsoft Exchange in Access databases
+ERP databases HR records Microsoft SQL
+Server data so on and so forth oh that
+was they're moving away from breaches so
+now he's got some threat actors
+starcraft group the tactics techniques
+of procedures utilized by them document
+if I kiss burski kind of a cool tear
+down there you can take a look at that
+if you like more information about it
+that's my cover for when I lose notes we
+had more open MongoDB s but these guys
+actually just decided you know what
+[&nbsp;__&nbsp;] ransom again it's not fun let's
+just [&nbsp;__&nbsp;] delete it whatever I mean
+can you finder though I mean [&nbsp;__&nbsp;] that's
+what 12,000 [&nbsp;__&nbsp;] MongoDB instances
+just deleted so homograph attacks are
+not anything new but we are seeing them
+still a group did an interesting
+teardown on what client based both male
+clients let you see these attacks or not
+like is it gonna look like it's real or
+not muddy water is another [&nbsp;__&nbsp;] group
+that they are they did another teardown
+on Talos to this one the interesting
+thing that I think about these is that
+you see you know it's interesting the
+techniques or their c2 infrastructure it
+all starts with a [&nbsp;__&nbsp;] word doc or it
+all starts with just the simplest
+[&nbsp;__&nbsp;] [&nbsp;__&nbsp;] skimmers are getting just a
+little bit smarter so this one
+as a payment as a service so this was a
+rogue iframe basically this company
+doesn't actually take your credit card
+information they [&nbsp;__&nbsp;] outsource that
+to another company but you wouldn't know
+that if you visited the hack site of
+course everyone knows that political
+propaganda is being posted on social
+media rampant Lea this influenced a lot
+of things in recent history this is an
+interesting tear down from fire I about
+that and sort of saw a who's who and
+what's one of what's been going on
+definitely check that out well we got a
+piece of malware that is plaguing I
+think the Google Play Store yeah this is
+called they're naming it veto plugin
+it's essentially just a piece of adware
+you download a thing and it's like oh
+yeah it does the thing but then it plays
+to many ads and now I can't use my
+[&nbsp;__&nbsp;] song hidden wasp is a threat
+that they label this is a targeting
+Linux system so at the time of writing
+of this article it had a zero detection
+rate on virustotal I'm sure that's
+probably changed now again I know
+Firestone sent the best [&nbsp;__&nbsp;] metric
+for these things anyway interesting
+piece of malware there is a really cool
+article on IP disclosure of tor users
+via cache 301 poisoning basically look
+at that diagram there yeah that's what
+the [&nbsp;__&nbsp;] happens reading yourself the
+teardown is pretty good though really I
+don't think these go on so long for
+those of you that like to hack your own
+stuff you like to practice your
+authoritive security chaps damn
+vulnerable crypto wallet has been
+released I don't know man that looks
+pretty [&nbsp;__&nbsp;] secure to me it's asking
+me for a 110 pin [&nbsp;__&nbsp;] probably false
+advertising me all right so we got some
+tools coming up now first up we've got
+magic copy this is going to be something
+that maybe red tinker's are gonna use as
+a power show set a powershell
+commandlets that allow you to very
+quickly exfiltrate data using AES
+encrypted link hooray no one knows
+what's going on RDP pass spray is
+another tool that came out as well again
+there are
+of rdp brute-forcing tools out there but
+this is a new one and I mean given that
+blue keith is a big you know we're all
+waiting for that weaponize perfect
+concept to come out this might be of
+interest to get you red teamers local
+file inclusion tool or lippy version 2.0
+is released this is essentially just
+something that you can use in order to
+more automate the process of finding
+local file inclusion vulnerabilities on
+something that you own of course we
+would never use it on something we don't
+know there is a really cool reverse
+reverse shell cheat sheet that was
+posted on github as well again
+oftentimes I don't really like cheat
+sheets but I thought this is a really
+interesting and a very very detailed
+cheat sheet so again probably not
+perfect go contribute to it if you think
+it [&nbsp;__&nbsp;] sucks uh there is a cool
+guide here on how to build a honeypot
+using a Raspberry Pi 3 and we've
+actually had talks on this here at set
+KC but I got to up sir RDP attacks again
+blue key beads such a big deal it's
+actually such a big deal that I assume
+you all [&nbsp;__&nbsp;] heard about it didn't
+clear slide about San Francisco is
+banning the use of facial recognition
+technology by police which hopefully we
+don't think that's a [&nbsp;__&nbsp;] good thing
+this is a terrifying technology and we
+are seeing it used in China I'm not
+gonna get on a [&nbsp;__&nbsp;] political Stone
+box here but anyway scary [&nbsp;__&nbsp;] there's
+an interesting vulnerability where
+people could steal downloads from slack
+users that are using the Windows client
+the blog post goes into really big
+detail there but essentially if you
+trick someone into clicking on that link
+it will change a setting in the slack
+channel until they check your back it
+turns out if you pay someone to
+negotiate your data in a ransomware
+infection most of the time according to
+this company they just [&nbsp;__&nbsp;] pay the
+ransom yeah that I guess does get the
+data back sometimes bgp hijinks have
+been occurring and this has been kind of
+happening more and more I want to say
+actually two or three happen this month
+but this one was a large swath of ip's
+once again being routed through to China
+Telecom
+I don't believe they've figured out
+whether this is an accident or not
+this is apparently a piece of art that
+sold for like 1.5 million dollars which
+is cool because that means like all of
+my users are [&nbsp;__&nbsp;] Banksy
+so I mean how did I not tap into this
+unknown resource path LinkedIn to us
+turned expired not for the first time
+but for the second time especially not
+if you're a multi-billion dollar
+corporation like what the [&nbsp;__&nbsp;] guys
+other so we had a Georgia wound up
+saying there's Supreme Court has stated
+that the state government does not have
+an inherent obligation to protect
+citizens personal data this goes back to
+a guy whose information was in a Excel
+spreadsheet breach and god yeah read
+about that viewing get pissed off Nick
+foe LLC this is a company that's
+actually run out of st. Louis uh got in
+trouble and finally got a lawsuit settle
+an area where they have to give back
+about four hundred seven hundred and
+fifty thousand ipv4 addresses that they
+stole I'm so sorry I'm [&nbsp;__&nbsp;] getting
+over a chest cold there this is pretty
+cool blog post actually talking about
+where do these dumb [&nbsp;__&nbsp;] names for
+tax come up from kind of cool check it
+out Specter meltdown etc didn't just get
+pulled out of the ass although it sounds
+like a we're finally we've got a sort of
+opinion piece here on the who way
+section so this is sort of a perfect
+storm of events where hue is just
+getting [&nbsp;__&nbsp;] [&nbsp;__&nbsp;] on by like every
+industry player right now and what that
+means so yeah oh I am sober and that's
+still bright
+that's all right doing tonight having a
+good time well I look at it in this
+crowd and I see a lot of human chests
+and none of those chests are blinking
+just sure maybe you know it you know Oh
+God oh now I really can't see that's so
+bright and white Oh God so a few years
+ago I go out to Def Con for my second
+time out first time I went out you know
+you go out and get this badge you're
+like oh yeah
+DEFCON badges are always pretty unique
+because you know they don't want people
+counterfeiting them this is a bunch of
+hackers and nobody wants to pay $80
+that's right what I started going was
+$80 to go to Def Con oh I'm old so if we
+painted nickels anyhow so the second
+year I go they've got this crazy-looking
+badge memorize mine was completely blown
+because it had to with LEDs to LEDs and
+you could push a little button and you
+can make them blink in different
+patterns
+it was the most mind-blowing thing ever
+well apparently that was fairly popular
+and now the blinky badges are completely
+out of control
+and every year they keep getting more
+out of control luckily for you we have a
+local group of people that tends to
+raise this [&nbsp;__&nbsp;] to a different level
+every single year and what I'm staring
+at right now is really really blowing my
+[&nbsp;__&nbsp;] gourd right now so get out your
+[&nbsp;__&nbsp;] money and get ready to give the
+badge pirates some money here is Rickson
+who's going to tell you about what what
+thank you
+hi everybody I'm Rickson and what do you
+all I'm burning like they see and yeah
+we so anyhow this all started a few
+years ago Network E and F G were out of
+con and running around tracking down all
+these batches and stuff and and I had
+just started one enough cron again at
+that time this is cool and we could do
+this and we did it in the next year we
+have the first second AC badge a couple
+years ago we did it last year
+[Music]
+so what I've got to show you tonight is
+basically whatever badge is gonna be on
+I have an early prototype and yes
+question it saying all your questions
+till the end no questions so you know
+how many people here the soccer before
+okay that's great I can't see anybody
+everybody raised their hand so we all
+know just like the bill electronics and
+we know it can be tricky at times and
+every year you know we've been trying to
+step up the batches and we do well for
+the SEC kc badge you know really we want
+to badge for us that is us and so we
+give them this year and we had some
+ideas we went out into the crowd and
+asked some people what they wanted to do
+and and out of this week we kind of
+formulate an idea together so we've been
+working for for several months on the
+design building bowtie you get back to
+winning and as you all know that cons is
+less than two months away so the crock
+is really taken and that is really kind
+of pushing us on the design process
+we're not a hundred percent time I'd say
+we're 80 90 percent done so what we are
+hoping to do tonight was actually say
+okay here it is give us your money but
+we are not quite there yet we have a few
+challenges first of all the design came
+through okay we had to make some
+sacrifices and changes from the original
+plan yes it happens you know
+change happens so what do we do we deal
+with it and we keep moving and that's
+what we did but so now we're trying to
+figure out the manufacturing deadline
+if we can so no questions no questions
+so what we are doing instead tonight is
+we will have a sign up in the back we
+will take your email and when that
+happens what we're going to do is
+hopefully by the end of this week give a
+tonight we're gonna come down here
+shortly and I'm gonna show you all what
+we've got what we're gonna build
+anticipation just bear with me bear with
+me so so yes well we're not gonna start
+the sails tonight because we want to be
+sure that we can deliver it in time for
+Def Con and give you all what you want
+in a quality product so what we have
+here and you're gonna see me from a
+distance and we're gonna I'm gonna walk
+here is now don't mind the low rat's
+nest here because my little controller
+this is what stage of prototyping we're
+in controllers kind of aim here but this
+very thing right here is basically the
+Badgett music I'm gonna walk up to the
+screen to give you all a close-up and
+[Music]
+so you just told me in their talk once
+that you should always do live demos and
+somebody here we go let's go get this
+yellow yeah here we go okay so the match
+doesn't work that's what you're all
+buying tonight I'll come down here and
+we heard you know like blinking lights
+so we've got 645 12.3 if you try hard
+Oh
+[Music]
+[Applause]
+[Music]
+[Applause]
+[Music]
+okay so as you can see here we have this
+[Music]
+so some of the manufacturing challenges
+are here are whenever we get back to me
+like this
+robots builders it's called a bigger
+place machine the bigger place where she
+will pick up each individual component
+instead on the board so even with an
+early even with the machine that does
+these LEDs manufacturing the other
+challenges in individual cost of the
+components well when you have 645 LEDs
+like one of the manufacturers is
+charging six and a half tenths of a cent
+more than we could get it here in the US
+because of that alone drives up the cost
+by $1 per board so what we're looking
+for right now is finalizing how to get
+the cost down here new a reasonable
+amount
+yes so as it is right now we're looking
+about $45 just for the heli D so we're
+trying to get this in a reasonable range
+but the plan is with the once we release
+them and why we're collecting your email
+addresses tonight in the back corner
+here is by getting everybody's email
+addresses we will send you a link a
+one-time use only link so you can buy a
+single badge and the idea is you will
+get a badge that's very close to cost
+just covers up a little bit of our
+overhead expenses and we the cost of the
+badge unfortunately we're getting these
+made in China
+and that means the the tariff that is in
+effect will also come into effect
+it's gonna be 25% more than it would
+have otherwise have been we got a deal
+shipping we have to charge sales tax in
+Missouri
+so all of these things kind of come into
+play but we'll have better information
+and then once we're also gonna open a
+general sale to everybody and those
+badges can be much much higher so the
+idea is that give the cost and to all
+living folks you know the SEC Casey
+discount so go ahead and sign up in the
+back here in the far right corner the
+stage right and then we will contact you
+with an information I'm sorry but you
+[Music]
+[Applause]
+[Music]
+we have a team of people who just
+[&nbsp;__&nbsp;] kill it every month right they
+volunteered their time to make sure that
+you guys can hear what the [&nbsp;__&nbsp;] speakers
+are saying up here and we got great
+music so can I have sky and gray and
+Aaron the guy Missouri State and Jim
+please come up here these guys work
+their asses off and a while ago we
+decided that we were going to have these
+shirts and so we
+[Music]
+okay for those of you it's called a
+downy ball all right you can wear this
+shirt for ten years and you can put a
+little fenders all right so I'm gonna
+[Applause]
+good
+are insulated with no dramatic music
+this time but let's get ready for our
+second errand of the Knights and
+Crawford is here frequent speaker at sec
+a see and he has technically two stalks
+wrapped into one
+he's gonna release some new stuff that
+you've never seen before but we'll
+probably want to go home and use he's
+also going to talk about some of the
+broader implications of some of the jobs
+that we do or maybe think you're
+interested in for example how do you
+deal with the fact that you've got your
+entire buildings internet turned off
+[Music]
+anymore alright let's give a big round
+of applause so I know what was listed
+and I'm not gonna do any of that tonight
+so instead we're bringing back the five
+minute tool talk real quick and this is
+something I want to bring to you guys
+and want to make sure that you all could
+do so we're gonna do this in five
+minutes or less this is open for anyone
+and everyone so pick a tool doesn't
+matter if you want to show that nmap has
+dat timing section of up to T on the
+life and you can do that it doesn't
+matter what tool you have we just want
+you to come back to show a tool help
+everyone
+sure what you know show something cool
+create a five minute talk if you don't
+want to do a full talk create just a
+five minute talk to discuss a tool show
+you how to use it everything some in the
+talk the sec casey go out to sec kc.org
+and some in the talk and then share the
+fun with everyone by presenting the tool
+so to bring this back I wanted to bring
+it a tool and something new to you guys
+so how many of you know robots.txt so
+this is the new hotness this is a BS txt
+it's for all the approved advertisers
+out there in third parties and it's
+absolutely awesome IAB tech lab created
+it as a standard it's pretty much going
+to be our next tool for the next few
+years if you're doing web apps and web
+assessments it's awesome
+but don't worry we're going to have the
+stuff for social engineering with it as
+well so no matter what you do on any
+website in the root directory you'll
+[Music]
+slash 80s dot txt the BBC even has it's
+everywhere and everyone's using it it's
+great because it has a consolidation of
+all the approved third parties that that
+website or that entity deals with so if
+you're in the social engineering or
+social operations that's a juicy target
+list for fishing that's a juicy target
+list for impersonation because that's
+all the approved groups that target
+deals with it's also awesome because it
+has all the subdomains and a large chunk
+of subdomains in there as a
+standardization so if you want to you
+don't have to rent the unless brute to
+get some really juicy stuff
+just going to slash abs dot txt this is
+also supposed to be all the approved
+users all the information and third
+parties that deal with advertising so
+there's a lot of great stuff inside this
+the Recon potential is just awesome for
+this too so as you can see here this is
+CNN at the bottom it's always going to
+be the same since its standard you have
+the subdomains there's a large streak of
+subdomains don't always show up they're
+always going to be in the 80s that txt
+file it's awesome I'm about you're gonna
+see all the configurations of the
+group's they deal with who they are
+proof to sell advertising with or
+through those third parties their Google
+ID the Google Adsense all those IDs are
+going to be there as well
+again this is awesome for social
+operations so every single one's going
+to contain a standard format no matter
+what you do no matter what you encounter
+in version 1.0 and above has a standard
+format where you can get all of the
+information that you want and they're
+starting to include new bits of
+information in these so wouldn't you
+like to be able to find these in the fun
+new automated way easy to use there's
+now a Metasploit module available for
+this you can download this right now
+it's available for use it'll go out and
+find the ABS txt it uses the only
+variables of our hosts so if you want to
+you can include multiple hosts to search
+through and then you can change the
+amount of threats that it uses to go
+through so you can go through run it
+faster
+allocate more resources in one time but
+this is great for you to run through as
+your preliminary part of an assessment
+you can go out there and pound a whole
+section out there and see doesn't have
+any s txt and if it does it's always
+going to be in
+three you can pull it up and find out
+all sorts of stuff for your engagement
+all you have to do is once you download
+that from the github repository throwing
+it as an auxilary module into Metasploit
+run this has not been released this is
+the first official public release of
+this tool you do not have to create a
+new tool to do a tool talk at set KC but
+I want to make sure that we had
+something special and fun and drop
+something new the other thing about this
+that I'm not showing tonight is as
+you've seen with this file it's all the
+automated white listing of ads and
+whatnot yes this can be weaponized yes
+this can be turned into a button that
+yes this could be turned into a work I'm
+not going to show you that you can play
+with it on your own but again play with
+this have some fun I want to encourage
+people to go out and do tool talks for
+the upcoming events and meetings just a
+bit of time whether it's simply using a
+map whether it's using nikto or
+something that you think is simple and
+benign it's meaningful to share it with
+everyone here at the same time get
+people started have a starting point no
+matter how simple you think it is it's
+important to present it so give it a
+shot and I would encourage everyone to
+do a tool talk from here on now that's
+why we're bringing it back so with that
+I'm gonna shorten this other talk into a
+topic that's normally a lot longer and
+one thing that we usually don't think
+about is what happens after the
+assessment what happens after you do pen
+testing what happens at night when you
+go home what happens when you walk away
+when the pen test is done so no one's
+found the easter egg in this picture
+about going in yet so I'll put it online
+you can have some fun with it but we
+don't have time we have less than a few
+minutes here to finish
+come find me after the talk if you were
+no more so security is kind of tricky
+because we always complicated with
+technology and that the end that day
+security is an emotion at a human state
+that's all it is your sense of security
+is different from bills which is
+different from quarries which is
+different for Bryan's which is different
+from the other areas we each have our
+own personal designation of security and
+how that pertains to us no matter what
+at the end of the day Security's built
+on trust and we tend to forget that with
+all the technical elements and if you
+run social operations this is your bread
+and butter knowing that you're violating
+those trust models you're trying to get
+into places you're trying to fool people
+person a people and do everything
+violating trust but a lot of what we do
+we need to maintain trust with clients
+with individuals with people in the
+public that's one of the great things
+about that Casey here is we extend our
+community out and we open it up and we
+expose it to everyone and we show what
+the hacker community with the InfoSec
+community the Freaker community
+everything else is about but at the end
+the day this is all about trust so we
+always want to make sure that we keep
+that in mind whether you're breaking in
+somewhere or whether you're going home
+at night a lot of people come up to me
+go hey you know what I do social
+operations such as social engineering
+and everything but when I get home at
+night Noah trust me no one will allow me
+to give them a present
+true story my own dad will not let me
+give him anything that plugs into a USB
+port he will not touch it he knows
+better that's changed though over the
+years that a lot of my family members
+will allow me to give them USB pluggable
+things because I have a heart
+designation as to where work starts and
+where work stops most people know me
+that I'm a mercenary in the day if I'm
+not getting
+I'm not doing anything I'm not gonna
+hand you anything that's gonna cause
+problems unless you're handing me a
+paycheck I put a hard stop and a heart
+barrier in place with most people and
+that's how I've had to build up trust
+over the years so people even here will
+understand if I hand you something it's
+not weaponized it's not bad it's
+actually benign I set up a series of
+things to allow you to have trust and
+validation and that's what you have to
+start doing in your life outside of work
+part of that is leaving work at work and
+setting up a heart barrier whenever you
+set up an engagement you need to think
+this way you need to think about three
+things the client the human element in
+the company your company involved always
+have those three things compartmentalize
+and at the center of everything that you
+do because you need to maintain trust
+and the barriers in between them such as
+the client you don't want to go through
+and pull a fire alarm at a client to
+clear someone out of the building that
+does not measure anything within the
+scope it violates the law and it
+violates trust models that people have
+in place such as you hear the fire alarm
+you know who walkout in orderly fashion
+to leave the building that's on fire you
+don't want to violate the trust model
+and use that as part of your assessment
+so always keep that in mind the other
+thing that we forget about with the
+human element is how damaging and how
+fragile it is throughout our work how
+many of you work at home or work remote
+how many of you don't see another human
+being for like days on it because of
+your job that does start to take a toll
+on you over time and it can impact you
+whether you're trying to reintegrate
+back into the workplace or just starts
+to drive you crazy
+I personally turn on the radio or TV so
+I hear some sort of human
+when I'm working alone at time you
+always have particular into
+consideration if you're working with the
+team make sure everyone on your team is
+aware of what's going on is in contact
+or talking to them and they're all kept
+aboard so that no one's just kind of out
+there on their own the problem is is
+when we forget the human element within
+security operations it's something we
+can't recover from it takes years and
+years and years of trust and building
+and resources to build up that human
+element think about when you lose
+someone on your team or someone gets
+fired or someone quits it takes a lot to
+train someone back up and get them back
+into operational mode where that person
+who left his head so it's always keep in
+mind where things are at again I set
+barriers earlier always set up barriers
+throughout your life especially in
+security operations you always want to
+set up something such as telling your
+friends at home LaHaye I will not hack
+your Facebook account or your
+ex-girlfriends Facebook account because
+I'm not on the clock I set up a heart
+barrier of work being when I'm on the
+clock like a pig you should do the same
+as well so people aren't afraid they're
+not upset they're not timid ated by what
+you do a lot of times people don't
+understand what we do we're all a bunch
+of nerds at the end of day so set up
+barriers not only with visual and
+physical but also sort of verbal
+barriers such as no or no thank you
+or no I will not hack your
+ex-girlfriends Facebook account personal
+identity is another thing we need to
+keep track of that we all lose we suck
+horribly in this industry when it comes
+to marketing and branding we do very
+well and excelling on social media and
+branding ourselves and branding things
+we don't market ourselves well a lot of
+times in this industry we confuse
+personal identity with a marketing
+message or a branding message those need
+to be separated out if you want to know
+example of this think about someone big
+or popular or someone well-known in the
+industry think about where they work
+think about what they do and see if you
+can separate those three elements and
+see if you can pick out details from
+those if you can't that's someone who's
+failing at that you need to create a
+separation of your personal identity and
+brand as well as your own life because a
+lot of these things will lead together
+very easily in our business they'll
+contribute to burnout and all sorts of
+other horrible things and mental issues
+and we need to start looking at that a
+little harder the biggest thing that you
+can do is you can always say no thank
+you or notice someone or say no to
+establish a barrier to create a
+separation between the club work and
+other things again maintaining trust is
+a key element because that's all our
+entire industries based upon one thing I
+always do is I run out when I meet new
+clients as I run around in a suit I get
+made fun of a lot but I want to show
+respect and trust my clients showing
+that hey I'm here I respect you enough
+to get
+they had put some clothes on put the
+suit on I do that to help maintain trust
+also communication helps maintain trust
+communicating non-stop to both like your
+clients as well as those around you is
+key to everyone who always asked hey how
+do you keep people from not trusting you
+or keep people from trip are continuing
+to trust you the key to that is
+maintaining trust and the easiest way to
+maintain trust as their communications
+so just telling people what you're doing
+how you're doing and why you're doing it
+and what the barriers and the boundaries
+are for that boundaries are only
+communicated through open communication
+than trust again I'm trying to keep this
+as short as possible so I apologize the
+other thing is a lot of these things we
+don't consider in our operations and our
+security assessments can follow us home
+I used to do social engineering
+engagements and not really pay attention
+too much to what happened I didn't
+really pay attention to the verbage as
+to what happened at the end of the
+engagement as to what the client did
+moving forward I'd learned to start
+asking the client what happens after the
+engagement what happens after the fish
+what happens afterwards because I always
+inject now from here on out that no one
+gets fired back in the day I didn't
+consider what would happen and I had a
+security guard greet me at my own
+driveway at home after an engagement and
+he was pretty upset because he got fired
+and his only means of income was
+terminated because of my security
+assessment so always be aware that this
+stuff can follow you home that's also
+why you need to add boundaries of
+barriers and separations what you do at
+hard defined boundaries if you're
+working with the client suggested them
+rather than termination
+the fact that what's that person is
+flying on faulty and the fishing
+engagement or once they're fooled in a
+social operation that's going to become
+an advocate to help them with their
+security awareness program terminating
+them is going to cost them a lot of
+money it's also going to be something
+so another thing to help pack barriers
+physically to you is phone numbers we
+take for granted we all use our own
+phones we have sometimes we have company
+phones but sometimes we use whatever is
+easiest available to us the easiest way
+to help protect yourself is when you're
+on engagements when you're dealing with
+clients when you're dealing with other
+people pick up burner apps these are
+great this is like having a handful of
+SIM chip in your hand you can sit there
+change the phone numbers you can switch
+phone numbers you can ditch phone
+numbers you can text you can SMS you can
+do all the fun stuff you can and it's
+great because it all terminates to your
+phone you don't have to get another
+phone you don't have to get in their
+section it's awesome so I highly suggest
+that you start using some of these
+things to add a layer of privacy and
+anonymity to your daily life when you're
+doing assessments so if you need to you
+can start an assessment and hand out
+these phone numbers on a burner app to
+the client to the point of contact it
+all terminates to your cell phone
+but when the engagement is over you can
+trash that phone number you can burn it
+so that no one else has that so you
+don't have a security guard following
+you home in greeting you in the driveway
+at night another thing that we run into
+a lot is legal issues in our business we
+are literally forcing things to do and
+operate in a way that they should not be
+in they're not intended part of that is
+that we end up violating laws that we
+may not know about
+time in social operations we sometimes
+take for granted that we're going to
+record phone calls or we're going to
+videotape something you can't do that a
+lot of times you need to look up and see
+if it you're allowed to record the
+conversation and do not use Google
+Google and the Internet is not your
+legal thread to work replacement for a
+lawyer
+the example of this is the recording box
+if you google recording laws a lot of
+states such as Delaware you will find
+that there are journalism links that say
+hey it's a single party consent state in
+Delaware meaning that only one person
+has to be aware of the recording which
+is used so you can record bill without
+having to let bill know that you're
+recording however there are privacy laws
+that supersede them and there are other
+laws that supersede that so Delaware is
+a all-party consent state and he
+wouldn't know that by looking on the
+internet you need a lawyer it's really
+hard to find lawyers in our industry in
+business because sometimes one you can't
+afford it or two you may not have
+something available but you do one of
+the best resources I've found is find a
+local college with the law school and
+they have free legal clinics there's
+some here in town kayuu has a great one
+k-state does even Washburn University in
+Topeka has long clinics and a lot of
+stuff to help give up their law schools
+Bar Association's are great to reach out
+to them ask for recommendations tell
+them what you're doing they'll give you
+a list of people to call a vvo dot-com
+is a great shopping list to go around
+and start looking at local law and
+everything in an our case if you haven't
+donated nearly already this year to the
+EF
+should the e FF is a great resource for
+us that helps protect us helps put out a
+lot of resources in the community for
+security and whatnot to keep people like
+us out of jail and have a prison which
+is great but always look up and get
+legal help first because there is not a
+replacement for actual lawyers and legal
+help you can play a lawyer through
+Google and look stuff up but it's not
+going to help you out in the long term
+another thing that we need to look into
+more and more now is and I'm sorry this
+is a short talk and I'm not going to get
+into mental health stuff but this is
+more of we need to set up more support
+systems in our community we have we are
+so lucky to have set KC here this is one
+of the lower world's largest security
+meetups that happens monthly we have a
+support system here where you can help
+others to reach out to others you can
+ask questions you can network to think
+if you have it I would introduce
+yourself to at least two strangers
+tonight visitors a bunch of cool people
+in this room but in addition to that go
+to local Minos there's oh there's all
+sorts of other meetups of things around
+here that you can reach out and find
+others that have similar situations that
+you do or other issues and problems and
+things that you run into but trade also
+going outside of your job and outside of
+the bubble that you know how to create
+it by your job go to something like I
+suggest trying to go to the is c-squared
+meetings that happen or into your work
+try going the is sa meetings locally and
+see what happens so you can reach out to
+and set up a new support system extend
+your network to help you out in addition
+to that this is something I believe very
+strongly and I believe for the
+contractors that I hire and work with
+for my employees we set up telemedicine
+presence for counseling in our jobs and
+security we run across some pretty harsh
+things whether it's forensics if you're
+in forensics you may run across some
+interesting things on people's computers
+other jobs and other positions we're
+keeping really crazy hours you're
+working different hours you're working
+different tasks you're doing different
+things that takes a toll on you
+you're also dealing with content and a
+highly competitive environment that no
+one else no other industry has so you
+need to take care of yourself less
+physically mentally and there's a lot
+more resources now in this day and age
+to help you out mentally better help and
+talk space are two things to start out
+with and look into you can actually sit
+up there and sign up and do basically
+like a Skype meeting with a slicin
+psychologist a practitioner and set
+things up so if you're afraid of leaving
+the house if you're afraid of talking to
+a stranger about issues of promise these
+are great resources to work with I hired
+these out and use these as benefits for
+employees so that they have things they
+could deal with they can work through
+stuff they have this available it's a
+great resource there are hundreds of
+them now these are too just to look at
+and get started with but don't discount
+them because they're a great resource to
+use utilize because you might be doing
+things that take a toll on you and you
+may not realize it with your job part of
+burnout that we don't diagnose in this
+industry is the lack of fulfillment and
+sometimes in this job in industry it
+gets really harsh where you're trying to
+do stuff you're trying to get management
+to understand that for God's sake why
+don't we have open Wi-Fi connected to
+our main network connected to our
+production on a
+network and you're always fighting an
+uphill battle in a losing battle day-in
+day-out this industry they can take a
+toll on you and contribute to burnout
+because you don't have that fulfillment
+of completing plans you don't have that
+fulfillment satisfaction of getting
+somewhere and that's where I encourage
+people to reach out and get some help
+just to discuss with someone talk to a
+professional you may find some resources
+of the things you said you didn't even
+realize before and with that I was
+trying to put two talks together really
+quick really short if you have any
+questions find me running around just
+come bug me and whatnot but again I
+expect the set Caicedo work website to
+crash tonight with all the submissions
+for tool talks because all of you can
+submit a tool talk it is easy you don't
+have to write something new but submit
+something
+that's those lights again alright you're
+I enjoy a little break sorry you didn't
+win anything except for that one guy
+that gonna boss pair of headphones if
+you guys like winning free [&nbsp;__&nbsp;] then you
+should find other vendors to sponsor to
+stop them and you can enter to win free
+[&nbsp;__&nbsp;] yeah we love sponsors you know else
+we love these people that submit to do
+talks so today when I was at the office
+I mean when I was at home before I came
+I went through all of the submissions
+and I and I took a look at what we've
+got coming we've got a lot of good talks
+in the pipeline
+we need your talks to be in the pipeline
+so if you want to get up here on stage
+get introduced by me and then maybe try
+to make this the speaker exploded you
+should submit a talk as soon as you can
+make it a good one there's a lot of good
+stuff out there okay couple reminders on
+Sunday is Father's Day yeah I'm [&nbsp;__&nbsp;]
+thrilled this is my first Father's Day
+of learning so I'm planning on it so
+that means if you have a father which
+I'm guessing that almost all of you do
+you should go back and buy your dad some
+swag because that's the perfect gift by
+sec KC swag for Father's Day except for
+me
+okay next all right for our second talk
+of the night it is my pleasure to invite
+two of my favorite people from sec casey
+up to the stage Chioda a tribal are
+going to talk about how you can abuse
+microsoft windows make your work
+environment to do things that you're not
+supposed to like maybe run things as
+bill Swearengen yes yes so let's give
+[Music]
+whoo
+all right so yeah my name is Erik
+Guillen go by jeona this is Lauren
+try wool over here and we'll be talking
+about some purple teaming activity that
+we did specifically around the run as
+for the record I would just like to be
+formally known as Osiris that's me so
+really quick before we jump into run as
+music and purple teaming it we're going
+to talk about purple teaming and what
+that means right now purple TV is the
+new hotness
+it's like cyber threat intelligence of
+2017 everybody's saying it usually
+they're giving a presentation with the
+minor attack framework and a lot of
+people don't know what it means or how
+to do it properly so this is just kind
+of some of our suggestions what it means
+make sure we're all on the same page
+here when we're giving this talk before
+we move forward hopefully to help Yolo
+it helped us so I'm assuming everyone
+knows what red and blue is in the
+security space right offensive first
+defensive if you don't I'm also assuming
+that you can read so Eric found this
+lovely info graph please read that
+familiar so familiar
+make yourself familiar with a red of
+blue
+spoiler alert when you mix red and blue
+together it makes purple so today you
+learned
+hey guys I don't know if you know this
+but we have a tradition here is that
+Casey and I think both of you have
+already been on this stage but I think
+first long time yeah yeah all right well
+hey we have a tradition here second is
+your first time to talk you get
+[Music]
+[Applause]
+by the way speaking of Vegas follows Def
+Con parties on Twitter everybody right
+okay so let's get back to it
+so what is purple team it's when you mix
+red and blue congratulations we're done
+have a great night
+see ya yes that's what happens when you
+mix your red and blue teams together in
+an operational sense it's the cohesive
+Enterprise operations between red and
+blue team and so for the managers in the
+crowd like super awesome cuz you don't
+go have to post a new job wreck asking
+for a purple team member right like this
+should occur between your and primary
+you shouldn't feel like a second job to
+your ready blue team's right they should
+naturally naturally evolve into this
+they should feel like this is something
+that they want to do and it kind of
+boils down to a common goal of
+protecting the company we're all hired
+for the same reason right we're here
+we're being paid to secure our
+organizations we just kind of go about
+it in different ways so for this talk
+we're talking about purple teaming from
+an organizational level but I really
+want to encourage you all to pursue
+being a purple individual and that means
+work on your weak sides if you're
+primarily a pen tester reach out to
+people in the community who do blue
+teaming you know go do hack the box if
+you don't do that
+frequently develop yourself it's gonna
+make you more marketable and it's also
+going to make you a better security
+practitioner so we're really know it's
+not enough to just like leave tonight
+and go to work tomorrow and say hey boss
+I'm doing purple teaming promote me yes
+right
+purple teaming takes a lot of work and
+you really need to focus on making it
+actionable and have benefits for both
+sides there needs to be outputs that are
+tangible for everybody so white purple
+team we talked about kind of what it is
+it sounds like a lot of work I'm really
+sorry but if I was down to making both
+teams better practice kind of makes
+perfect and what I like to say is I'd
+rather Eric attack me during the day
+instead of me getting woken up at 3:00
+in the morning with our legitimate
+threat so I'd rather be prepared with
+somebody I know who sits across from me
+and makes my life a lot easier then get
+woken up and oh my god it's Russia right
+it also again for the managers in the
+crowd it helps improve your business
+investments are working properly so
+managers you can go to the board and say
+hey guys you're that's five million
+dollars you gave me last year yeah it
+worked I don't need any more money or
+you can get ahead of it
+okay we haven't been breached yet I need
+X number of dollars whatever systems
+more people to make sure that we're
+protected and ultimately it dries budget
+process changes resources and
+development the adage of squeaky wheel
+gets the grease is right so if you're
+telling the same story with two teams
+backing in people are a lot more willing
+to listen to what you're saying and also
+you can give two different perspective
+two different metrics and buy your purse
+combined you will get what you need okay
+so we talked about what it is how you do
+it or why you do it now we're going to
+how you do it so the number one thing
+you need to do is foster a relationship
+between your teams
+security can get really intense because
+we like to think we are members of the
+military sometimes and we talked about
+TLP and we talked about right and some
+people get like really aggressive and I
+know I'm guilty of it I'm like I'm gonna
+catch Erik and Johnny and Donnie so help
+me I won't sleep until I find them and
+that's not the environment we want it's
+it's healthy for me to say like Bill you
+can't catch me
+nice try it's not healthy for me to say
+bill you suck I don't know what you're
+doing with your life but you're never
+gonna be as good as the IR team right so
+managers you need to watch for that
+start by building some kind of human
+relationship between your team's
+encourage them to talk it doesn't have
+to be about security they can talk about
+baseball or how the u.s. women
+14:13 nothing against right but you want
+to make sure that everybody recognizes
+each other as humans and they have this
+connection and they understand we're
+here to protect the company that's what
+we're here for and then you need a
+baseline your team's knowledge and a lot
+of organizations teams are unevenly
+matched you've got pen testers who have
+been there for 25 years and talked at
+Def Con and released exploits and
+screens of death and all this and then
+you can't keep sake and unless for more
+than six months and that's not good so
+you need to understand where both of
+your teams live for managers again it's
+never cool if your CSO comes out of your
+purple teams and says well my blue team
+sucks you know what I'm gonna do I'm
+gonna take those ten sands trainings I
+have instead of splitting it 50/50 I'm
+gonna split up 8020 screw you red team
+we got boys that's not okay you don't
+want to penalize the people who are
+doing well and you don't want to inject
+artificial growth into your team so
+small and then next you need to create
+clear and measurable goals milestones
+and checks you need to be able to prove
+like yeah this extra work we're doing
+and this purple team initiative is
+actually working spoiler and then
+finally
+further into our presentation you need
+to engage in actionable activities they
+need to yield benefits and outputs for
+both of your parties so pentest
+ride-alongs if you're a blue teamers
+have never seen for the penthouse looks
+like stick them on let them see what it
+really looks like if your red teamers
+don't know what it's like to work an
+incident for 48 hours straight no you're
+staying up for 48 hours with me nice try
+Brian right also like a really easy way
+to start day-to-day operation Eric what
+are you working on bill what are you
+working on going to Denver and never
+coming to is specific research projects
+where you can pick a topic and dive
+super deep so this cover leads us into
+our specific topic of research run as
+and if you think that it's commonly used
+window feature and we both kind of want
+to learn more I read a blog about it and
+I was like what is this wizardry I'm
+never sleeping again we're all doomed
+there's no point in my job I can't see
+anything and Eric was like I don't know
+where the blue team sees but I'm just
+gonna make it that much harder and screw
+them
+so without further introduction I'm
+gonna let Eric kind of walk you through
+from there red team side what this broad
+ass research yeah absolutely so there
+are purple team engagement here or
+exercise we we had a bunch of questions
+that we wanted to answer while we were
+diving deep into something like this so
+we first start up with a little bit on
+like what what run as is you know why is
+it bad or maybe it's not bad but how
+could it be used maliciously we'll go a
+little bit further into who would likely
+to do something like this detect can we
+defend against it and then maybe a
+little bit about how attacker maybe even
+be able to circumvent some of the
+defensive controls that are in place to
+keep
+so to begin what what what is run ass
+right so Mike by Microsoft's definition
+it is a run as allows a user to run
+specific tools and programs with
+different permissions than the curtains
+and then the users current logon
+provides so so far what do you make
+students people out there with similar
+did similar to the student with Superman
+right so you can switch users to do up
+to any more privileged user similar to
+that right so run as was introduced back
+in Windows 2000 so very very old it's
+been around for a couple decades now
+it's been built in the Vista and beyond
+so we're we're all pretty much familiar
+with a tool such as run ads right so a
+scenario that we can kind of all relate
+to is when you're installing software
+that requires administration permissions
+so in order to install some software as
+an admin right like back in the day we'd
+have to log out as our current user log
+in as an admin user would do whatever
+we're gonna do log out and then log back
+in as a user right so it's very tedious
+work so right now it's kind of where
+that's kind of depends there's a few
+stats so you can just kind of do it all
+at once right so here's an example a
+little bit of demonstration of this
+we have a user called Billy right so
+Billy is a regular user on his Windows
+10 machine and he wants to install
+Wireshark right so so Billy tries to run
+Wireshark from his command prompt and he
+gets up prompted with this UAC
+is a user access control prompt saying
+in order to do that put in those
+credentials right so okay really
+Billy won't do that for demonstration
+purposes so he gets access denied right
+so instead what what Billy can do is
+actually you utilize run ads to run the
+installation of Wireshark as an admin
+user so in this case we're using Bob to
+install larger Bob happens to be an
+admin right he is my bilious knows Bob's
+password so he runs this installation
+punches in Bob's password and that was
+sort of that previous you know prompt us
+that you must be Bob well now you are
+Bob so of course I do
+so now you're at the installation screen
+and you can continue about your work
+right so Billy canal run as so so why is
+this back well it's
+this is actually exactly what run has
+has been built to do but it can be used
+in very interesting ways
+so specifically there there is a switch
+within run as it is the slash net only
+switch right so it's a grant within run
+eyes that allows you to run and that
+only so it actually indicates that the
+user information specified this for
+remote access only in other in other
+words right so when when you start a
+program with run as slash net only the
+program will execute as your local
+computer as the user that you're
+currently logged in as so previously be
+Bob right but all connections that are
+done remotely on the network are now at
+first week originally it was at Billy
+but all remote commands now when the
+network will be Bob so a scenario is
+something like being a developer that
+has a VM on their workstation at work so
+this developers at work he's on his host
+machine and he has a VM in order to test
+something right
+so this VM that he pulled down from
+whatever comm some windows
+it's not joined to the domain so his
+host machine is going to the domain but
+to speak up it's not
+however if you can use run ads in order
+to perform his actions that he wants on
+that VM as if he was on the domain okay
+so also another scenario is something
+like a QA tester right so the scary a
+tester wants to maybe test something
+that requires multiple user accounts so
+instead of having multiple workstations
+that you know has user a B and C or
+whatever he now has the ability to use
+run as as run as usual a run is either
+beware doesn't you see all from the
+luxury of his own workstation right so
+there's an example there running as
+splash net user or assuming that Natalie
+specify the users best about the domain
+and then whatever application when you
+use
+so here's who's an example of that right
+so an example of switching between users
+utilizing run ads could be something
+like this so we have a user called frick
+so Frank's on
+don't make called whatever gigolo
+so Frank now has you know a command
+prompt and he wants to run as a user
+called Edward so if you can use run as
+slash user specify the domain which is
+again geo to lab and the user of Edward
+he wants to spawned a command prompt
+enforcing those credentials for Edward
+so he successfully gets this new command
+prompt as you can see up at the top if I
+table too small this new command prompt
+is now running as Edward right and as
+well if we use you know
+Who am I running is Edward so Frank is
+now Edward so to continue this a little
+bit further kind of just diving deeper
+in this radical right so now that your
+Edward so Frank is now Edward and he
+wants to run run as again this time
+specifying the splash man only switch to
+go back to Frank right so he does that
+wants to spawn the command prompt and
+after punching at the credentials female
+had a third command prompt session
+however if you look up at the top it's
+now running as friend but if he does who
+am i it's actually running as Edward so
+so it kind of goes back to the original
+right this is
+network only so so that word here you
+know locally is Edward but remotely he's
+Frank right it's crazy so whatever is so
+army well actually it can be so think of
+a scenario regular you all put on our
+bad guy hat right we want to use
+something very simple like run ass and
+how can we make it back right so thick
+with scenario let's say you're a bad guy
+and you walk into this office building
+this company is building right welcome
+security guys propped up watching
+youtube videos or whatever and you you
+sit down to the lobby and you look your
+laptop into this network port that just
+so happens to be right by your feet
+right so you plug in your laptop as a
+bad guy on the network and you get an IP
+address because it's of course this is
+network port is hot of course it didn't
+turn up any type of network port
+security so now you have your on the
+network again but imagine that this
+attacker has domain credentials right
+here the domain user credential he could
+have gotten this something easy as
+phishing because
+right send out a email click the link
+kisses credentials awesome right
+or maybe he runs something like
+responder the tool that can just harvest
+hashes and you can take it offline and
+crack them were even relay them so
+responders awesome by the way
+so it tames these credentials and now we
+can use run ads in order to replicate
+itself as a domain user so what's the
+problem with this well because he has
+his own workstation he brought in his
+own laptop right he controls his laptop
+doesn't have a deal in there he doesn't
+have any type of logging on there
+doesn't have any type of privileged
+access management software nothing that
+you know your IT department has worked
+so hard to put on all your endpoints
+it's not on his workstation anyhow
+access to the domain with so just to
+demonstrate something like this right we
+have that same scenario where a bad guy
+you know plugs is you know computer in
+the network and he's running a tool
+called POW exploit which is an attacking
+tool it's it's reigns with PowerShell
+and it allows you to do really bad
+things so one of the commandments is
+that domain as you can see in big red
+text there you know this guy's not on
+the domain and says current security
+context is not associated with an Active
+Directory domain reports over this
+computer that he has walked into the
+lobby width is not on the domain we can
+also kind of drill that home by writing
+system info pipe it out you know client
+string up domain and we get the domain
+that worked a workgroup however like we
+were saying earlier this bad guy has
+credentials of a domain user that he
+captured from whatever way he wanted to
+he can use run as and that slash net
+only switch utilizing or pointing this
+user to PowerShell so he wants to spawn
+a power shell prompt after putting in
+those PowerShell credentials he can
+outrun getting that domain again and
+instead of getting all that error
+message he actually gets information of
+the domain so this user or this bad guy
+now has access into your domain from a
+workstation that is not join the domain
+or managed by anybody and we run system
+info again we're still in the work group
+because locally we're not on the domain
+this workstation is not joined but
+remotely in this powershell session we
+are okay so I'm sure a lot of you guys
+are thinking that's pretty messed up how
+can we use this maliciously right well
+there are many ways we can use this
+maliciously think about whatever you
+want to do a couple of reasons for a
+couple things you can do for any
+bloodhound now that this guy is under
+your networks let's run one catalyst by
+the most optimal path we can in order to
+attack a specific person or go after a
+specific computer we can run some type
+of Kerberos ticket app well we have
+access to one user why not get more
+users let's run Kerberos sync let's get
+some Kerberos tickets because now we are
+a domain user and let's drop down those
+tickets to a a hash that we can crack
+out online or offline excuse me or even
+worse let's do something like DC sync
+it's an attack that's pretty really
+nasty it allows anyone that has domain
+admin access on the network to perform
+some type of synchronization with a
+domain controller basically saying hey
+I'm a domain controller let's
+synchronize data specifically let's get
+your your user information may be some
+hashes and
+and now I have all the things so in this
+demo here we have that same session
+right so the attacker has abused the
+user about lists on the domain right
+Alice so happens to be a domain
+administrator and now we take this
+powder subset should we drop it down to
+a command prompt and we read me me guess
+well guess what because we're on our own
+workstation that has you know does not
+have whatever type of baby that's
+installed in the network or whatever
+login that we have on the workstation or
+any type of controls that are just
+should be added on all your endpoints
+that are not on this person's
+workstation because you delight for an
+ass so maybe test runs just fine so to
+top it up let's run decease take right
+at this point of that the domain was
+pointed out the domain controller let's
+dump everything and and now we have all
+the hashes now we can just walk away get
+a really strong foothold into the
+network and have all the accounts that
+all right so basically if you have
+Active Directory in your environment we
+are screwed right so right like
+undoubtedly if we have ad you have some
+user who decided that spring 2019 was a
+great password guess what Eric's gonna
+find that so sorry blue teamers we're
+just gonna go home like but that's not
+true
+so we can go through what you can do to
+detect a defend against this run as
+abuse but we do need to talk about who's
+likely to be attacked if you use Active
+Directory which I feel like most of us
+do unless magically your board-approved
+getting max only even would work but
+this is due to a higher likelihood of
+group overlap and wider access to
+elevated credentials again I doubt at
+least somebody has forgotten that you
+are a DA bill and they forgot to remove
+you and we are all doomed because bill's
+a da
+or ear servers also previously
+compromised users and endpoints that's a
+great attack vector in so with run ads
+this is usually a second stage attack
+point this is usually a lateral movement
+or privilege escalation where they're
+trying to get further and further
+further until they've got a vice grip on
+your PCI servers or the keys to the
+kingdom and you're screwed so if you
+have endpoints that
+antivirus signatures are being updated
+or a user who has just decided like hey
+yeah I keep getting these emails from
+have I been pwned
+what do I do right so these people are
+the first target so they're your initial
+foothold those are what your attackers
+are going after first and even Kimani
+tools like a motet have given access to
+systems attackers don't really have to
+build their own access tool anymore
+because Windows and Microsoft have done
+it for them so it makes it a lot easier
+thanks Microsoft all right so let's get
+into the fun stuff yay Blue team whoo
+thanks I wrote like four cheers love it
+um so let's talk about how we can detect
+Eric so a really fun way and kind of
+the overarching theme of this is anomaly
+detection and trend analysis it's very
+hard because these kinds of things blend
+in
+Eric's pretty much become a part of my
+domain and unless I really know my
+environment well or have something set
+up to detect changes in my environment
+I'm not gonna see him so one thing that
+I kindly recommend to report on but not
+alert on distinct differences are
+different host names that are associated
+with users so if Eric normally logs in
+from post one and then he logs in from
+host two tomorrow I want to know about
+that I probably don't want to have an
+alert come to my incident response team
+because that's gonna go crazy
+right like executives get new iPads all
+the time people will decide that they're
+just gonna switch laptops and all the
+year becomes very hard but we do want to
+understand when those types of changes
+happen and again going back to
+baselining you want to understand what
+that looks like in your environment I'm
+gonna be a big Microsoft shill here and
+say you need a TA you need Microsoft
+advanced threat analytics on your domain
+controllers
+Microsoft has said wow trend analysis
+and like user behavior analytics and
+these types of things they're like the
+way of the future man we're gonna build
+this into a tool and we're going to sell
+it to you go Microsoft thank you here
+defense but ata is actually super super
+cool it parses your authentication and
+authorization blocks on your domain
+controllers and builds profiles of your
+entities and your users and tells you
+when something deviates from
+so maybe it won't tell me when Eric
+decides to be host to but it will tell
+me when host to decides to try to poison
+my main DNS servers right it will tell
+you about anomalous activities are
+occurring again a lot of overhead goes
+into this so just be prepared to set it
+up as most security tools are but it is
+a super helpful thing to do a key part
+of this though you need a TA on every
+domain controller where authentication
+occurs if you have it half deploy you're
+gonna see time for the traffic and
+you're pretty much gonna be blind next
+part domain controller logging Kerberos
+tickets show account authentication and
+it can help show hosts that are not
+normally and that should say not
+normally associated with that account so
+4 7 6 9 that when is event occur for a
+service ticket was requested is a great
+way for detecting this and this kind of
+has similar blue team detections for
+Kerberos state it's a great indicator of
+lateral movement and you can use it to
+watch for anomalies so if the service a
+service ticket was requested from host
+two and it has never been requested
+windows have been logging on your host
+this includes witness about burning to
+your security teams this could be really
+hard and it doesn't really hope the fact
+that Eric brought his own laptop and
+Doral lobby and collective it and now is
+decided to do whatever he wants to do
+but and him can help mitigate our threat
+on managed endpoints so for six to four
+everybody's favorite logon event type
+look for log ons with type nine this is
+tied to the new credential type and
+Microsoft says this is a caller cloned
+which club is current ticket and
+specified new credentials for outbound
+connections this is a new logon session
+that has the same local identity but
+uses different credentials for other
+network connections now super important
+part on this logon type nine and four
+six two four these are certain to become
+less and less common as we move into
+Windows to the Windows 10 pretty much so
+a really really great way to TechEd and
+we've kind of proof this out when we are
+watching Eric's testing is looking for
+logins with explicit credentials for six
+or eight and Microsoft specifically
+notes this in the documentation that is
+likely tied to run as usage so if you
+don't take anything from tonight please
+just take the fact that you need to look
+at your four six four eight logs and
+finally like if you really want to get
+you know into the weeds execution of run
+ads about exe on managed host is a
+really quick and easy
+we want to see who's doing this and one
+really important part on this is just
+remember prevention is nice
+I would love to prevent Eric from coming
+into work and doing these things to me
+but detection is a must so if you do not
+have the visibility you don't have the
+logging that is the first argument you
+need to make you need to be able to see
+what happens even if it is post
+compromised they just keep coming I
+can't stop them red tape people know
+Eric's really great I just use air
+because he's next to me so let's talk
+about what threats have actually used
+running a run as again compromised
+manage endpoints easy attack they
+already have a foothold that's the first
+thing that they're gonna go after but we
+also see tools attempting to elevate
+privileges specifically leveraging run a
+CXC or it's partial counterpart so rats
+have been seen using run as power sploit
+Metasploit obviously two big names
+cobalt strike has been using it stop
+stop stop stop
+[Music]
+okay I guess not built um specifically
+though specifically Empire and posh see
+to these who do something that's super
+super interesting so they leverage
+invoke - run at ps1 which is a part of
+Security Suite this is a PowerShell
+alternative to run a CXC and if you're
+just looking for one a sexy you are
+never going to find this you need to
+look for its PowerShell twin so Empire
+and posh g2 both have those features
+built in how can we defend okay
+we can't I'm sorry the world is ending
+we can't defend against this but what we
+can do is we can put rocks in their
+shoes and pray that they make enough
+noise that we catch them when they're
+trying to do something worse and this is
+important because we cannot stop
+everything we cannot stop everyone I'm
+sure everybody in this room has a story
+about how being able stop the bad guys
+but we need to make it harder for them
+that doesn't mean we don't try so we can
+use later defense to stop low-hanging
+fruit and make it a lot harder at least
+on the managed house
+and maybe a little bit harder on the
+unmanage house if we don't leave ports
+open in our lobby to actually abuse run
+ass so to stop it from being called by
+CMD you need to remove permissions from
+the system 32 exe first bullet point
+super easy now as eric noted there are
+legitimate uses for this from developers
+or sysadmin
+so don't go do this tomorrow 8:00 a.m.
+and just like leave right talk it
+through with your risk management team
+and talk it through with managers second
+you can remove access from app Locker
+for manage hosts this will stop that
+pop-up from coming up where it says like
+who do you want to install Wireshark as
+Lauren do you want to make it Eric no
+but this is also super helpful if you're
+already using app Locker to manage your
+Windows deployment this is a really
+really quick and easy win if you already
+have these profiles built an app Locker
+where you can say Ericsson accountant
+Bill is marketing they never need to do
+run as great easy win also you can do
+registry creat registry key changes on
+manage host so you can remove specific
+key values from the registry and these
+are in the notes so if you want them
+later it's like eight values just
+removing for your manage house
+authentication silos and this is where
+if IT people were in this room they'd be
+telling me Lauren you don't know what
+you're talking about you don't know what
+we need
+stop talking authentication policy silos
+are a way to contain high privileged
+credentials and like crowd rule systems
+so if I am a DA
+I would put a policy saying Lauren is a
+DA you should never be authenticating to
+domain controller except from your
+MacBook if we ever see anything else
+that's wrong you're banned you're fired
+something's happening right but if you
+have people who work for MOU if you have
+85 domain controllers for whatever
+reason or if your das have just been
+allowed to run amok in your environment
+this is going to be a really hard fight
+to fight but it's a really important
+fight to fight as well
+it really helps minimize the threat
+vectors and bring down what people can
+access at the very least you should be
+logging on these things to say I want to
+know when Eric tries to access dc1 from
+a host that matches my standard
+laptop naming convention you don't walk
+in we still want to know about that
+again detection is a must of course to
+stop Erik from coming into my lobby and
+plugging in whatever computer he comes
+in with with no controls on it work base
+network access control is really easy
+and everybody should be doing it
+we don't want people bringing in their
+computer hooking you doing random cube
+and be like well I'm torrenting now
+screw you DMCA it's all this company's
+fault right so make sure you lock down
+what's open
+don't leave hot words available for
+anyone to come in and watch porn or
+torrent or do whatever they want to do
+and finally limit privileged account
+authentication to specific machines this
+kind of falls under the authentication
+silos but if you don't want it to sound
+this scary if you must be like well
+we're limiting your ability to
+authenticate
+thank you so yeah those are those are a
+lot of things that a log protect
+yourselves from bad guys but there were
+ways that an attacker can even
+circumvent something like this right so
+I know Lauren much a lot of things that
+can log right but as far as defend it's
+a little bit harder right so as an
+attacker maybe we just go the easier
+route so one of the first things we
+can't go back to that developer that has
+the VM in order to perform normal work
+functions right well all that traffic is
+getting ready back to that one network
+interface that that the developer has on
+the workstation on our ghost machine so
+what what that guy can do what that
+developer to do is actually create a
+second network card or plug into USB
+network card and actually have that be
+am proud traffic to that one instead so
+so now when you're running traffic from
+your VM it actually goes through this
+other network card
+it doesn't have the controls that your
+hostess so one way to actually kind of
+prevent yourself so number two one
+minutes of ice lower nerdy spot checked
+on this I mean it's pretty hard to do
+that on the network level you can but if
+you bring in a man a device such as
+co-heirs laptop from home it's a little
+bit harder
+the third way I know Lord mentioned a
+little bit about some subnet controls
+than we do mm X ways to defend
+yourselves it gets pork based security
+well there are ways to bypass that
+specifically you know maybe maybe
+there's a printer I don't know so these
+devices they're a little bit dumber they
+don't have a B on there right so maybe
+the attacker just once the printer puts
+his own laptop it changes this MAC
+address and so they am predator down
+let's check out this network right so
+there's ways to bypass these controls
+it's very hard to defend against
+something like this and that's why the
+network layer you need to be logging
+these connections that occurred from
+anomalies right so people that are doing
+things
+that they should be doing it from that's
+the moral position right so really quick
+we talked about actual verbal teaming
+which ironically acronyms out to apt so
+you are welcome but I really want to
+give a huge shout out to Eric and not
+Bryan for helping me come up with these
+17 different test scenarios and I'm
+hoping that you guys find these useful
+as well so these are 17 specific tests
+that we were able to come up with to
+test our detection our defenses and the
+abuse policies of and this is kind of
+what actual purple teaming looks like
+right you think of every possible way
+somebody could abuse this and somebody
+could use this for bad and you go
+through it and you pray that every
+defense that you put in place actually
+works which as eric is shown it doesn't
+so no but you do find a lot of really
+interesting things about this so what is
+learned there's a huge value add for
+having purple teaming going between the
+red and blue team together we're the
+same people Eric and I do the same thing
+we're trying to secure organization we
+just go
+in different ways and there's nothing to
+be like I don't hey Eric I'm not angry
+about this in fact this is hysterical to
+me because it just makes me want to be
+that much better yeah yeah Eric's great
+Eric's just taught me so much in last
+year and hopefully both teams have
+learned from this exercise right we've
+made each other better
+we've improved each other so that the
+low-hanging fruit is gone and now we can
+focus on the really serious [&nbsp;__&nbsp;] that
+might hit us
+Ranas can kind of make you a ninja you
+pretty much blend in with the
+environment you disappear to the trees
+so for blue teamers kind of the takeaway
+here is you need to stop them before
+they can get to this second stage and I
+know a lot of people's heart on this but
+it took 17 tests for us to say oh my god
+we have to stop them before they get on
+our end point we have to stop them
+before they get our credentials because
+look at what they can do and we will
+never see it or we might and it might be
+too late
+also external a purple teaming takes a
+lot of work in collaboration we are very
+very lucky to have a local team in
+Kansas City who are very collaborative
+and also pretty much set Kacie to point
+out
+break2 much but we're pretty awesome
+yeah
+yeah sorry but we're all friends we all
+want to work together and we talk every
+day we try to form these relationships
+and build each other up and that gets
+really hard with remote teams so you
+have to keep at it even in when it sucks
+and even when it's hard and even when
+the pen test team is kicking your ass
+because inevitably they end up doing it
+right blue team's too thankless job but
+you got to keep working at it because
+we're only making each other better and
+maybe one day you want to be a red
+teamer and you need to see what they can
+do and finally there's a lot of hidden
+things going on in your environment you
+have no idea about right and these kinds
+of exercise will help you expose them we
+found things that I was like I'm not
+even looking for run ad like I'm looking
+for run ads if you said I'm finding
+other things so I'm like why like why
+why is this a thing why do we have
+people hanging out with these domain
+admin credentials why do we have these
+registry keys so open like oh why are
+none of our security tools being
+deployed to this specific region right
+like it starts exposing things that
+you're like I never thought about this
+there's no way to trigger it I see you
+but it highlights things that you're
+like there's no good way to check unless
+you go in and you try to be bad and you
+try to do it so really quick I'm gonna
+end on resources but I'm also going to
+pose a few questions to the audience so
+a huge shout out to our colleague Thomas
+Gartner he did a huge amount of work on
+this he couldn't be here tonight because
+he's in Denver for some reason but he
+did a huge amount of work for us I'd
+encourage you to go follow him he's a
+really really smart guy like put a lot
+of work into this just kind of be here
+is that for us obviously like Microsoft
+this is your fault so you better have a
+lot of documentation which they do
+TechNet my friends please read about it
+learn about it also you can take a look
+and learn more about hardening Citrix
+did a really great but really great
+article and CD not kind of talked about
+remote access Trojans that utilize run
+ads to other permissions but before we
+go we talk about actual purple teaming I
+don't really need to talk about anything
+specific but I'm opposed to you my two
+favorite scenarios for getting started
+with actual purple teaming
+so can I get a quick hand raise of how
+many of you are blue teamers or
+self-described blue tapers in the
+audience okay cool so like five so so
+good news if any of you are looking for
+how many so cool fact right they say
+there's like what five million unfilled
+cybersecurity jobs by 2020 or like ten
+million or I don't know everyone keeps
+exaggerating it I'm gonna let you in on
+a little secret
+most of those are in blue team so if
+you're looking for a job tonight go look
+for the people who are hiring for
+incident response forensics sake
+analysts those types of things there's a
+lot of unfilled positions there
+but for actual purple TV for the blue
+teamers here's a question I posed to you
+and you can answer me in person or you
+can answer me on Twitter at John Miller
+it's the beginning our slides given your
+current level of access your current
+knowledge of your organization and if I
+give you 12 hours to be the worst person
+possible what is the worst thing you
+could do to your company okay right so
+that's something to think about because
+somebody else in the world is thinking
+like that what you might not be so
+that's a really good into actionable
+purple teaming and for the red teamers I
+don't know I'm gonna give you an
+unlimited budget of half a million
+dollars to deploy not you bill you don't
+a limited budget million dollars with no
+strings attached to deploy any security
+control
+what do you deploy and why do you deploy
+it
+and that's it something to think about
+something to chew on I think we can open
+[Applause]

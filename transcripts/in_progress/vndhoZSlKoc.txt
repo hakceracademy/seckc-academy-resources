@@ -1,0 +1,771 @@
+it is time to have a panel discussion
+this kind of came about
+because
+i don't know existential discussion
+basically on every slack channel
+there was a question of like what are we
+doing what are the next steps where does
+set kc go from here
+and so i thought it would be a good idea
+for um us to sit down and actually let
+kind of talk that out and and give us
+their thoughts on what
+do we do what does kovid mean to set
+casey and what does after cove would
+mean to say casey
+when it comes down to it i think every
+organization
+in the world is having this exact same
+discussion in this exact same kind of
+introspection
+but i think it's an important thing for
+everybody here to kind of be able to
+talk out and understand
+so with that i will let
+bill and alex and everybody else run
+with it
+so first of all i blame bill
+i think you have to unmute there we go
+there we go i finally got unmuted
+alex are you unmuted too yeah yeah
+cool well um and thanks ben i i
+appreciate
+uh you know you kicking it over to us
+and
+um and actually everything that you've
+done here to get us back
+up and going again um look you know i
+i don't have any any uh you know real
+real answers to this but as as
+i think about set kc and
+i think about the end of the year last
+year you know the beginning of the the
+year this year
+i just i really don't see a
+an immediate time where we're going to
+get back get back to that i
+i think that that we we really need to
+as a group understand that getting 300
+300 of us together
+again in person is not something that's
+that's going to occur
+in in the short term right and and and i
+think as
+as a as a group i think that if if we
+start to
+put that put that check mark in our
+brain it it unlocks
+you know it unlocks some things it then
+it's look
+i'm i'm as social as it comes and you
+know it's it's killing me not spending
+time with y'all
+but we can we can leverage this
+we can leverage this this situation in
+in ways that that will actually
+increase the you know the um
+kind of the set kc experience and i'll
+talk about that a little bit but i kind
+of want to pause and let
+alex maybe say say a few things if have
+you got anything there alex
+yeah um the first thing you said uh nice
+for ben for putting this together i mean
+he
+stepped up i don't know for the for the
+majority of you they weren't reading
+this psychological chat
+he stepped up and was just like
+basically what do we need to do
+what do i need to do you know to get
+this thing going
+and we were like go for it dude and he
+did it and we're here so it's been
+some nice work for that um i mean i
+don't know how much work it was
+for you ben i don't feel like it's a i
+mean stepping up to these things isn't
+it's not a small task but it's one of
+those things that just
+once you start doing it and and work
+towards it it's
+not that bad either so um
+for anybody else i think it's really
+really important that you understand
+that
+that sec kc is a community and it's run
+by volunteers
+so so as as you know as we kick over to
+alex and i you guys need to understand
+that that we don't like alex and and
+alex and
+bill and corey and trent and jurist
+and you know the list goes on and on and
+on and on
+these are while these are these are
+people who help
+build set kc and help volunteer at ckc
+we're not we're not the boss right we're
+not the leaders
+and and and the way that the way that
+set kc comes together it's
+somebody takes takes the the time and
+energy to
+to help push and help organize um
+and help run uh set kc and this is all
+done
+in in the secops channel in slack and
+uh you know and and so if we want this
+community to stand together and
+keep going we're going to need we're
+going to need people to step up to the
+plate
+but yeah so so as i was kind of thinking
+about what i want to talk about
+to you all is what what
+what sec means to me uh and and
+hopefully what it means to you
+is is it's a it's a place where i feel
+like i belong
+right i feel like the sense of community
+that we have
+um and and the sense of belonging and
+the sense of
+of meeting somebody just like me um
+somebody that
+that that i can talk about the problems
+that that i'm facing
+uh will be similar with somebody else
+right
+or somebody that that is working on a
+problem
+that i've never considered before right
+working on a project or
+or uh you know i'd solve something or
+seen something at their workplace that
+that i've never seen before
+and so to me it's it really is crucial
+that that we keep this community right
+and we can and we continue to support it
+um and and really when it when it really
+boils down to it and alex when i
+alex and i were just kind of talking
+about this but when it comes down to it
+i i don't know how you guys are feeling
+but but me personally i
+i need more social interaction right um
+you know i'm the the zoom meetings are
+great and
+um but but right now my zoom meetings
+are
+you know my social interaction is you
+know 100 percent
+work right and and i and i need that i
+need that that
+10 20 30 40 100
+to also include social
+right where where i'm i'm meeting with
+my peers and i'm meeting with
+with um well with you with with you all
+right um and so you know and i don't
+mean to make this the the bill show and
+alex if you
+if you want to jump in here feel free
+but but you all should know that when we
+take a look
+at at where we're at right now
+we we are looking for for a new location
+um we found some good locations right
+but i'm i'm a lot of i'm concerned about
+the viability of commercial real estate
+i'm
+i am not willing to sign contracts i'm
+not willing
+to spend money um and and quite honestly
+even if even if we were to say next
+month in september
+we are having an in-person meeting i i'm
+concerned about the responsibility
+that that is put on on not me but
+like the org as a whole of of bringing
+us all together
+right um and so you know when when i
+think about that
+it it's it's it's con it's it's conflict
+it you know and it's internal conflict
+because i i need social time
+and and and the and you know this is
+great i
+in fact man you're just watching the
+chat run
+you know during the talks i love it man
+i love hearing the questions i love
+hearing the answers and
+and those kind of things and i think
+it's i think it's important um
+and so you know i was i was talking to a
+mentor of mine earlier this morning
+and you know as he was blah blah a wee
+away you know i i realized that the
+requirement of being in person
+is is not a requirement um
+you know we we can do stuff virtually at
+any time
+and it doesn't have to be an official
+anything um
+and i was i'm trying to get him to smile
+and he's not even smiling he's
+there he goes yeah so jurist and i were
+talking earlier and
+you know if you guys don't if you guys
+haven't had a chance to just sit and
+chat with that guy
+one-on-one he's brilliant he's
+absolutely brilliant um
+you know and so so i i was thinking
+about it um you know if we start
+if we start taking away the requirement
+of being in person
+okay so if if all of a sudden that that
+that
+is not a variable that that we have to
+worry about um
+think about everything that goes into
+place it to get sec
+ac running monthly right there is so
+much
+there's so much in the background you
+look at what the audio team does and
+lugging equipment around um you you know
+all of the scheduling making sure that
+people are there
+making sure that the venue's there
+making sure that food is there making
+sure drink is there
+making sure that that people get home
+safe making you know there's there's all
+these requirements that we don't
+that we don't actually have to have
+right now
+um and and so i think that i think that
+if if we were to start in and move to
+keeping the community strong making sure
+that people are
+engaging making sure that we still are
+having big
+big meetings like this but but also
+encourage the the smaller
+you know the smaller groups to meet and
+maybe meet in person you know like what
+whatever
+whatever that means but what in many
+respects where we're at right now the
+shit's
+easier right these are my words coming
+out of
+my mouth is that we don't have to lug
+stuff to the bar
+we don't have to drive home like if you
+think about workshops how
+think about hardware hacking workshops
+think about network security
+workshops think about uh talks where
+we have to be interacting with a command
+line these are my words
+coming out of my mouth jairus these are
+not yours words at all
+these are mine uh yeah but but think
+about that right so so it
+it uh it opens things up right and we
+can we can
+you know we can we can change with this
+but but i think what it really comes
+back to
+and and before i close is that i really
+do
+i really feel strongly about the the
+concept of community
+and and and social hour and i really
+want to make sure that that we
+keep this up right whatever that looks
+like but
+it's going to take it's going to take
+effort and it's going to take volunteer
+like
+today wouldn't happen without ben right
+there and don't get me wrong there's a
+there's a lot of other people that are
+doing stuff to to make this
+to make this occur but but ben stood up
+and said
+hey we're going to have a meeting in
+august i guess
+i volunteered to run the show and and
+and so here we are
+um everybody has that capability uh
+there is no boss there is no
+boss of set kc the the secops channel is
+is what makes
+things happen and um so i'm gonna i'm
+gonna stop talking
+throw it back to alex but also i wanna
+hear if there's any questions if anybody
+has anything they want to mention um
+i don't have much else to add um just
+i guess personally i'm perfectly okay
+without the social time i'm good here
+but the uh it's it's still good to get
+together i still i still like it but
+i'm not um i'm i'm i feel like
+i don't know i mean just like what
+you're saying and we're our group is
+built for this like we're
+if anyone can survive remotely and
+operate remotely it's us i mean
+and benefit from it so we can also
+test new types of meeting formats i
+thought the ctf
+in like what march april april i think
+was one of our
+most successful i thought it was really
+successful it was great
+so there's events like that we can just
+have social time hang out drink beer
+show stuff we're working on whatever
+um i don't know there's a lot of bounty
+hunting or whatever whatever
+types of things we want to do um would
+uh
+would be great so i think you know if
+you have an idea or you want to kind of
+host a
+mini meeting or a meeting or something
+like that feel free to um
+jump into the group and um uh
+and let us know so i think um
+yeah i i think we'll i mean i'm not
+stressed out about having to do this but
+at the same time i think we'll we'll get
+some good experience
+um to um
+with some new formats and maybe learn
+some stuff that works even better than
+in person meeting so
+and from there i kind of want to just
+open it up if anybody has any any
+you know it doesn't have to be a q it
+can be an a i saw that
+um i think that's that's pretty clever
+um no no asses
+but if you've got answers please you
+know show them um
+you know just how do you guys feel about
+that how are you guys you know how's
+everybody doing mentally and
+and you know is this a good break or you
+know how kind of how you feeling about
+it
+well right so you and i obviously talked
+a little bit about this this morning but
+coming off of defcon this past weekend i
+know a lot
+you know some people got a chance to
+take part in that and maybe a lot of
+people that were like well
+you know i can't go drink news on
+somebody else's tab so i'm going to mow
+the yard and it'll be fine and
+whatever.com
+that's cool it ended up being way way
+more fun and um really a
+solid analog to being out there in
+person than i expected it to be going in
+right you know i'm like well okay people
+are going to watch some youtube videos
+at home kind of whatever and then
+they're going to sit and chat
+that's the kind of we always do but
+it ended up being a lot cooler
+than i really expected and you know
+coming out of that and thinking about
+you know it was one of one of the things
+that we had thought about why are we
+doing this all kind of condensed
+when we could spread this out maybe a
+little bit the spreading it out
+uh i think works fairly well for set kc
+right you know
+if you want to do a workshop yeah but
+your workshop doesn't really fit into 90
+minutes where we got to rotate around
+and you gotta
+we're you know it doesn't really work
+where you're gonna sit in the dark
+okay you know take three hours you know
+put it on the schedule
+um you know eventually we'll get the
+infrastructure built up so we can kind
+of consult with you guys so you can help
+like get your production value up and
+get something out on
+zoom or twitch or youtube or however you
+decide to do that
+and the other thing i think is really
+neat about this is you know
+from the closing ceremonies for defcon
+they show that they had
+people participating on the discord
+server from
+six of the seven continents right which
+first of all one thing that we need to
+do is figure out how to set up a proxy
+in antarctica so that we can beat the
+continent but um
+the international space station i mean i
+mean people really dig
+a lot of the things we do and we have an
+incredible reputation among the speakers
+i talked to like patrick wardle and sean
+metcalf they're like oh yeah i've heard
+that set casey's up to really some
+really cool
+well now we can we can push that out to
+the entire world
+right um and even just locally i know a
+lot of people that would love to come
+but because family obligations
+or you know just social anxiety they
+don't like
+cramming into a dark bar with crazy loud
+techno but this is a great way for us to
+kind of bring people into this
+so like bill said at the beginning you
+know i think once we go ahead
+and we embrace the fact that we're not
+getting together
+anytime soon for a myriad of different
+reasons and we start figuring out what
+this thing
+can be we've got a lot of really cool
+yeah and the the only thing i'll add
+this and anybody that's
+you know heard me matt you know yap my
+mouth is has already heard this but
+i i know where you're i know how you
+feel i know that you've you've been
+working on something but
+you you don't think it's cool enough to
+show you don't think it's good enough to
+present on
+and i'm telling you i'm looking at you
+it is right and especially this
+community this com
+the the sec kc community is very very
+open to talk
+to be talking about things that that you
+personally don't feel are conference
+worthy
+right i have talked i personally have
+talked at sec kc about how many cert
+root certificates are installed on my
+android phone
+that was the whole talk that was the
+whole thing right well
+you know like i stretched out to 45
+minutes but but the the tldr was you
+know
+there's a lot of search on your phone
+right um and that's not a conference
+worthy talk but
+you know it it's something that as a
+community
+interesting right um and so we are
+looking for people to talk we are
+working
+looking for workshops the the pie hole
+uh one that we just went through perfect
+example right that was great
+but that would have been a lot more
+difficult
+you know in the bar right i love it
+i you know i wish i was in the bar with
+your pie hole
+i uh if i may i want to tack on here
+this is my first meeting
+um and i i i was invited by
+somebody who taught me a lot of what i
+know about infosec and i'm still very
+very new
+um but i i've never been more excited
+to volunteer for a community
+cool um it's it's like instantly obvious
+to me that this
+is exactly the community that i should
+be investing time in right now
+um i i completely agree with you guys
+saying that you can increase
+the value that everybody gets from set
+casey
+in this format that doesn't mean losing
+the other format
+that just means we adapt faster right
+that's literally all that means because
+everyone has to do this right now like
+you said at the beginning
+everyone is asking the same question and
+the fact that we're in such a strong
+position uh to make that switch
+and to be in this format i mean i i
+wouldn't have been here if you guys had
+been meeting in person tonight
+i would not have gone to that there is
+absolutely no way i would have gone out
+of my house
+to an event like that today but i still
+got to come to
+today i still got to be introduced to
+you all and i'm so excited to
+meet with you further and to volunteer
+in the community um
+so i i think you guys are headed in a
+maybe a much better direction than you
+even realized
+going into this uh and and that's all
+i've got on that but like
+thank you for inviting me thank you for
+hosting this
+and thanks for speaking up i think
+that's awesome and and that i mean that
+that's
+that's i hope you know that that's how
+much like how much that means to me
+because that's
+that's something that we've worked on
+for years right to make sure that we
+have the right
+community feel right where people feel
+welcomed and
+and feel okay to share and okay to be
+wrong and
+okay to call someone out or i guess we
+don't call anyone out but
+but you know what i mean like we're
+totally men yeah no i totally
+feel it that's the thing i can feel it
+like yeah
+i'm right on board for sure cool well
+thanks for saying that i appreciate that
+you're welcome
+all right everybody's tired of hearing
+bill talk and they want to get back to
+music
+i can feel it hey guys that's going to
+weigh in real quick i was going to say
+um first of all thank you for putting
+set casey back on again
+virtual is awesome you guys know
+most of you know been a founder making
+remember for a long time but i just want
+to say that
+um it's interesting to see while i
+definitely like the the social vibe
+of being in person and i would love to
+get back to that um there are a lot of
+other local chapters
+that are kind of feeling the same thing
+so being heavily involved in isd squared
+a lot of the same conversations are
+happening and you know there's some
+virtual things going on there too but
+it's the same vibe like everybody would
+like to get back together
+so it's just really cool and i want to
+say thanks again to everybody who has
+put the virtual thing on and and i think
+we're looking um in the other chapters
+that i've been kind of participating in
+to
+not only try to figure out how to get
+back in person but to also keep the
+virtual presence going because there's a
+lot of benefit to that there's a lot of
+cool things that we're seeing
+so there's pros and cons of both but i
+think it'd be awesome to be able to keep
+both going in some context so i'm very
+excited to hear the direction we're
+thanks donnie it's nice seeing you again
+all right well with that let's kick it
+back off um
+everybody it was really nice seeing and
+chatting with you guys tonight i'm i
+feel
+feeling the love i'm glad to be back
+okay bill but you got to do something
+about that lag man everybody else's
+audio and visual
+is synced up but not yours mine's
+perfect
+and everyone else is wrong and i have a
+rifle
+and that guy has 50 000 rounds of
+well i want to i wanted to say one one
+thing real quick and
+it's we one of the things we did early
+on was we did five minute talks on a
+single tool
+if you're not confident talking for 45
+minutes or 30 minutes
+just submit for five talk about one
+thing do real quick and be done
+i took a five minute talk and presented
+it twice
+at b-sides las vegas and defcon by
+taking that
+and taking it and extrapolating it out
+to uh
+about a dozen tools on the windows
+platform that could do a lot of hacking
+things that are just built in
+you can do the same thing you can start
+with five minutes it's a great place to
+go
+and start working out from there it's
+not a lot of time
+i'm going to probably spend that much
+time talking tonight
+and it's not that much time to really
+talk
+you can do it it and then you can go and
+have
+like six drinks if you need to have them
+afterwards don't drink before because
+your your my it it's a great opportunity
+especially now
+and you don't you can present totally in
+slides and not have to present your face
+you don't have to be on camera you don't
+have to do all those things any of those
+things that make you uncomfortable
+presenting in person you get the chance
+to invent yourself
+right now on the internet in a very
+specific way and presents
+about something that you're really proud
+about don't
+don't feel limited right now this is a
+great opportunity to invent
+something for yourself and be able to
+move forward
+i've had a couple of people that i've
+been
+mentoring at my employer
+who have really flourished in this
+environment because they get very
+flustered
+because both of them are about five foot
+three
+each and they're in
+the i know one of the customers the
+senior security guy there is six foot
+eight
+and likes to physically intimidate
+people
+the five foot three guy couldn't get
+anything done with this guy
+until this time because then they then
+they were on an even set
+there's no way you can intimidate
+somebody over
+zoom because they can get you can mute
+them you can turn them off
+you can kick them off a session there's
+things they can't do
+in that in that session that by being
+virtual you get an opportunity to invent
+yourself in a new way
+so do it step up there take this
+opportunity to step
+out and do something you haven't done
+before
+well and for that matter if you don't
+even want to do it live you don't have
+to do it live
+give us a recording we'll stream it out
+we'll kind of we'll kind of do it like
+we did for for not vegas
+so the sky all of the
+all of the ways that we think about
+presenting and creating content for set
+kc
+are really kind of up in the air for
+reconsideration and it's
+actually if i can just drop something in
+here because i just noticed something in
+the chat
+but servo said it that this is his last
+set kc meeting
+um it doesn't have to be with this
+format and that's something i think
+people need to realize
+i'm actually based out of topeka making
+your meetings
+is literally like get off work roll as
+fast as possible to get up there in time
+and i do it when i can but this format
+has given me like direct
+access to you guys which is awesome
+that's a really good point but
+something you're missing there is uh
+this
+the reason this is serbo's last meeting
+was not his choice it was one
+what did you do serbo to get kicked out
+of here
+something special i had to do with
+uh toner also
+robert lewis you're missing the point
+set kc is a really good reason to leave
+excuses four o'clock start making
+excuses
+yes or if you're in iowa 12 o'clock is
+start making excuses hours
+see even better even better what do you
+guys wish you were in time zone in iowa
+good lord all the way up there in iowa
+really
+only one o'clock really i mean it's not
+it's not that far of a drive
+one o'clock it's 3 30 for me i thought
+it was just because you guys got up at
+like
+you know super early to like let the
+cows out
+and like milk the cows right now we're
+trying to keep the cows in
+since there's no power to power the
+electric fence to keep their asses in
+no okay there's no uh no fence without
+electricity that's gonna keep a
+thousand pound animal where you want it
+or more a thousand pounds so tiny
+i was gonna say yeah that's the cavs
+fourteen hundred
+the cows will stay because they think
+it's got power
+it's the young ones who don't know yet
+that that is supposed to stop them that
+will go through a fence when it's down
+those little hackers
+yeah right
+thinking they can do whatever they want
+because they don't know that they can't
+test the system they're like
+velociraptors they test the fences
+systematically looking for weaknesses
+there you go red teamers all right so
+exactly so we're going to take a break
+we're going to take about 10 minutes
+here
+and then get around to doing firmware
+why is it firm and where is it

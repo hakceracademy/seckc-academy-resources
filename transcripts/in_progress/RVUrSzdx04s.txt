@@ -1,0 +1,262 @@
+all right I'm gonna turn off by saying
+I'm G to try to make this really really
+quick because I think I've actually got
+more 15 minutes so uh first show a hands
+anybody here from
+op great means I'm not being judged by
+for all right so John strand was here
+last month who was here for
+that awesome so he reiterated a good
+point users click everything right so
+you send them a link go click it even if
+the link says don't click it right so a
+real common event that I see up at often
+as part of the thread analyst team is uh
+we see a lot of malicious girls a lot of
+malicious IPS and you know it could be
+two different ways here it could be
+either involuntary like there a script
+hitting on a page or the user actually
+goes to a site and gets their computer
+up so as Security Professionals you know
+you might work work with a security
+device that says you know oh this is
+malicious we're going to block it but it
+might not tell you the whole story so it
+might just go oh this is
+malicious that's great you know you need
+to know why it's malicious uh what would
+have happened if it if it didn't block
+it
+so let's see so what happens if you uh
+if you don't have access to you know
+real expensive security devices if you
+don't have you know paid security fees
+how do you find out what's malicious and
+what's not for yourself uh I'm going to
+take you through an event that we
+actually triaged up at Optive uh on
+April 11th and for a malicious Earl and
+we're going to actually dig into that
+and show you what happened and what
+would have happened if the user had gone
+to
+that so A client's first of
+ours po this signature right here tr.
+hl.
+R.C uh that was all the information they
+gave us it gave us this uh this Earl
+along with it but it didn't tell us
+where it was redirecting to so we
+figured okay maybe it's like an admin
+panel or something we're not really sure
+what um butki couldn't tell us where it
+was
+redirecting and in this instance it did
+block it so we're just going to go on
+the assumption that what would have
+happened had these are been able to
+successfully access the page what might
+have happened to their computer what
+might have happened to the network
+[Music]
+so we're going to throw this through who
+is and we get this really really
+long you know who is entry it's you know
+registered with this one dude Honduras
+um it's hosted in proo Utah and there's
+a screenshot of the side looks like some
+kind of financial site maybe Insurance
+something I don't know I spent four
+years in Spanish in high school I still
+so so go and check
+a few different sites out there for
+reputation um total didn't pick up
+anything ibmx Force didn't pick up
+anything Simon picked up nothing uh Earl
+void goes out and it will be that's a
+handy little side it'll go out and check
+a whole bunch of Blacklist for you and
+it got nothing um fourth point which
+used to be web sense fourth Point um it
+saw the redirect like first he did but
+it couldn't tell us where it was
+redirected to
+again and my web trust stuff there yeah
+don't ever trust
+them I can answer that question after
+this but just
+saying so what we're going to do is
+we're going to throw that ear into a
+wonderful little site called an HTTP
+viewer there's other ones out there like
+this um this is just the one I was using
+and what this will do is you can put the
+in there tell it to get and it will go
+and P the code of the page and show it
+to you so
+here's our wonderful output of that PHP
+file and yeah kind of looks a little bit
+weird right I don't see anything there
+that
+would you know look in place on a on a
+financial site
+so it's kind of strange there's a whole
+bunch of this random text and then you
+have this little JavaScript down here at
+the
+bottom and that JavaScript
+looks like
+that something you'll notice is you have
+this variable repeated about a dozen
+times in there you've got an A equals
+number up here and then you have this
+long string of comma separated
+stuff and there's something else we
+noticed about this
+particular PHP script on this
+page whenever you refresh the HTTP
+viewer all of that random text that you
+saw would
+change and all of the
+variables would change all of the
+numbers in the comma separated string
+would
+change and this little a number up here
+would
+change
+so that was kind of weird and then after
+a little bit more um a little bit more
+digging a little bit more research
+coworker M figured out that little a
+number might be an offset for this whole
+JavaScript
+function now what is that what exactly
+does that mean an off means you could
+you know apply either positive or
+negative to any of the numbers in the
+string and you might end up with another
+string that corresponds to something so
+but that doesn't explain why it's all
+randomly
+generated so real quick
+math uh we'll just go we'll just do
+subtraction on the uh on the offset
+anybody 119 okay uh 15 4 -
+49
+105 okay 207 - 88 on second
+one
+119 193 - 88
+pattern didn't matter what these
+were the random generation could give us
+anything but the output was going to be
+the same from that
+function
+so we're going to go over to Excel for a
+second
+louder so I have a set of those numbers
+from one of the refresh it just happened
+to have a 19 offset for that
+set and let's see what happens when we
+apply that
+offset there's our new set
+right
+so given that it's a PHP script I mean
+obviously works in
+HTML um what does html need to do need
+to redirect it needs some kind of a text
+link you know like a hre equals you know
+then your Earl that it's going to link
+to so I kind of figured okay so we have
+this set of numbers after applying the
+offset isn't that kind of in the range
+of
+oh
+so so what happens we uh we take that
+oh so there's a nice little office gated
+command
+location.
+Russian it's got to be good had to be
+yeah so if we throw that through all of
+our reputation sites just like before
+even though it didn't pick up the
+initial site that had the redirect on it
+some of our other sites did pick up so
+Simon had uh one entry its timeline the
+alen VA pick it up a while back uh Earl
+boy picked it up four times and then
+virus picked it up four times and it's
+basically what that site boiled down to
+is it's some kind of shady Pharmacy site
+that's hosted over in Russia so
+obviously you wouldn't want your users
+going there if you're on an Enterprise
+Network because I don't know for sure if
+it was dropping malare or not but I'd
+rather not find out should you grab the
+who is uh for that one who registered
+with the email all that there actually
+was not a whole lot of information on
+that one uh it just said like private
+user and there was like maybe eight
+lines in the who are you able to P it on
+any of that
+uh didn't really try because in I mean
+Cas firsty did block it in this instance
+we were just going down that rap hole to
+see if we can figure out where it was
+redirecting to because it wasn't telling
+us so some of the tools we used on that
+one uh Dom main tools is a good one forz
+that gives you a lot of information uh
+IP void ear void are great because they
+will check a whole bunch of lists for
+you so if you're sitting at home and
+maybe your antivirus picks up something
+uh like an IP tried to connect back to
+your computer you can and it logs that
+you can take that IP throw it into IP
+void to see where it's coming from if
+it's a known blacklisted IP stuff like
+that um Simon's also good for that ibmx
+force is usually pretty good it just
+didn't have any results for this for
+this instance um fireus total if you
+ever got a that you're wondering about
+throw it through
+there and the HTP viewer also really
+good if you have anything for uh
+anything that you think is malicious you
+don't want to actually run it on your
+computer you can actually view the code
+and you don't have to run it on your
+computer own your own your own
+computer so that's pretty
+much what we do up at Optive um we get
+all these ver from clients and then we
+go through and for instances like this
+we'll go through a triage and tell the
+client hey you know this is happening on
+your network uh this is how you resolve
+it we'll give them research like
+this which one picked up the redirect uh
+kasperski and force point which used to
+be webss so you can assume that they
+were able
+to they they picked up that the page was
+redirecting but not where it was going
+to because they saw that they saw the
+JavaScript but then the fact that the
+page redirected the Earl was offis
+scating so it couldn't tell us the Earl
+changed good St else has
+running earlier orun
+the say that again how was the
+Javas JavaScript doing
+thep the uh the JavaScript was part of
+the PHP file that would have been called
+when you loaded the page uh I'm pretty
+sure that PHP file had something do it
+like maybe an admin panel or something
+because I did have an administrator in
+the

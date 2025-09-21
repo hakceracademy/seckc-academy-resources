@@ -1,0 +1,1481 @@
+all right and we are back
+so it is time to find out
+what is the why it is firm and where it
+is
+so without further ado and i think this
+might be the first thing we've done the
+entire night on
+schedule i'm going to turn it over so
+all right so that last one was marcel
+marceau's new classic
+walking in the wind
+you are unmuted but we're not hearing
+you
+perhaps muted on something else other
+it is the legend of the hardware mute
+or perhaps some other something that
+could be troubleshooting
+oh incredibly big mute that that would
+exacerbate it right
+because if it's a death mute then it's
+like we're not helping
+we'll get there no worries we can come
+could be a firmware issue could be
+hold on i'm just going to look at my
+laptop
+is there anyone technical here that can
+help
+[&nbsp;__&nbsp;] that noise did you reboot three
+times
+if only there were a phone number that
+you could dial in and talk
+we hear you maybe yeah you have to
+reboot five times if it's linux or six
+times if it's ubuntu
+uh it's debian close enough uh
+wow yesterday i had to reboot my furnace
+uh so
+how do i uh actually set this thing to
+go
+oh i like the implication that debian is
+not linux
+screen
+okay so hold on uh
+present
+i can just see her creep in the
+yeah okay i guess it's not going to
+behave so
+firmware of 101 what is firmware why is
+it firm
+where is it answers for answers for
+these questions and more
+now uh so what is firmware
+uh low-level shitty software that deals
+with hardware [&nbsp;__&nbsp;] at least that's the
+original definition
+i totally did not look that up uh
+why is it firm beats me these days
+calling it permanent or read only is
+like saying you have a highly secure
+building but the master pass code is
+sticking on to the front door
+okay so now i'll do a bit more of the
+technical detail
+uh so the soic flash chip this is the
+common layout
+and since we had you know raspberry pi
+talk and there was supposed to be
+another
+uh i put on a diagram of the raspberry
+pi
+two and threes uh gpio pins because you
+can use raspberry pi
+i would not recommend it uh
+core boot is open source firmware used
+in almost all chromebooks and various
+linux focused laptops such as purism
+leap from laptops
+does minimal hardware in it before
+handing off to a payload it can range
+from
+bios or efi all the way to memtest or
+grub 2.
+we we've already heard grub 2 about grub
+2 tonight
+uh and intel management engine is like
+intel telling you to go [&nbsp;__&nbsp;] yourself
+uh it has complete system access can
+intercept
+everything and monitor everything
+and it's so closed off that we don't
+know what the hell is going on
+uh we can use me cleaner
+uh to strip out most of functionality or
+even flip a hidden nsa disabled bit
+but it doesn't really do a complete
+removal or
+disabling uh however
+or older systems core to era you can
+completely remove it if it's even
+present
+now hopefully this is going to work well
+but i want to do a live demo
+this is going to as you can already tell
+things are not going to go too terribly
+well
+yeah let me uh switch over to my camera
+if someone can
+prioritize my camera can i prioritize my
+camera
+i suspect you need to turn your camera
+on first
+i'll just use uh yeah
+there's an option to turn your camera on
+lower left next to the mute button
+i need to switch over to my uh switch my
+system
+all credit to my dad for saving the day
+let's see if
+i got you kid
+add this to uh shot number one or two or
+however many times i've already [&nbsp;__&nbsp;]
+up today
+shout out highland space
+uh
+all right now now
+i i apologize
+but we're going to be taking this laptop
+here
+we're going to be installing core boot
+onto it let's see if we actually get
+to that let me just get my mics
+not my mic uh web camera set up here
+so i
+don't this might be an example of the
+talk to be better in person
+yeah this is definitely a better
+in-person talk
+but so first and foremost
+i think this is a great online talk
+because otherwise you'd be setting up
+some sort of camera
+to focus down on it and trying to
+project it at the same time it'd be a
+huge pain so
+no this is a great format yeah it's cool
+very cool and like i said i absolutely
+apologize
+so if anyone has any questions they want
+to throw at me please
+go wide ahead uh can can you just give
+like a
+a quick overview of what um what it is
+to install core boot because it seems
+like you have to
+physically interface with the
+motherboard oh yeah so
+hold on first foremost we're going to
+prove that i am modifying the firmware
+for real
+so first and foremost we're
+if it's going to cooperate yep so this
+is stock firmware
+it plain and simple uh what we're doing
+is
+uh
+going to disassemble the motherboard i'm
+almost
+done with okay i have hit
+all the screws
+so the f spi flash ship that i showed in
+my
+presentation uh
+this here uh
+we need to take a clip such as
+this and we need to uh
+physically attach this clip because this
+i had this all rehearsed out dude that
+that's sick once again i never thought
+would have thought to like
+i don't know i i guess hardware hacking
+is a new concept for me
+this is [&nbsp;__&nbsp;] cool already thanks mate
+you need all the encouragement i need to
+get
+okay let's so if i can
+okay so now i'm going to attempt to
+[Music]
+okay so now that we got the clip
+on first we need to do uh
+so
+this command flash from is our
+pretty much our utility to flash
+firmware
+um so the p ch 341a
+spi uh that's specifying the flasher you
+can there's many different kinds of
+flashers out there
+um i know while back we were talking
+about the flipper zero the
+kickstarter uh ponygachi
+like thing uh now also can you
+work as a spi flasher for example you
+can also use the raspberry pi as spi
+interface after enabling it
+there's a lot of different options for
+this and then
+r is we're reading so we need to take
+two backups because
+since we're using a physical interface
+we want to
+verify that our flasher is actually
+properly attached
+so
+uh yeah it takes a few tries to clip it
+on correctly
+but once you have it clipped on
+oh i think i got it
+nope
+it takes a few tries
+this is wonderful
+um and also why is my
+nope there we go and i forget that we
+also have to include chip definition
+uh this this is based off the chips that
+are
+that is that you're actually flashing to
+so
+this ship in particular is the mx-25l
+six 6405 d
+and now we're going to attempt to read
+the flash
+so this may take a little while so
+anyone else have any more questions to
+ask
+yeah i have a question uh can you tell
+us about the uh the hardware that you're
+using that you have attached to your
+clip
+oh yeah so um
+it's uh ch341a it's
+you attach the
+it's a usb flasher you attach it to the
+device that you're using the flash
+and you attach the clip to the device
+you're flashing um
+it flashes over to spi interface so
+i believe it's a serial peripheral
+interface
+um
+[Music]
+essentially
+i can't think of the word i was trying
+yeah it's a usb device essentially
+now sorry to interrupt i have a question
+about the you know the
+the chip that you're flashing you showed
+it was
+you know on the motherboard uh you know
+a laptop motherboard is this the
+the bios chip or what what are you
+actually attached to
+yes so it is the bios chip actually we
+are straight up
+and just from what i'm seeing here it
+looks like what you're doing is you're
+you're reading a copy of the current
+code that exists on that chip correct
+yep
+because uh we will be taking it and
+hopefully uh getting it
+uh we're gonna be using our dumps
+because we have to grab some stuff from
+the dumps
+cool
+very cool if uh i was looking at my
+motherboard and i wanted to find the
+bios chip how would i identify it just
+by setting up so i knew i'd equipped it
+so if what the easiest way is if you
+have a clip in hand
+uh the clip will clip onto uh it'll be
+uh eight eight pin chip
+generally sometimes it's 16 pin
+sometimes there's no pins exposed and
+you're gonna have to
+but
+so let me finish
+mainly it's identifying that specific
+chip
+there's going to be so many of them that
+it's j sometimes you have to either look
+at the schematic if you can find a
+schematic online
+or just trial and error hopefully they
+cool thank you much
+all right so then looks like i have a
+friend here that's uh
+also talking about stuff and yes the bus
+x220backup.rom x220
+backup two dot rom
+since there's no difference we will
+assume that hopefully it's good
+you can always check for uh
+you could do a view in the hex editor
+see to make sure it's not like all zeros
+but let me def
+one more thing because i have a
+known clean backup on here
+okay so
+we're not going to worry about that
+we're just going to rm
+so
+so we're now going to get clone the
+and keep shooting with questions that
+want to make sure you all have a grasp
+uh
+does uh does core boot interface well
+with um
+uh like mostly just like personal
+computers or would you be able to flash
+it onto like uh
+like a server motherboard oh uh
+that's a really good question actually
+uh
+so with that one of the things i
+would i do know is that there's plenty
+of server motherboards that are
+supported by core boot
+uh there's an all another project done
+by
+uh what's his name
+but it's called linux boot essentially
+it's
+preserving most efi environment if i
+understand it correctly
+but is that the driver executable
+uh i can't remember the ac the
+dxc which essentially is your uefi
+your primary uefi uh environment
+it it replaces that with a just straight
+up linux
+so power your system on
+is linux um i believe also something
+dropped in the
+sec kc uh slack
+sh there should be an automated poll
+but you guys should pick out your
+payload i summarized each of the
+payloads because i knew that i was going
+to forget about it
+uh in the poll but
+so and i'm gonna probably be cutting
+that off here
+soon let me pull up the
+slack
+so cd
+core boot
+i'm typing at a very weird angle here i
+apologize
+uh so first thing you make the cross
+compiler
+which essentially uh make sure that
+everyone's using the same
+uh tool chain because
+each different distribution is going to
+have their own different build of gcc
+and various other utilities so to rule
+out the error
+uh rule out any problems because
+there are there have been problems in
+the past before they really implemented
+cross gcc
+uh
+we now have a universal uh tool chain
+and you just need to make sure you
+select your uh
+uh architecture that we're targeting
+we're going to do i386 because
+on this on at least most x86 systems
+um as i have noticed i386
+across gcc will produce more stable
+results
+and that's been widely agreed upon in
+the
+core boot community as far as i
+understand
+uh i could be absolutely wrong on that
+uh hold on so we want to use four cpus
+this this this part could actually take
+a little while because you are compiling
+you know
+your compilers so
+once again another great time for more
+questions
+well literally this um
+what would you think or what is the
+reason why you would want to flash your
+firmware what which
+i don't want to say wrong but what's
+better
+with flash firmware versus say stock
+um it's actually mostly up to opinion
+but with corbett you can do
+many many things there's a project
+another project i contribute to
+uh called heads essentially does uh
+early boot up uh attestation of
+the system state so this is so you can
+check to make sure your system's in all
+yep uh that's another thing furthermore
+manufacturers tend to abandon their
+systems very quickly especially on
+one of the things that i'd say
+annoys me the most is that manufacturer
+releases their laptops and doesn't
+and uh daniel in the chat is also
+correct with that
+boot times can get very fast i remember
+a while back when i was on grub from
+pressing the power button to getting to
+uh gdm3 which is login screen on stock
+ubuntu
+what if you have a system that that's
+bios locked
+excuse me like a password on the bios
+can you
+bypass it this way yep you can do that
+as well
+uh because it could completely uh
+the core but doesn't do any uh bias
+passwords
+really and each vendor does their own
+implementation bios passwords
+this system stores it in a dedicated
+ship
+while the system that i'm actually doing
+all the
+you know live demonstration work on
+stores as a cmos variable or a
+nvram variable and would be cleared
+are there are there any vulnerabilities
+that you can think of
+uh that a penetration tester would be
+able to introduce to a system
+there there's plenty of ways um thunder
+spy
+but there's already plenty
+much better methods because sure
+anti-evil made exists
+you could do well not anti-evil me uh
+evil made attacks exist
+and of course you can counter that with
+a lot of anti-evil made measures in
+various different firmwares or operating
+systems such as cubes and heads
+but ultimately
+yes you can definitely do some really
+fun [&nbsp;__&nbsp;] with it
+awesome thank you you mentioned heads
+earlier is the firmware that you're
+working on what's between heads and
+towels
+uh good question uh tails is a
+complete amnesiac uh
+distro while
+heads is essentially
+you're putting it linux kernel in it rd
+in your firmware
+and having it do everything it can to
+securely
+protect your system and make sure you
+that's another thing you can actually do
+with core boot uh you can actually
+directly embed a linux kernel and edit
+ram fs
+into the sbi flash through your bios
+chip
+so as soon as your hardware's done in it
+done doing basic init
+from core boot he has it over to the
+payload which is literally linux
+granted i wouldn't recommend using that
+for your main system because
+let's see if i missed any uh thing in
+um
+oh so from
+turk in the zoom chat i have a dell r710
+that crashes
+all the time there's a bio uefi issue
+could this fix it
+um essentially
+just completely erases this this your
+uefi and bios are gone
+it's gonna be replaced with whatever
+core boots providing
+so it could potentially fix it
+it could potentially not depending if
+it's an even further issue
+but if it's just strictly a bios or ufi
+issue it could potentially fix it yes
+so there are some uh i'm starting to see
+some systems come out with uh
+these uh spi flash chips on them
+that have a security region on them it's
+small like a 4k
+otp rom section
+i'm wondering if you've run into those
+yet and what kind of uh
+i have actually personally run into them
+uh
+one thing that i another thing that's
+been a
+bit big roadblock that's more that these
+systems probably have
+as well which prevents them from ever
+getting you know custom firmware
+for in the first place is intel boot
+guard
+pretty much negates any ability for us
+to
+flash uh corby or another non-stock
+but i have not seen like the otp the 4k
+otp systems in the wild yet
+are there analogs to the intel boot card
+with
+for example uh amd or other uh
+non-architectures
+uh yes so amd has
+psp and that does a whole slew of other
+things
+uh i'm not really well versed on amd i
+i don't full disclosure i have never
+touched an amd system
+really very well a modern amd system
+with psp
+i should say but amd does have it
+a similar thing in place although
+there's work at google going on because
+they're wanting to put
+get ryzen chromebooks out chromebooks
+so they're putting work they're working
+with amd to get core boot up and running
+on these ryzen systems
+which is another great recommendation if
+you ever want to try this stuff out a
+chromebook's your best bet
+modern system already runs corby out of
+the box in a sense
+it's a bit more locked down but
+it uh that's another
+way to go if you ever want to experiment
+with this by the way
+but and then on to like arm uh arm has
+trust zone
+that's a another nightmare
+but there's probably many other
+architectures i'm not thinking of but
+oh and ibm power i heard this before we
+went live
+uh someone talked about ibm power um
+ibm power does not actually have any of
+this in place especially uh anything
+that was
+after open power was formed which is an
+organization
+that uh ibm and i believe if
+i can't remember any other entities
+you can definitely flash custom firmware
+on there
+corbett's not ported to uh power yet
+oh i see another question uh google
+adopted core boot early
+does it work on arm two uh
+from john prunette and uh zoom chat
+yes um there's only one arm chromebook
+zone link mr chromebox uh he makes
+pre-builds for a
+different core chromebook
+makes tiana core and c bios variants
+unlocks not unlocks firmwares
+i i'm flaking out again uh
+so he makes tiana
+bios firmware for chromebooks pre-built
+so you can easily use his script to
+flash them
+totally recommend by the way i've used
+it on my own chromebook
+uh way back in the day
+so you said there was one chromebook
+that didn't
+oh there's actually that there's
+actually four
+the first three chromebooks uh
+which are all in intel atom based if i
+recall
+the first three chromebooks used inside
+htc which is a modified version of
+insight h2o which is a prominent uh
+and then there's also the first samsung
+arm chromebook
+which exclusive uses u-boot which is
+also available as a corby payload by the
+way
+well that's because it's a live
+presentation and during live
+presentations
+uh
+yeah this is why i uh
+no absolutely this has been super
+interesting this is a lot of information
+i have another presentation uh pipeline
+that i want to get i would love to do as
+well
+down the road uh which is actually
+goes over heads it's
+um while it's not nearly as live demo as
+actual uh information uh
+sharing uh it also had proved to be a
+uh so
+yeah i was i i was planning to have 16
+gigs of ram in this current system that
+i had
+because i got this current system i have
+without ram
+uh but it turned out the sticks were
+dead
+stick
+and it also doesn't help that i'm only
+i love that you're saying that my laptop
+is is
+literally and i'm not even kidding about
+this a early 2008 macbook so
+yeah but it is the only laptop you have
+you do have a point i have a bit of a
+problem if you if you haven't
+if you didn't notice my uh shelf of
+laptops
+okay so how do you organize yourself
+laptops because we had a long discussion
+about the proper way to do this
+uh can you repeat that how do you
+organize your shelf of laptops because
+we had a long discussion about how to do
+this
+i actually learned that a disk drainer
+is a great way to organize your laptops
+i've always just done the stack uh
+[&nbsp;__&nbsp;] tops towards the bottom devices i
+may actually use
+close to the top fair enough
+uh plus the occasional laptop that's not
+uh ben utils really doesn't like
+it just wants to stay on the screen a
+lot
+that makes it feel important i mean it
+is important
+it once once we have this done ish
+compile
+uh yeah uh shoe prime is my dad he can't
+confirm my organization is really throw
+so while it's doing this tell us a
+little bit about your background how old
+are you
+what you know like how did you get
+started in this uh
+so i am 19 i am
+incoming sophomore computer engineering
+sophomore at the university of kansas
+uh so
+i started using linux at around the age
+of five
+uh so that really kind of set me
+off like really early on
+but i started getting to firmware around
+eighth grade ninth grade in high school
+whenever uh
+i believe mr chromebox scripts
+originally came around
+when he first uh brought himself to the
+scene
+and i flashed my first build of
+not my own build but i flashed mr
+chromebox build
+onto my toshiba chromebook way back in
+the day
+uh and ever since it's just been a
+but yeah i like playing around with
+hardware
+breaking stuff is fun by the way
+do you know julie uh
+pardon i said do you know julie
+uh i believe so i've
+yep i i i've gotten an email
+uh forwarded from you over an audit of
+our systems
+it was great and it's good to be a cso
+let me tell you
+are you are you over there smash
+hawk smash man it's just to be a c
+so and it's good to be a system admin
+especially whenever uh especially since
+uh
+my days are mostly taking a good look at
+outlook
+uh it's been lovely so tell us how you
+got into linux at the age of five
+uh my wonderful dad that's in this chat
+uh he pretty much gave me an
+uh install disk and it was like it's all
+it's all your operating system on your
+i think he held hand held me through a
+bit but uh where
+what operating system was that i believe
+it was ubuntu 6.06
+wrong
+wrong you love peanut butter and bananas
+thank you very cool oh we got another
+fan sec fan
+zero nine one would you recommend exit
+20 as a first system to experiment with
+corby or are there better options
+uh depends on what you're looking for if
+you're looking for
+actually good laptop to use uh x230
+which is the successor to the x220
+with a pretty much identical chassis
+outside of a
+different stock keyboard but you can
+even fix that uh
+i totally would recommend the x230 over
+to x220
+but if you also have a chromebook laying
+around that you're not using or
+even if you are using and we'll just
+throw linux on it
+ooh cheap shitty thinkpad uh yeah the
+uh and definitely does the well with
+core boot so
+if you can find one for the right price
+that is the prices have been getting a
+bit abnormal lately
+although i don't think jesus even takes
+nearly as long as ben utils
+look i mean i've been thinking it all
+night so i mean i'm just glad someone
+else you know
+it's been running through my mind you
+know i'm just glad someone else
+recognized it
+i do i do it's okay to be you
+we all love you yeah the thing is and i
+don't know if i
+if i told everyone i probably should
+have i probably should have warned
+everybody i literally have been drinking
+since two o'clock today
+i had two happy hours before set kc and
+i told my wife i was like
+i'm gonna have drank a lot tonight
+i'll say jerry you've done a great job
+so far uh
+since it's my first ever oh my name is
+uh sebastian by the way
+i'm just under mine i'm just going with
+a float here okay
+so yeah i'm using my dad's system my bad
+oh without your parents permits
+permission
+nice nice i mean he's also watching so
+nice risky risky not saying anything
+hey yo dad he bullied me outside of
+school
+go beat him up i'm so proud of him
+wait talk about that's always a great
+influence
+if i love you dad i'm sorry i missed
+your father's day
+while we're waiting for this uh when he
+was about five years old he kept on
+messing up a windows machine he had
+so i d-banded the hard drive and handed
+him a copy of gen 2 and told him if he
+wanted a computer again he had to
+that's so awesome what's that
+all right i'm gonna buy five dollar best
+dad ever mug
+[Laughter]
+i mean the dividends so actually i don't
+know if you guys caught this
+and i think sorry i just talked over
+here no but we just hit
+five thousand dollars no going to
+the way and he has to now
+aaron now has to wear full makeup and
+shave and address
+and there's no way that anybody can
+prove me wrong
+or say that i'm lying because there's no
+verification
+but i'm calling it right now we just hit
+5000 looks like
+looking five thousand one hundred and
+ninety uh
+one five thousand one hundred and twenty
+three dollars
+it's unbelievable should have gone
+deeper man if you wanted to keep the
+we've got a matching set up right now so
+that's right
+donate those dollars i want to see erin
+in a dress oh god i don't but i mean i
+don't do
+i mean yeah you know it's a it's an
+incentive right
+i mean it raised five thousand dollars
+for eff that's sick that's awesome
+like yeah we should probably check to
+see like if you know like maybe your
+employers match and let's actually
+hit that well actually i'm gonna take
+that back we already hit it
+we've already hit five thousand let's
+hit ten
+yeah ten thousand yeah
+if employers are matching dude if
+[Laughter]
+hi k.u can you drop a bunch of money
+they got a billion dollars there you go
+maybe you can ask bam to make a donation
+hey sebastian yes let's be a drink your
+dad i'm gonna find the perfect uh
+coffee mug uh
+he can answer for himself
+[Laughter]
+50 75 70 40.
+uh try under all 40.
+dude these dividends are really paying
+out you got you guys are going to have
+like a billion dollar company in
+so who else is on the stream that's not
+from kansas city
+who else we got um i believe daniel
+is the my friend uh he's
+not from kansas city i know that
+yo hey michael where are you from
+so have you made it to a sec kc several
+in fact i think uh jurist was the one
+that invited me because i loaned my
+macbook out way back when
+at defcon for a presentation that's
+awesome
+uh is jurist here he actually just left
+he was on earlier and he had he had to
+bounce but i want to compare what he
+looks like compared to his awesome i i
+just
+can't give his profile picture i just
+love any poke meme there is
+i just love it dropping the beat
+but uh now i'm from st louis and i just
+moved you know
+overly uh july
+is sixth so good times and i prefer it's
+much more everyone's nicer
+in kansas city than st louis st louis is
+can i help you because you all don't
+know how to drive down there
+that's true i'm in lawrence uh so i'm
+not far
+but yeah i'm real close by them in
+lawrence kansas
+cool i'm based out on olathe but i'm
+going back to lawrence here in
+less than 10 days so good luck with that
+man
+it's uh it's getting messy out here i i
+have noticed
+are you ryan berry pie in chet hey
+yeah guilty
+uh oh damn jiggle billy you got that
+beard growing dude
+yeah i've been going with the bill had
+posted that link earlier
+uh early and coveted like you can go
+wild or go
+yeah i went wild yeah i might go with
+that too i might be growing mine back
+make this goatee i'm gonna do it just
+because i'm slight
+uh sicilian italian but like now i'm
+kind of going like i kind of miss the
+full beard
+i want to go back to my homeless look
+rock it
+uh yeah i was doing it but i hated it
+so i did away with it nice
+so i started shaving mine off once i
+look back at pictures that i've had a
+beard yeah like and you're like oh my
+gosh for like three years or something
+like some you know
+so and i don't know if you guys have
+done this yet but has anybody had a
+haircut
+it's magical it is like
+it's amazing and and need to do it like
+jiggle belly you especially look at it
+don't cut her hair like ever yeah
+well you've always been a monster so
+[Laughter]
+i can i can vouch for that man when i
+when i uh
+got a haircut at the end of july i was
+like oh my god this is the best thing
+ever
+i know you have to be like look i'm
+sorry for the moans
+and like i you know like don't take any
+offense
+they told me they had special rules i
+didn't know what to get i was in for but
+i was down
+i could really see phil just kind of
+like oh i can feel that
+yeah you know she's like do you want the
+hair though you want to wash out
+yep yep natural massage yes i do
+it's it just experiences like for my uh
+what was it called doctor strange like
+when when
+it's pushed out of his body that's how
+he is
+there well that's vivint that's vivid
+it's a very vivid experience he's had
+and you could tell and uh yeah i mean
+you can tell he really
+knows what's going on because that
+background if it was very organized
+so you talking about me yeah i'm talking
+about you
+i really thought that was an old like
+telephone no way oh i
+you're not allowed to answer you might
+not know the answer but you're not
+allowed to answer
+what oh and rickson you actually
+rickson's allowed the answer but does
+anybody know what that the silver one
+the silver pay phone is i mean it looks
+like cia [&nbsp;__&nbsp;]
+like it looks like a federal building
+device
+from the airport it's like where you
+call that
+ah i thought it was just the thing i
+read from oracle about missing phone
+from london from prison that is what a
+okay yeah you win though you win though
+if you're a secret agent stand up okay
+so they said i could have one phone call
+you guys still have any of the glass
+sides that say phone
+what's that i i didn't hear you the
+glass sides from the pay phones and say
+actually safe phone on them
+right right so and this one
+um i mean that's you know just a normal
+pay phone
+but it was it was i bought it on ebay i
+don't know maybe
+10 years ago i mean i've had it for a
+long time but
+um it was 25 for the phone
+and 250 to get it shipped yeah
+and i think rixson stole the keypad
+either was it was either rickson
+or or noah maybe and i think i saw him
+earlier i don't know if he's still
+around but
+the keypad's missing from that from the
+hackerspace and
+you know they're totally easy to replace
+and everything like that but i just i
+love the fact that it's missing i
+i love that i love the fact that it's
+missing
+i'm not gonna lie to you for one reason
+or another those are actually like
+really catching display pieces
+i mean that's probably why you put them
+up but like i i was kind of surprised
+when i saw that like it was
+yeah so yeah this it was you know the
+the covet projects that everybody has
+my one of my projects was i'm going to
+make a background that
+when i'm when we're here and we're
+waiting for gcc to hold our beer that we
+could have something to talk about
+actually
+um i may have an idea so i'm going to
+skip ahead and get the config going
+cool so while gcc is doing its thing and
+bogging my system resources down
+uh so first things first this is core
+boots uh menu config
+i'm too lazy to go through and uh
+manually
+so we're now going to go through here
+zip through
+try to find x220
+and so we're going to increase
+the cbfs this essentially is the file
+system if you will
+of core boot let's give it
+general
+let's just make sure i'm not missing
+anything
+so essentially there's made it for
+options if you will it's highly
+configurable but where we're going here
+is that since
+oh yep grub two's still winning so uh
+if i actually
+wait that's not it uh
+secondary payloads let's throw in mem
+test 86 plus
+what type of abomination is it has lilo
+in it
+[Laughter]
+um memtest 86 plus probably will get
+false positives if we were to run it but
+it's just for show
+uh
+generic drivers ps2 keyboard in it you
+may want that
+hmm
+yeah that looks actually mostly it this
+step is like
+and now we still wait for gcc
+because we need this gcc before we can
+uh
+continue are you are you able to flash
+firmware
+from uh like over ssh
+for example um if you
+if the device that you're connecting to
+through ssh has a
+physical flasher attached to it and has
+that physical flasher attached to
+another device
+via like a clip yes okay so so it would
+take the physical interface regardless
+though
+yep that makes sense that makes sense uh
+that's kind of how it works with the
+raspberry pi
+uh you have to ssh into the raspberry pi
+which is why it's such a [&nbsp;__&nbsp;] to use
+raspberry pi but
+this is how you also could be able to do
+headless flashing if you have uh
+internal flashing enabled cool
+oh wait i just realized i forgot
+something
+uh so
+cd util
+ifd tool which analyzes the flash
+descriptor
+of the chip
+uh
+and you can also use to extract
+different regions we we need that to
+grab some blobs so
+uh x220 back up
+hold on let's just pull up the help
+because it
+you see different things there so you
+can do dump you can
+uh dump regions into flash layout file
+which is kind of depreciated since you
+really don't need to use that flash
+layout
+file anymore but uh
+what we want is dump
+all right we we may want to dump
+something
+hey so we have flash region zero flash
+descriptor
+bios and intel me um
+so another thing that we can do is
+dot slash
+me cleaner ls
+okay so python
+me cleaner help
+or python3
+um
+and we want the output descriptor to be
+uh
+core boot ifd dot bin
+uh oh i forgot to you know do the rest
+command
+uh m would be the
+output emmy region so core boot
+uh
+blah dot bin because we don't need this
+file
+and
+so
+x220 backup.rom
+core boot and we now have an me.bin
+and ifd.bin that are truncated
+and stripped out of most of the intel
+management engine components
+so we tell intel to go [&nbsp;__&nbsp;] themselves
+instead of them telling us to go [&nbsp;__&nbsp;]
+ourselves
+oh yeah i almost guarantee that uh since
+there's apparently could be more than
+one part of the intel leak
+there's already part 1.5 that's been
+roaming around
+i guarantee that eventually we're going
+to be seeing intel management engine
+code
+so by the way with regards to that intel
+leak
+uh someone was able to do control f uh
+back door and get results
+let's and gcc is still being you know
+wonderful
+uh yeah that may help
+ls make menu config
+and then we want to go main now
+then we just want ifd.bin
+because we need to specify the regions
+that we're going to be using
+uh
+we are going to use me.bin and note that
+the
+f the file that we put in here
+starts at the build the repository root
+of the core
+repository your local copy and then
+gigabit ethernet
+i need to copy this file over but we
+grabbed it from the
+ifd tool extraction so
+there and
+region
+uh oh
+okay do we not have a gig ethernet
+region
+no we're missing gigabit ethernet region
+that's fine we just don't have ethernet
+yes so now that ah
+damn so
+while we still wait for gcc to finish
+this thing ask me question
+ask me some more questions because i
+mm-hmm
+oh yes definitely uh my chromebook uh
+my original toshiba chromebook that i
+flashed back in like
+heist uh freshman year of high school um
+that hit end of life like one or two
+years ago
+um after reflashing the firmware
+as well as reflashing from my sisters i
+put myself on
+linux on that chromebook grant i don't
+use that chromebook anymore really
+but my sister that still uses her
+chromebook i
+put on uh neverwhere's cloudready
+and it's still providing her some
+service and it's still getting security
+updates
+so yeah it's definitely one way to
+extend a lifespan of a chromebook
+or chromebox
+uh you can actually do vsc bios you can
+use a
+pxe boot uh via ipxc you can integrate
+ipxc
+okay
+yes totally um
+i know i actually when i first tried out
+uh
+building my own build a core boot at the
+time i also had my own dedicated uh pxc
+booting server
+so i was having lots of fun with that
+being able to pretty much pxe boot on
+cbios via ipxc integrated into it
+prod uh
+if the corporate bill tree behaves sure
+it's great for prod
+when it doesn't it
+it's wonderful and i have a cat meowing
+so i saw whenever you were doing the
+make menu config
+you had to choose a specific platform
+the or the the specific model of machine
+yep and there are a ton of models on
+there what does it make into creating a
+new model
+um it can range from being very very
+simple to
+i give up level of difficulty some
+models
+if they're identical enough you can
+mostly copy paste stuff over just
+replace the gpio
+uh i don't have too terribly much
+experience with this myself
+it can essentially you need to be able
+to
+have a model that supports either our
+the already existing
+uh platforms or
+uh what was it
+you have uh
+essentially
+it it can be very complicated you need
+to have something that supports the
+current existing platforms or have the
+ability to port platforms
+uh there's one middle uh there's one
+platform uh
+using the chipset i-965
+so that platform any documentation
+behind the i-965 chipset is under nda
+so if you ever want to pour a device
+such as uh your early 2008 macbook
+uh you're gonna have to be able to
+figure out how to port i-965
+chipset into a working supported chipset
+so kind of along with this um
+making building a platform does that
+mean that different uh
+platforms will have different levels of
+functionality i guess uh like different
+levels of like
+completeness of support yes
+definitely
+but uh uh
+um there was another uh another thinkpad
+uh usb devices
+aren't work being very cooperative power
+management was mucked
+it was uh it can range from very stable
+like chromebooks to very unstable like
+brand new very early development
+platform
+i know we're starting to lose some
+people but
+once i have this going i should be all
+just run make if make doesn't work then
+i have a fallback strategy
+uh
+main reason uh
+but main reason why i'm wanting to try
+this with grubs because there's some
+things you could do
+with core boot as well that i want to
+show off there's a concept of a
+secondary payload
+essentially a payload some payloads can
+execute other payloads
+and it's really fun and it can also get
+very messy
+uh grub is one of those payloads that
+lets you not only boot your linux
+install
+uh hold on
+oh
+let me just get this thing uh reattached
+because i knocked it over earlier and
+i'd rather not spend another 10 minutes
+it's all good that's why you got to go
+i do suppose i do thank you all for
+hanging in here it's been one bumpy ride
+but we should have grub as our payload
+soon
+if not then i have a backup rom that uh
+while it
+is not grub it will definitely showcase
+and i'll give make one go
+uh
+yes
+uh more chorus would always be
+all right now i have uh the flash chip
+attached
+so while uh while we're
+sitting here i um i got i got multiple
+uh pie holes that i use at my house here
+and i uh on github there's a gravity
+sink script that synchronizes data from
+a master if you will to uh subordinate
+pi holes because it becomes a pain in
+the ass having a white list or blacklist
+on multiple devices
+anyway i got that set up and uh working
+tonight so
+neat just fyi for other people out there
+thinking about doing it
+uh and anyway
+dns servers that are in sync are good
+now what what's uh i'll put the link in
+i'm just going to go ahead and skip uh
+the
+gcc part for now
+uh i don't think it's going to finish
+anytime soon
+we are going to now just flash uh one of
+my backups of another rom that i
+had the original alarm i had on here
+so first thing it does is radiational
+flash chip contents
+essentially takes a dump and then it
+calculates the hash of that
+and then after it does that it will then
+write to the chip
+and whenever it's done with that it then
+takes a dump of it again
+wait no we don't calculate the hash
+originally we just calculate the hash
+not hash yes we take that yeah we
+actually do
+we take the hash of the original one and
+then
+check to make sure it's not the exact
+same as the
+one we're currently flashing just so you
+but then writes to it and then takes
+another dump of the newly written
+flash chip and then checks to make sure
+now we're erasing and writing at least
+this actually is technically a two-step
+process because i believe at first he
+oh a good question uh
+how many right cycles can these chips
+take uh i don't think they're actually
+necessarily rated
+but they're significantly less than many
+um
+[Music]
+you if you write to them like once a day
+they probably will be gone in within a
+year if i
+if i my estimate is correct
+but i don't think that's generally rated
+because
+that's not something you normally are
+supposed to do
+although
+i have done plenty of writing on a lot
+of these chips and they have survived
+lots of abuse so
+i feel like rickson could give us an
+exact number of times we could write
+for some reason uh well
+why don't you mention that um i'm
+looking at dave we got one right now and
+it's showing 100k
+100k rights all right
+there you go it's not bad that's
+so if you write multiple times a day
+like 100 times a day
+yeah so it i mean as a comparison to
+other things that we work with
+you know every day ram is obviously like
+you know
+continuous rights basically
+virtually infinite uh flash that we deal
+with on
+uh like ssds nvme drives that kind of
+stuff
+um you know that even has i think
+probably a higher wear rate but these
+are
+uh lower costs lower durability
+than what we see in like a high inc uh
+consumer or even commercial
+equipment so um like the stuff that
+we're seeing right now
+are uh like they're warranted for five
+years that's five years of continuous
+rights basically so
+um they're rated and like petabytes a
+day on like
+ssds and stuff so um but yeah these 100
+000 drive rights for the lifetime is or
+i'm sorry device rights is uh
+you know it's still a lot for uh if
+we're going to flash this stuff if you
+want to do a new core boot
+like every hour uh you know that's still
+lifetime
+although if you do plan to do this like
+really really long term and plan
+and do this multiple times a day uh
+maybe invest in getting some uh
+especially playing long term as in like
+at least
+uh three or four
+maybe even five writes a day for you
+know multiple multiple years
+if you want this device that single
+device lasts that long
+flash flash ships are also cheap
+especially spi
+oh uh we're now we're verifying flash
+but yeah spi flash chips are like really
+cheap if i recall
+so
+if you have a soldering iron or a hot
+you can also do that you can also
+replace all your bicycle sockets
+when we say using heat gun i mean
+make sure you're not like maxin maxing
+out heat and having uh
+just the entire board drenched in heat
+that sounds like something you learned
+the hard way
+uh i i prefer not to comment on that
+part
+it sounds like something you don't
+intend to learn the hard way right
+right all right so now i'm going to
+enable my
+let's see oh that's right i need to stop
+i think my main the main window for uh
+oh nevermind it's right there i'm blind
+so now let me
+we're just gonna go ahead and skip grab
+uh i i i don't need to keep everyone for
+as long
+and
+that is definitely not stock bios by the
+way this is a full
+linux environment this is the heads
+project i was talking about earlier
+and of course uh
+one day i'll have a presentation over
+this
+uh and it won't be live demo so i may i
+may need time estimate
+that time but it
+we have you know i i think we have
+lspci yes we do
+vi
+so i could technically write but i think
+that gets the point across
+i think with mission accomplish with
+caveats
+that is rad and you totally made time
+because you said an hour to an hour and
+a half and here we are so you
+you're solid man that was that was
+incredible thank you
+no problem and gcc is still not done by
+let's just kill that but yeah i guess
+i'll do it
+dude sebastian i just gotta tell you man
+i i had never heard of this before
+um and so like and as you were talking
+like i think we probably like oh i've
+got that one box or whatever that
+maybe i could do that on and i know that
+that one's i've got one
+so dude i i appreciate it it was really
+really cool thanks for walking us
+through it
+no problem yeah absolutely so many
+projects were just born
+yes i mean i'm sure we all could be
+inside for much
+for a while so just killed a lot of
+yeah what made them more interesting it

@@ -1,0 +1,473 @@
+so huge shout out to our own r twist
+as well as mr swearingen for the
+outstanding
+[Music]
+entertainment straight from defcon 28
+safe mode
+all right so next up we were and we were
+almost
+not graced with this tonight but next up
+we've got to check our pi
+holes so i'm going to pass this right on
+off
+all right it's all yours brother all
+right thank you
+so tonight we're going to be learning
+about how to set up a pie hole
+that is a dns level
+ad blocker blocks things on blocks
+pretty much all
+ads on your entire network
+and it is fantastic i've been running it
+for
+quite a while now and i don't ever want
+to change
+the great thing about the latest updates
+is
+there we go is you can have it set to
+share or have groups
+so you can have multiple um different
+profiles like if you have your children
+on one of them you can
+block all not safe for work items
+or if you have another thing that has to
+run on a vpn that just doesn't like a
+pie hole
+or add blockers that's fine too
+so i actually don't i'm not going to be
+running a full
+powerpoint tonight we're going to be
+running this all pretty much in terminal
+and i will switch over to a different
+window here in a little bit
+to show you guys how to set up your
+router to get this thing all set up
+if you guys got the zoom message that
+had
+all of the uh things to follow along
+i have a pi 3 right here with us
+and that's just a 3b plus it's running
+the latest version of raspbian
+nothing really fancy about that i've ran
+all of the apt-get updates and upgrades
+and other than that i am at a brand new
+pie
+so first if we just go over to the
+github
+i will have all of these links available
+also
+if you go over to github you'll find
+this one
+very simple command so you really need
+to do
+just run that and it'll go ahead and
+download and install everything you need
+from biohole
+great thing here is that it doesn't have
+to be run
+on the latest and greatest pie you can
+run this thing on an
+old school raspberry pi original one
+that's actually what i
+have as my main one it's just hard lined
+six inches away from my router
+it's tucked up out of the way i'm not
+going to use it for anything else why
+not
+you could run this thing on a raspberry
+pi or on a pi zero w
+run it on a 3b plus like i am now you
+could even run it in docker on a server
+if you don't want it to be on actual
+bare metal
+they are insanely easy to configure
+insanely easy to set up and if
+you're like me and you have family who
+isn't comfortable with the fact that
+this gives you the ability to monitor
+pretty much all network traffic
+you can actually block all of that
+see that i'm going to go ahead and set
+the manual
+i'm going to set up a dhcap reservation
+here in just a second
+let's go ahead with wireless because i
+am going to be running this one
+now personally i've always used level 3
+for ipv4 and then
+cloudflare for ipv6 i've never had any
+problems with that
+there's been some security concerns
+using google but
+it's not too bad these
+stock block lists are great they will
+block
+pretty much everything you need and if
+you get into the community
+and on the subreddit and
+in just their um
+forums they have a lot more
+block lists like we have some great ones
+to use for
+all the roku logs and i get 30
+000 hits a day almost on those just from
+our two roku tvs
+so we have that right there that's my
+ip address that's going to be my static
+ip that's good i'm about to set up on my
+router very simple
+that is a good thing to take an image of
+so you
+take notes of that one
+there's your ipv6 and web admin
+interface that's always
+fantastic to have oh website yep
+that's so you can access it
+personally i say no to this just because
+i have other adults in my household and
+it's
+not very nice from a private
+information kind of standpoint to be
+able to look at all of their stuff
+now this one ftl is a great one it's a
+faster than light it makes it
+much well the whole thing speeds up
+actually
+there we go you can check the statistics
+of everything that you have
+how many ads are being blocked
+this process usually just takes a couple
+minutes
+but for the most part you can keep it as
+here in a second i'm going to switch
+i just gotta wait for this thing to go
+anyone has any questions go ahead and
+can you hear me yeah i can hear you hey
+this is going to be like a relatively
+newbish question
+but um so um
+the way this is set up um yeah i think
+you like
+um does this have do you have this like
+in line
+like so if i've got like i've got fiber
+so i've got the
+the jack from the fiber box to the
+router like does this have to be in line
+between them
+or no that's actually a really good
+question um
+it doesn't have to be actually right now
+i am setting up this pie
+literally on my bedside table and my
+router is all the way in the other room
+what we're going to be doing is actually
+going into our router settings
+and redirecting all of the dns queries
+from whatever your isp does by default
+to point to here instead cool
+and quick follow-up uh google who of
+course
+i've got um they they they have this
+very sort of gestapo
+attitude towards things they keep
+telling me not to do certain things
+and if otherwise they'll take my
+internet away forever
+do you know if this is one of those
+things that they uh frown upon
+i'm not sure how they would track it
+easily but
+you know i am not qualified to answer
+that question i was going to say
+i've got google fiber and i've got both
+ad guard running and pi hole
+i switched so forth and they've never
+said [&nbsp;__&nbsp;] cool it
+works fine with google fiber nice thanks
+there we go
+thank you guys i've also removed most of
+the google fiber stuff
+so
+i do have and i have had issues with uh
+ipv6
+resolution on my mac so really
+what have you been having because i run
+a macbook pro
+it it still uses uh google's
+uh servers and so what i ended up doing
+is just putting a
+different uh wireless access point
+in front of the google uh wireless
+access point
+so i don't use it for wireless i just
+use it as a uh
+the the modem that works a switch
+and then uh you know the other devices
+have better wi-fi than the google box
+anyway
+i personally have not um there is talk
+that they are going to be updating
+um the pie hole here in the next month
+or two
+to support that actually
+i have the advantage of having one of my
+employers firewalls sitting in
+in my network and i just block all that
+stuff no quick no
+dns over http ssl tls
+all that stuff just i agree with james i
+all right so hey now that we're here if
+you guys don't mind me interrupting your
+conversation
+after all the installation you'll get
+this page right here um
+this is just a generated password you
+can absolutely go in and change that
+it's highly recommended if you forget
+the console will actually tell you how
+to do all of that
+but right now we can just take that
+go ahead and switch over there let me
+no you'll have to share that that app as
+well
+there we go that should be working
+better now
+we can see it now there we go all right
+and here we go here is our new pie hole
+so here's your admin console going to
+log in
+it won't have any username on here so
+you just have to have the password that
+it gave you on that last one
+i don't care if you guys know this or
+not i'm about to unplug it and
+everything so
+there we go see 85 000 domains on those
+now
+we have our mac address we're gonna need
+that we can go over into our router
+as you can see i already have a couple
+[Music]
+and
+i'm not going to save this because if i
+do it'll kick everything off of my
+network
+onto where's that darn it
+really
+dns settings okay there we go then
+switch into manuals and dns-2 this one
+is my primary
+uh pi hole 68.0.29
+and if i save this i might get booted
+did he really just kick himself off the
+network
+[Music]
+[Laughter]
+can you guys hear me yeah you're back
+yeah yeah yeah yeah i kicked myself off
+yay that's how it's done
+but some devices uh specifically like
+some roku
+tvs they don't necessarily like having
+just a single
+dns server but
+hey look at that there we go now we're
+seeing queries coming in
+sometimes if you have two it should
+split the load up pretty evenly
+not always though however if we go into
+you can see here i get 50
+000 queries in 24 hours a lot of those
+is just from
+my roku tv and those i will get
+constantly i've had some times where
+i've had 24 000 in an hour before
+but you can see that i get quite a lot
+of blockages on here
+yeah let's go to this one
+so in here got some fancy stuff
+got our nice group management here's
+where we can add things like
+um none
+this is something like i would do for if
+you have a
+device that's behind a vpn that doesn't
+like this stuff or
+[Music]
+iot devices you can change those
+then you can actually have separate
+clients onto separate device onto
+and group assignment here i can change
+what block lists they go on you can even
+set
+multiple which is just fantastic
+the priority one is just the default
+that has everything on here
+go ahead and bigger eyes that
+then you can go into here add lists and
+you can
+choose which groups they're in so if you
+want
+like none you don't want to have that
+one as no blocking on anything like that
+but simple google search
+there we go there are lots
+and lots and lots of different options
+mostly i stick to basic ones
+other than that that's it for pie hole
+101.
+you have any other questions anything
+uh if anything just a warning for people
+that if they set this up
+as a single dns server if that pie goes
+down
+your network's going to be poor
+yeah i learned that one the hard way my
+eyes are cheap man
+make two yeah yeah i've got two
+different pi zeros running on my network
+and
+yep it's a two it was like a two and a
+half dollar dongle
+to plug in by the way also don't do do
+not put your dns on wi-fi
+yeah but yeah i mean i've got two pi
+zeros with the little two dollar fifty
+cent
+dongle i've gotta handle it i've had one
+of them tank
+but well yeah you can you can run on
+wi-fi but then when it goes down you're
+going huh
+what's my problem is my problem dns or
+is my problem wi-fi
+yeah and you can also get some latency
+issues there
+yeah yep
+yep you can run it in a docker image
+there are
+so many options just absolutely insane
+you got all the stuff here um if you
+have a dynamic dns server
+you can set that up you can set up a
+it's just so
+bloody configurable
+so so the the end result of setting up
+this
+this pie uh you said it's a dns
+based ad blocker could you show us some
+of that in action
+maybe like going to like advertisement
+heavy websites like does it work on the
+browser level yeah we're okay awesome
+here we go here's adblocker.com
+well that means i'll have to actually
+disable it but here you'll see
+a whole bunch of you'll have pop-ups and
+things like that
+and now there should be
+let's try cnn
+any of the major news you know you
+always have the massive sidebars
+yeah i got nothing here dude that's
+that's [&nbsp;__&nbsp;] awesome like like i
+i never would have thought that this
+would have been like a hardware solution
+that's so clever it works on your mobile
+devices everything
+oh that's so [&nbsp;__&nbsp;] cool yeah thank you
+for the demo
+i hate using wi-fi pretty much anywhere
+else um
+it'll block all of your in-game mobile
+ads
+um yeah you can even set up
+openvpn alongside your pi
+you know alongside pi hole and then you
+can just vpn into your own home network
+especially if you're on a ddns solution
+so you can always
+that's another clever solution yeah
+thank you so much man yep
+also some things don't get blocked so
+i always make sure to also run
+some limitations our are yahoo and hulu
+specifically
+because those serve their ads on the
+same servers as their regular content
+so so far it hasn't been possible to
+block the ads for there without blocking
+the whole service
+so heads up you should also look at a
+yoga dns
+it allows you to do dns profiles in your
+machine so like you can switch from your
+pie hole and stuff and then when you go
+to work you can switch to your work
+profile without ever actually go into
+your settings
+there we go i actually haven't used that
+yeah it's actually pretty sweet i i run
+it on a couple of my machines i can
+switch back and forth between depending
+where i'm at
+nice but yeah thank you guys for coming
+i just have a statement this bill um one
+of the things i really like the the
+network level dns filtering is for
+things that i can't install
+you block origin on like tvs and other
+iot stuff
+it's interesting to see the the level of
+tracking that exists and you're able to
+now control it a lot better and see it
+the dashboard
+the visibility the dashboard gives you
+is amazing yeah
+it's i have so many logs from just
+roku and normally you know how you have
+just so many pop-up ads and
+little banners and things like that i
+don't get them
+and they're it's glorious
+let's see if we have any queries blocked
+here come on now
+so how does it how does it deal with
+those things that are doing
+uh you have to watch the video in order
+to watch the stream is it just kind of
+you're getting a a resp it's not a block
+but you're
+getting a page that just kind of goes
+yeah go on
+or what is it doing with those kind of
+things because that that that was one of
+the things that
+that kind of caused my not necessarily
+like cb
+cbs and cbs access are the the big ones
+that i uh
+twitch has that feature as well like you
+can switch through as many streams as
+you like but they'll
+restart the ad for you until you can see
+that
+um occasionally i've had
+this is a hit or miss thing sometimes it
+just has a blank screen
+for 30 seconds to a minute however long
+the ad is
+sometimes it actually goes through it
+depends on where it's served from
+yeah but yeah the only place i really
+see ads anymore is
+yeah that sounds like success hey man
+thank you very very much for doing that
+super helpful i haven't set one up yet
+myself so
+now feel free to reach out to me we're
+also
+there's lots of guys over in the labs
+channel on slack
+that are pretty much always willing to

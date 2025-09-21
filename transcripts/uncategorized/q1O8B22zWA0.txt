@@ -1,0 +1,284 @@
+Jump Right
+In a little word association image
+Association what is
+this tasty beverage tasty beverage what
+else soda cocaine
+pop pop is
+a by looking at it it could be many
+things we don't
+know now it's word association
+mean find out could be using a COR
+PL up and down right something could be
+this right
+plug these are also called
+plugs this is a plug on
+WR these are the
+know these are also plugs okay in
+fact if you say plug somewhere else in
+the world they're going to say what kind
+of plug are you talking about a b is
+this a European North the European South
+it's a mess
+so let's talk about malware and
+viruses and that problem with names and
+Association okay so here is Parker Reed
+and I
+apologize this is from virus total and
+you have all these antivirus companies
+and you have all these names right
+what does that mean well I kind of
+grabed one of them went out to the site
+this is tougher to read so I blew this
+up for
+everybody okay so we have 1 2 3 4 5 6 7
+8 they all refer to the same type of
+virus okay in red we have the different
+companies and so I equate this to which
+team do you follow who is your team
+because it depends on the name that you
+have as to what team you follow right so
+which team you follow which team you
+follow here this is what drives the
+naming industry for malware and viruses
+right now okay so let's go into a couple
+more I thought fun examples uh this is a
+sample I looked at recently and one of
+them didn't know and it's it's unified
+malware that really helps you right if
+you have kodo let's say you have Komodo
+and your antivirus and it pops up and
+says warning unclassified M right you
+don't know what to do so as an incident
+responder if somebody works in security
+that can be a problem now there are
+those and this is just a I'm going to
+show this Twitter feed here one at a
+time David Bisson is talking about IBM
+security and how they have basically
+married two pieces of malware together
+to create a child a bastard child
+called G right and it's completely it it
+makes no sense it's all for marketing
+it's all for flu it gives some data uh
+Matthew Mesa well respected if any of
+you follow malware like that watch this
+guy he says can we not change the names
+of known malware this is basically n
+okay so the these are problems this is a
+very recent post um you see 14th of
+April I could have gone back and showed
+just whole clips of this so now it's
+game time okay play a game and the game
+is yeah which botnet has been one of the
+most common that no one really knows
+botnet I need Jeopardy
+music which
+B and yes I did use comic Sands so I put
+comic Sands in there as one
+of
+anyone
+Cup oh this
+one
+I'll give you
+hints okay here's a little
+secret they are the same every one of
+those is the exact same M the exact same
+bot except for Comic
+sser every one of these is a name for
+the exact same piece of piece of Mal
+that is a botnet that is very common and
+uh you know I had to throw in a m my
+father's in the crowd and he's probably
+like what the f is the m what's that
+mean you tell
+me so hona cup bought net 15 million
+infection okay this is a foxnet report
+or Fox it report it came out uh about
+six months ago talking about this and I
+thought it was interesting we never
+heard about it well probably because we
+didn't know the common name okay so
+rewind to a few months ago I'm at
+botom and I decided you know this is a
+mess because at bom this is a list of
+all of the M that was discussed at bom
+okay in fact the irony was why I use Pon
+in this example you had different AV
+vendors get up and present about the
+research they
+did and they were calling it The Name
+They had and then you would get another
+group of researchers get up call that
+group out and say you're wrong here it's
+actually this and we call it this and
+that's you know the name of so you have
+this infighting and it was it was almost
+hysterical yet sad because you had some
+of the smartest people in the room I
+mean the the Eastern block has produced
+some of the best mathematicians some of
+the the best thinkers for this and they
+are very good at reverse engineering and
+trapping and stuff
+and I made this Wordly for a talk I gave
+there and said this is crazy and all
+these fatter ones are ones that were
+duplicates of other other botet other
+bot Nets that were discussed at the time
+so we need
+somebody we need a vigilante okay we
+need a Batman we need that Bruce
+Wayne the Bruce way of security who
+whoever that is I'm working towards that
+and I'm here to talk to you guys about
+why we need that first I am not the
+Bruce way security and I'm not a very
+good Batman I'm not built well my crime
+but we need that vigilante we need
+somebody with the resources and the
+manpower to help come up with what cve
+did for vulnerabilities
+you may not like cve but you know what
+cve does it unites a common cause to go
+after imp patched systems to to show
+awareness to do things it's not perfect
+but it's better than what was before
+which was a mess a nightmare you were on
+your own it was literally the wild west
+so when it comes to malware and viruses
+that's where we're at we don't have this
+common thing that that binds us we have
+no way to map we have no way to tie
+things back to either their origin
+where they came from I love this you
+know love geneology I want to know what
+was that first sample of M and how did
+it spread how did it split okay if any
+of you are familiar with like Zeus Zeus
+is a is a parent you could say in that
+and then look at all the children from
+it any of us who had to work on that
+it's a
+nightmare it's Satan's spawn it has
+caused so many other MERS to come off of
+that sample okay so we need a malware
+unique
+identifier uh something along that line
+some maare ID maybe we can go into a
+botn net ID we can take it into other
+areas but really what we need is that
+taxonomy okay we need a taxonomy that
+says this is the sample here's the data
+behind here's how if they can map
+viruses okay this is the viruses that
+infect mammals through their RNA if they
+can map them out as to how they tib back
+and how they work why in the world can't
+security groups and the people in
+security come back together and create a
+unique identifier and a way to map how
+my works okay we can use Big Data it's a
+big buzz word but we can use the data
+science behind it we have the computing
+power storage is cheap enough it's there
+we just have to have the ability we
+can't keep our heads in the sand because
+we're going to end up wrestling
+elephants literally this is my web my
+web page is called elephant wrestler
+because of a conference I went to this
+man knows this this guy help meire right
+great
+story so
+chasing after malare the talk that was
+given before the ransomware stuff you
+were literally wrestling elephants you
+going after a lot of times a criminal
+element that has resources and all the
+ability behind and we're busy chasing it
+and trying to track it down from the
+side when we're not collaborating so my
+challenge to the group and my challenge
+to
+you is we got to do something because
+it's going to make it better the fruits
+of trying will be worth it the tools
+that will be generated just by trying to
+bring this data together think of this
+how many of you are going to have in in
+your office and you're going to try to
+figure out where do I send them to learn
+about Vates or malware or any other kind
+of virus or any anything when it comes
+to this there isn't you have to say go
+Google aotn net and you know what you're
+going to get you're going to get a bunch
+of PDFs and white papers and marketing
+fluff and a horrible Wikipedia entry
+that's old that needs to be updated so
+one of the things that I have bit
+off is I want to start a back that
+database and I have a couple domain
+names and I want to make a place where I
+can take all of these botn nets and
+correlate them I want to take all those
+names like you saw was a check box let's
+figure out which one is really the bad
+guy when they all are I want to have
+that Central reference point I want to
+point to all those folders I want to
+point to or excuse me all those white
+papers all those PDFs and then I want to
+grow up from there and I want to take
+that and show that it's possible and
+then move that into a taxonomy and I Am
+The Barking Dog on a lot of these people
+I have been told I'm an idiot I been
+told it's perilous what I'm doing I've
+been told it'll never be done and I
+cannot be a person with the head in the
+sand this this is something that
+security Community has to come together
+on to me it's the only way we're going
+to get ahe and there's going to be
+groups that fight it there are going to
+be major AV vendors I've been called out
+when I gave this talk light me talk at
+bcom just an initial three minute talks
+I had a people come up to me and told me
+I was an idiot and then I was doing
+something very dumb I had analysts and
+researchers say I want it let's do it it
+would be great and I know there are
+giants like kasperski there are groups
+like Tren all these they're giant
+marketing machines and they want to name
+something and you know what this common
+unique identifier has nothing to do with
+a common name it's just like a MAC
+address it's just like an IP everything
+else we have domain names and point back
+all that it's that simple and that's
+what I told these people your marketing
+team can call us whatever you want you
+can have whatever common name you want
+to go with but for the research for the
+ability to get ahead and make a
+difference you got to have this unique
+identifier and you got to be able to
+build this out and it's going to be slow
+at first but as we start as new samples
+come out new code is written and we
+start to give them these unique prices
+just like how the CV started it'll start
+rolling people will start submitting to
+it we need that Bruce way so that's my
+rant it was 11 minutes if there's
+questions I would love to have it what I
+want is I'm not a database guy I'm not a
+web designer I'm not there's a lot of
+things I'm not I'm an analyst I'm a
+thread and tail guy I I want to see
+people get together and share and
+collaborate so I want feedback I want to
+know if we can start something here that
