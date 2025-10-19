@@ -5,16 +5,19 @@ This curriculum provides a structured path through talks and resources related t
 ## Suggested Learning Path
 
 ```mermaid
+flowchart TD
   A[Application Security Overview]
   C0[Source Code Review]
   C1[Open Source Scanning]
   C2[API Security]
   C3[Shift Left and CICD]
+  Z[Apply Knowledge]
+
   A --> C0
   C0 --> C1
   C1 --> C2
   C2 --> C3
-  C3 --> Z[Apply Knowledge]
+  C3 --> Z
 ```
 
 ## How to Use This Curriculum
